@@ -30,11 +30,10 @@ func init() {
 	Quizzes.Lock()
 	Quizzes.Map = map[string]string{
 		"prefectures":  "prefectures.json",
-		"insane":       "insane.json",
-		"n3":           "n3.json",
+		"quirky":       "quirky.json",
+		"yojijukugo":   "yojijukugo.json",
 		"kanken_1k":    "kanken_1k.json",
 		"kanken_j1k":   "kanken_j1k.json",
-		"yojijukugo":   "yojijukugo.json",
 		"kanken_j2k":   "kanken_j2k.json",
 		"kanken_2k":    "kanken_2k.json",
 		"kanken_3k":    "kanken_3k.json",
@@ -43,6 +42,11 @@ func init() {
 		"kanken_6-10k": "kanken_6-10k.json",
 		"onago":        "onago.json",
 		"kirakira":     "kirakira-name.json",
+		"n1":           "jlpt_n1.json",
+		"n2":           "jlpt_n2.json",
+		"n3":           "jlpt_n3.json",
+		"n4":           "jlpt_n4.json",
+		"n5":           "jlpt_n5.json",
 	}
 	Quizzes.Unlock()
 }
