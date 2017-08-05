@@ -115,15 +115,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
 		}
-	case CMD_PREFIX + "status":
-		var status string
-		if len(input) >= 2 {
-			status = m.Content[len(command)+1:]
-		}
-		err := s.UpdateStatus(0, status)
-		if err != nil {
-			fmt.Println("ERROR, Could not update status:", err)
-		}
 	}
 
 	// Mostly a test to see if it reacts on mentions
