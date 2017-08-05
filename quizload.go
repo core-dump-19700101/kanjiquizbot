@@ -69,13 +69,13 @@ func LoadQuiz(name string) (questions []Question) {
 	if ok {
 		file, err := ioutil.ReadFile(QUIZ_FOLDER + filename)
 		if err != nil {
-			fmt.Println("ERROR reading json: ", err)
+			fmt.Println("ERROR, Reading json: ", err)
 			return
 		}
 
 		err = json.Unmarshal(file, &questions)
 		if err != nil {
-			fmt.Println("ERROR unmarshalling json: ", err)
+			fmt.Println("ERROR, Unmarshalling json: ", err)
 			return
 		}
 	}
@@ -87,11 +87,11 @@ func LoadQuiz(name string) (questions []Question) {
 
 // Supposedly shuffles any slice, don't forget the seed first
 func Shuffle(slice interface{}) {
-    rv := reflect.ValueOf(slice)
-    swap := reflect.Swapper(slice)
-    length := rv.Len()
-    for i := length - 1; i > 0; i-- {
-            j := rand.Intn(i + 1)
-            swap(i, j)
-    }
+	rv := reflect.ValueOf(slice)
+	swap := reflect.Swapper(slice)
+	length := rv.Len()
+	for i := length - 1; i > 0; i-- {
+		j := rand.Intn(i + 1)
+		swap(i, j)
+	}
 }
