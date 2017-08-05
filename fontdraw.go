@@ -23,7 +23,7 @@ var (
 )
 
 func init() {
-        // Read the font data.
+        // Read the font data
         fontBytes, err := ioutil.ReadFile(fontFile)
         if err != nil {
                 log.Println(err)

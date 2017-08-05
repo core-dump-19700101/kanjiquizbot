@@ -47,6 +47,7 @@ func init() {
 	Quizzes.Unlock()
 }
 
+// Returns a slice of quiz names
 func GetQuizlist() []string {
 	var quizlist []string
 	Quizzes.RLock()
@@ -58,6 +59,7 @@ func GetQuizlist() []string {
 	return quizlist
 }
 
+// Returns a slice of shuffled Questions from a given quiz
 func LoadQuiz(name string) (questions []Question) {
 
 	Quizzes.RLock()

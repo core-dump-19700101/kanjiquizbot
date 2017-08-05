@@ -16,7 +16,7 @@ import (
 )
 
 // This bot's unique command prefix for message parsing
-const CMD_PREFIX = "kq!"
+const CMD_PREFIX = "bug!"
 
 // Discord Bot token
 var Token string
@@ -125,15 +125,6 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
 	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name>` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
-}
-
-
-// Send given message to channel
-func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
-	_, err := s.ChannelMessageSend(m.ChannelID, msg)
-	if err != nil {
-		fmt.Println("ERROR, Message sending: ", err)
-	}
 }
 
 // Stop ongoing quiz in given channel
@@ -307,19 +298,6 @@ inner:
 	stopQuiz(m)
 }
 
-// Send an image message to Discord
-func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
-
-    image := GenerateImage(word)
-
-    _, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
-    if err != nil {
-        fmt.Println("ERROR, Could not send image:", err)
-        return
-    }
-
-}
-
 // Player type for ranking list
 type Player struct {
 	Name string
@@ -338,7 +316,28 @@ func ranking(players map[string]int) (result []Player) {
 	return
 }
 
-// Send embedded message type to Discord
+// Send a given message to channel
+func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
+	_, err := s.ChannelMessageSend(m.ChannelID, msg)
+	if err != nil {
+		fmt.Println("ERROR, Could not send message: ", err)
+	}
+}
+
+// Send an image message to Discord
+func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
+
+    image := GenerateImage(word)
+
+    _, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
+    if err != nil {
+        fmt.Println("ERROR, Could not send image:", err)
+        return
+    }
+
+}
+
+// Send an embedded message type to Discord
 func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordgo.MessageEmbed) {
 
     _, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
