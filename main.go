@@ -228,7 +228,7 @@ inner:
 			case msg := <-c:
 				if (msg.Content == current.Reading) {
 					user := msg.Author
-					msgSend(s, m, ":white_check_mark: " + user.Mention() + " is correct: **" + msg.Content + "** (" + current.Word + ")")
+					msgSend(s, m, fmt.Sprintf(":white_check_mark: %s is correct: **%s** (%s)", user.Mention(), current.Reading, current.Word))
 					players[user.ID]++
 
 					if players[user.ID] >= winlimit {
@@ -240,7 +240,7 @@ inner:
 					break inner
 				}
 			case <-timeout:
-				msgSend(s, m, ":no_entry: Timed out!\nCorrect answer: **" + current.Reading + "** (" + current.Word + ")")
+				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
 				timeouts++
 				if timeouts >= timeoutlimit {
 					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
