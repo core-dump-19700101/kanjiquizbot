@@ -243,6 +243,15 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 	players := make(map[string]int)
 	var timeouts int
 
+	// Helper function to force katakana to hiragana conversion
+	k2h := func(r rune) rune {
+		switch {
+		case r >= 'ァ' && r <= 'ヶ':
+			return r - 0x60
+		}
+		return r
+	}
+
 outer:
 	for len(quiz) > 0 {
 		time.Sleep(5 * time.Second)
@@ -250,6 +259,9 @@ outer:
 		// Grab new word from the quiz
 		var current Question
 		current, quiz = quiz[len(quiz)-1], quiz[:len(quiz)-1]
+
+		// Replace reading with hiragana-only version
+		current.Reading = strings.Map(k2h, current.Reading)
 
 		// Send out quiz question
 		imgSend(s, m, current.Word)

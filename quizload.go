@@ -31,6 +31,7 @@ func init() {
 	Quizzes.Map = map[string]string{
 		"prefectures":  "prefectures.json",
 		"quirky":       "quirky.json",
+		"weird":        "weird.json",
 		"yojijukugo":   "yojijukugo.json",
 		"kanken_1k":    "kanken_1k.json",
 		"kanken_j1k":   "kanken_j1k.json",
