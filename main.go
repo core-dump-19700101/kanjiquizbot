@@ -41,6 +41,12 @@ func init() {
 
 func main() {
 
+	// Make sure we start with a token supplied
+	if len(Token) == 0 {
+		flag.Usage()
+		return
+	}
+
 	// Initiate a new session using Bot Token for authentication
 	session, err := discordgo.New("Bot " + Token)
 
