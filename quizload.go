@@ -2,25 +2,17 @@ package main
 
 import (
 	"fmt"
-	"strings"
-	"time"
-	"os"
-	"os/signal"
-	"syscall"
 	"io/ioutil"
 	"encoding/json"
 	"math/rand"
 	"reflect"
-	"sort"
 	"sync"
-
-	"github.com/bwmarrin/discordgo"
 )
 
 const QUIZ_FOLDER = "./quizzes/"
 
 // Quiz filename container
-var Quizzes = struct{
+var Quizzes struct{
 	sync.RWMutex
 	Map map[string]string
 }
@@ -31,7 +23,7 @@ type Question struct {
 	Reading string
 }
 
-function init() {
+func init() {
 
 	// TODO: Make it auto-search the quiz folder with filepath.Glob()
 

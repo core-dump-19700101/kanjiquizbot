@@ -7,18 +7,16 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-	"io/ioutil"
-	"encoding/json"
 	"math/rand"
-	"reflect"
 	"sort"
 	"sync"
+	"flag"
 
 	"github.com/bwmarrin/discordgo"
 )
 
 // This bot's unique command prefix for message parsing
-const CMD_PREFIX "kq!"
+const CMD_PREFIX = "kq!"
 
 // Discord Bot token
 var Token string
@@ -44,7 +42,7 @@ func init() {
 func main() {
 
 	// Initiate a new session using Bot Token for authentication
-	session, err := discordgo.New("Bot " + *Token)
+	session, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
 		fmt.Println("ERROR, Failed to create Discord session:", err)
