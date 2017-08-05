@@ -1,9 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"encoding/json"
 	"math/rand"
 	"reflect"
 	"sync"
@@ -12,14 +12,14 @@ import (
 const QUIZ_FOLDER = "./quizzes/"
 
 // Quiz filename container
-var Quizzes struct{
+var Quizzes struct {
 	sync.RWMutex
 	Map map[string]string
 }
 
 // Question item
 type Question struct {
-	Word string
+	Word    string
 	Reading string
 }
 
@@ -29,20 +29,20 @@ func init() {
 
 	Quizzes.Lock()
 	Quizzes.Map = map[string]string{
-		"prefectures": "prefectures.json",
-		"insane": "insane.json",
-		"n3": "n3.json",
-		"kanken_1k": "kanken_1k.json",
-		"kanken_j1k": "kanken_j1k.json",
-		"yojijukugo": "yojijukugo.json",
-		"kanken_j2k": "kanken_j2k.json",
-		"kanken_2k": "kanken_2k.json",
-		"kanken_3k": "kanken_3k.json",
-		"kanken_4k": "kanken_4k.json",
-		"kanken_5k": "kanken_5k.json",
+		"prefectures":  "prefectures.json",
+		"insane":       "insane.json",
+		"n3":           "n3.json",
+		"kanken_1k":    "kanken_1k.json",
+		"kanken_j1k":   "kanken_j1k.json",
+		"yojijukugo":   "yojijukugo.json",
+		"kanken_j2k":   "kanken_j2k.json",
+		"kanken_2k":    "kanken_2k.json",
+		"kanken_3k":    "kanken_3k.json",
+		"kanken_4k":    "kanken_4k.json",
+		"kanken_5k":    "kanken_5k.json",
 		"kanken_6-10k": "kanken_6-10k.json",
-		"onago": "onago.json",
-		"kirakira": "kirakira-name.json",
+		"onago":        "onago.json",
+		"kirakira":     "kirakira-name.json",
 	}
 	Quizzes.Unlock()
 }

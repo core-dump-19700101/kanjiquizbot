@@ -1,16 +1,16 @@
 package main
 
 import (
+	"flag"
 	"fmt"
-	"strings"
-	"time"
+	"math/rand"
 	"os"
 	"os/signal"
-	"syscall"
-	"math/rand"
 	"sort"
+	"strings"
 	"sync"
-	"flag"
+	"syscall"
+	"time"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -38,7 +38,6 @@ func init() {
 
 }
 
-
 func main() {
 
 	// Make sure we start with a token supplied
@@ -54,7 +53,6 @@ func main() {
 		fmt.Println("ERROR, Failed to create Discord session:", err)
 		return
 	}
-
 
 	// Register the messageCreate func as a callback for MessageCreate events
 	session.AddHandler(messageCreate)
@@ -120,7 +118,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// Mostly a test to see if it reacts on mentions
 	for _, u := range m.Mentions {
 		if u.ID == s.State.User.ID {
-			msgSend(s, m, "何故にボク、" + m.Author.Mention() + "？！")
+			msgSend(s, m, "何故にボク、"+m.Author.Mention()+"？！")
 		}
 	}
 
@@ -146,7 +144,7 @@ func stopQuiz(s *discordgo.Session, m *discordgo.MessageCreate) {
 	var status string
 	if count == 1 {
 		status = "1 quiz"
-	} else if (count >= 2) {
+	} else if count >= 2 {
 		status = fmt.Sprintf("%d quizzes", count)
 	}
 
@@ -174,7 +172,7 @@ func startQuiz(s *discordgo.Session, m *discordgo.MessageCreate) (err error) {
 	var status string
 	if count == 1 {
 		status = "1 quiz"
-	} else if (count >= 2) {
+	} else if count >= 2 {
 		status = fmt.Sprintf("%d quizzes", count)
 	}
 
@@ -210,7 +208,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 
 	quiz := LoadQuiz(quizname)
 	if len(quiz) == 0 {
-		msgSend(s, m, "Failed to find quiz: " + quizname)
+		msgSend(s, m, "Failed to find quiz: "+quizname)
 		stopQuiz(s, m)
 		return
 	}
@@ -231,7 +229,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 		}
 
 		// Handle quiz aborts
-		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX + "quiz" {
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"quiz" {
 			quitchan <- struct{}{}
 			return
 		}
@@ -247,7 +245,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 
 outer:
 	for len(quiz) > 0 {
-		time.Sleep(5*time.Second)
+		time.Sleep(5 * time.Second)
 
 		// Grab new word from the quiz
 		var current Question
@@ -259,12 +257,12 @@ outer:
 		// Set timeout for no correct answers
 		timeout := time.After(20 * time.Second)
 
-inner:
+	inner:
 		for {
 
 			select {
 			case msg := <-c:
-				if (msg.Content == current.Reading) {
+				if msg.Content == current.Reading {
 					user := msg.Author
 					msgSend(s, m, fmt.Sprintf(":white_check_mark: %s is correct: **%s** (%s)", user.Mention(), current.Reading, current.Word))
 					players[user.ID]++
@@ -303,8 +301,8 @@ inner:
 	for i, p := range ranking(players) {
 		if i == 0 {
 			fields = append(fields, &discordgo.MessageEmbedField{
-				Name: "Winner",
-				Value: fmt.Sprintf("<@%s>: %d points", p.Name, p.Score),
+				Name:   "Winner",
+				Value:  fmt.Sprintf("<@%s>: %d points", p.Name, p.Score),
 				Inline: false,
 			})
 		} else {
@@ -314,21 +312,21 @@ inner:
 
 	if len(participants) > 0 {
 		fields = append(fields, &discordgo.MessageEmbedField{
-			Name: "Participants",
-			Value: participants,
+			Name:   "Participants",
+			Value:  participants,
 			Inline: false,
 		})
 	}
 
 	// Sleep for a little breathing room
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 
 	embed := &discordgo.MessageEmbed{
-		Type: "rich",
-		Title: "Final Quiz Scoreboard",
+		Type:        "rich",
+		Title:       "Final Quiz Scoreboard",
 		Description: "-------------------------",
-		Color: 0x33FF33,
-		Fields: fields,
+		Color:       0x33FF33,
+		Fields:      fields,
 	}
 
 	embedSend(s, m, embed)
@@ -338,7 +336,7 @@ inner:
 
 // Player type for ranking list
 type Player struct {
-	Name string
+	Name  string
 	Score int
 }
 
@@ -365,23 +363,23 @@ func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 // Send an image message to Discord
 func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 
-    image := GenerateImage(word)
+	image := GenerateImage(word)
 
-    _, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
-    if err != nil {
-        fmt.Println("ERROR, Could not send image:", err)
-        return
-    }
+	_, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
+	if err != nil {
+		fmt.Println("ERROR, Could not send image:", err)
+		return
+	}
 
 }
 
 // Send an embedded message type to Discord
 func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordgo.MessageEmbed) {
 
-    _, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
-    if err != nil {
-        fmt.Println("ERROR, Could not send embed:", err)
-        return
-    }
+	_, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
+	if err != nil {
+		fmt.Println("ERROR, Could not send embed:", err)
+		return
+	}
 
 }

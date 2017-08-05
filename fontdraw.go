@@ -1,13 +1,13 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"image"
 	"image/draw"
 	"image/png"
 	"io/ioutil"
 	"math"
-	"bytes"
 
 	"github.com/golang/freetype/truetype"
 	"golang.org/x/image/font"
@@ -15,11 +15,11 @@ import (
 )
 
 var (
-	fontDpi      = 72.0 // font DPI setting
-	fontFile = "meiryo.ttc" // TTF font filename
-	fontHinting  = "full" // none | full
-	fontSize     = 72.0 // font size in points
-	fontTtf *truetype.Font
+	fontDpi     = 72.0         // font DPI setting
+	fontFile    = "meiryo.ttc" // TTF font filename
+	fontHinting = "full"       // none | full
+	fontSize    = 72.0         // font size in points
+	fontTtf     *truetype.Font
 )
 
 func init() {
@@ -60,7 +60,7 @@ func GenerateImage(title string) *bytes.Buffer {
 
 	// Create image canvas
 	imgW := d.MeasureString(title).Round() * 11 / 10
-	imgH := int(math.Ceil(fontSize*fontDpi/72 * 1.1))
+	imgH := int(math.Ceil(fontSize * fontDpi / 72 * 1.1))
 
 	rgba := image.NewRGBA(image.Rect(0, 0, imgW, imgH))
 
@@ -71,7 +71,7 @@ func GenerateImage(title string) *bytes.Buffer {
 	d.Dst = rgba
 
 	// Figure out writing position
-	y := int(math.Ceil(fontSize*fontDpi/72 * 0.93))
+	y := int(math.Ceil(fontSize * fontDpi / 72 * 0.93))
 	d.Dot = fixed.Point26_6{
 		X: (fixed.I(imgW) - d.MeasureString(title)) / 2,
 		Y: fixed.I(y),
