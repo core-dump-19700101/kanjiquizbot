@@ -109,6 +109,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
 		}
+	case CMD_PREFIX + "status":
+		var status string
+		if len(input) >= 2 {
+			status = m.Content[len(command)+1:]
+		}
+		err := s.UpdateStatus(0, status)
+		if err != nil {
+			fmt.Println("ERROR, Could not update status:", err)
+		}
 	}
 
 	// Mostly a test to see if it reacts on mentions
@@ -128,14 +137,32 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 }
 
 // Stop ongoing quiz in given channel
-func stopQuiz(m *discordgo.MessageCreate) {
+func stopQuiz(s *discordgo.Session, m *discordgo.MessageCreate) {
+	count := 0
+
 	Ongoing.Lock()
 	delete(Ongoing.ChannelID, m.ChannelID)
+	count = len(Ongoing.ChannelID)
 	Ongoing.Unlock()
+
+	// Update bot's user status to reflect running quizzes
+	var status string
+	if count == 1 {
+		status = "1 quiz"
+	} else if (count >= 2) {
+		status = fmt.Sprintf("%d quizzes", count)
+	}
+
+	err := s.UpdateStatus(0, status)
+	if err != nil {
+		fmt.Println("ERROR, Could not update status:", err)
+	}
 }
 
 // Start ongoing quiz in given channel
-func startQuiz(m *discordgo.MessageCreate) (err error) {
+func startQuiz(s *discordgo.Session, m *discordgo.MessageCreate) (err error) {
+	count := 0
+
 	Ongoing.Lock()
 	_, exists := Ongoing.ChannelID[m.ChannelID]
 	if !exists {
@@ -143,7 +170,21 @@ func startQuiz(m *discordgo.MessageCreate) (err error) {
 	} else {
 		err = fmt.Errorf("Channel quiz already ongoing")
 	}
+	count = len(Ongoing.ChannelID)
 	Ongoing.Unlock()
+
+	// Update bot's user status to reflect running quizzes
+	var status string
+	if count == 1 {
+		status = "1 quiz"
+	} else if (count >= 2) {
+		status = fmt.Sprintf("%d quizzes", count)
+	}
+
+	err2 := s.UpdateStatus(0, status)
+	if err2 != nil {
+		fmt.Println("ERROR, Could not update status:", err2)
+	}
 
 	return
 }
@@ -161,7 +202,7 @@ func hasQuiz(m *discordgo.MessageCreate) bool {
 func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
 
 	// Mark the quiz as started
-	if err := startQuiz(m); err != nil {
+	if err := startQuiz(s, m); err != nil {
 		// Quiz already running, nothing to do here
 		return
 	}
@@ -173,7 +214,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 	quiz := LoadQuiz(quizname)
 	if len(quiz) == 0 {
 		msgSend(s, m, "Failed to find quiz: " + quizname)
-		stopQuiz(m)
+		stopQuiz(s, m)
 		return
 	}
 
@@ -295,7 +336,7 @@ inner:
 
 	embedSend(s, m, embed)
 
-	stopQuiz(m)
+	stopQuiz(s, m)
 }
 
 // Player type for ranking list
