@@ -17,93 +17,53 @@ import (
 	"github.com/bwmarrin/discordgo"
 )
 
-var Token = "MzQyODExMTg5OTkyMjI2ODI2.DGVDXA.ODuuJ5rKG2SYGXYbc3FWp_Ubsxo"
+// This bot's unique command prefix for message parsing
+const CMD_PREFIX "kq!"
 
-var quizzes = map[string]string{
-	"prefectures": "prefectures.json",
-	"insane": "insane.json",
-	"n3": "n3.json",
-	"kanken_1k": "kanken_1k.json",
-	"kanken_j1k": "kanken_j1k.json",
-	"yojijukugo": "yojijukugo.json",
-	"kanken_j2k": "kanken_j2k.json",
-	"kanken_2k": "kanken_2k.json",
-	"kanken_3k": "kanken_3k.json",
-	"kanken_4k": "kanken_4k.json",
-	"kanken_5k": "kanken_5k.json",
-	"kanken_6-10k": "kanken_6-10k.json",
-	"onago": "onago.json",
-	"kirakira": "kirakira-name.json",
-}
+// Discord Bot token
+var Token string
 
+// Ongoing keeps track of active quizzes and the channels they belong to
 var Ongoing struct {
 	sync.RWMutex
 	ChannelID map[string]bool
 }
 
-type Question struct {
-	Word string
-	Reading string
-}
+func init() {
 
-func loadQuiz(name string) (questions []Question) {
-
-	if filename, ok := quizzes[name]; ok {
-		file, err := ioutil.ReadFile(filename)
-		if err != nil {
-			fmt.Println("ERROR reading json: ", err)
-			return
-		}
-
-		err = json.Unmarshal(file, &questions)
-		if err != nil {
-			fmt.Println("ERROR unmarshalling json: ", err)
-			return
-		}
-	}
-
-	Shuffle(questions)
-
-	return
-}
-
-// Supposedly shuffles any slice, don't forget the seed first
-func Shuffle(slice interface{}) {
-    rv := reflect.ValueOf(slice)
-    swap := reflect.Swapper(slice)
-    length := rv.Len()
-    for i := length - 1; i > 0; i-- {
-            j := rand.Intn(i + 1)
-            swap(i, j)
-    }
-}
-
-func main() {
+	flag.StringVar(&Token, "t", "", "Bot Token")
+	flag.Parse()
 
 	// New seed for random in order to shuffle properly
 	rand.Seed(time.Now().UnixNano())
 	Ongoing.ChannelID = make(map[string]bool)
 
-	session, err := discordgo.New("Bot " + Token)
+}
+
+
+func main() {
+
+	// Initiate a new session using Bot Token for authentication
+	session, err := discordgo.New("Bot " + *Token)
 
 	if err != nil {
-		fmt.Println("Something went wrong: ", err)
+		fmt.Println("ERROR, Failed to create Discord session:", err)
 		return
 	}
 
 
-	// Register the messageCreate func as a callback for MessageCreate events.
+	// Register the messageCreate func as a callback for MessageCreate events
 	session.AddHandler(messageCreate)
 
-
+	// Open a websocket connection to Discord and begin listening
 	err = session.Open()
 	if err != nil {
-		fmt.Println("Something went wrong: ", err)
+		fmt.Println("ERROR, Couldn't open websocket connection:", err)
 		return
 	}
 
-	// Wait here until CTRL-C or other term signal is received.
-	fmt.Println("Bot is now running.  Press CTRL-C to exit.")
+	// Wait here until CTRL-C or other term signal is received
+	fmt.Println("NOTICE, Bot is now running. Press CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	<-sc
@@ -113,11 +73,11 @@ func main() {
 }
 
 // This function will be called (due to AddHandler above) every time a new
-// message is created on any channel that the autenticated bot has access to.
+// message is created on any channel that the autenticated bot has access to
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
-	// Ignore all messages created by the bot itself
-	// This isn't required in this specific example but it's a good practice.
+	// Ignore all messages created by the bot itself (or any bot)
+	// This isn't required in this specific example but it's a good practice
 	if m.Author.ID == s.State.User.ID || m.Author.Bot {
 		return
 	}
@@ -125,11 +85,12 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// Only react on #bot* channels
 	if ch, err := s.Channel(m.ChannelID); err != nil || !strings.HasPrefix(ch.Name, "bot") {
 		if err != nil {
-			fmt.Println("ERROR with bot channel stuff: ", err)
+			fmt.Println("ERROR, With bot channel stuff:", err)
 		}
 		return
 	}
 
+	// Split up the message to parse the input string
 	input := strings.Fields(strings.ToLower(strings.TrimSpace(m.Content)))
 	var command string
 	if len(input) >= 1 {
@@ -137,32 +98,22 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	switch command {
-	case "kq!help":
-		var quizlist []string
-		for k := range quizzes {
-			quizlist = append(quizlist, k)
-		}
-		sort.Strings(quizlist)
-		msgSend(s, m, "Available quizzes: ```" + strings.Join(quizlist, ", ") + "```\nUse `kq!quiz <name>` to start.")
-	case "kq!time":
-		_, err := s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("Time is: **%s** ", time.Now()))
-		if err != nil {
-			fmt.Println("Something went wrong: ", err)
-		}
-	case "kq!hello":
+	case CMD_PREFIX + "help":
+		showHelp(s, m)
+	case CMD_PREFIX + "time":
+		msgSend(s, m, fmt.Sprintf("Time is: **%s** ", time.Now().In(time.UTC)))
+	case CMD_PREFIX + "hello":
 		imgSend(s, m, "Hello!")
-	case "kq!quiz":
-		Ongoing.RLock()
-		if _, ok := Ongoing.ChannelID[m.ChannelID]; !ok {
-			quizname := "n3"
-			if len(input) == 2 {
-				quizname = input[1]
-			}
-			go runQuiz(s, m, quizname)
+	case CMD_PREFIX + "quiz":
+		if len(input) == 2 {
+			go runQuiz(s, m, input[1])
+		} else if !hasQuiz(m) {
+			// Show help unless already running, since that's handled elsewhere
+			showHelp(s, m)
 		}
-		Ongoing.RUnlock()
 	}
 
+	// Mostly a test to see if it reacts on mentions
 	for _, u := range m.Mentions {
 		if u.ID == s.State.User.ID {
 			msgSend(s, m, "何故にボク、" + m.Author.Mention() + "？！")
@@ -171,42 +122,69 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 }
 
+// Show bot help message in channel
+func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
+	quizlist := GetQuizlist()
+	sort.Strings(quizlist)
+	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name>` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
+}
+
+
+// Send given message to channel
 func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 	_, err := s.ChannelMessageSend(m.ChannelID, msg)
 	if err != nil {
-		fmt.Println("ERROR Message Send: ", err)
+		fmt.Println("ERROR, Message sending: ", err)
 	}
 }
 
+// Stop ongoing quiz in given channel
 func stopQuiz(m *discordgo.MessageCreate) {
-	// set Quizzing to zero time
 	Ongoing.Lock()
 	delete(Ongoing.ChannelID, m.ChannelID)
 	Ongoing.Unlock()
 }
 
+// Start ongoing quiz in given channel
+func startQuiz(m *discordgo.MessageCreate) (err error) {
+	Ongoing.Lock()
+	_, exists := Ongoing.ChannelID[m.ChannelID]
+	if !exists {
+		Ongoing.ChannelID[m.ChannelID] = true
+	} else {
+		err = fmt.Errorf("Channel quiz already ongoing")
+	}
+	Ongoing.Unlock()
+
+	return
+}
+
+// Checks if given channel has ongoing quiz
+func hasQuiz(m *discordgo.MessageCreate) bool {
+	Ongoing.RLock()
+	_, exists := Ongoing.ChannelID[m.ChannelID]
+	Ongoing.RUnlock()
+
+	return exists
+}
+
+// Run given quiz loop in given channel
 func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
 
-	// Already running?
-	Ongoing.RLock()
-	if _, ok := Ongoing.ChannelID[m.ChannelID]; ok {
-		Ongoing.RUnlock()
+	// Mark the quiz as started
+	if err := startQuiz(m); err != nil {
+		// Quiz already running, nothing to do here
 		return
 	}
-	Ongoing.RUnlock()
 
 	quizChannel := m.ChannelID
 	winlimit := 10
 	timeoutlimit := 5
 
-	Ongoing.Lock()
-	Ongoing.ChannelID[m.ChannelID] = true
-	Ongoing.Unlock()
-
-	quiz := loadQuiz(quizname)
+	quiz := LoadQuiz(quizname)
 	if len(quiz) == 0 {
-		stopQuiz(m)
 		msgSend(s, m, "Failed to find quiz: " + quizname)
+		stopQuiz(m)
 		return
 	}
 
@@ -226,7 +204,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 		}
 
 		// Handle quiz aborts
-		if strings.ToLower(strings.TrimSpace(m.Content)) == "kq!quiz" {
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX + "quiz" {
 			quitchan <- struct{}{}
 			return
 		}
@@ -276,7 +254,7 @@ inner:
 				msgSend(s, m, ":no_entry: Timed out!\nCorrect answer: **" + current.Reading + "** (" + current.Word + ")")
 				timeouts++
 				if timeouts >= timeoutlimit {
-					msgSend(s, m, "```Too many timeouts reached, aborting quiz.```")
+					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
 					break outer
 				}
 				break inner
@@ -334,11 +312,11 @@ inner:
 // Send an image message to Discord
 func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 
-    image := generateImage(word)
+    image := GenerateImage(word)
 
     _, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
     if err != nil {
-        fmt.Println("ERROR Could not send image:", err)
+        fmt.Println("ERROR, Could not send image:", err)
         return
     }
 
@@ -367,7 +345,7 @@ func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordg
 
     _, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
     if err != nil {
-        fmt.Println("ERROR Could not send embed:", err)
+        fmt.Println("ERROR, Could not send embed:", err)
         return
     }
 

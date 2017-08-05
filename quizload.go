@@ -35,7 +35,7 @@ function init() {
 
 	// TODO: Make it auto-search the quiz folder with filepath.Glob()
 
-	Quizzes.Unlock()
+	Quizzes.Lock()
 	Quizzes.Map = map[string]string{
 		"prefectures": "prefectures.json",
 		"insane": "insane.json",
@@ -52,14 +52,25 @@ function init() {
 		"onago": "onago.json",
 		"kirakira": "kirakira-name.json",
 	}
-	Quizzes.Lock()
+	Quizzes.Unlock()
+}
+
+func GetQuizlist() []string {
+	var quizlist []string
+	Quizzes.RLock()
+	for k := range Quizzes.Map {
+		quizlist = append(quizlist, k)
+	}
+	Quizzes.RUnlock()
+
+	return quizlist
 }
 
 func LoadQuiz(name string) (questions []Question) {
 
-	Quizzes.RUnlock()
-	filename, ok := Quizzes.Map[name]
 	Quizzes.RLock()
+	filename, ok := Quizzes.Map[name]
+	Quizzes.RUnlock()
 
 	if ok {
 		file, err := ioutil.ReadFile(QUIZ_FOLDER + filename)
