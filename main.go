@@ -240,6 +240,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) 
 
 	msgSend(s, m, fmt.Sprintf("```Starting new kanji quiz (%d words) in 5 seconds;\ngive your answer in hiragana!```", len(quiz)))
 
+	var quizhistory string
 	players := make(map[string]int)
 	var timeouts int
 
@@ -262,6 +263,9 @@ outer:
 
 		// Replace reading with hiragana-only version
 		current.Reading = strings.Map(k2h, current.Reading)
+
+		// Add word to quiz history
+		quizhistory += current.Word + "　"
 
 		// Send out quiz question
 		imgSend(s, m, current.Word)
@@ -335,10 +339,11 @@ outer:
 
 	embed := &discordgo.MessageEmbed{
 		Type:        "rich",
-		Title:       "Final Quiz Scoreboard",
-		Description: "-------------------------",
+		Title:       "Final Quiz Scoreboard: " + quizname,
+		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
+		Footer:      &discordgo.MessageEmbedFooter{Text: quizhistory},
 	}
 
 	embedSend(s, m, embed)
