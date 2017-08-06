@@ -48,6 +48,8 @@ func init() {
 		"n3":           "jlpt_n3.json",
 		"n4":           "jlpt_n4.json",
 		"n5":           "jlpt_n5.json",
+		"namae":        "namae.json",
+		"myouji":       "myouji.json",
 	}
 	Quizzes.Unlock()
 }
