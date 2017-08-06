@@ -109,16 +109,27 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		imgSend(s, m, "Hello!")
 	case CMD_PREFIX + "fast":
 		if len(input) == 2 {
-			go runFastQuiz(s, m, input[1])
+			go runQuiz(s, m, input[1], "", "0")
+		} else if len(input) == 3 {
+			go runQuiz(s, m, input[1], input[2], "0")
+		} else if !hasQuiz(m) {
+			// Show help unless already running, since that's handled elsewhere
+			showHelp(s, m)
+		}
+	case CMD_PREFIX + "slow":
+		if len(input) == 2 {
+			go runQuiz(s, m, input[1], "", "5000")
+		} else if len(input) == 3 {
+			go runQuiz(s, m, input[1], input[2], "5000")
 		} else if !hasQuiz(m) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
 		}
 	case CMD_PREFIX + "quiz":
 		if len(input) == 2 {
-			go runSlowQuiz(s, m, input[1], "")
+			go runQuiz(s, m, input[1], "", "")
 		} else if len(input) == 3 {
-			go runSlowQuiz(s, m, input[1], input[2])
+			go runQuiz(s, m, input[1], input[2], "")
 		} else if !hasQuiz(m) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
@@ -203,168 +214,8 @@ func hasQuiz(m *discordgo.MessageCreate) bool {
 	return exists
 }
 
-// Run fast given quiz loop in given channel
-func runFastQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
-
-	// Mark the quiz as started
-	if err := startQuiz(s, m); err != nil {
-		// Quiz already running, nothing to do here
-		return
-	}
-
-	quizChannel := m.ChannelID
-	winlimit := 10
-	timeoutlimit := 5
-
-	quiz := LoadQuiz(quizname)
-	if len(quiz) == 0 {
-		msgSend(s, m, "Failed to find quiz: "+quizname)
-		stopQuiz(s, m)
-		return
-	}
-
-	c := make(chan *discordgo.MessageCreate, 100)
-	quitchan := make(chan struct{}, 100)
-
-	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
-		// Ignore all messages created by the bot itself
-		// This isn't required in this specific example but it's a good practice.
-		if m.Author.ID == s.State.User.ID || m.Author.Bot {
-			return
-		}
-
-		// Only react on current quiz channel
-		if m.ChannelID != quizChannel {
-			return
-		}
-
-		// Handle quiz aborts
-		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"quiz" {
-			quitchan <- struct{}{}
-			return
-		}
-
-		// Relay the message to the quiz loop
-		c <- m
-	})
-
-	msgSend(s, m, fmt.Sprintf("```Starting new kanji quiz (%d words) in 5 seconds;\ngive your answer in hiragana!```", len(quiz)))
-
-	var quizhistory string
-	players := make(map[string]int)
-	var timeouts int
-
-	// Helper function to force katakana to hiragana conversion
-	k2h := func(r rune) rune {
-		switch {
-		case r >= 'ァ' && r <= 'ヶ':
-			return r - 0x60
-		}
-		return r
-	}
-
-outer:
-	for len(quiz) > 0 {
-		time.Sleep(5 * time.Second)
-
-		// Grab new word from the quiz
-		var current Question
-		current, quiz = quiz[len(quiz)-1], quiz[:len(quiz)-1]
-
-		// Replace reading with hiragana-only version
-		current.Reading = strings.Map(k2h, current.Reading)
-
-		// Add word to quiz history
-		quizhistory += current.Word + "　"
-
-		// Send out quiz question
-		imgSend(s, m, current.Word)
-
-		// Set timeout for no correct answers
-		timeout := time.After(20 * time.Second)
-
-	inner:
-		for {
-
-			select {
-			case msg := <-c:
-				if msg.Content == current.Reading {
-					user := msg.Author
-					msgSend(s, m, fmt.Sprintf(":white_check_mark: %s is correct: **%s** (%s)", user.Mention(), current.Reading, current.Word))
-					players[user.ID]++
-
-					if players[user.ID] >= winlimit {
-						break outer
-					}
-
-					// Reset timeouts since we're active
-					timeouts = 0
-					break inner
-				}
-			case <-timeout:
-				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
-				timeouts++
-				if timeouts >= timeoutlimit {
-					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
-					break outer
-				}
-				break inner
-			case <-quitchan:
-				break outer
-			}
-		}
-	}
-
-	// Clean up
-	killHandler()
-	close(c)
-	close(quitchan)
-
-	// Produce scoreboard
-	fields := make([]*discordgo.MessageEmbedField, 0, len(players))
-	var participants string
-
-	for i, p := range ranking(players) {
-		if i == 0 {
-			fields = append(fields, &discordgo.MessageEmbedField{
-				Name:   "Winner",
-				Value:  fmt.Sprintf("<@%s>: %d points", p.Name, p.Score),
-				Inline: false,
-			})
-		} else {
-			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)
-		}
-	}
-
-	if len(participants) > 0 {
-		fields = append(fields, &discordgo.MessageEmbedField{
-			Name:   "Participants",
-			Value:  participants,
-			Inline: false,
-		})
-	}
-
-	// Sleep for a little breathing room
-	time.Sleep(1 * time.Second)
-
-	embed := &discordgo.MessageEmbed{
-		Type:        "rich",
-		Title:       "Final Quiz Scoreboard: " + quizname,
-		Description: "-------------------------------",
-		Color:       0x33FF33,
-		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: quizhistory},
-	}
-
-	embedSend(s, m, embed)
-
-	stopQuiz(s, m)
-}
-
-
-
 // Run slow given quiz loop in given channel
-func runSlowQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string) {
+func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string, waitTimeGiven string) {
 
 	// Mark the quiz as started
 	if err := startQuiz(s, m); err != nil {
@@ -373,15 +224,22 @@ func runSlowQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 	}
 
 	quizChannel := m.ChannelID
-	winLimit := 15 // winner score
-	timeout := 20 // seconds to wait per round
-	timeoutLimit := 5 // count before aborting
-	waitTime := 1000 * time.Millisecond // delay before closing round
+	winLimit := 15                      // winner score
+	timeout := 20                       // seconds to wait per round
+	timeoutLimit := 5                   // count before aborting
+	waitTime := 1250 * time.Millisecond // delay before closing round
 
 	// Parse provided winLimit with sane defaults
 	if i, err := strconv.Atoi(winLimitGiven); err == nil {
 		if i <= 100 && i > 0 {
 			winLimit = i
+		}
+	}
+
+	// Parse provided waitTime with sane defaults
+	if i, err := strconv.Atoi(waitTimeGiven); err == nil {
+		if i <= 20000 && i >= 0 {
+			waitTime = time.Duration(i) * time.Millisecond
 		}
 	}
 
@@ -459,6 +317,20 @@ outer:
 		for {
 
 			select {
+			case <-quitChan:
+				break outer
+			case <-timeoutChan.C:
+				if len(scoreKeeper) > 0 {
+					break inner
+				}
+
+				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
+				timeoutCount++
+				if timeoutCount >= timeoutLimit {
+					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
+					break outer
+				}
+				break inner
 			case msg := <-c:
 				user := msg.Author
 				if msg.Content == current.Reading {
@@ -474,20 +346,6 @@ outer:
 					// Reset timeouts since we're active
 					timeoutCount = 0
 				}
-			case <-timeoutChan.C:
-				if len(scoreKeeper) > 0 {
-					break inner
-				}
-
-				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
-				timeoutCount++
-				if timeoutCount >= timeoutLimit {
-					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
-					break outer
-				}
-				break inner
-			case <-quitChan:
-				break outer
 			}
 		}
 
@@ -507,7 +365,7 @@ outer:
 
 			var extras string
 			if len(scoreKeeper) > 1 {
-				extras = fmt.Sprintf(" (+%d)", len(scoreKeeper) - 1)
+				extras = fmt.Sprintf(" (+%d)", len(scoreKeeper)-1)
 			}
 
 			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, current.Reading, current.Word))
