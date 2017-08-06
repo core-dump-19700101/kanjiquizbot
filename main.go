@@ -149,7 +149,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
-	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name>` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
+	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name> [maxscore]` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
 }
 
 // Stop ongoing quiz in given channel
