@@ -7,6 +7,7 @@ import (
 	"os"
 	"os/signal"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"syscall"
@@ -106,9 +107,18 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		msgSend(s, m, fmt.Sprintf("Time is: **%s** ", time.Now().In(time.UTC)))
 	case CMD_PREFIX + "hello":
 		imgSend(s, m, "Hello!")
+	case CMD_PREFIX + "fast":
+		if len(input) == 2 {
+			go runFastQuiz(s, m, input[1])
+		} else if !hasQuiz(m) {
+			// Show help unless already running, since that's handled elsewhere
+			showHelp(s, m)
+		}
 	case CMD_PREFIX + "quiz":
 		if len(input) == 2 {
-			go runQuiz(s, m, input[1])
+			go runSlowQuiz(s, m, input[1], "")
+		} else if len(input) == 3 {
+			go runSlowQuiz(s, m, input[1], input[2])
 		} else if !hasQuiz(m) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
@@ -193,8 +203,8 @@ func hasQuiz(m *discordgo.MessageCreate) bool {
 	return exists
 }
 
-// Run given quiz loop in given channel
-func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
+// Run fast given quiz loop in given channel
+func runFastQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
 
 	// Mark the quiz as started
 	if err := startQuiz(s, m); err != nil {
@@ -344,6 +354,213 @@ outer:
 		Color:       0x33FF33,
 		Fields:      fields,
 		Footer:      &discordgo.MessageEmbedFooter{Text: quizhistory},
+	}
+
+	embedSend(s, m, embed)
+
+	stopQuiz(s, m)
+}
+
+
+
+// Run slow given quiz loop in given channel
+func runSlowQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string) {
+
+	// Mark the quiz as started
+	if err := startQuiz(s, m); err != nil {
+		// Quiz already running, nothing to do here
+		return
+	}
+
+	quizChannel := m.ChannelID
+	winLimit := 15 // winner score
+	timeout := 20 // seconds to wait per round
+	timeoutLimit := 5 // count before aborting
+	waitTime := 1000 * time.Millisecond // delay before closing round
+
+	// Parse provided winLimit with sane defaults
+	if i, err := strconv.Atoi(winLimitGiven); err == nil {
+		if i <= 100 && i > 0 {
+			winLimit = i
+		}
+	}
+
+	quiz := LoadQuiz(quizname)
+	if len(quiz) == 0 {
+		msgSend(s, m, "Failed to find quiz: "+quizname)
+		stopQuiz(s, m)
+		return
+	}
+
+	c := make(chan *discordgo.MessageCreate, 100)
+	quitChan := make(chan struct{}, 100)
+
+	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
+		// Ignore all messages created by the bot itself
+		// This isn't required in this specific example but it's a good practice.
+		if m.Author.ID == s.State.User.ID || m.Author.Bot {
+			return
+		}
+
+		// Only react on current quiz channel
+		if m.ChannelID != quizChannel {
+			return
+		}
+
+		// Handle quiz aborts
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"quiz" {
+			quitChan <- struct{}{}
+			return
+		}
+
+		// Relay the message to the quiz loop
+		c <- m
+	})
+
+	msgSend(s, m, fmt.Sprintf("```Starting new kanji quiz (%d words) in 5 seconds;\ngive your answer in HIRAGANA! First to %d points wins.```", len(quiz), winLimit))
+
+	var quizHistory string
+	players := make(map[string]int)
+	var timeoutCount int
+
+	// Helper function to force katakana to hiragana conversion
+	k2h := func(r rune) rune {
+		switch {
+		case r >= 'ァ' && r <= 'ヶ':
+			return r - 0x60
+		}
+		return r
+	}
+
+outer:
+	for len(quiz) > 0 {
+		time.Sleep(5 * time.Second)
+
+		// Grab new word from the quiz
+		var current Question
+		current, quiz = quiz[len(quiz)-1], quiz[:len(quiz)-1]
+
+		// Replace reading with hiragana-only version
+		current.Reading = strings.Map(k2h, current.Reading)
+
+		// Add word to quiz history
+		quizHistory += current.Word + "　" // Japanese space (wider)
+
+		// Round's score keeper
+		scoreKeeper := make(map[string]int)
+
+		// Send out quiz question
+		imgSend(s, m, current.Word)
+
+		// Set timeout for no correct answers
+		timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
+
+	inner:
+		for {
+
+			select {
+			case msg := <-c:
+				user := msg.Author
+				if msg.Content == current.Reading {
+					if len(scoreKeeper) == 0 {
+						timeoutChan.Reset(waitTime)
+					}
+
+					// Make sure we don't add the same user again
+					if _, exists := scoreKeeper[user.ID]; !exists {
+						scoreKeeper[user.ID] = len(scoreKeeper) + 1
+					}
+
+					// Reset timeouts since we're active
+					timeoutCount = 0
+				}
+			case <-timeoutChan.C:
+				if len(scoreKeeper) > 0 {
+					break inner
+				}
+
+				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
+				timeoutCount++
+				if timeoutCount >= timeoutLimit {
+					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
+					break outer
+				}
+				break inner
+			case <-quitChan:
+				break outer
+			}
+		}
+
+		if len(scoreKeeper) > 0 {
+
+			winnerExists := false
+			var fastest string
+			for player, position := range scoreKeeper {
+				players[player]++
+				if position == 1 {
+					fastest = player
+				}
+				if players[player] >= winLimit {
+					winnerExists = true
+				}
+			}
+
+			var extras string
+			if len(scoreKeeper) > 1 {
+				extras = fmt.Sprintf(" (+%d)", len(scoreKeeper) - 1)
+			}
+
+			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, current.Reading, current.Word))
+
+			if winnerExists {
+				break outer
+			}
+		}
+
+	}
+
+	// Clean up
+	killHandler()
+
+	// Produce scoreboard
+	fields := make([]*discordgo.MessageEmbedField, 0, 2)
+	var winners string
+	var participants string
+
+	for _, p := range ranking(players) {
+		if p.Score >= winLimit {
+			winners += fmt.Sprintf("<@%s>: %d points\n", p.Name, p.Score)
+		} else {
+			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)
+		}
+	}
+
+	if len(winners) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Winner",
+			Value:  winners,
+			Inline: false,
+		})
+	}
+
+	if len(participants) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Participants",
+			Value:  participants,
+			Inline: false,
+		})
+	}
+
+	// Sleep for a little breathing room
+	time.Sleep(1 * time.Second)
+
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       "Final Quiz Scoreboard: " + quizname,
+		Description: "-------------------------------",
+		Color:       0x33FF33,
+		Fields:      fields,
+		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
 	}
 
 	embedSend(s, m, embed)
