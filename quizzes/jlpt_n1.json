@@ -1960,7 +1960,7 @@
 	{ "Word": "潮", "Reading": "うしお" },
 	{ "Word": "澄ます", "Reading": "すます" },
 	{ "Word": "激励", "Reading": "げきれい" },
-	{ "Word": "濠", "Reading": "ごう" },
+	{ "Word": "豪", "Reading": "ごう" },
 	{ "Word": "濫用", "Reading": "らんよう" },
 	{ "Word": "濯ぐ", "Reading": "すすぐ" },
 	{ "Word": "火傷", "Reading": "かしょう" },
@@ -3128,7 +3128,8 @@
 	{ "Word": "黄金", "Reading": "おうごん" },
 	{ "Word": "黒字", "Reading": "くろじ" },
 	{ "Word": "黴菌", "Reading": "ばいきん" },
-	{ "Word": "鼠", "Reading": "ねず" },
+	{ "Word": "鼠", "Reading": "ねずみ" },
 	{ "Word": "鼾", "Reading": "いびき" },
-	{ "Word": "齎らす", "Reading": "もたらす" }
+	{ "Word": "齎らす", "Reading": "もたらす" },
+	{ "Word": "諺", "Reading": "ことわざ" }
 ]
