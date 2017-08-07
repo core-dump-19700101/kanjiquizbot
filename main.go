@@ -28,6 +28,12 @@ var Ongoing struct {
 	ChannelID map[string]bool
 }
 
+// Bot owner account
+var Owner *discordgo.User
+
+// Bot startup time
+var TimeStarted = time.Now()
+
 func init() {
 
 	flag.StringVar(&Token, "t", "", "Bot Token")
@@ -65,6 +71,14 @@ func main() {
 		return
 	}
 
+	// Figure out the owner of the bot for admin commands
+	app, err := session.Application("@me")
+	if err != nil {
+		fmt.Println("ERROR, Couldn't get app:", err)
+		return
+	}
+	Owner = app.Owner
+
 	// Wait here until CTRL-C or other term signal is received
 	fmt.Println("NOTICE, Bot is now running. Press CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
@@ -79,9 +93,23 @@ func main() {
 // message is created on any channel that the autenticated bot has access to
 func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
-	// Ignore all messages created by the bot itself (or any bot)
-	// This isn't required in this specific example but it's a good practice
-	if m.Author.ID == s.State.User.ID || m.Author.Bot {
+	// Handle bot's own ping-pong messages
+	if m.Author.ID == s.State.User.ID && strings.HasPrefix(m.Content, "Latency:") {
+		parts := strings.Fields(m.Content)
+		if len(parts) == 2 {
+			oldtime, err := strconv.Atoi(parts[1])
+			if err != nil {
+				fmt.Println("ERROR, With bot ping:", err)
+			}
+
+			t := time.Since(time.Unix(0, int64(oldtime)))
+			t -= t % time.Millisecond
+			msgEdit(s, m, fmt.Sprintf("Latency: **%s** ", t))
+		}
+	}
+
+	// Ignore all messages created bots
+	if m.Author.Bot {
 		return
 	}
 
@@ -103,8 +131,18 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	switch command {
 	case CMD_PREFIX + "help":
 		showHelp(s, m)
+	case CMD_PREFIX + "uptime":
+		if m.Author.ID == Owner.ID {
+			t := time.Since(TimeStarted)
+			t -= t % time.Second
+			msgSend(s, m, fmt.Sprintf("Uptime: **%s** ", t))
+		} else {
+			msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+		}
+	case CMD_PREFIX + "ping":
+		msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 	case CMD_PREFIX + "time":
-		msgSend(s, m, fmt.Sprintf("Time is: **%s** ", time.Now().In(time.UTC)))
+		msgSend(s, m, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
 	case CMD_PREFIX + "hello":
 		imgSend(s, m, "Hello!")
 	case CMD_PREFIX + "fast":
@@ -149,7 +187,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
-	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name> [maxscore]` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
+	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name> [max score]` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
 }
 
 // Stop ongoing quiz in given channel
@@ -474,4 +512,12 @@ func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordg
 		return
 	}
 
+}
+
+// Edit a given message on a channel
+func msgEdit(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
+	_, err := s.ChannelMessageEdit(m.ChannelID, m.ID, msg)
+	if err != nil {
+		fmt.Println("ERROR, Could not edit message: ", err)
+	}
 }
