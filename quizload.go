@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
+	"log"
 	"math/rand"
 	"reflect"
 	"sync"
@@ -80,13 +80,13 @@ func LoadQuiz(name string) (questions []Question) {
 	if ok {
 		file, err := ioutil.ReadFile(QUIZ_FOLDER + filename)
 		if err != nil {
-			fmt.Println("ERROR, Reading json: ", err)
+			log.Println("ERROR, Reading json: ", err)
 			return
 		}
 
 		err = json.Unmarshal(file, &questions)
 		if err != nil {
-			fmt.Println("ERROR, Unmarshalling json: ", err)
+			log.Println("ERROR, Unmarshalling json: ", err)
 			return
 		}
 	}

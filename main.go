@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"math/rand"
 	"os"
 	"os/signal"
@@ -57,7 +58,7 @@ func main() {
 	session, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
-		fmt.Println("ERROR, Failed to create Discord session:", err)
+		log.Println("ERROR, Failed to create Discord session:", err)
 		return
 	}
 
@@ -67,20 +68,20 @@ func main() {
 	// Open a websocket connection to Discord and begin listening
 	err = session.Open()
 	if err != nil {
-		fmt.Println("ERROR, Couldn't open websocket connection:", err)
+		log.Println("ERROR, Couldn't open websocket connection:", err)
 		return
 	}
 
 	// Figure out the owner of the bot for admin commands
 	app, err := session.Application("@me")
 	if err != nil {
-		fmt.Println("ERROR, Couldn't get app:", err)
+		log.Println("ERROR, Couldn't get app:", err)
 		return
 	}
 	Owner = app.Owner
 
 	// Wait here until CTRL-C or other term signal is received
-	fmt.Println("NOTICE, Bot is now running. Press CTRL-C to exit.")
+	log.Println("NOTICE, Bot is now running. Press CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	<-sc
@@ -99,7 +100,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		if len(parts) == 2 {
 			oldtime, err := strconv.Atoi(parts[1])
 			if err != nil {
-				fmt.Println("ERROR, With bot ping:", err)
+				log.Println("ERROR, With bot ping:", err)
 			}
 
 			t := time.Since(time.Unix(0, int64(oldtime)))
@@ -116,7 +117,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// Only react on #bot* channels
 	if ch, err := s.Channel(m.ChannelID); err != nil || !strings.HasPrefix(ch.Name, "bot") {
 		if err != nil {
-			fmt.Println("ERROR, With bot channel stuff:", err)
+			log.Println("ERROR, With bot channel stuff:", err)
 		}
 		return
 	}
@@ -209,7 +210,7 @@ func stopQuiz(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	err := s.UpdateStatus(0, status)
 	if err != nil {
-		fmt.Println("ERROR, Could not update status:", err)
+		log.Println("ERROR, Could not update status:", err)
 	}
 }
 
@@ -237,7 +238,7 @@ func startQuiz(s *discordgo.Session, m *discordgo.MessageCreate) (err error) {
 
 	err2 := s.UpdateStatus(0, status)
 	if err2 != nil {
-		fmt.Println("ERROR, Could not update status:", err2)
+		log.Println("ERROR, Could not update status:", err2)
 	}
 
 	return
@@ -486,7 +487,7 @@ func ranking(players map[string]int) (result []Player) {
 func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 	_, err := s.ChannelMessageSend(m.ChannelID, msg)
 	if err != nil {
-		fmt.Println("ERROR, Could not send message: ", err)
+		log.Println("ERROR, Could not send message: ", err)
 	}
 }
 
@@ -497,7 +498,7 @@ func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 
 	_, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
 	if err != nil {
-		fmt.Println("ERROR, Could not send image:", err)
+		log.Println("ERROR, Could not send image:", err)
 		return
 	}
 
@@ -508,7 +509,7 @@ func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordg
 
 	_, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
 	if err != nil {
-		fmt.Println("ERROR, Could not send embed:", err)
+		log.Println("ERROR, Could not send embed:", err)
 		return
 	}
 
@@ -518,6 +519,6 @@ func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordg
 func msgEdit(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 	_, err := s.ChannelMessageEdit(m.ChannelID, m.ID, msg)
 	if err != nil {
-		fmt.Println("ERROR, Could not edit message: ", err)
+		log.Println("ERROR, Could not edit message: ", err)
 	}
 }
