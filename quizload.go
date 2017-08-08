@@ -54,6 +54,7 @@ func init() {
 		"namae":        "namae.json",
 		"myouji":       "myouji.json",
 		"r18":          "r18.json",
+		"niconico":     "niconico-170806.json",
 	}
 	Quizzes.Unlock()
 }
