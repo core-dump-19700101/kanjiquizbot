@@ -3,10 +3,13 @@ Kanji Quiz Bot for Discord written in Go
 
 Quiz data is stored in .json files inside the quizzes folder. The format used is:
 ```
-[
-	{"Word":"瑰麗", "Reading":"かいれい"},
-	{"Word":"烏鵲", "Reading":"うじゃく"}
-]
+{
+	"description": "Test deck number one",
+	"deck": [
+		{"question": "未来",	"answers": [ "みらい" ] },
+		{"question": "On-yomi for 回",	"answers": [ "え", "かい" ] }
+	]
+}
 ```
 
 Use this URL to invite your bot to a server:  
