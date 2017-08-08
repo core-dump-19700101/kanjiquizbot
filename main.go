@@ -58,27 +58,24 @@ func main() {
 	session, err := discordgo.New("Bot " + Token)
 
 	if err != nil {
-		log.Println("ERROR, Failed to create Discord session:", err)
-		return
+		log.Fatalln("ERROR, Failed to create Discord session:", err)
 	}
-
-	// Register the messageCreate func as a callback for MessageCreate events
-	session.AddHandler(messageCreate)
 
 	// Open a websocket connection to Discord and begin listening
 	err = session.Open()
 	if err != nil {
-		log.Println("ERROR, Couldn't open websocket connection:", err)
-		return
+		log.Fatalln("ERROR, Couldn't open websocket connection:", err)
 	}
 
 	// Figure out the owner of the bot for admin commands
 	app, err := session.Application("@me")
 	if err != nil {
-		log.Println("ERROR, Couldn't get app:", err)
-		return
+		log.Fatalln("ERROR, Couldn't get app:", err)
 	}
 	Owner = app.Owner
+
+	// Register the messageCreate func as a callback for MessageCreate events
+	session.AddHandler(messageCreate)
 
 	// Wait here until CTRL-C or other term signal is received
 	log.Println("NOTICE, Bot is now running. Press CTRL-C to exit.")
@@ -109,7 +106,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		}
 	}
 
-	// Ignore all messages created bots
+	// Ignore all messages created bots to avoid loops
 	if m.Author.Bot {
 		return
 	}
@@ -151,6 +148,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			go runQuiz(s, m, input[1], "", "0")
 		} else if len(input) == 3 {
 			go runQuiz(s, m, input[1], input[2], "0")
+		} else if !hasQuiz(m) {
+			// Show help unless already running, since that's handled elsewhere
+			showHelp(s, m)
+		}
+	case CMD_PREFIX + "mild":
+		if len(input) == 2 {
+			go runQuiz(s, m, input[1], "", "2500")
+		} else if len(input) == 3 {
+			go runQuiz(s, m, input[1], input[2], "2500")
 		} else if !hasQuiz(m) {
 			// Show help unless already running, since that's handled elsewhere
 			showHelp(s, m)
