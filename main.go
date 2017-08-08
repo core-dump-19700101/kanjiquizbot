@@ -18,7 +18,7 @@ import (
 )
 
 // This bot's unique command prefix for message parsing
-const CMD_PREFIX = "kq!"
+const CMD_PREFIX = "bug!"
 
 // Discord Bot token
 var Token string

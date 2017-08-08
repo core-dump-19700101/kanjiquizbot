@@ -2,11 +2,11 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"image"
 	"image/draw"
 	"image/png"
 	"io/ioutil"
+	"log"
 	"math"
 
 	"github.com/golang/freetype/truetype"
@@ -26,13 +26,11 @@ func init() {
 	// Read the font data
 	fontBytes, err := ioutil.ReadFile(fontFile)
 	if err != nil {
-		fmt.Println("ERROR, Loading font:", err)
-		return
+		log.Fatalln("ERROR, Loading font:", err)
 	}
 	fontTtf, err = truetype.Parse(fontBytes)
 	if err != nil {
-		fmt.Println("ERROR, Parsing font:", err)
-		return
+		log.Fatalln("ERROR, Parsing font:", err)
 	}
 }
 
@@ -84,7 +82,7 @@ func GenerateImage(title string) *bytes.Buffer {
 	var buf bytes.Buffer
 	err := png.Encode(&buf, rgba)
 	if err != nil {
-		fmt.Println("ERROR, Encoding PNG:", err)
+		log.Println("ERROR, Encoding PNG:", err)
 		return &buf
 	}
 
