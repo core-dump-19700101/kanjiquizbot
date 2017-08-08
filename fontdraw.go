@@ -58,7 +58,7 @@ func GenerateImage(title string) *bytes.Buffer {
 
 	// Create image canvas
 	imgW := d.MeasureString(title).Round() * 11 / 10
-	imgH := int(math.Ceil(fontSize * fontDpi / 72 * 1.15))
+	imgH := int(math.Ceil(fontSize * fontDpi / 72 * 1.18))
 
 	rgba := image.NewRGBA(image.Rect(0, 0, imgW, imgH))
 
@@ -69,7 +69,7 @@ func GenerateImage(title string) *bytes.Buffer {
 	d.Dst = rgba
 
 	// Figure out writing position
-	y := int(math.Ceil(fontSize * fontDpi / 72 * 0.91))
+	y := int(math.Ceil(fontSize * fontDpi / 72 * 0.94))
 	d.Dot = fixed.Point26_6{
 		X: (fixed.I(imgW) - d.MeasureString(title)) / 2,
 		Y: fixed.I(y),

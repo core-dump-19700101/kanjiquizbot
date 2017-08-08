@@ -311,7 +311,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 		c <- m
 	})
 
-	msgSend(s, m, fmt.Sprintf("```Starting new kanji quiz (%d words) in 5 seconds;\ngive your answer in HIRAGANA! First to %d points wins.```", len(quiz), winLimit))
+	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds;\ngive your answer in HIRAGANA! First to %d points wins.```", quizname, len(quiz), winLimit))
 
 	var quizHistory string
 	players := make(map[string]int)
