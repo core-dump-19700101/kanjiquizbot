@@ -18,7 +18,7 @@ import (
 )
 
 // This bot's unique command prefix for message parsing
-const CMD_PREFIX = "bug!"
+const CMD_PREFIX = "kq!"
 
 // Discord Bot token
 var Token string
@@ -29,11 +29,12 @@ var Ongoing struct {
 	ChannelID map[string]bool
 }
 
-// Bot owner account
-var Owner *discordgo.User
-
-// Bot startup time
-var TimeStarted = time.Now()
+// General bot settings (READ ONLY)
+var Settings struct {
+	Owner       *discordgo.User // Bot owner account
+	TimeStarted time.Time       // Bot startup time
+	Speed       map[string]int  // Quiz game speed in ms
+}
 
 func init() {
 
@@ -42,6 +43,15 @@ func init() {
 
 	// New seed for random in order to shuffle properly
 	rand.Seed(time.Now().UnixNano())
+
+	// Initialize settings
+	Settings.TimeStarted = time.Now()
+	Settings.Speed = map[string]int{
+		"fast": 0,
+		"quiz": 1250,
+		"mild": 2500,
+		"slow": 5000,
+	}
 	Ongoing.ChannelID = make(map[string]bool)
 
 }
@@ -72,7 +82,7 @@ func main() {
 	if err != nil {
 		log.Fatalln("ERROR, Couldn't get app:", err)
 	}
-	Owner = app.Owner
+	Settings.Owner = app.Owner
 
 	// Register the messageCreate func as a callback for MessageCreate events
 	session.AddHandler(messageCreate)
@@ -119,65 +129,44 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	// Split up the message to parse the input string
-	input := strings.Fields(strings.ToLower(strings.TrimSpace(m.Content)))
-	var command string
-	if len(input) >= 1 {
-		command = input[0]
-	}
+	// Handle bot commmands
+	if strings.HasPrefix(m.Content, CMD_PREFIX) {
 
-	switch command {
-	case CMD_PREFIX + "help":
-		showHelp(s, m)
-	case CMD_PREFIX + "uptime":
-		if m.Author.ID == Owner.ID {
-			t := time.Since(TimeStarted)
-			t -= t % time.Second
-			msgSend(s, m, fmt.Sprintf("Uptime: **%s** ", t))
-		} else {
-			msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+		// Split up the message to parse the input string
+		input := strings.Fields(strings.ToLower(strings.TrimSpace(m.Content)))
+		var command string
+		if len(input) >= 1 {
+			command = input[0][len(CMD_PREFIX):]
 		}
-	case CMD_PREFIX + "ping":
-		msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
-	case CMD_PREFIX + "time":
-		msgSend(s, m, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
-	case CMD_PREFIX + "hello":
-		imgSend(s, m, "Hello!")
-	case CMD_PREFIX + "fast":
-		if len(input) == 2 {
-			go runQuiz(s, m, input[1], "", "0")
-		} else if len(input) == 3 {
-			go runQuiz(s, m, input[1], input[2], "0")
-		} else if !hasQuiz(m) {
-			// Show help unless already running, since that's handled elsewhere
+
+		switch command {
+		case "help":
 			showHelp(s, m)
-		}
-	case CMD_PREFIX + "mild":
-		if len(input) == 2 {
-			go runQuiz(s, m, input[1], "", "2500")
-		} else if len(input) == 3 {
-			go runQuiz(s, m, input[1], input[2], "2500")
-		} else if !hasQuiz(m) {
-			// Show help unless already running, since that's handled elsewhere
-			showHelp(s, m)
-		}
-	case CMD_PREFIX + "slow":
-		if len(input) == 2 {
-			go runQuiz(s, m, input[1], "", "5000")
-		} else if len(input) == 3 {
-			go runQuiz(s, m, input[1], input[2], "5000")
-		} else if !hasQuiz(m) {
-			// Show help unless already running, since that's handled elsewhere
-			showHelp(s, m)
-		}
-	case CMD_PREFIX + "quiz":
-		if len(input) == 2 {
-			go runQuiz(s, m, input[1], "", "")
-		} else if len(input) == 3 {
-			go runQuiz(s, m, input[1], input[2], "")
-		} else if !hasQuiz(m) {
-			// Show help unless already running, since that's handled elsewhere
-			showHelp(s, m)
+		case "uptime":
+			if m.Author.ID == Settings.Owner.ID {
+				t := time.Since(Settings.TimeStarted)
+				t -= t % time.Second
+				msgSend(s, m, fmt.Sprintf("Uptime: **%s** ", t))
+			} else {
+				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+			}
+		case "ping":
+			msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
+		case "time":
+			msgSend(s, m, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
+		case "hello":
+			imgSend(s, m, "Hello!")
+		case "fast", "mild", "slow":
+			fallthrough
+		case "quiz":
+			if len(input) == 2 {
+				go runQuiz(s, m, input[1], "", Settings.Speed[command])
+			} else if len(input) == 3 {
+				go runQuiz(s, m, input[1], input[2], Settings.Speed[command])
+			} else {
+				// Show if no quiz specified
+				showHelp(s, m)
+			}
 		}
 	}
 
@@ -260,7 +249,7 @@ func hasQuiz(m *discordgo.MessageCreate) bool {
 }
 
 // Run slow given quiz loop in given channel
-func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string, waitTimeGiven string) {
+func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string, waitTimeGiven int) {
 
 	// Mark the quiz as started
 	if err := startQuiz(s, m); err != nil {
@@ -269,22 +258,17 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 	}
 
 	quizChannel := m.ChannelID
-	winLimit := 15                      // winner score
-	timeout := 20                       // seconds to wait per round
-	timeoutLimit := 5                   // count before aborting
-	waitTime := 1250 * time.Millisecond // delay before closing round
+	winLimit := 15    // winner score
+	timeout := 20     // seconds to wait per round
+	timeoutLimit := 5 // count before aborting
+
+	// Set delay before closing round
+	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
 
 	// Parse provided winLimit with sane defaults
 	if i, err := strconv.Atoi(winLimitGiven); err == nil {
 		if i <= 100 && i > 0 {
 			winLimit = i
-		}
-	}
-
-	// Parse provided waitTime with sane defaults
-	if i, err := strconv.Atoi(waitTimeGiven); err == nil {
-		if i <= 20000 && i >= 0 {
-			waitTime = time.Duration(i) * time.Millisecond
 		}
 	}
 
@@ -299,8 +283,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 	quitChan := make(chan struct{}, 100)
 
 	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
-		// Ignore all messages created by the bot itself
-		// This isn't required in this specific example but it's a good practice.
+		// Ignore all messages created by self and bots
 		if m.Author.ID == s.State.User.ID || m.Author.Bot {
 			return
 		}
@@ -311,7 +294,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 		}
 
 		// Handle quiz aborts
-		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"quiz" {
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"stop" {
 			quitChan <- struct{}{}
 			return
 		}
