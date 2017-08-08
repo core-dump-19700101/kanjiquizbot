@@ -388,7 +388,7 @@
 	{"question":"射", "answers":[ "い" ] },
 	{"question":"処置", "answers":[ "しょち" ] },
 	{"question":"専用", "answers":[ "せんよう" ] },
-	{"question":"尊", "answers":[ "とうと（たっと）" ] },
+	{"question":"尊", "answers":[ "とうと", "たっと" ] },
 	{"question":"背骨", "answers":[ "せぼね" ] },
 	{"question":"遊覧", "answers":[ "ゆうらん" ] },
 	{"question":"看板", "answers":[ "かんばん" ] },
