@@ -122,20 +122,27 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	// Only react on #bot* channels
+	var retryErr error
 	for i := 0; i < 3; i++ {
-		if ch, err := s.Channel(m.ChannelID); err != nil || !strings.HasPrefix(ch.Name, "bot") {
-			if err != nil {
-				if strings.HasPrefix(err.Error(), "HTTP 5") {
-					// Wait and retry if Discord server related
-					time.Sleep(250 * time.Millisecond)
-					continue
-				} else {
-					log.Println("ERROR, With channel name check:", err)
-				}
+		var ch *discordgo.Channel
+		ch, retryErr = s.Channel(m.ChannelID)
+		if retryErr != nil {
+			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
+				// Wait and retry if Discord server related
+				time.Sleep(250 * time.Millisecond)
+				continue
+			} else {
+				break
 			}
-
+		} else if !strings.HasPrefix(ch.Name, "bot") {
 			return
 		}
+
+		break
+	}
+	if retryErr != nil {
+		log.Println("ERROR, With channel name check:", retryErr)
+		return
 	}
 
 	// Handle bot commmands
@@ -510,22 +517,12 @@ func ranking(players map[string]int) (result []Player) {
 func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 
 	// Try thrice in case of timeouts
-	for i := 0; i < 3; i++ {
+	retryErr := retryOnServerError(func() error {
 		_, err := s.ChannelMessageSend(m.ChannelID, msg)
-		if err != nil {
-			if strings.HasPrefix(err.Error(), "HTTP 5") {
-				// Wait and retry if Discord server related
-				time.Sleep(1 * time.Second)
-				continue
-			} else {
-				// Otherwise log and move on
-				log.Println("ERROR, Could not send message: ", err)
-				break
-			}
-		} else {
-			// In case of no error, return
-			return
-		}
+		return err
+	})
+	if retryErr != nil {
+		log.Println("ERROR, Could not send message: ", retryErr)
 	}
 }
 
@@ -535,22 +532,12 @@ func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 	image := GenerateImage(word)
 
 	// Try thrice in case of timeouts
-	for i := 0; i < 3; i++ {
+	retryErr := retryOnServerError(func() error {
 		_, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
-		if err != nil {
-			if strings.HasPrefix(err.Error(), "HTTP 5") {
-				// Wait and retry if Discord server related
-				time.Sleep(1 * time.Second)
-				continue
-			} else {
-				// Otherwise log and move on
-				log.Println("ERROR, Could not send image:", err)
-				break
-			}
-		} else {
-			// In case of no error, return
-			return
-		}
+		return err
+	})
+	if retryErr != nil {
+		log.Println("ERROR, Could not send image:", retryErr)
 	}
 }
 
@@ -558,22 +545,12 @@ func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordgo.MessageEmbed) {
 
 	// Try thrice in case of timeouts
-	for i := 0; i < 3; i++ {
+	retryErr := retryOnServerError(func() error {
 		_, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
-		if err != nil {
-			if strings.HasPrefix(err.Error(), "HTTP 5") {
-				// Wait and retry if Discord server related
-				time.Sleep(1 * time.Second)
-				continue
-			} else {
-				// Otherwise log and move on
-				log.Println("ERROR, Could not send embed:", err)
-				break
-			}
-		} else {
-			// In case of no error, return
-			return
-		}
+		return err
+	})
+	if retryErr != nil {
+		log.Println("ERROR, Could not send embed:", retryErr)
 	}
 }
 
@@ -581,16 +558,26 @@ func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordg
 func msgEdit(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 
 	// Try thrice in case of timeouts
-	for i := 0; i < 3; i++ {
+	retryErr := retryOnServerError(func() error {
 		_, err := s.ChannelMessageEdit(m.ChannelID, m.ID, msg)
+		return err
+	})
+	if retryErr != nil {
+		log.Println("ERROR, Could not edit message: ", retryErr)
+	}
+}
+
+// Try API thrice in case of timeouts
+func retryOnServerError(f func() error) (err error) {
+
+	for i := 0; i < 3; i++ {
+		err = f()
 		if err != nil {
 			if strings.HasPrefix(err.Error(), "HTTP 5") {
 				// Wait and retry if Discord server related
 				time.Sleep(1 * time.Second)
 				continue
 			} else {
-				// Otherwise log and move on
-				log.Println("ERROR, Could not edit message: ", err)
 				break
 			}
 		} else {
@@ -598,4 +585,6 @@ func msgEdit(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 			return
 		}
 	}
+
+	return
 }
