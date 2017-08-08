@@ -281,7 +281,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 	}
 
 	quiz := LoadQuiz(quizname)
-	if len(quiz) == 0 {
+	if len(quiz.Deck) == 0 {
 		msgSend(s, m, "Failed to find quiz: "+quizname)
 		stopQuiz(s, m)
 		return
@@ -311,7 +311,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 		c <- m
 	})
 
-	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds;\ngive your answer in HIRAGANA! First to %d points wins.```", quizname, len(quiz), winLimit))
+	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
 
 	var quizHistory string
 	players := make(map[string]int)
@@ -326,25 +326,38 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 		return r
 	}
 
+	// Helper function to find string in set
+	has := func(set []string, s string) bool {
+		for _, str := range set {
+			if s == str {
+				return true
+			}
+		}
+
+		return false
+	}
+
 outer:
-	for len(quiz) > 0 {
+	for len(quiz.Deck) > 0 {
 		time.Sleep(5 * time.Second)
 
 		// Grab new word from the quiz
-		var current Question
-		current, quiz = quiz[len(quiz)-1], quiz[:len(quiz)-1]
+		var current Card
+		current, quiz.Deck = quiz.Deck[len(quiz.Deck)-1], quiz.Deck[:len(quiz.Deck)-1]
 
-		// Replace reading with hiragana-only version
-		current.Reading = strings.Map(k2h, current.Reading)
+		// Replace readings with hiragana-only version
+		for i, ans := range current.Answers {
+			current.Answers[i] = strings.Map(k2h, ans)
+		}
 
 		// Add word to quiz history
-		quizHistory += current.Word + "　" // Japanese space (wider)
+		quizHistory += current.Question + "　" // Japanese space (wider)
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
 
 		// Send out quiz question
-		imgSend(s, m, current.Word)
+		imgSend(s, m, current.Question)
 
 		// Set timeout for no correct answers
 		timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
@@ -360,7 +373,7 @@ outer:
 					break inner
 				}
 
-				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", current.Reading, current.Word))
+				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", m.Content, current.Question))
 				timeoutCount++
 				if timeoutCount >= timeoutLimit {
 					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
@@ -369,7 +382,7 @@ outer:
 				break inner
 			case msg := <-c:
 				user := msg.Author
-				if msg.Content == current.Reading {
+				if has(current.Answers, msg.Content) {
 					if len(scoreKeeper) == 0 {
 						timeoutChan.Reset(waitTime)
 					}
@@ -404,7 +417,7 @@ outer:
 				extras = fmt.Sprintf(" (+%d)", len(scoreKeeper)-1)
 			}
 
-			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, current.Reading, current.Word))
+			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, strings.Join(current.Answers, ", "), current.Question))
 
 			if winnerExists {
 				break outer

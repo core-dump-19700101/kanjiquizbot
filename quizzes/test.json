@@ -1,0 +1,10 @@
+{
+	"description": "Test deck number one",
+	"deck": [
+		{"question": "5+5",	"answers": ["10"] },
+		{"question": "Divisor of 4",	"answers": [ "1", "2", "4" ], "comment": "So clever!" },
+		{"question": "On-yomi for 回",	"answers": [ "え", "かい" ] },
+		{"question": "四国の県",	"answers": [ "徳島県", "香川県", "愛媛県", "高知県" ] },
+		{"question": "複雑の類義語",	"answers": [ "煩雑", "繁雑", "ややこしい", "煩瑣" ] }
+	]
+}

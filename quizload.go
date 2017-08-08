@@ -17,10 +17,17 @@ var Quizzes struct {
 	Map map[string]string
 }
 
-// Question item
-type Question struct {
-	Word    string
-	Reading string
+// Quiz struct to hold entire quiz data
+type Quiz struct {
+	Description string `json:"description"`
+	Deck        []Card `json:"deck"`
+}
+
+// Card struct to hold question-answer set
+type Card struct {
+	Question string   `json:"question"`
+	Answers  []string `json:"answers"`
+	Comment  string   `json:"comment,omitempty"`
 }
 
 func init() {
@@ -72,7 +79,7 @@ func GetQuizlist() []string {
 }
 
 // Returns a slice of shuffled Questions from a given quiz
-func LoadQuiz(name string) (questions []Question) {
+func LoadQuiz(name string) (quiz Quiz) {
 
 	Quizzes.RLock()
 	filename, ok := Quizzes.Map[name]
@@ -85,14 +92,14 @@ func LoadQuiz(name string) (questions []Question) {
 			return
 		}
 
-		err = json.Unmarshal(file, &questions)
+		err = json.Unmarshal(file, &quiz)
 		if err != nil {
 			log.Println("ERROR, Unmarshalling json: ", err)
 			return
 		}
 	}
 
-	Shuffle(questions)
+	Shuffle(quiz.Deck)
 
 	return
 }
