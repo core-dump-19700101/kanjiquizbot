@@ -275,7 +275,11 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 
 	// Parse provided winLimit with sane defaults
 	if i, err := strconv.Atoi(winLimitGiven); err == nil {
-		if i <= 100 && i > 0 {
+		if i > 100 {
+			winLimit = 100
+		} else if i < 1 {
+			winLimit = 1
+		} else {
 			winLimit = i
 		}
 	}
@@ -373,7 +377,7 @@ outer:
 					break inner
 				}
 
-				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", m.Content, current.Question))
+				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", strings.Join(current.Answers, ", "), current.Question))
 				timeoutCount++
 				if timeoutCount >= timeoutLimit {
 					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
