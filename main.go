@@ -150,6 +150,14 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
+		case "draw":
+			if m.Author.ID == Settings.Owner.ID {
+				if len(input) >= 2 {
+					imgSend(s, m, m.Content[len(input[0])+1:])
+				}
+			} else {
+				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+			}
 		case "ping":
 			msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
