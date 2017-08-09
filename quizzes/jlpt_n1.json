@@ -747,7 +747,7 @@
 	{ "question": "名簿", "answers": [ "めいぼ" ] },
 	{ "question": "名誉", "answers": [ "めいよ" ] },
 	{ "question": "名高い", "answers": [ "なだかい" ] },
-	{ "question": "吐く", "answers": [ "つく" ] },
+	{ "question": "吐く", "answers": [ "はく" ] },
 	{ "question": "向き", "answers": [ "むき" ] },
 	{ "question": "向け", "answers": [ "むけ" ] },
 	{ "question": "向上", "answers": [ "こうじょう" ] },

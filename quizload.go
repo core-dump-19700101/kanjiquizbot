@@ -43,6 +43,7 @@ func init() {
 		"quirky":       "quirky.json",
 		"obscure":      "obscure.json",
 		"yojijukugo":   "yojijukugo.json",
+		"jukujikun":    "jukujikun.json",
 		"kanken_1k":    "kanken_1k.json",
 		"kanken_j1k":   "kanken_j1k.json",
 		"kanken_j2k":   "kanken_j2k.json",
