@@ -493,6 +493,9 @@
 	{"question": "手込め",	"answers":[ "てごめ" ] },
 	{"question": "閨",	"answers":[ "ねや" ] },
 	{"question": "淫靡",	"answers":[ "いんび" ] },
-	{"question": "同衾",	"answers":[ "どうきん" ] }
+	{"question": "同衾",	"answers":[ "どうきん" ] },
+	{"question": "凌辱",	"answers":[ "りょうじょく" ] },
+	{"question": "夜伽",	"answers":[ "よとぎ" ] },
+	{"question": "奉仕",	"answers":[ "ほうし" ] }
 ]
 }
