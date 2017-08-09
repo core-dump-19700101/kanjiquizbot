@@ -1222,7 +1222,7 @@
 	{ "question": "後回し", "answers": [ "あとまわし" ] },
 	{ "question": "後悔", "answers": [ "こうかい" ] },
 	{ "question": "後退", "answers": [ "こうたい" ] },
-	{ "question": "徐々", "answers": [ "そろそろ" ] },
+	{ "question": "徐々に", "answers": [ "じょじょに" ] },
 	{ "question": "徐行", "answers": [ "じょこう" ] },
 	{ "question": "徒歩", "answers": [ "とほ" ] },
 	{ "question": "従って", "answers": [ "したがって" ] },

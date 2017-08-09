@@ -47,9 +47,10 @@ func init() {
 	// Initialize settings
 	Settings.TimeStarted = time.Now()
 	Settings.Speed = map[string]int{
-		"fast": 0,
-		"quiz": 1250,
-		"mild": 2500,
+		"mad":  0,
+		"fast": 1000,
+		"quiz": 2000,
+		"mild": 3000,
 		"slow": 5000,
 	}
 	Ongoing.ChannelID = make(map[string]bool)
@@ -180,7 +181,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			msgSend(s, m, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
 		case "hello":
 			imgSend(s, m, "Hello!")
-		case "fast", "mild", "slow":
+		case "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":
 			if len(input) == 2 {
@@ -434,7 +435,7 @@ outer:
 
 			var extras string
 			if len(scoreKeeper) > 1 {
-				extras = fmt.Sprintf(" (+%d)", len(scoreKeeper)-1)
+				extras = fmt.Sprintf("（+%d人）", len(scoreKeeper)-1)
 			}
 
 			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, strings.Join(current.Answers, ", "), current.Question))

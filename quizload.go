@@ -63,6 +63,8 @@ func init() {
 		"myouji":       "myouji.json",
 		"r18":          "r18.json",
 		"niconico":     "niconico-170806.json",
+		"kkblob":       "kkblob.json",
+		"unusual":      "unusual.json",
 	}
 	Quizzes.Unlock()
 }

@@ -219,7 +219,7 @@
 	{ "question": "旅館", "answers":[ "りょかん" ] },
 	{ "question": "日", "answers":[ "ひ" ] },
 	{ "question": "日記", "answers":[ "にっき" ] },
-	{ "question": "明日", "answers":[ "あす" ] },
+	{ "question": "明日", "answers":[ "あした", "あす" ] },
 	{ "question": "昔", "answers":[ "むかし" ] },
 	{ "question": "星", "answers":[ "ほし" ] },
 	{ "question": "昼休み", "answers":[ "ひるやすみ" ] },

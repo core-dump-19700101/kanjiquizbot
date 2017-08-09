@@ -224,7 +224,7 @@
 	{"question":"玉葱", "answers":[ "たまねぎ" ] },
 	{"question":"甥姪", "answers":[ "せいてつ" ] },
 	{"question":"田螺", "answers":[ "たにし" ] },
-	{"question":"画餅", "answers":[ "がべい・がへい" ] },
+	{"question":"画餅", "answers":[ "がべい", "がへい" ] },
 	{"question":"畏怖", "answers":[ "いふ" ] },
 	{"question":"畢生", "answers":[ "ひっせい" ] },
 	{"question":"畦道", "answers":[ "あぜみち" ] },
