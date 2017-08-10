@@ -1236,7 +1236,7 @@
 	{ "question": "御手洗い", "answers": [ "おてあらい" ] },
 	{ "question": "御覧なさい", "answers": [ "ごらんなさい" ] },
 	{ "question": "御負け", "answers": [ "おまけ" ] },
-	{ "question": "復旧", "answers": [ "ふくきゅう" ] },
+	{ "question": "復旧", "answers": [ "ふっきゅう", "ふくきゅう" ] },
 	{ "question": "復活", "answers": [ "ふっかつ" ] },
 	{ "question": "復興", "answers": [ "ふっこう" ] },
 	{ "question": "微か", "answers": [ "かすか" ] },
