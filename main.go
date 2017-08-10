@@ -159,6 +159,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		switch command {
 		case "help":
 			showHelp(s, m)
+		case "info":
+			showInfo(s, m)
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)
@@ -208,7 +210,60 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
-	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <name> [max score]` to start.", strings.Join(quizlist, ", "), CMD_PREFIX))
+	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <deck> [optional max score]` to start or `%sinfo` for more detailed information.", strings.Join(quizlist, ", "), CMD_PREFIX, CMD_PREFIX))
+}
+
+// Show bot information message in channel
+func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
+
+	var fields []*discordgo.MessageEmbedField
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "How to start a game",
+		Value:  fmt.Sprintf("Type `%squiz <deck> [optional max score]` in one of the #bot channels", CMD_PREFIX),
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Educational decks",
+		Value:  "jouyou, n1, n2, n3, n4, n5, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k",
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Name decks",
+		Value:  "namae, myouji, onago, prefectures, stations",
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Difficult decks",
+		Value:  "kanken_1k, kanken_j1k, kanken_2k, unusual, quirky",
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Goofy decks",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, r18",
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Alternative game modes",
+		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows", CMD_PREFIX),
+		Inline: false,
+	})
+
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       fmt.Sprintf(":crossed_flags: Kanji Quiz Bot"),
+		Description: fmt.Sprintf("Compete with others on kanji readings"),
+		Color:       0xFADE40,
+		Fields:      fields,
+		Footer:      &discordgo.MessageEmbedFooter{Text: fmt.Sprintf("Owner: %s#%s", Settings.Owner.Username, Settings.Owner.Discriminator)},
+	}
+
+	embedSend(s, m, embed)
 }
 
 // Stop ongoing quiz in given channel
