@@ -219,8 +219,8 @@ func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
 	var fields []*discordgo.MessageEmbedField
 
 	fields = append(fields, &discordgo.MessageEmbedField{
-		Name:   "How to start a game",
-		Value:  fmt.Sprintf("Type `%squiz <deck> [optional max score]` in one of the #bot channels", CMD_PREFIX),
+		Name:   "How to run a quiz round",
+		Value:  fmt.Sprintf("Type `%squiz <deck> [optional max score]` in a #bot channel or by PM.\nUse `%sstop` to cancel a running quiz.", CMD_PREFIX, CMD_PREFIX),
 		Inline: false,
 	})
 
@@ -250,14 +250,14 @@ func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Alternative game modes",
-		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows", CMD_PREFIX),
+		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.", CMD_PREFIX),
 		Inline: false,
 	})
 
 	embed := &discordgo.MessageEmbed{
 		Type:        "rich",
 		Title:       fmt.Sprintf(":crossed_flags: Kanji Quiz Bot"),
-		Description: fmt.Sprintf("Compete with others on kanji readings"),
+		Description: fmt.Sprintf("Compete with other users on kanji readings!"),
 		Color:       0xFADE40,
 		Fields:      fields,
 		Footer:      &discordgo.MessageEmbedFooter{Text: fmt.Sprintf("Owner: %s#%s", Settings.Owner.Username, Settings.Owner.Discriminator)},
