@@ -2844,7 +2844,6 @@
 	{ "question": "返済", "answers": [ "へんさい" ] },
 	{ "question": "返答", "answers": [ "へんとう" ] },
 	{ "question": "返還", "answers": [ "へんかん" ] },
-	{ "question": "迚も", "answers": [ "とても" ] },
 	{ "question": "迫害", "answers": [ "はくがい" ] },
 	{ "question": "追い出す", "answers": [ "おいだす" ] },
 	{ "question": "追い込む", "answers": [ "おいこむ" ] },
