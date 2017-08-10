@@ -259,7 +259,7 @@
 	{"question":"捏ねる", "answers":[ "こねる" ] },
 	{"question":"捏造", "answers":[ "ねつぞう" ] },
 	{"question":"飢饉", "answers":[ "ききん" ] },
-	{"question":"倦む", "answers":[ "うむ" ] },
+	{"question":"倦む", "answers":[ "うむ", "あぐむ" ] },
 	{"question":"倦怠", "answers":[ "けんたい" ] },
 	{"question":"屏息", "answers":[ "へいそく" ] },
 	{"question":"恍惚", "answers":[ "こうこつ" ] },

@@ -122,11 +122,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	// Only react on #bot* channels
+	// Only react on #bot* channels or private messages
 	var retryErr error
 	for i := 0; i < 3; i++ {
 		var ch *discordgo.Channel
-		ch, retryErr = s.Channel(m.ChannelID)
+		ch, retryErr = s.State.Channel(m.ChannelID)
 		if retryErr != nil {
 			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
 				// Wait and retry if Discord server related
@@ -135,7 +135,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				break
 			}
-		} else if !strings.HasPrefix(ch.Name, "bot") {
+		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
 			return
 		}
 
