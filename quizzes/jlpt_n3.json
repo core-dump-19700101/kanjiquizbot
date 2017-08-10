@@ -736,7 +736,7 @@
 	{ "question": "旅", "answers":[ "たび" ] },
 	{ "question": "旗", "answers":[ "はた" ] },
 	{ "question": "既に", "answers":[ "すでに" ] },
-	{ "question": "日", "answers":[ "にち" ] },
+	{ "question": "日", "answers":[ "ひ", "にち" ] },
 	{ "question": "日中", "answers":[ "にっちゅう" ] },
 	{ "question": "日付", "answers":[ "ひづけ" ] },
 	{ "question": "日光", "answers":[ "にっこう" ] },

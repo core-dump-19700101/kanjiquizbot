@@ -394,7 +394,15 @@ outer:
 					break inner
 				}
 
-				msgSend(s, m, fmt.Sprintf(":no_entry: Timed out!\nCorrect answer: **%s** (%s)", strings.Join(current.Answers, ", "), current.Question))
+				embed := &discordgo.MessageEmbed{
+					Type:        "rich",
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
+					Description: fmt.Sprintf("**%s**", strings.Join(current.Answers, ", ")),
+					Color:       0xAA2222,
+				}
+
+				embedSend(s, m, embed)
+
 				timeoutCount++
 				if timeoutCount >= timeoutLimit {
 					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
@@ -423,22 +431,35 @@ outer:
 
 			winnerExists := false
 			var fastest string
+			var scorers []string
 			for player, position := range scoreKeeper {
 				players[player]++
 				if position == 1 {
-					fastest = player
+					fastest = "<@" + player + ">"
+				} else {
+					scorers = append(scorers, "<@"+player+">")
 				}
 				if players[player] >= winLimit {
 					winnerExists = true
 				}
 			}
 
-			var extras string
-			if len(scoreKeeper) > 1 {
-				extras = fmt.Sprintf("（+%d人）", len(scoreKeeper)-1)
+			scorers = append([]string{fastest}, scorers...)
+
+			embed := &discordgo.MessageEmbed{
+				Type:        "rich",
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
+				Description: fmt.Sprintf("**%s**", strings.Join(current.Answers, ", ")),
+				Color:       0x22AA22,
+				Fields: []*discordgo.MessageEmbedField{
+					&discordgo.MessageEmbedField{
+						Name:   "Scorers",
+						Value:  strings.Join(scorers, ", "),
+						Inline: false,
+					}},
 			}
 
-			msgSend(s, m, fmt.Sprintf(":white_check_mark: <@%s>%s got it right: **%s** (%s)", fastest, extras, strings.Join(current.Answers, ", "), current.Question))
+			embedSend(s, m, embed)
 
 			if winnerExists {
 				break outer

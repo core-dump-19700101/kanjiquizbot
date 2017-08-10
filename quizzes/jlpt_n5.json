@@ -433,7 +433,7 @@
 	{ "question": "閉まる", "answers":[ "しまる" ] },
 	{ "question": "閉める", "answers":[ "しめる" ] },
 	{ "question": "降りる", "answers":[ "おりる" ] },
-	{ "question": "降る", "answers":[ "ふる" ] },
+	{ "question": "降る", "answers":[ "くだる", "ふる" ] },
 	{ "question": "階段", "answers":[ "かいだん" ] },
 	{ "question": "隣", "answers":[ "となり" ] },
 	{ "question": "雑誌", "answers":[ "ざっし" ] },

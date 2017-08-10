@@ -501,7 +501,7 @@
 	{"question":"溢れる", "answers":[ "あふれる" ] },
 	{"question":"横溢", "answers":[ "おういつ" ] },
 	{"question":"狡猾", "answers":[ "こうかつ" ] },
-	{"question":"狡い", "answers":[ "ずるい" ] },
+	{"question":"狡い", "answers":[ "ずるい", "こすい" ] },
 	{"question":"愛しい", "answers":[ "いとしい" ] },
 	{"question":"皺", "answers":[ "しわ", "しぼ" ] },
 	{"question":"斧", "answers":[ "おの" ] },

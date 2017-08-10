@@ -999,7 +999,7 @@
 	{ "question": "産地", "answers":[ "さんち" ] },
 	{ "question": "用語", "answers":[ "ようご" ] },
 	{ "question": "用途", "answers":[ "ようと" ] },
-	{ "question": "田ぼ", "answers":[ "たんぼ" ] },
+	{ "question": "田んぼ", "answers":[ "たんぼ" ] },
 	{ "question": "田植え", "answers":[ "たうえ" ] },
 	{ "question": "申し訳ない", "answers":[ "もうしわけない" ] },
 	{ "question": "申請", "answers":[ "しんせい" ] },
