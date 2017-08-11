@@ -524,6 +524,8 @@
 	{"question":"拗ねる", "answers":[ "すねる" ] },
 	{"question":"称える", "answers":[ "たたえる", "となえる" ] },
 	{"question":"憧れる", "answers":[ "あこがれる" ] },
+	{"question": "擽ぐったい", "answers":[ "くすぐったい" ] },
+	{"question": "然し", "answers":[ "しかし" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
