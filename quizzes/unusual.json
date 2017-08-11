@@ -526,6 +526,8 @@
 	{"question":"憧れる", "answers":[ "あこがれる" ] },
 	{"question": "擽ぐったい", "answers":[ "くすぐったい" ] },
 	{"question": "然し", "answers":[ "しかし" ] },
+	{"question": "辻褄", "answers":[ "つじつま" ] },
+	{"question": "面皰", "answers":[ "にきび", "めんぽう" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
