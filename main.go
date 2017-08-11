@@ -27,6 +27,7 @@ var Token string
 var Ongoing struct {
 	sync.RWMutex
 	ChannelID map[string]bool
+	Output    *discordgo.MessageCreate // Output channel for status updates
 }
 
 // General bot settings (READ ONLY)
@@ -177,6 +178,14 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
+		case "output":
+			if m.Author.ID == Settings.Owner.ID {
+				Ongoing.Lock()
+				Ongoing.Output = m
+				Ongoing.Unlock()
+			} else {
+				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+			}
 		case "ping":
 			msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
@@ -190,6 +199,13 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				go runQuiz(s, m, input[1], "", Settings.Speed[command])
 			} else if len(input) == 3 {
 				go runQuiz(s, m, input[1], input[2], Settings.Speed[command])
+			} else {
+				// Show if no quiz specified
+				showHelp(s, m)
+			}
+		case "gauntlet":
+			if len(input) == 2 {
+				go runGauntlet(s, m, input[1])
 			} else {
 				// Show if no quiz specified
 				showHelp(s, m)
@@ -588,4 +604,174 @@ func ranking(players map[string]int) (result []Player) {
 	sort.Slice(result, func(i, j int) bool { return result[i].Score > result[j].Score })
 
 	return
+}
+
+// Run private gauntlet quiz
+func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
+
+	// Only react in private messages
+	var retryErr error
+	for i := 0; i < 3; i++ {
+		var ch *discordgo.Channel
+		ch, retryErr = s.State.Channel(m.ChannelID)
+		if retryErr != nil {
+			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
+				// Wait and retry if Discord server related
+				time.Sleep(250 * time.Millisecond)
+				continue
+			} else {
+				break
+			}
+		} else if !ch.IsPrivate {
+			msgSend(s, m, fmt.Sprintf(":no_entry_sign: Game mode `%sgauntlet` is only for PM!", CMD_PREFIX))
+			return
+		}
+
+		break
+	}
+	if retryErr != nil {
+		log.Println("ERROR, With channel name check:", retryErr)
+		return
+	}
+
+	// Mark the quiz as started
+	if err := startQuiz(s, m); err != nil {
+		// Quiz already running, nothing to do here
+		return
+	}
+
+	quizChannel := m.ChannelID
+	timeout := 120 // seconds to run complete gauntlet
+
+	quiz := LoadQuiz(quizname)
+	if len(quiz.Deck) == 0 {
+		msgSend(s, m, "Failed to find quiz: "+quizname)
+		stopQuiz(s, m)
+		return
+	}
+
+	c := make(chan *discordgo.MessageCreate, 100)
+	quitChan := make(chan struct{}, 100)
+
+	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
+		// Ignore all messages created by self and bots
+		if m.Author.ID == s.State.User.ID || m.Author.Bot {
+			return
+		}
+
+		// Only react on current quiz channel
+		if m.ChannelID != quizChannel {
+			return
+		}
+
+		// Handle quiz aborts
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"stop" {
+			quitChan <- struct{}{}
+			return
+		}
+
+		// Relay the message to the quiz loop
+		c <- m
+	})
+
+	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
+
+	var correct, total int
+	var quizHistory string
+
+	// Helper function to force katakana to hiragana conversion
+	k2h := func(r rune) rune {
+		switch {
+		case r >= 'ァ' && r <= 'ヶ':
+			return r - 0x60
+		}
+		return r
+	}
+
+	// Helper function to find string in set
+	has := func(set []string, s string) bool {
+		for _, str := range set {
+			if s == str {
+				return true
+			}
+		}
+
+		return false
+	}
+
+	// Breathing room to read start info
+	time.Sleep(5 * time.Second)
+
+	// Set timeout for no correct answers
+	timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
+
+outer:
+	for len(quiz.Deck) > 0 {
+
+		// Grab new word from the quiz
+		var current Card
+		current, quiz.Deck = quiz.Deck[len(quiz.Deck)-1], quiz.Deck[:len(quiz.Deck)-1]
+
+		// Replace readings with hiragana-only version
+		for i, ans := range current.Answers {
+			current.Answers[i] = strings.Map(k2h, ans)
+		}
+
+		// Send out quiz question
+		imgSend(s, m, current.Question)
+
+		select {
+		case <-quitChan:
+			break outer
+		case <-timeoutChan.C:
+			break outer
+		case msg := <-c:
+			// Increase total question count
+			total++
+
+			// Increase score if correct answer
+			if has(current.Answers, msg.Content) {
+				correct++
+			} else {
+				// Add wrong answer to history
+				quizHistory += current.Question + "　" // Japanese space (wider)
+			}
+		}
+	}
+
+	// Clean up
+	killHandler()
+
+	// Sleep for a little breathing room
+	time.Sleep(1 * time.Second)
+
+	// Produce scoreboard
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       "Final Gauntlet Score: " + quizname,
+		Description: fmt.Sprintf("%.2f points", float64(correct*correct)/float64(total)),
+		Color:       0x33FF33,
+		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + quizHistory},
+	}
+
+	embedSend(s, m, embed)
+
+	stopQuiz(s, m)
+
+	// Produce public scoreboard
+	Ongoing.RLock()
+	output := Ongoing.Output
+	Ongoing.RUnlock()
+
+	if output != nil {
+
+		embed := &discordgo.MessageEmbed{
+			Type:        "rich",
+			Title:       ":stopwatch: New Gauntlet Score: " + quizname,
+			Description: fmt.Sprintf("%s: %.2f points in %d seconds", m.Author.Mention(), float64(correct*correct)/float64(total), timeout),
+			Color:       0xFFAAAA,
+		}
+
+		embedSend(s, output, embed)
+	}
 }
