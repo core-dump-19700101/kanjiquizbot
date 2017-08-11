@@ -411,7 +411,7 @@
 	{ "question": "大工", "answers":[ "だいく" ] },
 	{ "question": "大木", "answers":[ "たいぼく" ] },
 	{ "question": "大通り", "answers":[ "おおどおり" ] },
-	{ "question": "天皇", "answers":[ "てんのう" ] },
+	{ "question": "天皇", "answers":[ "てんのう", "すめらぎ" ] },
 	{ "question": "太鼓", "answers":[ "たいこ" ] },
 	{ "question": "夫妻", "answers":[ "ふさい" ] },
 	{ "question": "失恋", "answers":[ "しつれん" ] },
