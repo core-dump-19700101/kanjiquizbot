@@ -242,7 +242,7 @@ func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "jouyou, n1, n2, n3, n4, n5, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k",
+		Value:  "jouyou, n1, n2, n3, n4, n5, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, jlpt_blob, kanken_blob",
 		Inline: false,
 	})
 

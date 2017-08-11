@@ -65,6 +65,7 @@ func init() {
 		"r18":          "r18.json",
 		"niconico":     "niconico-170806.json",
 		"kanken_blob":  "kanken_blob.json",
+		"jlpt_blob":    "jlpt_blob.json",
 		"unusual":      "unusual.json",
 		"radicals":     "radicals.json",
 	}

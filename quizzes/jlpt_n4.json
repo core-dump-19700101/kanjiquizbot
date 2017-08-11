@@ -70,7 +70,6 @@
 	{ "question": "写す", "answers":[ "うつす" ] },
 	{ "question": "冷える", "answers":[ "ひえる" ] },
 	{ "question": "冷房", "answers":[ "れいぼう" ] },
-	{ "question": "凄い", "answers":[ "すごい" ] },
 	{ "question": "別", "answers":[ "べつ" ] },
 	{ "question": "別れる", "answers":[ "わかれる" ] },
 	{ "question": "利用", "answers":[ "りよう" ] },
