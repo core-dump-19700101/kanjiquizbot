@@ -66,6 +66,7 @@ func init() {
 		"niconico":     "niconico-170806.json",
 		"kanken_blob":  "kanken_blob.json",
 		"unusual":      "unusual.json",
+		"radicals":     "radicals.json",
 	}
 	Quizzes.Unlock()
 }

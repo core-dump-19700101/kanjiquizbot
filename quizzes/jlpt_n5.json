@@ -33,7 +33,7 @@
 	{ "question": "三つ", "answers":[ "みっつ" ] },
 	{ "question": "三日", "answers":[ "みっか" ] },
 	{ "question": "上", "answers":[ "うえ", "かみ" ] },
-	{ "question": "上手", "answers":[ "じょうず" ] },
+	{ "question": "上手", "answers":[ "じょうず", "うわて", "かみて" ] },
 	{ "question": "上着", "answers":[ "うわぎ" ] },
 	{ "question": "下", "answers":[ "した", "もと", "しも" ] },
 	{ "question": "下手", "answers":[ "へた" ] },

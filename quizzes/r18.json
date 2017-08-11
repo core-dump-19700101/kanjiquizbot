@@ -497,6 +497,9 @@
 	{"question": "凌辱",	"answers":[ "りょうじょく" ] },
 	{"question": "夜伽",	"answers":[ "よとぎ" ] },
 	{"question": "偽乳",	"answers":[ "ぎにゅう" ] },
-	{"question": "奉仕",	"answers":[ "ほうし" ] }
+	{"question": "奉仕",	"answers":[ "ほうし" ] },
+	{"question": "女衒",	"answers":[ "ぜげん" ] },
+	{"question":"逢瀬", "answers":[ "おうせ" ] },
+	{"question":"逢引", "answers":[ "あいびき" ] }
 ]
 }

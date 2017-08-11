@@ -1517,6 +1517,6 @@
 	{ "question": "魅力", "answers":[ "みりょく" ] },
 	{ "question": "魚", "answers":[ "さかな", "うお" ] },
 	{ "question": "黒板", "answers":[ "こくばん" ] },
-	{ "question": "黙る", "answers":[ "だまる" ] },
+	{ "question": "黙る", "answers":[ "だまる" ] }
 ]
 }

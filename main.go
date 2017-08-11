@@ -208,7 +208,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				go runGauntlet(s, m, input[1])
 			} else {
 				// Show if no quiz specified
-				showHelp(s, m)
+				showInfo(s, m)
 			}
 		}
 	}
@@ -260,7 +260,7 @@ func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, r18",
 		Inline: false,
 	})
 
