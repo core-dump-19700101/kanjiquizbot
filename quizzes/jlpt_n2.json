@@ -1501,7 +1501,6 @@
 	{ "question": "馴れる", "answers":[ "なれる" ] },
 	{ "question": "騒々しい", "answers":[ "そうぞうしい" ] },
 	{ "question": "騒がしい", "answers":[ "さわがしい" ] },
-	{ "question": "驚かす", "answers":[ "おどろかす" ] },
 	{ "question": "高める", "answers":[ "たかめる" ] },
 	{ "question": "高層", "answers":[ "こうそう" ] },
 	{ "question": "高度", "answers":[ "こうど" ] },
