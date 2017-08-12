@@ -530,6 +530,7 @@
 	{"question":"聳える", "answers":[ "そびえる" ] },
 	{"question":"所謂", "answers":[ "いわゆる" ] },
 	{"question":"炙る", "answers":[ "あぶる" ] },
+	{"question":"躓く", "answers":[ "つまずく", "つまづく" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }

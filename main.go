@@ -160,8 +160,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		switch command {
 		case "help":
 			showHelp(s, m)
-		case "info":
-			showInfo(s, m)
+		case "list":
+			showList(s, m)
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)
@@ -179,6 +179,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
 		case "output":
+			// Sets Gauntlet score output channel
 			if m.Author.ID == Settings.Owner.ID {
 				Ongoing.Lock()
 				Ongoing.Output = m
@@ -201,14 +202,14 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				go runQuiz(s, m, input[1], input[2], Settings.Speed[command])
 			} else {
 				// Show if no quiz specified
-				showHelp(s, m)
+				showList(s, m)
 			}
 		case "gauntlet":
 			if len(input) == 2 {
 				go runGauntlet(s, m, input[1])
 			} else {
 				// Show if no quiz specified
-				showInfo(s, m)
+				showHelp(s, m)
 			}
 		}
 	}
@@ -222,15 +223,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 }
 
-// Show bot help message in channel
-func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
+// Show quiz list message in channel
+func showList(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
-	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <deck> [optional max score]` to start or `%sinfo` for more detailed information.", strings.Join(quizlist, ", "), CMD_PREFIX, CMD_PREFIX))
+	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <deck> [optional max score]` to start or `%shelp` for more detailed information.", strings.Join(quizlist, ", "), CMD_PREFIX, CMD_PREFIX))
 }
 
-// Show bot information message in channel
-func showInfo(s *discordgo.Session, m *discordgo.MessageCreate) {
+// Show bot help message in channel
+func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	var fields []*discordgo.MessageEmbedField
 
@@ -745,11 +746,16 @@ outer:
 	// Sleep for a little breathing room
 	time.Sleep(1 * time.Second)
 
+	var score float64
+	if total > 0 {
+		score = float64(correct*correct) / float64(total)
+	}
+
 	// Produce scoreboard
 	embed := &discordgo.MessageEmbed{
 		Type:        "rich",
 		Title:       "Final Gauntlet Score: " + quizname,
-		Description: fmt.Sprintf("%.2f points", float64(correct*correct)/float64(total)),
+		Description: fmt.Sprintf("%.2f points", score),
 		Color:       0x33FF33,
 		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + quizHistory},
 	}
@@ -768,7 +774,7 @@ outer:
 		embed := &discordgo.MessageEmbed{
 			Type:        "rich",
 			Title:       ":stopwatch: New Gauntlet Score: " + quizname,
-			Description: fmt.Sprintf("%s: %.2f points in %d seconds", m.Author.Mention(), float64(correct*correct)/float64(total), timeout),
+			Description: fmt.Sprintf("%s: %.2f points in %d seconds", m.Author.Mention(), score, timeout),
 			Color:       0xFFAAAA,
 		}
 

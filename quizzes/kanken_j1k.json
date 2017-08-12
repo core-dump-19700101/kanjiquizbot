@@ -279,7 +279,7 @@
 	{"question":"背馳", "answers":[ "はいち" ] },
 	{"question":"脆弱", "answers":[ "ぜいじゃく" ] },
 	{"question":"脇息", "answers":[ "きょうそく" ] },
-	{"question":"膝下", "answers":[ "しっか" ] },
+	{"question":"膝下", "answers":[ "しっか", "ひざもと" ] },
 	{"question":"艶冶", "answers":[ "えんや" ] },
 	{"question":"艶姿", "answers":[ "あですがた" ] },
 	{"question":"花圃", "answers":[ "かほ" ] },

@@ -201,7 +201,7 @@
 	{"question":"延期", "answers":[ "えんき" ] },
 	{"question":"疑問", "answers":[ "ぎもん" ] },
 	{"question":"呼吸", "answers":[ "こきゅう" ] },
-	{"question":"絹糸", "answers":[ "きぬいと" ] },
+	{"question":"絹糸", "answers":[ "けんし", "きぬいと" ] },
 	{"question":"困る", "answers":[ "こまる" ] },
 	{"question":"注射", "answers":[ "ちゅうしゃ" ] },
 	{"question":"公衆", "answers":[ "こうしゅう" ] },
