@@ -639,7 +639,6 @@
 	{ "question": "戦い", "answers":[ "たたかい" ] },
 	{ "question": "戦う", "answers":[ "たたかう" ] },
 	{ "question": "戻す", "answers":[ "もどす" ] },
-	{ "question": "所為", "answers":[ "せい" ] },
 	{ "question": "手伝い", "answers":[ "てつだい" ] },
 	{ "question": "手品", "answers":[ "てじな" ] },
 	{ "question": "手段", "answers":[ "しゅだん" ] },
