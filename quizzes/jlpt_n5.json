@@ -435,6 +435,7 @@
 	{ "question": "黄色", "answers":[ "きいろ" ] },
 	{ "question": "黄色い", "answers":[ "きいろい" ] },
 	{ "question": "黒", "answers":[ "くろ" ] },
+	{ "question": "赤ちゃん", "answers": [ "あかちゃん" ] },
 	{ "question": "黒い", "answers":[ "くろい" ] }
 ]
 }

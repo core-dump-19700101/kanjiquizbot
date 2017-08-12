@@ -1079,7 +1079,7 @@
 	{"question":"粋", "answers":[ "いき" ] },
 	{"question":"膨大", "answers":[ "ぼうだい" ] },
 	{"question":"酔って", "answers":[ "よって" ] },
-	{"question":"憂い", "answers":[ "うれい" ] },
+	{"question":"憂い", "answers":[ "うれい", "うい" ] },
 	{"question":"廊下", "answers":[ "ろうか" ] },
 	{"question":"将棋", "answers":[ "しょうぎ" ] },
 	{"question":"架ける", "answers":[ "かける" ] },

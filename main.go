@@ -162,6 +162,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			showHelp(s, m)
 		case "list":
 			showList(s, m)
+		case "kanji", "k":
+			if len(input) >= 2 {
+				err := sendKanjiInfo(s, m, strings.TrimSpace(m.Content[len(input[0])+1:]))
+				if err != nil {
+					msgSend(s, m, "Error: "+err.Error())
+				}
+			} else {
+				msgSend(s, m, "No kanji specified!")
+			}
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)
