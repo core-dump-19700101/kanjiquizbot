@@ -1506,8 +1506,26 @@
 	{ "question": "高度", "answers":[ "こうど" ] },
 	{ "question": "高等", "answers":[ "こうとう" ] },
 	{ "question": "高級", "answers":[ "こうきゅう" ] },
-	{ "question": "髭", "answers":[ "ひげ" ] },
 	{ "question": "鳴らす", "answers":[ "ならす" ] },
-	{ "question": "麓", "answers":[ "ふもと" ] }
+	{ "question": "割れる", "answers":[ "われる" ] },
+	{ "question": "割合", "answers":[ "わりあい" ] },
+	{ "question": "お見舞い", "answers":[ "おみまい" ] },
+	{ "question": "捕まえる", "answers":[ "つかまえる" ] },
+	{ "question": "捨てる", "answers":[ "すてる" ] },
+	{ "question": "季節", "answers":[ "きせつ" ] },
+	{ "question": "乾く", "answers":[ "かわく" ] },
+	{ "question": "飼う", "answers":[ "かう" ] },
+	{ "question": "鏡", "answers":[ "かがみ" ] },
+	{ "question": "釣る", "answers":[ "つる" ] },
+	{ "question": "嫌", "answers":[ "いや" ] },
+	{ "question": "嫌い", "answers":[ "きらい" ] },
+	{ "question": "封筒", "answers":[ "ふうとう" ] },
+	{ "question": "風邪", "answers":[ "かぜ" ] },
+	{ "question": "隣", "answers":[ "となり" ] },
+	{ "question": "貼る", "answers":[ "はる" ] },
+	{ "question": "掃除", "answers":[ "そうじ" ] },
+	{ "question": "授業", "answers":[ "じゅぎょう" ] },
+	{ "question": "撮る", "answers":[ "とる" ] },
+	{ "question": "政治", "answers":[ "せいじ" ] }
 ]
 }
