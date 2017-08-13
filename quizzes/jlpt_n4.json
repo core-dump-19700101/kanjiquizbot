@@ -240,7 +240,7 @@
 	{ "question": "水泳", "answers":[ "すいえい" ] },
 	{ "question": "水道", "answers":[ "すいどう" ] },
 	{ "question": "汚れる", "answers":[ "よごれる", "けがれる" ] },
-	{ "question": "決して", "answers":[ "けっして" ] },
+	{ "question": "決して", "answers":[ "けっして", "けして" ] },
 	{ "question": "決める", "answers":[ "きめる" ] },
 	{ "question": "決まる", "answers":[ "きまる" ] },
 	{ "question": "汽車", "answers":[ "きしゃ" ] },
