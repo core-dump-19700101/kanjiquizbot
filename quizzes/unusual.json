@@ -437,7 +437,6 @@
 	{"question":"石鹸", "answers":[ "せっけん" ] },
 	{"question":"彷彿", "answers":[ "ほうふつ" ] },
 	{"question":"勿論", "answers":[ "もちろん" ] },
-	{"question":"進捗", "answers":[ "しんちょく" ] },
 	{"question":"蹂躙", "answers":[ "じゅうりん" ] },
 	{"question":"煤", "answers":[ "すす" ] },
 	{"question":"甲冑", "answers":[ "かっちゅう" ] },
@@ -622,6 +621,17 @@
 	{"question":"長閑", "answers":[ "のどか" ] },
 	{"question":"煽てる", "answers":[ "おだてる" ] },
 	{"question":"絨毯", "answers":[ "じゅうたん" ] },
+	{"question":"垢", "answers":[ "あか" ] },
+	{"question":"捗る", "answers":[ "はかどる" ] },
+	{"question":"躾", "answers":[ "しつけ" ] },
+	{"question":"踵", "answers":[ "かかと", "きびす" ] },
+	{"question":"癌", "answers":[ "がん" ] },
+	{"question":"瞑る", "answers":[ "つぶる", "つむる" ] },
+	{"question":"煌びやか", "answers":[ "きらびやか" ] },
+	{"question":"焚き火", "answers":[ "たきび" ] },
+	{"question":"濯ぐ", "answers":[ "すすぐ" ] },
+	{"question":"檻", "answers":[ "おり" ] },
+	{"question":"捲る", "answers":[ "めくる", "まくる" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
