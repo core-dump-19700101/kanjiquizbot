@@ -130,13 +130,32 @@ func sendKanjiInfo(s *discordgo.Session, m *discordgo.MessageCreate, query strin
 		return fmt.Errorf("Kanji '%s' not found", query)
 	}
 
+	// Custom joiner to bold jouyou readings
+	join := func(s []string, sep string) string {
+		var result string
+
+		for i, str := range s {
+			if !strings.ContainsRune(str, '△') {
+				str = "**" + str + "**"
+			}
+
+			if i == 0 {
+				result = str
+			} else {
+				result += sep + str
+			}
+		}
+
+		return result
+	}
+
 	// Build a Discord message with the result
 	var fields []*discordgo.MessageEmbedField
 
 	if len(kanji.On) > 0 {
 		fields = append(fields, &discordgo.MessageEmbedField{
 			Name:   "On-yomi",
-			Value:  strings.Join(kanji.On, "\n"),
+			Value:  join(kanji.On, "\n"),
 			Inline: true,
 		})
 	}
@@ -144,7 +163,7 @@ func sendKanjiInfo(s *discordgo.Session, m *discordgo.MessageCreate, query strin
 	if len(kanji.Kun) > 0 {
 		fields = append(fields, &discordgo.MessageEmbedField{
 			Name:   "Kun-yomi",
-			Value:  strings.Join(kanji.Kun, "\n"),
+			Value:  join(kanji.Kun, "\n"),
 			Inline: true,
 		})
 	}
