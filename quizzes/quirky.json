@@ -504,6 +504,16 @@
 	{"question": "若人", "answers":[ "わこうど" ] },
 	{"question": "山葵", "answers":[ "わさび" ] },
 	{"question": "轍", "answers":[ "わだち" ] },
-	{"question": "蕨", "answers":[ "わらび" ] }
+	{"question": "蕨", "answers":[ "わらび" ] },
+	{"question": "輜重", "answers":[ "しちょう" ] },
+	{"question": "浮腫む", "answers":[ "むくむ" ] },
+	{"question": "刮げる", "answers":[ "こそげる" ] },
+	{"question": "流離う", "answers":[ "さすらう" ] },
+	{"question": "蔕", "answers":[ "へた", "ほぞ" ] },
+	{"question": "雀斑", "answers":[ "そばかす" ] },
+	{"question": "鞴", "answers":[ "ふいご" ] },
+	{"question": "黴菌", "answers":[ "ばいきん" ] },
+	{"question": "蠍", "answers":[ "さそり" ] },
+	{"question": "女衒", "answers":[ "ぜげん" ] }
 ]
 }

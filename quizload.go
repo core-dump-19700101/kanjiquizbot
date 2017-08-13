@@ -54,6 +54,7 @@ func init() {
 		"kanken_6-10k": "kanken_6-10k.json",
 		"onago":        "onago.json",
 		"kirakira":     "kirakira-name.json",
+		"n0":           "n0.json",
 		"n1":           "jlpt_n1.json",
 		"n2":           "jlpt_n2.json",
 		"n3":           "jlpt_n3.json",
@@ -66,7 +67,6 @@ func init() {
 		"niconico":     "niconico-170806.json",
 		"kanken_blob":  "kanken_blob.json",
 		"jlpt_blob":    "jlpt_blob.json",
-		"unusual":      "unusual.json",
 		"radicals":     "radicals.json",
 	}
 	Quizzes.Unlock()
