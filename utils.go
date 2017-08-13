@@ -1,17 +1,44 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
-	"net/url"
-	"regexp"
 	"strings"
 	"time"
 
 	"github.com/bwmarrin/discordgo"
 )
+
+// Internally loaded kanji info type
+type Kanji struct {
+	Character string   `json:"character,omitempty"`
+	On        []string `json:"on,omitempty"`
+	Kun       []string `json:"kun,omitempty"`
+	Kanken    string   `json:"kanken,omitempty"`
+	Grade     string   `json:"grade,omitempty"`
+	Type      []string `json:"type,omitempty"`
+}
+
+// All kanji info map
+var KanjiMap map[string]Kanji
+
+func init() {
+
+	// Read all Jitenon.jp kanji info data into memory
+	file, err := ioutil.ReadFile("all-kanji.json")
+	if err != nil {
+		log.Println("ERROR, Reading kanji json: ", err)
+		return
+	}
+
+	err = json.Unmarshal(file, &KanjiMap)
+	if err != nil {
+		log.Println("ERROR, Unmarshalling kanji json: ", err)
+		return
+	}
+}
 
 // Send a given message to channel
 func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
@@ -91,117 +118,16 @@ func retryOnServerError(f func() error) (err error) {
 
 // ---------
 
-// Return Kanji info from jitenon
-
-// Return Kanji info from jitenon
+// Return Kanji info from jitenon loaded from local cache
 func sendKanjiInfo(s *discordgo.Session, m *discordgo.MessageCreate, query string) error {
 
 	// Only grab first character, since it's a single kanji lookup
 	query = string([]rune(query)[0])
 
-	// Run a search on Jitenon
-	searchUrl := "http://kanji.jitenon.jp/cat/search.php?search=match&search2=kanji&getdata="
-	searchUrl += url.QueryEscape(query)
-
-	searchResp, err := http.Get(searchUrl)
-	if err != nil {
-		return fmt.Errorf("Failed to reach web server")
-	}
-	defer searchResp.Body.Close()
-
-	searchData, err := ioutil.ReadAll(searchResp.Body)
-	if err != nil || searchResp.StatusCode != 200 {
-		return fmt.Errorf("Failed to search information from web server")
-	}
-
-	// Check if there was a result
-	re := regexp.MustCompile(`<td class="searchtbtd2"><a href="http://kanji.jitenon.jp/kanji(.?/[0-9]+).html">「(.+?)」について</a></td>`)
-	searchResult := re.FindStringSubmatch(string(searchData))
-	if len(searchResult) == 0 {
+	var kanji Kanji
+	var exists bool
+	if kanji, exists = KanjiMap[query]; !exists {
 		return fmt.Errorf("Kanji '%s' not found", query)
-	}
-
-	// Get the individual kanji page from Jitenon
-	kanjiUrl := "http://kanji.jitenon.jp/kanji" + searchResult[1] + ".html"
-
-	kanjiResp, err := http.Get(kanjiUrl)
-	if err != nil {
-		return err
-	}
-	defer kanjiResp.Body.Close()
-
-	kanjiData, err := ioutil.ReadAll(kanjiResp.Body)
-	if err != nil || kanjiResp.StatusCode != 200 {
-		return fmt.Errorf("Failed to get kanji information from web server")
-	}
-
-	// Strip the kanji info we need from the response
-	kanjiInfo := string(kanjiData)
-
-	// Jouyou-gai symbol
-	symbol := "【△】"
-
-	var kanji struct {
-		On     []string
-		Kun    []string
-		Type   []string
-		Grade  string
-		Kanken string
-	}
-
-	// On-yomi
-	re = regexp.MustCompile(`(?ms)<h3>音読み</h3>.*?<th `)
-	res := re.FindStringSubmatch(kanjiInfo)
-	if len(res) > 0 {
-		re := regexp.MustCompile(`<td>(.+?)?\s?<a href=".*?">(.+?)</a>.*?</td>`)
-		for _, str := range re.FindAllStringSubmatch(res[0], -1) {
-			line := strings.Join(str[1:], "")
-			if len(str[1]) == 0 {
-				line = symbol + line
-			}
-
-			kanji.On = append(kanji.On, line)
-		}
-	}
-
-	// Kun-yomi
-	re = regexp.MustCompile(`(?ms)<h3>訓読み</h3>.*?<th `)
-	res = re.FindStringSubmatch(kanjiInfo)
-	if len(res) > 0 {
-		re := regexp.MustCompile(`<td>(.+?)?\s?<a href=".*?">(.+?)</a>.*?</td>`)
-		for _, str := range re.FindAllStringSubmatch(res[0], -1) {
-			line := strings.Join(str[1:], "")
-			if len(str[1]) == 0 {
-				line = symbol + line
-			}
-
-			kanji.Kun = append(kanji.Kun, line)
-		}
-	}
-
-	// Gakunen
-	re = regexp.MustCompile(`(?ms)<h3>学年</h3>.*?<a href=".*?">(.+?)学校(.+?)年生</a>`)
-	for _, str := range re.FindAllStringSubmatch(kanjiInfo, -1) {
-		line := strings.Join(str[1:], "")
-		kanji.Grade = line
-	}
-
-	// Kanken kyuu
-	re = regexp.MustCompile(`(?ms)<h3>漢字検定</h3>.*?<a href=".*?">(.+?)</a>`)
-	for _, str := range re.FindAllStringSubmatch(kanjiInfo, -1) {
-		line := strings.Join(str[1:], "")
-		kanji.Kanken = line
-	}
-
-	// Type
-	re = regexp.MustCompile(`(?ms)<h3>種別</h3>.*?</tr>`)
-	res = re.FindStringSubmatch(kanjiInfo)
-	if len(res) > 0 {
-		re := regexp.MustCompile(`<a href=".*?">(.+?)</a>`)
-		for _, str := range re.FindAllStringSubmatch(res[0], -1) {
-			line := strings.Join(str[1:], " ")
-			kanji.Type = append(kanji.Type, line)
-		}
 	}
 
 	// Build a Discord message with the result
