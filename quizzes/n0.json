@@ -697,6 +697,8 @@
 	{"question":"鼾", "answers":[ "いびき" ] },
 	{"question":"齎す", "answers":[ "もたらす" ] },
 	{"question":"諺", "answers":[ "ことわざ" ] },
+	{"question":"偶に", "answers":[ "たまに" ] },
+	{"question":"設える", "answers":[ "しつらえる" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }

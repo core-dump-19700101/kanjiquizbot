@@ -4686,7 +4686,7 @@
 	{"question":"紛れる","answers":["まぎれる"],"comment":"(v1) to be diverted/to slip into"},
 	{"question":"紛争","answers":["ふんそう"],"comment":"(n) dispute/trouble/strife"},
 	{"question":"紛失","answers":["ふんしつ"],"comment":"(n,vs) losing something"},
-	{"question":"素","answers":["もと"],"comment":"(adj-na,adj-no,n) prime"},
+	{"question":"素","answers":["そ", "す", "もと"],"comment":"(adj-na,adj-no,n) prime"},
 	{"question":"素人","answers":["しろうと"],"comment":"(n) amateur/novice"},
 	{"question":"素早い","answers":["すばやい"],"comment":"(adj) fast/quick/prompt/agile"},
 	{"question":"素晴らしい","answers":["すばらしい"],"comment":"(adj) wonderful/splendid/magnificent"},

@@ -1446,6 +1446,7 @@
 	{ "question": "掃除", "answers":[ "そうじ" ] },
 	{ "question": "授業", "answers":[ "じゅぎょう" ] },
 	{ "question": "撮る", "answers":[ "とる" ] },
+	{ "question": "本棚", "answers":[ "ほんだな" ] },
 	{ "question": "政治", "answers":[ "せいじ" ] }
 ]
 }
