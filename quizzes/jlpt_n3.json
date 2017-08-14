@@ -959,7 +959,7 @@
 	{ "question": "理解", "answers":[ "りかい" ] },
 	{ "question": "環境", "answers":[ "かんきょう" ] },
 	{ "question": "瓶", "answers":[ "びん" ] },
-	{ "question": "生", "answers":[ "なま" ] },
+	{ "question": "生", "answers": [ "なま", "せい", "しょう", "き" ] },
 	{ "question": "生き物", "answers":[ "いきもの" ] },
 	{ "question": "生じる", "answers":[ "しょうじる" ] },
 	{ "question": "生まれ", "answers":[ "うまれ" ] },
