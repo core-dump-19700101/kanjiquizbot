@@ -182,7 +182,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		case "draw":
 			if m.Author.ID == Settings.Owner.ID {
 				if len(input) >= 2 {
-					imgSend(s, m, m.Content[len(input[0])+1:])
+					imgSend(s, m, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
 				}
 			} else {
 				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())

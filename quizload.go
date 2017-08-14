@@ -94,13 +94,13 @@ func LoadQuiz(name string) (quiz Quiz) {
 	if ok {
 		file, err := ioutil.ReadFile(QUIZ_FOLDER + filename)
 		if err != nil {
-			log.Println("ERROR, Reading json: ", err)
+			log.Printf("ERROR, Reading json '%s': %s\n", name, err)
 			return
 		}
 
 		err = json.Unmarshal(file, &quiz)
 		if err != nil {
-			log.Println("ERROR, Unmarshalling json: ", err)
+			log.Printf("ERROR, Unmarshalling json '%s': %s\n", name, err)
 			return
 		}
 	}
