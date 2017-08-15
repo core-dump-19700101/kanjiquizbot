@@ -27,7 +27,6 @@ var Token string
 var Ongoing struct {
 	sync.RWMutex
 	ChannelID map[string]bool
-	Output    *discordgo.MessageCreate // Output channel for status updates
 }
 
 // General bot settings (READ ONLY)
@@ -164,51 +163,50 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			showList(s, m)
 		case "kanji", "k":
 			if len(input) >= 2 {
-				err := sendKanjiInfo(s, m, strings.TrimSpace(m.Content[len(input[0])+1:]))
+				err := sendKanjiInfo(s, m.ChannelID, strings.TrimSpace(m.Content[len(input[0])+1:]))
 				if err != nil {
-					msgSend(s, m, "Error: "+err.Error())
+					msgSend(s, m.ChannelID, "Error: "+err.Error())
 				}
 			} else {
-				msgSend(s, m, "No kanji specified!")
+				msgSend(s, m.ChannelID, "No kanji specified!")
 			}
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)
 				t -= t % time.Second
-				msgSend(s, m, fmt.Sprintf("Uptime: **%s** ", t))
+				msgSend(s, m.ChannelID, fmt.Sprintf("Uptime: **%s** ", t))
 			} else {
-				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
 		case "draw":
 			if m.Author.ID == Settings.Owner.ID {
 				if len(input) >= 2 {
-					imgSend(s, m, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
+					imgSend(s, m.ChannelID, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
 				}
 			} else {
-				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
 		case "output":
 			// Sets Gauntlet score output channel
 			if m.Author.ID == Settings.Owner.ID {
-				Ongoing.Lock()
-				Ongoing.Output = m
-				Ongoing.Unlock()
+				putStorage("output", m.ChannelID)
+				msgSend(s, m.ChannelID, "Gauntlet Score output set to this channel.")
 			} else {
-				msgSend(s, m, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
 			}
 		case "ping":
-			msgSend(s, m, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
+			msgSend(s, m.ChannelID, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
-			msgSend(s, m, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
+			msgSend(s, m.ChannelID, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
 		case "hello":
-			imgSend(s, m, "Hello!")
+			imgSend(s, m.ChannelID, "Hello!")
 		case "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":
 			if len(input) == 2 {
-				go runQuiz(s, m, input[1], "", Settings.Speed[command])
+				go runQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command])
 			} else if len(input) == 3 {
-				go runQuiz(s, m, input[1], input[2], Settings.Speed[command])
+				go runQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command])
 			} else {
 				// Show if no quiz specified
 				showList(s, m)
@@ -226,7 +224,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// Mostly a test to see if it reacts on mentions
 	for _, u := range m.Mentions {
 		if u.ID == s.State.User.ID {
-			msgSend(s, m, "何故にボク、"+m.Author.Mention()+"？！")
+			msgSend(s, m.ChannelID, "何故にボク、"+m.Author.Mention()+"？！")
 		}
 	}
 
@@ -236,7 +234,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func showList(s *discordgo.Session, m *discordgo.MessageCreate) {
 	quizlist := GetQuizlist()
 	sort.Strings(quizlist)
-	msgSend(s, m, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <deck> [optional max score]` to start or `%shelp` for more detailed information.", strings.Join(quizlist, ", "), CMD_PREFIX, CMD_PREFIX))
+	msgSend(s, m.ChannelID, fmt.Sprintf("Available quizzes: ```%s```\nUse `%squiz <deck> [optional max score]` to start or `%shelp` for more detailed information.", strings.Join(quizlist, ", "), CMD_PREFIX, CMD_PREFIX))
 }
 
 // Show bot help message in channel
@@ -289,15 +287,15 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 		Footer:      &discordgo.MessageEmbedFooter{Text: fmt.Sprintf("Owner: %s#%s", Settings.Owner.Username, Settings.Owner.Discriminator)},
 	}
 
-	embedSend(s, m, embed)
+	embedSend(s, m.ChannelID, embed)
 }
 
 // Stop ongoing quiz in given channel
-func stopQuiz(s *discordgo.Session, m *discordgo.MessageCreate) {
+func stopQuiz(s *discordgo.Session, quizChannel string) {
 	count := 0
 
 	Ongoing.Lock()
-	delete(Ongoing.ChannelID, m.ChannelID)
+	delete(Ongoing.ChannelID, quizChannel)
 	count = len(Ongoing.ChannelID)
 	Ongoing.Unlock()
 
@@ -316,13 +314,13 @@ func stopQuiz(s *discordgo.Session, m *discordgo.MessageCreate) {
 }
 
 // Start ongoing quiz in given channel
-func startQuiz(s *discordgo.Session, m *discordgo.MessageCreate) (err error) {
+func startQuiz(s *discordgo.Session, quizChannel string) (err error) {
 	count := 0
 
 	Ongoing.Lock()
-	_, exists := Ongoing.ChannelID[m.ChannelID]
+	_, exists := Ongoing.ChannelID[quizChannel]
 	if !exists {
-		Ongoing.ChannelID[m.ChannelID] = true
+		Ongoing.ChannelID[quizChannel] = true
 	} else {
 		err = fmt.Errorf("Channel quiz already ongoing")
 	}
@@ -346,24 +344,23 @@ func startQuiz(s *discordgo.Session, m *discordgo.MessageCreate) (err error) {
 }
 
 // Checks if given channel has ongoing quiz
-func hasQuiz(m *discordgo.MessageCreate) bool {
+func hasQuiz(quizChannel string) bool {
 	Ongoing.RLock()
-	_, exists := Ongoing.ChannelID[m.ChannelID]
+	_, exists := Ongoing.ChannelID[quizChannel]
 	Ongoing.RUnlock()
 
 	return exists
 }
 
 // Run slow given quiz loop in given channel
-func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, winLimitGiven string, waitTimeGiven int) {
+func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
 
 	// Mark the quiz as started
-	if err := startQuiz(s, m); err != nil {
+	if err := startQuiz(s, quizChannel); err != nil {
 		// Quiz already running, nothing to do here
 		return
 	}
 
-	quizChannel := m.ChannelID
 	winLimit := 15    // winner score
 	timeout := 20     // seconds to wait per round
 	timeoutLimit := 5 // count before aborting
@@ -384,8 +381,8 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 
 	quiz := LoadQuiz(quizname)
 	if len(quiz.Deck) == 0 {
-		msgSend(s, m, "Failed to find quiz: "+quizname)
-		stopQuiz(s, m)
+		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
+		stopQuiz(s, quizChannel)
 		return
 	}
 
@@ -413,7 +410,7 @@ func runQuiz(s *discordgo.Session, m *discordgo.MessageCreate, quizname string, 
 		c <- m
 	})
 
-	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
 
 	var quizHistory string
 	players := make(map[string]int)
@@ -459,7 +456,7 @@ outer:
 		scoreKeeper := make(map[string]int)
 
 		// Send out quiz question
-		imgSend(s, m, current.Question)
+		imgSend(s, quizChannel, current.Question)
 
 		// Set timeout for no correct answers
 		timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
@@ -482,11 +479,11 @@ outer:
 					Color:       0xAA2222,
 				}
 
-				embedSend(s, m, embed)
+				embedSend(s, quizChannel, embed)
 
 				timeoutCount++
 				if timeoutCount >= timeoutLimit {
-					msgSend(s, m, "```Too many timeouts in a row reached, aborting quiz.```")
+					msgSend(s, quizChannel, "```Too many timeouts in a row reached, aborting quiz.```")
 					break outer
 				}
 				break inner
@@ -540,7 +537,7 @@ outer:
 					}},
 			}
 
-			embedSend(s, m, embed)
+			embedSend(s, quizChannel, embed)
 
 			if winnerExists {
 				break outer
@@ -593,9 +590,9 @@ outer:
 		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
 	}
 
-	embedSend(s, m, embed)
+	embedSend(s, quizChannel, embed)
 
-	stopQuiz(s, m)
+	stopQuiz(s, quizChannel)
 }
 
 // Player type for ranking list
@@ -619,11 +616,13 @@ func ranking(players map[string]int) (result []Player) {
 // Run private gauntlet quiz
 func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname string) {
 
+	quizChannel := m.ChannelID
+
 	// Only react in private messages
 	var retryErr error
 	for i := 0; i < 3; i++ {
 		var ch *discordgo.Channel
-		ch, retryErr = s.State.Channel(m.ChannelID)
+		ch, retryErr = s.State.Channel(quizChannel)
 		if retryErr != nil {
 			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
 				// Wait and retry if Discord server related
@@ -633,7 +632,7 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 				break
 			}
 		} else if !ch.IsPrivate {
-			msgSend(s, m, fmt.Sprintf(":no_entry_sign: Game mode `%sgauntlet` is only for PM!", CMD_PREFIX))
+			msgSend(s, quizChannel, fmt.Sprintf(":no_entry_sign: Game mode `%sgauntlet` is only for PM!", CMD_PREFIX))
 			return
 		}
 
@@ -645,18 +644,17 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 	}
 
 	// Mark the quiz as started
-	if err := startQuiz(s, m); err != nil {
+	if err := startQuiz(s, quizChannel); err != nil {
 		// Quiz already running, nothing to do here
 		return
 	}
 
-	quizChannel := m.ChannelID
 	timeout := 120 // seconds to run complete gauntlet
 
 	quiz := LoadQuiz(quizname)
 	if len(quiz.Deck) == 0 {
-		msgSend(s, m, "Failed to find quiz: "+quizname)
-		stopQuiz(s, m)
+		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
+		stopQuiz(s, quizChannel)
 		return
 	}
 
@@ -684,7 +682,7 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 		c <- m
 	})
 
-	msgSend(s, m, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
 
 	var correct, total int
 	var quizHistory string
@@ -728,7 +726,7 @@ outer:
 		}
 
 		// Send out quiz question
-		imgSend(s, m, current.Question)
+		imgSend(s, m.ChannelID, current.Question)
 
 		select {
 		case <-quitChan:
@@ -769,16 +767,12 @@ outer:
 		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + quizHistory},
 	}
 
-	embedSend(s, m, embed)
+	embedSend(s, quizChannel, embed)
 
-	stopQuiz(s, m)
+	stopQuiz(s, quizChannel)
 
 	// Produce public scoreboard
-	Ongoing.RLock()
-	output := Ongoing.Output
-	Ongoing.RUnlock()
-
-	if output != nil {
+	if len(getStorage("output")) != 0 {
 
 		embed := &discordgo.MessageEmbed{
 			Type:        "rich",
@@ -787,6 +781,6 @@ outer:
 			Color:       0xFFAAAA,
 		}
 
-		embedSend(s, output, embed)
+		embedSend(s, getStorage("output"), embed)
 	}
 }

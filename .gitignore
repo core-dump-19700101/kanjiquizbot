@@ -16,3 +16,5 @@
 # Project build binary
 kanjiquizbot
 
+# Private storage file
+storage.json

@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/bwmarrin/discordgo"
@@ -24,6 +25,12 @@ type Kanji struct {
 // All kanji info map
 var KanjiMap map[string]Kanji
 
+// Storage container for saving things on disk
+var Storage struct {
+	sync.RWMutex
+	Map map[string]string
+}
+
 func init() {
 
 	// Read all Jitenon.jp kanji info data into memory
@@ -38,14 +45,18 @@ func init() {
 		log.Println("ERROR, Unmarshalling kanji json: ", err)
 		return
 	}
+
+	// Initialize Storage map
+	Storage.Map = make(map[string]string)
+	loadStorage()
 }
 
 // Send a given message to channel
-func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
+func msgSend(s *discordgo.Session, cid string, msg string) {
 
 	// Try thrice in case of timeouts
 	retryErr := retryOnServerError(func() error {
-		_, err := s.ChannelMessageSend(m.ChannelID, msg)
+		_, err := s.ChannelMessageSend(cid, msg)
 		return err
 	})
 	if retryErr != nil {
@@ -54,13 +65,13 @@ func msgSend(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 }
 
 // Send an image message to Discord
-func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
+func imgSend(s *discordgo.Session, cid string, word string) {
 
 	image := GenerateImage(word)
 
 	// Try thrice in case of timeouts
 	retryErr := retryOnServerError(func() error {
-		_, err := s.ChannelFileSend(m.ChannelID, "word.png", image)
+		_, err := s.ChannelFileSend(cid, "word.png", image)
 		return err
 	})
 	if retryErr != nil {
@@ -69,11 +80,11 @@ func imgSend(s *discordgo.Session, m *discordgo.MessageCreate, word string) {
 }
 
 // Send an embedded message type to Discord
-func embedSend(s *discordgo.Session, m *discordgo.MessageCreate, embed *discordgo.MessageEmbed) {
+func embedSend(s *discordgo.Session, cid string, embed *discordgo.MessageEmbed) {
 
 	// Try thrice in case of timeouts
 	retryErr := retryOnServerError(func() error {
-		_, err := s.ChannelMessageSendEmbed(m.ChannelID, embed)
+		_, err := s.ChannelMessageSendEmbed(cid, embed)
 		return err
 	})
 	if retryErr != nil {
@@ -119,7 +130,7 @@ func retryOnServerError(f func() error) (err error) {
 // ---------
 
 // Return Kanji info from jitenon loaded from local cache
-func sendKanjiInfo(s *discordgo.Session, m *discordgo.MessageCreate, query string) error {
+func sendKanjiInfo(s *discordgo.Session, cid string, query string) error {
 
 	// Only grab first character, since it's a single kanji lookup
 	query = string([]rune(query)[0])
@@ -199,8 +210,61 @@ func sendKanjiInfo(s *discordgo.Session, m *discordgo.MessageCreate, query strin
 		Fields: fields,
 	}
 
-	embedSend(s, m, embed)
+	embedSend(s, cid, embed)
 
 	// Got this far without errors
 	return nil
+}
+
+// Reads key from Storage and returns its value
+func getStorage(key string) string {
+	Storage.RLock()
+	result := Storage.Map[key]
+	Storage.RUnlock()
+
+	return result
+}
+
+// Puts key into Storage with given value
+func putStorage(key, value string) {
+	Storage.Lock()
+	Storage.Map[key] = value
+	Storage.Unlock()
+
+	// Save it to disk as well
+	writeStorage()
+}
+
+// Writes Storage map as JSON to disk
+func writeStorage() {
+	Storage.RLock()
+	b, err := json.Marshal(Storage)
+	Storage.RUnlock()
+	if err != nil {
+		log.Println("ERROR, Could not marshal Storage to json: ", err)
+	} else if err = ioutil.WriteFile("storage.json", b, 0644); err != nil {
+		log.Println("ERROR, Could not write Storage file to disk: ", err)
+	}
+}
+
+// Load Storage map from JSON on disk
+func loadStorage() {
+
+	// Read storage data into memory
+	file, err := ioutil.ReadFile("storage.json")
+	if err != nil {
+		log.Println("ERROR, Reading Storage json: ", err)
+
+		// Never saved anything before, create map from scratch
+		writeStorage()
+
+		return
+	}
+
+	Storage.Lock()
+	err = json.Unmarshal(file, &Storage)
+	Storage.Unlock()
+	if err != nil {
+		log.Println("ERROR, Unmarshalling Storage json: ", err)
+	}
 }
