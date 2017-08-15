@@ -60,6 +60,7 @@ func init() {
 		"n3":           "jlpt_n3.json",
 		"n4":           "jlpt_n4.json",
 		"n5":           "jlpt_n5.json",
+		"n5_adv":       "jlpt_n5_adb.json",
 		"jouyou":       "jouyou.json",
 		"namae":        "namae.json",
 		"myouji":       "myouji.json",
