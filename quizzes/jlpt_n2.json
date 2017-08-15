@@ -1447,6 +1447,10 @@
 	{ "question": "授業", "answers":[ "じゅぎょう" ] },
 	{ "question": "撮る", "answers":[ "とる" ] },
 	{ "question": "本棚", "answers":[ "ほんだな" ] },
+	{ "question": "砂糖", "answers":[ "さとう" ] },
+	{ "question": "磨く", "answers":[ "みがく" ] },
+	{ "question": "靴", "answers":[ "くつ" ] },
+	{ "question": "靴下", "answers":[ "くつした" ] },
 	{ "question": "政治", "answers":[ "せいじ" ] }
 ]
 }

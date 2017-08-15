@@ -741,7 +741,7 @@
 	{"question":"脱退", "answers":[ "だったい" ] },
 	{"question":"苦悩", "answers":[ "くのう" ] },
 	{"question":"描写", "answers":[ "びょうしゃ" ] },
-	{"question":"一日", "answers":[ "ついたち" ] },
+	{"question":"一日", "answers":[ "ついたち", "いちにち", "いちじつ" ] },
 	{"question":"踏襲", "answers":[ "とうしゅう" ] },
 	{"question":"不振", "answers":[ "ふしん" ] },
 	{"question":"遺跡", "answers":[ "いせき" ] },

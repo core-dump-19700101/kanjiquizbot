@@ -241,7 +241,7 @@
 	{"question":"憂惧", "answers":[ "ゆうぐ" ] },
 	{"question":"憤り", "answers":[ "いきどおり" ] },
 	{"question":"憤る", "answers":[ "イキドオル" ] },
-	{"question":"憤怒", "answers":[ "ふんど" ] },
+	{"question":"憤怒", "answers":[ "ふんど", "ふんぬ" ] },
 	{"question":"憧れる", "answers":[ "アコガレル" ] },
 	{"question":"憧憬", "answers":[ "しょうけい" ] },
 	{"question":"懇々", "answers":[ "こんこん" ] },

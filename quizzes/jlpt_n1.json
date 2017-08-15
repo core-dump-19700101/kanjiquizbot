@@ -2851,6 +2851,8 @@
 	{ "question": "遠慮", "answers":[ "えんりょ" ] },
 	{ "question": "冷房", "answers":[ "れいぼう" ] },
 	{ "question": "暖房", "answers":[ "だんぼう" ] },
+	{ "question": "僅か", "answers":[ "わずか" ] },
+	{ "question": "弾", "answers":[ "たま" ] },
 	{ "question": "億万長者", "answers": [ "おくまんちょうじゃ" ] }
 ]
 }
