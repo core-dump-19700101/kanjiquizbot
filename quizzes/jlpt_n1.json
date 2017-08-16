@@ -2010,7 +2010,7 @@
 	{ "question": "空しい", "answers": [ "むなしい" ] },
 	{ "question": "空ろ", "answers": [ "うつろ" ] },
 	{ "question": "空腹", "answers": [ "くうふく" ] },
-	{ "question": "空間", "answers": [ "あきま", "くうかん" ] },
+	{ "question": "空間", "answers": [ "くうかん", "あきま" ] },
 	{ "question": "突く", "answers": [ "つく", "つつく" ] },
 	{ "question": "突っ張る", "answers": [ "つっぱる" ] },
 	{ "question": "突如", "answers": [ "とつじょ" ] },
