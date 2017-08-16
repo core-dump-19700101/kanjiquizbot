@@ -699,6 +699,20 @@
 	{"question":"諺", "answers":[ "ことわざ" ] },
 	{"question":"偶に", "answers":[ "たまに" ] },
 	{"question":"設える", "answers":[ "しつらえる" ] },
+	{"question":"目論見", "answers":[ "もくろみ" ] },
+	{"question":"嗜む", "answers":[ "たしなむ" ] },
+	{"question":"逡巡", "answers":[ "しゅんじゅん" ] },
+	{"question":"舵", "answers":[ "かじ" ] },
+	{"question":"駒", "answers":[ "こま" ] },
+	{"question":"鞘", "answers":[ "さや" ] },
+	{"question":"弁える", "answers":[ "わきまえる" ] },
+	{"question":"憑依", "answers":[ "ひょうい" ] },
+	{"question":"厭う", "answers":[ "いとう" ] },
+	{"question":"言い種", "answers":[ "いいぐさ" ] },
+	{"question":"愛でる", "answers":[ "めでる" ] },
+	{"question":"舐める", "answers":[ "なめる" ] },
+	{"question":"言祝ぐ", "answers":[ "ことほぐ" ] },
+	{"question":"頑な", "answers":[ "かたくな" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }

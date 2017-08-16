@@ -2853,6 +2853,7 @@
 	{ "question": "暖房", "answers":[ "だんぼう" ] },
 	{ "question": "僅か", "answers":[ "わずか" ] },
 	{ "question": "弾", "answers":[ "たま" ] },
+	{ "question": "逐一", "answers":[ "ちくいち" ] },
 	{ "question": "億万長者", "answers": [ "おくまんちょうじゃ" ] }
 ]
 }
