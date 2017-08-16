@@ -546,7 +546,7 @@
 	{ "question": "待合室", "answers":[ "まちあいしつ" ] },
 	{ "question": "後輩", "answers":[ "こうはい" ] },
 	{ "question": "従姉妹", "answers":[ "いとこ" ] },
-	{ "question": "御中", "answers":[ "おんちゅう" ] },
+	{ "question": "御中", "answers":[ "おんちゅう", "おなか" ] },
 	{ "question": "御免", "answers":[ "ごめん" ] },
 	{ "question": "御手洗", "answers":[ "おてあらい" ] },
 	{ "question": "御無沙汰", "answers":[ "ごぶさた" ] },
