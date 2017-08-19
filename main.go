@@ -20,6 +20,9 @@ import (
 // This bot's unique command prefix for message parsing
 const CMD_PREFIX = "kq!"
 
+// Notification when attempting unauthorized commands
+const OWNER_ONLY_MSG = "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"
+
 // Discord Bot token
 var Token string
 
@@ -176,7 +179,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				t -= t % time.Second
 				msgSend(s, m.ChannelID, fmt.Sprintf("Uptime: **%s** ", t))
 			} else {
-				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
 			}
 		case "draw":
 			if m.Author.ID == Settings.Owner.ID {
@@ -184,7 +187,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 					imgSend(s, m.ChannelID, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
 				}
 			} else {
-				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
 			}
 		case "output":
 			// Sets Gauntlet score output channel
@@ -192,14 +195,18 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				putStorage("output", m.ChannelID)
 				msgSend(s, m.ChannelID, "Gauntlet Score output set to this channel.")
 			} else {
-				msgSend(s, m.ChannelID, "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"+m.Author.Mention())
+				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
+			}
+		case "ongoing":
+			if m.Author.ID == Settings.Owner.ID {
+				msgOngoing(s, m.ChannelID)
+			} else {
+				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
 			}
 		case "ping":
 			msgSend(s, m.ChannelID, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
 			msgSend(s, m.ChannelID, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
-		case "hello":
-			imgSend(s, m.ChannelID, "Hello!")
 		case "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":

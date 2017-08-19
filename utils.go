@@ -105,6 +105,25 @@ func msgEdit(s *discordgo.Session, m *discordgo.MessageCreate, msg string) {
 	}
 }
 
+// Send ongoing quiz info to channel
+func msgOngoing(s *discordgo.Session, cid string) {
+
+	var sessions []string
+
+	Ongoing.RLock()
+	for channelID := range Ongoing.ChannelID {
+		ch, _ := s.State.Channel(channelID)
+		if ch.IsPrivate {
+			sessions = append(sessions, ch.Recipient.Username+"#"+ch.Recipient.Discriminator)
+		} else {
+			sessions = append(sessions, "<#"+channelID+">")
+		}
+	}
+	Ongoing.RUnlock()
+
+	msgSend(s, cid, fmt.Sprintf("Ongoing quizzes: %s\n", strings.Join(sessions, ", ")))
+}
+
 // Try API thrice in case of timeouts
 func retryOnServerError(f func() error) (err error) {
 

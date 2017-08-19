@@ -69,6 +69,7 @@ func init() {
 		"kanken_blob":  "kanken_blob.json",
 		"jlpt_blob":    "jlpt_blob.json",
 		"radicals":     "radicals.json",
+		"abh":          "abh.json",
 	}
 	Quizzes.Unlock()
 }
