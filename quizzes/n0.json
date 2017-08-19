@@ -770,6 +770,20 @@
 	{"question":"侍る", "answers":[ "はべる" ] },
 	{"question":"荼毘", "answers":[ "だび" ] },
 	{"question":"篝火", "answers":[ "かがりび" ] },
+	{"question":"況して", "answers":[ "まして" ], "comment":"N1?" },
+	{"question":"生る", "answers":[ "なる" ], "comment":"N2?" },
+	{"question":"焼べる", "answers":[ "くべる" ] },
+	{"question":"漁る", "answers":[ "あさる", "いさる", "すなどる" ] },
+	{"question":"足繁く", "answers":[ "あししげく" ] },
+	{"question":"賽銭", "answers":[ "さいせん" ] },
+	{"question":"邂逅", "answers":[ "かいこう" ] },
+	{"question":"却って", "answers":[ "かえって" ] },
+	{"question":"痙攣", "answers":[ "けいれん" ] },
+	{"question":"祟る", "answers":[ "たたる" ] },
+	{"question":"読点", "answers":[ "とうてん" ] },
+	{"question":"読本", "answers":[ "とくほん" ] },
+	{"question":"所以", "answers":[ "ゆえん" ] },
+	{"question":"精進", "answers":[ "しょうじん" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
