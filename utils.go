@@ -51,6 +51,26 @@ func init() {
 	loadStorage()
 }
 
+// Helper function to find string in set
+func hasString(set []string, s string) bool {
+	for _, str := range set {
+		if s == str {
+			return true
+		}
+	}
+
+	return false
+}
+
+// Helper function to force katakana to hiragana conversion
+func k2h(r rune) rune {
+	switch {
+	case r >= 'ァ' && r <= 'ヶ':
+		return r - 0x60
+	}
+	return r
+}
+
 // Send a given message to channel
 func msgSend(s *discordgo.Session, cid string, msg string) {
 

@@ -37,6 +37,7 @@ var Settings struct {
 	Owner       *discordgo.User // Bot owner account
 	TimeStarted time.Time       // Bot startup time
 	Speed       map[string]int  // Quiz game speed in ms
+	Difficulty  map[string]int  // Scramble game difficulty
 }
 
 func init() {
@@ -55,6 +56,12 @@ func init() {
 		"quiz": 2000,
 		"mild": 3000,
 		"slow": 5000,
+	}
+	Settings.Difficulty = map[string]int{
+		"easy":   5,
+		"normal": 7,
+		"hard":   9,
+		"insane": 9999,
 	}
 	Ongoing.ChannelID = make(map[string]bool)
 
@@ -218,6 +225,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				// Show if no quiz specified
 				showList(s, m)
 			}
+		case "scramble":
+			if len(input) == 1 {
+				go runScramble(s, m.ChannelID, "")
+			} else if len(input) == 2 {
+				go runScramble(s, m.ChannelID, input[1])
+			} else {
+				// Show if no quiz specified
+				showList(s, m)
+			}
 		case "gauntlet":
 			if len(input) == 2 {
 				go runGauntlet(s, m, input[1])
@@ -359,7 +375,7 @@ func hasQuiz(quizChannel string) bool {
 	return exists
 }
 
-// Run slow given quiz loop in given channel
+// Run kanji quiz loop in given channel
 func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
 
 	// Mark the quiz as started
@@ -423,26 +439,6 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 	players := make(map[string]int)
 	var timeoutCount int
 
-	// Helper function to force katakana to hiragana conversion
-	k2h := func(r rune) rune {
-		switch {
-		case r >= 'ァ' && r <= 'ヶ':
-			return r - 0x60
-		}
-		return r
-	}
-
-	// Helper function to find string in set
-	has := func(set []string, s string) bool {
-		for _, str := range set {
-			if s == str {
-				return true
-			}
-		}
-
-		return false
-	}
-
 outer:
 	for len(quiz.Deck) > 0 {
 		time.Sleep(5 * time.Second)
@@ -496,7 +492,7 @@ outer:
 				break inner
 			case msg := <-c:
 				user := msg.Author
-				if has(current.Answers, msg.Content) {
+				if hasString(current.Answers, msg.Content) {
 					if len(scoreKeeper) == 0 {
 						timeoutChan.Reset(waitTime)
 					}
@@ -694,26 +690,6 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 	var correct, total int
 	var quizHistory string
 
-	// Helper function to force katakana to hiragana conversion
-	k2h := func(r rune) rune {
-		switch {
-		case r >= 'ァ' && r <= 'ヶ':
-			return r - 0x60
-		}
-		return r
-	}
-
-	// Helper function to find string in set
-	has := func(set []string, s string) bool {
-		for _, str := range set {
-			if s == str {
-				return true
-			}
-		}
-
-		return false
-	}
-
 	// Breathing room to read start info
 	time.Sleep(5 * time.Second)
 
@@ -745,7 +721,7 @@ outer:
 			total++
 
 			// Increase score if correct answer
-			if has(current.Answers, msg.Content) {
+			if hasString(current.Answers, msg.Content) {
 				correct++
 			} else {
 				// Add wrong answer to history
@@ -790,4 +766,254 @@ outer:
 
 		embedSend(s, getStorage("output"), embed)
 	}
+}
+
+// Scramble quiz
+func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
+
+	// Mark the quiz as started
+	if err := startQuiz(s, quizChannel); err != nil {
+		// Quiz already running, nothing to do here
+		return
+	}
+
+	quizname := "Scramble"
+	winLimit := 10    // winner score
+	timeout := 30     // seconds to wait per round
+	timeoutLimit := 5 // count before aborting
+	maxLength := 7    // default word length maximum
+
+	// Set delay before closing round
+	waitTime := time.Duration(Settings.Speed["quiz"]) * time.Millisecond
+
+	// Parse provided winLimit with sane defaults
+	if level, okay := Settings.Difficulty[difficulty]; okay {
+		maxLength = level
+	}
+
+	c := make(chan *discordgo.MessageCreate, 100)
+	quitChan := make(chan struct{}, 100)
+
+	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
+		// Ignore all messages created by self and bots
+		if m.Author.ID == s.State.User.ID || m.Author.Bot {
+			return
+		}
+
+		// Only react on current quiz channel
+		if m.ChannelID != quizChannel {
+			return
+		}
+
+		// Handle quiz aborts
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"stop" {
+			quitChan <- struct{}{}
+			return
+		}
+
+		// Relay the message to the quiz loop
+		c <- m
+	})
+
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), "Unscramble the English word", winLimit))
+
+	players := make(map[string]int)
+	var timeoutCount int
+
+outer:
+	for word := range Dictionary {
+
+		// Skip words that are too short/long or names
+		if len(word) < 3 || len(word) > maxLength || word != strings.ToLower(word) {
+			continue outer
+		}
+
+		var question string
+
+		// Attempt to shuffle thrice to get something random enough
+		for i := 0; i < 3; i++ {
+			shuffled := []rune(word)
+			Shuffle(shuffled)
+			if !Dictionary[string(shuffled)] {
+				question = string(shuffled)
+				break
+			}
+		}
+
+		// If we're still left with a proper word, give up and pick a new one
+		if len(question) == 0 {
+			continue outer
+		}
+
+		// Generate sorted character set from correct answer for later comparison
+		wordSortedSlice := []rune(word)
+		sort.Slice(wordSortedSlice, func(i, j int) bool { return wordSortedSlice[i] < wordSortedSlice[j] })
+		wordSorted := string(wordSortedSlice)
+
+		answers := []string{word}
+
+		time.Sleep(5 * time.Second)
+
+		// Round's score keeper
+		scoreKeeper := make(map[string]int)
+
+		// Send out quiz question
+		imgSend(s, quizChannel, question)
+
+		// Set timeout for no correct answers
+		timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
+
+	inner:
+		for {
+
+			select {
+			case <-quitChan:
+				break outer
+			case <-timeoutChan.C:
+				if len(scoreKeeper) > 0 {
+					break inner
+				}
+
+				embed := &discordgo.MessageEmbed{
+					Type:        "rich",
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", question),
+					Description: fmt.Sprintf("**%s**", word),
+					Color:       0xAA2222,
+				}
+
+				embedSend(s, quizChannel, embed)
+
+				timeoutCount++
+				if timeoutCount >= timeoutLimit {
+					msgSend(s, quizChannel, "```Too many timeouts in a row reached, aborting quiz.```")
+					break outer
+				}
+				break inner
+			case msg := <-c:
+				user := msg.Author
+
+				if len(msg.Content) != len(word) {
+					break
+				}
+
+				answer := strings.ToLower(msg.Content)
+
+				if !Dictionary[answer] {
+					break
+				}
+
+				// Check if the character sets match
+				answerSortedSlice := []rune(answer)
+				sort.Slice(answerSortedSlice, func(i, j int) bool { return answerSortedSlice[i] < answerSortedSlice[j] })
+				answerSorted := string(answerSortedSlice)
+
+				if answerSorted != wordSorted {
+					break
+				}
+
+				if len(scoreKeeper) == 0 {
+					timeoutChan.Reset(waitTime)
+				}
+
+				// Make sure we don't add the same user again
+				if _, exists := scoreKeeper[user.ID]; !exists {
+					scoreKeeper[user.ID] = len(scoreKeeper) + 1
+				}
+
+				if !hasString(answers, answer) {
+					answers = append(answers, answer)
+				}
+
+				// Reset timeouts since we're active
+				timeoutCount = 0
+			}
+		}
+
+		if len(scoreKeeper) > 0 {
+
+			winnerExists := false
+			var fastest string
+			var scorers []string
+			for player, position := range scoreKeeper {
+				players[player]++
+				if position == 1 {
+					fastest = "<@" + player + ">"
+				} else {
+					scorers = append(scorers, "<@"+player+">")
+				}
+				if players[player] >= winLimit {
+					winnerExists = true
+				}
+			}
+
+			scorers = append([]string{fastest}, scorers...)
+
+			embed := &discordgo.MessageEmbed{
+				Type:        "rich",
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", question),
+				Description: fmt.Sprintf("**%s**", strings.Join(answers, ", ")),
+				Color:       0x22AA22,
+				Fields: []*discordgo.MessageEmbedField{
+					&discordgo.MessageEmbedField{
+						Name:   "Scorers",
+						Value:  strings.Join(scorers, ", "),
+						Inline: false,
+					}},
+			}
+
+			embedSend(s, quizChannel, embed)
+
+			if winnerExists {
+				break outer
+			}
+		}
+
+	}
+
+	// Clean up
+	killHandler()
+
+	// Produce scoreboard
+	fields := make([]*discordgo.MessageEmbedField, 0, 2)
+	var winners string
+	var participants string
+
+	for _, p := range ranking(players) {
+		if p.Score >= winLimit {
+			winners += fmt.Sprintf("<@%s>: %d points\n", p.Name, p.Score)
+		} else {
+			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)
+		}
+	}
+
+	if len(winners) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Winner",
+			Value:  winners,
+			Inline: false,
+		})
+	}
+
+	if len(participants) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Participants",
+			Value:  participants,
+			Inline: false,
+		})
+	}
+
+	// Sleep for a little breathing room
+	time.Sleep(1 * time.Second)
+
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       "Final Quiz Scoreboard: " + quizname,
+		Description: "-------------------------------",
+		Color:       0x33FF33,
+		Fields:      fields,
+	}
+
+	embedSend(s, quizChannel, embed)
+
+	stopQuiz(s, quizChannel)
 }

@@ -1,10 +1,12 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"io/ioutil"
 	"log"
 	"math/rand"
+	"os"
 	"reflect"
 	"sync"
 )
@@ -29,6 +31,9 @@ type Card struct {
 	Answers  []string `json:"answers"`
 	Comment  string   `json:"comment,omitempty"`
 }
+
+// English Dictionary map
+var Dictionary map[string]bool
 
 func init() {
 
@@ -72,6 +77,26 @@ func init() {
 		"abh":          "abh.json",
 	}
 	Quizzes.Unlock()
+
+	// Load up English dictionary for Scramble quiz
+	Dictionary = make(map[string]bool)
+
+	dictFile, err := os.Open("dictionary.txt")
+	if err != nil {
+		log.Fatalln("ERROR, Could not open English dictionary file:", err)
+	}
+	defer dictFile.Close()
+
+	scanner := bufio.NewScanner(dictFile)
+	for scanner.Scan() {
+		if len(scanner.Text()) > 0 {
+			Dictionary[scanner.Text()] = true
+		}
+	}
+	if err := scanner.Err(); err != nil {
+		log.Fatalln("ERROR, Could not scan English dictionary file:", err)
+	}
+
 }
 
 // Returns a slice of quiz names
