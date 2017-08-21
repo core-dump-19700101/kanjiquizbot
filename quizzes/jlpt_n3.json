@@ -1419,7 +1419,7 @@
 	{ "question": "除く", "answers":[ "のぞく" ] },
 	{ "question": "陰", "answers":[ "かげ" ] },
 	{ "question": "陸", "answers":[ "りく" ] },
-	{ "question": "陽気な", "answers":[ "ようき" ] },
+	{ "question": "陽気", "answers":[ "ようき" ] },
 	{ "question": "随分", "answers":[ "ずいぶん" ] },
 	{ "question": "際", "answers":[ "さい", "きわ" ] },
 	{ "question": "障害", "answers":[ "しょうがい" ] },
