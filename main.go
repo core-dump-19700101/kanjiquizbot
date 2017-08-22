@@ -817,6 +817,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), "Unscramble the English word", winLimit))
 
+	var quizHistory string
 	players := make(map[string]int)
 	var timeoutCount int
 
@@ -851,6 +852,9 @@ outer:
 		wordSorted := string(wordSortedSlice)
 
 		answers := []string{word}
+
+		// Add word to quiz history
+		quizHistory += word + "　" // Japanese space (wider)
 
 		time.Sleep(5 * time.Second)
 
@@ -1011,6 +1015,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
+		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
 	}
 
 	embedSend(s, quizChannel, embed)
