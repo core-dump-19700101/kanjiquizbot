@@ -940,7 +940,6 @@
 	{ "question": "工作", "answers": [ "こうさく" ] },
 	{ "question": "工学", "answers": [ "こうがく" ] },
 	{ "question": "左利き", "answers": [ "ひだりきき" ] },
-	{ "question": "左様なら", "answers": [ "さようなら" ] },
 	{ "question": "左程", "answers": [ "さほど" ] },
 	{ "question": "巧み", "answers": [ "たくみ" ] },
 	{ "question": "巧妙", "answers": [ "こうみょう" ] },

@@ -291,7 +291,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, numbers, r18",
 		Inline: false,
 	})
 

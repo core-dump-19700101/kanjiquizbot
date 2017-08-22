@@ -808,7 +808,6 @@
 	{ "question": "治める", "answers":[ "おさめる" ] },
 	{ "question": "泊める", "answers":[ "とめる" ] },
 	{ "question": "法則", "answers":[ "ほうそく" ] },
-	{ "question": "注す", "answers":[ "さす" ] },
 	{ "question": "洋品店", "answers":[ "ようひんてん" ] },
 	{ "question": "洗剤", "answers":[ "せんざい" ] },
 	{ "question": "活力", "answers":[ "かつりょく" ] },
