@@ -409,7 +409,7 @@
 	{"question": "色里",	"answers":[ "いろさと" ] },
 	{"question": "花菖蒲",	"answers":[ "はなあやめ" ] },
 	{"question": "花菱責め",	"answers":[ "はなびしぜめ" ] },
-	{"question": "花街",	"answers":[ "かがい" ] },
+	{"question": "花街",	"answers":[ "かがい", "はなまち" ] },
 	{"question": "若妻",	"answers":[ "ワカヅマ" ] },
 	{"question": "菊",	"answers":[ "キク" ] },
 	{"question": "菊一文字",	"answers":[ "きくひともじ" ] },
