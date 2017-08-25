@@ -297,7 +297,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Alternative game modes",
-		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%sgauntlet <deck>` in PM for a kanji time trial.", CMD_PREFIX, CMD_PREFIX),
+		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%sgauntlet <deck>` in PM for a kanji time trial.\n`%sscramble [easy/normal/hard/insane]` for an English Word Scramble quiz.", CMD_PREFIX, CMD_PREFIX, CMD_PREFIX),
 		Inline: false,
 	})
 
