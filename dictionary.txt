@@ -9954,6 +9954,7 @@ sunny
 sunrise
 sunset
 sunshine
+super
 superb
 superfluous
 superimpose
@@ -10609,6 +10610,7 @@ trounce
 troupe
 trousers
 trout
+trove
 truant
 truce
 truck
@@ -11080,6 +11082,7 @@ voluntary
 volunteer
 voluptuous
 vote
+voter
 vouch
 vow
 vowel

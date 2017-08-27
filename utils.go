@@ -407,3 +407,33 @@ func sendWordFrequencyInfo(s *discordgo.Session, cid string, query string) error
 	// Got this far without errors
 	return nil
 }
+
+// Determine if given channel is for bot spam
+func isBotChannel(s *discordgo.Session, cid string) bool {
+
+	// Only react on #bot* channels or private messages
+	var retryErr error
+	for i := 0; i < 3; i++ {
+		var ch *discordgo.Channel
+		ch, retryErr = s.State.Channel(cid)
+		if retryErr != nil {
+			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
+				// Wait and retry if Discord server related
+				time.Sleep(250 * time.Millisecond)
+				continue
+			} else {
+				break
+			}
+		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
+			return false
+		}
+
+		break
+	}
+	if retryErr != nil {
+		log.Println("ERROR, With channel name check:", retryErr)
+		return false
+	}
+
+	return true
+}

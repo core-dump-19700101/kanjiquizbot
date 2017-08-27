@@ -132,30 +132,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	// Only react on #bot* channels or private messages
-	var retryErr error
-	for i := 0; i < 3; i++ {
-		var ch *discordgo.Channel
-		ch, retryErr = s.State.Channel(m.ChannelID)
-		if retryErr != nil {
-			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
-				// Wait and retry if Discord server related
-				time.Sleep(250 * time.Millisecond)
-				continue
-			} else {
-				break
-			}
-		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
-			return
-		}
-
-		break
-	}
-	if retryErr != nil {
-		log.Println("ERROR, With channel name check:", retryErr)
-		return
-	}
-
 	// Handle bot commmands
 	if strings.HasPrefix(m.Content, CMD_PREFIX) {
 
@@ -226,6 +202,9 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		case "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":
+			if !isBotChannel(s, m.ChannelID) {
+				break
+			}
 			if len(input) == 2 {
 				go runQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command])
 			} else if len(input) == 3 {
@@ -235,6 +214,9 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				showList(s, m)
 			}
 		case "scramble":
+			if !isBotChannel(s, m.ChannelID) {
+				break
+			}
 			if len(input) == 1 {
 				go runScramble(s, m.ChannelID, "")
 			} else if len(input) == 2 {
@@ -244,19 +226,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				showList(s, m)
 			}
 		case "gauntlet":
+			if !isBotChannel(s, m.ChannelID) {
+				break
+			}
 			if len(input) == 2 {
 				go runGauntlet(s, m, input[1])
 			} else {
 				// Show if no quiz specified
 				showHelp(s, m)
 			}
-		}
-	}
-
-	// Mostly a test to see if it reacts on mentions
-	for _, u := range m.Mentions {
-		if u.ID == s.State.User.ID {
-			msgSend(s, m.ChannelID, "何故にボク、"+m.Author.Mention()+"？！")
 		}
 	}
 
