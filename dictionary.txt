@@ -2714,6 +2714,7 @@ deluge
 delve
 demand
 demarcation
+demark
 demeanor
 dementia
 demerit
@@ -10379,6 +10380,7 @@ ticket
 tidal
 tide
 tidy
+tidying
 tie
 tier
 tiger
@@ -10440,6 +10442,7 @@ tome
 tomorrow
 ton
 tone
+toned
 tongs
 tongue
 tonight
