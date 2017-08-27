@@ -771,7 +771,7 @@
 	{ "question": "本人", "answers":[ "ほんにん" ] },
 	{ "question": "本当", "answers":[ "ほんとう" ] },
 	{ "question": "本物", "answers":[ "ほんもの" ] },
-	{ "question": "札", "answers":[ "さつ" ] },
+	{ "question": "札", "answers":[ "ふだ", "さつ" ] },
 	{ "question": "材料", "answers":[ "ざいりょう" ] },
 	{ "question": "束", "answers":[ "たば", "つか" ] },
 	{ "question": "条件", "answers":[ "じょうけん" ] },

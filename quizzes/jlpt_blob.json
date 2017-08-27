@@ -4550,7 +4550,7 @@
 	{"question":"税金","answers":["ぜいきん"],"comment":"(n) tax/duty"},
 	{"question":"税関","answers":["ぜいかん"],"comment":"(n) customs house"},
 	{"question":"種","answers":["しゅ","たね"],"comment":"(n) (1) seed/pip/kind/variety/quality/tone/(2) material/matter/subject/theme/(news) copy/(3) cause/source/trick/secret/inside story"},
-	{"question":"種々","answers":["しゅじゅ"],"comment":"(adj-na,adj-no,adv,n) variety"},
+	{"question":"種々","answers":["しゅじゅ", "くさぐさ"],"comment":"(adj-na,adj-no,adv,n) variety"},
 	{"question":"種類","answers":["しゅるい"],"comment":"(n) variety/kind/type/category/counter for different sorts of things"},
 	{"question":"稲","answers":["いね"],"comment":"(n) rice-plant"},
 	{"question":"稲光","answers":["いなびかり"],"comment":"(n) (flash of) lightning"},

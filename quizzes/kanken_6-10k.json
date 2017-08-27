@@ -345,7 +345,7 @@
 	{"question":"太る", "answers":[ "ふとる" ] },
 	{"question":"失敗", "answers":[ "しっぱい" ] },
 	{"question":"失笑", "answers":[ "しっしょう" ] },
-	{"question":"女", "answers":[ "おんな" ] },
+	{"question":"女", "answers":[ "おんな", "め" ] },
 	{"question":"女子", "answers":[ "じょし", "おなご" ] },
 	{"question":"女学校", "answers":[ "じょがっこう" ] },
 	{"question":"女学生", "answers":[ "じょがくせい" ] },

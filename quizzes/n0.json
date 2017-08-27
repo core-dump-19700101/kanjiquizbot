@@ -549,8 +549,6 @@
 	{"question":"逆鱗", "answers":[ "げきりん" ] },
 	{"question":"苔", "answers":[ "こけ" ] },
 	{"question":"金槌", "answers":[ "かなづち" ] },
-	{"question":"溺れる", "answers":[ "おぼれる" ] },
-	{"question":"溺死", "answers":[ "できし" ] },
 	{"question":"嘯く", "answers":[ "うそぶく" ] },
 	{"question":"嘲る", "answers":[ "あざける" ] },
 	{"question":"自嘲", "answers":[ "じちょう" ] },
@@ -821,6 +819,12 @@
 	{"question":"櫛", "answers":[ "くし" ] },
 	{"question":"烙印", "answers":[ "らくいん" ] },
 	{"question":"訝しい", "answers":[ "いぶかしい" ] },
+	{"question":"店子", "answers":[ "たなこ" ] },
+	{"question":"聡明", "answers":[ "そうめい" ] },
+	{"question":"窶れる", "answers":[ "やつれる" ] },
+	{"question":"解す", "answers":[ "ほぐす", "ほごす", "かいす" ] },
+	{"question":"殺戮", "answers":[ "さつりく" ] },
+	{"question":"傭兵", "answers":[ "ようへい" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
