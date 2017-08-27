@@ -180,6 +180,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m.ChannelID, "No kanji specified!")
 			}
+		case "frequency", "f":
+			if len(input) >= 2 {
+				err := sendWordFrequencyInfo(s, m.ChannelID, strings.TrimSpace(m.Content[len(input[0])+1:]))
+				if err != nil {
+					msgSend(s, m.ChannelID, "Error: "+err.Error())
+				}
+			} else {
+				msgSend(s, m.ChannelID, "No query word specified!")
+			}
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)

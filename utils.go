@@ -1,10 +1,12 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"strings"
 	"sync"
 	"time"
@@ -24,6 +26,19 @@ type Kanji struct {
 
 // All kanji info map
 var KanjiMap map[string]Kanji
+
+// Internally loaded word frequency info type
+type WordFrequency struct {
+	Lexeme       string
+	Orthography  string
+	Ranking      string
+	Frequency    string
+	PartOfSpeech string
+	Reading      string
+}
+
+// All word frequency info map
+var WordFrequencyMap map[string][]WordFrequency
 
 // Storage container for saving things on disk
 var Storage struct {
@@ -45,6 +60,9 @@ func init() {
 		log.Println("ERROR, Unmarshalling kanji json: ", err)
 		return
 	}
+
+	WordFrequencyMap = make(map[string][]WordFrequency)
+	loadWordFrequency()
 
 	// Initialize Storage map
 	Storage.Map = make(map[string]string)
@@ -306,4 +324,86 @@ func loadStorage() {
 	if err != nil {
 		log.Println("ERROR, Unmarshalling Storage json: ", err)
 	}
+}
+
+// Load Word Frequency Map from TSV on disk
+func loadWordFrequency() {
+
+	freqFile, err := os.Open("wordfrequency.tsv")
+	if err != nil {
+		log.Fatalln("ERROR, Could not open Word Frequency file:", err)
+	}
+	defer freqFile.Close()
+
+	// Format:
+	// Ranking Lexeme Orthography Reading PartOfSpeech Frequency ReadingAlt
+	parts := 7
+	line := make([]string, parts)
+
+	scanner := bufio.NewScanner(freqFile)
+	for scanner.Scan() {
+		if len(scanner.Text()) == 0 {
+			continue
+		}
+
+		line = strings.SplitN(scanner.Text(), "\t", parts)
+
+		// Prioritize regular reading field over alternate
+		reading := line[3]
+		if reading == "#N/A" || reading == "0" {
+			reading = line[6]
+		}
+
+		wf := WordFrequency{
+			Lexeme:       line[1],
+			Orthography:  line[2],
+			Ranking:      line[0],
+			Frequency:    line[5],
+			PartOfSpeech: line[4],
+			Reading:      strings.Map(k2h, reading),
+		}
+
+		WordFrequencyMap[wf.Lexeme] = append(WordFrequencyMap[wf.Lexeme], wf)
+
+		// Add standard orthonography reading if needed
+		if wf.Orthography != wf.Lexeme && wf.Orthography != "#N/A" && wf.Orthography != "＊" {
+			WordFrequencyMap[wf.Orthography] = append(WordFrequencyMap[wf.Orthography], wf)
+		}
+	}
+	if err := scanner.Err(); err != nil {
+		log.Fatalln("ERROR, Could not scan Word Frequency file:", err)
+	}
+}
+
+// Return Word Frequency info loaded from local cache
+func sendWordFrequencyInfo(s *discordgo.Session, cid string, query string) error {
+
+	var wfs []WordFrequency
+	var exists bool
+	if wfs, exists = WordFrequencyMap[query]; !exists {
+		return fmt.Errorf("Word '%s' not found", query)
+	}
+
+	// Build a Discord message with the result
+	var fields []*discordgo.MessageEmbedField
+
+	for _, wf := range wfs {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   fmt.Sprintf("%s （%s） %s", wf.Lexeme, wf.Orthography, wf.Reading),
+			Value:  fmt.Sprintf("#%s [%s/mil] %s", wf.Ranking, wf.Frequency, wf.PartOfSpeech),
+			Inline: false,
+		})
+	}
+
+	embed := &discordgo.MessageEmbed{
+		Type:   "rich",
+		Title:  ":u5272: Word Frequency Information",
+		Color:  0xFADE40,
+		Fields: fields,
+	}
+
+	embedSend(s, cid, embed)
+
+	// Got this far without errors
+	return nil
 }
