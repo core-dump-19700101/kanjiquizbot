@@ -596,7 +596,7 @@
 	{ "question": "息", "answers":[ "いき" ] },
 	{ "question": "患者", "answers":[ "かんじゃ" ] },
 	{ "question": "悩む", "answers":[ "なやむ" ] },
-	{ "question": "悪口", "answers":[ "わるくち" ] },
+	{ "question": "悪口", "answers":[ "わるくち", "わるぐち", "あっこう" ] },
 	{ "question": "悪魔", "answers":[ "あくま" ] },
 	{ "question": "悲しむ", "answers":[ "かなしむ" ] },
 	{ "question": "悲劇", "answers":[ "ひげき" ] },
