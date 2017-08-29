@@ -15,7 +15,11 @@ import (
 	"time"
 
 	"github.com/bwmarrin/discordgo"
+
+	"net/http"
 )
+
+import _ "net/http/pprof"
 
 // This bot's unique command prefix for message parsing
 const CMD_PREFIX = "kq!"
@@ -41,6 +45,9 @@ var Settings struct {
 }
 
 func init() {
+	go func() {
+		log.Println(http.ListenAndServe("localhost:6060", nil))
+	}()
 
 	flag.StringVar(&Token, "t", "", "Bot Token")
 	flag.Parse()
@@ -74,6 +81,9 @@ func main() {
 		flag.Usage()
 		return
 	}
+
+	// Initialize necessary files loaded from disk
+	loadFiles()
 
 	// Initiate a new session using Bot Token for authentication
 	session, err := discordgo.New("Bot " + Token)
@@ -260,7 +270,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "jouyou, n0, n1, n2, n3, n4, n5, n5_adv, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, jlpt_blob, kanken_blob",
+		Value:  "jouyou, n0, n1, n2, n3, n4, n5, n5_adv, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, jlpt_blob, kanken_blob, kklc",
 		Inline: false,
 	})
 
@@ -272,7 +282,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Difficult decks",
-		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky",
+		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc",
 		Inline: false,
 	})
 
@@ -469,6 +479,15 @@ outer:
 					Color:       0xAA2222,
 				}
 
+				if len(current.Comment) > 0 {
+					embed.Fields = []*discordgo.MessageEmbedField{
+						&discordgo.MessageEmbedField{
+							Name:   "Comment",
+							Value:  current.Comment,
+							Inline: false,
+						}}
+				}
+
 				embedSend(s, quizChannel, embed)
 
 				timeoutCount++
@@ -525,6 +544,14 @@ outer:
 						Value:  strings.Join(scorers, ", "),
 						Inline: false,
 					}},
+			}
+
+			if len(current.Comment) > 0 {
+				embed.Fields = append(embed.Fields, &discordgo.MessageEmbedField{
+					Name:   "Comment",
+					Value:  current.Comment,
+					Inline: false,
+				})
 			}
 
 			embedSend(s, quizChannel, embed)

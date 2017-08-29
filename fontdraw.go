@@ -23,12 +23,15 @@ var (
 	fontTtf     *truetype.Font
 )
 
-func init() {
+// Load Font from disk
+func loadFont() {
+
 	// Read the font data
 	fontBytes, err := ioutil.ReadFile(fontFile)
 	if err != nil {
 		log.Fatalln("ERROR, Loading font:", err)
 	}
+
 	fontTtf, err = truetype.Parse(fontBytes)
 	if err != nil {
 		log.Fatalln("ERROR, Parsing font:", err)

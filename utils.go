@@ -46,27 +46,24 @@ var Storage struct {
 	Map map[string]string
 }
 
-func init() {
-
-	// Read all Jitenon.jp kanji info data into memory
-	file, err := ioutil.ReadFile("all-kanji.json")
-	if err != nil {
-		log.Println("ERROR, Reading kanji json: ", err)
-		return
-	}
-
-	err = json.Unmarshal(file, &KanjiMap)
-	if err != nil {
-		log.Println("ERROR, Unmarshalling kanji json: ", err)
-		return
-	}
-
-	WordFrequencyMap = make(map[string][]WordFrequency)
-	loadWordFrequency()
+// Preload all files at startup
+func loadFiles() {
 
 	// Initialize Storage map
 	Storage.Map = make(map[string]string)
 	loadStorage()
+
+	// Initialize Kanji info map
+	loadAllKanji()
+
+	// Initialize Word Frequency map
+	loadWordFrequency()
+
+	// Load font file
+	loadFont()
+
+	// Load English dictionary for Scramble
+	loadScrambleDictionary()
 }
 
 // Helper function to find string in set
@@ -184,7 +181,21 @@ func retryOnServerError(f func() error) (err error) {
 	return
 }
 
-// ---------
+// Load all kanji info into memory
+func loadAllKanji() {
+
+	// Read all Jitenon.jp kanji info data into memory
+	file, err := ioutil.ReadFile("all-kanji.json")
+	if err != nil {
+		log.Fatalln("ERROR, Reading kanji json: ", err)
+	}
+
+	err = json.Unmarshal(file, &KanjiMap)
+	if err != nil {
+		log.Fatalln("ERROR, Unmarshalling kanji json: ", err)
+	}
+
+}
 
 // Return Kanji info from jitenon loaded from local cache
 func sendKanjiInfo(s *discordgo.Session, cid string, query string) error {
@@ -329,6 +340,8 @@ func loadStorage() {
 // Load Word Frequency Map from TSV on disk
 func loadWordFrequency() {
 
+	WordFrequencyMap = make(map[string][]WordFrequency, 70000)
+
 	freqFile, err := os.Open("wordfrequency.tsv")
 	if err != nil {
 		log.Fatalln("ERROR, Could not open Word Frequency file:", err)
@@ -338,7 +351,6 @@ func loadWordFrequency() {
 	// Format:
 	// Ranking Lexeme Orthography Reading PartOfSpeech Frequency ReadingAlt
 	parts := 7
-	line := make([]string, parts)
 
 	scanner := bufio.NewScanner(freqFile)
 	for scanner.Scan() {
@@ -346,7 +358,7 @@ func loadWordFrequency() {
 			continue
 		}
 
-		line = strings.SplitN(scanner.Text(), "\t", parts)
+		line := strings.SplitN(scanner.Text(), "\t", parts)
 
 		// Prioritize regular reading field over alternate
 		reading := line[3]

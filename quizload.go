@@ -76,11 +76,15 @@ func init() {
 		"radicals":     "radicals.json",
 		"numbers":      "numbers.json",
 		"abh":          "abh.json",
+		"kklc":         "kklc.json",
 	}
 	Quizzes.Unlock()
+}
 
-	// Load up English dictionary for Scramble quiz
-	Dictionary = make(map[string]bool)
+// Load up English dictionary for Scramble quiz
+func loadScrambleDictionary() {
+
+	Dictionary = make(map[string]bool, 12000)
 
 	dictFile, err := os.Open("dictionary.txt")
 	if err != nil {
@@ -90,8 +94,9 @@ func init() {
 
 	scanner := bufio.NewScanner(dictFile)
 	for scanner.Scan() {
-		if len(scanner.Text()) > 0 {
-			Dictionary[scanner.Text()] = true
+		word := scanner.Text()
+		if len(word) > 0 {
+			Dictionary[word] = true
 		}
 	}
 	if err := scanner.Err(); err != nil {
