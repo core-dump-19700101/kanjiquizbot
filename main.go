@@ -288,7 +288,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, numbers, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, numbers, honyaku, r18",
 		Inline: false,
 	})
 
@@ -446,7 +446,7 @@ outer:
 
 		// Replace readings with hiragana-only version
 		for i, ans := range current.Answers {
-			current.Answers[i] = strings.Map(k2h, ans)
+			current.Answers[i] = k2h(ans)
 		}
 
 		// Add word to quiz history
@@ -498,7 +498,7 @@ outer:
 				break inner
 			case msg := <-c:
 				user := msg.Author
-				if hasString(current.Answers, msg.Content) {
+				if hasString(current.Answers, k2h(msg.Content)) {
 					if len(scoreKeeper) == 0 {
 						timeoutChan.Reset(waitTime)
 					}
@@ -719,7 +719,7 @@ outer:
 
 		// Replace readings with hiragana-only version
 		for i, ans := range current.Answers {
-			current.Answers[i] = strings.Map(k2h, ans)
+			current.Answers[i] = k2h(ans)
 		}
 
 		// Send out quiz question
@@ -735,7 +735,7 @@ outer:
 			total++
 
 			// Increase score if correct answer
-			if hasString(current.Answers, msg.Content) {
+			if hasString(current.Answers, k2h(msg.Content)) {
 				correct++
 			} else {
 				// Add wrong answer to history

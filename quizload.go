@@ -77,6 +77,8 @@ func init() {
 		"numbers":      "numbers.json",
 		"abh":          "abh.json",
 		"kklc":         "kklc.json",
+		"honyaku":      "honyaku.json",
+		"test":         "test.json",
 	}
 	Quizzes.Unlock()
 }

@@ -29,12 +29,13 @@ var KanjiMap map[string]Kanji
 
 // Internally loaded word frequency info type
 type WordFrequency struct {
-	Lexeme       string
-	Orthography  string
-	Ranking      string
-	Frequency    string
-	PartOfSpeech string
-	Reading      string
+	Lexeme              string
+	Orthography         string
+	Ranking             string
+	Frequency           string
+	LiteratureFrequency string
+	PartOfSpeech        string
+	Reading             string
 }
 
 // All word frequency info map
@@ -78,12 +79,16 @@ func hasString(set []string, s string) bool {
 }
 
 // Helper function to force katakana to hiragana conversion
-func k2h(r rune) rune {
-	switch {
-	case r >= 'ァ' && r <= 'ヶ':
-		return r - 0x60
+func k2h(s string) string {
+	katakana2hiragana := func(r rune) rune {
+		switch {
+		case r >= 'ァ' && r <= 'ヶ':
+			return r - 0x60
+		}
+		return r
 	}
-	return r
+
+	return strings.Map(katakana2hiragana, s)
 }
 
 // Send a given message to channel
@@ -349,8 +354,8 @@ func loadWordFrequency() {
 	defer freqFile.Close()
 
 	// Format:
-	// Ranking Lexeme Orthography Reading PartOfSpeech Frequency ReadingAlt
-	parts := 7
+	// Ranking Lexeme Orthography Reading PartOfSpeech Frequency ReadingAlt LiteratureFrequency
+	parts := 8
 
 	scanner := bufio.NewScanner(freqFile)
 	for scanner.Scan() {
@@ -367,12 +372,13 @@ func loadWordFrequency() {
 		}
 
 		wf := WordFrequency{
-			Lexeme:       line[1],
-			Orthography:  line[2],
-			Ranking:      line[0],
-			Frequency:    line[5],
-			PartOfSpeech: line[4],
-			Reading:      strings.Map(k2h, reading),
+			Lexeme:              line[1],
+			Orthography:         line[2],
+			Ranking:             line[0],
+			Frequency:           line[5],
+			LiteratureFrequency: line[7],
+			PartOfSpeech:        line[4],
+			Reading:             k2h(reading),
 		}
 
 		WordFrequencyMap[wf.Lexeme] = append(WordFrequencyMap[wf.Lexeme], wf)
@@ -402,7 +408,7 @@ func sendWordFrequencyInfo(s *discordgo.Session, cid string, query string) error
 	for _, wf := range wfs {
 		fields = append(fields, &discordgo.MessageEmbedField{
 			Name:   fmt.Sprintf("%s （%s） %s", wf.Lexeme, wf.Orthography, wf.Reading),
-			Value:  fmt.Sprintf("#%s [%s/mil] %s", wf.Ranking, wf.Frequency, wf.PartOfSpeech),
+			Value:  fmt.Sprintf("#%s [%s/mil] %s (lit.#%s)", wf.Ranking, wf.Frequency, wf.PartOfSpeech, wf.LiteratureFrequency),
 			Inline: false,
 		})
 	}
