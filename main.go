@@ -183,6 +183,16 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
 			}
+		case "reload":
+			if m.Author.ID == Settings.Owner.ID {
+				if err := loadQuizList(); err == nil {
+					showList(s, m)
+				} else {
+					msgSend(s, m.ChannelID, "Error: Failed to load quiz list!")
+				}
+			} else {
+				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
+			}
 		case "draw":
 			if m.Author.ID == Settings.Owner.ID {
 				if len(input) >= 2 {

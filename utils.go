@@ -65,6 +65,9 @@ func loadFiles() {
 
 	// Load English dictionary for Scramble
 	loadScrambleDictionary()
+
+	// Load Quiz List map
+	loadQuizList()
 }
 
 // Helper function to find string in set
