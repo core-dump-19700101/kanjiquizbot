@@ -38,7 +38,7 @@ var Dictionary map[string]bool
 // Load Quiz List map from disk
 func loadQuizList() error {
 
-	file, err := ioutil.ReadFile("quizlist.json")
+	file, err := ioutil.ReadFile(RESOURCES_FOLDER + "quizlist.json")
 	if err != nil {
 		log.Println("ERROR, Reading Quiz List json: ", err)
 		return err
@@ -62,7 +62,7 @@ func loadScrambleDictionary() {
 
 	Dictionary = make(map[string]bool, 12000)
 
-	dictFile, err := os.Open("dictionary.txt")
+	dictFile, err := os.Open(RESOURCES_FOLDER + "dictionary.txt")
 	if err != nil {
 		log.Fatalln("ERROR, Could not open English dictionary file:", err)
 	}

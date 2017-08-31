@@ -24,6 +24,9 @@ import _ "net/http/pprof"
 // This bot's unique command prefix for message parsing
 const CMD_PREFIX = "kq!"
 
+// Path to folder containing resources
+const RESOURCES_FOLDER = "./resources/"
+
 // Notification when attempting unauthorized commands
 const OWNER_ONLY_MSG = "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"
 

@@ -193,7 +193,7 @@ func retryOnServerError(f func() error) (err error) {
 func loadAllKanji() {
 
 	// Read all Jitenon.jp kanji info data into memory
-	file, err := ioutil.ReadFile("all-kanji.json")
+	file, err := ioutil.ReadFile(RESOURCES_FOLDER + "all-kanji.json")
 	if err != nil {
 		log.Fatalln("ERROR, Reading kanji json: ", err)
 	}
@@ -350,7 +350,7 @@ func loadWordFrequency() {
 
 	WordFrequencyMap = make(map[string][]WordFrequency, 70000)
 
-	freqFile, err := os.Open("wordfrequency.tsv")
+	freqFile, err := os.Open(RESOURCES_FOLDER + "wordfrequency.tsv")
 	if err != nil {
 		log.Fatalln("ERROR, Could not open Word Frequency file:", err)
 	}

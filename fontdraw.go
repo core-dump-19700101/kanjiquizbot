@@ -27,7 +27,7 @@ var (
 func loadFont() {
 
 	// Read the font data
-	fontBytes, err := ioutil.ReadFile(fontFile)
+	fontBytes, err := ioutil.ReadFile(RESOURCES_FOLDER + fontFile)
 	if err != nil {
 		log.Fatalln("ERROR, Loading font:", err)
 	}
