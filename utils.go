@@ -6,7 +6,10 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"os"
+	"reflect"
+	"sort"
 	"strings"
 	"sync"
 	"time"
@@ -92,6 +95,24 @@ func k2h(s string) string {
 	}
 
 	return strings.Map(katakana2hiragana, s)
+}
+
+// Sort the unicode character set in a string
+func sortedChars(s string) string {
+	slice := []rune(s)
+	sort.Slice(slice, func(i, j int) bool { return slice[i] < slice[j] })
+	return string(slice)
+}
+
+// Supposedly shuffles any slice, don't forget the seed first
+func shuffle(slice interface{}) {
+	rv := reflect.ValueOf(slice)
+	swap := reflect.Swapper(slice)
+	length := rv.Len()
+	for i := length - 1; i > 0; i-- {
+		j := rand.Intn(i + 1)
+		swap(i, j)
+	}
 }
 
 // Send a given message to channel

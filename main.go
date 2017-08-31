@@ -842,6 +842,13 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 		c <- m
 	})
 
+	// Create an index order, then shuffle it
+	order := make([]int, len(Dictionary))
+	for i := range order {
+		order[i] = i
+	}
+	shuffle(order)
+
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), "Unscramble the English word", winLimit))
 
 	var quizHistory string
@@ -849,10 +856,16 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 	var timeoutCount int
 
 outer:
-	for word := range Dictionary {
+	for _, idx := range order {
 
-		// Skip words that are too short/long or names
-		if len(word) < 3 || len(word) > maxLength || word != strings.ToLower(word) {
+		// Pick a group of scramble words from the Dictionary
+		group := Dictionary[idx]
+
+		// Grab a representative word to work with
+		word := group[0]
+
+		// Skip words that are too short/long
+		if len(word) < 3 || len(word) > maxLength {
 			continue outer
 		}
 
@@ -861,8 +874,8 @@ outer:
 		// Attempt to shuffle thrice to get something random enough
 		for i := 0; i < 3; i++ {
 			shuffled := []rune(word)
-			Shuffle(shuffled)
-			if !Dictionary[string(shuffled)] {
+			shuffle(shuffled)
+			if !hasString(group, string(shuffled)) {
 				question = string(shuffled)
 				break
 			}
@@ -872,13 +885,6 @@ outer:
 		if len(question) == 0 {
 			continue outer
 		}
-
-		// Generate sorted character set from correct answer for later comparison
-		wordSortedSlice := []rune(word)
-		sort.Slice(wordSortedSlice, func(i, j int) bool { return wordSortedSlice[i] < wordSortedSlice[j] })
-		wordSorted := string(wordSortedSlice)
-
-		answers := []string{word}
 
 		// Add word to quiz history
 		quizHistory += word + "　" // Japanese space (wider)
@@ -908,7 +914,7 @@ outer:
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
 					Title:       fmt.Sprintf(":no_entry: Timed out! %s", question),
-					Description: fmt.Sprintf("**%s**", word),
+					Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
 					Color:       0xAA2222,
 				}
 
@@ -929,16 +935,8 @@ outer:
 
 				answer := strings.ToLower(msg.Content)
 
-				if !Dictionary[answer] {
-					break
-				}
-
-				// Check if the character sets match
-				answerSortedSlice := []rune(answer)
-				sort.Slice(answerSortedSlice, func(i, j int) bool { return answerSortedSlice[i] < answerSortedSlice[j] })
-				answerSorted := string(answerSortedSlice)
-
-				if answerSorted != wordSorted {
+				// Check to see the answer is part of the valid set
+				if !hasString(group, answer) {
 					break
 				}
 
@@ -949,10 +947,6 @@ outer:
 				// Make sure we don't add the same user again
 				if _, exists := scoreKeeper[user.ID]; !exists {
 					scoreKeeper[user.ID] = len(scoreKeeper) + 1
-				}
-
-				if !hasString(answers, answer) {
-					answers = append(answers, answer)
 				}
 
 				// Reset timeouts since we're active
@@ -982,7 +976,7 @@ outer:
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
 				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", question),
-				Description: fmt.Sprintf("**%s**", strings.Join(answers, ", ")),
+				Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{

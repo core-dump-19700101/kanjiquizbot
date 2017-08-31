@@ -5,9 +5,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"log"
-	"math/rand"
 	"os"
-	"reflect"
 	"sync"
 )
 
@@ -32,8 +30,8 @@ type Card struct {
 	Comment  string   `json:"comment,omitempty"`
 }
 
-// English Dictionary map
-var Dictionary map[string]bool
+// English Dictionary slice
+var Dictionary [][]string
 
 // Load Quiz List map from disk
 func loadQuizList() error {
@@ -60,7 +58,7 @@ func loadQuizList() error {
 // Load up English dictionary for Scramble quiz
 func loadScrambleDictionary() {
 
-	Dictionary = make(map[string]bool, 12000)
+	dict := make(map[string][]string, 12000)
 
 	dictFile, err := os.Open(RESOURCES_FOLDER + "dictionary.txt")
 	if err != nil {
@@ -68,15 +66,23 @@ func loadScrambleDictionary() {
 	}
 	defer dictFile.Close()
 
+	// Collect scramble groups based on sorted character set
 	scanner := bufio.NewScanner(dictFile)
 	for scanner.Scan() {
 		word := scanner.Text()
 		if len(word) > 0 {
-			Dictionary[word] = true
+			sorted := sortedChars(word)
+			dict[sorted] = append(dict[sorted], word)
 		}
 	}
 	if err := scanner.Err(); err != nil {
 		log.Fatalln("ERROR, Could not scan English dictionary file:", err)
+	}
+
+	// Populate Scramble dictionary with word groups
+	Dictionary = make([][]string, 0, len(dict))
+	for _, group := range dict {
+		Dictionary = append(Dictionary, group)
 	}
 
 }
@@ -114,18 +120,7 @@ func LoadQuiz(name string) (quiz Quiz) {
 		}
 	}
 
-	Shuffle(quiz.Deck)
+	shuffle(quiz.Deck)
 
 	return
-}
-
-// Supposedly shuffles any slice, don't forget the seed first
-func Shuffle(slice interface{}) {
-	rv := reflect.ValueOf(slice)
-	swap := reflect.Swapper(slice)
-	length := rv.Len()
-	for i := length - 1; i > 0; i-- {
-		j := rand.Intn(i + 1)
-		swap(i, j)
-	}
 }
