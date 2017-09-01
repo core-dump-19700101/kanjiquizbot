@@ -4135,7 +4135,7 @@
 	{"question":"均衡", "answers":[ "きんこう" ] },
 	{"question":"垣根",	"answers":[ "かきね" ] },
 	{"question":"培われ", "answers":[ "つちかわれ" ] },
-	{"question":"堪えない", "answers":[ "たえない" ] },
+	{"question":"堪えない", "answers":[ "たえない", "こらえない" ] },
 	{"question":"報奨", "answers":[ "ほうしょう" ] },
 	{"question":"報酬",	"answers":[ "ほうしゅう" ] },
 	{"question":"塁審", "answers":[ "るいしん" ] },
