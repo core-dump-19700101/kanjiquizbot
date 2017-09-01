@@ -178,6 +178,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m.ChannelID, "No query word specified!")
 			}
+		case "currency", "c":
+			if len(input) >= 2 {
+				msgSend(s, m.ChannelID, Currency(m.Content[len(input[0])+1:]))
+			}
 		case "uptime":
 			if m.Author.ID == Settings.Owner.ID {
 				t := time.Since(Settings.TimeStarted)
@@ -197,12 +201,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
 			}
 		case "draw":
-			if m.Author.ID == Settings.Owner.ID {
-				if len(input) >= 2 {
-					imgSend(s, m.ChannelID, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
-				}
-			} else {
-				msgSend(s, m.ChannelID, OWNER_ONLY_MSG+m.Author.Mention())
+			if len(input) >= 2 {
+				imgSend(s, m.ChannelID, strings.Replace(m.Content[len(input[0])+1:], "\\n", "\n", -1))
 			}
 		case "output":
 			// Sets Gauntlet score output channel

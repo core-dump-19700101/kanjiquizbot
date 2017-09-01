@@ -7,9 +7,11 @@ import (
 	"io/ioutil"
 	"log"
 	"math/rand"
+	"net/http"
 	"os"
 	"reflect"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -208,6 +210,36 @@ func retryOnServerError(f func() error) (err error) {
 	}
 
 	return
+}
+
+// Determine if given channel is for bot spam
+func isBotChannel(s *discordgo.Session, cid string) bool {
+
+	// Only react on #bot* channels or private messages
+	var retryErr error
+	for i := 0; i < 3; i++ {
+		var ch *discordgo.Channel
+		ch, retryErr = s.State.Channel(cid)
+		if retryErr != nil {
+			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
+				// Wait and retry if Discord server related
+				time.Sleep(250 * time.Millisecond)
+				continue
+			} else {
+				break
+			}
+		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
+			return false
+		}
+
+		break
+	}
+	if retryErr != nil {
+		log.Println("ERROR, With channel name check:", retryErr)
+		return false
+	}
+
+	return true
 }
 
 // Load all kanji info into memory
@@ -450,32 +482,124 @@ func sendWordFrequencyInfo(s *discordgo.Session, cid string, query string) error
 	return nil
 }
 
-// Determine if given channel is for bot spam
-func isBotChannel(s *discordgo.Session, cid string) bool {
+// Aliases for mapping currency names
+var currencies = map[string]string{
+	"yen":      "JPY",
+	"dollar":   "USD",
+	"dollars":  "USD",
+	"bucks":    "USD",
+	"bux":      "USD",
+	"euro":     "EUR",
+	"euros":    "EUR",
+	"crowns":   "SEK",
+	"pound":    "GBP",
+	"pounds":   "GBP",
+	"quid":     "GBP",
+	"bitcoin":  "BTC",
+	"bitcoins": "BTC",
+}
 
-	// Only react on #bot* channels or private messages
-	var retryErr error
-	for i := 0; i < 3; i++ {
-		var ch *discordgo.Channel
-		ch, retryErr = s.State.Channel(cid)
-		if retryErr != nil {
-			if strings.HasPrefix(retryErr.Error(), "HTTP 5") {
-				// Wait and retry if Discord server related
-				time.Sleep(250 * time.Millisecond)
-				continue
-			} else {
-				break
+// Check if an alias is registered, else strip and return
+func checkCurrency(name string) string {
+	name = strings.ToLower(name)
+
+	if acronym, ok := currencies[name]; ok {
+		name = acronym
+	}
+
+	name = strings.ToUpper(name)
+
+	return name
+}
+
+// Format float in a human way
+func humanize(f float64) string {
+
+	sign := ""
+	if f < 0 {
+		sign = "-"
+		f = -f
+	}
+
+	n := uint64(f)
+
+	// Grab two rounded decimals
+	decimals := uint64((f+0.005)*100) % 100
+
+	var buf []byte
+
+	if n == 0 {
+		buf = []byte{'0'}
+	} else {
+		buf = make([]byte, 0, 16)
+
+		for n >= 1000 {
+			for i := 0; i < 3; i++ {
+				buf = append(buf, byte(n%10)+'0')
+				n /= 10
 			}
-		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
-			return false
+
+			buf = append(buf, ',')
 		}
 
-		break
-	}
-	if retryErr != nil {
-		log.Println("ERROR, With channel name check:", retryErr)
-		return false
+		for n > 0 {
+			buf = append(buf, byte(n%10)+'0')
+			n /= 10
+		}
 	}
 
-	return true
+	// Reverse the byte slice
+	for l, r := 0, len(buf)-1; l < r; l, r = l+1, r-1 {
+		buf[l], buf[r] = buf[r], buf[l]
+	}
+
+	return fmt.Sprintf("%s%s.%02d", sign, buf, decimals)
+}
+
+// Return Yahoo currency conversion
+func Currency(query string) string {
+	yahoo := "http://download.finance.yahoo.com/d/quotes.csv?f=l1&e=.csv&s="
+
+	parts := strings.Split(strings.TrimSpace(query), " ")
+	if len(parts) != 4 {
+		return "Error - Malformed query (ex. 100 JPY in USD)"
+	}
+
+	r := strings.NewReplacer(",", "", "K", "e3", "M", "e6", "B", "e9")
+
+	multiplier, err := strconv.ParseFloat(r.Replace(strings.ToUpper(strings.TrimSpace(parts[0]))), 64)
+	if err != nil {
+		return "Error - " + err.Error()
+	}
+
+	from := checkCurrency(parts[1])
+	to := checkCurrency(parts[3])
+
+	queryUrl := yahoo + from + to + "=X"
+
+	resp, err := http.Get(queryUrl)
+	if err != nil {
+		return "Error - " + err.Error()
+	}
+	defer resp.Body.Close()
+
+	data, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return "Error - " + err.Error()
+	}
+
+	if resp.StatusCode != 200 {
+		return "Error - Something went wrong"
+		fmt.Println("Yahoo error dump: ", string(data))
+	}
+
+	number, err := strconv.ParseFloat(strings.TrimSpace(string(data)), 64)
+	if err != nil {
+		if strings.TrimSpace(string(data)) == "N/A" {
+			return "Error - Unknown currency"
+		}
+		return "Error - " + err.Error()
+	}
+
+	return fmt.Sprintf("Currency: %s %s is **%s** %s", parts[0], from, humanize(multiplier*number), to)
 }
