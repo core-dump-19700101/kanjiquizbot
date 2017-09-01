@@ -31,7 +31,7 @@ Uses the [DiscordGo](https://github.com/bwmarrin/discordgo) project for API bind
 *Utilities*  
 `kq!k <kanji>` - displays kanji information.  
 `kq!f <word>` - shows usage frequency statistics for given Japanese word.  
-`kq!c X currency in Y currency` - converts between given currencies.  
+`kq!c <X currency in Y currency>` - converts between given currencies.  
 `kq!time` - shows current time in UTC.  
 `kq!ping` - measures the bot's latency to the server.  
 `kq!draw <text>` - creates an image with given text drawn on it.
