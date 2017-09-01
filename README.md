@@ -23,6 +23,7 @@ Uses the [DiscordGo](https://github.com/bwmarrin/discordgo) project for API bind
 *Games*  
 `kq!help` - shows help message.  
 `kq!quiz <deck> [optional max score]` - runs a quiz with the specified deck until a player reaches optional max score.  
+`kq!stop` - stops a running quiz.  
 `kq!list` - shows a full list of loaded quizzes.  
 `kq!mad/fast/quiz/mild/slow <deck>` - for 0/1/2/3/5 second answer windows instead.  
 `kq!gauntlet <deck>` - runs a kanji time trial in Direct Message.  
