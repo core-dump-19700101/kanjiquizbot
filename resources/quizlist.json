@@ -35,5 +35,6 @@
 	"numbers":      "numbers.json",
 	"abh":          "abh.json",
 	"kklc":         "kklc.json",
+	"en_syn":       "en_syn.json",
 	"honyaku":      "honyaku.json"
 }

@@ -9145,6 +9145,7 @@ shipbuilding
 shipping
 shipwreck
 shirt
+shit
 shiver
 shoal
 shock

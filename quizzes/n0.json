@@ -825,6 +825,15 @@
 	{"question":"解す", "answers":[ "ほぐす", "ほごす", "かいす" ] },
 	{"question":"殺戮", "answers":[ "さつりく" ] },
 	{"question":"傭兵", "answers":[ "ようへい" ] },
+	{"question":"雪ぐ", "answers":[ "すすぐ", "そそぐ" ] },
+	{"question":"成就", "answers":[ "じょうじゅ" ] },
+	{"question":"饒舌", "answers":[ "じょうぜつ" ] },
+	{"question":"戦慄く", "answers":[ "わななく" ] },
+	{"question":"流布", "answers":[ "るふ" ] },
+	{"question":"清澄", "answers":[ "せいちょう" ] },
+	{"question":"静脈", "answers":[ "じょうみゃく" ] },
+	{"question":"湯浴み", "answers":[ "ゆあみ" ] },
+	{"question":"容れ物", "answers":[ "いれもの" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }

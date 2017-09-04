@@ -720,7 +720,7 @@
 	{ "question": "日光", "answers":[ "にっこう" ] },
 	{ "question": "日常", "answers":[ "にちじょう" ] },
 	{ "question": "日曜", "answers":[ "にちよう" ] },
-	{ "question": "日本", "answers":[ "にほん" ] },
+	{ "question": "日本", "answers":[ "にほん", "にっぽん" ] },
 	{ "question": "旧", "answers":[ "きゅう" ] },
 	{ "question": "昇る", "answers":[ "のぼる" ] },
 	{ "question": "明かり", "answers":[ "あかり" ] },
