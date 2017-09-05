@@ -575,7 +575,8 @@ func Currency(query string) string {
 	from := checkCurrency(parts[1])
 	to := checkCurrency(parts[3])
 
-	queryUrl := yahoo + from + to + "=X"
+	// Do query in both exchange directions in case it's too small for 4 decimals
+	queryUrl := yahoo + from + to + "=X," + to + from + "=X"
 
 	resp, err := http.Get(queryUrl)
 	if err != nil {
@@ -593,12 +594,27 @@ func Currency(query string) string {
 		fmt.Println("Yahoo error dump: ", string(data))
 	}
 
-	number, err := strconv.ParseFloat(strings.TrimSpace(string(data)), 64)
+	lines := strings.SplitN(string(data), "\n", 2)
+
+	number, err := strconv.ParseFloat(strings.TrimSpace(lines[0]), 64)
 	if err != nil {
-		if strings.TrimSpace(string(data)) == "N/A" {
+		if strings.TrimSpace(lines[0]) == "N/A" {
 			return "Error - Unknown currency"
 		}
 		return "Error - " + err.Error()
+	}
+
+	// Use the inverse if the number is too small (truncated at 0.000)
+	if number < 0.1 {
+		number, err = strconv.ParseFloat(strings.TrimSpace(lines[1]), 64)
+		if err != nil {
+			if strings.TrimSpace(lines[1]) == "N/A" {
+				return "Error - Unknown currency"
+			}
+			return "Error - " + err.Error()
+		}
+
+		number = 1 / number
 	}
 
 	return fmt.Sprintf("Currency: %s %s is **%s** %s", parts[0], from, humanize(multiplier*number), to)
