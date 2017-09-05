@@ -605,7 +605,7 @@ func Currency(query string) string {
 	}
 
 	// Use the inverse if the number is too small (truncated at 0.000)
-	if number < 0.1 {
+	if number < 0.1 && len(lines) > 1 {
 		number, err = strconv.ParseFloat(strings.TrimSpace(lines[1]), 64)
 		if err != nil {
 			if strings.TrimSpace(lines[1]) == "N/A" {
