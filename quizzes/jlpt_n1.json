@@ -2367,7 +2367,7 @@
 	{ "question": "詳細", "answers": [ "しょうさい" ] },
 	{ "question": "誇る", "answers": [ "ほこる" ] },
 	{ "question": "誇張", "answers": [ "こちょう" ] },
-	{ "question": "認める", "answers": [ "したためる" ] },
+	{ "question": "認める", "answers": [ "みとめる", "したためる" ] },
 	{ "question": "認識", "answers": [ "にんしき" ] },
 	{ "question": "誘導", "answers": [ "ゆうどう" ] },
 	{ "question": "誘惑", "answers": [ "ゆうわく" ] },

@@ -3077,7 +3077,7 @@
 	{ "question": "拒否する", "answers": [ "きょひする" ], "comment": "deny, reject" },
 	{ "question": "拒絶する", "answers": [ "きょぜつする" ], "comment": "refuse, reject, deny" },
 	{ "question": "拓殖", "answers": [ "たくしょく" ], "comment": "colonization, exploitation" },
-	{ "question": "拘る", "answers": [ "かかわる" ], "comment": "adhere to, stick to" },
+	{ "question": "拘わる", "answers": [ "かかわる" ], "comment": "adhere to, stick to" },
 	{ "question": "拘束", "answers": [ "こうそく" ], "comment": "restriction, restraint, binding" },
 	{ "question": "拘留", "answers": [ "こうりゅう" ], "comment": "penal detention" },
 	{ "question": "拘置", "answers": [ "こうち" ], "comment": "detention, confinement, arrest" },

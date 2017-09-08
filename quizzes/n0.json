@@ -628,7 +628,6 @@
 	{"question":"味噌", "answers":[ "みそ" ] },
 	{"question":"兎", "answers":[ "うさぎ" ] },
 	{"question":"吠える", "answers":[ "ほえる" ] },
-	{"question":"嬉しい", "answers":[ "うれしい" ] },
 	{"question":"尤も", "answers":[ "もっとも" ] },
 	{"question":"紐", "answers":[ "ひも" ] },
 	{"question":"莫大", "answers":[ "ばくだい" ] },
@@ -834,6 +833,17 @@
 	{"question":"静脈", "answers":[ "じょうみゃく" ] },
 	{"question":"湯浴み", "answers":[ "ゆあみ" ] },
 	{"question":"容れ物", "answers":[ "いれもの" ] },
+	{"question":"偏に", "answers":[ "ひとえに" ] },
+	{"question":"剰え", "answers":[ "あまつさえ" ] },
+	{"question":"徒に", "answers":[ "いたずらに" ] },
+	{"question":"徐ろに", "answers":[ "おもむろに" ] },
+	{"question":"寧ろ", "answers":[ "むしろ" ] },
+	{"question":"予め", "answers":[ "あらかじめ" ] },
+	{"question":"普く", "answers":[ "あまねく" ] },
+	{"question":"屯", "answers":[ "たむろ" ] },
+	{"question":"初陣", "answers":[ "ういじん" ] },
+	{"question":"鈍色", "answers":[ "にびいろ" ] },
+	{"question":"百姓", "answers":[ "ひゃくしょう" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }
