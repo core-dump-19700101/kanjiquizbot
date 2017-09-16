@@ -179,8 +179,14 @@ func msgOngoing(s *discordgo.Session, cid string) {
 	Ongoing.RLock()
 	for channelID := range Ongoing.ChannelID {
 		ch, _ := s.State.Channel(channelID)
-		if ch.IsPrivate {
-			sessions = append(sessions, ch.Recipient.Username+"#"+ch.Recipient.Discriminator)
+		// Check if it's a private channel or not
+		if ch.Type&discordgo.ChannelTypeDM != 0 {
+			var recipients []string
+			for _, user := range ch.Recipients {
+				recipients = append(recipients, user.Username+"#"+user.Discriminator)
+			}
+
+			sessions = append(sessions, "("+strings.Join(recipients, " + ")+")")
 		} else {
 			sessions = append(sessions, "<#"+channelID+">")
 		}
@@ -228,7 +234,7 @@ func isBotChannel(s *discordgo.Session, cid string) bool {
 			} else {
 				break
 			}
-		} else if !strings.HasPrefix(ch.Name, "bot") && !ch.IsPrivate {
+		} else if !strings.HasPrefix(ch.Name, "bot") && ch.Type&discordgo.ChannelTypeDM == 0 {
 			return false
 		}
 

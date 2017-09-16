@@ -661,7 +661,8 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 			} else {
 				break
 			}
-		} else if !ch.IsPrivate {
+		} else if ch.Type&discordgo.ChannelTypeDM == 0 {
+			// Not a private channel
 			msgSend(s, quizChannel, fmt.Sprintf(":no_entry_sign: Game mode `%sgauntlet` is only for PM!", CMD_PREFIX))
 			return
 		}
