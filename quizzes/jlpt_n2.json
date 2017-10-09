@@ -691,7 +691,7 @@
 	{ "question": "日の出", "answers":[ "ひので" ] },
 	{ "question": "日帰り", "answers":[ "ひがえり" ] },
 	{ "question": "日当たり", "answers":[ "ひあたり" ] },
-	{ "question": "日日", "answers":[ "ひにち" ] },
+	{ "question": "日にち", "answers":[ "ひにち" ] },
 	{ "question": "日時", "answers":[ "にちじ" ] },
 	{ "question": "日用品", "answers":[ "にちようひん" ] },
 	{ "question": "日程", "answers":[ "にってい" ] },
