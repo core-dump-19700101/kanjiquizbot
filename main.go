@@ -283,7 +283,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "jouyou, n0, n1, n2, n3, n4, n5, n5_adv, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, jlpt_blob, kanken_blob, kklc",
+		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, jouyou, kklc",
 		Inline: false,
 	})
 
@@ -295,13 +295,13 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Difficult decks",
-		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc",
+		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, jp_syn",
 		Inline: false,
 	})
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, numbers, honyaku, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, en_syn, numbers, honyaku, r18",
 		Inline: false,
 	})
 

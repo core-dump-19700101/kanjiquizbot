@@ -596,8 +596,8 @@ func Currency(query string) string {
 	}
 
 	if resp.StatusCode != 200 {
-		return "Error - Something went wrong"
 		fmt.Println("Yahoo error dump: ", string(data))
+		return "Error - Something went wrong"
 	}
 
 	lines := strings.SplitN(string(data), "\n", 2)

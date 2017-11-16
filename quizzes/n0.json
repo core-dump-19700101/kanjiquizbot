@@ -618,7 +618,7 @@
 	{"question":"瞑る", "answers":[ "つぶる", "つむる" ] },
 	{"question":"煌びやか", "answers":[ "きらびやか" ] },
 	{"question":"焚き火", "answers":[ "たきび" ] },
-	{"question":"濯ぐ", "answers":[ "すすぐ" ] },
+	{"question":"濯ぐ", "answers":[ "すすぐ", "ゆすぐ", "そそぐ" ] },
 	{"question":"檻", "answers":[ "おり" ] },
 	{"question":"捲る", "answers":[ "めくる", "まくる" ] },
 	{"question":"何卒", "answers":[ "なにとぞ" ] },
