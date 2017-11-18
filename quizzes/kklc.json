@@ -1857,7 +1857,7 @@
 	{ "question": "外す", "answers": [ "はずす" ], "comment": "take off, remove; miss, dodge" },
 	{ "question": "外交", "answers": [ "がいこう" ], "comment": "diplomacy, foreign relations" },
 	{ "question": "外交官", "answers": [ "がいこうかん" ], "comment": "diplomat, foreign service officer" },
-	{ "question": "外務省", "answers": [ "がいむしょ" ], "comment": "Ministry of Foreign Affairs" },
+	{ "question": "外務省", "answers": [ "がいむしょう" ], "comment": "Ministry of Foreign Affairs" },
 	{ "question": "外国人","answers": [ "がいこくじん" ], "comment": "foreigner, alien" },
 	{ "question": "外来語", "answers": [ "がいらいご" ], "comment": "loanword, foreign word" },
 	{ "question": "外相", "answers": [ "がいしょう" ], "comment": "Minister of Foreign Affairs" },

@@ -4139,7 +4139,7 @@
 	{ "question": "mining", "answers": [ "採掘" ], "comment": "さいくつ" },
 	{ "question": "minister (of state)", "answers": [ "大臣" ], "comment": "だいじん" },
 	{ "question": "Minister of Foreign Affairs", "answers": [ "外相" ], "comment": "がいしょう" },
-	{ "question": "Ministry of Foreign Affairs", "answers": [ "外務省" ], "comment": "がいむしょ" },
+	{ "question": "Ministry of Foreign Affairs", "answers": [ "外務省" ], "comment": "がいむしょう" },
 	{ "question": "Ministry of Health, Labor, and Welfare", "answers": [ "厚生労働省" ], "comment": "こうせいろうどうしょう" },
 	{ "question": "miracle, wonder", "answers": [ "奇跡" ], "comment": "きせき" },
 	{ "question": "miraculous, exquisite, superb", "answers": [ "絶妙" ], "comment": "ぜつみょう" },
