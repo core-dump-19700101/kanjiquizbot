@@ -162,7 +162,6 @@
 	{ "question": "公衆", "answers":[ "こうしゅう" ] },
 	{ "question": "公表", "answers":[ "こうひょう" ] },
 	{ "question": "兵隊", "answers":[ "へいたい" ] },
-	{ "question": "具える", "answers":[ "そなえる" ] },
 	{ "question": "兼ねる", "answers":[ "かねる" ] },
 	{ "question": "内科", "answers":[ "ないか" ] },
 	{ "question": "内線", "answers":[ "ないせん" ] },

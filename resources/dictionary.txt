@@ -6596,6 +6596,7 @@ must
 mustache
 mustard
 muster
+mutagen
 mutant
 mutation
 mute
@@ -9254,6 +9255,7 @@ sincerity
 sinecure
 sinew
 sing
+singer
 singing
 single
 singular

@@ -2360,7 +2360,7 @@
 	{ "question": "試み", "answers": [ "こころみ" ] },
 	{ "question": "試みる", "answers": [ "こころみる" ] },
 	{ "question": "詰まり", "answers": [ "つまり" ] },
-	{ "question": "詰らない", "answers": [ "つまらない" ] },
+	{ "question": "詰まらない", "answers": [ "つまらない" ] },
 	{ "question": "詰る", "answers": [ "なじる" ] },
 	{ "question": "話し合い", "answers": [ "はなしあい" ] },
 	{ "question": "該当", "answers": [ "がいとう" ] },
