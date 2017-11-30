@@ -879,6 +879,10 @@
 	{"question":"囮", "answers":[ "おとり" ] },
 	{"question":"鵞鳥", "answers":[ "がちょう" ] },
 	{"question":"呻く", "answers":[ "うめく" ] },
+	{"question":"欺瞞", "answers":[ "ぎまん" ] },
+	{"question":"屠る", "answers":[ "ほふる" ] },
+	{"question":"屠殺", "answers":[ "とさつ" ] },
+	{"question":"肥沃", "answers":[ "ひよく" ] },
 	{"question":"莫迦", "answers":[ "ばか" ] }
 ]
 }

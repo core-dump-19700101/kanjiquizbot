@@ -2201,7 +2201,7 @@
 	{ "question": "富む", "answers": [ "とむ" ], "comment": "be rich; abound in" },
 	{ "question": "富裕", "answers": [ "ふゆう" ], "comment": "wealth, richness" },
 	{ "question": "寒い", "answers": [ "さむい" ], "comment": "cold, chilly" },
-	{ "question": "寒気", "answers": [ "かんき" ], "comment": "cold, cold weather" },
+	{ "question": "寒気", "answers": [ "かんき", "さむけ" ], "comment": "[1] cold, cold weather; [2] a chill; a feeling of chilliness" },
 	{ "question": "寛大な", "answers": [ "かんだいな" ], "comment": "generous, magnanimous, lenient" },
 	{ "question": "寛容な", "answers": [ "かんような" ], "comment": "tolerant, liberal, generous" },
 	{ "question": "寝かす", "answers": [ "ねかす" ], "comment": "put to sleep; lay down" },
