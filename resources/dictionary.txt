@@ -8610,6 +8610,7 @@ revolve
 revolver
 revulsion
 reward
+rework
 rewrite
 rhetoric
 rhyme

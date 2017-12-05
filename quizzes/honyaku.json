@@ -4104,7 +4104,7 @@
 	{ "question": "merely for form's sake", "answers": [ "形だけ" ], "comment": "かたちだけ" },
 	{ "question": "merely, simply", "answers": [ "単に" ], "comment": "たんに" },
 	{ "question": "meritorious deed, achievement", "answers": [ "功績" ], "comment": "こうせき" },
-	{ "question": "mesh, engage (as of gears); bite one another", "answers": [ "噛み合う" ], "comment": "かみあう" },
+	{ "question": "mesh, engage (as of gears); bite one another", "answers": [ "噛み合う", "嚙み合う" ], "comment": "かみあう" },
 	{ "question": "metal clasp, snap; metal cap", "answers": [ "口金" ], "comment": "くちがね" },
 	{ "question": "metal worker, smith", "answers": [ "鍛工" ], "comment": "たんこう" },
 	{ "question": "metal", "answers": [ "金属" ], "comment": "きんぞく" },
