@@ -41,10 +41,10 @@ var Ongoing struct {
 
 // General bot settings (READ ONLY)
 var Settings struct {
-	Owner       *discordgo.User // Bot owner account
-	TimeStarted time.Time       // Bot startup time
-	Speed       map[string]int  // Quiz game speed in ms
-	Difficulty  map[string]int  // Scramble game difficulty
+	Owner       *discordgo.User   // Bot owner account
+	TimeStarted time.Time         // Bot startup time
+	Speed       map[string]int    // Quiz game speed in ms
+	Difficulty  map[string][2]int // Scramble game difficulty low/high
 }
 
 func init() {
@@ -67,11 +67,11 @@ func init() {
 		"mild": 3000,
 		"slow": 5000,
 	}
-	Settings.Difficulty = map[string]int{
-		"easy":   5,
-		"normal": 7,
-		"hard":   9,
-		"insane": 9999,
+	Settings.Difficulty = map[string][2]int{
+		"easy":   [2]int{3, 5},
+		"normal": [2]int{3, 7},
+		"hard":   [2]int{4, 9},
+		"insane": [2]int{5, 9999},
 	}
 	Ongoing.ChannelID = make(map[string]bool)
 
@@ -809,6 +809,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 	winLimit := 10    // winner score
 	timeout := 30     // seconds to wait per round
 	timeoutLimit := 5 // count before aborting
+	minLength := 3    // default word length minimum
 	maxLength := 7    // default word length maximum
 
 	// Set delay before closing round
@@ -816,7 +817,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 
 	// Parse provided winLimit with sane defaults
 	if level, okay := Settings.Difficulty[difficulty]; okay {
-		maxLength = level
+		minLength, maxLength = level[0], level[1]
 	}
 
 	c := make(chan *discordgo.MessageCreate, 100)
@@ -866,7 +867,7 @@ outer:
 		word := group[0]
 
 		// Skip words that are too short/long
-		if len(word) < 3 || len(word) > maxLength {
+		if len(word) < minLength || len(word) > maxLength {
 			continue outer
 		}
 
