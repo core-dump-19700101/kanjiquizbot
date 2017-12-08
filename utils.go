@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"os"
 	"reflect"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
@@ -564,7 +565,8 @@ func humanize(f float64) string {
 
 // Return Yahoo currency conversion
 func Currency(query string) string {
-	yahoo := "http://download.finance.yahoo.com/d/quotes.csv?f=l1&e=.csv&s="
+	yahoo := "https://query1.finance.yahoo.com/v10/finance/quoteSummary/"
+	yahooParams := "?formatted=true&modules=price&corsDomain=finance.yahoo.com"
 
 	parts := strings.Split(strings.TrimSpace(query), " ")
 	if len(parts) != 4 {
@@ -582,7 +584,7 @@ func Currency(query string) string {
 	to := checkCurrency(parts[3])
 
 	// Do query in both exchange directions in case it's too small for 4 decimals
-	queryUrl := yahoo + from + to + "=X," + to + from + "=X"
+	queryUrl := yahoo + from + to + "=X" + yahooParams
 
 	resp, err := http.Get(queryUrl)
 	if err != nil {
@@ -596,31 +598,20 @@ func Currency(query string) string {
 	}
 
 	if resp.StatusCode != 200 {
-		fmt.Println("Yahoo error dump: ", string(data))
+		log.Println("Yahoo error dump: ", string(data))
 		return "Error - Something went wrong"
 	}
 
-	lines := strings.SplitN(string(data), "\n", 2)
+	re := regexp.MustCompile(`"regularMarketPrice":{"raw":(.+?),"fmt":`)
+	matched := re.FindStringSubmatch(string(data))
 
-	number, err := strconv.ParseFloat(strings.TrimSpace(lines[0]), 64)
-	if err != nil {
-		if strings.TrimSpace(lines[0]) == "N/A" {
-			return "Error - Unknown currency"
-		}
-		return "Error - " + err.Error()
+	if len(matched) != 2 {
+		return "Error - Unknown currency"
 	}
 
-	// Use the inverse if the number is too small (truncated at 0.000)
-	if number < 0.1 && len(lines) > 1 {
-		number, err = strconv.ParseFloat(strings.TrimSpace(lines[1]), 64)
-		if err != nil {
-			if strings.TrimSpace(lines[1]) == "N/A" {
-				return "Error - Unknown currency"
-			}
-			return "Error - " + err.Error()
-		}
-
-		number = 1 / number
+	number, err := strconv.ParseFloat(matched[1], 64)
+	if err != nil {
+		return "Error - " + err.Error()
 	}
 
 	return fmt.Sprintf("Currency: %s %s is **%s** %s", parts[0], from, humanize(multiplier*number), to)
