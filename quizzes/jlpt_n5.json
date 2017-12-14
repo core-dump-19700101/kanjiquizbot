@@ -375,7 +375,7 @@
 	{ "question": "見せる", "answers":[ "みせる" ] },
 	{ "question": "覚える", "answers":[ "おぼえる" ] },
 	{ "question": "角", "answers":[ "かど", "つの" ] },
-	{ "question": "言う", "answers":[ "いう" ] },
+	{ "question": "言う", "answers":[ "いう", "ゆう" ] },
 	{ "question": "言葉", "answers":[ "ことば" ] },
 	{ "question": "話", "answers":[ "はなし" ] },
 	{ "question": "話す", "answers":[ "はなす" ] },

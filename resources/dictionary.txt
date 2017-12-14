@@ -9259,6 +9259,7 @@ sing
 singer
 singing
 single
+singlet
 singular
 sinister
 sink
@@ -11229,6 +11230,7 @@ wheat
 wheedle
 wheel
 wheelchair
+wheeled
 wheeze
 when
 whenever

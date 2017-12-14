@@ -1218,7 +1218,6 @@
 	{ "question": "解決", "answers":[ "かいけつ" ] },
 	{ "question": "解釈", "answers":[ "かいしゃく" ] },
 	{ "question": "触れる", "answers":[ "ふれる" ] },
-	{ "question": "言う", "answers":[ "ゆう" ] },
 	{ "question": "言わば", "answers":[ "いわば" ] },
 	{ "question": "言語", "answers":[ "げんご" ] },
 	{ "question": "計る", "answers":[ "はかる" ] },
