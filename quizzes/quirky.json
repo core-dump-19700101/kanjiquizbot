@@ -514,6 +514,7 @@
 	{"question": "鞴", "answers":[ "ふいご" ] },
 	{"question": "黴菌", "answers":[ "ばいきん" ] },
 	{"question": "蠍", "answers":[ "さそり" ] },
-	{"question": "女衒", "answers":[ "ぜげん" ] }
+	{"question": "女衒", "answers":[ "ぜげん" ] },
+	{"question": "墳る", "answers": ["うごもる"] }
 ]
 }

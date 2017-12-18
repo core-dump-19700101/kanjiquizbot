@@ -450,6 +450,8 @@
 	{"question":"戡定", "answers":[ "かんてい" ] },
 	{"question":"乞丐", "answers":[ "きっかい" ] },
 	{"question":"涕洟", "answers":[ "ていい" ] },
-	{"question":"羸弱", "answers":[ "るいじゃく" ] }
+	{"question":"羸弱", "answers":[ "るいじゃく" ] },
+	{"question": "墳塋", "answers": ["ふんえい"] },
+	{"question": "帥先", "answers": ["そっせん"] }
 ]
 }
