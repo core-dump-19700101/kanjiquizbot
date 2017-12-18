@@ -397,7 +397,7 @@
 	{ "question": "出品", "answers": [ "しゅっぴん" ] },
 	{ "question": "出来物", "answers": [ "できもの", "できぶつ" ] },
 	{ "question": "出演", "answers": [ "しゅつえん" ] },
-	{ "question": "出生", "answers": [ "しゅっしょう" ] },
+	{ "question": "出生", "answers": [ "しゅっしょう", "しゅっせい" ] },
 	{ "question": "出産", "answers": [ "しゅっさん" ] },
 	{ "question": "出直し", "answers": [ "でなおし" ] },
 	{ "question": "出社", "answers": [ "しゅっしゃ" ] },
