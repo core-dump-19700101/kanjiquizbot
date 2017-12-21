@@ -818,6 +818,7 @@
 	{"question":"櫛", "answers":[ "くし" ] },
 	{"question":"烙印", "answers":[ "らくいん" ] },
 	{"question":"訝しい", "answers":[ "いぶかしい" ] },
+	{"question":"訝る", "answers":[ "いぶかる" ] },
 	{"question":"店子", "answers":[ "たなこ" ] },
 	{"question":"聡明", "answers":[ "そうめい" ] },
 	{"question":"窶れる", "answers":[ "やつれる" ] },
@@ -910,7 +911,7 @@
 	{"question": "花魁", "answers": ["おいらん"] },
 	{"question": "黄泉", "answers": ["よみ"] },
 	{"question": "容貌", "answers": ["ようぼう"] },
-	{"question": "鯱張る", "answers": ["しゃちほこばる", "しゃちこばる"] },
+	{"question": "鯱張る", "answers": ["しゃちほこばる", "しゃちこばる", "しゃっちょこばる", "しゃちばる" ] },
 	{"question": "穿る", "answers": ["ほじる", "ほじくる"] },
 	{"question": "象る", "answers": ["かたどる"] },
 	{"question": "新嘗祭", "answers": ["にいなめさい"] },
@@ -951,7 +952,6 @@
 	{"question": "吊り井楼", "answers": ["つりせいろう"] },
 	{"question": "摩天楼", "answers": ["まてんろう"] },
 	{"question": "釐秤", "answers": ["りんばかり"] },
-	{"question": "吏読", "answers": ["りと"] },
 	{"question": "汚吏", "answers": ["おり"] },
 	{"question": "誰某", "answers": ["たれがし", "だれそれ", "たれぼう"] },
 	{"question": "何某", "answers": ["なにがし", "なにぼう"] },
@@ -978,6 +978,9 @@
 	{"question": "信憑", "answers": ["しんぴょう"] },
 	{"question": "塒", "answers": ["ねぐら"] },
 	{"question": "俊敏", "answers": ["しゅんびん"] },
+	{"question": "怒濤", "answers": ["どとう"] },
+	{"question": "仄暗い", "answers": ["ほのぐらい"] },
+	{"question": "厠", "answers": ["かわや"] },
 	{"question": "精悍", "answers": ["せいかん"] }
 ]
 }
