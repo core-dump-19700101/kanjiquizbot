@@ -4648,7 +4648,7 @@
 	{ "question": "瓜", "answers": [ "うり" ], "comment": "melon" },
 	{ "question": "瓜二つ", "answers": [ "うりふたつ" ], "comment": "as alike as two melons" },
 	{ "question": "瓦", "answers": [ "かわら" ], "comment": "tile, brick" },
-	{ "question": "瓶の栓", "answers": [ "びんにせんをする" ], "comment": "bottle stopper" },
+	{ "question": "瓶の栓", "answers": [ "びんのせん" ], "comment": "bottle stopper" },
 	{ "question": "瓶詰め", "answers": [ "びんづめ" ], "comment": "bottling" },
 	{ "question": "甘い", "answers": [ "あまい" ], "comment": "sweet; indulgent; overly optimistic" },
 	{ "question": "甘やかす", "answers": [ "あまやかす" ], "comment": "pamper, spoil" },

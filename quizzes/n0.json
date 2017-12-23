@@ -466,7 +466,6 @@
 	{"question":"甲斐性", "answers":[ "かいしょう" ] },
 	{"question":"虚ろ", "answers":[ "うつろ" ] },
 	{"question":"螺旋", "answers":[ "らせん" ] },
-	{"question":"誰", "answers":[ "だれ" ] },
 	{"question":"誰何", "answers":[ "すいか" ] },
 	{"question":"謙遜", "answers":[ "けんそん" ] },
 	{"question":"傲慢", "answers":[ "ごうまん" ] },
@@ -484,7 +483,7 @@
 	{"question":"骸骨", "answers":[ "がいこつ" ] },
 	{"question":"掌", "answers":[ "てのひら", "たなごころ" ] },
 	{"question":"空しい", "answers":[ "むなしい" ] },
-	{"question":"溢れる", "answers":[ "あふれる" ] },
+	{"question":"溢れる", "answers":[ "あふれる", "こぼれる", "あぶれる" ] },
 	{"question":"横溢", "answers":[ "おういつ" ] },
 	{"question":"狡猾", "answers":[ "こうかつ" ] },
 	{"question":"狡い", "answers":[ "ずるい", "こすい" ] },
@@ -963,7 +962,7 @@
 	{"question": "隻眼", "answers": ["せきがん"] },
 	{"question": "隻手", "answers": ["せきしゅ"] },
 	{"question": "玉髄", "answers": ["ぎょくずい"] },
-	{"question": "螟虫", "answers": ["ずいむし"] },
+	{"question": "螟虫", "answers": ["ずいむし", "めいちゅう"] },
 	{"question": "髄鞘", "answers": ["ずいしょう"] },
 	{"question": "血漿", "answers": ["けっしょう"] },
 	{"question": "嘱目", "answers": ["しょくもく"] },
@@ -981,6 +980,12 @@
 	{"question": "怒濤", "answers": ["どとう"] },
 	{"question": "仄暗い", "answers": ["ほのぐらい"] },
 	{"question": "厠", "answers": ["かわや"] },
+	{"question": "密か", "answers": ["ひそか", "みそか"] },
+	{"question": "颯爽", "answers": ["さっそう"] },
+	{"question": "摑む", "answers": ["つかむ"] },
+	{"question": "衝く", "answers": ["つく"] },
+	{"question": "逸らす", "answers": ["そらす"] },
+	{"question": "鰭", "answers": ["ひれ", "はた"] },
 	{"question": "精悍", "answers": ["せいかん"] }
 ]
 }
