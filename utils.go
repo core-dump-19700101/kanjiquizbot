@@ -79,7 +79,7 @@ func loadFiles() {
 // Helper function to find string in set
 func hasString(set []string, s string) bool {
 	for _, str := range set {
-		if s == str {
+		if len(s) == len(str) && (s == str || strings.ToLower(s) == str) {
 			return true
 		}
 	}
@@ -598,6 +598,10 @@ func Currency(query string) string {
 	}
 
 	if resp.StatusCode != 200 {
+		if strings.Contains(string(data), "Quote not found for ticker symbol") {
+			return "Error - Currency not found"
+		}
+
 		log.Println("Yahoo error dump: ", string(data))
 		return "Error - Something went wrong"
 	}
