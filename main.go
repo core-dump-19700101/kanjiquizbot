@@ -13,6 +13,7 @@ import (
 	"sync"
 	"syscall"
 	"time"
+	"unicode/utf8"
 
 	"github.com/bwmarrin/discordgo"
 
@@ -61,11 +62,12 @@ func init() {
 	// Initialize settings
 	Settings.TimeStarted = time.Now()
 	Settings.Speed = map[string]int{
-		"mad":  0,
-		"fast": 1000,
-		"quiz": 2000,
-		"mild": 3000,
-		"slow": 5000,
+		"mad":   0,
+		"fast":  1000,
+		"quiz":  2000,
+		"mild":  3000,
+		"slow":  5000,
+		"multi": 1500,
 	}
 	Settings.Difficulty = map[string][2]int{
 		"easy":   [2]int{3, 5},
@@ -236,6 +238,18 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				// Show if no quiz specified
 				showList(s, m)
 			}
+		case "multi":
+			if !isBotChannel(s, m.ChannelID) {
+				break
+			}
+			if len(input) == 2 {
+				go runMultiQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command])
+			} else if len(input) == 3 {
+				go runMultiQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command])
+			} else {
+				// Show if no quiz specified
+				showList(s, m)
+			}
 		case "scramble":
 			if !isBotChannel(s, m.ChannelID) {
 				break
@@ -307,7 +321,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Alternative game modes",
-		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%sgauntlet <deck>` in PM for a kanji time trial.\n`%sscramble [easy/normal/hard/insane]` for an English Word Scramble quiz.", CMD_PREFIX, CMD_PREFIX, CMD_PREFIX),
+		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%smulti <deck>` for scoring on multiple answers to the same question.\n`%sgauntlet <deck>` in PM for a kanji time trial.\n`%sscramble [easy/normal/hard/insane]` for an English Word Scramble quiz.", CMD_PREFIX, CMD_PREFIX, CMD_PREFIX, CMD_PREFIX),
 		Inline: false,
 	})
 
@@ -485,10 +499,17 @@ outer:
 					break inner
 				}
 
+				answerList := strings.Join(current.Answers, ", ")
+
+				// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
+				if utf8.RuneCountInString(answerList) > 2000 {
+					answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
+				}
+
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
 					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
-					Description: fmt.Sprintf("**%s**", strings.Join(current.Answers, ", ")),
+					Description: fmt.Sprintf("**%s**", answerList),
 					Color:       0xAA2222,
 				}
 
@@ -546,10 +567,17 @@ outer:
 
 			scorers = append([]string{fastest}, scorers...)
 
+			answerList := strings.Join(current.Answers, ", ")
+
+			// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
+			if utf8.RuneCountInString(answerList) > 2000 {
+				answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
+			}
+
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
 				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
-				Description: fmt.Sprintf("**%s**", strings.Join(current.Answers, ", ")),
+				Description: fmt.Sprintf("**%s**", answerList),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
@@ -1007,6 +1035,269 @@ outer:
 
 	for _, p := range ranking(players) {
 		if p.Score >= winLimit {
+			winners += fmt.Sprintf("<@%s>: %d points\n", p.Name, p.Score)
+		} else {
+			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)
+		}
+	}
+
+	if len(winners) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Winner",
+			Value:  winners,
+			Inline: false,
+		})
+	}
+
+	if len(participants) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Participants",
+			Value:  participants,
+			Inline: false,
+		})
+	}
+
+	// Sleep for a little breathing room
+	time.Sleep(1 * time.Second)
+
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       "Final Quiz Scoreboard: " + quizname,
+		Description: "-------------------------------",
+		Color:       0x33FF33,
+		Fields:      fields,
+		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
+	}
+
+	embedSend(s, quizChannel, embed)
+
+	stopQuiz(s, quizChannel)
+}
+
+// Run multi quiz loop in given channel
+func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
+
+	// Mark the quiz as started
+	if err := startQuiz(s, quizChannel); err != nil {
+		// Quiz already running, nothing to do here
+		return
+	}
+
+	winLimit := 15    // winner score
+	timeout := 13     // seconds to wait per round
+	timeoutLimit := 5 // count before aborting
+	pointLimit := 3   // possible points per question
+
+	// Set delay before closing round
+	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
+
+	// Parse provided winLimit with sane defaults
+	if i, err := strconv.Atoi(winLimitGiven); err == nil {
+		if i > 100 {
+			winLimit = 100
+		} else if i < 1 {
+			winLimit = 1
+		} else {
+			winLimit = i
+		}
+	}
+
+	quiz := LoadQuiz(quizname)
+	if len(quiz.Deck) == 0 {
+		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
+		stopQuiz(s, quizChannel)
+		return
+	}
+
+	c := make(chan *discordgo.MessageCreate, 100)
+	quitChan := make(chan struct{}, 100)
+
+	killHandler := s.AddHandler(func(s *discordgo.Session, m *discordgo.MessageCreate) {
+		// Ignore all messages created by self and bots
+		if m.Author.ID == s.State.User.ID || m.Author.Bot {
+			return
+		}
+
+		// Only react on current quiz channel
+		if m.ChannelID != quizChannel {
+			return
+		}
+
+		// Handle quiz aborts
+		if strings.ToLower(strings.TrimSpace(m.Content)) == CMD_PREFIX+"stop" {
+			quitChan <- struct{}{}
+			return
+		}
+
+		// Relay the message to the quiz loop
+		c <- m
+	})
+
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
+
+	var quizHistory string
+	players := make(map[string]int)
+	var timeoutCount int
+
+outer:
+	for len(quiz.Deck) > 0 {
+		time.Sleep(5 * time.Second)
+
+		// Grab new word from the quiz
+		var current Card
+		current, quiz.Deck = quiz.Deck[len(quiz.Deck)-1], quiz.Deck[:len(quiz.Deck)-1]
+		answerMap := make(map[string]time.Time)
+
+		// Populate answer map with lowercase/hiragana-reading version
+		for _, ans := range current.Answers {
+			// Initialize with zero time
+			answerMap[k2h(strings.ToLower(ans))] = time.Time{}
+		}
+		answersLeft := len(answerMap)
+
+		// Add word to quiz history
+		quizHistory += current.Question + "　" // Japanese space (wider)
+
+		// Round's score keeper
+		scoreKeeper := make(map[string]int)
+
+		// Send out quiz question
+		imgSend(s, quizChannel, current.Question)
+
+		// Set timeout for no correct answers
+		bonusTime := minint(len(current.Answers)*2, 12)
+		timeoutChan := time.NewTimer(time.Duration(timeout+bonusTime) * time.Second)
+
+	inner:
+		for {
+
+			select {
+			case <-quitChan:
+				break outer
+			case <-timeoutChan.C:
+				if len(scoreKeeper) > 0 {
+					break inner
+				}
+
+				answerList := strings.Join(current.Answers, ", ")
+
+				// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
+				if utf8.RuneCountInString(answerList) > 2000 {
+					answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
+				}
+
+				embed := &discordgo.MessageEmbed{
+					Type:        "rich",
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
+					Description: fmt.Sprintf("**%s**", answerList),
+					Color:       0xAA2222,
+				}
+
+				if len(current.Comment) > 0 {
+					embed.Fields = []*discordgo.MessageEmbedField{
+						&discordgo.MessageEmbedField{
+							Name:   "Comment",
+							Value:  current.Comment,
+							Inline: false,
+						}}
+				}
+
+				embedSend(s, quizChannel, embed)
+
+				timeoutCount++
+				if timeoutCount >= timeoutLimit {
+					msgSend(s, quizChannel, "```Too many timeouts in a row reached, aborting quiz.```")
+					break outer
+				}
+				break inner
+			case msg := <-c:
+				user := msg.Author
+				if ts, okay := answerMap[k2h(strings.ToLower(msg.Content))]; okay {
+
+					// Only count answers that are given within the window
+					if ts.IsZero() {
+						answerMap[k2h(strings.ToLower(msg.Content))] = time.Now()
+						answersLeft--
+
+						// Finish early if all answers given
+						if answersLeft <= 0 {
+							timeoutChan.Reset(waitTime)
+						}
+					} else if time.Since(ts) > waitTime {
+						break
+					}
+
+					scoreKeeper[user.ID]++
+
+					// Reset timeouts since we're active
+					timeoutCount = 0
+				}
+			}
+		}
+
+		if len(scoreKeeper) > 0 {
+
+			winnerExists := false
+			for player, score := range scoreKeeper {
+				players[player] += minint(score, pointLimit)
+				if players[player] >= winLimit {
+					winnerExists = true
+				}
+			}
+
+			var participants string
+			for _, p := range ranking(scoreKeeper) {
+				participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, minint(p.Score, pointLimit))
+			}
+
+			answerList := strings.Join(current.Answers, ", ")
+
+			// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
+			if utf8.RuneCountInString(answerList) > 2000 {
+				answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
+			}
+
+			embed := &discordgo.MessageEmbed{
+				Type:        "rich",
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
+				Description: fmt.Sprintf("**%s**", answerList),
+				Color:       0x22AA22,
+				Fields: []*discordgo.MessageEmbedField{
+					&discordgo.MessageEmbedField{
+						Name:   "Scorers",
+						Value:  participants,
+						Inline: false,
+					}},
+			}
+
+			if len(current.Comment) > 0 {
+				embed.Fields = append(embed.Fields, &discordgo.MessageEmbedField{
+					Name:   "Comment",
+					Value:  current.Comment,
+					Inline: false,
+				})
+			}
+
+			embedSend(s, quizChannel, embed)
+
+			if winnerExists {
+				break outer
+			}
+		}
+
+	}
+
+	// Clean up
+	killHandler()
+
+	// Produce scoreboard
+	fields := make([]*discordgo.MessageEmbedField, 0, 2)
+	var winners string
+	var participants string
+	rankingList := ranking(players)
+
+	for _, p := range rankingList {
+		if p.Score >= winLimit && len(rankingList) > 0 && p.Score == rankingList[0].Score {
 			winners += fmt.Sprintf("<@%s>: %d points\n", p.Name, p.Score)
 		} else {
 			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)

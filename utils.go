@@ -76,6 +76,15 @@ func loadFiles() {
 	loadQuizList()
 }
 
+// Helper function to pick max value out of two ints
+func minint(a, b int) int {
+	if a < b {
+		return a
+	}
+
+	return b
+}
+
 // Helper function to find string in set
 func hasString(set []string, s string) bool {
 	for _, str := range set {
