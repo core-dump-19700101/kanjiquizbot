@@ -16,6 +16,7 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"unicode/utf8"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -83,6 +84,15 @@ func minint(a, b int) int {
 	}
 
 	return b
+}
+
+// Helper function to truncate long strings (Discord field limit)
+func truncate(s string, n int) string {
+	if utf8.RuneCountInString(s) > n && len(s) >= 6 {
+		s = string([]rune(s)[:n-6]) + " [...]"
+	}
+
+	return s
 }
 
 // Helper function to find string in set

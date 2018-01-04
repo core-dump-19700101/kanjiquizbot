@@ -13,7 +13,6 @@ import (
 	"sync"
 	"syscall"
 	"time"
-	"unicode/utf8"
 
 	"github.com/bwmarrin/discordgo"
 
@@ -297,7 +296,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, jouyou, kklc",
+		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, common, jouyou, kklc",
 		Inline: false,
 	})
 
@@ -499,17 +498,10 @@ outer:
 					break inner
 				}
 
-				answerList := strings.Join(current.Answers, ", ")
-
-				// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
-				if utf8.RuneCountInString(answerList) > 2000 {
-					answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
-				}
-
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
 					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
-					Description: fmt.Sprintf("**%s**", answerList),
+					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
 
@@ -567,17 +559,10 @@ outer:
 
 			scorers = append([]string{fastest}, scorers...)
 
-			answerList := strings.Join(current.Answers, ", ")
-
-			// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
-			if utf8.RuneCountInString(answerList) > 2000 {
-				answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
-			}
-
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
 				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
-				Description: fmt.Sprintf("**%s**", answerList),
+				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
@@ -1179,17 +1164,10 @@ outer:
 					break inner
 				}
 
-				answerList := strings.Join(current.Answers, ", ")
-
-				// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
-				if utf8.RuneCountInString(answerList) > 2000 {
-					answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
-				}
-
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
 					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
-					Description: fmt.Sprintf("**%s**", answerList),
+					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
 
@@ -1250,17 +1228,10 @@ outer:
 				participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, minint(p.Score, pointLimit))
 			}
 
-			answerList := strings.Join(current.Answers, ", ")
-
-			// Truncate answerListwers to a maximum of 2000 characters (Discord field limit)
-			if utf8.RuneCountInString(answerList) > 2000 {
-				answerList = string(append([]rune(answerList)[:1994], []rune(" [...]")...))
-			}
-
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
 				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
-				Description: fmt.Sprintf("**%s**", answerList),
+				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
