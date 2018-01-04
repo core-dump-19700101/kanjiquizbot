@@ -7302,6 +7302,7 @@ peal
 peanut
 pear
 pearl
+pearly
 peasant
 peat
 pebble
@@ -10194,6 +10195,7 @@ tee
 teem
 teen
 teenage
+teenager
 teens
 telecommunications
 telegram

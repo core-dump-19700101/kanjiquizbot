@@ -1,137 +1,929 @@
 {
-	"description": "Given names of Japanese girls",
-	"deck": [
-	{"question": "七海",      "answers":[ "ななみ" ] },
-	{"question": "久子",      "answers":[ "ひさこ" ] },
-	{"question": "久美子",      "answers":[ "くみこ" ] },
-	{"question": "亜美",      "answers":[ "あみ" ] },
-	{"question": "京子",      "answers":[ "きょうこ" ] },
-	{"question": "佳奈",      "answers":[ "かな" ] },
-	{"question": "信子",      "answers":[ "のぶこ" ] },
-	{"question": "優奈",      "answers":[ "ゆうな" ] },
-	{"question": "優子",      "answers":[ "ゆうこ" ] },
-	{"question": "優花",      "answers":[ "ゆうか" ] },
-	{"question": "優衣",      "answers":[ "ゆい" ] },
-	{"question": "光子",      "answers":[ "みつこ" ] },
-	{"question": "八重子",      "answers":[ "やえこ" ] },
-	{"question": "典子",      "answers":[ "のりこ" ] },
-	{"question": "凜",      "answers":[ "りん" ] },
-	{"question": "勝子",      "answers":[ "かつこ" ] },
-	{"question": "千代",      "answers":[ "ちよ" ] },
-	{"question": "千代子",      "answers":[ "ちよこ" ] },
-	{"question": "千夏",      "answers":[ "ちなつ" ] },
-	{"question": "千尋",      "answers":[ "ちひろ" ] },
-	{"question": "友美",      "answers":[ "ともみ" ] },
-	{"question": "君子",      "answers":[ "きみこ" ] },
-	{"question": "和子",      "answers":[ "かずこ" ] },
-	{"question": "咲良",      "answers":[ "さくら" ] },
-	{"question": "啓子",      "answers":[ "けいこ" ] },
-	{"question": "奈々",      "answers":[ "なな" ] },
-	{"question": "孝子",      "answers":[ "たかこ" ] },
-	{"question": "幸子",      "answers":[ "さちこ" ] },
-	{"question": "弘子",      "answers":[ "ひろこ" ] },
-	{"question": "彩",      "answers":[ "あや" ] },
-	{"question": "彩乃",      "answers":[ "あやの" ] },
-	{"question": "彩夏",      "answers":[ "あやか" ] },
-	{"question": "彩花",      "answers":[ "あやか" ] },
-	{"question": "彩香",      "answers":[ "あやか" ] },
-	{"question": "心優",      "answers":[ "みゆ" ] },
-	{"question": "心咲",      "answers":[ "みさき" ] },
-	{"question": "心愛",      "answers":[ "ここあ" ] },
-	{"question": "心春",      "answers":[ "こはる" ] },
-	{"question": "心結",      "answers":[ "みゆ" ] },
-	{"question": "恵",      "answers":[ "めぐみ" ] },
-	{"question": "恵子",      "answers":[ "けいこ" ] },
-	{"question": "恵美",      "answers":[ "えみ" ] },
-	{"question": "恵美子",      "answers":[ "えみこ" ] },
-	{"question": "悦子",      "answers":[ "えつこ" ] },
-	{"question": "愛",      "answers":[ "あい" ] },
-	{"question": "愛子",      "answers":[ "あいこ" ] },
-	{"question": "愛梨",      "answers":[ "あいり" ] },
-	{"question": "愛美",      "answers":[ "まなみ" ] },
-	{"question": "愛美",      "answers":[ "まなみ" ] },
-	{"question": "愛莉",      "answers":[ "あいり" ] },
-	{"question": "愛菜",      "answers":[ "あいな" ] },
-	{"question": "成美",      "answers":[ "なるみ" ] },
-	{"question": "敏子",      "answers":[ "としこ" ] },
-	{"question": "文子",      "answers":[ "ふみこ" ] },
-	{"question": "早紀",      "answers":[ "さき" ] },
-	{"question": "明日香",      "answers":[ "あすか" ] },
-	{"question": "明美",      "answers":[ "あけみ" ] },
-	{"question": "昭子",      "answers":[ "あきこ" ] },
-	{"question": "智子",      "answers":[ "ともこ" ] },
-	{"question": "智美",      "answers":[ "ともみ" ] },
-	{"question": "未来",      "answers":[ "みらい" ] },
-	{"question": "杏",      "answers":[ "あん" ] },
-	{"question": "杏奈",      "answers":[ "あんな" ] },
-	{"question": "栄子",      "answers":[ "えいこ" ] },
-	{"question": "桃子",      "answers":[ "ももこ" ] },
-	{"question": "桜",      "answers":[ "さくら" ] },
-	{"question": "楓",      "answers":[ "かえで" ] },
-	{"question": "正子",      "answers":[ "まさこ" ] },
-	{"question": "沙織",      "answers":[ "さおり" ] },
-	{"question": "洋子",      "answers":[ "ようこ" ] },
-	{"question": "浩子",      "answers":[ "ひろこ" ] },
-	{"question": "清子",      "answers":[ "きよこ" ] },
-	{"question": "照子",      "answers":[ "てるこ" ] },
-	{"question": "玲奈",      "answers":[ "れいな" ] },
-	{"question": "理恵",      "answers":[ "りえ" ] },
-	{"question": "琴音",      "answers":[ "ことね" ] },
-	{"question": "由佳",      "answers":[ "ゆか" ] },
-	{"question": "由美",      "answers":[ "ゆみ" ] },
-	{"question": "由美子",      "answers":[ "ゆみこ" ] },
-	{"question": "百花",      "answers":[ "ももか" ] },
-	{"question": "直子",      "answers":[ "なおこ" ] },
-	{"question": "直美",      "answers":[ "なおみ" ] },
-	{"question": "真央",      "answers":[ "まお" ] },
-	{"question": "真由",      "answers":[ "まゆ" ] },
-	{"question": "真由美",      "answers":[ "まゆみ" ] },
-	{"question": "瞳",      "answers":[ "ひとみ" ] },
-	{"question": "節子",      "answers":[ "せつこ" ] },
-	{"question": "紀子",      "answers":[ "のりこ" ] },
-	{"question": "純子",      "answers":[ "じゅんこ" ] },
-	{"question": "結愛",      "answers":[ "ゆあ" ] },
-	{"question": "結菜",      "answers":[ "ゆいな" ] },
-	{"question": "結衣",      "answers":[ "ゆい" ] },
-	{"question": "絵美",      "answers":[ "えみ" ] },
-	{"question": "美代子",      "answers":[ "みよこ" ] },
-	{"question": "美優",      "answers":[ "みゆ" ] },
-	{"question": "美咲",      "answers":[ "みさき" ] },
-	{"question": "美智子",      "answers":[ "みちこ" ] },
-	{"question": "美月",      "answers":[ "みづき" ] },
-	{"question": "美桜",      "answers":[ "みお" ] },
-	{"question": "美穂",      "answers":[ "みほ" ] },
-	{"question": "美紀",      "answers":[ "みき" ] },
-	{"question": "美結",      "answers":[ "みゆ" ] },
-	{"question": "美羽",      "answers":[ "みう" ] },
-	{"question": "美香",      "answers":[ "みか" ] },
-	{"question": "舞",      "answers":[ "まい" ] },
-	{"question": "良子",      "answers":[ "りょうこ" ] },
-	{"question": "花",      "answers":[ "はな" ] },
-	{"question": "花音",      "answers":[ "かのん" ] },
-	{"question": "芳子",      "answers":[ "よしこ" ] },
-	{"question": "芽依",      "answers":[ "めい" ] },
-	{"question": "茜",      "answers":[ "あかね" ] },
-	{"question": "莉子",      "answers":[ "りこ" ] },
-	{"question": "菜々子",      "answers":[ "ななこ" ] },
-	{"question": "菜摘",      "answers":[ "なつみ" ] },
-	{"question": "菜月",      "answers":[ "なつき" ] },
-	{"question": "萌",      "answers":[ "もえ" ] },
-	{"question": "葵",      "answers":[ "あおい" ] },
-	{"question": "裕子",      "answers":[ "ゆうこ" ] },
-	{"question": "裕美",      "answers":[ "ひろみ" ] },
-	{"question": "詩織",      "answers":[ "しおり" ] },
-	{"question": "貞子",      "answers":[ "さだこ" ] },
-	{"question": "遥",      "answers":[ "はるか" ] },
-	{"question": "里奈",      "answers":[ "りな" ] },
-	{"question": "陽子",      "answers":[ "ようこ" ] },
-	{"question": "陽菜",      "answers":[ "ひな" ] },
-	{"question": "陽葵",      "answers":[ "ひまり" ] },
-	{"question": "静子",      "answers":[ "しずこ" ] },
-	{"question": "順子",      "answers":[ "じゅんこ" ] },
-	{"question": "香織",      "answers":[ "かおり" ] },
-	{"question": "麻美",      "answers":[ "あさみ" ] },
-	{"question": "麻衣",      "answers":[ "まい" ] },
-	{"question": "麻衣子",      "answers":[ "まいこ" ] }
+"description": "Most popular given names of Japanese girls\n[Ver.171231 by h​onya#1726]",
+"deck": [
+{
+"question": "七海",
+"answers": [
+"ななみ"
+],
+"comment": "平成9年 (1997) 第3位, 平成15年 (2003) 第2位 ほか"
+},
+{
+"question": "久子",
+"answers": [
+"ひさこ"
+],
+"comment": "大正7年 (1918) 第1位 ほか"
+},
+{
+"question": "久美子",
+"answers": [
+"くみこ"
+],
+"comment": "昭和30年 (1955) 第6位, 昭和37年 (1962) 第1位 ほか"
+},
+{
+"question": "亜美",
+"answers": [
+"あみ"
+],
+"comment": "平成11年 (1999) 第4位"
+},
+{
+"question": "京子",
+"answers": [
+"きょうこ"
+],
+"comment": "昭和30年 (1955) 第3位, 昭和31年 (1956) 第2位 ほか"
+},
+{
+"question": "佳奈",
+"answers": [
+"かな"
+],
+"comment": "平成7年 (1995) 第4位"
+},
+{
+"question": "信子",
+"answers": [
+"のぶこ"
+],
+"comment": "大正13年 (1924) 第7位 ほか"
+},
+{
+"question": "優奈",
+"answers": [
+"ゆうな"
+],
+"comment": "平成19年 (2007) 第2位 ほか"
+},
+{
+"question": "優子",
+"answers": [
+"ゆうこ"
+],
+"comment": "昭和50年 (1975) 第6位 ほか"
+},
+{
+"question": "優花",
+"answers": [
+"ゆうか"
+],
+"comment": "平成10年 (1998) 第3位, 平成12年 (2000) 第1位 ほか"
+},
+{
+"question": "優衣",
+"answers": [
+"ゆい"
+],
+"comment": "平成18年 (2006) 第9位 ほか"
+},
+{
+"question": "光子",
+"answers": [
+"みつこ"
+],
+"comment": "大正12年 (1923) 第8位, 昭和2年 (1927) 第7位 ほか"
+},
+{
+"question": "八重子",
+"answers": [
+"やえこ"
+],
+"comment": "大正6年 (1917) 第5位 ほか"
+},
+{
+"question": "典子",
+"answers": [
+"のりこ"
+],
+"comment": "昭和3年 (1928) 第8位 ほか"
+},
+{
+"question": "凜",
+"answers": [
+"りん"
+],
+"comment": "平成16年 (2004) 第3位 ほか"
+},
+{
+"question": "勝子",
+"answers": [
+"かつこ"
+],
+"comment": "昭和19年 (1944) 第5位 ほか"
+},
+{
+"question": "千代",
+"answers": [
+"ちよ"
+],
+"comment": "明45・大1年 (1912) 第1位 ほか"
+},
+{
+"question": "千代子",
+"answers": [
+"ちよこ"
+],
+"comment": "大正6年 (1917) 第1位 ほか"
+},
+{
+"question": "千夏",
+"answers": [
+"ちなつ"
+],
+"comment": "平成6年 (1994) 第6位"
+},
+{
+"question": "千尋",
+"answers": [
+"ちひろ"
+],
+"comment": "平成2年 (1990) 第4位 ほか"
+},
+{
+"question": "友美",
+"answers": [
+"ともみ"
+],
+"comment": "昭和60年 (1985) 第8位 ほか"
+},
+{
+"question": "君子",
+"answers": [
+"きみこ"
+],
+"comment": "大正9年 (1920) 第10位"
+},
+{
+"question": "和子",
+"answers": [
+"かずこ"
+],
+"comment": "大正8年 (1919) 第3位, 昭和2年 (1927) 第1位 ほか"
+},
+{
+"question": "咲良",
+"answers": [
+"さくら"
+],
+"comment": "平成28年 (2016) 第5位"
+},
+{
+"question": "啓子",
+"answers": [
+"けいこ"
+],
+"comment": "昭和24年 (1949) 第9位 ほか"
+},
+{
+"question": "奈々",
+"answers": [
+"なな"
+],
+"comment": "平成8年 (1996) 第8位"
+},
+{
+"question": "孝子",
+"answers": [
+"たかこ"
+],
+"comment": "昭和5年 (1930) 第9位 ほか"
+},
+{
+"question": "幸子",
+"answers": [
+"さちこ"
+],
+"comment": "大正13年 (1924) 第1位 ほか"
+},
+{
+"question": "弘子",
+"answers": [
+"ひろこ"
+],
+"comment": "昭和10年 (1935) 第4位 ほか"
+},
+{
+"question": "彩",
+"answers": [
+"あや"
+],
+"comment": "平成2年 (1990) 第1位 ほか"
+},
+{
+"question": "彩乃",
+"answers": [
+"あやの"
+],
+"comment": "平成10年 (1998) 第4位 ほか"
+},
+{
+"question": "彩夏",
+"answers": [
+"あやか"
+],
+"comment": "平成12年 (2000) 第9位"
+},
+{
+"question": "彩花",
+"answers": [
+"あやか"
+],
+"comment": "平成9年 (1997) 第4位 ほか"
+},
+{
+"question": "彩香",
+"answers": [
+"あやか"
+],
+"comment": "平成3年 (1991) 第6位 ほか"
+},
+{
+"question": "心優",
+"answers": [
+"みゆ"
+],
+"comment": "平成20年 (2008) 第7位"
+},
+{
+"question": "心咲",
+"answers": [
+"みさき"
+],
+"comment": "平成24年 (2012) 第9位"
+},
+{
+"question": "心愛",
+"answers": [
+"ここあ"
+],
+"comment": "平成23年 (2011) 第5位 ほか"
+},
+{
+"question": "心春",
+"answers": [
+"こはる"
+],
+"comment": "平成24年 (2012) 第4位 ほか"
+},
+{
+"question": "心結",
+"answers": [
+"みゆ"
+],
+"comment": "平成27年 (2015) 第7位"
+},
+{
+"question": "恵",
+"answers": [
+"めぐみ"
+],
+"comment": "昭和53年 (1978) 第5位, 昭和56年 (1981) 第1位 ほか"
+},
+{
+"question": "恵子",
+"answers": [
+"けいこ"
+],
+"comment": "昭和28年 (1953) 第1位 ほか"
+},
+{
+"question": "恵美",
+"answers": [
+"えみ"
+],
+"comment": "昭和48年 (1973) 第6位, 昭和56年 (1981) 第5位 ほか"
+},
+{
+"question": "恵美子",
+"answers": [
+"えみこ"
+],
+"comment": "昭和26年 (1951) 第7位 ほか"
+},
+{
+"question": "悦子",
+"answers": [
+"えつこ"
+],
+"comment": "昭和23年 (1948) 第5位 ほか"
+},
+{
+"question": "愛",
+"answers": [
+"あい"
+],
+"comment": "昭和53年 (1978) 第8位, 昭和58年 (1983) 第1位 ほか"
+},
+{
+"question": "愛子",
+"answers": [
+"あいこ"
+],
+"comment": "大正13年 (1924) 第4位 ほか"
+},
+{
+"question": "愛梨",
+"answers": [
+"あいり"
+],
+"comment": "平成26年 (2014) 第10位"
+},
+{
+"question": "愛美",
+"answers": [
+"まなみ"
+],
+"comment": "昭和62年 (1987) 第2位 ほか"
+},
+{
+"question": "愛美",
+"answers": [
+"まなみ"
+],
+"comment": "昭和62年 (1987) 第2位 ほか"
+},
+{
+"question": "愛莉",
+"answers": [
+"あいり"
+],
+"comment": "平成26年 (2014) 第6位 ほか"
+},
+{
+"question": "愛菜",
+"answers": [
+"あいな"
+],
+"comment": "平成23年 (2011) 第5位 ほか"
+},
+{
+"question": "成美",
+"answers": [
+"なるみ"
+],
+"comment": "昭64・平1年 (1989) 第4位"
+},
+{
+"question": "敏子",
+"answers": [
+"としこ"
+],
+"comment": "大正13年 (1924) 第8位 ほか"
+},
+{
+"question": "文子",
+"answers": [
+"ふみこ"
+],
+"comment": "大正5年 (1916) 第1位 ほか"
+},
+{
+"question": "早紀",
+"answers": [
+"さき"
+],
+"comment": "平成3年 (1991) 第9位"
+},
+{
+"question": "明日香",
+"answers": [
+"あすか"
+],
+"comment": "平成9年 (1997) 第1位 ほか"
+},
+{
+"question": "明美",
+"answers": [
+"あけみ"
+],
+"comment": "昭和40年 (1965) 第1位 ほか"
+},
+{
+"question": "昭子",
+"answers": [
+"あきこ"
+],
+"comment": "昭和2年 (1927) 第2位 ほか"
+},
+{
+"question": "智子",
+"answers": [
+"ともこ"
+],
+"comment": "昭和51年 (1976) 第1位 ほか"
+},
+{
+"question": "智美",
+"answers": [
+"ともみ"
+],
+"comment": "昭和59年 (1984) 第7位"
+},
+{
+"question": "未来",
+"answers": [
+"みらい"
+],
+"comment": "平成11年 (1999) 第1位 ほか"
+},
+{
+"question": "杏",
+"answers": [
+"あん"
+],
+"comment": "平成23年 (2011) 第4位 ほか"
+},
+{
+"question": "杏奈",
+"answers": [
+"あんな"
+],
+"comment": "平成21年 (2009) 第10位"
+},
+{
+"question": "栄子",
+"answers": [
+"えいこ"
+],
+"comment": "昭和10年 (1935) 第8位 ほか"
+},
+{
+"question": "桃子",
+"answers": [
+"ももこ"
+],
+"comment": "平成4年 (1992) 第8位 ほか"
+},
+{
+"question": "桜",
+"answers": [
+"さくら"
+],
+"comment": "平成26年 (2014) 第9位"
+},
+{
+"question": "楓",
+"answers": [
+"かえで"
+],
+"comment": "平成9年 (1997) 第4位 ほか"
+},
+{
+"question": "正子",
+"answers": [
+"まさこ"
+],
+"comment": "大正2年 (1913) 第1位 ほか"
+},
+{
+"question": "沙織",
+"answers": [
+"さおり"
+],
+"comment": "昭和62年 (1987) 第3位 ほか"
+},
+{
+"question": "洋子",
+"answers": [
+"ようこ"
+],
+"comment": "昭和17年 (1942) 第1位 ほか"
+},
+{
+"question": "浩子",
+"answers": [
+"ひろこ"
+],
+"comment": "昭和35年 (1960) 第5位"
+},
+{
+"question": "清子",
+"answers": [
+"きよこ"
+],
+"comment": "大正10年 (1921) 第3位 ほか"
+},
+{
+"question": "照子",
+"answers": [
+"てるこ"
+],
+"comment": "大15・昭1年 (1926) 第4位 ほか"
+},
+{
+"question": "玲奈",
+"answers": [
+"れいな"
+],
+"comment": "平成10年 (1998) 第8位, 平成13年 (2001) 第7位"
+},
+{
+"question": "理恵",
+"answers": [
+"りえ"
+],
+"comment": "昭和54年 (1979) 第5位 ほか"
+},
+{
+"question": "琴音",
+"answers": [
+"ことね"
+],
+"comment": "平成13年 (2001) 第10位"
+},
+{
+"question": "由佳",
+"answers": [
+"ゆか"
+],
+"comment": "昭和61年 (1986) 第8位"
+},
+{
+"question": "由美",
+"answers": [
+"ゆみ"
+],
+"comment": "昭和42年 (1967) 第2位 ほか"
+},
+{
+"question": "由美子",
+"answers": [
+"ゆみこ"
+],
+"comment": "昭和29年 (1954) 第6位, 昭和38年 (1963) 第1位 ほか"
+},
+{
+"question": "百花",
+"answers": [
+"ももか"
+],
+"comment": "平成16年 (2004) 第10位"
+},
+{
+"question": "直子",
+"answers": [
+"なおこ"
+],
+"comment": "昭和45年 (1970) 第7位"
+},
+{
+"question": "直美",
+"answers": [
+"なおみ"
+],
+"comment": "昭和43年 (1968) 第1位 ほか"
+},
+{
+"question": "真央",
+"answers": [
+"まお"
+],
+"comment": "平成18年 (2006) 第8位 ほか"
+},
+{
+"question": "真由",
+"answers": [
+"まゆ"
+],
+"comment": "平成8年 (1996) 第4位"
+},
+{
+"question": "真由美",
+"answers": [
+"まゆみ"
+],
+"comment": "昭和39年 (1964) 第2位 ほか"
+},
+{
+"question": "瞳",
+"answers": [
+"ひとみ"
+],
+"comment": "平成2年 (1990) 第8位 ほか"
+},
+{
+"question": "節子",
+"answers": [
+"せつこ"
+],
+"comment": "昭和3年 (1928) 第2位 ほか"
+},
+{
+"question": "紀子",
+"answers": [
+"のりこ"
+],
+"comment": "昭和15年 (1940) 第1位"
+},
+{
+"question": "純子",
+"answers": [
+"じゅんこ"
+],
+"comment": "昭和47年 (1972) 第5位 ほか"
+},
+{
+"question": "結愛",
+"answers": [
+"ゆあ"
+],
+"comment": "平成23年 (2011) 第1位 ほか"
+},
+{
+"question": "結菜",
+"answers": [
+"ゆいな"
+],
+"comment": "平成25年 (2013) 第1位 ほか"
+},
+{
+"question": "結衣",
+"answers": [
+"ゆい"
+],
+"comment": "平成24年 (2012) 第1位 ほか"
+},
+{
+"question": "絵美",
+"answers": [
+"えみ"
+],
+"comment": "昭和55年 (1980) 第1位 ほか"
+},
+{
+"question": "美代子",
+"answers": [
+"みよこ"
+],
+"comment": "大正11年 (1922) 第3位 ほか"
+},
+{
+"question": "美優",
+"answers": [
+"みゆ"
+],
+"comment": "平成14年 (2002) 第6位 ほか"
+},
+{
+"question": "美咲",
+"answers": [
+"みさき"
+],
+"comment": "平成3年 (1991) 第1位 ほか"
+},
+{
+"question": "美智子",
+"answers": [
+"みちこ"
+],
+"comment": "昭和21年 (1946) 第4位 ほか"
+},
+{
+"question": "美月",
+"answers": [
+"みづき"
+],
+"comment": "平成13年 (2001) 第4位 ほか"
+},
+{
+"question": "美桜",
+"answers": [
+"みお"
+],
+"comment": "平成21年 (2009) 第4位 ほか"
+},
+{
+"question": "美穂",
+"answers": [
+"みほ"
+],
+"comment": "昭和48年 (1973) 第9位, 昭和61年 (1986) 第2位 ほか"
+},
+{
+"question": "美紀",
+"answers": [
+"みき"
+],
+"comment": "昭和50年 (1975) 第10位"
+},
+{
+"question": "美結",
+"answers": [
+"みゆ"
+],
+"comment": "平成24年 (2012) 第9位 ほか"
+},
+{
+"question": "美羽",
+"answers": [
+"みう"
+],
+"comment": "平成18年 (2006) 第2位 ほか"
+},
+{
+"question": "美香",
+"answers": [
+"みか"
+],
+"comment": "昭和47年 (1972) 第8位, 昭和59年 (1984) 第6位 ほか"
+},
+{
+"question": "舞",
+"answers": [
+"まい"
+],
+"comment": "平成4年 (1992) 第3位 ほか"
+},
+{
+"question": "良子",
+"answers": [
+"りょうこ"
+],
+"comment": "昭和10年 (1935) 第9位"
+},
+{
+"question": "花",
+"answers": [
+"はな"
+],
+"comment": "平成27年 (2015) 第6位 ほか"
+},
+{
+"question": "花音",
+"answers": [
+"かのん"
+],
+"comment": "平成16年 (2004) 第7位 ほか"
+},
+{
+"question": "芳子",
+"answers": [
+"よしこ"
+],
+"comment": "大正10年 (1921) 第5位 ほか"
+},
+{
+"question": "芽依",
+"answers": [
+"めい"
+],
+"comment": "平成24年 (2012) 第9位"
+},
+{
+"question": "茜",
+"answers": [
+"あかね"
+],
+"comment": "平成4年 (1992) 第4位 ほか"
+},
+{
+"question": "莉子",
+"answers": [
+"りこ"
+],
+"comment": "平成22年 (2010) 第2位 ほか"
+},
+{
+"question": "菜々子",
+"answers": [
+"ななこ"
+],
+"comment": "平成11年 (1999) 第6位"
+},
+{
+"question": "菜摘",
+"answers": [
+"なつみ"
+],
+"comment": "平成7年 (1995) 第8位"
+},
+{
+"question": "菜月",
+"answers": [
+"なつき"
+],
+"comment": "平成12年 (2000) 第3位 ほか"
+},
+{
+"question": "萌",
+"answers": [
+"もえ"
+],
+"comment": "平成10年 (1998) 第1位 ほか"
+},
+{
+"question": "葵",
+"answers": [
+"あおい"
+],
+"comment": "平成6年 (1994) 第6位, 平成14年 (2002) 第1位 ほか"
+},
+{
+"question": "裕子",
+"answers": [
+"ゆうこ"
+],
+"comment": "昭和30年 (1955) 第8位, 昭和48年 (1973) 第2位, 昭和57年 (1982) 第1位 ほか"
+},
+{
+"question": "裕美",
+"answers": [
+"ひろみ"
+],
+"comment": "昭和51年 (1976) 第7位 ほか"
+},
+{
+"question": "詩織",
+"answers": [
+"しおり"
+],
+"comment": "平成12年 (2000) 第9位"
+},
+{
+"question": "貞子",
+"answers": [
+"さだこ"
+],
+"comment": "大正8年 (1919) 第4位 ほか"
+},
+{
+"question": "遥",
+"answers": [
+"はるか"
+],
+"comment": "平成7年 (1995) 第3位 ほか"
+},
+{
+"question": "里奈",
+"answers": [
+"りな"
+],
+"comment": "平成5年 (1993) 第4位 ほか"
+},
+{
+"question": "陽子",
+"answers": [
+"ようこ"
+],
+"comment": "昭和46年 (1971) 第1位 ほか"
+},
+{
+"question": "陽菜",
+"answers": [
+"ひな"
+],
+"comment": "平成15年 (2003) 第1位 ほか"
+},
+{
+"question": "陽葵",
+"answers": [
+"ひまり"
+],
+"comment": "平成27年 (2015) 第7位 ほか"
+},
+{
+"question": "静子",
+"answers": [
+"しずこ"
+],
+"comment": "大正3年 (1914) 第1位 ほか"
+},
+{
+"question": "順子",
+"answers": [
+"じゅんこ"
+],
+"comment": "昭和25年 (1950) 第9位 ほか"
+},
+{
+"question": "香織",
+"answers": [
+"かおり"
+],
+"comment": "昭和51年 (1976) 第6位, 昭和57年 (1982) 第3位 ほか"
+},
+{
+"question": "麻美",
+"answers": [
+"あさみ"
+],
+"comment": "昭和58年 (1983) 第3位 ほか"
+},
+{
+"question": "麻衣",
+"answers": [
+"まい"
+],
+"comment": "昭和59年 (1984) 第2位 ほか"
+},
+{
+"question": "麻衣子",
+"answers": [
+"まいこ"
+],
+"comment": "昭和59年 (1984) 第9位"
+}
 ]
 }

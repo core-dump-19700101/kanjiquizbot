@@ -216,7 +216,7 @@
 	{"question":"艟艨", "answers":[ "どうもう" ] },
 	{"question":"曩昔", "answers":[ "のうせき" ] },
 	{"question":"泛論", "answers":[ "はんろん" ] },
-	{"question":"秉燭", "answers":[ "へいしょく" ] },
+	{"question":"秉燭", "answers":[ "へいしょく", "ひょうそく", "ひんそく" ] },
 	{"question":"邁進", "answers":[ "まいしん" ] },
 	{"question":"沐雨", "answers":[ "もくう" ] },
 	{"question":"鄙陋", "answers":[ "ひろう" ] },

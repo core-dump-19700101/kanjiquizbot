@@ -41,5 +41,6 @@
 	"jp_syn_easy":	"jp_syn_easy.json",
 	"jp_syn_full":	"jp_syn_full.json",
 	"seiyuu":		"seiyuu.json",
-	"tough":		"tough.json"
+	"tough":		"tough.json",
+	"common":		"common.json"
 }

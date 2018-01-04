@@ -168,7 +168,7 @@
 	{ "question": "一等", "answers": [ "いっとう" ], "comment": "first class; first place" },
 	{ "question": "一等卒", "answers": [ "いっとうそつ" ], "comment": "private first class" },
 	{ "question": "一箇月", "answers": [ "いっかげつ" ], "comment": "one month" },
-	{ "question": "一緒に", "answers": [ "いしょに" ], "comment": "together; at the same time; in a lump" },
+	{ "question": "一緒に", "answers": [ "いっしょに" ], "comment": "together; at the same time; in a lump" },
 	{ "question": "一羽", "answers": [ "いちわ" ], "comment": "one bird [rabbit]" },
 	{ "question": "一致", "answers": [ "いっち" ], "comment": "accord, agreement" },
 	{ "question": "一般の", "answers": [ "いっぱんの" ], "comment": "general, universal, common" },

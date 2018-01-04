@@ -444,7 +444,7 @@
 	{"question": "微酔い", "answers":[ "ほろよい" ] },
 	{"question": "禍々しい", "answers":[ "まがまがしい" ] },
 	{"question": "不味い", "answers":[ "まずい" ] },
-	{"question": "瞬く", "answers":[ "またたく" ] },
+	{"question": "瞬く", "answers":[ "またたく", "まばたく", "しばたたく", "しばたく" ] },
 	{"question": "蝮", "answers":[ "まむし" ] },
 	{"question": "澪標", "answers":[ "みおつくし" ] },
 	{"question": "神輿", "answers":[ "みこし" ] },
