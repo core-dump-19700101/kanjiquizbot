@@ -3401,7 +3401,7 @@
 	{ "question": "爪立てる", "answers": [ "つまだてる" ], "comment": "【２級】" },
 	{ "question": "爬虫", "answers": [ "はちゅう" ], "comment": "【１級】\nreptile" },
 	{ "question": "爵禄", "answers": [ "しゃくろく" ], "comment": "【準１級】" },
-	{ "question": "爺", "answers": [ "じい" ], "comment": "【準１級】\nold man\nold geezer" },
+	{ "question": "爺", "answers": [ "じい", "じじ", "じじい" ], "comment": "【準１級】\nold man\nold geezer" },
 	{ "question": "爺むさい", "answers": [ "じじむさい" ], "comment": "【準１級】\nlike an old man; doddering; wizened; frowzy; seedy" },
 	{ "question": "爺婆", "answers": [ "じじばば" ], "comment": "【準１級】\nold people" },
 	{ "question": "爽やか", "answers": [ "さわやか" ], "comment": "【２級】\nfresh; refreshing; invigorating\nclear (e.g. voice); fluent; eloquent" },
