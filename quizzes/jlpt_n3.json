@@ -789,7 +789,7 @@
 	{ "question": "板", "answers": [ "いた" ], "comment": "board; plank\nsheet (of metal); plate (of glass); pane; slab\ncutting board; chopping board\nchef (esp. of high-end Japanese cuisine); cook\nstage (i.e. at a theatre)" },
 	{ "question": "柄", "answers": [ "がら" ], "comment": "handle; grip\nstalk (of a mushroom, leaf, etc.)\npattern; design\nbody build; figure; physique\nessential qualities; character; nature\nappropriate to; fitting of; suitable for\nhilt (of a sword); haft (of a dagger); handgrip\ntrunk; stem; stalk\nshaft (of an arrow)\nhandle" },
 	{ "question": "栄養", "answers": [ "えいよう" ], "comment": "nutrition; nourishment" },
-	{ "question": "株", "answers": [ "かぶ" ], "comment": "stock; share\nstump\nroot; rootstock\nstrain (of bacteria, etc.)\ntradeable rank; goodwill\none's forte\nstake; post; pile; picket\nstump\nstump\ncounter for trees\nstump\nstump\nuseless item" },
+	{ "question": "株", "answers": [ "かぶ" ], "comment": "stock; share\nstump\nroot; rootstock\nstrain (of bacteria, etc.)\ntradeable rank; goodwill\none's forte" },
 	{ "question": "根", "answers": [ "ね" ], "comment": "root (of a plant)\nroot (of a tooth, hair, etc.); center (of a pimple, etc.)\nroot (of all evil, etc.); source; origin; cause; basis\none's true nature\n(fishing) reef\nstick-to-itiveness; perseverance; persistence\nradical (esp. one that tends to ionize easily)\nroot\nindriya (faculty of the body having a specific function, i.e. the sensory organs)" },
 	{ "question": "格好", "answers": [ "かっこう" ], "comment": "shape; form; figure; posture; pose\nappearance\nstate; situation\nsuitable; fit; reasonable\nabout" },
 	{ "question": "案", "answers": [ "あん" ], "comment": "idea; plan; thought\ndraft plan; motion; rough copy\nexpectation\ndesk" },
