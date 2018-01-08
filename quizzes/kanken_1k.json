@@ -436,7 +436,7 @@
 	{ "question": "鶴唳", "answers": [ "かくれい" ] },
 	{ "question": "鶸色", "answers": [ "ひわいろ" ] },
 	{ "question": "鷙鳥", "answers": [ "しちょう" ] },
-	{ "question": "鷸蚌", "answers": [ "いつぼう" ], "comment": "a snipe and a clam; a snipe and a mussel" },
+	{ "question": "鷸蚌", "answers": [ "いつぼう", "いっぽう" ], "comment": "a snipe and a clam; a snipe and a mussel" },
 	{ "question": "鸞輿", "answers": [ "らんよ" ], "comment": "imperial conveyance" },
 	{ "question": "鹵莽", "answers": [ "ろもう" ] },
 	{ "question": "鹹味", "answers": [ "かんみ" ], "comment": "saltiness" },

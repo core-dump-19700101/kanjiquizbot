@@ -770,7 +770,7 @@
 	{ "question": "訊ねる", "answers": [ "たずねる" ], "comment": "to ask; to enquire; to inquire\nto search; to look for; to look into; to investigate" },
 	{ "question": "訝しい", "answers": [ "いぶかしい" ], "comment": "suspicious; doubtful" },
 	{ "question": "訝る", "answers": [ "いぶかる" ], "comment": "to wonder; to puzzle oneself about; to feel anxious about; to suspect" },
-	{ "question": "訥々と", "answers": [ "とつとつと" ] },
+	{ "question": "訥々と", "answers": [ "とつとつと" ], "comment": "haltingly; falteringly" },
 	{ "question": "訥弁", "answers": [ "とつべん" ], "comment": "slowness of speech; awkwardness of speech" },
 	{ "question": "設える", "answers": [ "しつらえる" ], "comment": "to provide; to arrange; to install" },
 	{ "question": "証", "answers": [ "あかし" ], "comment": "proof (e.g. of love, of innocence); evidence; testimony; vindication (of innocence)\nlicense; membership card; permit\nto testify (usu. Christian religious context)" },

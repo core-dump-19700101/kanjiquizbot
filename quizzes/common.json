@@ -15922,7 +15922,7 @@
 	{ "question": "陸軍", "answers": [ "りくぐん" ], "comment": "army" },
 	{ "question": "険しい", "answers": [ "けわしい" ], "comment": "precipitous; rugged; inaccessible; impregnable; steep\ngrim; severe; stern" },
 	{ "question": "険悪", "answers": [ "けんあく" ], "comment": "dangerous; perilous; threatening; stormy; volatile; tense; critical; serious\nstern (expression); hostile (attitude); sharp; harsh" },
-	{ "question": "陽", "answers": [ "よう" ], "comment": "yang (i.e. the positive)\nthe open (i.e. a visible place)" },
+	{ "question": "陽", "answers": [ "ひ", "よう" ], "comment": "day; days\nsun; sunshine\nyang (i.e. the positive)\nthe open (i.e. a visible place)" },
 	{ "question": "陽光", "answers": [ "ようこう" ], "comment": "sunshine; sunlight" },
 	{ "question": "陽子", "answers": [ "ようし" ], "comment": "proton" },
 	{ "question": "陽性", "answers": [ "ようせい" ], "comment": "positivity" },

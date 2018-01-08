@@ -5321,7 +5321,7 @@
 	{ "question": "絶頂", "answers": [ "ぜっちょう" ], "comment": "summit, peak" },
 	{ "question": "絹", "answers": [ "きぬ" ], "comment": "silk, silk cloth" },
 	{ "question": "絹の錦", "answers": [ "きぬのにしき" ], "comment": "silk brocade" },
-	{ "question": "絹糸", "answers": [ "けんし" ], "comment": "silk thread" },
+	{ "question": "絹糸", "answers": [ "けんし", "きぬいと" ], "comment": "silk thread" },
 	{ "question": "継続する", "answers": [ "けいぞくする" ], "comment": "continue, last, maintain" },
 	{ "question": "続く", "answers": [ "つづく" ], "comment": "[vi] continue, follow, ensue" },
 	{ "question": "続行", "answers": [ "ぞっこう" ], "comment": "continuation" },
