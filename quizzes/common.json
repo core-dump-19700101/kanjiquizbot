@@ -8878,7 +8878,7 @@
 	{ "question": "本館", "answers": [ "ほんかん" ], "comment": "main building" },
 	{ "question": "札", "answers": [ "さつ", "ふだ" ], "comment": "note; paper money /\n ticket; token; check; receipt\nlabel; tag\nsign; card; plate\nplaying card\ncharm; talisman\nslips of paper posted on shrine pillars by pilgrims" },
 	{ "question": "札束", "answers": [ "さつたば" ], "comment": "roll of banknotes" },
-	{ "question": "朱", "answers": [ "ひ", "あけ" ], "comment": "scarlet; red\nblood" },
+	{ "question": "朱", "answers": [ "しゅ", "あけ" ], "comment": "scarlet; red\nblood" },
 	{ "question": "朱印", "answers": [ "しゅいん" ], "comment": "red seal" },
 	{ "question": "机", "answers": [ "つくえ" ], "comment": "desk" },
 	{ "question": "机上", "answers": [ "きじょう" ], "comment": "on the desk\ntheoretical; academic" },

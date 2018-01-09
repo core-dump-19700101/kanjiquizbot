@@ -152,7 +152,7 @@
 	{ "question": "啜る", "answers": [ "すする" ], "comment": "to sip; to slurp" },
 	{ "question": "喇叭飲み", "answers": [ "らっぱのみ" ], "comment": "drinking straight from a bottle" },
 	{ "question": "喉飴", "answers": [ "のどあめ" ], "comment": "throat lozenge; cough drop" },
-	{ "question": "喋々する", "answers": [ "ちょうちょうする" ] },
+	{ "question": "喋々する", "answers": [ "ちょうちょうする" ], "comment": "talk glibly;  talk volubly; chatter; jabber; babble; prate\nbe long-winded\nspeak at great length; dwell [enlarge] upon" },
 	{ "question": "喋る", "answers": [ "しゃべる" ], "comment": "to talk; to chat; to chatter" },
 	{ "question": "喘ぐ", "answers": [ "あえぐ" ], "comment": "to gasp; breathe hard\nto suffer; to struggle" },
 	{ "question": "喘息", "answers": [ "ぜんそく" ], "comment": "asthma; phthisis" },
@@ -190,7 +190,7 @@
 	{ "question": "垢", "answers": [ "あか" ], "comment": "dirt; filth; grime\naccount (e.g. online service)\nklesha (polluting thoughts such as greed, hatred and delusion, which result in suffering)" },
 	{ "question": "埃", "answers": [ "ほこり" ], "comment": "dust\none ten-billionth" },
 	{ "question": "埠頭", "answers": [ "ふとう" ], "comment": "pier; wharf; quay; dock" },
-	{ "question": "塒", "answers": [ "ねぐら" ], "comment": "coil\nroost; nesting place" },
+	{ "question": "塒", "answers": [ "ねぐら", "とや" ], "comment": "coil\nroost; nesting place" },
 	{ "question": "塗す", "answers": [ "まぶす" ], "comment": "to cover (smear, sprinkle) (with)" },
 	{ "question": "塩梅", "answers": [ "あんばい" ], "comment": "seasoning; flavour; flavor\nserving one's lord well (of a retainer)\nseasoning; flavour; flavor\ncondition; state; situation\narrangement; assignment; adjustment" },
 	{ "question": "塵", "answers": [ "ちり", "ごみ" ], "comment": "rubbish; trash; garbage; refuse\ndust; dirt\ndefilement; impurity; affliction\nobject (perceived with the mind or the senses)\none billionth" },
@@ -243,7 +243,7 @@
 	{ "question": "寵愛", "answers": [ "ちょうあい" ], "comment": "favor; favour; affection" },
 	{ "question": "尖る", "answers": [ "とがる", "とんがる" ], "comment": "to taper to a point; to become sharp\nto look displeased; to look sour; to be on edge; to be touchy" },
 	{ "question": "尖塔", "answers": [ "せんとう" ], "comment": "spire; steeple; pinnacle; minaret" },
-	{ "question": "尤も", "answers": [ "もっとも" ], "comment": "most; extremely\nbut then; although; though\nreasonable; natural; just" },
+	{ "question": "尤も", "answers": [ "もっとも" ], "comment": "but then; although; though\nreasonable; natural; just" },
 	{ "question": "屁", "answers": [ "へ" ], "comment": "wind; gas; fart\nsomething worthless; something not worth considering" },
 	{ "question": "居心地", "answers": [ "いごこち" ], "comment": "comfort" },
 	{ "question": "屎尿", "answers": [ "しにょう" ], "comment": "excreta; raw sewage; human waste; night soil" },
@@ -970,6 +970,7 @@
 	{ "question": "齢", "answers": [ "よわい" ], "comment": "(one's) age\ninstar" },
 	{ "question": "齧り付く", "answers": [ "かぶりつく", "かじりつく" ], "comment": "to bite into; to sink one's teeth into\nto stick to; to cling to; to hold on to" },
 	{ "question": "齧る", "answers": [ "かじる" ], "comment": "to gnaw; to nibble; to bite; to munch; to crunch\nto dabble in; to have a smattering of" },
+	{ "question": "恰幅", "answers": [ "かっぷく" ], "comment": "physique; bodily build" },
 	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" }
 ]
 }

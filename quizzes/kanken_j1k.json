@@ -197,7 +197,7 @@
 	{ "question": "漏洩", "answers": [ "ろうえい" ], "comment": "disclosure; leak (of information); divulging\nleakage (e.g. of gas or liquids); leak; escape (e.g. of gas); coming in (through) (e.g. of light)" },
 	{ "question": "潟湖", "answers": [ "せきこ" ], "comment": "lagoon" },
 	{ "question": "濃艶", "answers": [ "のうえん" ], "comment": "charming; bewitching; enchanting" },
-	{ "question": "濤声", "answers": [ "とうせい" ] },
+	{ "question": "濤声", "answers": [ "とうせい" ], "comment": "sound of waves" },
 	{ "question": "灌漑", "answers": [ "かんがい" ], "comment": "irrigation" },
 	{ "question": "灸", "answers": [ "きゅう" ], "comment": "moxibustion" },
 	{ "question": "灸師", "answers": [ "きゅうし" ] },
