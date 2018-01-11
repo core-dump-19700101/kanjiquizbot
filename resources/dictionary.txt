@@ -595,7 +595,7 @@ approve
 approximate
 approximately
 apricot
-April
+april
 apron
 apt
 aptitude
@@ -800,7 +800,7 @@ auditor
 auditorium
 auger
 augment
-August
+august
 auld
 aunt
 aura
@@ -1101,7 +1101,7 @@ bey
 beyond
 bias
 biased
-Bible
+bible
 bibliography
 biceps
 bicycle
@@ -1426,8 +1426,8 @@ buck
 bucket
 buckle
 bud
-Buddhism
-Buddhist
+buddhism
+buddhist
 buddy
 budget
 buff
@@ -1673,7 +1673,7 @@ category
 cater
 caterpillar
 cathedral
-Catholic
+catholic
 cattle
 caucus
 cauliflower
@@ -1848,11 +1848,11 @@ chore
 choreographer
 chorus
 chosen
-Christ
+christ
 christen
-Christian
-Christianity
-Christmas
+christian
+christianity
+christmas
 chromosome
 chronic
 chronicle
@@ -2844,7 +2844,7 @@ deceased
 deceit
 deceitful
 deceive
-December
+december
 decency
 decent
 decentralize
@@ -3551,6 +3551,7 @@ dying
 dynamic
 dynamics
 dynamite
+dynamo
 dynasty
 each
 eager
@@ -3575,7 +3576,7 @@ ease
 easel
 easily
 east
-Easter
+easter
 eastern
 eastward
 easy
@@ -4164,7 +4165,7 @@ faculty
 fad
 fade
 fading
-Fahrenheit
+fahrenheit
 fail
 failure
 faint
@@ -4182,7 +4183,7 @@ falcon
 fall
 fallacy
 fallen
-FALSE
+false
 falsehood
 falter
 fame
@@ -4250,7 +4251,7 @@ feast
 feat
 feather
 feature
-February
+february
 federal
 federation
 fee
@@ -4625,7 +4626,7 @@ freshwater
 fret
 friar
 friction
-Friday
+friday
 fried
 friend
 friendliness
@@ -4886,7 +4887,6 @@ goat
 gob
 goblin
 god
-God
 goddess
 godfather
 godmother
@@ -6068,7 +6068,7 @@ irrigation
 irritate
 irritating
 irritation
-Islam
+islam
 island
 isle
 isolate
@@ -6092,7 +6092,7 @@ jagged
 jail
 jam
 janitor
-January
+january
 jar
 jargon
 jaunt
@@ -6150,13 +6150,13 @@ jug
 juggle
 juice
 juicy
-July
+july
 jumble
 jumbo
 jump
 jumper
 junction
-June
+june
 jungle
 junior
 junk
@@ -6740,7 +6740,6 @@ mar
 marathon
 marble
 march
-March
 mare
 margarine
 margent
@@ -6811,7 +6810,6 @@ maxim
 maximize
 maximum
 may
-May
 maybe
 mayonnaise
 mayor
@@ -6907,7 +6905,7 @@ mesh
 mess
 message
 messenger
-Messrs
+messrs
 messy
 metabolism
 metal
@@ -7017,7 +7015,6 @@ mislead
 misleading
 misplace
 miss
-Miss
 misshape
 missile
 missing
@@ -7085,7 +7082,7 @@ monarch
 monarchy
 monastery
 monastic
-Monday
+monday
 monetary
 money
 monitor
@@ -7177,9 +7174,9 @@ mover
 movie
 moving
 mow
-Mr.
-Mrs.
-Ms.
+mr.
+mrs.
+ms.
 much
 muck
 mud
@@ -7218,7 +7215,7 @@ mushroom
 music
 musical
 musician
-Muslim
+muslim
 must
 mustache
 mustard
@@ -7452,7 +7449,7 @@ nourishment
 novel
 novelist
 novelty
-November
+november
 novice
 now
 nowadays
@@ -7549,7 +7546,7 @@ occurrence
 ocean
 ocher
 octave
-October
+october
 octopus
 odd
 oddity
@@ -8687,7 +8684,7 @@ protective
 protector
 protein
 protest
-Protestant
+protestant
 protocol
 prototype
 protrude
@@ -9196,7 +9193,7 @@ remote
 removal
 remove
 removed
-Renaissance
+renaissance
 renal
 render
 rendezvous
@@ -9621,7 +9618,7 @@ sarcasm
 sarcastic
 sardine
 sardonic
-Satan
+satan
 satchel
 sate
 sateen
@@ -9635,7 +9632,7 @@ satisfy
 satisfying
 saturate
 saturation
-Saturday
+saturday
 satyr
 sauce
 saucer
@@ -9849,7 +9846,7 @@ separable
 separate
 separately
 separation
-September
+september
 sequel
 sequence
 sequester
@@ -9960,7 +9957,7 @@ shine
 shiner
 shingle
 shining
-Shinto
+shinto
 shiny
 ship
 shipbuilding
@@ -10832,7 +10829,7 @@ sun
 sunbeam
 sunburn
 sundae
-Sunday
+sunday
 sundry
 sunflower
 sung
@@ -11180,7 +11177,7 @@ than
 thank
 thankful
 thankfully
-Thanksgiving
+thanksgiving
 that
 thatch
 thaw
@@ -11286,7 +11283,7 @@ thump
 thunder
 thunderous
 thunderstorm
-Thursday
+thursday
 thus
 thwart
 tick
@@ -11551,7 +11548,7 @@ truant
 truce
 truck
 trudge
-TRUE
+true
 truly
 trump
 trumpet
@@ -11569,7 +11566,7 @@ tube
 tuber
 tuberculosis
 tuck
-Tuesday
+tuesday
 tug
 tuition
 tulip
@@ -12177,7 +12174,7 @@ web
 wed
 wedding
 wedge
-Wednesday
+wednesday
 wee
 weed
 week
