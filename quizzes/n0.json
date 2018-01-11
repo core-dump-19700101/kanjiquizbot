@@ -971,6 +971,8 @@
 	{ "question": "齧り付く", "answers": [ "かぶりつく", "かじりつく" ], "comment": "to bite into; to sink one's teeth into\nto stick to; to cling to; to hold on to" },
 	{ "question": "齧る", "answers": [ "かじる" ], "comment": "to gnaw; to nibble; to bite; to munch; to crunch\nto dabble in; to have a smattering of" },
 	{ "question": "恰幅", "answers": [ "かっぷく" ], "comment": "physique; bodily build" },
+	{ "question": "捕吏", "answers": [ "ほり" ], "comment": "constable; policeman" },
+	{ "question": "下吏", "answers": [ "かり" ], "comment": "lower official" },
 	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" }
 ]
 }
