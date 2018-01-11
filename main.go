@@ -482,7 +482,13 @@ outer:
 		scoreKeeper := make(map[string]int)
 
 		// Send out quiz question
-		imgSend(s, quizChannel, current.Question)
+		if quiz.Type == "text" {
+			msgSend(s, quizChannel, fmt.Sprintf("```\n%s```", current.Question))
+		} else if quiz.Type == "url" {
+			msgSend(s, quizChannel, current.Question)
+		} else {
+			imgSend(s, quizChannel, current.Question)
+		}
 
 		// Set timeout for no correct answers
 		timeoutChan := time.NewTimer(time.Duration(timeout) * time.Second)
@@ -500,7 +506,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(current.Question, 100)),
 					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
@@ -561,7 +567,7 @@ outer:
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(current.Question, 100)),
 				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
@@ -630,7 +636,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
+		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(quizHistory, 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)
@@ -750,7 +756,13 @@ outer:
 		}
 
 		// Send out quiz question
-		imgSend(s, m.ChannelID, current.Question)
+		if quiz.Type == "text" {
+			msgSend(s, quizChannel, fmt.Sprintf("```\n%s```", current.Question))
+		} else if quiz.Type == "url" {
+			msgSend(s, quizChannel, current.Question)
+		} else {
+			imgSend(s, quizChannel, current.Question)
+		}
 
 		select {
 		case <-quitChan:
@@ -788,7 +800,7 @@ outer:
 		Title:       "Final Gauntlet Score: " + quizname,
 		Description: fmt.Sprintf("%.2f points", score),
 		Color:       0x33FF33,
-		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + quizHistory},
+		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + truncate(quizHistory, 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)
@@ -928,7 +940,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", question),
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(question, 100)),
 					Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
 					Color:       0xAA2222,
 				}
@@ -990,7 +1002,7 @@ outer:
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", question),
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(question, 100)),
 				Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
@@ -1147,7 +1159,13 @@ outer:
 		scoreKeeper := make(map[string]int)
 
 		// Send out quiz question
-		imgSend(s, quizChannel, current.Question)
+		if quiz.Type == "text" {
+			msgSend(s, quizChannel, fmt.Sprintf("```\n%s```", current.Question))
+		} else if quiz.Type == "url" {
+			msgSend(s, quizChannel, current.Question)
+		} else {
+			imgSend(s, quizChannel, current.Question)
+		}
 
 		// Set timeout for no correct answers
 		bonusTime := minint(len(current.Answers)*2, 12)
@@ -1166,7 +1184,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", current.Question),
+					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(current.Question, 100)),
 					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
@@ -1230,7 +1248,7 @@ outer:
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", current.Question),
+				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(current.Question, 100)),
 				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
@@ -1300,7 +1318,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
+		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(quizHistory, 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)

@@ -271,13 +271,14 @@ func isBotChannel(s *discordgo.Session, cid string) bool {
 // Load all kanji info into memory
 func loadAllKanji() {
 
-	// Read all Jitenon.jp kanji info data into memory
-	file, err := ioutil.ReadFile(RESOURCES_FOLDER + "all-kanji.json")
+	// Open Jitenon.jp kanji info data file
+	file, err := os.Open(RESOURCES_FOLDER + "all-kanji.json")
 	if err != nil {
-		log.Fatalln("ERROR, Reading kanji json: ", err)
+		log.Fatalln("ERROR, Reading kanji json file: ", err)
 	}
+	defer file.Close()
 
-	err = json.Unmarshal(file, &KanjiMap)
+	err = json.NewDecoder(file).Decode(&KanjiMap)
 	if err != nil {
 		log.Fatalln("ERROR, Unmarshalling kanji json: ", err)
 	}

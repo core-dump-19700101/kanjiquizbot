@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"encoding/json"
-	"io/ioutil"
 	"log"
 	"os"
 	"sync"
@@ -20,6 +19,7 @@ var Quizzes struct {
 // Quiz struct to hold entire quiz data
 type Quiz struct {
 	Description string `json:"description"`
+	Type        string `json:"type,omitempty"`
 	Deck        []Card `json:"deck"`
 }
 
@@ -36,16 +36,17 @@ var Dictionary [][]string
 // Load Quiz List map from disk
 func loadQuizList() error {
 
-	file, err := ioutil.ReadFile(RESOURCES_FOLDER + "quizlist.json")
+	file, err := os.Open(RESOURCES_FOLDER + "quizlist.json")
 	if err != nil {
 		log.Println("ERROR, Reading Quiz List json: ", err)
 		return err
 	}
+	defer file.Close()
 
 	Quizzes.Lock()
 	// Clear old map first
 	Quizzes.Map = make(map[string]string)
-	err = json.Unmarshal(file, &Quizzes.Map)
+	err = json.NewDecoder(file).Decode(&Quizzes.Map)
 	Quizzes.Unlock()
 	if err != nil {
 		log.Println("ERROR, Unmarshalling Quiz List json: ", err)
@@ -107,13 +108,14 @@ func LoadQuiz(name string) (quiz Quiz) {
 	Quizzes.RUnlock()
 
 	if ok {
-		file, err := ioutil.ReadFile(QUIZ_FOLDER + filename)
+		file, err := os.Open(QUIZ_FOLDER + filename)
 		if err != nil {
 			log.Printf("ERROR, Reading json '%s': %s\n", name, err)
 			return
 		}
+		defer file.Close()
 
-		err = json.Unmarshal(file, &quiz)
+		err = json.NewDecoder(file).Decode(&quiz)
 		if err != nil {
 			log.Printf("ERROR, Unmarshalling json '%s': %s\n", name, err)
 			return
