@@ -42,5 +42,11 @@
 	"jp_syn_full":	"jp_syn_full.json",
 	"seiyuu":		"seiyuu.json",
 	"tough":		"tough.json",
-	"common":		"common.json"
+	"common":		"common.json",
+	"ranobe":		"ranobe.json",
+	"ee":			"ee.json",
+	"eee":			"eee.json",
+	"esyn":			"esyn.json",
+	"esyne":		"esyne.json",
+	"test":			"test.json"
 }
