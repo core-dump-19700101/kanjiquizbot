@@ -95,6 +95,25 @@ func truncate(s string, n int) string {
 	return s
 }
 
+// Helper function to deep copy quiz structures
+func copyQuiz(q Quiz) (cp Quiz) {
+
+	// Go through JSON to make a deep copy with new allocations
+	b, err := json.Marshal(q)
+	if err != nil {
+		log.Println("ERROR, Could not JSON marshal quiz copy: ", err)
+		return
+	}
+
+	err = json.Unmarshal(b, &cp)
+	if err != nil {
+		log.Println("ERROR, Could not JSON unmarshal quiz copy: ", err)
+		return
+	}
+
+	return cp
+}
+
 // Helper function to find string in set
 func hasString(set []string, s string) bool {
 	for _, str := range set {

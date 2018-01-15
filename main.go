@@ -39,6 +39,12 @@ var Ongoing struct {
 	ChannelID map[string]bool
 }
 
+// Review keeps track of review quizzes and the channels they belong to
+var Review struct {
+	sync.RWMutex
+	ChannelID map[string]Quiz
+}
+
 // General bot settings (READ ONLY)
 var Settings struct {
 	Owner       *discordgo.User   // Bot owner account
@@ -74,8 +80,9 @@ func init() {
 		"hard":   [2]int{4, 9},
 		"insane": [2]int{5, 9999},
 	}
-	Ongoing.ChannelID = make(map[string]bool)
 
+	Ongoing.ChannelID = make(map[string]bool)
+	Review.ChannelID = make(map[string]Quiz)
 }
 
 func main() {
@@ -308,13 +315,13 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Difficult decks",
-		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, jp_syn",
+		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, tough, jp_syn",
 		Inline: false,
 	})
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, en_syn, numbers, honyaku, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, ee, esyn, numbers, honyaku, r18",
 		Inline: false,
 	})
 
@@ -398,6 +405,28 @@ func hasQuiz(quizChannel string) bool {
 	return exists
 }
 
+// Get review quiz for given channel
+func getReview(quizChannel string) Quiz {
+
+	var result Quiz
+
+	Review.Lock()
+	result = Review.ChannelID[quizChannel]
+	delete(Review.ChannelID, quizChannel)
+	Review.Unlock()
+
+	shuffle(result.Deck)
+
+	return result
+}
+
+// Insert quiz into Review for given channel
+func putReview(quizChannel string, quiz Quiz) {
+	Review.Lock()
+	Review.ChannelID[quizChannel] = quiz
+	Review.Unlock()
+}
+
 // Run kanji quiz loop in given channel
 func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
 
@@ -425,9 +454,15 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		}
 	}
 
-	quiz := LoadQuiz(quizname)
+	var quiz Quiz
+	if quizname == "review" {
+		quiz = getReview(quizChannel)
+		winLimit = len(quiz.Deck)
+	} else {
+		quiz = LoadQuiz(quizname)
+	}
 	if len(quiz.Deck) == 0 {
-		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
+		msgSend(s, quizChannel, "Failed to find valid quiz: "+quizname)
 		stopQuiz(s, quizChannel)
 		return
 	}
@@ -459,6 +494,7 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
 
 	var quizHistory string
+	var failed []Card
 	players := make(map[string]int)
 	var timeoutCount int
 
@@ -480,6 +516,11 @@ outer:
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
+
+		// Drain premature "answers" from channel buffer
+		for len(c) > 0 {
+			<-c
+		}
 
 		// Send out quiz question
 		if quiz.Type == "text" {
@@ -521,6 +562,9 @@ outer:
 				}
 
 				embedSend(s, quizChannel, embed)
+
+				// Store question for later review deck
+				failed = append(failed, current)
 
 				timeoutCount++
 				if timeoutCount >= timeoutLimit {
@@ -604,7 +648,7 @@ outer:
 	var participants string
 
 	for _, p := range ranking(players) {
-		if p.Score >= winLimit {
+		if p.Score >= winLimit && quizname != "review" {
 			winners += fmt.Sprintf("<@%s>: %d points\n", p.Name, p.Score)
 		} else {
 			participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, p.Score)
@@ -627,6 +671,14 @@ outer:
 		})
 	}
 
+	if len(failed) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "Note",
+			Value:  fmt.Sprintf("Try `%squiz review` to replay the %d failed question(s)\n", CMD_PREFIX, len(failed)),
+			Inline: false,
+		})
+	}
+
 	// Sleep for a little breathing room
 	time.Sleep(1 * time.Second)
 
@@ -640,6 +692,10 @@ outer:
 	}
 
 	embedSend(s, quizChannel, embed)
+
+	// Store review questions in memory
+	quiz.Deck = failed
+	putReview(quizChannel, copyQuiz(quiz))
 
 	stopQuiz(s, quizChannel)
 }
@@ -916,10 +972,16 @@ outer:
 		// Add word to quiz history
 		quizHistory += word + "　" // Japanese space (wider)
 
-		time.Sleep(5 * time.Second)
-
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
+
+		// Give players time to breathe between rounds
+		time.Sleep(5 * time.Second)
+
+		// Drain premature "answers" from channel buffer
+		for len(c) > 0 {
+			<-c
+		}
 
 		// Send out quiz question
 		imgSend(s, quizChannel, question)
@@ -1157,6 +1219,11 @@ outer:
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
+
+		// Drain premature "answers" from channel buffer
+		for len(c) > 0 {
+			<-c
+		}
 
 		// Send out quiz question
 		if quiz.Type == "text" {

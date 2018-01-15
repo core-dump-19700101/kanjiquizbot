@@ -118,7 +118,7 @@ func LoadQuiz(name string) (quiz Quiz) {
 		err = json.NewDecoder(file).Decode(&quiz)
 		if err != nil {
 			log.Printf("ERROR, Unmarshalling json '%s': %s\n", name, err)
-			return
+			return Quiz{}
 		}
 	}
 
