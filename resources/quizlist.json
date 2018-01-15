@@ -35,7 +35,6 @@
 	"numbers":      "numbers.json",
 	"abh":          "abh.json",
 	"kklc":         "kklc.json",
-	"en_syn":       "en_syn.json",
 	"honyaku":      "honyaku.json",
 	"jp_syn":		"jp_syn.json",
 	"jp_syn_easy":	"jp_syn_easy.json",
@@ -48,5 +47,6 @@
 	"eee":			"eee.json",
 	"esyn":			"esyn.json",
 	"esyne":		"esyne.json",
+	"jukugo":		"jukugo.json",
 	"test":			"test.json"
 }

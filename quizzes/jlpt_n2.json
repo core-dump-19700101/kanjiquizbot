@@ -937,7 +937,7 @@
 	{ "question": "理科", "answers": [ "りか" ], "comment": "science" },
 	{ "question": "琴", "answers": [ "こと" ], "comment": "koto (13-stringed Japanese zither)\nstringed instrument\nqin (7-stringed Chinese zither); guqin" },
 	{ "question": "瓦", "answers": [ "かわら" ], "comment": "gram; gramme\nroof tile" },
-	{ "question": "瓶詰", "answers": [ "びんづめ" ], "comment": "bottling; bottled" },
+	{ "question": "瓶詰め", "answers": [ "びんづめ" ], "comment": "bottling; bottled" },
 	{ "question": "甘やかす", "answers": [ "あまやかす" ], "comment": "to pamper; to spoil" },
 	{ "question": "甚だしい", "answers": [ "はなはだしい" ], "comment": "extreme; excessive; terrible; intense; severe; serious; tremendous; heavy (damage)" },
 	{ "question": "生える", "answers": [ "はえる" ], "comment": "to grow; to spring up; to sprout\nto cut (teeth)" },
