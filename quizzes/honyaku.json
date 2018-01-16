@@ -1673,7 +1673,7 @@
 	{ "question": "corridor, hallway", "answers": [ "廊下" ], "comment": "ろうか" },
 	{ "question": "corrosion; erosion", "answers": [ "腐食" ], "comment": "ふしょく" },
 	{ "question": "cosmetics", "answers": [ "化粧品" ], "comment": "けしょうひん" },
-	{ "question": "cotton", "answers": [ "綿" ], "comment": "わた" },
+	{ "question": "cotton", "answers": [ "綿" ], "comment": "わた　めん" },
 	{ "question": "cotton, cotton cloth", "answers": [ "木綿" ], "comment": "もめん" },
 	{ "question": "cough suppressant", "answers": [ "咳止め" ], "comment": "せきどめ" },
 	{ "question": "cough", "answers": [ "咳" ], "comment": "せき" },

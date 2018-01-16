@@ -5336,7 +5336,7 @@
 	{ "question": "綴り", "answers": [ "つづり" ], "comment": "spelling (as of a name); binding (as of a book)" },
 	{ "question": "綻び", "answers": [ "ほころび" ], "comment": "tear, rent seam" },
 	{ "question": "綻びる", "answers": [ "ほころびる" ], "comment": "come apart at the seams; unfold, bloom; break into a smile" },
-	{ "question": "綿", "answers": [ "わた" ], "comment": "cotton" },
+	{ "question": "綿", "answers": [ "わた", "めん" ], "comment": "cotton" },
 	{ "question": "綿を入れる", "answers": [ "わたをいれる" ], "comment": "wad with cotton" },
 	{ "question": "綿を糸に紡ぐ", "answers": [ "めんをいとにつむぐ" ], "comment": "spin cotton into yarn" },
 	{ "question": "緊張", "answers": [ "きんちょう" ], "comment": "tension, strain" },

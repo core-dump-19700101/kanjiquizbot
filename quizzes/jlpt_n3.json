@@ -1091,7 +1091,7 @@
 	{ "question": "絶滅", "answers": [ "ぜつめつ" ], "comment": "destruction; extinction" },
 	{ "question": "続き", "answers": [ "つづき" ], "comment": "sequel; continuation; (also suffix) continuation (in time and space); second series; succession; spell" },
 	{ "question": "維持", "answers": [ "いじ" ], "comment": "maintenance; preservation; improvement" },
-	{ "question": "綿", "answers": [ "わた" ], "comment": "cotton\ncotton plant (Gossypium spp.)\nbatting; wadding; padding" },
+	{ "question": "綿", "answers": [ "わた", "めん" ], "comment": "cotton\ncotton plant (Gossypium spp.)\nbatting; wadding; padding" },
 	{ "question": "緊張", "answers": [ "きんちょう" ], "comment": "tension; mental strain; nervousness" },
 	{ "question": "縁", "answers": [ "エン", "ふち", "へり", "ゆかり", "えにし" ], "comment": "related to (some person or place); affinity; connection\nfate; destiny (esp. as a mysterious force that binds two people together)\nrelationship (e.g. between two people); bond; link; connection\nfamily ties; affinity\nopportunity; chance (to meet someone and start a relationship)\npratyaya (indirect conditions, as opposed to direct causes)\nnarrow open-air veranda\nrim; brim; edge; brink\nreason; significance; cause\nsomething to rely on; aid; clue; way; means\nsomeone to rely on; relative\nreminder; memento\nedge (of a river, woods, etc.); shoulder (of a road)\nrim; brim; hem; margin; fringe; selvage\nfabric border (of a tatami mat, etc.); edging" },
 	{ "question": "縄", "answers": [ "なわ" ], "comment": "rope; cord\npoliceman's rope" },
