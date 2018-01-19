@@ -872,7 +872,7 @@
 	{ "question": "兵卒", "answers": [ "へいそつ" ], "comment": "private, common soldier" },
 	{ "question": "兵器", "answers": [ "へいき" ], "comment": "arms, weapon, ordnance" },
 	{ "question": "兵士", "answers": [ "へいし" ], "comment": "soldier" },
-	{ "question": "兵糧", "answers": [ "ひょうりょう" ], "comment": "provisions; food" },
+	{ "question": "兵糧", "answers": [ "ひょうろう" ], "comment": "provisions; food" },
 	{ "question": "兵舎", "answers": [ "へいしゃ" ], "comment": "barracks" },
 	{ "question": "兵隊", "answers": [ "へいたい" ], "comment": "soldier; troops" },
 	{ "question": "具体的な", "answers": [ "ぐたいてきな" ], "comment": "concrete, specific" },

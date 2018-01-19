@@ -5087,7 +5087,7 @@
 	{ "question": "provisional; hypothetic", "answers": [ "仮設" ], "comment": "かせつ" },
 	{ "question": "provisionally; for example; supposing that", "answers": [ "仮に" ], "comment": "かりに" },
 	{ "question": "provisions, food, foodstuffs", "answers": [ "食糧" ], "comment": "しょくりょう" },
-	{ "question": "provisions; food", "answers": [ "兵糧" ], "comment": "ひょうりょう" },
+	{ "question": "provisions; food", "answers": [ "兵糧" ], "comment": "ひょうろう" },
 	{ "question": "proviso", "answers": [ "但し書き" ], "comment": "ただしがき" },
 	{ "question": "prudence, discretion", "answers": [ "分別" ], "comment": "ふんべつ" },
 	{ "question": "prudence, discretion, circumspection", "answers": [ "慎重" ], "comment": "しんちょう" },
