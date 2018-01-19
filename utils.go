@@ -77,9 +77,18 @@ func loadFiles() {
 	loadQuizList()
 }
 
-// Helper function to pick max value out of two ints
+// Helper function to pick min value out of two ints
 func minint(a, b int) int {
 	if a < b {
+		return a
+	}
+
+	return b
+}
+
+// Helper function to pick max value out of two ints
+func maxint(a, b int) int {
+	if a > b {
 		return a
 	}
 

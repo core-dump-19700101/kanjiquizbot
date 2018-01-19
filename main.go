@@ -493,8 +493,9 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
 
-	var quizHistory string
+	var quizHistory []string
 	var failed []Card
+	var questionTitle string
 	players := make(map[string]int)
 	var timeoutCount int
 
@@ -512,7 +513,13 @@ outer:
 		}
 
 		// Add word to quiz history
-		quizHistory += current.Question + "　" // Japanese space (wider)
+		if quiz.Type == "text" && len(current.Answers) > 0 {
+			quizHistory = append(quizHistory, current.Answers[0])
+			questionTitle = ""
+		} else {
+			quizHistory = append(quizHistory, current.Question)
+			questionTitle = truncate(current.Question, 100)
+		}
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
@@ -547,7 +554,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(current.Question, 100)),
+					Title:       fmt.Sprintf("⛔ Timed out! %s", questionTitle),
 					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
@@ -598,9 +605,9 @@ outer:
 			for player, position := range scoreKeeper {
 				players[player]++
 				if position == 1 {
-					fastest = "<@" + player + ">"
+					fastest = fmt.Sprintf("<@%s> %dp", player, players[player])
 				} else {
-					scorers = append(scorers, "<@"+player+">")
+					scorers = append(scorers, fmt.Sprintf("<@%s> %dp", player, players[player]))
 				}
 				if players[player] >= winLimit {
 					winnerExists = true
@@ -611,12 +618,12 @@ outer:
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(current.Question, 100)),
+				Title:       fmt.Sprintf("✅ Correct: %s", questionTitle),
 				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
-						Name:   "Scorers",
+						Name:   fmt.Sprintf("Scorers - %s to %d", quizname, winLimit),
 						Value:  strings.Join(scorers, ", "),
 						Inline: false,
 					}},
@@ -688,7 +695,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(quizHistory, 2000)},
+		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(strings.Join(quizHistory, "　"), 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)
@@ -791,7 +798,7 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
 
 	var correct, total int
-	var quizHistory string
+	var quizHistory []string
 
 	// Breathing room to read start info
 	time.Sleep(5 * time.Second)
@@ -833,8 +840,12 @@ outer:
 			if hasString(current.Answers, k2h(msg.Content)) {
 				correct++
 			} else {
-				// Add wrong answer to history
-				quizHistory += current.Question + "　" // Japanese space (wider)
+				// Add wrong answer to quiz history
+				if quiz.Type == "text" && len(current.Answers) > 0 {
+					quizHistory = append(quizHistory, current.Answers[0])
+				} else {
+					quizHistory = append(quizHistory, current.Question)
+				}
 			}
 		}
 	}
@@ -856,7 +867,7 @@ outer:
 		Title:       "Final Gauntlet Score: " + quizname,
 		Description: fmt.Sprintf("%.2f points", score),
 		Color:       0x33FF33,
-		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + truncate(quizHistory, 2000)},
+		Footer:      &discordgo.MessageEmbedFooter{Text: "Mistakes: " + truncate(strings.Join(quizHistory, "　"), 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)
@@ -934,7 +945,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), "Unscramble the English word", winLimit))
 
-	var quizHistory string
+	var quizHistory []string
 	players := make(map[string]int)
 	var timeoutCount int
 
@@ -970,7 +981,7 @@ outer:
 		}
 
 		// Add word to quiz history
-		quizHistory += word + "　" // Japanese space (wider)
+		quizHistory = append(quizHistory, word)
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
@@ -1002,7 +1013,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(question, 100)),
+					Title:       fmt.Sprintf("⛔ Timed out! %s", truncate(question, 100)),
 					Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
 					Color:       0xAA2222,
 				}
@@ -1051,9 +1062,9 @@ outer:
 			for player, position := range scoreKeeper {
 				players[player]++
 				if position == 1 {
-					fastest = "<@" + player + ">"
+					fastest = fmt.Sprintf("<@%s> %dp", player, players[player])
 				} else {
-					scorers = append(scorers, "<@"+player+">")
+					scorers = append(scorers, fmt.Sprintf("<@%s> %dp", player, players[player]))
 				}
 				if players[player] >= winLimit {
 					winnerExists = true
@@ -1064,12 +1075,12 @@ outer:
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(question, 100)),
-				Description: fmt.Sprintf("**%s**", strings.Join(group, ", ")),
+				Title:       fmt.Sprintf("✅ Correct: %s", truncate(question, 100)),
+				Description: fmt.Sprintf("**%s**", truncate(strings.Join(group, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
-						Name:   "Scorers",
+						Name:   fmt.Sprintf("Scorers - %s to %d", quizname, winLimit),
 						Value:  strings.Join(scorers, ", "),
 						Inline: false,
 					}},
@@ -1125,7 +1136,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: quizHistory},
+		Footer:      &discordgo.MessageEmbedFooter{Text: strings.Join(quizHistory, "　")},
 	}
 
 	embedSend(s, quizChannel, embed)
@@ -1194,7 +1205,8 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 
 	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
 
-	var quizHistory string
+	var quizHistory []string
+	var questionTitle string
 	players := make(map[string]int)
 	var timeoutCount int
 
@@ -1215,7 +1227,13 @@ outer:
 		answersLeft := len(answerMap)
 
 		// Add word to quiz history
-		quizHistory += current.Question + "　" // Japanese space (wider)
+		if quiz.Type == "text" && len(current.Answers) > 0 {
+			quizHistory = append(quizHistory, current.Answers[0])
+			questionTitle = ""
+		} else {
+			quizHistory = append(quizHistory, current.Question)
+			questionTitle = truncate(current.Question, 100)
+		}
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
@@ -1251,7 +1269,7 @@ outer:
 
 				embed := &discordgo.MessageEmbed{
 					Type:        "rich",
-					Title:       fmt.Sprintf(":no_entry: Timed out! %s", truncate(current.Question, 100)),
+					Title:       fmt.Sprintf("⛔ Timed out! %s", questionTitle),
 					Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 					Color:       0xAA2222,
 				}
@@ -1310,17 +1328,17 @@ outer:
 
 			var participants string
 			for _, p := range ranking(scoreKeeper) {
-				participants += fmt.Sprintf("<@%s>: %d point(s)\n", p.Name, minint(p.Score, pointLimit))
+				participants += fmt.Sprintf("<@%s> +%dp (%dp)\n", p.Name, minint(p.Score, pointLimit), players[p.Name])
 			}
 
 			embed := &discordgo.MessageEmbed{
 				Type:        "rich",
-				Title:       fmt.Sprintf(":white_check_mark: Correct: %s", truncate(current.Question, 100)),
+				Title:       fmt.Sprintf("✅ Correct: %s", questionTitle),
 				Description: fmt.Sprintf("**%s**", truncate(strings.Join(current.Answers, ", "), 2000)),
 				Color:       0x22AA22,
 				Fields: []*discordgo.MessageEmbedField{
 					&discordgo.MessageEmbedField{
-						Name:   "Scorers",
+						Name:   fmt.Sprintf("Scorers - %s to %d", quizname, winLimit),
 						Value:  participants,
 						Inline: false,
 					}},
@@ -1385,7 +1403,7 @@ outer:
 		Description: "-------------------------------",
 		Color:       0x33FF33,
 		Fields:      fields,
-		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(quizHistory, 2000)},
+		Footer:      &discordgo.MessageEmbedFooter{Text: truncate(strings.Join(quizHistory, "　"), 2000)},
 	}
 
 	embedSend(s, quizChannel, embed)
