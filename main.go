@@ -154,7 +154,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	}
 
 	// Handle bot commmands
-	if strings.HasPrefix(m.Content, CMD_PREFIX) {
+	if isBotCommand(m.Content) {
 
 		// Split up the message to parse the input string
 		input := strings.Fields(strings.ToLower(strings.TrimSpace(m.Content)))
@@ -170,7 +170,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			showList(s, m)
 		case "kanji", "k":
 			if len(input) >= 2 {
-				err := sendKanjiInfo(s, m.ChannelID, strings.TrimSpace(m.Content[len(input[0])+1:]))
+				err := sendKanjiInfo(s, m.ChannelID, input[1])
 				if err != nil {
 					msgSend(s, m.ChannelID, "Error: "+err.Error())
 				}
@@ -546,6 +546,17 @@ outer:
 
 			select {
 			case <-quitChan:
+				// Quit order received, but store remaining questions for reviews
+				if quizname == "review" {
+					// Did this question get answered
+					if len(scoreKeeper) == 0 {
+						// Store question for later review deck
+						failed = append(failed, current)
+					}
+
+					// Store unused review questions
+					failed = append(failed, quiz.Deck...)
+				}
 				break outer
 			case <-timeoutChan.C:
 				if len(scoreKeeper) > 0 {

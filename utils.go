@@ -266,6 +266,16 @@ func retryOnServerError(f func() error) (err error) {
 	return
 }
 
+// Determine if given line is a bot command
+func isBotCommand(s string) bool {
+
+	if len(s) < len(CMD_PREFIX) {
+		return false
+	}
+
+	return s[:len(CMD_PREFIX)] == CMD_PREFIX || strings.ToLower(s[:len(CMD_PREFIX)]) == strings.ToLower(CMD_PREFIX)
+}
+
 // Determine if given channel is for bot spam
 func isBotChannel(s *discordgo.Session, cid string) bool {
 
@@ -317,6 +327,9 @@ func loadAllKanji() {
 func sendKanjiInfo(s *discordgo.Session, cid string, query string) error {
 
 	// Only grab first character, since it's a single kanji lookup
+	if len(query) == 0 {
+		return fmt.Errorf("No query provided")
+	}
 	query = string([]rune(query)[0])
 
 	var kanji Kanji
