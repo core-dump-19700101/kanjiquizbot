@@ -1,33 +1,21 @@
 {
-"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\nVer.180120-0218 –N3 Edition– [Brought to you by h​onya#1726]",
+"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\nVer.180121-1559 –N3 Edition– [Brought to you by h​onya#1726]",
 "type": "text",
 "deck": [
 {
-"question": "（代）\n遠称の指示代名詞。\n①場所や方角を指し示す。\n②物事の局面や事態の進展の度合を指し示す。",
-"answers": [
-"かしこ",
-"あすこ",
-"あそこ",
-"彼処",
-"彼所"
-],
-"comment": "Lv.N5 [ichi1]: あそこ/あすこ/かしこ • there (place physically distant from both speaker and listener); over there; that place; yonder; you-know-where; genitals; private parts; that far (something psychologically distant from both speaker and listener); that much; that point\n「ここより－の方が涼しそうだ」"
-},
-{
 "question": "一（連体）\n①話し手からも聞き手からも離れた所にある物をさす。\n②話し手も聞き手もすでに知っている事柄をさす。例の。\n二（感）\n①話のはじめや間で，次の言葉へのつなぎに用いる語。あのう。\n②人に呼びかけたり，注意を引こうとするときに用いる語。あのう。",
 "answers": [
-"かの",
 "あの",
 "彼の"
 ],
-"comment": "Lv.N5 [spec1]: あの/かの • that (someone or something distant from both speaker and listener, or situation unfamiliar to both speaker and listener)\n「－店に入ろう」"
+"comment": "Lv.N5 [spec1]: あの • that (someone or something distant from both speaker and listener, or situation unfamiliar to both speaker and listener)\n「－店に入ろう」"
 },
 {
 "question": "（感）\n遠慮したりためらったりする時に，話の初めや間に用いる語。",
 "answers": [
-"あのー",
+"あのう",
 "あの",
-"あのう"
+"あのー"
 ],
 "comment": "Lv.N5 [spec1]: あのう/あの/あのー • say; well; errr ...\n「－，そろそろ帰りたいのですが」"
 },
@@ -47,7 +35,7 @@
 "comment": "Lv.N4 [ichi1]: あんな • such (about something or someone distant from both speaker and listener, or about a situation unfamiliar to both speaker and listener); so; that; sort of\n「－人は二度と出ない」"
 },
 {
-"question": "（動ラ五［四］）\n①「行く」「来る」「居る」の尊敬語。おいでになる。\n②（補助動詞）動詞の連用形に助詞「て（で）」を添えたもの，形容詞の連用形またはそれに助詞「て」を添えたもの，動作性・状態性の名詞または形容動詞語幹（いずれも敬意の接頭語の付いたもの）に「で」または「に」を添えたものなどに付く。",
+"question": "（動ラ五［四］）\n①「行く」「居る」の尊敬語。おいでになる。\n②（補助動詞）動詞の連用形に助詞「て（で）」を添えたもの，形容詞の連用形またはそれに助詞「て」を添えたもの，動作性・状態性の名詞または形容動詞語幹（いずれも敬意の接頭語の付いたもの）に「で」または「に」を添えたものなどに付く。「（で）ある」の尊敬語。",
 "answers": [
 "いらっしゃる"
 ],
@@ -56,9 +44,9 @@
 {
 "question": "数字をぼかしたいときに，俗に用いる語。ん。",
 "answers": [
-"ううむ",
+"うん",
 "うむ",
-"うん"
+"ううむ"
 ],
 "comment": "Lv.N4 [spec1]: うん/うむ/ううむ • yes; yeah; uh huh; hum; hmmm; well; erm; moan; groan; grunt (of pain)\n「－十万円（=数十万円）」"
 },
@@ -106,7 +94,8 @@
 "question": "「おじょうさま」のややくだけた言い方。未婚の若い女性に対する呼びかけに多く用いる。",
 "answers": [
 "お嬢さん",
-"御嬢さん"
+"御嬢さん",
+"おじょうさん"
 ],
 "comment": "Lv.N4 [ichi1/news1]: おじょうさん • daughter; young lady"
 },
@@ -160,32 +149,39 @@
 {
 "question": "（副）\n①確実にそうなるだろうと予測しているさま。\n②自身の事柄に関しては決意を，相手に対しては強い要望を表す。必ず。\n③あることが確実に行われるさま。必ず。\n④厳しいさま。状態にゆるみがないさま。\n⑤腹を立てているさま。\n⑥動作・状態が瞬間的であるさま。",
 "answers": [
-"キッと",
 "きっと",
 "屹度",
 "急度"
 ],
-"comment": "Lv.N4 [ichi1]: きっと/キッと • surely; undoubtedly; almost certainly; most likely (e.g. 90 percent); sternly; severely; having no slack; rigid; stiff; tight; suddenly; abruptly; instantly\n「明日は－晴れる」"
+"comment": "Lv.N4 [ichi1]: きっと • surely; undoubtedly; almost certainly; most likely (e.g. 90 percent); sternly; severely; having no slack; rigid; stiff; tight; suddenly; abruptly; instantly\n「明日は－晴れる」"
 },
 {
 "question": "（接続）",
 "answers": [
-"けんど",
-"けども",
-"けれども",
+"けど",
 "けれど",
-"けど"
+"けれども",
+"けども",
+"けんど"
 ],
 "comment": "Lv.N4 [spec1/ichi1]: けど/けれど/けれども/けども/けんど • but; however; although"
 },
 {
 "question": "（代）\n①近称の指示代名詞。「こっち」より丁寧な言い方。\n②人代名詞。",
 "answers": [
-"こっち",
 "こちら",
 "此方"
 ],
-"comment": "Lv.N5 [ichi1]: こちら/こっち • this way (direction close to the speaker or towards the speaker); this direction; here (place close to the speaker or where the speaker is); this one (something physically close to the speaker); I; me; we; us; this person (someone physically close to the speaker and of equal or higher status)\n「－を向いて下さい」"
+"comment": "Lv.N5 [ichi1]: こちら • this way (direction close to the speaker or towards the speaker); this direction; here (place close to the speaker or where the speaker is); this one (something physically close to the speaker); I; me; we; us; this person (someone physically close to the speaker and of equal or higher status)\n「－を向いて下さい」"
+},
+{
+"question": "①少し前から今まで。このところ。近頃。最近。\n②近い未来をいう語。近いうちに。",
+"answers": [
+"このごろ",
+"この頃",
+"此の頃"
+],
+"comment": "Lv.N4 [ichi1]: このごろ • recently; nowadays; these days; now; at present\n「－少し太った」"
 },
 {
 "question": "（形動）\n①物事の程度や状態がこのようであるさま。このよう。\n②下の連体修飾語の意を強める。こんなに。",
@@ -204,8 +200,8 @@
 {
 "question": "（接続）\n①それでは。\n②そういうことならば。それならば。",
 "answers": [
-"じゃ",
-"じゃあ"
+"じゃあ",
+"じゃ"
 ],
 "comment": "Lv.N5 [ichi1/spec1]: じゃあ/じゃ • then; well; so; well then; combination of 'de' and 'wa' particles; plain copula\n「－，行ってきます」"
 },
@@ -219,9 +215,9 @@
 {
 "question": "（副）\n①他と比べて違いが大きいさま。はるかに。\n②時間や距離が大きく隔たっているさま。\n③ある状態が長く続くさま。\n④とどこおることなく事が行われるさま。",
 "answers": [
-"ずうっと",
+"ずっと",
 "ずーっと",
-"ずっと"
+"ずうっと"
 ],
 "comment": "Lv.N4 [ichi1/spec1]: ずっと/ずーっと/ずうっと • continuously in some state (for a long time, distance); throughout; all along; the whole time; all the way; much (better, etc.); by far; far and away; far away; long ago; direct; straight\n「ここの方が－住みよい」"
 },
@@ -236,13 +232,10 @@
 {
 "question": "（代）\n①中称の指示代名詞。\n②二人称。聞き手，また聞き手の側にいる人。",
 "answers": [
-"そち",
-"そなた",
-"そっち",
 "そちら",
 "其方"
 ],
-"comment": "Lv.N5 [ichi1]: そちら/そっち/そなた/そち • that way (direction distant from the speaker, close to the listener); there (place distant from the speaker, close to the listener); that one (something close to the listener); you; your family; your company; that person (someone close to the listener)\n「－へ玉を放る」"
+"comment": "Lv.N5 [ichi1]: そちら • that way (direction distant from the speaker, close to the listener); there (place distant from the speaker, close to the listener); that one (something close to the listener); you; your family; your company; that person (someone close to the listener)\n「－へ玉を放る」"
 },
 {
 "question": "一：（連体）\n①話し手からは離れていて，聞き手に近い関係にある物事をさし示す。\n②相手または自分がすぐ前に話したことや，お互いに了解している事柄であることを示す。\n③ばくぜんと物事をさし示す。\n二：（感）\n言葉につまったり，言いよどんだりした時につなぎに発する語。そのう。",
@@ -293,8 +286,8 @@
 {
 "question": "（副）\n①（下に打ち消しや否定的表現を伴って）否定的な意味を強調する気持ちを表す。どのようにしても。何としても。\n②非常に。たいへん。\n③どうせ。同じく。",
 "answers": [
-"とっても",
 "とても",
+"とっても",
 "迚も"
 ],
 "comment": "Lv.N5 [ichi1]: とても/とっても • very; awfully; exceedingly; (not) at all; by no means; simply (cannot)\n「そんなひどいことは－できない」"
@@ -302,9 +295,9 @@
 {
 "question": "（副）スル \n①物事の内容・状態，またやり方などについて疑問に思う気持ちを表す。どのように。\n②疑問に思いつつ，それを否定・拒否する気持ちを表す。\n③その物事について考えられるすべての手段・方法をつくすことを表す。\n④呼びかけて，相手の意向や様子などをたずねる気持ちを表す。どうか。いかが。",
 "answers": [
-"いか",
-"いかが",
 "どう",
+"いかが",
+"いか",
 "如何"
 ],
 "comment": "Lv.N5 [ichi1]: どう/いかが/いか • how; in what way; how about\n「－なっているんだろう」"
@@ -312,10 +305,10 @@
 {
 "question": "（副）\n①物事の調子よくはかどるさま。また，ためらわずに事をすすめるさま。\n②物事や動きの切れ目がなく，次から次と続くさま。\n③太鼓を鳴らす音，銃砲を発射する音を表す語。強く足踏みをしたり物をたたいたりする音，水が強くぶつかる音などにもいう。",
 "answers": [
-"ドンドン",
-"どんどん"
+"どんどん",
+"ドンドン"
 ],
-"comment": "Lv.N4 [ichi1]: どんどん/ドンドン • drumming (noise); beating; pounding; banging; booming; stamping; rapidly; quickly; steadily; continuously; one after the other; in succession\n「工事が－（と）進む」"
+"comment": "Lv.N4 [ichi1]: どんどん • drumming (noise); beating; pounding; banging; booming; stamping; rapidly; quickly; steadily; continuously; one after the other; in succession\n「工事が－（と）進む」"
 },
 {
 "question": "（形動）\n①これぐらいとか，このようなとか指示できない，不明の状態や性質などを表したり，それを尋ねたりするときに用いる。\n②（を伴って）物事の程度や状態，その時の事情などに影響されないようす。たとえ最もひどい…でも。",
@@ -327,10 +320,10 @@
 {
 "question": "（副）スル \n①鮮明で他のものから明らかに区別できるさま。\n②たしかでまちがいないさま。あいまいなところがないさま。\n③体調や気分が壮快なさま。すっきり。\n④遠慮しないで，気持ちを露骨に表現するさま。",
 "answers": [
-"ハッキリ",
-"はっきり"
+"はっきり",
+"ハッキリ"
 ],
-"comment": "Lv.N4 [ichi1/spec1]: はっきり/ハッキリ • clearly; plainly; distinctly; to be clear; to be definite; to be certain; to be exact; to become clear; to clear up\n「－（と）見える」"
+"comment": "Lv.N4 [ichi1/spec1]: はっきり • clearly; plainly; distinctly; to be clear; to be definite; to be certain; to be exact; to become clear; to clear up\n「－（と）見える」"
 },
 {
 "question": "一：（副）\n①時間や程度が，ある基準や節目を超える意を表す。もはや。\n②時間や場所にある基準点を定めて，それに近づく意を表す。まもなく。\n③すでにある基準や状態に達しているのに，さらに加える意を表す。さらに。\n④その時点までにある動作が終了していたり，ある状態になっていたりする意を表す。\n二：（感）\n①ある感情や感動が高まったときに用いられる語。\n②やや非難・叱責の気持ちをこめていう語。",
@@ -394,102 +387,102 @@
 {
 "question": "①身につける装飾品。ブローチ・ネックレス・イヤリングなど。装身具。\n②機械などの付属品。",
 "answers": [
-"アクセサリ",
-"アクセサリー"
+"アクセサリー",
+"アクセサリ"
 ],
-"comment": "Lv.N4 [ichi1]: アクセサリー/アクセサリ • accessory\n「カメラの－」"
+"comment": "Lv.N4 [ichi1]: あくせさりー/あくせさり • accessory\n「カメラの－」"
 },
 {
 "question": "テレビやラジオ放送で，ニュースを報じたり，番組の司会や実況を伝えることを職とする人。競技場・劇場・駅などの告知係をもいう。放送係。放送員。アナ。",
 "answers": [
-"アナウンサ",
-"アナウンサー"
+"アナウンサー",
+"アナウンサ"
 ],
-"comment": "Lv.N4 [ichi1]: アナウンサー/アナウンサ • announcer; presenter"
+"comment": "Lv.N4 [ichi1]: あなうんさー/あなうんさ • announcer; presenter"
 },
 {
 "question": "一棟の建物の内部をいくつかに仕切り，それぞれ独立した住居として貸すもの。共同住宅。",
 "answers": [
 "アパート"
 ],
-"comment": "Lv.N5 [ichi1]: アパート • apartment building; apartment block; apartment house; apartment"
+"comment": "Lv.N5 [ichi1]: あぱーと • apartment building; apartment block; apartment house; apartment"
 },
 {
 "question": "①㋐鎖式，脂環式炭化水素の水素原子をヒドロキシル（水酸）基で置き換えた化合物の総称。メタノール（メチルアルコール），エタノール（エチルアルコール）がその代表的な例。無色，揮発しやすい液体で燃えやすく，有機物をよく溶かす。燃料・溶媒とするほか酒類や医薬の製造などに用いる。デンプン質や果実は酵母や細菌の作用でアルコール発酵をおこして酒を生じる。これを蒸留して中世にアルコールが知られた。現在はアセチレンやエチレンから工業的に合成される。また，アルコールには分子中にヒドロキシル基が二個ある二価アルコール（エチレングリコール），三個ある三価アルコール（グリセリン）がある。\n㋑エタノール（エチルアルコール）のこと。\n②酒類のこと。",
 "answers": [
-"アルコホル",
-"アルコール"
+"アルコール",
+"アルコホル"
 ],
-"comment": "Lv.N4 [ichi1]: アルコール/アルコホル • alcohol"
+"comment": "Lv.N4 [ichi1]: あるこーる/あるこほる • alcohol"
 },
 {
 "question": "（名）スル \n①学業や本業のかたわらに賃仕事をすること。また，それをする人。バイト。\n②学問上の業績。",
 "answers": [
 "アルバイト"
 ],
-"comment": "Lv.N4 [ichi1]: アルバイト • part-time job; side job; albite"
+"comment": "Lv.N4 [ichi1]: あるばいと • part-time job; side job; albite"
 },
 {
 "question": "動力で人や荷物を上下に運ぶ階段状の昇降装置。",
 "answers": [
-"エスカレータ",
-"エスカレーター"
+"エスカレーター",
+"エスカレータ"
 ],
-"comment": "Lv.N4 [ichi1]: エスカレーター/エスカレータ • escalator"
+"comment": "Lv.N4 [ichi1]: えすかれーたー/えすかれーた • escalator"
 },
 {
 "question": "人または貨物を収容する箱（ケージ）を，動力で垂直に昇降・運搬する装置。昇降機。",
 "answers": [
-"エレベータ",
-"エレベーター"
+"エレベーター",
+"エレベータ"
 ],
-"comment": "Lv.N5 [ichi1]: エレベーター/エレベータ • elevator; lift; elevator (aviation)"
+"comment": "Lv.N5 [ichi1]: えれべーたー/えれべーた • elevator; lift; elevator (aviation)"
 },
 {
 "question": "小型エンジンを備えた二輪車。自動二輪車。単車。",
 "answers": [
 "オートバイ"
 ],
-"comment": "Lv.N4 [ichi1]: オートバイ • motorcycle"
+"comment": "Lv.N4 [ichi1]: おーとばい • motorcycle"
 },
 {
 "question": "①光・音などをさえぎったり，部屋を仕切ったりするために，窓や室内につるす布。装飾のためにも用いられる。\n②交流・交渉などをさえぎるもののたとえ。\n③劇場で舞台と客席との間を隔てる布。幕。",
 "answers": [
 "カーテン"
 ],
-"comment": "Lv.N4 [ichi1]: カーテン • curtain; curtains\n「鉄の－」"
+"comment": "Lv.N4 [ichi1]: かーてん • curtain; curtains\n「鉄の－」"
 },
 {
 "question": "①取っ手の付いた西洋風のうつわ。\n②ふたのない丸い洋風のうつわ。足のついた杯形のものもいう。\n③料理で，材料の量をはかるための取っ手のついたうつわ。普通200ミリリットル。計量カップ。\n④賞杯。優勝杯。\n⑤ブラジャーの乳房をおおう椀（わん）形の部分。\n⑥ゴルフで，ボールを入れる穴。ホール。",
 "answers": [
 "カップ"
 ],
-"comment": "Lv.N5 [ichi1]: カップ • cup (drinking vessel, measure, brassiere, prize, etc.); instant noodles purchased in cup; cup noodles\n「コーヒー-－」"
+"comment": "Lv.N5 [ichi1]: かっぷ • cup (drinking vessel, measure, brassiere, prize, etc.); instant noodles purchased in cup; cup noodles\n「コーヒー-－」"
 },
 {
 "question": "①物体の像を記録する装置の総称。写真を撮影する写真機や映画・テレビ・ビデオの撮影機など。キャメラ。\n②カメラマンの略。",
 "answers": [
-"キャメラ",
-"カメラ"
+"カメラ",
+"キャメラ"
 ],
-"comment": "Lv.N5 [ichi1]: カメラ/キャメラ • camera"
+"comment": "Lv.N5 [ichi1]: かめら/きゃめら • camera"
 },
 {
 "question": "フランスの北端，ドーバー海峡に臨む港湾都市。ユーロトンネルの入り口。レースやチュール織の特産で名高い。",
 "answers": [
-"カリー",
 "カレー",
+"カリー",
 "咖哩"
 ],
-"comment": "Lv.N5 [ichi1]: カレー/カリー • curry; rice and curry"
+"comment": "Lv.N5 [ichi1]: かれー/かりー • curry; rice and curry"
 },
 {
 "question": "暦（こよみ）。七曜表。",
 "answers": [
-"カレンダ",
-"カレンダー"
+"カレンダー",
+"カレンダ"
 ],
-"comment": "Lv.N5 [ichi1]: カレンダー/カレンダ • calendar; calender (machine for flattening things)"
+"comment": "Lv.N5 [ichi1]: かれんだー/かれんだ • calendar; calender (machine for flattening things)"
 },
 {
 "question": "①広く気体一般をさす。\n②特に，毒性のある気体。\n③燃料として使われる気体。都市ガス・プロパン-ガスなど。\n④海・山などに出る濃い霧。",
@@ -497,30 +490,30 @@
 "ガス",
 "瓦斯"
 ],
-"comment": "Lv.N4 [ichi1]: ガス • gas (state of matter, e.g. poison gas, natural gas); gasoline; gas; petrol; dense fog; thick fog; gas stove; gas cooker; gas range; flatulence; gas; wind; fart\n「水素－」"
+"comment": "Lv.N4 [ichi1]: がす • gas (state of matter, e.g. poison gas, natural gas); gasoline; gas; petrol; dense fog; thick fog; gas stove; gas cooker; gas range; flatulence; gas; wind; fart\n「水素－」"
 },
 {
 "question": "比較的低沸点（摂氏30～200度）の炭化水素の混合物。ガソリン-エンジンの燃料などに使われる。揮発油。",
 "answers": [
 "ガソリン"
 ],
-"comment": "Lv.N4 [ichi1]: ガソリン • gasoline; petrol"
+"comment": "Lv.N4 [ichi1]: がそりん • gasoline; petrol"
 },
 {
 "question": "①高温で溶融状態にあったものが急速に冷却されて，結晶化せずに固化したもの。また，その状態。無定形状態の一つで，立体的な網目状構造をとる。\n②ケイ酸塩ガラスのこと。二酸化ケイ素。",
 "answers": [
-"しょうし",
 "ガラス",
+"しょうし",
 "硝子"
 ],
-"comment": "Lv.N4 [ichi1]: ガラス/しょうし • glass; pane; vitreous\n「－を割る」"
+"comment": "Lv.N4 [ichi1]: がらす/しょうし • glass; pane; vitreous\n「－を割る」"
 },
 {
 "question": "①単位に冠して1000倍の意を表す語。記号k\n②「キログラム」「キロメートル」などの略。",
 "answers": [
 "キロ"
 ],
-"comment": "Lv.N4 [ichi1]: キロ • kilo-; 10^3; kilogram; kilogramme; kilometre; kilometer; kilo-; 2^10"
+"comment": "Lv.N4 [ichi1]: きろ • kilo-; 10^3; kilogram; kilogramme; kilometre; kilometer; kilo-; 2^10"
 },
 {
 "question": "メートル法による質量の基本単位。国際キログラム原器の質量をもって1キログラムとする。記号kgその1000分の1をグラム，1000倍をトンとする。",
@@ -528,44 +521,44 @@
 "キログラム",
 "瓩"
 ],
-"comment": "Lv.N5 [ichi1]: キログラム • kilogram; kilogramme"
+"comment": "Lv.N5 [ichi1]: きろぐらむ • kilogram; kilogramme"
 },
 {
 "question": "長さの単位。1000メートル。記号km",
 "answers": [
-"キロメイトル",
 "キロメートル",
+"キロメイトル",
 "粁"
 ],
-"comment": "Lv.N5 [ichi1]: キロメートル/キロメイトル • kilometer; kilometre"
+"comment": "Lv.N5 [ichi1]: きろめーとる/きろめいとる • kilometer; kilometre"
 },
 {
 "question": "撥弦楽器の一。裏表平らなひょうたん形の共鳴箱に棹（さお）をつけ，六本の弦を張ったものが一般的。左手の指で弦を押さえて音程を調え，指先・爪・ピック（義爪（ぎそう））などで弦をはじいて演奏する。",
 "answers": [
 "ギター"
 ],
-"comment": "Lv.N5 [ichi1]: ギター • guitar"
+"comment": "Lv.N5 [ichi1]: ぎたー • guitar"
 },
 {
 "question": "①学校などにおいて，組み分けしてできた生徒の集団。学級。級。組。\n②等級。階級。層。\n③種類。部類。\n④オブジェクト指向プログラミングにおいて，オブジェクトの構造を記述するための抽象データ型。属性とメソッドにより定義される。",
 "answers": [
 "クラス"
 ],
-"comment": "Lv.N5 [ichi1]: クラス • class\n「実力はトップ-－だ」"
+"comment": "Lv.N5 [ichi1]: くらす • class\n「実力はトップ-－だ」"
 },
 {
 "question": "洋風の生菓子の総称。特に，スポンジ-ケーキを台にして，クリームや果物を加えた菓子。",
 "answers": [
 "ケーキ"
 ],
-"comment": "Lv.N4 [ichi1]: ケーキ • cake"
+"comment": "Lv.N4 [ichi1]: けーき • cake"
 },
 {
 "question": "①寒さや雨などを防ぐため，またおしゃれのために，外出の時に衣服の上から着るもの。洋服の上に着るオーバーコート・レーンコートや，和服の上に着る東（あずま）コートなど。",
 "answers": [
 "コート"
 ],
-"comment": "Lv.N5 [ichi1]: コート • coat; court (i.e. tennis, basketball, etc.)"
+"comment": "Lv.N5 [ichi1]: こーと • coat; court (i.e. tennis, basketball, etc.)"
 },
 {
 "question": "コーヒーノキの種子（コーヒー豆という）を炒（い）って粉にしたもの。また，それを熱湯で煮出した褐色で香気と苦みのある嗜好（しこう）飲料。茶と同様にカフェインを含有し，興奮・覚醒（かくせい）の作用がある。ブラジルをはじめ中南米諸国で多産。",
@@ -573,353 +566,376 @@
 "コーヒー",
 "珈琲"
 ],
-"comment": "Lv.N5 [ichi1]: コーヒー • coffee"
+"comment": "Lv.N5 [ichi1]: こーひー • coffee"
 },
 {
 "question": "日本プロレタリア文化連盟の略称。1931年（昭和6），蔵原惟人（これひと）の提唱によりナップを発展的に解消し，革命的な芸術運動の全領域を結集する目的で結成された文化団体。34年弾圧により解体。",
 "answers": [
 "コップ"
 ],
-"comment": "Lv.N5 [ichi1]: コップ • glass (drinking vessel); tumbler; cop (police officer)"
+"comment": "Lv.N5 [ichi1]: こっぷ • glass (drinking vessel); tumbler; cop (police officer)"
 },
 {
 "question": "（名）スル \n①複写すること。複製すること。また，そのもの。\n②本物に似せたもの。\n③広告のキャッチ-フレーズや説明文案。",
 "answers": [
 "コピー"
 ],
-"comment": "Lv.N5 [ichi1]: コピー • copy; photocopy; blurb on a book jacket; catch copy\n「書類の－をとる」"
+"comment": "Lv.N5 [ichi1]: こぴー • copy; photocopy; blurb on a book jacket; catch copy\n「書類の－をとる」"
 },
 {
 "question": "音楽会。演奏会。",
 "answers": [
 "コンサート"
 ],
-"comment": "Lv.N4 [ichi1]: コンサート • concert"
+"comment": "Lv.N4 [ichi1]: こんさーと • concert"
+},
+{
+"question": "電子回路を用い，与えられた方法・手順に従って，データの貯蔵・検索・加工などを高速度で行う装置。科学計算・事務管理・自動制御から言語や画像の情報処理に至るまで広範囲に用いられる。電子計算機。",
+"answers": [
+"コンピュータ",
+"コンピューター"
+],
+"comment": "Lv.N4 [ichi1]: こんぴゅーた/こんぴゅーたー • computer"
 },
 {
 "question": "生野菜をドレッシングやマヨネーズであえたものを基本に，果物やゆでた卵・ジャガイモやハム・肉などを加えた料理。サラド。",
 "answers": [
 "サラダ"
 ],
-"comment": "Lv.N4 [ichi1]: サラダ • salad"
+"comment": "Lv.N4 [ichi1]: さらだ • salad"
 },
 {
 "question": "①薄く切った二枚のパンの間に肉・野菜・卵などを挟んだ食べ物。\n②両側から挟まれること。また，挟むことの形容。\n③ハワイ諸島の旧称。",
 "answers": [
-"サンドウィッチ",
-"サンドイッチ"
+"サンドイッチ",
+"サンドウィッチ"
 ],
-"comment": "Lv.N4 [ichi1]: サンドイッチ/サンドウィッチ • sandwich\n「両側から－にされる」"
+"comment": "Lv.N4 [ichi1]: さんどいっち/さんどうぃっち • sandwich\n「両側から－にされる」"
 },
 {
 "question": "①上半身に着る洋風の下着。\n②中衣として着る襟とカフスのついた衣服。普通ワイシャツをいうが、開襟かいきんシャツ・ポロ-シャツなどをもいう。",
 "answers": [
 "シャツ"
 ],
-"comment": "Lv.N5 [ichi1]: シャツ • shirt (underwear); undershirt; singlet; shirt (outerwear, esp. dress shirt)"
+"comment": "Lv.N5 [ichi1]: しゃつ • shirt (underwear); undershirt; singlet; shirt (outerwear, esp. dress shirt)"
 },
 {
 "question": "①如雨露（じようろ）のような噴出口から水や湯を雨のように出して浴びる装置。また，そこから出る水や湯。\n②高エネルギーの粒子が物質に入射して多数の二次粒子を発生させる現象。",
 "answers": [
 "シャワー"
 ],
-"comment": "Lv.N5 [ichi1]: シャワー • shower"
+"comment": "Lv.N5 [ichi1]: しゃわー • shower"
 },
 {
 "question": "（1868～1938）フランスの詩人。田園の暮らしを素朴な自由詩で綴った。詩集「夜明けの鐘から夕べの鐘まで」「キリスト教徒の農牧詩」など。",
 "answers": [
 "ジャム"
 ],
-"comment": "Lv.N4 [ichi1]: ジャム • jam"
+"comment": "Lv.N4 [ichi1]: じゃむ • jam"
 },
 {
 "question": "同一の布地で作ったひとそろいの服。男性の背広上下、女性の上着とスカートのひとそろいなど。",
 "answers": [
 "スーツ"
 ],
-"comment": "Lv.N4 [ichi1]: スーツ • suit\n「カジュアル-－」"
+"comment": "Lv.N4 [ichi1]: すーつ • suit\n「カジュアル-－」"
 },
 {
 "question": "①スーパーマーケット・スーパー-ストアの略。\n②スーパーインポーズの略。\n③外来語の上に付いて複合語をつくり，とびぬけている，特にすぐれている，などの意を表す。",
 "answers": [
-"スーパ",
-"スーパー"
+"スーパー",
+"スーパ"
 ],
-"comment": "Lv.N4 [ichi1]: スーパー/スーパ • super; supermarket; superimpose; superheterodyne; (film with) subtitles\n「－へ買い物に行く」"
+"comment": "Lv.N4 [ichi1]: すーぱー/すーぱ • super; supermarket; superimpose; superheterodyne; (film with) subtitles\n「－へ買い物に行く」"
 },
 {
 "question": "①主に婦人服で，ウエストから下半身をおおう筒状の衣服。長さ・形などに変化が多く，独立したものと身頃から続いたものがある。\n②車両などの下部をおおう，保護や装飾用のおおい。",
 "answers": [
 "スカート"
 ],
-"comment": "Lv.N5 [ichi1]: スカート • skirt\n「新幹線の車体の－」"
+"comment": "Lv.N5 [ichi1]: すかーと • skirt\n「新幹線の車体の－」"
 },
 {
 "question": "録音・再生のための二つ以上の独立したアンプ・スピーカーを用い，立体感・臨場感を得られるようにした音響方式や音響装置。3D。↔モノラル",
 "answers": [
 "ステレオ"
 ],
-"comment": "Lv.N4 [ichi1]: ステレオ • stereo"
+"comment": "Lv.N4 [ichi1]: すてれお • stereo"
 },
 {
 "question": "石炭・石油・ガスなどを燃やしたり，電熱を利用した暖房器具。",
 "answers": [
 "ストーブ"
 ],
-"comment": "Lv.N5 [ichi1]: ストーブ • (room) heater; stove"
+"comment": "Lv.N5 [ichi1]: すとーぶ • (room) heater; stove"
 },
 {
 "question": "①洋風の匙（さじ）。\n②ゴルフ-クラブのうち，ウッドの三番。\n③ルアーの一。匙形の金属板がついた擬餌鉤（ぎじばり）。水中でゆらゆらと動き魚を誘う。",
 "answers": [
-"スプン",
-"スプーン"
+"スプーン",
+"スプン"
 ],
-"comment": "Lv.N5 [ichi1]: スプーン/スプン • spoon"
+"comment": "Lv.N5 [ichi1]: すぷーん/すぷん • spoon"
 },
 {
 "question": "余暇活動・競技・体力づくりとして行う身体運動。陸上競技・水泳・各種球技・スキー・スケート・登山などの総称。",
 "answers": [
 "スポーツ"
 ],
-"comment": "Lv.N5 [ichi1]: スポーツ • sport; sports"
+"comment": "Lv.N5 [ichi1]: すぽーつ • sport; sports"
 },
 {
 "question": "足の先を滑り込ませて履く，留め金やひものついていない洋室内の履物。",
 "answers": [
 "スリッパ"
 ],
-"comment": "Lv.N5 [ichi1]: スリッパ • slipper; slippers"
+"comment": "Lv.N5 [ichi1]: すりっぱ • slipper; slippers"
 },
 {
 "question": "主に男子の衣服で，両足を別々に包む形で下半身にはくもの。スラックス・パンタロンなどの総称。",
 "answers": [
 "ズボン"
 ],
-"comment": "Lv.N5 [ichi1]: ズボン • trousers; pants"
+"comment": "Lv.N5 [ichi1]: ずぼん • trousers; pants"
 },
 {
 "question": "毛糸などで編んだ上着。普通，頭からかぶって着るものをいう。スエーター。",
 "answers": [
-"スエーター",
-"セーター"
+"セーター",
+"スエーター"
 ],
-"comment": "Lv.N5 [ichi1]: セーター/スエーター • sweater; jumper"
+"comment": "Lv.N5 [ichi1]: せーたー/すえーたー • sweater; jumper"
 },
 {
 "question": "一：（形動）\nやわらかいさま。\n二：（名）\n①ソフト-コンタクト-レンズの略。\n②ソフト帽の略。\n③ソフトウエアの略。\n④ソフトボールの略。\n⑤ソフト-クリームの略。\n⑥他の外来語と複合して、やわらかな・おだやかな、などの意を表す。",
 "answers": [
 "ソフト"
 ],
-"comment": "Lv.N4 [ichi1]: ソフト • soft; software; soft hat; felt hat; soft serve ice cream; softball\n「－なもの腰」"
+"comment": "Lv.N4 [ichi1]: そふと • soft; software; soft hat; felt hat; soft serve ice cream; softball\n「－なもの腰」"
 },
 {
 "question": "（名）スル \n①型。型式。\n②共通の性質や特徴をもつものをまとめてくくった一つの型。類型。\n③タイプライターの略。また，タイプライターや文字入力用のキーボードを打つこと。",
 "answers": [
 "タイプ"
 ],
-"comment": "Lv.N4 [ichi1]: タイプ • type; kind; sort; style; typewriter; typing\n「新しい－の車」"
+"comment": "Lv.N4 [ichi1]: たいぷ • type; kind; sort; style; typewriter; typing\n「新しい－の車」"
 },
 {
 "question": "客の求めに応じて，目的地まで客を運び，距離・時間に応じて料金を取る営業用自動車。タキシー。",
 "answers": [
 "タクシー"
 ],
-"comment": "Lv.N5 [ichi1]: タクシー • taxi"
+"comment": "Lv.N5 [ichi1]: たくしー • taxi"
 },
 {
 "question": "①机。卓。食卓。\n②表。一覧表。",
 "answers": [
 "テーブル"
 ],
-"comment": "Lv.N5 [ichi1]: テーブル • table\n「タイム－」"
+"comment": "Lv.N5 [ichi1]: てーぶる • table\n「タイム－」"
 },
 {
 "question": "①薄くて細長い帯状のものの総称。材質により紙テープ・セロファンテープ・ビニールテープ・アルミテープなどがあり，用途により絶縁テープ・録音テープ・粘着テープなどがある。\n②競走で，決勝線上に1.22メートルの高さに張るひも。\n③見送りや祝福の際に投げる紙製の長くて帯状のもの。紙テープ。\n④「磁気じきテープ」に同じ。",
 "answers": [
 "テープ"
 ],
-"comment": "Lv.N5 [ichi1]: テープ • tape"
+"comment": "Lv.N5 [ichi1]: てーぷ • tape"
 },
 {
 "question": "①教科書。テキスト-ブック。\n②原文。原典。本文。",
 "answers": [
-"テクスト",
-"テキスト"
+"テキスト",
+"テクスト"
 ],
-"comment": "Lv.N4 [ichi1]: テキスト/テクスト • text; textbook"
+"comment": "Lv.N4 [ichi1]: てきすと/てくすと • text; textbook"
 },
 {
 "question": "（名）スル \n①物事の良否・能力などを調べるために試すこと。試験すること。検査。審査。\n②特に，学力を知るための試験。",
 "answers": [
 "テスト"
 ],
-"comment": "Lv.N5 [ichi1]: テスト • test\n「飛行－」"
+"comment": "Lv.N5 [ichi1]: てすと • test\n「飛行－」"
 },
 {
 "question": "ネットを境にして相対し，ラケットを用いて所定の区画内にボールを打ち合って得点を競う球技。シングルス・ダブルス・混合ダブルスの種目がある。ボールにより軟式と硬式に分かれる。庭球。",
 "answers": [
 "テニス"
 ],
-"comment": "Lv.N4 [ichi1]: テニス • tennis"
+"comment": "Lv.N4 [ichi1]: てにす • tennis"
 },
 {
 "question": "テレビジョンの略。",
 "answers": [
 "テレビ"
 ],
-"comment": "Lv.N5 [ichi1]: テレビ • television; TV; TV program; TV programme; TV broadcast"
+"comment": "Lv.N5 [ichi1]: てれび • television; TV; TV program; TV programme; TV broadcast"
 },
 {
 "question": "百貨店。広い売り場で，多種類の商品を部門に分けて陳列・販売する，大規模な小売り店。",
 "answers": [
 "デパート"
 ],
-"comment": "Lv.N5 [ichi1]: デパート • department store; department"
+"comment": "Lv.N5 [ichi1]: でぱーと • department store; department"
 },
 {
 "question": "トイレット・トイレット-ルームの略。",
 "answers": [
 "トイレ"
 ],
-"comment": "Lv.N5 [ichi1]: トイレ • toilet; restroom; bathroom; lavatory"
+"comment": "Lv.N5 [ichi1]: といれ • toilet; restroom; bathroom; lavatory"
 },
 {
 "question": "（入り口・戸口などの）戸・扉。",
 "answers": [
 "ドア"
 ],
-"comment": "Lv.N5 [ichi1]: ドア • door (Western-style)\n「自動－」"
+"comment": "Lv.N5 [ichi1]: どあ • door (Western-style)\n「自動－」"
 },
 {
 "question": "①物を切ったり削ったりするのに使う，洋式の小刀。\n②洋食用の小刀。",
 "answers": [
 "ナイフ"
 ],
-"comment": "Lv.N5 [ichi1]: ナイフ • knife\n「－とフォーク」"
+"comment": "Lv.N5 [ichi1]: ないふ • knife\n「－とフォーク」"
 },
 {
 "question": "①珍しい出来事や新しい出来事。また，その知らせ。\n②新聞・ラジオ・テレビなどにより報道される事件や出来事。また，それを伝えるための放送番組や記事。",
 "answers": [
-"ニューズ",
-"ニュース"
+"ニュース",
+"ニューズ"
 ],
-"comment": "Lv.N5 [ichi1]: ニュース/ニューズ • news"
+"comment": "Lv.N5 [ichi1]: にゅーす/にゅーず • news"
 },
 {
 "question": "ワイシャツなどの首まわりに巻いて結び，飾りとする細い帯状の布。タイ。",
 "answers": [
 "ネクタイ"
 ],
-"comment": "Lv.N5 [ichi1]: ネクタイ • tie; necktie"
+"comment": "Lv.N5 [ichi1]: ねくたい • tie; necktie"
 },
 {
 "question": "（名）スル \n①書き留めること。また，書き留めたもの。\n②帳面。\n③注釈。注。\n④音符。譜。",
 "answers": [
 "ノート"
 ],
-"comment": "Lv.N5 [ichi1]: ノート • notebook; copy-book; exercise book; note; notebook PC\n「講義の内容を－する」"
+"comment": "Lv.N5 [ichi1]: のーと • notebook; copy-book; exercise book; note; notebook PC\n「講義の内容を－する」"
 },
 {
 "question": "ハンカチーフの略。ハンケチ。",
 "answers": [
-"ハンケチ",
-"ハンカチ"
+"ハンカチ",
+"ハンケチ"
 ],
-"comment": "Lv.N5 [ichi1]: ハンカチ/ハンケチ • handkerchief"
+"comment": "Lv.N5 [ichi1]: はんかち/はんけち • handkerchief"
 },
 {
 "question": "①最低音域の男声。\n②楽曲の中の最低声部。\n③コントラバスの略。\n④同族楽器の中で最も低い音域を受け持つもの。",
 "answers": [
 "バス"
 ],
-"comment": "Lv.N5 [ichi1]: バス • bus; bath; bass\n「－-クラリネット」"
+"comment": "Lv.N5 [ichi1]: ばす • bus; bath; bass\n「－-クラリネット」"
 },
 {
 "question": "牛乳から分離した脂肪分を練り固めた食品。パンに塗ったり、料理・製菓などに用いる。",
 "answers": [
 "バター"
 ],
-"comment": "Lv.N5 [ichi1]: バター • butter"
+"comment": "Lv.N5 [ichi1]: ばたー • butter"
+},
+{
+"question": "①社交的な集まり・会合。\n②仲間。一行。特に登山で，行動をともにするグループ。\n③党派。政党。",
+"answers": [
+"パーティ",
+"パーティー"
+],
+"comment": "Lv.N5 [ichi1]: ぱーてぃ/ぱーてぃー • party\n「－を開く」"
 },
 {
 "question": "①部分。全体の一部。また，小説などの章・編。\n②役割。職分。受け持ち部分。\n③音楽で声部。また，各楽器の担当部分。\n④パート-タイム・パート-タイマーの略。",
 "answers": [
 "パート"
 ],
-"comment": "Lv.N4 [ichi1]: パート • part; part-timer; part-time (work)\n「－に出る」"
+"comment": "Lv.N4 [ichi1]: ぱーと • part; part-timer; part-time (work)\n「－に出る」"
+},
+{
+"question": "",
+"answers": [
+"パソコン"
+],
+"comment": "Lv.N4 [ichi1]: ぱそこん • personal computer"
 },
 {
 "question": "①おとうさん。↔ママ\n②愛人が自分のパトロンである男性を甘えて呼ぶ語。\n③カトリック教会で，ローマ教皇の愛称。",
 "answers": [
 "パパ"
 ],
-"comment": "Lv.N4 [ichi1]: パパ • Papa"
+"comment": "Lv.N4 [ichi1]: ぱぱ • Papa"
 },
 {
 "question": "ギリシャ神話の牧人と家畜の神。元来はアルカディアの神。山羊の角・鬚（ひげ）・下半身をもつ半獣神。笛の音楽・舞踊を好む。昼寝を妨げられると人や家畜に突然の恐怖（パニック）を与える。ローマ神話のファウヌスにあたる。",
 "answers": [
 "パン"
 ],
-"comment": "Lv.N5 [ichi1]: パン • bread; pastries (e.g. croissants); pastry-based products; pan; frying pan; panning (in a film)"
+"comment": "Lv.N5 [ichi1]: ぱん • bread; pastries (e.g. croissants); pastry-based products; pan; frying pan; panning (in a film)"
 },
 {
 "question": "ビルディングの略。",
 "answers": [
 "ビル"
 ],
-"comment": "Lv.N4 [ichi1]: ビル • multi-floor building; multi-storey building; bill\n「高層－」"
+"comment": "Lv.N4 [ichi1]: びる • multi-floor building; multi-storey building; bill\n「高層－」"
 },
 {
 "question": "①音楽の強弱記号の一。「やわらかく」を指示する。記号p↔フォルテ\n②鍵盤楽器の一。鍵に連動するハンマーで金属弦を打って音を出す。一八世紀初頭にイタリアでクリストフォリ（B.Cristofori）によって考案され，同世紀末にドイツでほぼ完成。音域・音量が豊かで，旋律・和声を自由に演奏できる。平型（グランド）と竪型（アップライト）に大別される。",
 "answers": [
-"ピヤノ",
-"ピアノ"
+"ピアノ",
+"ピヤノ"
 ],
-"comment": "Lv.N4 [ichi1]: ピアノ/ピヤノ • piano"
+"comment": "Lv.N4 [ichi1]: ぴあの/ぴやの • piano"
 },
 {
 "question": "①薄い膜状のもの。\n②感光乳剤を透明な支持体（フィルム-ベース）に塗布したもの。支持体にはトリアセチル-セルロース・ポリエステルなどが用いられる。ロール-フィルム・シート-フィルム・X線フィルム・マイクロ-フィルム・映画用フィルムなど、用途により多くの種類がある。\n③②に写し出された映像。特に、映画・スライドなど。",
 "answers": [
-"フイルム",
-"フィルム"
+"フィルム",
+"フイルム"
 ],
-"comment": "Lv.N5 [ichi1]: フィルム/フイルム • film"
+"comment": "Lv.N5 [ichi1]: ふぃるむ/ふいるむ • film"
 },
 {
 "question": "①民俗。民衆。庶民。\n②フォーク-ソングの略。",
 "answers": [
-"ホーク",
-"フォーク"
+"フォーク",
+"ホーク"
 ],
-"comment": "Lv.N5 [ichi1]: フォーク/ホーク • fork; folk; folk song; hawk"
+"comment": "Lv.N5 [ichi1]: ふぉーく/ほーく • fork; folk; folk song; hawk"
 },
 {
 "question": "（名）スル \n①水泳や水遊びなどをするために設けた水槽。",
 "answers": [
 "プール"
 ],
-"comment": "Lv.N5 [ichi1]: プール • (swimming) pool; pool (billiards); pool (together)\n「モーター-－」"
+"comment": "Lv.N5 [ichi1]: ぷーる • (swimming) pool; pool (billiards); pool (together)\n「モーター-－」"
 },
 {
 "question": "（名）スル \n贈り物をすること。また、贈り物。",
 "answers": [
 "プレゼント"
 ],
-"comment": "Lv.N4 [ichi1]: プレゼント • present; gift; to give a present or gift\n「ハンカチを－する」"
+"comment": "Lv.N4 [ichi1]: ぷれぜんと • present; gift; to give a present or gift\n「ハンカチを－する」"
 },
 {
 "question": "①寝台。ねどこ。\n②機械類を置く台。\n③裁縫ミシンの縫い床。\n④苗床。",
 "answers": [
 "ベッド"
 ],
-"comment": "Lv.N5 [ichi1]: ベッド • bed\n「シングル-－」"
+"comment": "Lv.N5 [ichi1]: べっど • bed\n「シングル-－」"
 },
 {
-"question": "（1917～1985）西ドイツの小説家。社会への批判を視野におき庶民の生活を描く。作「アダムよ，お前はどこにいた」「九時半の玉突き」「道化の告白」「カタリナ＝ブルームの失われた名誉」など。",
+"question": "（1917～1985）西ドイツの小説家。社会への批判を視野におき庶民の生活を描く。作「アダムよ，お前はどこにいた」「カタリナ＝ブルームの失われた名誉」など。",
 "answers": [
 "ベル"
 ],
-"comment": "Lv.N4 [ichi1]: ベル • bell; bel; B"
+"comment": "Lv.N4 [ichi1]: べる • bell; bel; B"
 },
 {
 "question": "本・ノートなどの紙の一面。また，その順序を示す数字。ノンブル。助数詞的にも用いる。",
@@ -927,52 +943,42 @@
 "ページ",
 "頁"
 ],
-"comment": "Lv.N5 [ichi1]: ページ • page\n「－をめくる」"
+"comment": "Lv.N5 [ichi1]: ぺーじ • page\n「－をめくる」"
 },
 {
 "question": "①（1917～）アメリカの写真家。1940年代からファッション写真家として活躍。優美な雰囲気の人物写真，厳密な構成の静物写真でも知られる。\n②（1644～1718）イギリスのクエーカー派政治家。遺産相続により特許状を得，ペンシルベニア（「ペンの森」の意）植民地を建設。信教の自由を実践，ヨーロッパから多数のプロテスタントを迎えた。",
 "answers": [
 "ペン"
 ],
-"comment": "Lv.N5 [ichi1]: ペン • pen"
+"comment": "Lv.N5 [ichi1]: ぺん • pen"
 },
 {
 "question": "西洋式の設備を備えた宿泊施設。洋風の旅館。",
 "answers": [
 "ホテル"
 ],
-"comment": "Lv.N5 [ichi1]: ホテル • hotel"
+"comment": "Lv.N5 [ichi1]: ほてる • hotel"
 },
 {
 "question": "「ボール紙」の略。",
 "answers": [
 "ボール"
 ],
-"comment": "Lv.N5 [ichi1]: ボール • ball; bowl; board (cardboard, pasteboard, etc.)\n「段－」"
-},
-{
-"question": "①衣服を打ち合わせてとめるもの。主に皿状や半球形で，一方の側の穴やループに通してとめる。装飾も兼ねる。\n②指で押して装置を操作する突起した部分。スイッチ-ボタン。",
-"answers": [
-"ぼたん",
-"ボタン",
-"釦",
-"鈕"
-],
-"comment": "Lv.N5 [ichi1]: ボタン/ぼたん • button\n「－をかける」"
+"comment": "Lv.N5 [ichi1]: ぼーる • ball; bowl; board (cardboard, pasteboard, etc.)\n「段－」"
 },
 {
 "question": "①衣服に縫いつけてある物入れの袋。かくし。\n②ビリヤードの玉受け。台の四隅と両側にある，玉の受け穴。\n③ボウリングで，一番ピンと三番（または二番）ピンの間。最もストライクを取りやすいポイントとされる。\n④中，長距離の陸上競技で，まわりを他の選手に囲まれて思うように走路がとれない状態。",
 "answers": [
 "ポケット"
 ],
-"comment": "Lv.N5 [ichi1]: ポケット • pocket"
+"comment": "Lv.N5 [ichi1]: ぽけっと • pocket"
 },
 {
 "question": "①郵便物を投函する箱。郵便差し出し箱。\n②家庭などの郵便受け。\n③地位。部署。役職。",
 "answers": [
 "ポスト"
 ],
-"comment": "Lv.N5 [ichi1]: ポスト • post; position; postbox; mail box; pillar box; post-\n「重要な－につく」"
+"comment": "Lv.N5 [ichi1]: ぽすと • post; position; postbox; mail box; pillar box; post-\n「重要な－につく」"
 },
 {
 "question": "摩擦によって発火する薬剤を細い軸木の先端につけた発火具。多く使われている安全マッチは，パラフィンを塗った軸木の先端の頭薬（塩素酸カリウム・硫黄など）を，容器の側板に塗布した側薬（赤リン・硫化アンチモンなど）にこすって発火させる。",
@@ -980,7 +986,7 @@
 "マッチ",
 "燐寸"
 ],
-"comment": "Lv.N5 [ichi1]: マッチ • match (to light fire with)"
+"comment": "Lv.N5 [ichi1]: まっち • match (to light fire with)"
 },
 {
 "question": "①メートル法・SI（国際単位系）の長さの基本単位。光が真空中を，1秒の2億9979万2458分の1の時間に進む長さを1メートルとする。1875年にパリを通過する地球子午線全周の4千万分の1と定義され，ついで89年に国際メートル原器によって，さらに1960年にクリプトン86の発する光の波長によって定義されたが，83年から現在のように改められた。メーター。記号m\n②メーター②に同じ。",
@@ -989,44 +995,44 @@
 "米",
 "米突"
 ],
-"comment": "Lv.N5 [ichi1]: メートル • metre; meter; meter (i.e. a gauge); gauge"
+"comment": "Lv.N5 [ichi1]: めーとる • metre; meter; meter (i.e. a gauge); gauge"
 },
 {
 "question": "①放送局が行う無線電波による放送。また，その受信装置。\n②他の語に付いて，「放射」の意を表す。",
 "answers": [
 "ラジオ"
 ],
-"comment": "Lv.N5 [ichi1]: ラジオ • radio\n「－をきく」"
+"comment": "Lv.N5 [ichi1]: らじお • radio\n「－をきく」"
 },
 {
 "question": "①競技などの記録。特に、最高記録。\n②音声を記録した円盤。盤面に刻まれた溝の凹凸によって音を記録する。録音盤。ディスク。\n③コンピューターで、ファイルを構成する単位。この集まりをファイルという。",
 "answers": [
 "レコード"
 ],
-"comment": "Lv.N5 [ichi1]: レコード • record (e.g. LP); record (e.g. in sports); record (data structure)\n「従来の－を破る新記録」"
+"comment": "Lv.N5 [ichi1]: れこーど • record (e.g. LP); record (e.g. in sports); record (data structure)\n「従来の－を破る新記録」"
 },
 {
-"question": "西洋料理店。",
+"question": "西洋料理店。「食堂」より高級な店という語感で用いられる。レストラント。",
 "answers": [
-"レストラント",
-"レストラン"
+"レストラン",
+"レストラント"
 ],
-"comment": "Lv.N5 [ichi1]: レストラン/レストラント • restaurant (esp. Western-style)\n「高級－」"
+"comment": "Lv.N5 [ichi1]: れすとらん/れすとらんと • restaurant (esp. Western-style)\n「高級－」"
 },
 {
-"question": "（名）スル \n①研究・調査の報告書。学術研究報告書。\n②新聞・雑誌・放送などで，現地からの状況などを報告すること。また，その報告。レポ。",
+"question": "（名）スル \nレポートに同じ。",
 "answers": [
-"リポート",
-"レポート"
+"レポート",
+"リポート"
 ],
-"comment": "Lv.N4 [ichi1]: レポート/リポート • report; paper\n「現地から－する」"
+"comment": "Lv.N4 [ichi1]: れぽーと/りぽーと • report; paper\n「現地－」"
 },
 {
 "question": "ワード-プロセッサーの略。",
 "answers": [
 "ワープロ"
 ],
-"comment": "Lv.N4 [ichi1]: ワープロ • word processor"
+"comment": "Lv.N4 [ichi1]: わーぷろ • word processor"
 },
 {
 "question": "①北アメリカ大陸と南アメリカ大陸の総称。米州。アメリカ大陸。\n②アメリカ合衆国の略称。米国。",
@@ -1035,7 +1041,7 @@
 "亜米利加",
 "亜墨利加"
 ],
-"comment": "Lv.N4 [spec1]: アメリカ • America; United States of America"
+"comment": "Lv.N4 [spec1]: あめりか • America; United States of America"
 },
 {
 "question": "一：（名・形動）\n①同情しないではいられない・こと（さま）。かわいそう。気の毒。\n②人から同情されるような状態にある・こと（さま）。惨め。\n③人を悲しみに沈ませるような状態にある・こと（さま）。悲哀。\n④しみじみとした情趣。味わい。\n⑤心ひかれること。慕わしいこと。いとしさ。\n⑥感動を受けるさま。立派だ。感心だ。\n二：（感）\n①賞賛，喜び，愛惜，悲しみなどの感動を表す語。\n②強い願望を表す語。ぜひにも。どうか。\n③はやしことば。",
@@ -1077,9 +1083,7 @@
 {
 "question": "（形）\n①好ましくない状態である。よくない。\n②品質的に下級である。粗悪だ。\n③美的に劣っている。醜い。\n④能力的に劣っている。劣等だ。\n⑤身分・家柄が低い。経済的に恵まれない。\n⑥倫理・道徳に反する。道にはずれている。\n⑦規範・標準に合わない。適格でない。\n⑧友好的でない。むつまじくない。\n⑨人格的に好ましくない。\n⑩都合がよくない。具合がよくない。\n⑪不利益になる。得でない。\n⑫快くない。不快だ。\n▽↔①～⑫良い\n⑬調子がよくない。病気・故障だ。\n⑭好ましくない結果に対して責任がある。\n⑮迷惑がかかって気の毒である。申し訳ない。",
 "answers": [
-"悪い",
-"惡い",
-"惡るい"
+"悪い"
 ],
 "comment": "Lv.N5 [ichi1]: わるい • bad; poor; inferior; evil; sinful; unprofitable; unbeneficial; at fault; to blame; in the wrong; sorry\n「天気が－・い」"
 },
@@ -1159,10 +1163,10 @@
 "comment": "Lv.N5 [ichi1]: くらい • dark; gloomy; dark (in colour); dull; depressed; dispirited; sorrowful; bitter (as in a dark past); unclear; unfamiliar; unknown\n「日が暮れて－・くなる」"
 },
 {
-"question": "（副助）\n体言および活用する語の連体形に付く。\n①おおよその分量・程度を表す。ほど。ばかり。\n②ある事柄を示し，その程度が軽いもの，弱いものとして表す。\n③ある事柄を示し，動作・状態の程度を表す。\n④比較の基準を表す。\n⑤ある事柄を示し，それがひどく悪いもの，嫌うべきものとして表す。",
+"question": "（副助）\n体言および活用する語の連体形に付く。\n①おおよその分量・程度を表す。ほど。ばかり。\n②ある事柄を示し，その程度が軽いもの，弱いものとして表す。\n③ある事柄を示し，動作・状態の程度を表す。\n④比較の基準を表す。「…くらい…はない」の形をとることが多い。\n⑤ある事柄を示し，それがひどく悪いもの，嫌うべきものとして表す。「くらいなら」の形をとることが多い。",
 "answers": [
-"ぐらい",
-"くらい"
+"くらい",
+"ぐらい"
 ],
 "comment": "Lv.N5 [spec1]: くらい/ぐらい • approximately; about; around; or so; to (about) the extent that; (almost) enough that; so ... that ...; at least; as ... as ...; like\n「一キロ－行くと駅につく」"
 },
@@ -1206,8 +1210,7 @@
 {
 "question": "①ある時点よりも前。↔以後\n②ある段階・レベルまでまだ至っていないこと。\n③今よりもだいぶ前。昔。",
 "answers": [
-"以前",
-"已前"
+"以前"
 ],
 "comment": "Lv.N3 [ichi1/news1]: いぜん • ago; since; before; previous\n「常識－の問題」"
 },
@@ -1321,17 +1324,15 @@
 {
 "question": "①腰をかける道具。腰かけ。\n②官職などの地位。ポスト。",
 "answers": [
-"椅子",
-"倚子"
+"椅子"
 ],
-"comment": "Lv.N5 [ichi1/news1]: いす/イス • chair; stool; post; office; position\n「大臣の－」"
+"comment": "Lv.N5 [ichi1/news1]: いす • chair; stool; post; office; position\n「大臣の－」"
 },
 {
 "question": "①役に立つこと。利益になること。\n②（形式名詞）助詞「の」「が」を介在させて体言と、あるいは用言の連体形に接続して用いる。助詞「に」を伴うこともある。\n③ある物事に関することを表す。…にとって。…に関して。",
 "answers": [
 "ため",
 "為",
-"爲",
 "為め"
 ],
 "comment": "Lv.N4 [ichi1/news1]: ため • good; advantage; benefit; welfare; sake; purpose; objective; aim; consequence; result; effect; affecting; regarding; concerning\n「－になる本」"
@@ -1345,7 +1346,7 @@
 "comment": "Lv.N4 [ichi1]: なさる • to do\n「これからどんな仕事を－・るおつもりですか」"
 },
 {
-"question": "（動サ変）\n❶①（動作性の名詞を受けて）ある動作・行為を行う。多くの場合，その名詞を語幹とするサ変動詞も存在する。\n②ある一時期，ある職務・ポストにつく。\n③装身具などを身につける。\n④人や物がある形・色・性質である。また，人がある服装・顔の形・表情である。\n⑤動詞の連用形に付いて，いったん名詞化されたものを再び動詞化する。多くは古語で打ち消し表現に用いられた。\n❷①ある人をある身分にする。あるポストにつける。あるものに育て上げる。\n②ある物をある用途に使う。\n③ある物を…に変化させる。\n④…を…と見なす，考える。…扱いする。\n⑤自分で…を…と思う，感じる。\n❸（形容詞・形容動詞の連用形に付いて）その状態にならせる。その状態を出現させる。\n❹決める。\n①…することを決意する。…することに決める。\n②選び出して…と決める。\n③それまでの動作を打ち切って新たな動作にとりかかる。\n④…であると判定する。決定する。\n⑤自分で…であると思う。\n⑥…であると仮定する。…と一応決める。\n⑦法律・規則の文章で，…と決める。定める。\n⑧その人の立場から考えると。\n⑨あの有能な…が不覚にも。\n⑩㋐ある動作にとりかかる。\n㋑ある事柄が行われる所である。ある出来事が始まりかかっている。\n❺ある現象・感じが知覚されるとき，受け手の立場からではなく，そのもととなった現象を中心に表現する言い方。\n❻（事物の状態などを表す副詞を受けてそれを述語化する）そのような状態である。\n❼数量を表す語に付く。\n①（時間を表す語に付いて）ある時刻を起点にして，その時間が経過する。たつ。\n②（価格を表す語に付いて）買い手の立場から，その値段である。あまり安くない場合にいうことが多い。\n③その人数で一緒にある動作をすることを表す。\n❽副詞を述語化して用いる。\n❾（補助動詞）\n①（動詞の連用形に助詞「は」「も」「でも」「さえ」「こそ」などを伴ったものに付いて）その動詞の意味，またはその動詞の打ち消しの意味を強める。\n②（動詞の連用形を重ねたもの，あるいは動詞に並列を表す「なり」「たり」「も」「か」「し」「つ」などを添えたものに付いて）叙述を助ける働きをする。\n③（上に「お」を添えた動詞の連用形，あるいは，上に「御」を添えた動作を表す漢語に付いて）謙譲の意を表す。",
+"question": "（動サ変）\n❶①（動作性の名詞を受けて）ある動作・行為を行う。多くの場合，その名詞を語幹とするサ変動詞も存在する。\n②ある一時期，ある職務・ポストにつく。\n③装身具などを身につける。\n④人や物がある形・色・性質である。また，人がある服装・顔の形・表情である。\n⑤動詞の連用形に付いて，いったん名詞化されたものを再び動詞化する。多くは古語で打ち消し表現に用いられた。\n❷①ある人をある身分にする。あるポストにつける。あるものに育て上げる。\n②ある物をある用途に使う。\n③ある物を…に変化させる。\n④…を…と見なす，考える。…扱いする。\n⑤自分で…を…と思う，感じる。\n❸（形容詞・形容動詞の連用形に付いて）その状態にならせる。その状態を出現させる。\n❹決める。\n①…することを決意する。…することに決める。\n②選び出して…と決める。\n③それまでの動作を打ち切って新たな動作にとりかかる。\n④…であると判定する。決定する。\n⑤自分で…であると思う。\n⑥…であると仮定する。…と一応決める。\n⑦法律・規則の文章で，…と決める。定める。\n⑧その人の立場から考えると。\n⑨あの有能な…が不覚にも。\n⑩㋐ある動作にとりかかる。\n㋑ある事柄が行われる所である。ある出来事が始まりかかっている。\n❺ある現象・感じが知覚されるとき，受け手の立場からではなく，そのもととなった現象を中心に表現する言い方。\n❻（事物の状態などを表す副詞を受けてそれを述語化する）そのような状態である。\n❼数量を表す語に付く。\n①（時間を表す語に付いて）ある時刻を起点にして，その時間が経過する。たつ。\n②（価格を表す語に付いて）買い手の立場から，その値段である。あまり安くない場合にいうことが多い。\n③その人数で一緒にある動作をすることを表す。\n❽「依然として」\n❾（補助動詞）\n①（動詞の連用形に助詞「は」「こそ」などを伴ったものに付いて）その動詞の意味，またはその動詞の打ち消しの意味を強める。\n②（動詞の連用形を重ねたもの，あるいは動詞に並列を表す「なり」「つ」などを添えたものに付いて）叙述を助ける働きをする。\n③（上に「お」を添えた動詞の連用形，あるいは，上に「御」を添えた動作を表す漢語に付いて）謙譲の意を表す。",
 "answers": [
 "する",
 "為る"
@@ -1397,6 +1398,13 @@
 "維持"
 ],
 "comment": "Lv.N3 [ichi1/news1]: いじ • maintenance; preservation; improvement\n「現状－」"
+},
+{
+"question": "①消化管の一部で，食道に続く部分がふくらみ，器官としての機能をもつもの。食物を一時たくわえ，消化を行う。ヒトの胃は食道と十二指腸の間にあって一室から成り，胃液を分泌して主にタンパク質を分解する。鳥類では二室，哺乳類の反芻（はんすう）類では四室に分かれる。胃袋。\n②二十八宿の一。西方の星宿。胃宿。えきえぼし。",
+"answers": [
+"胃"
+],
+"comment": "Lv.N3 [ichi1/news1]: い • stomach; Chinese \"stomach\" constellation (one of the 28 mansions)\n「－がもたれる」"
 },
 {
 "question": "①着る物。着物。\n②身にまとうこと。",
@@ -1475,8 +1483,7 @@
 "１",
 "1",
 "壱",
-"弌",
-"壹"
+"弌"
 ],
 "comment": "Lv.N5 [ichi1]: いち • one; best; first; foremost; beginning; start; bottom string (on a shamisen, etc.)\n「－円」"
 },
@@ -1500,14 +1507,14 @@
 "comment": "Lv.N5 [news1/spec1]: いちがつ • January"
 },
 {
-"question": "①しばらくの間。いっとき。\n②以前のある時。ひところ。いっとき。副詞的にも用いる。\n③昔の時間の区分。今の約二時間。いっとき。",
+"question": "①少しの間。しばらく。片時（かたとき）。\n②ある一時期。\n③昔の時間区分。一刻。",
 "answers": [
-"いっとき",
 "ひととき",
+"いっとき",
 "一時",
 "ひと時"
 ],
-"comment": "Lv.N3 [ichi1]: ひととき/いっとき • moment; a (short) time; a while; former times; two-hour period\n「楽しい－を過ごす」"
+"comment": "Lv.N3 [ichi1]: ひととき/いっとき • moment; a (short) time; a while; former times; two-hour period\n「－も休めない」"
 },
 {
 "question": "①一つの種類。\n②（その中に入れてもいいような）ある種類。ほぼ同類。\n③（副詞的に用いる）はっきりいえないが，何かそういう感じがすること。",
@@ -1534,15 +1541,12 @@
 {
 "question": "一（副）\n①数量・程度などがわずかなさま。時間が短いさま。\n②軽い気持ちで行うさま。特に何という考えもなく行うさま。\n③大層というほどではないが，無視できない程度・分量であるさま。\n④（下に打ち消しの語を伴って）簡単には（…できない）。\n二（感）\n軽く相手に呼び掛ける語。もしもし。",
 "answers": [
-"チョッと",
-"ちょいと",
-"チョット",
-"ちょと",
 "ちょっと",
+"ちょと",
 "一寸",
 "鳥渡"
 ],
-"comment": "Lv.N5 [ichi1]: ちょっと/ちょと/チョット/ちょいと/チョッと • just a minute; short time; just a little; somewhat; easily; readily; rather; (will not) easily; hey!\n「もう－で母の背丈を越す」"
+"comment": "Lv.N5 [ichi1]: ちょっと/ちょと • just a minute; short time; just a little; somewhat; easily; readily; rather; (will not) easily; hey!\n「もう－で母の背丈を越す」"
 },
 {
 "question": "（名・形動）\n①命がけで物事をすること。全力をあげて何かをするさま。副詞的にも用いる。\n②引くに引けないせっぱつまった状況。せとぎわ。",
@@ -1567,13 +1571,19 @@
 "comment": "Lv.N3 [ichi1/news1]: いったい • ...the heck (e.g. \"what the heck?\"); ...in the world (e.g. \"why in the world?\"); ...on earth (e.g. \"who on earth?\"); one object; one body; unity; one form; one style; one Buddhist image (or carving, etc.); generally; in general\n「夫婦－」"
 },
 {
+"question": "（名）スル \n①いくつかのものの間に違いがなく，ぴったり合うこと。\n②いくつかのものの間に食い違いや矛盾が見られないこと。\n③心を一つに合わせること。\n④一般の常識。普通の道理。当然。",
+"answers": [
+"一致"
+],
+"comment": "Lv.N3 [ichi1/news1]: いっち • coincidence; agreement; union; match; conformity; consistency; cooperation\n「指紋が－する」"
+},
+{
 "question": "一：（名）\n①（杯（さかずき）などの）一つの容器に満ちる分量。\n②少し酒を飲むこと。\n③言いたい放題。やりたい放題。\n④舟，一艘（そう）。また，イカ・カニなど，一匹。\n二：（副）\n①容器・建物・場所などに入る限界にまで達しているさま。\n②非常にたくさんであるさま。\n③限度であるさま。ありったけ。",
 "answers": [
 "いっぱい",
 "一杯",
 "１杯",
-"1杯",
-"一盃"
+"1杯"
 ],
 "comment": "Lv.N4 [ichi1/news1]: いっぱい • amount necessary to fill a container (e.g. cupful, spoonful, etc.); drink (usu. alcoholic); full; one squid, octopus, crab, etc.; one boat; fully; to capacity; a lot; much; all of ...; the entire ...\n「－の酒」"
 },
@@ -1677,9 +1687,7 @@
 "question": "（動マ五［四］）\n①口の中の物を腹の中へ入れる。\n②流れなどが，中に取り込む。包み込む。受け身の形で使うことが多い。\n③比喩的に，門や入り口が人などを入れる。\n④闘志や気魄（きはく）で相手を圧倒する。\n⑤出そうになるものを押しとどめる。\n⑥相手の要求を，不満をもちながらも受け入れる。受諾する。\n⑦刃物などを隠し持つ。\n⑧ごまかして自分のものにする。",
 "answers": [
 "飲む",
-"呑む",
-"飮む",
-"服む"
+"呑む"
 ],
 "comment": "Lv.N5 [ichi1]: のむ • to drink; to gulp; to swallow; to take (medicine); to smoke (tobacco); to engulf; to overwhelm; to keep down; to suppress; to accept (e.g. demand, condition); to make light of; to conceal\n「水を－・む」"
 },
@@ -1688,8 +1696,7 @@
 "answers": [
 "隠す",
 "隠くす",
-"匿す",
-"隱くす"
+"匿す"
 ],
 "comment": "Lv.N3 [ichi1/news1]: かくす • to hide; to conceal\n「雲が日を－・す」"
 },
@@ -1849,8 +1856,7 @@
 {
 "question": "①汽車・電車などが停車し，旅客の乗降，貨物の輸送を取り扱う場所。また，その建物。停車場。\n②律令制で，街道に設けられ，宿泊施設・馬・舟・人夫その他を供給した場所。うまや。",
 "answers": [
-"駅",
-"驛"
+"駅"
 ],
 "comment": "Lv.N5 [ichi1/news1]: えき • station"
 },
@@ -1865,8 +1871,7 @@
 {
 "question": "①まるいこと。また，そのもの。まる。\n②〘数〙一平面上で定まった一点（中心）から一定の距離にある点全体からなる図形。円周。また，これに囲まれた平面の部分。\n③1871年（明治4）に制定された日本の貨幣の単位。",
 "answers": [
-"円",
-"圓"
+"円"
 ],
 "comment": "Lv.N5 [ichi1/news1]: えん • yen; Japanese monetary unit; circle\n「－を描く」"
 },
@@ -1907,22 +1912,20 @@
 "comment": "Lv.N3 [ichi1/news1]: ほのお/ほむら • flame; blaze; flames (of intense emotion, e.g. love, jealousy, anger); passion\n「恋の－に身を焦がす」"
 },
 {
-"question": "①物が燃える時にもやもやと立ちのぼるもの。微小な固体粒子が空気中に浮遊しているもの。けぶり。けむ。けぶ。\n②空中にたちのぼったり，たなびいたりして①のように見えるもの。霞・靄（もや）・埃（ほこり）など。\n③暮らし。生計。",
+"question": "「けむり（煙）」に同じ。",
 "answers": [
 "煙",
 "烟"
 ],
-"comment": "Lv.N3 [ichi1/news1]: けむり/けぶり/けむ/けぶ • smoke; fumes\n「－が目にしみる」"
+"comment": "Lv.N3 [ichi1/news1]: けむり/けぶり/けむ/けぶ • smoke; fumes\n「－に巻く」"
 },
 {
 "question": "①霊長目に属する人類以外の動物の総称。顔に毛が少なく，手の指が発達し，すぐれた知能をもつ。狭義にはニホンザルをさす。古くから，神聖視され，馬の守護神とされた。ましら。\n②小利口な者をののしっていう語。\n③戸の框（かまち）や桟に取り付ける木片あるいは金物で，敷居や鴨居（かもい）・柱などの穴にさしこみ，戸締まりをする仕掛け。\n④炉の自在鉤（かぎ）の高さを調節する仕掛け。\n⑤江戸時代，風呂屋にいた遊女。湯女（ゆな）の異称。",
 "answers": [
-"サル",
 "さる",
-"猿",
-"猨"
+"猿"
 ],
-"comment": "Lv.N3 [ichi1/news1]: さる/サル • monkey (esp. the Japanese macaque, Macaca fuscata); ape; non-human primate; sly person; idiot; hick; sliding wooden bolt (for holding a door or window shut); clasp used to control the height of a pot-hook; bathhouse prostitute\n「－まね」"
+"comment": "Lv.N3 [ichi1/news1]: さる • monkey (esp. the Japanese macaque, Macaca fuscata); ape; non-human primate; sly person; idiot; hick; sliding wooden bolt (for holding a door or window shut); clasp used to control the height of a pot-hook; bathhouse prostitute\n「－まね」"
 },
 {
 "question": "物の端の、他との境界になる部分。へり。はし。また、そこを取り囲む枠など。",
@@ -1957,7 +1960,7 @@
 "answers": [
 "鉛筆"
 ],
-"comment": "Lv.N5 [ichi1/news1]: えんぴつ/エンピツ • pencil\n「－削り」"
+"comment": "Lv.N5 [ichi1/news1]: えんぴつ • pencil\n「－削り」"
 },
 {
 "question": "（形）\n①よごれていて不快な感じを与える。\n②粗暴・ぞんざいで不快な感じを与える。きちんとしていなくて乱雑だ。\n③下品である。野卑である。\n④物に執着する気持ちが強い。欲が深い。けちである。\n⑤公明正大でない。あくどくて醜悪だ。\n⑥いさぎよくない。卑怯（ひきよう）である。",
@@ -1985,8 +1988,7 @@
 {
 "question": "①中へ深く入った所。\n②表面に表れない部分。容易にはうかがい知れない部分。\n③主として身分の高い人が自分の妻をいう語。また，身分の高い人の妻に対する敬称。\n④文書・手紙などの終わりの部分。\n⑤将来。行く末。遠い先。\n⑥都から遠い所。特に，奥州。みちのおく。",
 "answers": [
-"奥",
-"奧"
+"奥"
 ],
 "comment": "Lv.N3 [ichi1/news1]: おく • inner part; inside; interior; depths (e.g. of a forest); back (of a house, drawer, etc.); bottom (e.g. of one's heart); recesses; heart\n「引き出しの－」"
 },
@@ -2096,15 +2098,15 @@
 "comment": "Lv.N3 [ichi1/news1]: おん • favour; favor; obligation; debt of gratitude\n「御－は一生忘れません」"
 },
 {
-"question": "（形）\n①熱さが不十分である。なまあたたかい。飲み物や液体の温度にいうことが多い。\n②厳しさが足りない。手ぬるい。軟弱だ。\n③動きが激しくない。ゆるやかだ。\n④才覚がにぶい。愚鈍だ。\n⑤情熱がうすい。熱心でない。",
+"question": "（形）\n①あたたかい。ぬくとい。",
 "answers": [
-"ぬくい",
 "ぬるい",
+"ぬくい",
 "温い",
 "緩い",
 "微温い"
 ],
-"comment": "Lv.N5 [ichi1]: ぬるい/ぬくい • lukewarm; tepid; lenient; slow; stupid\n「風呂が－・い」"
+"comment": "Lv.N5 [ichi1]: ぬるい/ぬくい • lukewarm; tepid; lenient; slow; stupid"
 },
 {
 "question": "（名・形動）\n気候などがあたたかな・こと（さま）。↔寒冷",
@@ -2255,14 +2257,10 @@
 {
 "question": "（代）\n①不定称の指示代名詞。「どっち」より丁寧な言い方。\n②不定称の人代名詞。",
 "answers": [
-"いずち",
-"いずかた",
-"どっち",
 "どちら",
-"何方",
-"孰方"
+"何方"
 ],
-"comment": "Lv.N5 [ichi1]: どちら/どっち/いずかた/いずち • which way; which direction; where; which one (esp. of two alternatives); who\n「西は－ですか」"
+"comment": "Lv.N5 [ichi1]: どちら • which way; which direction; where; which one (esp. of two alternatives); who\n「西は－ですか」"
 },
 {
 "question": "物の価値の貨幣による表示。ねだん。",
@@ -2300,14 +2298,14 @@
 "comment": "Lv.N3 [ichi1/news1]: かげん • degree; extent; just right amount of; condition; state of health; adjustment; moderation; addition and subtraction\n「温度を－する」"
 },
 {
-"question": "①それでよいとすること。\n②よいとして認めること。\n③成績を示す評語。",
+"question": "①それでよいとすること。\n②よいとして認めること。\n③成績を示す評語。「良」の次。あまりよくないが及第できる成績。",
 "answers": [
 "可"
 ],
 "comment": "Lv.N3 [ichi1/news1]: か • passable; acceptable; tolerable; fair\n「住み込みも－」"
 },
 {
-"question": "（名・形動）\n①することができること。ありうること。また，そのさま。↔不可能\n②文法で，そうすることができるという意を表す言い方。口語では助動詞「れる」「られる」，文語では「る」「らる」（古くは「ゆ」「らゆ」）を付けて言い表す。",
+"question": "（名・形動）\n①することができること。ありうること。また，そのさま。↔不可能\n②文法で，そうすることができるという意を表す言い方。口語では助動詞「れる」，文語では「る」（古くは「ゆ」）を付けて言い表す。",
 "answers": [
 "可能"
 ],
@@ -2347,11 +2345,18 @@
 {
 "question": "①家屋。人が住むための建物。\n②㋐自分の家庭。我が家。\n㋑（一般的に）家庭。家族の住んでいる場所。",
 "answers": [
-"ち",
 "うち",
+"ち",
 "家"
 ],
 "comment": "Lv.N5 [ichi1]: うち/ち • house; home (one's own); (one's) family; (one's) household\n「空き地に－が建った」"
+},
+{
+"question": "（接尾）\n氏・姓・官職・称号などに付いて、それに所属するものの意を表す。また尊敬の意を添える。",
+"answers": [
+"家"
+],
+"comment": "Lv.N5 [ichi1]: け • house (e.g. of Tokugawa); family\n「平－」"
 },
 {
 "question": "家の中に据えて用いる道具。机・いす・テーブル・たんすなど。",
@@ -2359,6 +2364,13 @@
 "家具"
 ],
 "comment": "Lv.N3 [ichi1/news1]: かぐ • furniture"
+},
+{
+"question": "①炊事・洗濯・掃除・育児など，家庭生活に必要な仕事。\n②家庭内の事柄。",
+"answers": [
+"家事"
+],
+"comment": "Lv.N3 [ichi1/news1]: かじ • housework; domestic chores; family affairs; household matters\n「－に専念する」"
 },
 {
 "question": "①夫婦とその血縁関係にある者を中心として構成される集団。\n②民法旧規定において，戸主の統率下にある家の構成員。",
@@ -2629,11 +2641,11 @@
 "comment": "Lv.N3 [ichi1]: ほどく • to undo; to untie; to unfasten; to unlace; to unravel; to loosen\n「縄を－・く」"
 },
 {
-"question": "（動カ下一）\n①結ばれていたものがわかれわかれになる。結び目がほどける。\n②束縛や禁止などが解除される。\n③感情の高まりや悪感情・わだかまりがなくなって平静・平穏な状態になる。\n④疑問や問題の答えが出る。\n⑤官職を解任される。",
+"question": "（動カ下一）\n①ある物質の分子が液体中に均一に拡散する。溶解する。\n②固形物が，熱によって液状になる。",
 "answers": [
 "解ける"
 ],
-"comment": "Lv.N3 [ichi1]: とける • to be solved; to loosen; to come untied; to be removed (e.g. restrictions); to be cleared (e.g. misunderstandings); to be broken (e.g. spells, curses); to melt\n「風呂敷の結び目が－・ける」"
+"comment": "Lv.N3 [ichi1]: とける • to be solved; to loosen; to come untied; to be removed (e.g. restrictions); to be cleared (e.g. misunderstandings); to be broken (e.g. spells, curses); to melt\n「塩は水に－・ける」"
 },
 {
 "question": "（動カ下一）\n①とけはなれる。とける。\n②気持ちが和らぐ。うちとける。",
@@ -2707,11 +2719,10 @@
 {
 "question": "（名）スル \n①不注意・不測の事態などのため，身体を傷つけること。また，その傷。\n②過失。欠点。\n③思いがけない事態。偶然。",
 "answers": [
-"ケガ",
 "けが",
 "怪我"
 ],
-"comment": "Lv.N4 [ichi1]: けが/ケガ • injury (to animate object); hurt\n「足を－する」"
+"comment": "Lv.N4 [ichi1]: けが • injury (to animate object); hurt\n「足を－する」"
 },
 {
 "question": "（名）スル \n物事をよい方に改めること。↔改悪",
@@ -2757,14 +2768,14 @@
 "comment": "Lv.N5 [ichi1/news1]: はいざら • ashtray"
 },
 {
-"question": "一：（名）\n「みな一」に同じ。副詞的にも用いる。\n二：（代）\n「みな二」に同じ。",
+"question": "一：（名）\n①全部。すべて。みんな。副詞的にも用いる。\n②そこにいる人全部。みんな。\n二：（代）\n二人称。大勢の相手をさし示す語。みんな。",
 "answers": [
-"みな",
 "みんな",
+"みな",
 "皆",
 "皆んな"
 ],
-"comment": "Lv.N5 [ichi1/news1]: みんな/みな • all; everyone; everybody; everything\n「－が賛成した」"
+"comment": "Lv.N5 [ichi1/news1]: みんな/みな • all; everyone; everybody; everything\n「－まで言うな」"
 },
 {
 "question": "一：（名）\n「皆様（みなさま）一」に同じ。\n二：（代）\n「皆様二」に同じ。",
@@ -2772,6 +2783,13 @@
 "皆さん"
 ],
 "comment": "Lv.N5 [ichi1/news1]: みなさん • all; everyone; everybody\n「－にお知らせします」"
+},
+{
+"question": "①物の形・姿を描いたもの。絵画。\n②映画・テレビの画像。",
+"answers": [
+"絵"
+],
+"comment": "Lv.N5 [news1]: え • picture; drawing; painting; sketch\n「－をかく」"
 },
 {
 "question": "造形美術の一。線や色彩で，物の形姿や内面的イメージなどを平面上に描き出したもの。絵（え）。",
@@ -2802,6 +2820,13 @@
 "開ける"
 ],
 "comment": "Lv.N5 [ichi1]: ひらける • to become opened up; to improve; to get better; to develop; to progress; to become civilized (civilised); to be up-to-date; to be enlightened; to be sensible\n「視界が－・ける」"
+},
+{
+"question": "（名）スル \n物事を始めること。また，始まること。↔終了",
+"answers": [
+"開始"
+],
+"comment": "Lv.N3 [ichi1/news1]: かいし • start; commencement; beginning; initiation"
 },
 {
 "question": "①高さの異なる所への上り下りのために作った段々の通路。\n②順に一段ずつ進む等級。",
@@ -2952,8 +2977,7 @@
 {
 "question": "一：（動バ五［四］）\n①教えを受けて知識や技芸を身につける。\n②勉強する。学問をする。\n③経験を通して知識や知恵を得る。わかる。\n④まねる。",
 "answers": [
-"学ぶ",
-"學ぶ"
+"学ぶ"
 ],
 "comment": "Lv.N3 [ichi1]: まなぶ • to study (in depth); to learn; to take lessons in\n「大学で経済学を－・ぶ」"
 },
@@ -2967,8 +2991,7 @@
 {
 "question": "①一定の場所に設けられた施設に，児童・生徒・学生を集めて，教師が計画的・継続的に教育を行う機関。学校教育法では，小学校・中学校・高等学校・中等教育学校・大学・高等専門学校・盲学校・聾学校・養護学校および幼稚園を学校とし，ほかに専修学校・各種学校を規定する。\n②転じて，広く学びの場をいう。",
 "answers": [
-"学校",
-"學校"
+"学校"
 ],
 "comment": "Lv.N5 [ichi1/news1]: がっこう • school"
 },
@@ -3018,8 +3041,7 @@
 "question": "（形）\n①心が満ち足りて，うきうきするような明るく愉快な気分である。\n②食物などが十分にあって快い。\n③富んでいる。豊かである。",
 "answers": [
 "楽しい",
-"愉しい",
-"娯しい"
+"愉しい"
 ],
 "comment": "Lv.N5 [ichi1/news1]: たのしい • enjoyable; fun\n「家族そろっての－・い夕食」"
 },
@@ -3119,15 +3141,6 @@
 "comment": "Lv.N4 [ichi1]: すべる • to glide; to slide (e.g. on skis); to slip; to fail (an examination); to bomb (when telling a joke); to drop; to go down; to come down; to fall (e.g. in status)\n「水面を－・るように進む」"
 },
 {
-"question": "革やズックで作り，物を入れて持ち運ぶための用具。",
-"answers": [
-"カバン",
-"かばん",
-"鞄"
-],
-"comment": "Lv.N5 [ichi1]: かばん/カバン • bag; satchel; briefcase; basket"
-},
-{
 "question": "一（名）\n①木を切り倒したあとに残った部分。きりかぶ。\n②植物の根のついたひとまとまり。\n③職業上・営業上の特権。\n④江戸時代，売買の対象とされた名跡や役職など。\n⑤株式会社の株式。株券。\n⑥株券・証券の取引。\n⑦その人の得意の技能。\n⑧ある社会での，その人の人気や評価。\n⑨菌・バクテリア・培養細胞を純粋に分離培養したもの。菌株（きんかぶ）。\n二（接尾）\n①助数詞。\n②名詞に付いて，そういう身分・地位・役割である意を表す。",
 "answers": [
 "株"
@@ -3157,6 +3170,13 @@
 "comment": "Lv.N5 [ichi1]: さむい/さぶい • cold (e.g. weather); uninteresting (esp. joke); lame; dull; weak; corny\n「背筋が－・くなる」"
 },
 {
+"question": "①物事を直感的に感じ取る能力。第六感。\n②よく調べて考えること。罪を調べただすこと。",
+"answers": [
+"勘"
+],
+"comment": "Lv.N3 [ichi1/news1]: かん • perception; intuition; the sixth sense\n「－がいい」"
+},
+{
 "question": "（名）スル \n①物の数や金銭などを数えること。\n②代金を払うこと。また，その代金。\n③見積もり。予測。\n④物事の利害を計算すること。\n⑤いろいろと考え合わせたあげくの結論。\n⑥簿記で，資産・負債・資本などについてその増減を記すための区分。現金勘定・資本金勘定など。\n⑦考え定めること。かんてい。",
 "answers": [
 "勘定"
@@ -3178,7 +3198,7 @@
 "comment": "Lv.N3 [ichi1/news1]: かんぜん • perfection; completeness"
 },
 {
-"question": "（名）スル \n①すべてがおわること。完全におわること。\n②文法で，動作・作用がその時点においてすでに終了していること，動作・作用の終了した結果が存在していること，また，動作・状態がなお継続していることなどを表す言い方。口語では助動詞「た（だ）」，文語では助動詞「つ」「ぬ」「たり」「り」などを付けて言い表す。なお，印欧語では，基準となる時の差に応じて，現在完了・過去完了・未来完了などの区別が見られるものがある。",
+"question": "（名）スル \n①すべてがおわること。完全におわること。\n②文法で，動作・作用がその時点においてすでに終了していること，動作・作用の終了した結果が存在していること，また，動作・状態がなお継続していることなどを表す言い方。口語では助動詞「た（だ）」，文語では助動詞「つ」「り」などを付けて言い表す。なお，印欧語では，基準となる時の差に応じて，現在完了・過去完了・未来完了などの区別が見られるものがある。",
 "answers": [
 "完了"
 ],
@@ -3228,7 +3248,7 @@
 "comment": "Lv.N3 [ichi1/news1]: かんしゃ • thanks; gratitude\n「－の念にみたされる」"
 },
 {
-"question": "①喜んだり悲しんだりする，心の動き。気持ち。気分。\n②〘心〙ある状態や対象に対する主観的な価値づけ。「不満だ」など主体自身に関するものがある。また，一時的なものを情動，持続的なものを気分と呼び分ける場合もある。",
+"question": "①喜んだり悲しんだりする，心の動き。気持ち。気分。\n②〘心〙ある状態や対象に対する主観的な価値づけ。「感じが悪い」など対象に関するものと，「快い」「不満だ」など主体自身に関するものがある。また，一時的なものを情動，持続的なものを気分と呼び分ける場合もある。",
 "answers": [
 "感情"
 ],
@@ -3301,9 +3321,7 @@
 {
 "question": "（形動）\n①物事が単純で、理解や扱いが容易であるさま。\n②時間や手数のかからないさま。てがる。",
 "answers": [
-"簡単",
-"簡短",
-"簡端"
+"簡単"
 ],
 "comment": "Lv.N4 [ichi1/news1]: かんたん • simple; easy; uncomplicated; brief; quick; light\n「－な機械」"
 },
@@ -3406,21 +3424,19 @@
 {
 "question": "①子供が持って遊ぶもの。がんぐ。\n②なぐさみにもてあそばれる人や物。",
 "answers": [
-"オモチャ",
-"がんぐ",
 "おもちゃ",
+"がんぐ",
 "玩具",
 "翫具"
 ],
-"comment": "Lv.N4 [ichi1/news1]: おもちゃ/がんぐ/オモチャ • toy; plaything\n「－の電車」"
+"comment": "Lv.N4 [ichi1/news1]: おもちゃ/がんぐ • toy; plaything\n「－の電車」"
 },
 {
 "question": "①地殻を構成するかたい物質。岩石。岩体。\n②石の大きいもの。盤石。",
 "answers": [
 "岩",
 "巌",
-"磐",
-"巖"
+"磐"
 ],
 "comment": "Lv.N3 [ichi1/news1]: いわ • rock; boulder; crag; cliff; anchor\n「一念－をも通す」"
 },
@@ -3435,8 +3451,7 @@
 "question": "①頭部の前面。目・鼻・口などがある部分。\n②（①によって表される）人。\n③顔かたち。顔だち。\n④心の動きが表れた，顔の様子。\n⑤その人のもつ評判・信用など。\n⑥その背後にあるものの代表となる人や事柄。\n⑦物事のある一面。",
 "answers": [
 "顔",
-"貌",
-"顏"
+"貌"
 ],
 "comment": "Lv.N5 [ichi1/news1]: かお • face; visage; look; expression; countenance; honor; honour; face; influence; notoriety\n「－を洗う」"
 },
@@ -3541,8 +3556,7 @@
 {
 "question": "①本を読んだり，字を書いたりするのに用いる脚付きの台。文机（ふづくえ）。\n②飲食物を入れた器や供物をのせる台。",
 "answers": [
-"机",
-"案"
+"机"
 ],
 "comment": "Lv.N5 [ichi1/news1]: つくえ • desk"
 },
@@ -3554,6 +3568,13 @@
 "旌"
 ],
 "comment": "Lv.N3 [ichi1/news1]: はた • flag; pataka (banner)\n「独立の－をかかげる」"
+},
+{
+"question": "（名）スル \nよい結果や状態を予期して，その実現を待ち望むこと。",
+"answers": [
+"期待"
+],
+"comment": "Lv.N3 [ichi1/news1]: きたい • expectation; anticipation; hope\n「完成を－する」"
 },
 {
 "question": "ある行動をするのに最もよいとき。おり。チャンス。",
@@ -3573,9 +3594,7 @@
 {
 "question": "一（名）\n①（愉快か不愉快かという）人の気分の状態。気持ち。\n②人の安否や近況。\n③世間の人がそしりきらうこと。\n④ようす。事情。\n⑤時機。都合。\n二（形動）\nいい気分であるさま。",
 "answers": [
-"機嫌",
-"譏嫌",
-"気嫌"
+"機嫌"
 ],
 "comment": "Lv.N3 [ichi1/news1]: きげん • humour; humor; temper; mood; spirits; safety; health; well-being; one's situation; in a good mood; in high spirits; happy; cheery; merry; chipper\n「－が悪い」"
 },
@@ -3598,8 +3617,7 @@
 "question": "（動ラ五［四］）\n①初めにいた所、またはもといた場所にもどる。\n②やって来た人がそこを立ち去る。",
 "answers": [
 "帰る",
-"還る",
-"歸る"
+"還る"
 ],
 "comment": "Lv.N5 [ichi1]: かえる • to return; to come home; to go home; to go back; to leave; to get home; to get to home plate\n「五時には－・ってくる」"
 },
@@ -3726,7 +3744,7 @@
 "comment": "Lv.N3 [ichi1/news1]: きちょう • precious; valuable\n「－な本」"
 },
 {
-"question": "（代）\n①二人称。\n②三人称。\n③遠称の指示代名詞。",
+"question": "（代）\n①二人称。\n②三人称。「あの人」の尊敬語。あの方。\n③遠称の指示代名詞。",
 "answers": [
 "あなた",
 "貴方",
@@ -3764,8 +3782,7 @@
 "輝く",
 "耀く",
 "赫く",
-"燿く",
-"煌く"
+"燿く"
 ],
 "comment": "Lv.N3 [ichi1]: かがやく • to shine; to glitter; to sparkle\n「ギラギラ－・く真夏の太陽」"
 },
@@ -3862,7 +3879,7 @@
 "comment": "Lv.N5 [ichi1/news1]: きっさてん/きっちゃてん • coffee shop; tearoom; coffee lounge; coffeehouse; cafe"
 },
 {
-"question": "（動マ下一）\n①容器に物を，すき間がないように入れる。いっぱいに入れる。\n②穴やすき間に物を入れてふさぐ。\n③長さや間隔を縮める。\n④通じないようにする。\n⑤ある物事を，長時間にわたって気力を集中して行う。\n⑥十分な考察や検討などをして遺漏や手抜かりのないようにする。\n⑦将棋で，敵の王将の逃げ場がないようにする。\n⑧決められた場所に出向いて，待機する。\n⑨動詞の連用形の下に付いて用いられる。\n⑩相手に迫り近づく。追いつめる。",
+"question": "（動マ下一）\n①容器に物を，すき間がないように入れる。いっぱいに入れる。\n②穴やすき間に物を入れてふさぐ。\n③長さや間隔を縮める。\n④通じないようにする。\n⑤ある物事を，長時間にわたって気力を集中して行う。「根を」を略した形も用いる。\n⑥十分な考察や検討などをして遺漏や手抜かりのないようにする。\n⑦将棋で，敵の王将の逃げ場がないようにする。\n⑧決められた場所に出向いて，待機する。\n⑨動詞の連用形の下に付いて用いられる。\n⑩相手に迫り近づく。追いつめる。",
 "answers": [
 "詰める"
 ],
@@ -3949,6 +3966,13 @@
 "comment": "Lv.N3 [ichi1/news1]: きゅうしゅう • absorption; suction; attraction\n「土地が水を－する」"
 },
 {
+"question": "一：（形動）\n①流れや進み方が速いさま。\n②前ぶれもなく物事が起こるさま。また，変化が突然なさま。にわか。\n③さし迫っているさま。急がなければならないさま。\n④傾斜の度合の大きいさま。険しいさま。\n⑤（責める勢いなどが）厳しいさま。\n⑥気短なさま。性急。\n二：（名）\n①急ぐこと。また，急がなければならないこと。\n②さし迫った事態。危険な事態。\n③日本の芸能の理論用語「序破急」の第三区分。",
+"answers": [
+"急"
+],
+"comment": "Lv.N4 [ichi1/news1]: きゅう • sudden; abrupt; unexpected; urgent; pressing; steep; sharp; precipitous; rapid; swift; fast; emergency; crisis; danger; urgency; hurrying; haste; (in gagaku or noh) end of a song\n「流れが－だ」"
+},
+{
 "question": "（動ガ五［四］）\n①普通よりも短い時間で事をしようとする。早くやる。\n②目的地へ早く着こうとする。早く進む。\n③支度をする。準備する。",
 "answers": [
 "急ぐ"
@@ -3994,8 +4018,7 @@
 {
 "question": "（動カ五［四］）\n①人が、悲しみ・苦しみなどのために声を出し、涙を流す。また、喜びなどで涙を流す場合にもいう。\n②ひどい目にあって、嘆き悲しむ。\n③無理な要求を受け入れる。\n④そのものにあたいしない。",
 "answers": [
-"泣く",
-"哭く"
+"泣く"
 ],
 "comment": "Lv.N4 [ichi1]: なく • to cry; to weep; to sob; to howl\n「人前で大声で－・く」"
 },
@@ -4025,7 +4048,7 @@
 "answers": [
 "牛"
 ],
-"comment": "Lv.N3 [ichi1/news1]: うし/ぎゅう/ウシ • cattle (Bos taurus); cow; bull; ox; calf; beef; Chinese \"Ox\" constellation (one of the 28 mansions)"
+"comment": "Lv.N3 [ichi1/news1]: うし/ぎゅう • cattle (Bos taurus); cow; bull; ox; calf; beef; Chinese \"Ox\" constellation (one of the 28 mansions)"
 },
 {
 "question": "食用にする牛の肉。",
@@ -4112,8 +4135,7 @@
 "answers": [
 "ともに",
 "共に",
-"倶に",
-"供に"
+"倶に"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ともに • together; jointly; at the same time; with; as ...; including; along with; both\n「－学んだ旧友」"
 },
@@ -4170,8 +4192,7 @@
 {
 "question": "（形）\n①恐怖や畏敬の念を感ずる。\n②（将来のことを心配して）避けたい。警戒しなければならない。\n③程度が並外れている。驚くほど立派だ。\n④不思議だ。説明がつかない。",
 "answers": [
-"恐ろしい",
-"怖ろしい"
+"恐ろしい"
 ],
 "comment": "Lv.N3 [ichi1/news1]: おそろしい • terrible; dreadful; terrifying; frightening; frightened; surprising; startling; tremendous; amazing\n「－・くて声も出せない」"
 },
@@ -4185,8 +4206,7 @@
 {
 "question": "（動ア下一）\n①知識や技芸を伝えて，身につけさせる。教授する。\n②相手のために自分の知っていることを告げる。\n③生き方・善悪などについて，わからせる。\n④そそのかす。",
 "answers": [
-"教える",
-"訓える"
+"教える"
 ],
 "comment": "Lv.N5 [ichi1]: おしえる • to teach; to instruct; to tell; to inform; to preach\n「数学を－・える」"
 },
@@ -4261,6 +4281,15 @@
 "comment": "Lv.N3 [ichi1/news1]: むね/むな • chest; breast; breasts; bosom; bust; heart; lungs; stomach; heart; mind; feelings\n「－を張る」"
 },
 {
+"question": "（動サ五［四］）\n①起きるようにする。\n②地面などが平らになっている状態を破る。\n③物事・事態・動きなどを生じさせる。また，意図的でなく，結果として，ある事態を生じさせる。\n④ある感情や意などを心の中に生じさせる。\n⑤新たに物事を始める。組織などを作る。\n⑥活動を盛んにさせる。\n⑦音声を文字化する。\n⑧版に彫る。\n⑨心をふるい立たせる。",
+"answers": [
+"興す",
+"起こす",
+"起す"
+],
+"comment": "Lv.N4 [ichi1]: おこす • to vitalize (e.g. an industry); to invigorate; to energize; to revive; to promote; to make prosperous; to establish (e.g. a company); to build up; to set up; to launch; to commence\n「倒れた苗木を－・す」"
+},
+{
 "question": "①物事に心がひかれおもしろいと感じること。おもしろみ。おもむき。\n②〘教・心〙ある対象に対して特別の関心・注意を向ける心的傾向。",
 "answers": [
 "興味"
@@ -4295,7 +4324,7 @@
 "comment": "Lv.N4 [spec1]: おっしゃる • to say; to speak; to tell; to talk\n「先生が－・いました」"
 },
 {
-"question": "一：（名）\n①官庁・会社などで、業務の内容に応じて機構を分割する場合の単位の一。普通、部・課より大きい。\n②「郵便局」「放送局」「電報局」などの略。\n③当面している仕事・職務や事態。\n二：（接尾）\n助数詞。囲碁・将棋などの勝負を数えるのに用いる。",
+"question": "一：（名）\n①官庁・会社などで、業務の内容に応じて機構を分割する場合の単位の一。普通、部・課より大きい。\n②「郵便局」「電報局」などの略。\n③当面している仕事・職務や事態。\n二：（接尾）\n助数詞。囲碁・将棋などの勝負を数えるのに用いる。",
 "answers": [
 "局"
 ],
@@ -4344,12 +4373,19 @@
 "comment": "Lv.N3 [ichi1/news1]: きんえん • abstaining from smoking; quitting smoking; No Smoking!; Smoking Prohibited!\n「車内－」"
 },
 {
+"question": "（名）スル \nしてはいけないと命ずること。",
+"answers": [
+"禁止"
+],
+"comment": "Lv.N3 [ichi1/news1]: きんし • prohibition; inhibition; ban\n「自由行動を－する」"
+},
+{
 "question": "一（名）\n一：①細長く連なったもの。\n②生物体に含まれる繊維状のもの。\n③血管。\n④血統。家柄。血筋。\n⑤素質。\n⑥考え方などの全体を貫いている一本の線。\n⑦その方面。対象をはっきりと指示せず，ぼかしていう語。\n⑧取引で，内情をよく知って売買する事情通。\n⑨道や川に沿った所。道筋。川筋。\n⑩兜（かぶと）の鉢の，はぎ合わせ処理をした筋目状の部分。\n⑪「すじかまぼこ」の略。\n二：①おもむき。さま。\n②地位。身分。\n二（接尾）\n助数詞。\n①細長いものの本数を数えるのに用いる。\n②江戸時代，銭百文を数えるのに用いる。",
 "answers": [
 "筋",
 "条"
 ],
-"comment": "Lv.N3 [ichi1/news1]: すじ/スジ • muscle; tendon; sinew; vein; artery; fiber; fibre; string; line; stripe; streak; reason; logic; plot; storyline; lineage; descent; school (e.g. of scholarship or arts); aptitude; talent; source (of information, etc.); circle; channel; well-informed person (in a transaction); logical move (in go, shogi, etc.); ninth vertical line; seam on a helmet; gristly fish paste (made of muscle, tendons, skin, etc.); social position; status; on (a river, road, etc.); along; counter for long thin things; counter for roads or blocks when giving directions; (Edo period) counter for hundreds of mon (obsolete unit of currency)\n「白い－をつける」"
+"comment": "Lv.N3 [ichi1/news1]: すじ • muscle; tendon; sinew; vein; artery; fiber; fibre; string; line; stripe; streak; reason; logic; plot; storyline; lineage; descent; school (e.g. of scholarship or arts); aptitude; talent; source (of information, etc.); circle; channel; well-informed person (in a transaction); logical move (in go, shogi, etc.); ninth vertical line; seam on a helmet; gristly fish paste (made of muscle, tendons, skin, etc.); social position; status; on (a river, road, etc.); along; counter for long thin things; counter for roads or blocks when giving directions; (Edo period) counter for hundreds of mon (obsolete unit of currency)\n「白い－をつける」"
 },
 {
 "question": "収縮・弛緩に大別される。",
@@ -4404,10 +4440,7 @@
 {
 "question": "①金属。金・銀・銅・鉄など。\n②金銭。おかね。",
 "answers": [
-"金",
-"鉄",
-"銀",
-"銅"
+"金"
 ],
 "comment": "Lv.N3 [ichi1]: かね • money; metal\n「－の箸」"
 },
@@ -4505,8 +4538,7 @@
 {
 "question": "（名）スル \nあるものと他のものとの違いを認めて，それにより両者をはっきり分けること。",
 "answers": [
-"区別",
-"區別"
+"区別"
 ],
 "comment": "Lv.N3 [ichi1/news1]: くべつ • distinction; differentiation; classification\n「－をつける」"
 },
@@ -4548,8 +4580,7 @@
 {
 "question": "（名）スル \n物事がうまくいくように，精神的・肉体的に励むこと。逆境にあって，つらいめにあいながら努力すること。また，あれこれと苦しい思いをすること。労苦。",
 "answers": [
-"苦労",
-"苦勞"
+"苦労"
 ],
 "comment": "Lv.N3 [ichi1/news1]: くろう • trouble; hardship; difficulty; labour; labor; toil; pains; anxiety; worry; concern; cares\n「親に－をかける」"
 },
@@ -4578,8 +4609,7 @@
 {
 "question": "一（名）\n①地上をとりまく，広がりある空間。\n②天候。空模様。\n③根拠地・立脚点を離れた不安定な状態をいう。\n④記憶していて，書いたものを見ないこと。\n⑤うそ。いつわり。\n⑥物の上部。てっぺん。\n二（形動ナリ）\n①心がぼんやりして，しっかりした意識がもてないさま。魂が抜けたようなさま。\n②明確な理由・根拠のないこと。多く，助詞「に」を伴って副詞的に用いる。\n三（接頭）\n名詞・動詞・形容詞などに付いて，根拠がない，実体のないことであるなどの意を表す。\n①外見上だけの。見せかけだけの。\n②実体がない。事実でない。\n③当てにならない。信頼できない。\n④はっきりした理由がない。わけがわからない。",
 "answers": [
-"空",
-"虚"
+"空"
 ],
 "comment": "Lv.N5 [ichi1]: そら • sky; the air; the heavens; weather; far-off place; distant place; state of mind; feeling; (from) memory; (by) heart; falsehood; lie; somehow; vaguely; fake\n「－に輝く星」"
 },
@@ -4659,8 +4689,7 @@
 {
 "question": "（名）スル \nあることについて教え，それがうまくできるように技術的・身体的練習を継続的に行わせること。",
 "answers": [
-"訓練",
-"訓連"
+"訓練"
 ],
 "comment": "Lv.N3 [ichi1/news1]: くんれん • training; drill; practice; discipline\n「一人でできるように－する」"
 },
@@ -4707,6 +4736,13 @@
 "comment": "Lv.N5 [ichi1/news1]: きょうだい/けいてい • siblings; brothers and sisters; brothers; siblings-in-law; brothers-in-law; sisters-in-law; mate; friend\n「腹違いの－」"
 },
 {
+"question": "①外見に現れたかたち。かっこう。\n②相対的な特性によって区別される性質や形態。タイプ。\n③同種類の物を幾つも作る時，基にする枠や紙。ひながた・鋳型・型紙など。\n④武道・芸能などで規範とされる一定の体勢や動作。\n⑤習慣で決まっている形式。しきたり。慣例。\n⑥借金が返せない時の保証として相手に渡す約束をした物。抵当。担保。\n⑦前に物事のあったことを示すしるし。あとかた。形跡。\n⑧絵図。\n⑨模様。\n⑩うらないの結果。うらかた。\n⑪銭の文字のある方の面。銭の表。↔縵面（なめ）\n⑫㋐名詞の下に付いて，ある物に似たかたちをしていることを表す。\n㋑名詞や形容詞の語幹の下に付いて，ある性質・形式をもつことを表す。",
+"answers": [
+"型"
+],
+"comment": "Lv.N3 [ichi1/news1]: かた/がた • model; type (e.g. of machine, goods, etc.); type; style; pattern; mold (mould); template; model; kata (standard form of a movement, posture, etc. in martial arts, sport, etc.); form (i.e. customary procedure); size (i.e. clothing, shoes); (taxonomical) form\n「柔道の－」"
+},
+{
 "question": "（名）スル \n①〘法〙私法上，相対する二人以上の合意によって成立する法律行為。債権の発生を目的とするもののほか，身分上の合意や物権的な合意も含まれる。典型契約・非典型契約・混合契約，有償契約・無償契約，諾成契約・要物契約等に区分される。また，より広く合同行為も含めた，複数の意思表示によって成立する法律行為を意味することもある。\n②約束をかわすこと。また，その約束。\n③ユダヤ教・キリスト教で，神からの恩恵として，人間との間に交わされた取り決め。シナイ山でモーセを介して交わされた契約において，神はイスラエルの民を自らの民として選びとり，律法を与えた。これ以降イスラエルの民は，律法を厳守することを宗教生活の根幹に置いてきた。これに対してキリスト教は，神への信仰によってこそ罪の赦しと救いがもたらされるという新しい契約，つまり新約がイエスによってもたらされたとみなしている。",
 "answers": [
 "契約"
@@ -4744,11 +4780,11 @@
 "comment": "Lv.N3 [ichi1/news1]: けいき • business conditions; the market; economic activity; economic climate; good (economic) times; prosperity; boom; liveliness; energy; vigour; vigor; spirit\n「－の変動がはなはだしい」"
 },
 {
-"question": "①ながめ。風景。特に，自然のながめ。\n②茶人のいう陶器の見所の一。陶器表面にかけた釉（うわぐすり）の流れ具合や溶け具合，また焼成時の火加減により生じた窯変（ようへん）など，不測の変化をいう。",
+"question": "風景。けしき。",
 "answers": [
 "景色"
 ],
-"comment": "Lv.N4 [ichi1/news1]: けしき/けいしょく • scenery; scene; landscape\n「－のいい所」"
+"comment": "Lv.N4 [ichi1/news1]: けしき/けいしょく • scenery; scene; landscape"
 },
 {
 "question": "（動タ五［四］）\n時・時間が経過する。",
@@ -4861,8 +4897,7 @@
 "question": "（動タ五［四］）\n①相手を攻め滅ぼす。\n②斬（き）り殺す。",
 "answers": [
 "撃つ",
-"討つ",
-"射つ"
+"討つ"
 ],
 "comment": "Lv.N3 [ichi1/news1]: うつ • to shoot (at); to attack; to defeat; to destroy; to avenge\n「敵を－・つ」"
 },
@@ -5022,8 +5057,7 @@
 "answers": [
 "硬い",
 "固い",
-"堅い",
-"緊い"
+"堅い"
 ],
 "comment": "Lv.N4 [ichi1]: かたい • hard; solid; tough; stiff; tight; wooden; unpolished (e.g. writing); strong; firm (not viscous or easily moved); safe; steady; honest; steadfast; obstinate; stubborn; bookish; formal; stuffy\n「－・い商売」"
 },
@@ -5104,7 +5138,7 @@
 "犬",
 "狗"
 ],
-"comment": "Lv.N5 [ichi1/news1]: いぬ/イヌ • dog (Canis (lupus) familiaris); snoop (i.e. a detective, a spy, etc.); loser; asshole; counterfeit; inferior; useless; wasteful\n「警察の－」"
+"comment": "Lv.N5 [ichi1/news1]: いぬ • dog (Canis (lupus) familiaris); snoop (i.e. a detective, a spy, etc.); loser; asshole; counterfeit; inferior; useless; wasteful\n「警察の－」"
 },
 {
 "question": "（名）スル \n物事について深く考えたり調べたりして真理を明らかにすること。",
@@ -5123,8 +5157,7 @@
 {
 "question": "①地方行政区画の一。地方公共団体のうち最も範囲の広い区画で、市町村を包括する。\n②廃藩置県時に、それまでの藩に代えて用いた行政名。\n③中国の行政区画の一。時代により州・府・道などの下に置かれたが、現在では省に所属している。",
 "answers": [
-"県",
-"縣"
+"県"
 ],
 "comment": "Lv.N4 [ichi1]: けん • prefecture (of Japan); county (of China)"
 },
@@ -5150,7 +5183,7 @@
 "comment": "Lv.N5 [ichi1]: みせる • to show; to display\n「掛軸を－・せる」"
 },
 {
-"question": "（動マ上一）\n一：①視覚によって，物の形・色・様子などを知覚する。\n②風景などを，そこへ出かけていって楽しむ。見物する。\n③芝居や映画，スポーツの試合などを鑑賞する。\n④文字・図などによって表されている内容を理解する。\n⑤存在を確認する。認める。ある。\n⑥判断を下すために，物事の状態などを調べる。\n⑦㋐判断する。評価する。\n㋑医者が体の様子を調べ，健康状態を判断する。診断する。\n㋒うらなう。\n㋓鑑定する。\n㋔その立場に立って判断することを表す。…からいうと。\n㋕ある限られた範囲を対象として結果・結論を導く。\n⑧悪い事態にならないよう，気を配って世話をする。\n⑨責任をもって指導・助言をする。\n⑩好ましくないことを身に受ける。経験する。\n⑪動作・作用が実現する。\n⑫会う。特に，異性と会う。また，男女の交わりをする。\n⑬夫婦として暮らす。\n二：（補助動詞）\n①動詞の連用形に助詞「て（で）」を添えた形に付いて用いられる。\n②名詞に助詞「で」を添えた形に付いて，「…である」の意に用いられる。",
+"question": "（動マ上一）\n一：①視覚によって，物の形・色・様子などを知覚する。\n②風景などを，そこへ出かけていって楽しむ。見物する。\n③芝居や映画，スポーツの試合などを鑑賞する。\n④文字・図などによって表されている内容を理解する。\n⑤存在を確認する。認める。ある。「みられる」の形で用いることが多い。\n⑥判断を下すために，物事の状態などを調べる。\n⑦㋐判断する。評価する。\n㋑医者が体の様子を調べ，健康状態を判断する。診断する。\n㋒うらなう。\n㋓鑑定する。\n㋔その立場に立って判断することを表す。…からいうと。\n㋕ある限られた範囲を対象として結果・結論を導く。\n⑧悪い事態にならないよう，気を配って世話をする。\n⑨責任をもって指導・助言をする。\n⑩好ましくないことを身に受ける。経験する。\n⑪動作・作用が実現する。\n⑫会う。特に，異性と会う。また，男女の交わりをする。\n⑬夫婦として暮らす。\n二：（補助動詞）\n①動詞の連用形に助詞「て（で）」を添えた形に付いて用いられる。\n②名詞に助詞「で」を添えた形に付いて，「…である」の意に用いられる。",
 "answers": [
 "みる",
 "見る",
@@ -5219,7 +5252,7 @@
 "鍵",
 "鑰"
 ],
-"comment": "Lv.N3 [ichi1/news1]: かぎ/カギ • key; lock\n「－をかける」"
+"comment": "Lv.N3 [ichi1/news1]: かぎ • key; lock\n「－をかける」"
 },
 {
 "question": "以前。昔。副詞的，または連体詞的にも用いる。",
@@ -5277,8 +5310,7 @@
 {
 "question": "①一般に，建物の正面の出入り口。\n②〘仏〙\n㋐禅にはいる入り口。禅学の入門。\n㋑禅寺の方丈に突出して設けられた，出入りのためのところ。門。\n㋒禅修行の過程で重要ないし困難な部分。\n③近世の住宅で，式台の前の駕籠かごをおろすための低い板敷きの部分。また，式台を含めた出入り口の全体。\n④江戸の町名主をいう。",
 "answers": [
-"玄関",
-"玄關"
+"玄関"
 ],
 "comment": "Lv.N5 [ichi1/news1]: げんかん • entranceway; entry hall; vestibule; foyer; entryway; mud room"
 },
@@ -5385,6 +5417,14 @@
 "comment": "Lv.N3 [ichi1/news1]: げんかい • limit; bound\n「体力の－」"
 },
 {
+"question": "一：（名）\nひとりの人。自分自身。\n二：（接尾）\n助数詞。物の数を数えるのに用いる。",
+"answers": [
+"個",
+"箇"
+],
+"comment": "Lv.N5 [ichi1]: こ • counter for articles; counter for military units; individual\n「－としての認識」"
+},
+{
 "question": "国家や社会や種々の集団に対して，それを構成している個々の人。一個人。私人。また，地位・身分などと切り離したひとりの人間。",
 "answers": [
 "個人"
@@ -5442,7 +5482,7 @@
 "answers": [
 "虎"
 ],
-"comment": "Lv.N3 [ichi1/news1/spec1]: とら/トラ • tiger (Panthera tigris); drunkard; drunk; sot"
+"comment": "Lv.N3 [ichi1/news1/spec1]: とら • tiger (Panthera tigris); drunkard; drunk; sot"
 },
 {
 "question": "ほこること。名誉に思うこと。",
@@ -5466,8 +5506,7 @@
 "answers": [
 "五つ",
 "５つ",
-"5つ",
-"伍つ"
+"5つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: いつつ • five"
 },
@@ -5490,8 +5529,7 @@
 {
 "question": "①正午から午前零時まで。\n②特に正午から日没までの時間。ひるすぎ。\n▽↔午前",
 "answers": [
-"午後",
-"午后"
+"午後"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ごご • afternoon; p.m.\n「－九時に大阪に着く」"
 },
@@ -5696,6 +5734,13 @@
 "comment": "Lv.N4 [ichi1/news1]: こうむいん • government worker; public servant; civil servant"
 },
 {
+"question": "①ある行為の，目的にかなった結果。ききめ。\n②演劇・映画などで，その場面にふさわしい雰囲気や真実みなどを人工的につくり出すこと。また，そのために用いる擬音・照明・音楽など。エフェクト。",
+"answers": [
+"効果"
+],
+"comment": "Lv.N3 [ichi1/news1]: こうか • effect; effectiveness; efficacy; result; effects (e.g. sound effects, visual effects, special effects)\n「猛練習の－が表れる」"
+},
+{
 "question": "（形）\n①物の一方の面から他方の面までの距離が大きい。厚みがある。↔薄い\n②真心がこもっている。心が深い。\n③恩恵などを受ける程度がはなはだしい。\n④病気が重い。重病である。\n⑤裕福である。\n⑥あつかましい。図々しい。",
 "answers": [
 "厚い",
@@ -5888,8 +5933,7 @@
 {
 "question": "（形）\n①空間的に基準面よりかなり上にある。\n②音や香りが顕著である。\n③序列・価値が上位にある。\n④志向が高尚である。低俗なものを嫌う。\n⑤数量的に多い。↔安い\n⑥時間的に遠い。\n⑦尊大である。\n▽↔低い",
 "answers": [
-"高い",
-"高価い"
+"高い"
 ],
 "comment": "Lv.N5 [ichi1/news1]: たかい • high; tall; expensive\n「背の－・い人」"
 },
@@ -6032,11 +6076,11 @@
 "comment": "Lv.N3 [ichi1/news1]: こくばん • blackboard"
 },
 {
-"question": "一：（名）\n①人体で，脊柱（せきちゆう）の下部から骨盤のあたり。体の後ろ側で胴のくびれているあたりから，一番張っているあたりまでを漠然とさす。上体を曲げたり回したりするときの軸になり，体を動かしたり姿勢を保ったりするときに重要なところ。人間以外の動物にもこれをあてて言うことがある。\n②袴・裳（も）などの①にあたる部分。また，そのあたりに結ぶ紐。\n③物事の①とみなされる部分。\n④物事の中途で，肝心なところ。\n⑤容易に折れたりしないで，元の状態を保とうとする力。練り上げた物のねばり，板・棒などの弾力，糸・布・紙などの張りなどをいう。靭（じん）性。\n⑥（他の語の下に付いて）物事をしようとする時の姿勢・態度。\n二：（接尾）\n助数詞。\n①腰に差したり着けたりするものを数えるのに用いる。\n②箙（えびら）に盛った一盛りを単位として矢を数えるのに用いる。本数は一定しない。\n③蟇目（ひきめ）の矢四筋をいう。",
+"question": "一：（名）\n①人体で，脊柱（せきちゆう）の下部から骨盤のあたり。体の後ろ側で胴のくびれているあたりから，一番張っているあたりまでを漠然とさす。上体を曲げたり回したりするときの軸になり，体を動かしたり姿勢を保ったりするときに重要なところ。人間以外の動物にもこれをあてて言うことがある。\n②袴・裳（も）などの①にあたる部分。また，そのあたりに結ぶ紐。\n③物事の①とみなされる部分。\n④物事の中途で，肝心なところ。\n⑤容易に折れたりしないで，元の状態を保とうとする力。練り上げた物のねばり，板・棒などの弾力，糸・布・紙などの張りなどをいう。靭（じん）性。\n⑥（他の語の下に付いて）物事をしようとする時の姿勢・態度。「…ごし」と濁る。\n二：（接尾）\n助数詞。\n①腰に差したり着けたりするものを数えるのに用いる。\n②箙（えびら）に盛った一盛りを単位として矢を数えるのに用いる。本数は一定しない。\n③蟇目（ひきめ）の矢四筋をいう。",
 "answers": [
 "腰"
 ],
-"comment": "Lv.N3 [ichi1/news1]: こし/コシ • back; lower back; waist; hips; lumbar region; body (of hair, noodle, paper, etc.); resilience; spring\n「－を下ろす」"
+"comment": "Lv.N3 [ichi1/news1]: こし • back; lower back; waist; hips; lumbar region; body (of hair, noodle, paper, etc.); resilience; spring\n「－を下ろす」"
 },
 {
 "question": "一（名）\n①脊椎動物の骨格を構成する堅い構造物。他の器官を支持し保護する。主に骨組織からなり，表面は骨膜でおおわれ，内部の腔所は造血作用をもつ骨髄により満たされる。広義には軟骨を含める場合もある。硬骨。\n②火葬などにした人骨。\n③紙や布を張る時，芯となり全体を内側から支える細長い材料。\n④中心となる人物。中心となって働く人。\n⑤物事の核心。そのものを成り立たせている中心。\n⑥容易に屈しない強い気性。気概。気骨（きこつ）。\n二（名・形動）\n面倒で苦労のいること。困難なこと。また，そのさま。",
@@ -6122,8 +6166,8 @@
 {
 "question": "（感）\n日中，人に会ったり，人を訪問した時の挨拶（あいさつ）の言葉。",
 "answers": [
-"こんちは",
 "こんにちは",
+"こんちは",
 "今日は"
 ],
 "comment": "Lv.N5 [ichi1]: こんにちは/こんちは • hello; good day (daytime greeting)"
@@ -6245,7 +6289,7 @@
 "comment": "Lv.N3 [ichi1/news1]: さべつ • discrimination; distinction; differentiation\n「人種－」"
 },
 {
-"question": "細かい岩片や各種鉱物粒で，直径2ミリメートル未満，16分の1ミリメートル以上のもの。または，それらの集合体。まさご。いさご。すなご。",
+"question": "すな。細かい石。すなご。まさご。",
 "answers": [
 "砂",
 "沙",
@@ -6372,8 +6416,7 @@
 {
 "question": "（動マ五［四］）\n①物事が終わる。終了する。\n②事態が解決・解消する。かたがつく。\n③用が足りる。まにあう。\n④気持ちがおさまる。気持ちがはれる。\n⑤他人に対して義理がたつ。申し訳がたつ。多く打ち消し・反語の形で用いる。",
 "answers": [
-"済む",
-"濟む"
+"済む"
 ],
 "comment": "Lv.N4 [ichi1]: すむ • to finish; to end; to be completed; to merely result in something less severe than expected; to feel at ease; to feel unease or guilt for troubling someone; to be sorry\n「仕事が早く－・む」"
 },
@@ -6399,7 +6442,7 @@
 "comment": "Lv.N3 [ichi1/news1]: さいばん • trial; judgement; judgment"
 },
 {
-"question": "（動ラ五）\n一：❶物が存在する。\n①（何が存在するかが問題の場合）存在する。\n②（その物が存在すること自体は自明で，場所が問題である場合）位置する。\n❷人が存在する。\n①（誰が存在するかが問題の場合）いる。\n②人が死なずに生存する。\n③（その人が存在すること自体は自明のことで，場所が問題である場合）人がある場所に滞在する。そこに暮らす。\n④人がある特別の地位や環境にいる。\n❸所有している。持っている。\n①人が財産などを所有している。\n②ある人が，家族・親戚・友人などをもっている。\n③物や人などが，ある要素や，付属的・付随的な物を持っている。\n④人や物がある属性をもっている。\n⑤人などがある能力・実績・経験を持っている。\n⑥人が，ある考え・記憶・感覚を持っている。\n⑦人が，何か解決・処理すべき事柄をもっている。\n❹（数量を表す語を副詞的に受けて）その物の数・量・重さ・長さ・時間などが…だということを表す。\n❺動作・現象が実現する。\n①何か事が起こる。\n②行事・催し・会合などが行われる。\n❻①他人の文章を引用して示す。…と書かれている。\n②状況・場合が…であるので。…なので。\n③時には…する，過去に…した経験をもつ，などの意を表す。\n④人間集団・社会を表す名詞を受け，そこにおいては，の意を表す。\n二：（補助動詞）\n❶名詞に断定の助動詞「だ」の連用形「で」を添えたものに付いて，指定の意を表す。\n①ある物事と他の物事とが等しい関係にあることを表す。\n②ある物事が何らかの類に属することを表す。\n③ある状態，ある事態にあることを表す。\n④古語では，断定の助動詞「なり」「たり」の連用形「に」「と」を添えたものに付く。\n❷種々の語に付いて，そういう状態である，そういう性質をもっている意を表す。「ある」の前に助詞の入ることもある。\n①形容詞・形容動詞の連用形に付く場合。\n②副詞「かく」「しか」「さ」などに付く場合。\n③打ち消しの助動詞「ず」，推量の助動詞「べし」の連用形に付く場合。\n❸動詞の連用形に助詞「て（で）」を添えた形に付いて，動作・作用の完了・継続・残存の意を表す。主として他動詞を受ける。\n①ある動作・作用の結果が続いていることを表す。\n②準備がきちんとなされていることを表す。\n❹動詞の連用形に助詞「つつ」を添えた形に付いて，動作・作用の進行を表す。\n❺動作性の漢語名詞または動詞の連用形に付いて，その動作をする人に対する尊敬の意を表す。\n①接頭語「御」によって敬意を添えることが多い（現代語ではややふざけた場合にしか言わない）。\n②非常に高い敬意を表す。",
+"question": "（動ラ五）\n一：❶物が存在する。\n①（何が存在するかが問題の場合）存在する。\n②（その物が存在すること自体は自明で，場所が問題である場合）位置する。\n❷人が存在する。\n①（誰が存在するかが問題の場合）いる。\n②人が死なずに生存する。\n③（その人が存在すること自体は自明のことで，場所が問題である場合）人がある場所に滞在する。そこに暮らす。\n④人がある特別の地位や環境にいる。\n❸所有している。持っている。\n①人が財産などを所有している。\n②ある人が，家族・親戚・友人などをもっている。\n③物や人などが，ある要素や，付属的・付随的な物を持っている。\n④人や物がある属性をもっている。\n⑤人などがある能力・実績・経験を持っている。\n⑥人が，ある考え・記憶・感覚を持っている。\n⑦人が，何か解決・処理すべき事柄をもっている。\n❹（数量を表す語を副詞的に受けて）その物の数・量・重さ・長さ・時間などが…だということを表す。\n❺動作・現象が実現する。\n①何か事が起こる。\n②行事・催し・会合などが行われる。\n❻①他人の文章を引用して示す。…と書かれている。\n②状況・場合が…であるので。…なので。\n③時には…する，過去に…した経験をもつ，などの意を表す。\n④人間集団・社会を表す名詞を受け，そこにおいては，の意を表す。\n二：（補助動詞）\n❶名詞に断定の助動詞「だ」の連用形「で」を添えたものに付いて，指定の意を表す。\n①ある物事と他の物事とが等しい関係にあることを表す。\n②ある物事が何らかの類に属することを表す。\n③ある状態，ある事態にあることを表す。\n④古語では，断定の助動詞「なり」「たり」の連用形「に」「と」を添えたものに付く。\n❷種々の語に付いて，そういう状態である，そういう性質をもっている意を表す。「ある」の前に助詞の入ることもある。\n①形容詞・形容動詞の連用形に付く場合。\n②副詞「かく」「さ」などに付く場合。\n③打ち消しの助動詞「ず」，推量の助動詞「べし」の連用形に付く場合。\n❸動詞の連用形に助詞「て（で）」を添えた形に付いて，動作・作用の完了・継続・残存の意を表す。主として他動詞を受ける。\n①ある動作・作用の結果が続いていることを表す。\n②準備がきちんとなされていることを表す。\n❹動詞の連用形に助詞「つつ」を添えた形に付いて，動作・作用の進行を表す。\n❺動作性の漢語名詞または動詞の連用形に付いて，その動作をする人に対する尊敬の意を表す。\n①接頭語「御」によって敬意を添えることが多い（現代語ではややふざけた場合にしか言わない）。\n②非常に高い敬意を表す。",
 "answers": [
 "ある",
 "有る",
@@ -6486,11 +6529,11 @@
 "comment": "Lv.N5 [ichi1/news1]: さくぶん • writing (an essay, prose, etc.); composition; formal writing with little real meaning\n「机上の－にすぎない」"
 },
 {
-"question": "一：①礼にかなった立ち居振る舞いのしかた。\n②物事を行う方法。やり方。\n③しきたり。慣習。\n二：〘仏〙仏事を行う所作の法式。",
+"question": "ものの作り方。",
 "answers": [
 "作法"
 ],
-"comment": "Lv.N3 [news1]: さほう/さくほう • manners; etiquette; propriety; manner of production (esp. of prose, poetry, etc.); way of making\n「行儀－」"
+"comment": "Lv.N3 [news1]: さほう/さくほう • manners; etiquette; propriety; manner of production (esp. of prose, poetry, etc.); way of making\n「文章－」"
 },
 {
 "question": "（接尾）\n助数詞。本・雑誌・帳面など，とじてあるものを数えるのに用いる。",
@@ -6537,13 +6580,13 @@
 "comment": "Lv.N5 [ichi1/news1]: さら • plate; dish; platter; disc; serving; helping; course; kanji radical 108 (at the bottom)\n「ひざの－」"
 },
 {
-"question": "「みつ」の促音添加。三個，また三歳。現代語では，この語形の方が用いられる。",
+"question": "①さん。みっつ。物の数を数える時に用いられる。\n②三歳。\n③昔の時刻で，一刻を四つに分けた第三。",
 "answers": [
 "三つ",
 "３つ",
 "3つ"
 ],
-"comment": "Lv.N5 [ichi1/news1]: みっつ/みつ • three"
+"comment": "Lv.N5 [ichi1/news1]: みっつ/みつ • three\n「丑－時」"
 },
 {
 "question": "千の三倍。また，非常に大きな数量のたとえ。",
@@ -6569,7 +6612,14 @@
 "comment": "Lv.N5 [news1]: さんびゃく • 300; three hundred; 300 mon; trifling amount; two-bit item; shyster"
 },
 {
-"question": "（動ラ五［四］）\n一（自動詞）\n❶①「行く」「来る」の意の謙譲語。動作の及ぶ相手を敬う。聞き手と動作の及ぶ相手とが一致している場合に用いられる。\n②「行く」「来る」の意の丁寧語。聞き手への敬意をこめていう。\n③神社・寺院や墓へ行って拝む意の謙譲語。もうでる。参詣する。お参りする。\n④「行く」「来る」意の尊大語。上位者が下位者の行為を低めていう。\n⑤相手の力や能力に負けて降参したということを相手に表明する語。\n⑥事態に対応できなかったりして，困惑・閉口している気持ちを表す。\n⑦困難な状況にあって，肉体や精神が弱る。\n⑧（多く相手を卑しめて）死ぬ。\n⑨ある異性にすっかりほれる。\n⑩（補助動詞）動詞の連用形に助詞「て」の付いたものに付いて，補助動詞「行く」「来る」に謙譲の意を添えて言い表す。\n❷①貴人のいる場所，貴い場所へ移動する。\n②「行く」「来る」の意の謙譲語。古くは聞き手と動作の及ぶ相手とが一致しない場合にも用いる。\n③貴人に奉公するためにそのもとへ行く。出仕する。\n④入内（じゆだい）する。\n二（他動詞）\n①貴人に対する下の者の動作の謙譲語。\n②貴人の動作の尊敬語。",
+"question": "①雨雪・日光を防ぐために頭に直接かぶるもの。菅（すげ）・藺（い）などで編んで作る。かぶりがさ。\n②①と同じ目的で頭上にかざすもの。中心点から放射状に骨を出し，布地や油紙を張り，柄をつけ，折り畳みできるようにしたもの。こうもり傘・唐傘・日傘などの総称。\n③①②の恰好（かつこう）をしたもの。\n④おおい守るもののたとえ。\n⑤椀（わん）などのふた。\n⑥筆のさや。筆帽。\n⑦家紋の一。①②をかたどったもの。",
+"answers": [
+"傘"
+],
+"comment": "Lv.N5 [ichi1/news1]: かさ • umbrella; parasol; something shaped like an umbrella or a conical hat; shade (of a lamp); mushroom cap; pileus\n「電気の－」"
+},
+{
+"question": "（動ラ五［四］）\n一（自動詞）\n❶①「行く」「来る」の意の謙譲語。動作の及ぶ相手を敬う。聞き手と動作の及ぶ相手とが一致している場合に用いられる。\n②「行く」「来る」の意の丁寧語。聞き手への敬意をこめていう。\n③神社・寺院や墓へ行って拝む意の謙譲語。もうでる。参詣する。お参りする。\n④「行く」意の尊大語。上位者が下位者の行為を低めていう。\n⑤相手の力や能力に負けて降参したということを相手に表明する語。\n⑥事態に対応できなかったりして，困惑・閉口している気持ちを表す。\n⑦困難な状況にあって，肉体や精神が弱る。\n⑧（多く相手を卑しめて）死ぬ。\n⑨ある異性にすっかりほれる。\n⑩（補助動詞）動詞の連用形に助詞「て」の付いたものに付いて，補助動詞「行く」「来る」に謙譲の意を添えて言い表す。\n❷①貴人のいる場所，貴い場所へ移動する。\n②「行く」「来る」の意の謙譲語。古くは聞き手と動作の及ぶ相手とが一致しない場合にも用いる。\n③貴人に奉公するためにそのもとへ行く。出仕する。\n④入内（じゆだい）する。\n二（他動詞）\n①貴人に対する下の者の動作の謙譲語。\n②貴人の動作の尊敬語。",
 "answers": [
 "まいる",
 "参る",
@@ -6583,6 +6633,13 @@
 "参加"
 ],
 "comment": "Lv.N3 [ichi1/news1]: さんか • participation\n「平和運動に－する」"
+},
+{
+"question": "（名）スル \n①考えをまとめたり，物事を決める際に，手がかりや助けとすること。また，その材料。\n②種々の資料などを利用し，考えること。また，その資料。",
+"answers": [
+"参考"
+],
+"comment": "Lv.N3 [ichi1/news1]: さんこう • reference; consultation\n「前例を－にする」"
 },
 {
 "question": "一：（名）\n①周りの土地より著しく高くなった所。古くから信仰の対象となり，俗世間を離れた清浄の地とされた。\n②鉱山。\n③人里に近いところにある森林。さとやま。\n④①の形をしたもの。①のようなもの。\n⑤物の一部で，高くなっている所。\n⑥進行するに従って次第に高まり，やがて徐々におさまる物事の全体を①に見立てていう。\n⑦万一の僥倖（ぎようこう）に賭けること。\n⑧犯罪事件。警察や新聞記者などが用いる。\n⑨山登り。\n⑩「山鉾（やまぼこ）」に同じ。\n⑪（園城寺（おんじようじ）を寺というのに対して）比叡山。延暦寺。\n⑫高く，ゆるぎないもの。よりどころとすべきもの。\n⑬墓。山陵。\n⑭詐欺。また，もくろみ。\n⑮動植物の名の上に付けて，同類のうちで野生のもの，あるいは山地に産するものであることを表す。\n二：（接尾）\n助数詞。\n①盛り分けた物を数えるのに用いる。\n②山，特に山林や鉱山を数えるのに用いる。",
@@ -6608,9 +6665,9 @@
 {
 "question": "（副）スル \n①長くはないが，すぐともいえないほどの時間が経過するさま。しばし。\n②ある状態がある程度長く続くさま。\n③一時的にそうするさま。将来は別として，今のところ。ひとまず。",
 "answers": [
-"すゆ",
-"しゅゆ",
 "しばらく",
+"しゅゆ",
+"すゆ",
 "暫く",
 "姑く",
 "須臾",
@@ -6681,13 +6738,13 @@
 "comment": "Lv.N3 [ichi1/news1]: しよう • use; application; employment; utilization; utilisation\n「午前中第一会議室を－する」"
 },
 {
-"question": "「よつ（四）」に同じ。現代語ではふつうこの語形の方が用いられる。",
+"question": "①し。よん。よっつ。物の数を数えるときに使う。\n②四歳。\n③相撲で，両力士が右差し，または左差しとなる組み合い。四つ身。\n④昔の時刻の名。現在の午前と午後の10時頃。四つ時。\n⑤「四つ切り」の略。\n⑥「四つ乳（ぢ）」の略。",
 "answers": [
 "四つ",
 "４つ",
 "4つ"
 ],
-"comment": "Lv.N5 [ichi1/news1]: よっつ/よつ • four; four years of age; ten o'clock (old time system); cross grips"
+"comment": "Lv.N5 [ichi1/news1]: よっつ/よつ • four; four years of age; ten o'clock (old time system); cross grips\n「がっぷり－に組む」"
 },
 {
 "question": "①日の数四つ。また，連続したその期間。\n②暦の月の四番目の日。",
@@ -6740,8 +6797,7 @@
 "question": "①自分の得た息子や娘。古くは複数をいった。\n②小児。児童。↔大人\n③幼稚なこと。\n④江戸時代，舞台に立つほか，色を売った年少の歌舞伎俳優。歌舞伎子。陰間（かげま）。子供衆。\n⑤遊郭の禿（かぶろ）。\n⑥抱え主が，抱えの芸者や娼妓（しようぎ）をいう語。また，岡場所の女郎。子供衆。\n⑦自分より若い人たちに親しんで呼びかける語。",
 "answers": [
 "子供",
-"子ども",
-"小供"
+"子ども"
 ],
 "comment": "Lv.N5 [ichi1/news1/spec1]: こども • child; children\n「－は三人おります」"
 },
@@ -6753,10 +6809,16 @@
 "comment": "Lv.N4 [ichi1]: いち • market; fair\n「縁日には－が立つ」"
 },
 {
+"question": "地方公共団体の一。人口五万以上を有し，中心市街地にある戸数が全体の六割以上を占め，その他都市に必要な諸施設・諸要件を備えていることなどの条件を満たしているもの。",
+"answers": [
+"市"
+],
+"comment": "Lv.N4 [ichi1]: し • city"
+},
+{
 "question": "①毎日または一定の日に商人が集まって商品を売買する所。生産物をもち寄って交換・売買する所。いち。\n②小さな店が集まって食料品・日用品などを常設的に売る所。マーケット。",
 "answers": [
-"市場",
-"市庭"
+"市場"
 ],
 "comment": "Lv.N3 [ichi1/news1]: いちば • (town) market; (the) marketplace\n「魚－」"
 },
@@ -6792,7 +6854,14 @@
 "comment": "Lv.N3 [ichi1/news1]: おもわず • unintentionally; reflexively; spontaneously; involuntarily; instinctively\n「あまりのおかしさに－吹き出した」"
 },
 {
-"question": "脊椎動物の四肢の端に数本に分かれた部分。ヒトでは手足の先にそれぞれ五本ずつある。古くは「および」。",
+"question": "①人がもつ，生きる世界や生き方についての，まとまりのある見解。多く，社会的・政治的な性格をもつものをいう。\n②〘哲〙単なる直観の内容に論理的な反省を施して得られた，まとまった体系的な思考内容。\n③考えること。考えつくこと。",
+"answers": [
+"思想"
+],
+"comment": "Lv.N3 [ichi1/news1]: しそう • thought; idea; ideology"
+},
+{
+"question": "ゆび。",
 "answers": [
 "指"
 ],
@@ -6864,7 +6933,7 @@
 "comment": "Lv.N3 [ichi1/news1]: しはい • domination; rule; control; direction; management; guidance; control (e.g. over one's emotions); determining (e.g. one's fate); governing; influence; holding sway over\n「近隣諸国を－した」"
 },
 {
-"question": "（動ワ五［ハ四］）\n代金や料金などを払い渡す。",
+"question": "（動ワ五［ハ四］）\n代金や料金などを払い渡す。「払う」よりやや改まった言い方。",
 "answers": [
 "支払う"
 ],
@@ -6945,7 +7014,7 @@
 "comment": "Lv.N3 [ichi1/news1]: しぼう • death; mortality; to die; to pass away\n「交通事故で－する」"
 },
 {
-"question": "（代）\n一人称。",
+"question": "（代）\n一人称。「わたくし」よりもうちとけた場で用いる。現在，一人称としてもっとも普通の語で，男女ともに用いる。",
 "answers": [
 "私"
 ],
@@ -6965,6 +7034,13 @@
 "到る"
 ],
 "comment": "Lv.N3 [ichi1]: いたる • to arrive at (e.g. a decision); to reach (a stage); to attain; to lead to (a place); to get to; to come; to arrive; to result in\n「この道は京都を経て大阪に－・る」"
+},
+{
+"question": "①詩を作る人。詩作に巧みな人。\n②詩情を解する人。",
+"answers": [
+"詩人"
+],
+"comment": "Lv.N3 [ichi1/news1]: しじん • poet"
 },
 {
 "question": "ためすこと。こころみること。",
@@ -7015,8 +7091,7 @@
 {
 "question": "①鳥類を除く脊椎動物の口の中に上下二列に並んで生えている，骨のように堅く，白い突起物。食物をかみつぶしたり，敵を攻撃したりするのに用いる。人間では発音に重要な役割を果たす。歯茎を境に歯冠と歯根に分かれ，その構成主体である象牙質を歯冠部ではエナメル質が，歯根部ではセメント質がおおっている。象牙質に囲まれた内部の空洞は歯髄が満たし，いわゆる歯の神経といわれる。人間の場合，初め上下各一〇本の乳歯が生え，のち永久歯に変わる。永久歯は普通，上下各一六本。\n②物の縁などに，①のようについているきざみ。\n③下駄（げた）の裏に付いている板。\n④鋸（のこぎり）の，工作物を切る部分。\n⑤歯車の，かみ合うぎざぎざの部分。\n⑥写真植字で，文字や行の送りの単位。一歯は一級と等しく，0.25ミリメートル。歯数。",
 "answers": [
-"歯",
-"齒"
+"歯"
 ],
 "comment": "Lv.N5 [ichi1/news1]: は • tooth\n「－が生えかわる」"
 },
@@ -7028,12 +7103,11 @@
 "comment": "Lv.N4 [ichi1]: はいしゃ • dentist"
 },
 {
-"question": "「もの」が何らかの作用・機能・状態・関係などとして実現するありさまをいう語。「もの」が時間的に不変な実体のようにとらえられているのに対して，「こと」は生起・消滅する現象としてとらえられている。\n①㋐生じた事柄。出来事。事態。事件。\n㋑物事の状態や経過。事情。わけ。\n㋒重大事。大変な事態。\n②形式名詞。上に修飾語を伴ってどんな事柄であるかが限定される。\n③用言（あるいはそれに助動詞の付いたもの）の連体形を受けて，それを体言化し，用言の表す作用・状態を体言的な概念に変える。…ということ。\n④形容詞の連体形に付いて，副詞化する。\n⑤人を表す名詞に直接続く。\n⑥動詞の連用形，名詞・形容動詞の語幹などに付いて，その行為・状態を表す。多く\n⑦名詞に付いて，そのまねをすることを表す。ごっこ。多く\n⑧夜食。\n⑨動詞の連用形に付いて，前にある主語・目的語などを受けながら，全体を体言化する働きをもつ。",
+"question": "「もの」が何らかの作用・機能・状態・関係などとして実現するありさまをいう語。「もの」が時間的に不変な実体のようにとらえられているのに対して，「こと」は生起・消滅する現象としてとらえられている。\n①㋐生じた事柄。出来事。事態。事件。\n㋑物事の状態や経過。事情。わけ。\n㋒重大事。大変な事態。\n②形式名詞。上に修飾語を伴ってどんな事柄であるかが限定される。\n③用言（あるいはそれに助動詞の付いたもの）の連体形を受けて，それを体言化し，用言の表す作用・状態を体言的な概念に変える。…ということ。\n④形容詞の連体形に付いて，副詞化する。\n⑤人を表す名詞に直接続く。\n⑥動詞の連用形，名詞・形容動詞の語幹などに付いて，その行為・状態を表す。\n⑦名詞に付いて，そのまねをすることを表す。ごっこ。\n⑧夜食。\n⑨動詞の連用形に付いて，前にある主語・目的語などを受けながら，全体を体言化する働きをもつ。",
 "answers": [
-"こん",
 "こと",
-"事",
-"縡"
+"こん",
+"事"
 ],
 "comment": "Lv.N4 [ichi1/news1]: こと/こん • thing; matter; incident; occurrence; event; something serious; trouble; crisis; circumstances; situation; state of affairs; work; business; affair; after an inflectable word, creates a noun phrase indicating something the speaker does not feel close to; nominalizing suffix; pretending to ...; playing make-believe ...; alias; aka; nickname; alternative name; also known as\n「－は重大だ」"
 },
@@ -7243,10 +7317,16 @@
 {
 "question": "①他からの力によらず，自分の力で動くこと。\n②機械などで，定められた操作を行うと，動作が機械自身により行われること。オートマチック。↔手動\n③特別な手続きなどをしなくても，効力や権利などが自然になくなったり生じたりすること。\n④「自動詞」の略。",
 "answers": [
-"自動",
-"自働"
+"自動"
 ],
 "comment": "Lv.N3 [ichi1/news1]: じどう • automatic; self-motion; intransitive verb"
+},
+{
+"question": "",
+"answers": [
+"自動車"
+],
+"comment": "Lv.N5 [ichi1/news1]: じどうしゃ • automobile"
 },
 {
 "question": "（代）\n①反照代名詞。話し手・聞き手・第三者のいずれにも用いる。その人自身。\n②一人称。多く男性が改まったときに用いる。わたくし。",
@@ -7273,8 +7353,7 @@
 "question": "（動マ下一）\n就いていた職や地位などを退く。退職する。辞職・辞任する。",
 "answers": [
 "辞める",
-"罷める",
-"退める"
+"罷める"
 ],
 "comment": "Lv.N3 [ichi1]: やめる • to resign; to retire; to quit; to leave (one's job, etc.)\n「都合で会社を－・める」"
 },
@@ -7323,8 +7402,7 @@
 {
 "question": "（動ワ五［ハ四］）\n①現在あるもの，身に備わっているものなどをなくす。喪失する。\n②つかまえそこなう。取り逃がす。\n③競技・ゲームなどで，相手に点を取られる。↔得る\n④大切な人に死なれる。\n⑤手段・方法・方向などがわからなくなる。\n⑥殺す。\n⑦消滅させる。",
 "answers": [
-"失う",
-"喪う"
+"失う"
 ],
 "comment": "Lv.N3 [ichi1/news1]: うしなう • to lose; to part with\n「財産を－・う」"
 },
@@ -7350,7 +7428,7 @@
 "comment": "Lv.N3 [ichi1/news1]: しつぼう • disappointment; despair\n「彼にはまったく－した」"
 },
 {
-"question": "一：（名・形動）スル \n①礼儀を欠く振る舞いをする・こと（さま）。失敬。無作法。\n②③二：（感）\n①うっかり人に迷惑をかけた時、相手にわび謝る語。\n②相手に迷惑をかけそうな時に、前もって掛ける語。\n③相手に呼びかける時にいう語。\n④別れる時にいう語。",
+"question": "一：（名・形動）スル \n①礼儀を欠く振る舞いをする・こと（さま）。失敬。無作法。\n②「失礼します」の形で、目上の人の居る場所に入ったり、退出したりする時に言う挨拶の言葉。\n③「失礼ですが」の形で、目上の人や未知の人に自分の言動の無作法さをあらかじめわびて言う語。すみませんが。\n二：（感）\n①うっかり人に迷惑をかけた時、相手にわび謝る語。\n②相手に迷惑をかけそうな時に、前もって掛ける語。\n③相手に呼びかける時にいう語。\n④別れる時にいう語。",
 "answers": [
 "失礼"
 ],
@@ -7610,8 +7688,7 @@
 "question": "（動ラ五［四］）\n①大切な物が失われたり，侵されたりしないように防ぐ。\n②決めたことに背かないようにする。\n③目を離さないでじっと見る。見守る。\n④大事にする。世話をする。\n⑤状況を見定める。",
 "answers": [
 "守る",
-"護る",
-"戍る"
+"護る"
 ],
 "comment": "Lv.N3 [ichi1/news1]: まもる • to protect; to guard; to defend; to keep (i.e. a promise); to abide (by the rules); to observe; to obey; to follow\n「国境を－・る」"
 },
@@ -7732,16 +7809,15 @@
 "comment": "Lv.N3 [ichi1/news1]: しゅと • capital city; metropolis"
 },
 {
-"question": "（動カ下一）\n①向かってくる物をとらえておさめる。\n②風や光が当てられる。\n③自分に差し出されたものを自分のものとする。受け取る。\n④（動作を表す語や，動作の結果生ずるものを目的語とする）他からの働きかけが及ぶことを，働きを及ぼされた側から言うことば。↔あたえる\n⑤自分からすすんで，あることをしてもらう。\n⑥他からの注文・依頼を承知して対処する。\n⑦（提案などを）承服する。受け入れる。のむ。\n⑧影響・関連・つながりがそこに及んでいる。\n⑨引き継ぐ。継承する。\n⑩観客・聴衆に気に入られ，好まれる。\n⑪（方角を表す語を目的語として）…に面する。\n⑫借金を払って，質種（しちぐさ）などを取り戻す。現代ではそののち－・くる事成がたく／浮世草子・世間胸算用1」",
+"question": "（動カ下一）\n①向かってくる物をとらえておさめる。\n②風や光が当てられる。\n③自分に差し出されたものを自分のものとする。受け取る。\n④（動作を表す語や，動作の結果生ずるものを目的語とする）他からの働きかけが及ぶことを，働きを及ぼされた側から言うことば。↔あたえる\n⑤自分からすすんで，あることをしてもらう。\n⑥他からの注文・依頼を承知して対処する。\n⑦（提案などを）承服する。受け入れる。のむ。\n⑧影響・関連・つながりがそこに及んでいる。\n⑨引き継ぐ。継承する。\n⑩観客・聴衆に気に入られ，好まれる。\n⑪（方角を表す語を目的語として）…に面する。\n⑫借金を払って，質種（しちぐさ）などを取り戻す。",
 "answers": [
-"ウケる",
 "うける",
 "受ける",
 "請ける",
 "承ける",
 "享ける"
 ],
-"comment": "Lv.N4 [ichi1/news1]: うける/ウケる • to receive; to get; to catch (e.g. a ball); to be struck by (wind, waves, sunlight, etc.); to sustain (damage); to incur (a loss); to suffer (an injury); to feel (influence); to undergo (e.g. surgery); to take (a test); to accept (a challenge); to be given (e.g. life, talent); to follow; to succeed; to be descended from; to face (south, etc.); to be modified by; to obtain (a pawned item, etc.) by paying a fee; to be well-received; to become popular; to go down well; to be funny; to be humorous\n「ボールを手で－・ける」"
+"comment": "Lv.N4 [ichi1/news1]: うける • to receive; to get; to catch (e.g. a ball); to be struck by (wind, waves, sunlight, etc.); to sustain (damage); to incur (a loss); to suffer (an injury); to feel (influence); to undergo (e.g. surgery); to take (a test); to accept (a challenge); to be given (e.g. life, talent); to follow; to succeed; to be descended from; to face (south, etc.); to be modified by; to obtain (a pawned item, etc.) by paying a fee; to be well-received; to become popular; to go down well; to be funny; to be humorous\n「ボールを手で－・ける」"
 },
 {
 "question": "（動ラ五［四］）\n①自分の所へ来たものを手で取って持つ。\n②他からの働きかけや話をある意味に解釈する。\n③納得する。認める。\n④引き受ける。担当する。",
@@ -7972,9 +8048,7 @@
 "answers": [
 "従う",
 "随う",
-"順う",
-"隨う",
-"從う"
+"順う"
 ],
 "comment": "Lv.N3 [ichi1]: したがう • to abide (by the rules); to obey; to follow; to accompany\n「社長に－・ってパリへ行く」"
 },
@@ -8141,8 +8215,7 @@
 "answers": [
 "できる",
 "出来る",
-"出きる",
-"出來る"
+"出きる"
 ],
 "comment": "Lv.N5 [ichi1/news1]: できる • to be able (in a position) to do; to be up to the task; to be ready; to be completed; to be made; to be built; to be good at; to be permitted (to do); to become intimate; to take up (with somebody); to grow; to be raised; to become pregnant\n「顔ににきびが－・きる」"
 },
@@ -8231,13 +8304,12 @@
 "comment": "Lv.N5 [ichi1]: はじめて • for the first time; only after ... is it ...; only when ... do you ...\n「－お目にかかります」"
 },
 {
-"question": "一：空間的な位置・場所。\n①ある地点。また，そのあたり。\n②ある地域。地方。\n③住んでいる場所。住所。居所。\n④家庭・会社・地域など，所属している社会。\n⑤ある箇所。部分。\n⑥その者が所有している領地。\n⑦都から離れたいなか。在所。\n⑧「蔵人（くろうど）所」「武者所」の略。\n二：抽象的な事柄についての位置や場面など。\n①ふさわしい部署・地位。\n②時間の流れの中のある部分を漠然とさす。場面。段階。\n③連体修飾語を受けて用いる。\n④数量を表す語に「が」を介して付いて，そのぐらいの程度であることを表す。くらい。\n三（形式名詞）\n①状態。成り行き。\n②用言に付き，連体修飾語をつくる。\n四：①動詞の連用形の下に付いて，それをするのにふさわしい部分・場所を表す。\n②名詞の下に付いて，それがたくさんとれるところを表す。\n③名詞・形容動詞の語幹の下に付いて，それに該当する人たちの意を表す。\n④名詞の下に付いて，それを扱う場所・役所を表す。",
+"question": "一：空間的な位置・場所。\n①ある地点。また，そのあたり。\n②ある地域。地方。\n③住んでいる場所。住所。居所。\n④家庭・会社・地域など，所属している社会。\n⑤ある箇所。部分。\n⑥その者が所有している領地。\n⑦都から離れたいなか。在所。\n⑧「蔵人（くろうど）所」「武者所」の略。\n二：抽象的な事柄についての位置や場面など。\n①ふさわしい部署・地位。\n②時間の流れの中のある部分を漠然とさす。場面。段階。\n③連体修飾語を受けて用いる。\n④数量を表す語に「が」を介して付いて，そのぐらいの程度であることを表す。くらい。\n三（形式名詞）\n①状態。成り行き。\n②「彼のめざす－の理想」\n四：①動詞の連用形の下に付いて，それをするのにふさわしい部分・場所を表す。\n②名詞の下に付いて，それがたくさんとれるところを表す。\n③名詞・形容動詞の語幹の下に付いて，それに該当する人たちの意を表す。\n④名詞の下に付いて，それを扱う場所・役所を表す。",
 "answers": [
-"とこ",
 "ところ",
+"とこ",
 "所",
-"処",
-"處"
+"処"
 ],
 "comment": "Lv.N5 [ichi1]: ところ/とこ • place; spot; scene; site; address; district; area; locality; one's house; point; aspect; side; facet; passage (in text); part; space; room; thing; matter; whereupon; as a result; about to; on the verge of; was just doing; was in the process of doing; have just done; just finished doing\n「遠い－から来た」"
 },
@@ -8310,7 +8382,7 @@
 "女のコ",
 "女の児"
 ],
-"comment": "Lv.N5 [ichi1/news1/spec1]: おんなのこ/おんなのコ/おんにゃのこ • girl; daughter; young woman"
+"comment": "Lv.N5 [ichi1/news1/spec1]: おんなのこ • girl; daughter; young woman"
 },
 {
 "question": "①女性の君主。にょおう。\n②王の后（きさき）。にょおう。\n③内親王の宣下がない皇族の女子。明治の皇室典範では，五世以下の皇族女子をいい，現制度では，三世以下の嫡男系嫡出の皇族女子をいう。\n④その分野で最もすぐれている女性。",
@@ -8339,6 +8411,17 @@
 "女優"
 ],
 "comment": "Lv.N3 [ichi1/news1]: じょゆう • actress"
+},
+{
+"question": "（副）\n①動作を静かにゆっくり行うさま。そっと。しずしず。\n②ある状態や時刻になりかかったさま。間もなく。ぼつぼつ。",
+"answers": [
+"そろそろ",
+"ソロソロ",
+"そろっと",
+"ソロっと",
+"ソロッと"
+],
+"comment": "Lv.N4 [ichi1]: そろそろ/そろっと • slowly; quietly; steadily; gradually; gingerly; soon; momentarily; before long; any time now\n「－（と）戸を開ける」"
 },
 {
 "question": "（動カ五［四］）\n①取り去る。取ってすてる。除去する。\n②あるものの範囲に加えない。同類からはずす。除外する。\n③じゃまな人などを殺す。",
@@ -8440,8 +8523,7 @@
 "question": "（副）\n程度がはなはだしくなく、また数量などが多くないさま。わずか。いくらか。ちょっと。",
 "answers": [
 "少し",
-"寡し",
-"些し"
+"寡し"
 ],
 "comment": "Lv.N5 [ichi1/news1]: すこし • small quantity; little; few; something; little while; short distance\n「水はまだ－ある」"
 },
@@ -8525,7 +8607,7 @@
 "answers": [
 "松"
 ],
-"comment": "Lv.N3 [ichi1/news1]: まつ/マツ • pine tree (Pinus spp.); highest (of a three-tier ranking system)\n「－の内」"
+"comment": "Lv.N3 [ichi1/news1]: まつ • pine tree (Pinus spp.); highest (of a three-tier ranking system)\n「－の内」"
 },
 {
 "question": "（動ア下一）\n①目に見えていたものがなくなって，見えなくなる。\n②感覚がとらえていたものが感じられなくなる。\n③感情・印象など，心に感じていたものがなくなる。\n④存在していた物がなくなる。行方がわからなくなる。\n⑤意識がなくなる。気を失う。\n⑥死ぬ。",
@@ -8539,7 +8621,7 @@
 "answers": [
 "消しゴム"
 ],
-"comment": "Lv.N4 [ichi1/news1]: けしゴム • eraser; India rubber"
+"comment": "Lv.N4 [ichi1/news1]: けしごむ • eraser; India rubber"
 },
 {
 "question": "（動サ五［四］）\n①目に見えているものをなくする。\n②心や耳・舌・鼻などに感じていたものをなくする。また，感じないようにする。\n③いなくなる。その場所から見えなくなる。\n④人を殺す。\n⑤害毒を除き去る。\n⑥時間を過ごす。\n⑦心の平静を失う。\n⑧否定する。打ち消す。\n⑨けなす。",
@@ -8565,9 +8647,7 @@
 {
 "question": "一：（動カ五［四］）\n①燃やして灰にする。\n②火にあぶって熱をとおし，食べられるようにする。\n③熱を加えて製品をつくる。\n④日光に当てて変色させる。特に肌を黒くする。\n⑤熱・化学物質・放射線などによって皮膚を損傷させる。\n⑥写真で，フィルムをもとに印画紙に画像を作り上げる。焼きつける。\n⑦心を悩ませる。特に，恋に胸を焦がす。\n⑧嫉妬（しつと）する。悋気（りんき）する。\n⑨うれしがらせを言う。おだてる。",
 "answers": [
-"焼く",
-"燬く",
-"焚く"
+"焼く"
 ],
 "comment": "Lv.N4 [ichi1]: やく • to burn; to roast; to broil; to grill; to bake; to toast; to barbecue; to heat; to heat up; to make (charcoal, pottery, bricks, etc.); to bake; to fire; to burn; to tan (i.e. suntan); to burn; to print (a photo); to burn (an optical disc); to be jealous of; to be envious of; to envy\n「蔵書を戦災で－・いた」"
 },
@@ -8650,11 +8730,18 @@
 "comment": "Lv.N3 [ichi1/news1]: くわしい • detailed; full; accurate; knowing very well; well-acquainted; well-informed\n「－・く事情を説明する」"
 },
 {
+"question": "かたち。すがた。",
+"answers": [
+"象"
+],
+"comment": "Lv.N3 [news1]: しょう • phenomenon"
+},
+{
 "question": "長鼻目ゾウ科の哺乳類の総称。中新世頃から栄え，化石で発見される種は多いが，現生種は大形のアフリカゾウ・アジアゾウの二種のみ。長い鼻は，鼻と上唇が伸びたもので，内部には骨格がない。上顎（じようがく）門歯は長く伸びて牙（きば）となる。現生の陸生動物中では最大。仏教では白象を神聖視する。古名，きさ。",
 "answers": [
 "象"
 ],
-"comment": "Lv.N3 [ichi1]: ぞう/ゾウ • elephant (Elephantidae spp.)"
+"comment": "Lv.N3 [ichi1]: ぞう • elephant (Elephantidae spp.)"
 },
 {
 "question": "（名）スル \n①物事の成立や進行の邪魔をするもの。また，妨げること。しょうげ。\n②身体の器官が何らかの原因によって十分な機能を果たさないこと。また，そのような状態。\n③個人の特質としての機能障害（impairment），そのために生ずる制約としての能力低下（disability），その社会的結果である社会的不利（handicaps）を包括する概念。\n④「障害競争」の略。",
@@ -8695,10 +8782,10 @@
 "挙がる",
 "上る"
 ],
-"comment": "Lv.N4 [ichi1/news1/spec2]: あがる • to rise; to go up; to come up; to ascend; to be raised; to enter (esp. from outdoors); to come in; to go in; to enter (a school); to advance to the next grade; to get out (of water); to come ashore; to increase; to improve; to make progress; to be promoted; to advance; to be made (of profit, etc.); to occur (esp. of a favourable result); to be adequate (to cover expenses, etc.); to be finished; to be done; to be over; (of rain) to stop; to lift; to stop (working properly); to cut out; to give out; to die; to win (in a card game, etc.); to be arrested; to turn up (of evidence, etc.); to be deep fried; to be spoken loudly; to get stage fright; to be offered (to the gods, etc.); to go; to visit; to eat; to drink; to be listed (as a candidate); to serve (in one's master's home); to go north; indicates completion\n「プールから－・る」"
+"comment": "Lv.N4 [ichi1/news1]: あがる • to rise; to go up; to come up; to ascend; to be raised; to enter (esp. from outdoors); to come in; to go in; to enter (a school); to advance to the next grade; to get out (of water); to come ashore; to increase; to improve; to make progress; to be promoted; to advance; to be made (of profit, etc.); to occur (esp. of a favourable result); to be adequate (to cover expenses, etc.); to be finished; to be done; to be over; (of rain) to stop; to lift; to stop (working properly); to cut out; to give out; to die; to win (in a card game, etc.); to be arrested; to turn up (of evidence, etc.); to be deep fried; to be spoken loudly; to get stage fright; to be offered (to the gods, etc.); to go; to visit; to eat; to drink; to be listed (as a candidate); to serve (in one's master's home); to go north; indicates completion\n「プールから－・る」"
 },
 {
-"question": "（動ガ下一）\n①より高い所へ物を移動させる。↔おろす\n②地面や水の中など低い所にあったものを，空中や水上などの高い所に動かした状態にする。\n③顔や視線など，下向きになっていたものを上向きにする。↔伏せる\n④熱した油の中に材料を入れて，天ぷら・フライなどを作る。\n⑤屋外や土間から人を部屋へ入れる。\n⑥人を別の場所に行かせる。\n⑦自分の子供を学校に入学させる。また，進学させる。\n⑧定形のないものやひそんでいたものを，現れるようにする。出す。\n⑨低い段階・程度にあった物事を，より高い段階・程度に変化させる。高める。↔さげる・おとす\n⑩物事を最後までし終える。完了する。\n⑪合算した費用・日数などがその範囲内で済むようにする。\n⑫「与える」「やる」の丁寧な言い方。\n⑬神仏に供物（くもつ）を捧げたり，祈りの言葉をささげたりする。\n⑭妓楼で，相手を客として中に入れる。\n⑮（芸者を）宴席に呼んで遊ぶ。\n⑯いったん食べたものを，吐く。対象を省略して自動詞的にも用いる。\n⑰自分の子供をつくる。儲（もう）ける。母親にも父親にもいう。\n⑱すべての能力を出し尽くす。\n⑲構成メンバーがそろって…するさまを表す。\n⑳結婚式を行う。\n㉑\n潮が満ちて水位が上がる。\n㉒\n「与える」の謙譲語。\n㉓\n（補助動詞）動詞の連用形に接続助詞「て」の付いた形に付き，主語で表されるサービスの送り手が，他人のためにすることを，送り手の側から表す。（普通は仮名書き）「友達に本を貸して－・げた」「お宅まで送って－・げましょう」\n㉔\n動詞の連用形に付いて，最後までそれを成し遂げる意を表す。…し終える。\n㉕\n謙譲の意を表す動詞について，その意味を強める。",
+"question": "（動ガ下一）\n①より高い所へ物を移動させる。↔おろす\n②地面や水の中など低い所にあったものを，空中や水上などの高い所に動かした状態にする。\n③顔や視線など，下向きになっていたものを上向きにする。↔伏せる\n④熱した油の中に材料を入れて，天ぷら・フライなどを作る。\n⑤屋外や土間から人を部屋へ入れる。\n⑥人を別の場所に行かせる。\n⑦自分の子供を学校に入学させる。また，進学させる。\n⑧定形のないものやひそんでいたものを，現れるようにする。出す。\n⑨低い段階・程度にあった物事を，より高い段階・程度に変化させる。高める。↔さげる・おとす\n⑩物事を最後までし終える。完了する。\n⑪合算した費用・日数などがその範囲内で済むようにする。\n⑫「与える」「やる」の丁寧な言い方。\n⑬神仏に供物（くもつ）を捧げたり，祈りの言葉をささげたりする。\n⑭妓楼で，相手を客として中に入れる。\n⑮（芸者を）宴席に呼んで遊ぶ。\n⑯いったん食べたものを，吐く。対象を省略して自動詞的にも用いる。\n⑰自分の子供をつくる。儲（もう）ける。母親にも父親にもいう。\n⑱すべての能力を出し尽くす。\n⑲構成メンバーがそろって…するさまを表す。\n⑳結婚式を行う。\n㉑\n潮が満ちて水位が上がる。\n㉒\n「与える」の謙譲語。\n㉓\n（補助動詞）動詞の連用形に接続助詞「て」の付いた形に付き，主語で表されるサービスの送り手が，他人のためにすることを，送り手の側から表す。（普通は仮名書き）「友達に本を貸して－・げた」\n㉔\n動詞の連用形に付いて，最後までそれを成し遂げる意を表す。…し終える。\n㉕\n謙譲の意を表す動詞について，その意味を強める。",
 "answers": [
 "あげる",
 "上げる",
@@ -8708,12 +8795,11 @@
 "comment": "Lv.N5 [ichi1/news1]: あげる • to raise; to elevate; to do up (one's hair); to fly (a kite, etc.); to launch (fireworks, etc.); to surface (a submarine, etc.); to land (a boat); to deep-fry; to show someone (into a room); to summon (for geishas, etc.); to send someone (away); to enrol (one's child in school); to enroll; to increase (price, quality, status, etc.); to develop (talent, skill); to improve; to make (a loud sound); to raise (one's voice); to earn (something desirable); to praise; to give (an example, etc.); to cite; to summon up (all of one's energy, etc.); to arrest; to nominate; to give; to offer up (incense, a prayer, etc.) to the gods (or Buddha, etc.); to bear (a child); to conduct (a ceremony, esp. a wedding); (of the tide) to come in; to vomit; to do for (the sake of someone else); to complete ...; to humbly do ...\n「使いを－・げる」"
 },
 {
-"question": "（動ラ五［四］）\n❶意図的に上に行く。\n①意図的に上の方へ移動する。\n②川の上流の方へ行く。さかのぼる。↔くだる\n③地方から都へ行く。上京する。上洛する。↔くだる\n④皇居や神社の社殿など，高貴な建物にはいる。昇殿する。あがる。\n❷自然に上の方に行く。\n①太陽・月などが空に高く現れる。↔落ちる\n②煙などが上の方へ移動する。\n③人が結果として高い地位につく。\n④数量が，結果としてある大きな値になる。達する。\n⑤興奮する。逆上する。\n⑥人々に取り上げられて表に出る。\n⑦時間を昔にさかのぼる。",
+"question": "（動ラ五［四］）\n❶意図的に上に行く。\n①意図的に上の方へ移動する。「あがる」と比べて，途中の経過点に注意が向けられている。↔くだる\n②川の上流の方へ行く。さかのぼる。↔くだる\n③地方から都へ行く。上京する。上洛する。↔くだる\n④皇居や神社の社殿など，高貴な建物にはいる。昇殿する。あがる。\n❷自然に上の方に行く。\n①太陽・月などが空に高く現れる。↔落ちる\n②煙などが上の方へ移動する。\n③人が結果として高い地位につく。\n④数量が，結果としてある大きな値になる。達する。\n⑤興奮する。逆上する。\n⑥人々に取り上げられて表に出る。\n⑦時間を昔にさかのぼる。",
 "answers": [
 "上る",
 "登る",
-"昇る",
-"陞る"
+"昇る"
 ],
 "comment": "Lv.N5 [ichi1/news1]: のぼる • to ascend; to go up; to climb; to ascend (as a natural process, e.g. the sun); to rise; to go to (the capital); to be promoted; to add up to; to advance (in price); to swim up (a river); to sail up; to come up (on the agenda)\n「地震のことが話題に－・る」"
 },
@@ -8748,8 +8834,7 @@
 {
 "question": "（動ラ五［四］）\n①物の上にあがる。↔おりる\n②乗り物の上や中に身を置いて移動する。↔おりる\n③その道を行く。\n④他人の考えなどを土台とする。のっかる。\n⑤他からの持ちかけに応ずる。↔おりる\n⑥勢いにまかせて進む。\n⑦動き・調子などにうまく合う。\n⑧十分につく。よくつく。\n⑨十分に含んでいる。\n⑩水の流れや風などによって運ばれる。\n⑪そうする意欲がわく。調子がでる。やる気が起きる。\n⑫自分がしていることに満足して調子づく。\n⑬とりついて離れない。また，乗り移る。\n⑭実がつく。みのる。\n⑮邦楽で，テンポを速める。",
 "answers": [
-"乗る",
-"乘る"
+"乗る"
 ],
 "comment": "Lv.N5 [ichi1/news1]: のる • to get on (train, plane, bus, ship, etc.); to get in; to board; to take; to embark; to get on (e.g. a footstool); to step on; to jump on; to sit on; to mount; to reach; to go over; to pass; to follow; to stay (on track); to go with (the times, etc.); to take part; to participate; to join; to get into the swing (and sing, dance, etc.); to be deceived; to be taken in; to be carried; to be spread; to be scattered; to stick; to attach; to take; to go on\n「国道に－・る」"
 },
@@ -8845,8 +8930,7 @@
 {
 "question": "①わらを縫い固めて作った畳床たたみどこを藺草いぐさで編んだ畳表でおおったもの。普通、長さ一間、幅半間であるが地方により大きさは異なる。和室の床に敷く。古くは人の座る所だけに敷いた。\n②草履・下駄などの表につける藺草・籐とう・竹などで編んだもの。\n③むしろ・こも・ござなど、敷物の総称。",
 "answers": [
-"畳",
-"疊"
+"畳"
 ],
 "comment": "Lv.N4 [ichi1/news1]: たたみ • tatami mat; Japanese straw floor coverings"
 },
@@ -8860,10 +8944,7 @@
 {
 "question": "（動ラ五［四］）\n①美しく，また立派に見えるように物を添えたり，手を加えたりする。\n②表面をとりつくろう。\n③はなやかさや立派さを加える。\n④見せるために見目よく並べる。\n⑤設ける。構える。",
 "answers": [
-"飾る",
-"餝る",
-"錺る",
-"荘る"
+"飾る"
 ],
 "comment": "Lv.N4 [ichi1/news1]: かざる • to decorate; to ornament; to adorn\n「会場を花で－・る」"
 },
@@ -8919,8 +9000,7 @@
 {
 "question": "（動バ下一）\n①食物を口に入れ，かんで飲み込む。現在では「食う」よりは上品な言い方とされる。\n②生計を立てる。生活する。暮らす。\n③「飲む」「食う」の謙譲語，また丁寧語。",
 "answers": [
-"食べる",
-"喰べる"
+"食べる"
 ],
 "comment": "Lv.N5 [ichi1]: たべる • to eat; to live on (e.g. a salary); to live off; to subsist on\n「果物を－・べる」"
 },
@@ -9051,16 +9131,14 @@
 {
 "question": "（動ナ下一）\n①「眠る①」に同じ。\n②寝床に入る。床（とこ）につく。就寝する。\n③異性と同衾（どうきん）する。共寝する。\n④横たわる。\n⑤資金や商品が活用されない状態にある。\n⑥味噌（みそ）・醬油（しようゆ）・酒などがよく仕込まれた状態である。",
 "answers": [
-"寝る",
-"寐る"
+"寝る"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ねる • to lie down; to go to bed; to lie in bed; to sleep (lying down); to sleep (with someone, i.e. have intercourse); to lie idle\n「ゆうべはよくねた」"
 },
 {
 "question": "（名・形動）スル \n朝遅くまで寝ていること。また，そのさまや，そういう習慣のある人。",
 "answers": [
-"寝坊",
-"寐坊"
+"寝坊"
 ],
 "comment": "Lv.N4 [ichi1]: ねぼう • sleeping in late; oversleeping; late riser; sleepyhead\n「－して遅刻する」"
 },
@@ -9100,6 +9178,13 @@
 "comment": "Lv.N3 [ichi1/news1]: しんり • state of mind; mentality; psychology\n「女性－」"
 },
 {
+"question": "（名・形動）\n注意深く，落ち着いて，軽々しく行わない・こと（さま）。",
+"answers": [
+"慎重"
+],
+"comment": "Lv.N3 [ichi1/news1]: しんちょう • careful; cautious; prudent; discreet; deliberate\n「－を期する」"
+},
+{
 "question": "（動ラ五［四］）\n①物の一端を持ったり固定したりして，前後左右または上下に何度か往復させるように動かす。\n②頭・首などの全体を前後左右に動かす。\n③動かして別の方向に向ける。また，基準または正規の向きからずらす。\n④手などを動かして，物をまく。散らす。\n⑤手にしていたもの，手に入るはずのものを失う。捨てる。\n⑥拒絶する。はねつける。特に，異性の求愛をこばむ。\n⑦割り当てる。\n⑧話題の方向を相手に向ける。\n⑨文字のわきに，読み仮名などをつける。\n⑩入れ替える。振り替える。\n⑪神や霊魂・精神をゆり動かして活力を呼びさます。\n⑫神輿（みこし）や神座をかつぐ。\n⑬神を鎮座させる。",
 "answers": [
 "振る"
@@ -9120,6 +9205,13 @@
 "新た"
 ],
 "comment": "Lv.N3 [ichi1/news1]: あらた • new; fresh; novel\n「－な問題が発生する」"
+},
+{
+"question": "（形動）\n①魚・野菜・果物などが新しくていきいきとしているさま。\n②よごれがなくきれいなさま。\n③従来のものとは異なって新しく魅力的なさま。",
+"answers": [
+"新鮮"
+],
+"comment": "Lv.N3 [ichi1/news1]: しんせん • fresh\n「－な魚介類」"
 },
 {
 "question": "①社会の出来事について事実や解説を広く伝える定期刊行物。一般に，日刊で社会全般のことを扱うものをいうが，週刊・旬刊・月刊のもの，経済・スポーツなど特定の分野だけを扱うものもある。日本で新聞と名のつく最初のものは1862年の「官板バタビヤ新聞」だが，現在のような体裁をもつ日刊紙としては1870年「横浜毎日新聞」の発行が最初である。\n②「しんぶんがみ」に同じ。\n③新しく聞いた話。新しい話題。",
@@ -9167,7 +9259,7 @@
 "comment": "Lv.N3 [ichi1]: もうしこむ • to apply for; to make an application; to propose (marriage); to offer (mediation); to make an overture (of peace); to challenge; to lodge (objections); to request (an interview); to subscribe for; to book; to reserve\n「結婚を－・む」"
 },
 {
-"question": "（動ガ下一）\n①「言う」の謙譲語。言上する。\n②（補助動詞）「お」「御（ご）」を冠した動詞の連用形や動作性の体言の下に付いて，動作の対象に対する敬意を表す。…いたす。",
+"question": "（動ガ下一）\n①「言う」の謙譲語。言上する。「申す」よりも一段と謙譲の度合が強い。\n②（補助動詞）「お」「御（ご）」を冠した動詞の連用形や動作性の体言の下に付いて，動作の対象に対する敬意を表す。…いたす。",
 "answers": [
 "申し上げる",
 "申上げる",
@@ -9207,8 +9299,7 @@
 {
 "question": "一：（名）\n（木刀や竹刀（しない）でなく）本物の刀。\n二：（形動）\n一生懸命に物事をするさま。本気であるさま。",
 "answers": [
-"真剣",
-"真険"
+"真剣"
 ],
 "comment": "Lv.N3 [ichi1]: しんけん • serious; earnest; real sword (as opposed to unsharpened or wooden practice weapon)\n「－で立ち合う」"
 },
@@ -9217,15 +9308,14 @@
 "answers": [
 "真似"
 ],
-"comment": "Lv.N3 [ichi1]: まね/マネ • imitating; copying; mimicry; behavior; behaviour; action; conduct\n「大人の－をする」"
+"comment": "Lv.N3 [ichi1]: まね • imitating; copying; mimicry; behavior; behaviour; action; conduct\n「大人の－をする」"
 },
 {
 "question": "（名・形動）\n①本気であること。真剣であること。また，そのさま。\n②誠意のこもっていること。誠実であること。また，そのさま。",
 "answers": [
-"真面目",
-"眞面目"
+"真面目"
 ],
-"comment": "Lv.N3 [ichi1/spec1]: まじめ/マジメ • diligent; serious; honest; sober; grave; earnest; steady\n「－な顔になる」"
+"comment": "Lv.N3 [ichi1/spec1]: まじめ • diligent; serious; honest; sober; grave; earnest; steady\n「－な顔になる」"
 },
 {
 "question": "①生体の運動・知覚をつかさどり，一つの個体としてまとまった動きをするように各部分を統率し，おのおのの神経細胞が受けた刺激を伝達する経路。ヒトでは，精神作用をも営む中枢神経と末梢に分布する末梢神経とからなり，各神経は神経細胞と神経繊維とからなる。狭義には，末梢神経をいう。\n②外界の物事を鋭敏に感じ取って反応する心のはたらき。",
@@ -9244,8 +9334,7 @@
 {
 "question": "①子を生んだ人，または，他人の子を自分の子として養い育てる人。実父母・養父母の総称。\n②子をもっている生物。\n③他の物を生ずるもととなるもの。\n④物事の中心になるもの。\n⑤同種のもののうち，大きなもの。\n⑥勝負事の際，札配りなど競技の中心的な役割にあたる人。また，その役。\n⑦無尽・入札などの際の発起人。\n▽↔①～⑦子\n⑧もののはじめ。元祖。\n⑨祖先。",
 "answers": [
-"親",
-"祖"
+"親"
 ],
 "comment": "Lv.N4 [ichi1/news1]: おや • parent; parents; dealer (in cards, mahjong, etc.); founder; (pet) owner"
 },
@@ -9267,8 +9356,7 @@
 {
 "question": "（名・形動）\n①人情があついこと。好意をもって人のためにつくすこと。また，そのさま。↔不親切\n②心の底からすること。深く思うこと。",
 "answers": [
-"親切",
-"深切"
+"親切"
 ],
 "comment": "Lv.N4 [ichi1/news1]: しんせつ • kindness; gentleness"
 },
@@ -9316,7 +9404,7 @@
 "comment": "Lv.N5 [ichi1]: つらい • painful; bitter; heart-breaking; difficult (emotionally); tough; difficult; hard (usu. of situations); cruel; harsh; cold\n「－・い修行」"
 },
 {
-"question": "一：（動マ五［四］）\n①前の方に移動する。前進する。↔退く\n②目標・進路などを定めてそれを始める。\n③仕事や計画がはかどる。↔おくれる\n④他のものに比べて，先にある。特に時計の表示が正しい時刻よりも先になる。↔おくれる\n⑤地位や学年などがより上級に移る。\n⑥能力や技術の程度が上がる。上達する。進歩する。\n⑦程度がひどくなる。悪くなる。\n⑧ある事をしようという気力・意欲が出てくる。積極的になる。\n⑨食欲が出るの意を表す。\n⑩心がはやる。気がせく。\n⑪涙が自然に出る。",
+"question": "一：（動マ五［四］）\n①前の方に移動する。前進する。↔退く\n②目標・進路などを定めてそれを始める。\n③仕事や計画がはかどる。↔おくれる\n④他のものに比べて，先にある。特に時計の表示が正しい時刻よりも先になる。↔おくれる\n⑤地位や学年などがより上級に移る。\n⑥能力や技術の程度が上がる。上達する。進歩する。\n⑦程度がひどくなる。悪くなる。\n⑧ある事をしようという気力・意欲が出てくる。積極的になる。\n⑨「食がすすむ」などの形で，食欲が出るの意を表す。\n⑩心がはやる。気がせく。\n⑪涙が自然に出る。",
 "answers": [
 "進む"
 ],
@@ -9443,13 +9531,12 @@
 {
 "question": "①物のくず，不要になったもの，役に立たないものなどの総称。\n②水底にたまった泥。泥状のもの。",
 "answers": [
-"あくた",
-"ゴミ",
 "ごみ",
+"あくた",
 "塵",
 "芥"
 ],
-"comment": "Lv.N4 [ichi1/spec1]: ごみ/ゴミ/あくた • rubbish; trash; garbage; refuse"
+"comment": "Lv.N4 [ichi1/spec1]: ごみ/あくた • rubbish; trash; garbage; refuse"
 },
 {
 "question": "（動ナ下一）\n①人や物のありかや行くえを探して行く。\n②真理・道理などをさぐり求める。\n③わからないことを人に聞く。問う。質問する。",
@@ -9489,11 +9576,11 @@
 "comment": "Lv.N5 [ichi1]: ふく • to blow (e.g. wind); to play a wind instrument; to emit; to spout; to whistle; to laugh; to burst into laughter; to smelt; to mint; to brag; to talk big\n「白い粉が－・いた干し柿」"
 },
 {
-"question": "①水素と酸素とから成る化合物。化学式H2O常温で無色透明・無味無臭の液体で物をよく溶かす。融点摂氏0度。沸点摂氏100度。密度は摂氏4度で最大となり1g/cm3比熱1cal/g・K地球上に広く分布し，海・湖沼・河川・氷雪として地表面の約4分の3をおおい，太陽エネルギーと重力の作用を受けて気体を占め，細胞内では各種の生体物質の溶媒としてのみならず，反応物質として生体内の反応に直接かかわるなど，生命の維持に本質的に重要な役割を果たす。飲用のほか，溶解・洗浄・冷却・発電，あるいは，宗教上の儀礼など，人間の日常生活や産業などのあらゆる局面において利用される。\n②特に，飲用水。\n③液状のもの。\n④（湯に対して）温度の高くない水。\n⑤大水。出水。洪水。\n⑥（相撲で）\n㋐水入りのこと。\n㋑力水（ちからみず）のこと。",
+"question": "みず。",
 "answers": [
 "水"
 ],
-"comment": "Lv.N5 [ichi1/news1]: みず/み • water (esp. cool, fresh water, e.g. drinking water); fluid (esp. in an animal tissue); liquid; flood; floodwaters; water offered to wrestlers just prior to a bout; break granted to wrestlers engaged in a prolonged bout\n「－を飲む」"
+"comment": "Lv.N5 [ichi1/news1]: みず/み • water (esp. cool, fresh water, e.g. drinking water); fluid (esp. in an animal tissue); liquid; flood; floodwaters; water offered to wrestlers just prior to a bout; break granted to wrestlers engaged in a prolonged bout"
 },
 {
 "question": "（名）スル \n人が，スポーツや楽しみで，水中を泳ぐこと。水練。遊泳。みずおよぎ。およぎ。",
@@ -9542,8 +9629,7 @@
 "answers": [
 "ずいぶん",
 "随分",
-"ずい分",
-"隨分"
+"ずい分"
 ],
 "comment": "Lv.N4 [ichi1]: ずいぶん • very; extremely; surprisingly; considerably; contemptible; reprehensible\n「－寒い所だ」"
 },
@@ -9615,12 +9701,10 @@
 {
 "question": "（形）\n①ぞっとするほど恐ろしく思う。たいそう気味が悪い。\n②常識では考えられないほどの能力・力をもっている。並はずれている。\n③恐ろしいほどすぐれている。ぞっとするほどすばらしい。\n④程度がはなはだしい。\n⑤ひどくものさびしい。ぞっとするほど荒涼としている。\n⑥ぞっと身にしみて寒気を感じるようだ。鬼気迫るようなおそろしさだ。",
 "answers": [
-"スゴい",
-"スゴイ",
 "すごい",
 "凄い"
 ],
-"comment": "Lv.N4 [ichi1/spec1]: すごい/スゴイ/スゴい • terrible; dreadful; amazing (e.g. of strength); great (e.g. of skills); wonderful; terrific; to a great extent; vast (in numbers)\n「－・い目つきでにらまれる」"
+"comment": "Lv.N4 [ichi1/spec1]: すごい • terrible; dreadful; amazing (e.g. of strength); great (e.g. of skills); wonderful; terrific; to a great extent; vast (in numbers)\n「－・い目つきでにらまれる」"
 },
 {
 "question": "（名）スル \n物事の限界を定めること。また、その限度。",
@@ -9659,7 +9743,7 @@
 "comment": "Lv.N3 [ichi1/news1]: せいかく • character; personality; disposition; nature\n「彼とは－が合わない」"
 },
 {
-"question": "（動ラ五［四］）\n❶物・ことが結果として実現・成立する。\n①完成する。実現する。\n②その人により作られる。\n③構成されている。形づくられている。\n④願いごとが実現する。成就する。\n❷それまでとは違う物・違う状態に変わる。\n①ある物がほかの物に変わる。\n②人がある身分に変わる。ある役・職業につく。\n③ある状態に至る。\n④将棋で，王将・金将以外の駒が敵陣内へはいったりそこで動いたりして金将と同じ働きになる。飛車・角行は本来の働きを失わず，金将・銀将の働きをも得る。\n❸ある数値・時に達する。\n①ある数値に達する。\n②ある時刻・時期に達する。\n❹ある機能をする。\n①ある物の代わりにその働き・役目をする。\n②プラスまたはマイナスの効果・機能がある。\n❺…することに決まる。\n①成り行きとして，あることをするに至る。\n②（条件句を受けて）ある条件のもとでは，あるいは，ある目的のためには，当然のこととしてある行為が行われることが決まっている。\n❻他人から恩恵を受けることを表す。\n❼多く否定の表現を伴って用いる。\n①形容詞・形容動詞を受けて，非常に…だ，…て仕方がない，…てしようがないの意を表す。\n②…することができる，…してさしつかえない，…することが許されるの意を表す。\n③禁止されている，してはいけないの意を表す。\n④当然…するべきである，…する義務・必要があるの意を表す。\n❽①酒を飲むことができる。上戸である。\n②貴人の動作を敬っていう。\n❾（補助動詞）その動作主に対する尊敬の意を表す。",
+"question": "（動ラ五［四］）\n❶物・ことが結果として実現・成立する。\n①完成する。実現する。\n②その人により作られる。\n③構成されている。形づくられている。\n④願いごとが実現する。成就する。\n❷それまでとは違う物・違う状態に変わる。\n①ある物がほかの物に変わる。\n②人がある身分に変わる。ある役・職業につく。\n③ある状態に至る。\n④将棋で，王将・金将以外の駒が敵陣内へはいったりそこで動いたりして金将と同じ働きになる。飛車・角行は本来の働きを失わず，金将・銀将の働きをも得る。\n❸ある数値・時に達する。\n①ある数値に達する。\n②ある時刻・時期に達する。\n❹ある機能をする。\n①ある物の代わりにその働き・役目をする。\n②プラスまたはマイナスの効果・機能がある。\n❺…することに決まる。\n①成り行きとして，あることをするに至る。\n②（条件句を受けて）ある条件のもとでは，あるいは，ある目的のためには，当然のこととしてある行為が行われることが決まっている。\n❻他人から恩恵を受けることを表す。\n❼多く否定の表現を伴って用いる。\n①「…て（で）ならない」の形で，形容詞・形容動詞を受けて，非常に…だ，…て仕方がない，…てしようがないの意を表す。\n②…することができる，…してさしつかえない，…することが許されるの意を表す。\n③「…してはならない」の形で動詞を受けて，禁止されている，してはいけないの意を表す。\n④「法律は守らなくては－・らない」\n❽①酒を飲むことができる。上戸である。\n②貴人の動作を敬っていう。\n❾「手紙をお書きに－・る」",
 "answers": [
 "なる",
 "成る",
@@ -9707,14 +9791,13 @@
 {
 "question": "一：（副）\n①その通りだというように相手に同意したり，自ら納得したりする気持ちを表す。ほんとうに。たしかに。\n②できるだけ。なるたけ。なるべく。\n二：（感）\n相手の言葉に同感である気持ちを表す語。",
 "answers": [
-"ナルホド",
 "なるほど",
 "なる程",
 "成る程",
 "成程",
 "成るほど"
 ],
-"comment": "Lv.N4 [spec1/ichi1]: なるほど/ナルホド • I see; That's right!; Indeed\n「話には聞いていたが，－見事な桜だ」"
+"comment": "Lv.N4 [spec1/ichi1]: なるほど • I see; That's right!; Indeed\n「話には聞いていたが，－見事な桜だ」"
 },
 {
 "question": "①統治者・為政者が民に施す施策。まつりごと。\n②国家およびその権力作用にかかわる人間の諸活動。広義には，諸権力・諸集団の間に生じる利害の対立などを調整することにもいう。",
@@ -9825,7 +9908,7 @@
 "comment": "Lv.N3 [ichi1]: なま • raw; uncooked; fresh; natural; as it is; unedited; unprocessed; unprotected (i.e. not wearing a condom); live (i.e. not recorded); inexperienced; unpolished; green; crude; impudence; sauciness; unpasteurized beer; draft beer; draught beer; just a little; somehow; vaguely; partially; somewhat; half-; semi-; irresponsibly; half-baked; cash; tipsiness\n「－の野菜」"
 },
 {
-"question": "（動カ上一）\n①人・動物などが命を保つ。生存する。↔死ぬ\n②生活する。暮らす。文学的な表現として，生活の場所・場面・時間を示すこともある。\n③（，命を表す語を目的語として）一生を送る。やや文学的表現。\n④そこに生きがいを見いだして暮らす。\n⑤死んだ者，失われたものの名残や影響が残る。\n⑥そのものがもっている本来の機能・能力が発揮される。有効に働く。↔死ぬ\n⑦囲碁で，一連の石が二つ以上の独立した目をもつ。↔死ぬ\n⑧野球で，アウトにならずにすむ。↔死ぬ",
+"question": "（動カ上一）\n①人・動物などが命を保つ。生存する。↔死ぬ\n②生活する。暮らす。\n③（，命を表す語を目的語として）一生を送る。やや文学的表現。\n④そこに生きがいを見いだして暮らす。\n⑤死んだ者，失われたものの名残や影響が残る。\n⑥そのものがもっている本来の機能・能力が発揮される。有効に働く。↔死ぬ\n⑦囲碁で，一連の石が二つ以上の独立した目をもつ。↔死ぬ\n⑧野球で，アウトにならずにすむ。↔死ぬ",
 "answers": [
 "生きる",
 "活きる"
@@ -9923,10 +10006,16 @@
 "comment": "Lv.N4 [ichi1/news1]: さかん • popular; prosperous; enthusiastic; energetic; vigorous\n「血気－な若者」"
 },
 {
+"question": "①人間の心。心のはたらき。\n②物事に対する心の持ち方。気構え。気力。\n③物事の最も根本的な意義。真の目的。理念。\n④〘哲〙",
+"answers": [
+"精神"
+],
+"comment": "Lv.N3 [ichi1/news1]: せいしん • mind; soul; heart; spirit; intention\n「健全なる－は健全なる身体に宿る」"
+},
+{
 "question": "一：①人間や動物が発声器官を使って出す音。虫の場合は羽などを使って出す音。\n②（生き物に見立てていう）物の立てる音。\n③言葉にして表した考えや気持ち。\n④あることが近づく気配。\n二：①漢字の音（おん）。\n②言葉の調子。",
 "answers": [
-"声",
-"聲"
+"声"
 ],
 "comment": "Lv.N5 [ichi1/news1]: こえ • voice\n「－を出して本を読む」"
 },
@@ -9978,8 +10067,7 @@
 "question": "（形）\n①青の色をしている。広く緑など青系統の色にもいう。\n②赤みが足りない。青ざめている。\n③修行・知識などが不十分だ。まだ一人前でない。",
 "answers": [
 "青い",
-"蒼い",
-"碧い"
+"蒼い"
 ],
 "comment": "Lv.N5 [ichi1]: あおい • blue; green; pale; unripe; inexperienced\n「－・い空」"
 },
@@ -10090,11 +10178,7 @@
 "question": "（形）\n①赤の色をしているさま。いわゆる赤のほか，桃色・橙（だいだい）色・あずき色・茶色などにも通じて用いられる。\n②共産主義思想をもっているさま。",
 "answers": [
 "赤い",
-"紅い",
-"朱い",
-"緋い",
-"丹い",
-"赭い"
+"紅い"
 ],
 "comment": "Lv.N5 [ichi1/news1/spec1]: あかい • red; Red (i.e. communist)\n「－・い血」"
 },
@@ -10137,7 +10221,7 @@
 "comment": "Lv.N3 [ichi1]: きれ • piece; slice; strip; scrap; cloth; sharpness; counter for scraps, pieces, etc.\n「ナイフの－がにぶる」"
 },
 {
-"question": "（動ラ下一）\n①一続きのものが，刃物によって力を加えられたり，引っ張られたりして，離ればなれになる。\n②傷がついたり裂け目ができたりする。また，ひび・あかぎれができる。\n③物がこわれたり破れたりする。\n④人と人とのつながりがなくなる。\n⑤言葉・文章が途切れたり，区切りができたりする。また，通信が継続しなくなる。\n⑥続いているものにすき間・切れ目が現れる。また，続いていたものがそこで終わりになる。\n⑦つながっていた電気回路がつながらなくなる。\n⑧数値がある基準を下回る。不足する。\n⑨与えられた時間がなくなる。限りがくる。有効期間が終わる。\n⑩使ったり売れたりして，尽きてなくなる。\n⑪電池などに貯えられていた力がなくなる。\n⑫ぬれていたものから，水分がしずくとなって落ちつくす。\n⑬進む方向が変わる。\n⑭刃物が鋭利である。\n⑮事を処理する能力に富む。特に頭の働きがすぐれている。\n⑯トランプや花札の札がうまくまざる。\n⑰突然怒ったり，見境がなくなることを，俗にいう語。\n⑱（動詞の連用形について）\n㋐完全に…できる，最後まで…できるなどの意を表す。\n㋑（多く心理的な動詞について）強く…する，すっきりと…できるなどの意を表す。多く打ち消しの表現を伴って用いられる。\n⑲結末がつく。\n⑳金銭を派手に使って気前のいいところを見せる。\n顔がきく。勢力がある。",
+"question": "（動ラ下一）\n①一続きのものが，刃物によって力を加えられたり，引っ張られたりして，離ればなれになる。\n②傷がついたり裂け目ができたりする。また，ひび・あかぎれができる。\n③物がこわれたり破れたりする。\n④人と人とのつながりがなくなる。\n⑤言葉・文章が途切れたり，区切りができたりする。また，通信が継続しなくなる。\n⑥続いているものにすき間・切れ目が現れる。また，続いていたものがそこで終わりになる。\n⑦つながっていた電気回路がつながらなくなる。\n⑧数値がある基準を下回る。不足する。\n⑨与えられた時間がなくなる。限りがくる。有効期間が終わる。\n⑩使ったり売れたりして，尽きてなくなる。\n⑪電池などに貯えられていた力がなくなる。\n⑫ぬれていたものから，水分がしずくとなって落ちつくす。\n⑬進む方向が変わる。\n⑭刃物が鋭利である。\n⑮事を処理する能力に富む。特に頭の働きがすぐれている。\n⑯トランプや花札の札がうまくまざる。\n⑰突然怒ったり，見境がなくなることを，俗にいう語。「キレる」などと書く。\n⑱（動詞の連用形について）\n㋐完全に…できる，最後まで…できるなどの意を表す。\n㋑（多く心理的な動詞について）強く…する，すっきりと…できるなどの意を表す。多く打ち消しの表現を伴って用いられる。\n⑲結末がつく。\n⑳金銭を派手に使って気前のいいところを見せる。\n顔がきく。勢力がある。",
 "answers": [
 "きれる",
 "切れる"
@@ -10229,7 +10313,7 @@
 "comment": "Lv.N5 [ichi1/news1]: ゆき • snow\n「－の肌」"
 },
 {
-"question": "（名・形動）\n一：①他に並ぶものがないこと。何物にも比較されないこと。比較や対立を絶した存在であること。また，そのさま。\n②一切他によって関与・制限されないこと。無条件。\n③〘哲〙「絶対者」に同じ。\n▽↔相対\n二：（副詞的に用いる。",
+"question": "（名・形動）\n一：①他に並ぶものがないこと。何物にも比較されないこと。比較や対立を絶した存在であること。また，そのさま。\n②一切他によって関与・制限されないこと。無条件。\n③〘哲〙「絶対者」に同じ。\n▽↔相対\n二：（副詞的に用いる。「に」を伴うこともある）どうしても。なにがなんでも。必ず。決して。",
 "answers": [
 "絶対"
 ],
@@ -10250,7 +10334,7 @@
 "comment": "Lv.N3 [ichi1/news1]: した • tongue; tongue-like object; clapper (of a bell); talon (of a lock)\n「鐙（あぶみ）の－」"
 },
 {
-"question": "①物の先端。出っ張ったところ。はな。\n②進んで行く一番前。先頭。\n③時間的に早いこと。↔あと\n④順序が前であること。↔あと\n⑤その時よりも前。以前。↔のち\n⑥後につづく部分。後につづく段階。つづき。\n⑦これからあとのこと。将来。前途。行くすえ。\n⑧そこより遠い所。\n⑨出かけて行く場所。\n⑩取引や交渉などをする相手。先方。\n⑪かつて，ある官職にあったこと。前（ぜん）。多く\n⑫先払い。先駆。\n⑬第一。まっ先。",
+"question": "①物の先端。出っ張ったところ。はな。\n②進んで行く一番前。先頭。\n③時間的に早いこと。↔あと\n④順序が前であること。↔あと\n⑤その時よりも前。以前。↔のち\n⑥後につづく部分。後につづく段階。つづき。\n⑦これからあとのこと。将来。前途。行くすえ。\n⑧そこより遠い所。\n⑨出かけて行く場所。\n⑩取引や交渉などをする相手。先方。\n⑪かつて，ある官職にあったこと。前（ぜん）。\n⑫先払い。先駆。\n⑬第一。まっ先。",
 "answers": [
 "先",
 "前",
@@ -10281,7 +10365,7 @@
 "comment": "Lv.N5 [ichi1/news1]: せんしゅう • last week; the week before"
 },
 {
-"question": "①学問・技芸などを教える人。また，自分が教えを受けている人。師。師匠。また，特に，学校の教員。\n②学芸に長じた人。\n③師匠・教師・医師・弁護士・国会議員などを敬って呼ぶ語。代名詞的にも用いる。また，人名のあとに付けて敬称としても用いる。\n④親しみやからかいの気持ちを込めて，他人をさす語。\n⑤自分より先に生まれた人。年長者。↔後生（こうせい）",
+"question": "①学問・技芸などを教える人。また，自分が教えを受けている人。師。師匠。また，特に，学校の教員。\n②学芸に長じた人。\n③師匠・教師・医師・弁護士・国会議員などを敬って呼ぶ語。代名詞的にも用いる。また，人名のあとに付けて敬称としても用いる。\n④親しみやからかいの気持ちを込めて，他人をさす語。「やっこさん」に似た意で用いる。\n⑤自分より先に生まれた人。年長者。↔後生（こうせい）",
 "answers": [
 "先生"
 ],
@@ -10327,8 +10411,7 @@
 {
 "question": "①一つの方面をもっぱら研究したり，それに従事したりすること。また，その学問や職業。\n②一つのことだけで押し通すこと。一本やり。",
 "answers": [
-"専門",
-"專門"
+"専門"
 ],
 "comment": "Lv.N4 [ichi1/news1]: せんもん • speciality; specialty; subject of study; expert; area of expertise\n「古代史を－に研究する」"
 },
@@ -10390,7 +10473,7 @@
 "comment": "Lv.N5 [ichi1]: ぜん • the last (i.e. immediately preceding) (e.g. \"the last mayor\"); previous; one-time; former; pre- (e.g. \"premodern\"); before; earlier\n「－の会社では」"
 },
 {
-"question": "一：（名）\n①顔や視線の向いている方向，または場所。↔うしろ・しりえ\n②㋐（事物に方向があると考えて）正面の方向，または場所。\n↔うしろ・しりえ\n㋑事物の前方の部分。\n㋒身体の正面の部分。着物などを着たとき，身体の正面にくる部分。\n㋓人間の陰部。\n③順序の先の方。初めの方。さき。\n④（時間的に）\n㋐現在またはある時点より以前。\n㋑ある行為・事態が成立する以前。\n㋒さきの。直前の。\n↔あと・のち\n⑤前歴。特に，過去の罪。前科。\n⑥（人を指す語句を受けて）その人に対する気がね・遠慮・体面などを示す。\n⑦形式名詞として用い，かねて思っていたとおりであること，ある判断に基づいていることを表す。\n⑧㋐貴人の面前。また，貴人に伺候すること。\n㋑（上に「おお」「お」「み」を付けて）貴人その人をさす。\n㋒女性の名に添えて敬意を表す。\n⑨僧侶に対するもてなしの食膳。\n二：（接尾）\n①名詞や動詞の連用形などに付いて，それに相当する分量や部分などを表す。ぶん（分）。\n②人に関する名詞に付いて，その属性・機能などを強調する意を表す。",
+"question": "一：（名）\n①顔や視線の向いている方向，または場所。↔うしろ・しりえ\n②㋐（事物に方向があると考えて）正面の方向，または場所。\n↔うしろ・しりえ\n㋑事物の前方の部分。\n㋒身体の正面の部分。着物などを着たとき，身体の正面にくる部分。\n㋓人間の陰部。\n③順序の先の方。初めの方。さき。\n④（時間的に）\n㋐現在またはある時点より以前。\n㋑ある行為・事態が成立する以前。\n㋒さきの。直前の。\n↔あと・のち\n⑤前歴。特に，過去の罪。前科。\n⑥（人を指す語句を受けて）その人に対する気がね・遠慮・体面などを示す。\n⑦形式名詞として用い，かねて思っていたとおりであること，ある判断に基づいていることを表す。\n⑧㋐貴人の面前。また，貴人に伺候すること。\n㋑（上に「おお」「み」を付けて）貴人その人をさす。\n㋒女性の名に添えて敬意を表す。\n⑨僧侶に対するもてなしの食膳。\n二：（接尾）\n①名詞や動詞の連用形などに付いて，それに相当する分量や部分などを表す。ぶん（分）。\n②人に関する名詞に付いて，その属性・機能などを強調する意を表す。",
 "answers": [
 "前"
 ],
@@ -10454,14 +10537,14 @@
 "comment": "Lv.N5 [ichi1/news1]: ぜんぶ • all; entire; whole; altogether"
 },
 {
-"question": "父母の父親。じじ。おじいさん。↔祖母",
+"question": "①父母の父。そふ。↔おおば\n②年とった男。老翁。\n③狂言面の一。「財宝」などの老人に用いる。",
 "answers": [
 "祖父"
 ],
 "comment": "Lv.N4 [ichi1/news1]: そふ/じじ/じい/おおじ/おじ • grandfather; old man; kyogen mask used for the role of an old man"
 },
 {
-"question": "父母の母親。ばば。おばあさん。↔祖父",
+"question": "両親の母親。おおば。祖母（そぼ）。",
 "answers": [
 "祖母"
 ],
@@ -10485,8 +10568,7 @@
 "question": "（形）\n①思わず感嘆するようなさまを表す。\n②程度がはなはだしいさまをいう。",
 "answers": [
 "素晴らしい",
-"素晴しい",
-"素薔薇しい"
+"素晴しい"
 ],
 "comment": "Lv.N4 [ichi1/news1/spec1]: すばらしい/すんばらしい • wonderful; splendid; magnificent\n「－・い眺望」"
 },
@@ -10516,8 +10598,7 @@
 {
 "question": "（名）スル \n①組み立てること。また，組み立てられたもの。\n②特定の目的を達成するために，諸個人および諸集団に専門分化された役割を与え，その活動を統合・調整する仕組み。または，そうして構成された集団の全体。また，それを組み立てること。\n③生物体を構成している単位の一つで，同一の機能と構造とをもつ細胞の集団。動物では，上皮組織・結合組織・筋肉組織・神経組織，植物では分裂組織・永久組織などに区別される。\n④構成鉱物の大きさ・形・並び方などによる岩石の内部構造。石理。\n⑤織物で経（たて）糸と緯（よこ）糸を組み合わせること。また，その交錯のし方。",
 "answers": [
-"組織",
-"組職"
+"組織"
 ],
 "comment": "Lv.N3 [ichi1/news1]: そしき • organization; organisation; formation; structure; construction; setup; constitution; system (e.g. railroad, transport, party, etc.); tissue; texture (of a rock); weave (of a fabric)\n「会社－」"
 },
@@ -10543,6 +10624,13 @@
 "想像"
 ],
 "comment": "Lv.N3 [ichi1/news1]: そうぞう • imagination; guess\n「－していたよりずっと立派だ」"
+},
+{
+"question": "（名）スル \n①掃いたりふいたりして，ごみや汚れをなくしてきれいにすること。\n②害悪を除き去ること。\n③便所の糞尿を汲み取ること。",
+"answers": [
+"掃除"
+],
+"comment": "Lv.N5 [ichi1/news1]: そうじ • cleaning; sweeping; dusting; scrubbing\n「部屋を－する」"
 },
 {
 "question": "（名）スル \n①機械・器具などを動かして，作業させること。\n②自分に都合の良い結果が得られるように手を加える。",
@@ -10599,8 +10687,7 @@
 {
 "question": "一（名）\n①植物の中で，木部があまり発達せず，地上の部分が柔らかいもの。冬になると枯れるものが多い。草本。\n②屋根を葺（ふ）く，藁（わら）や茅（かや）。\n③まぐさ。かいば。\n④（草の中に伏せて敵をうかがうところから）忍びの者。しのび。草屈（くさかま）り。\n二（接頭）\n名詞に付いて，本格的ではないもの，見かけは似ているが実質は異なっているもの，などの意を表す。",
 "answers": [
-"草",
-"艸"
+"草"
 ],
 "comment": "Lv.N4 [ichi1/news1]: くさ • grass; weed; herb; thatch; ninja; not genuine; substandard; laughter; LOL\n「－で葺いた屋根」"
 },
@@ -10644,8 +10731,7 @@
 {
 "question": "（動ガ五［四］）\n①うるさい声や音を立てる。\n②多くの人が一斉に不平・不満を言い立てて不穏になる。\n③心が動揺する。\n④注目すべきものとして人々が盛んに取りざたする。\n⑤多くの人が忙しく立ち働く。",
 "answers": [
-"騒ぐ",
-"騷ぐ"
+"騒ぐ"
 ],
 "comment": "Lv.N4 [ichi1/news1]: さわぐ • to make noise; to make racket; to be noisy; to rustle; to swoosh; to make merry; to clamor; to clamour; to make a fuss; to kick up a fuss; to lose one's cool; to panic; to act flustered; to feel tense; to be uneasy; to be excited\n「子供たちが－・ぐ」"
 },
@@ -10728,9 +10814,7 @@
 "question": "（形）\n①動作・作用の進行にかかる時間が短い。進む程度が大きい。すみやかだ。↔遅い\n②㋐時間的に前である。\n↔遅い\n㋑まだその時期でない。\n③事が簡単に済む。てっとり早い。\n④続いてすぐ物事が行われるさまをいう。…するやいなや。\n⑤勢いが強い。激しい。\n⑥香が強い。",
 "answers": [
 "早い",
-"速い",
-"疾い",
-"捷い"
+"速い"
 ],
 "comment": "Lv.N5 [ichi1/news1]: はやい • fast; quick; hasty; brisk; early (in the day, etc.); premature; (too) soon; not yet; (too) early; easy; simple; quick\n「直接会って話すほうが－・い」"
 },
@@ -10881,11 +10965,10 @@
 {
 "question": "一：（名）\n①囲碁で，双方の境にあってどちらの地にもならない所。\n②演劇で，演技などの悪い点について演出者が出す注意。\n二：（名・形動）\n①しても甲斐のないこと。無益なこと。また，そのさま。むだ。\n②してはいけないこと。親しい相手に禁止の意を伝える語としても用いられる。\n③不可能なこと。できないこと。また，そのさま。\n④役にたたないこと。悪い状態であること。また，そのさま。",
 "answers": [
-"ダメ",
 "だめ",
 "駄目"
 ],
-"comment": "Lv.N4 [ichi1/news1]: だめ/ダメ • no good; not serving its purpose; useless; broken; hopeless; wasted; in vain; purposeless; cannot; must not; not allowed; neutral point (in go); intersection owned by neither player at the end of a game\n「－を詰める」"
+"comment": "Lv.N3 [ichi1/news1]: だめ • no good; not serving its purpose; useless; broken; hopeless; wasted; in vain; purposeless; cannot; must not; not allowed; neutral point (in go); intersection owned by neither player at the end of a game\n「－を詰める」"
 },
 {
 "question": "①人や動物の，頭・胴・手足など肉体全部。しんたい。五体。また，特に胴を主とした部分。\n②健康。体力。\n③行動の主体としての肉体。\n④性的行為から見た肉体。\n⑤死体。むくろ。しかばね。",
@@ -10928,8 +11011,7 @@
 {
 "question": "①着物の上から腰のあたりに巻いて結びつける細長い布。着物を体にまといつけ，装飾も兼ねる。\n②細長い形をしているもの，またものに巻きつけて使うもの。\n③「帯紙」の略。\n④岩田帯のこと。",
 "answers": [
-"帯",
-"帶"
+"帯"
 ],
 "comment": "Lv.N3 [ichi1]: おび • obi; kimono sash; paper wrapper on books, CDs, etc.\n「－封」"
 },
@@ -10972,7 +11054,7 @@
 "comment": "Lv.N3 [ichi1/news1]: ふくろ • bag; sack; pouch; skin of an orange (and other like fruits); dead end; plot of land surrounded by water\n「－小路」"
 },
 {
-"question": "（動サ五［四］）\n①あとで返してもらう約束で一時的に品物・金を他人に渡したり使わせたりする。↔借りる\n②自分の知恵や能力を，他人のために使う。",
+"question": "（動サ五［四］）\n①仮に与える。\n②罪をゆるす。見逃す。仮借（かしやく）する。",
 "answers": [
 "貸す",
 "藉す"
@@ -10996,11 +11078,10 @@
 {
 "question": "スズキ目タイ科の海魚の総称。全長30～100センチメートル。マダイ・キダイ・チダイ・クロダイなどの11種がいる。特にマダイをさすことが多い。体は楕円形で強く側扁し，体高が大きい。体色は赤いものが多い。姿が美しく，美味な点から日本では魚類の王とされる。また，語呂が合うことから「めでたい」魚とされ，祝い膳などに出される。多くは本州中部以南の沿岸に分布。",
 "answers": [
-"タイ",
 "たい",
 "鯛"
 ],
-"comment": "Lv.N5 [ichi1/spec1]: たい/タイ • sea bream (Sparidae); porgy; tai (species of reddish-brown Pacific sea bream, Pagrus major)"
+"comment": "Lv.N5 [ichi1/spec1]: たい • sea bream (Sparidae); porgy; tai (species of reddish-brown Pacific sea bream, Pagrus major)"
 },
 {
 "question": "品物の買い手が売り手に支払う金。代銭。",
@@ -11031,12 +11112,11 @@
 "comment": "Lv.N5 [ichi1/news1]: だい • stand; rack; table; bench; podium; pedestal; platform; stage; support; holder; rack; counter for machines, incl. vehicles; setting (e.g. in jewellery); level (e.g. price level); range (e.g. after physical units); period (of time, e.g. a decade of one's life); elevated area; viewing platform; dish tray; meal; tall building; tower\n「－にのせる」"
 },
 {
-"question": "①食物を調理し，煮炊きする部屋。厨（くりや）。勝手。炊事場。だいどこ。キッチン。\n②金銭上のやりくり。家計。",
+"question": "「だいどころ」の略。",
 "answers": [
-"台所",
-"臺處"
+"台所"
 ],
-"comment": "Lv.N5 [ichi1/news1]: だいどころ/だいどこ • kitchen; financial situation\n「－は火の車だ」"
+"comment": "Lv.N5 [ichi1/news1]: だいどころ/だいどこ • kitchen; financial situation"
 },
 {
 "question": "（副）\n程度がはなはだしいさま。非常に。はなはだ。",
@@ -11084,8 +11164,7 @@
 {
 "question": "①学術の中心として，広く知識を授け，深く専門の学芸を教授・研究するための学校。通常，基本となる組織として学部を置き，修業年限は4年を原則とする。修業年限が2，3年の短期大学もある。学部のほかに大学院が置かれることもある。日本では1877年（明治10）に旧幕府の開成所・医学所の系譜をひく東京大学が初めて設立され，のち86年の帝国大学令，1918年（大正7）の大学令，47年（昭和22）の学校教育法を経て漸次拡充・整備された。\n②律令制下，地方の国学に対して，中央の官吏養成機関。式部省に属し，主に五位以上の貴族の子弟に明経（みようぎよう）・明法（みようぼう）・文章（もんじよう）・算の四道を教授した。九年以内に卒業し国家試験に受かれば位階を授けられ，官途につくことができた。大学寮。ふみやのつかさ。おおつかさ。",
 "answers": [
-"大学",
-"大學"
+"大学"
 ],
 "comment": "Lv.N5 [ichi1/news1]: だいがく • post-secondary education institution, incl. university, college, etc.; former central university of Kyoto (established under the ritsuryo system for the training of government administrators); the Great Learning (one of the Four Books)\n「－教育」"
 },
@@ -11099,8 +11178,7 @@
 {
 "question": "一（名）\n地球をとりまく気体の層。窒素・酸素を主成分とし，アルゴン・二酸化炭素・水素・オゾンなどを少量含む。太陽からの有害な紫外線をさえぎる一方，地球から宇宙への熱の放散を防ぎ，また，対流圏においてはさまざまな気象現象をもたらす。\n二（形動）\n心の大きいさま。細かいことにくよくよしないさま。大度（たいど）。",
 "answers": [
-"大気",
-"大氣"
+"大気"
 ],
 "comment": "Lv.N3 [ichi1/news1]: たいき • atmosphere"
 },
@@ -11140,11 +11218,11 @@
 "comment": "Lv.N5 [ichi1/news1]: だいじょうぶ/だいじょぶ • safe; all right; alright; OK; okay; sure; certainly; surely; undoubtedly; great man; fine figure of a man\n「堂々たる－」"
 },
 {
-"question": "①国務大臣のこと。\n②（律令制における）太政官の上官。太政大臣・左右大臣・内大臣の称。おとど。おおいもうちぎみ。",
+"question": "①財産を多く持っている者。金持ち。富豪。資産家。素封家。\n②特に遊里などで，金を多く使って遊ぶ客。",
 "answers": [
 "大臣"
 ],
-"comment": "Lv.N3 [ichi1/news1]: だいじん • cabinet minister\n「外務－」"
+"comment": "Lv.N3 [ichi1/news1]: だいじん • cabinet minister"
 },
 {
 "question": "①十分に成長して、一人前になった人。成人。↔こども\n②考え方や態度が一人前であること。青少年が老成していること。\n③元服をすませた人。成人。",
@@ -11223,8 +11301,8 @@
 {
 "question": "（副）\n①数量・程度が普通よりはなはだしいさま。たくさん。\n②物事や状態の程度が相当に進んでいるさま。かなり。だいぶん。",
 "answers": [
-"だいぶん",
 "だいぶ",
+"だいぶん",
 "大分"
 ],
 "comment": "Lv.N4 [ichi1/news1]: だいぶ/だいぶん • considerably; greatly; a lot\n「小遣いを－もらった」"
@@ -11296,11 +11374,11 @@
 "comment": "Lv.N5 [ichi1]: ぬぐ • to take off (clothes, shoes, etc.); to undress\n「上着を－・ぐ」"
 },
 {
-"question": "①物をのせるために，水平に張り渡したり，吊ったりした板。\n②内部に物をのせるための，何枚かの水平な板をはった箱状のもの。\n③つる性の植物をはわせるために，竹などを粗く組んで，支柱などに取りつけて高く張り渡したもの。\n④「棚物」の略。\n⑤船棚。\n⑥傾斜をなす地形で，階段状になっている部分。\n⑦大陸棚。\n⑧登山用語。岩壁で，一人立てるくらいの平らな部分。テラス。\n⑨魚の遊泳層。\n⑩薪炭・パルプなどを積み上げた体積の単位。高さ六尺・幅六尺・奥行三尺，すなわち一〇八立方尺，または高さ五尺・幅一〇尺・奥行二尺，すなわち一〇〇立方尺を一棚という。",
+"question": "①棚に商品を並べて販売する場所。見せ棚。みせ。\n②商家。特に奉公人や出入りの職人などが，その商家をさしていう。おたな。\n③借家。",
 "answers": [
 "棚"
 ],
-"comment": "Lv.N4 [ichi1/news1]: たな • shelf; shelves; ledge; rack; trellis\n「－を吊る」"
+"comment": "Lv.N4 [ichi1/news1]: たな • shelf; shelves; ledge; rack; trellis\n「－子」"
 },
 {
 "question": "（代）\n不定称の人代名詞。名を知らない人や不定の人をさしていう語。",
@@ -11338,7 +11416,7 @@
 "comment": "Lv.N3 [ichi1/news1]: たんい • unit; denomination; credit (in school)\n「クラス－で行動する」"
 },
 {
-"question": "言語単位の一。文構成の最小単位で，特定の意味，文法上の職能を有するもの。文を構成する直接の単位である，文節をさらに構成する。「た」の類。語。",
+"question": "言語単位の一。文構成の最小単位で，特定の意味，文法上の職能を有するもの。文を構成する直接の単位である，文節をさらに構成する。「花が咲いた」における「花」「た」の類。語。",
 "answers": [
 "単語"
 ],
@@ -11429,10 +11507,9 @@
 "question": "①男である子ども。男児。\n②若い男性。",
 "answers": [
 "男の子",
-"男のコ",
-"男の児"
+"男のコ"
 ],
-"comment": "Lv.N5 [ichi1/news1/spec1]: おとこのこ/おとこのコ • boy; male child; baby boy"
+"comment": "Lv.N5 [ichi1/news1/spec1]: おとこのこ • boy; male child; baby boy"
 },
 {
 "question": "①男の子。男児。\n②男性。おとこ。男児。また，男らしい男。\n▽↔女子",
@@ -11609,8 +11686,7 @@
 "answers": [
 "遅い",
 "鈍い",
-"晩い",
-"遲い"
+"晩い"
 ],
 "comment": "Lv.N5 [ichi1/news1]: おそい • slow; late (e.g. \"late at night\"); too late; dull; stupid"
 },
@@ -11725,8 +11801,7 @@
 {
 "question": "（名）スル \n①全体の中から，ある物を抜き出すこと。\n②固体または液体の混合物に溶媒を加え，混合物中の特定の成分を溶媒中へ分離する操作。この操作後に得られる溶媒部分を抽出液という。溶媒抽出。",
 "answers": [
-"抽出",
-"捕出"
+"抽出"
 ],
 "comment": "Lv.N4 [news1]: ちゅうしゅつ • extraction; abstraction; selection (from a group); sampling\n「リストから条件を満たす物を－する」"
 },
@@ -11734,8 +11809,7 @@
 "question": "①日の出から日の入りまで。明るい間。昼間。↔夜\n②正午。\n③昼食。ひるめし。\n④物事の最盛期。",
 "answers": [
 "昼",
-"午",
-"晝"
+"午"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ひる • noon; midday; daytime; lunch\n「－までに帰る」"
 },
@@ -11822,8 +11896,7 @@
 "question": "（副）\n①余分や不足なくぴったりと一致しているさま。ぴったり。きっちり。\n②ある期待・予想にぴったりとあうさま。\n③ある時期にぴったりと合うさま。\n④（多く下に「ようだ」などを伴って）そのものの形状・性質などが，別のあるものによく似ているさま。まるで。あたかも。",
 "answers": [
 "ちょうど",
-"丁度",
-"恰度"
+"丁度"
 ],
 "comment": "Lv.N5 [ichi1]: ちょうど • exactly; precisely; just; right; as if; as though; quite\n「－体に合う」"
 },
@@ -11864,11 +11937,17 @@
 "comment": "Lv.N3 [ichi1/news1]: ちょうさ • investigation; examination; inquiry; enquiry; survey\n「災害地の実情を－する」"
 },
 {
+"question": "①動いたり働いたりする具合。かげん。\n②その場の成り行き。状況。\n③態度や口調にあらわれる気持ちや身体の具合。\n④はずみ。いきおい。\n⑤音律の高低。\n⑥雅楽で，一種の前奏曲。舞楽で用いられ，壱越（いちこつ）調など各調に調子があり，雰囲気をだすために奏される。\n⑦文の表現の仕方。言葉のもつ感じ。格調。\n⑧つりあい。バランス。",
+"answers": [
+"調子"
+],
+"comment": "Lv.N3 [ichi1/news1]: ちょうし • tune; tone; key; pitch; time; rhythm; vein; mood; way; manner; style; knack; condition; state of health; impetus; spur of the moment; strain; trend\n「機械の－が悪い」"
+},
+{
 "question": "（動バ五［四］）\n人や動物が足で地面をけって空中にはね上がる。跳躍する。また，そうして物の上を越える。",
 "answers": [
 "飛ぶ",
-"跳ぶ",
-"翔ぶ"
+"跳ぶ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: とぶ • to fly; to soar; to jump; to leap; to spring; to bound; to hop\n「バッタがぴょんと－・ぶ」"
 },
@@ -12122,8 +12201,7 @@
 {
 "question": "（名）スル \n文書などをしかるべきところに差し出すこと。",
 "answers": [
-"提出",
-"堤出"
+"提出"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ていしゅつ • to present; to submit (e.g. a report or a thesis); to hand in; to file; to turn in; presentation; submission; filing\n「答案を－する」"
 },
@@ -12237,8 +12315,7 @@
 {
 "question": "①8族（鉄族）に属する遷移元素の一。元素記号Fe原子番号26。原子量55.85。銀白色の金属。赤鉄鉱・磁鉄鉱・黄鉄鉱などとして地球上に広く多量に存在する。地球内核の主成分と考えられている。比重7.87。3種の同素体があり，強磁性または常磁性を示し，いずれも延性・展性に富む。湿気のない空気中ではさびない。酸に溶けて水素を発生する。酸素気流中で燃え，高温で水蒸気と反応する。ヘモグロビンやチトクロムのヘムの構成成分となるなど，生体にとってきわめて重要。有史以前から知られた金属で人間生活に広く関係をもち，銑鉄・鋼あるいは種々の金属との合金として広く用いられ，工業的にも最も重要な元素。くろがね。\n②かたいもの，強固なもの，堅固なもののたとえ。",
 "answers": [
-"鉄",
-"鐵"
+"鉄"
 ],
 "comment": "Lv.N3 [ichi1/news1]: てつ • iron (Fe); strong and hard (as iron); railway; railway enthusiast\n「－の意志」"
 },
@@ -12292,7 +12369,7 @@
 "comment": "Lv.N4 [ichi1/news1]: てんいん • shop assistant; employee; clerk; salesperson"
 },
 {
-"question": "一：（名）\n①筆やペンの先をちょっとつけて記したようなごく小さなしるし。\n②〘数〙数学では幾何学の対象の一。①を抽象化したもの。幾何学基礎論では，直線などとともに，無定義用語として，公理によって規定される。\n③書き物などに付ける小さいしるし。\n④漢字の字画の一。。古くは，漢字の字画全般をいった。\n⑤灸（きゆう）で，つぼの位置に墨で付したしるし。\n⑥評価を表す符号・数値など。\n⑦特に取り上げるべきところ。\n⑧漏刻（ろうこく）の時数。また，時刻。\n二：（接尾）\n助数詞。数を表す漢語に付く。\n①試合・勝負事，試験の答案などの得点・評点を数えるのに用いる。\n②品物の数を数えるのに用いる。",
+"question": "一：（名）\n①筆やペンの先をちょっとつけて記したようなごく小さなしるし。\n②〘数〙数学では幾何学の対象の一。①を抽象化したもの。幾何学基礎論では，直線などとともに，無定義用語として，公理によって規定される。\n③書き物などに付ける小さいしるし。\n④漢字の字画の一。「凡」などの「ヽ」。古くは，漢字の字画全般をいった。\n⑤灸（きゆう）で，つぼの位置に墨で付したしるし。\n⑥評価を表す符号・数値など。\n⑦特に取り上げるべきところ。\n⑧漏刻（ろうこく）の時数。また，時刻。\n二：（接尾）\n助数詞。数を表す漢語に付く。\n①試合・勝負事，試験の答案などの得点・評点を数えるのに用いる。\n②品物の数を数えるのに用いる。",
 "answers": [
 "点"
 ],
@@ -12350,8 +12427,7 @@
 {
 "question": "電気エネルギーによって光を出す灯火。電気。",
 "answers": [
-"電灯",
-"電燈"
+"電灯"
 ],
 "comment": "Lv.N4 [ichi1/news1]: でんとう • electric light\n「－がともる」"
 },
@@ -12449,7 +12525,7 @@
 "answers": [
 "度"
 ],
-"comment": "Lv.N5 [ichi1]: たび/たんび • time (three times, each time, etc.); times\n「この－はお世話になりました」"
+"comment": "Lv.N5 [ichi1]: たび • time (three times, each time, etc.); times\n「この－はお世話になりました」"
 },
 {
 "question": "一：（名）\n①物事の適当な程合い。程度。限界。\n②回数。たび。\n③目盛り。\n④数量・程度などを表す単位。\n二：（接尾）\n助数詞。回数を数えるのに用いる。",
@@ -12495,12 +12571,11 @@
 "comment": "Lv.N5 [ichi1]: どようび • Saturday"
 },
 {
-"question": "（動ラ五［四］）\n①腹を立てる。立腹する。いかる。\n②しかる。",
+"question": "（動ラ五［四］）\n①腹を立てる。おこる。\n②ごつごつした形をする。角張る。\n③荒々しく動く。",
 "answers": [
-"怒る",
-"瞋る"
+"怒る"
 ],
-"comment": "Lv.N4 [ichi1/news1]: おこる/いかる • to get angry; to get mad; to tell someone off; to scold; to be angular; to be square\n「真っ赤になって－・る」"
+"comment": "Lv.N4 [ichi1/news1]: おこる/いかる • to get angry; to get mad; to tell someone off; to scold; to be angular; to be square\n「烈火のごとく－・る」"
 },
 {
 "question": "（動サ五［四］）\n①立っているものに力を加えて横にする。\n②正常では立った状態にあるものを横にする。\n③殺す。死なせる。\n④相手を負かす。やっつける。\n⑤国家などを崩壊させる。\n⑥借りを返さないで損を与える。ふみたおす。",
@@ -12653,13 +12728,12 @@
 {
 "question": "一（名）\n①マメ科植物のうち，食用にする大豆・小豆（あずき）・隠元など。また，その種子。\n②特に，大豆。\n③陰核。女陰。また，女。\n④牛・豚などの腎臓の俗称。\n二（接頭）\n名詞に付く。\n①形・規模などが小さいという意を表す。\n②子供である意を表す。",
 "answers": [
-"マメ",
 "まめ",
 "豆",
 "荳",
 "菽"
 ],
-"comment": "Lv.N3 [news1]: まめ/マメ • legume (esp. edible legumes or their seeds, such as beans, peas, pulses, etc.); beans; peas; soya bean (Glycine max); soybean; soy; female genitalia (esp. the clitoris); kidney; miniature; tiny; child\n「－まき」"
+"comment": "Lv.N3 [news1]: まめ • legume (esp. edible legumes or their seeds, such as beans, peas, pulses, etc.); beans; peas; soya bean (Glycine max); soybean; soy; female genitalia (esp. the clitoris); kidney; miniature; tiny; child\n「－まき」"
 },
 {
 "question": "（動マ五［四］）\n①物の上に足を置いて、体重をかける。足でその上に乗る。\n②（特別な仕方で）足を地面におろす。\n③足で押さえることによってある仕事などをする。\n④実際に、その場に行き、立つ、また、歩く。\n⑤物事を実際に行う。経験する。\n⑥規範・道徳などにのっとる。手本にならって行う。\n⑦見当をつける。評価する。\n⑧押韻をする。\n⑨地位などを引き継ぐ。位につく。\n⑩借金・代金などを支払わない。人に損をかける。\n⑪人に恥をかかせる。顔をつぶす。\n⑫歩く。行く。\n⑬足で探って魚介などをとる。\n⑭割合を決める。\n⑮履物を履く。",
@@ -12673,8 +12747,7 @@
 {
 "question": "（動ガ下一）\n①つかまらないように走って去る。\n②危険な状態や具合の悪い状態から抜け出す。\n③面倒なことに近づかないようにする。関係することを避ける。\n④スポーツなどで，先行を保って追いこされないようにする。\n⑤正しい方向・状態からずれる。",
 "answers": [
-"逃げる",
-"迯げる"
+"逃げる"
 ],
 "comment": "Lv.N4 [ichi1/news1]: にげる • to escape; to run away\n「－・げる犯人を追いかける」"
 },
@@ -12916,13 +12989,12 @@
 {
 "question": "（動カ下一）\n①持っていって渡す。\n②役所・会社・学校などに書類を提出する。\n③最終までやり通す。\n④承知する。果たす。",
 "answers": [
-"届ける",
-"屆ける"
+"届ける"
 ],
 "comment": "Lv.N4 [ichi1]: とどける • to deliver; to forward; to send; to report; to notify; to file notice (to the authorities); to give notice; to register\n「本を－・ける」"
 },
 {
-"question": "（食用にする）豚の肉。",
+"question": "ぶた肉。",
 "answers": [
 "豚肉",
 "ぶた肉"
@@ -12953,7 +13025,7 @@
 "comment": "Lv.N3 [ichi1/news1]: ないよう • contents; content; substance; matter; detail; import\n「荷物に－を表示する」"
 },
 {
-"question": "（接助）\n①動詞および動詞型活用の助動詞の連用形に付いて，その動作・作用と下にくる語の動作・作用とが並行して行われることを表す。\n②体言・動詞，および動詞型活用の助動詞の連用形，形容詞の連体形（古くは形容詞語幹）などに付いて，上の事柄と下の事柄とが矛盾する関係にある意を表す。…にもかかわらず。…ではあるが。…ているのに。\n③体言・副詞，動詞の連用形などに付いて，ある状態のままである意を表す。…のまま。…のとおり。\n④体言・副詞などに付いて，「全部」「すっかり」「それごと」などの意を表す。",
+"question": "（接助）\n①動詞および動詞型活用の助動詞の連用形に付いて，その動作・作用と下にくる語の動作・作用とが並行して行われることを表す。\n②体言・動詞，および動詞型活用の助動詞の連用形，形容詞の連体形（古くは形容詞語幹）などに付いて，上の事柄と下の事柄とが矛盾する関係にある意を表す。…にもかかわらず。…ではあるが。…ているのに。\n③体言・副詞，動詞の連用形などに付いて，ある状態のままである意を表す。…のまま。…のとおり。\n④体言・副詞などに付いて，「全部」「それごと」などの意を表す。",
 "answers": [
 "ながら",
 "乍ら"
@@ -12991,9 +13063,7 @@
 {
 "question": "（形）\n①理解するのが困難である。難解である。わかりにくい。↔やさしい\n②実現が困難である。容易でない。成功しにくい。↔やさしい\n③現状を打開することが困難だ。解決しにくい。↔やさしい\n④煩雑である。わずらわしい。めんどうだ。\n⑤気むずかしくて扱いにくい。好みなどがうるさい。\n⑥機嫌が悪い。不快そうである。\n⑦病気が重くて回復が困難である。\n⑧不愉快だ。うっとうしい。\n⑨気味が悪い。恐ろしい。\n⑩むさくるしい。いとわしい。",
 "answers": [
-"難しい",
-"六借しい",
-"六ヶ敷い"
+"難しい"
 ],
 "comment": "Lv.N5 [ichi1/news1]: むずかしい/むつかしい • difficult; hard; troublesome; complicated; serious (disease, problem, etc.); fussy; particular; fastidious; hard to please; displeased; gloomy; glum; sullen; serious (look); dirty; unclean; filthy; detestable; unpleasant; uncomfortable; creepy; spooky\n「操作が－・い」"
 },
@@ -13003,9 +13073,7 @@
 "二",
 "２",
 "2",
-"弐",
-"貳",
-"貮"
+"弐"
 ],
 "comment": "Lv.N5 [ichi1/news1]: に/ふた/ふ/ふう • two\n「－の矢をつがえる」"
 },
@@ -13051,7 +13119,7 @@
 "comment": "Lv.N5 [ichi1/news1]: ひ • day; days; sun; sunshine; sunlight; case (esp. unfortunate); event\n「－が出る」"
 },
 {
-"question": "①日々の出来事や感想などを一日ごとに日付を添えて，当日またはそれに近い時点で記した記録。古くは「御堂関白記」「玉葉」「明月記」などが著名だが，職掌上交替で書き継がれた「御湯殿上日記」などもある。日誌。にき。\n②「日記帳」の略。",
+"question": "①日々の出来事や感想などを一日ごとに日付を添えて，当日またはそれに近い時点で記した記録。古くは「御堂関白記」「明月記」などが著名だが，職掌上交替で書き継がれた「御湯殿上日記」などもある。日誌。にき。\n②「日記帳」の略。",
 "answers": [
 "日記"
 ],
@@ -13149,8 +13217,7 @@
 {
 "question": "（動サ下一）\n①自分の権限などを他の人に譲って，仕事を代行してもらう。ゆだねる。まかす。\n②相手のなすがままにさせる。まかす。\n③進むままにしておく。まかす。\n④物事が自然に推移するのを，そのままにする。放置する。まかす。\n⑤自分のもっている力や時間を十分に使う。まかす。\n⑥ある事柄に従う。",
 "answers": [
-"任せる",
-"委せる"
+"任せる"
 ],
 "comment": "Lv.N3 [ichi1]: まかせる • to entrust (e.g. a task) to another; to leave to; to passively leave to someone else's facilities; to leave to take its natural course; to continue (something) in a natural fashion (without particular aim); to rely fully on one's (full strength, great ability, long time taken) to get something done\n「店を息子に－・せる」"
 },
@@ -13164,11 +13231,10 @@
 {
 "question": "①食肉目ネコ科の哺乳類。体長50センチメートル内外。毛色は多様。指先にはしまい込むことのできるかぎ爪がある。足裏には肉球が発達し，音をたてずに歩く。夜行性で，瞳孔は円形から針状まで大きく変化する。本来は肉食性。舌は鋭い小突起でおおわれ，ザラザラしている。長いひげは感覚器官の一つ。ペルシャネコ・シャムネコ・ビルマネコなど品種が多い。古代エジプト以来神聖な動物とされる一方，魔性のものともされる。愛玩用・ネズミ駆除用として飼われる。古名，ねこま。\n②三味線。\n③芸妓。\n④大坂堀江付近・江戸本所回向院付近の私娼。\n⑤「猫火鉢」に同じ。\n⑥「猫車ねこぐるま」の略。",
 "answers": [
-"ネコ",
 "ねこ",
 "猫"
 ],
-"comment": "Lv.N5 [ichi1/news1]: ねこ/ネコ • cat; shamisen; geisha; wheelbarrow; clay bed-warmer; bottom; submissive partner of a homosexual relationship"
+"comment": "Lv.N5 [ichi1/news1]: ねこ • cat; shamisen; geisha; wheelbarrow; clay bed-warmer; bottom; submissive partner of a homosexual relationship"
 },
 {
 "question": "①あついこと。あつさ。\n②病気などで普段より高くなった体温。\n③一つの事に夢中になって，高ぶった気持ち。また，興奮した状態。\n④熱病。\n⑤〘物・化〙温度の高い系から温度の低い系にエネルギーが移動するときのエネルギーの移動形態の一つで，力学的な仕事や物質の移動などにはよらないもの。内部エネルギーを変化させる。",
@@ -13319,7 +13385,7 @@
 "answers": [
 "馬"
 ],
-"comment": "Lv.N3 [ichi1/news1]: うま/ウマ • horse; horse racing; promoted bishop\n「－を引いて朝帰り」"
+"comment": "Lv.N3 [ichi1/news1]: うま • horse; horse racing; promoted bishop\n「－を引いて朝帰り」"
 },
 {
 "question": "①映画・演劇などで，劇中の人物を演ずることを職業とする人。役者。\n②滑稽な身振りや歌舞をして人や神を楽しませる人。わざおぎ。",
@@ -13331,8 +13397,7 @@
 {
 "question": "（名）スル \n見ることをへりくだっていう語。つつしんで見ること。",
 "answers": [
-"拝見",
-"拜見"
+"拝見"
 ],
 "comment": "Lv.N4 [ichi1]: はいけん • seeing; look at\n「お手紙－いたしました」"
 },
@@ -13346,8 +13411,7 @@
 "卮",
 "盞",
 "觚",
-"觴",
-"酒盃"
+"觴"
 ],
 "comment": "Lv.N5 [ichi1/news1]: さかずき/さかづき/うき • sake cup; cup for alcoholic beverages\n「－を干す」"
 },
@@ -13387,7 +13451,7 @@
 "梅",
 "楳"
 ],
-"comment": "Lv.N3 [ichi1/news1]: うめ/ウメ • Japanese apricot (Prunus mume); Chinese plum; lowest (of a three-tier ranking system)"
+"comment": "Lv.N3 [ichi1/news1]: うめ • Japanese apricot (Prunus mume); Chinese plum; lowest (of a three-tier ranking system)"
 },
 {
 "question": "（動ワ五［ハ四］）\n①（欲しいものを）代金を払って自分のものとする。購入する。↔売る\n②人の才能・性格などを高く評価する。\n③引き受ける。\n④自分の言動が元となって他人に悪感情をもたれる。\n⑤金を払って芸者・売春婦などと遊ぶ。",
@@ -13492,12 +13556,12 @@
 "comment": "Lv.N3 [ichi1/news1]: はだ/はだえ • skin; body (in the context of intimate bodily contact); surface; grain (e.g. of wood); texture; disposition; temperament; character; type\n「－が荒れる」"
 },
 {
-"question": "①野菜・麦・果樹などを栽培する耕地。水をたたえていない耕地。はた。\n②専門の領域・分野。\n③生まれ。出生。母胎。",
+"question": "はたけ。",
 "answers": [
 "畑",
 "畠"
 ],
-"comment": "Lv.N3 [ichi1/news1]: はたけ/はた • field (for fruits, vegetables, etc.); cultivated land; vegetable plot; kitchen garden; plantation; field (of specialization); sphere; area; womb; birth; birthplace\n「工学－」"
+"comment": "Lv.N3 [ichi1/news1]: はたけ/はた • field (for fruits, vegetables, etc.); cultivated land; vegetable plot; kitchen garden; plantation; field (of specialization); sphere; area; womb; birth; birthplace\n「－を打つ」"
 },
 {
 "question": "①日の数八つ。また，連続したその期間。\n②暦の月の八番目の日。",
@@ -13593,7 +13657,7 @@
 "comment": "Lv.N3 [ichi1]: ぬく • to extract; to omit; to draw out; to unplug; to do something to the end; to surpass; to overtake; to masturbate (of a male); to ejaculate (while masturbating); to take (a photo); to record (video)\n「とげを－・く」"
 },
 {
-"question": "（動カ下一）\n①中にある物が外に出る。\n②現在の状態から離れる。\n③向こう側へ出る。\n④（魂・知恵などが抜ける，の意で）注意力が散漫である。知恵が不足している。普通，\n⑤すき通っているさまをいう。\n⑥他人よりもすぐれる。ひいでる。",
+"question": "（動カ下一）\n①中にある物が外に出る。\n②現在の状態から離れる。\n③向こう側へ出る。\n④（魂・知恵などが抜ける，の意で）注意力が散漫である。知恵が不足している。\n⑤「－・けるような青空」\n⑥他人よりもすぐれる。ひいでる。",
 "answers": [
 "抜ける",
 "脱ける"
@@ -13668,7 +13732,7 @@
 "answers": [
 "販売"
 ],
-"comment": "Lv.N3 [ichi1/news1]: はんばい/ハンバイ • sales; selling; marketing\n「自動－機」"
+"comment": "Lv.N3 [ichi1/news1]: はんばい • sales; selling; marketing\n「自動－機」"
 },
 {
 "question": "①特定の領域・限度の中。\n②きまり。規則。",
@@ -13680,14 +13744,13 @@
 {
 "question": "（形）\n①音が大きいのがじゃまになる。音が大きいのでやりきれない。やかましい。\n②しつこくて，やりきれない。\n③小さいことまで，いちいち文句を言うのでいやだ。口やかましい。\n④物事に対して見識をもっていて，細かいところまで気にするさま。\n⑤面倒くさくて，いやだ。わずらわしい。\n⑥いやになるほどに優れている。完全で親しみが持てない。\n⑦技芸が優れている。うるせし。\n⑧わざとらしくて，いやみだ。きざっぽい。",
 "answers": [
-"ウルサイ",
 "うるさい",
 "煩い",
 "五月蝿い",
 "五月蠅い",
 "煩さい"
 ],
-"comment": "Lv.N5 [ichi1]: うるさい/ウルサイ • noisy; loud; annoying; troublesome; tiresome; persistent; importunate; fussy; finicky; picky; particular; nagging; fastidious; bossy; shut up!; be quiet!\n「工場の騒音が－・い」"
+"comment": "Lv.N5 [ichi1]: うるさい • noisy; loud; annoying; troublesome; tiresome; persistent; importunate; fussy; finicky; picky; particular; nagging; fastidious; bossy; shut up!; be quiet!\n「工場の騒音が－・い」"
 },
 {
 "question": "①米を炊いたもの。ごはん。\n②食事。朝・昼・晩の食事。ごはん。",
@@ -13732,7 +13795,7 @@
 "comment": "Lv.N4 [ichi1]: かれ • he; him; his; boyfriend"
 },
 {
-"question": "（代）\n三人称。",
+"question": "（代）\n三人称。「かれ」の複数。あの男の人たち。あの人々。",
 "answers": [
 "彼ら",
 "彼等"
@@ -13747,19 +13810,18 @@
 "comment": "Lv.N4 [ichi1/news1]: かのじょ • she; her; her; girlfriend; sweetheart"
 },
 {
-"question": "（代）\n遠称の指示代名詞。\n①あるものを越して，話し手から遠く離れた先の方，またはその場所をさす。むこう。あなた。\n②現在から遠く隔たった過去および未来をさす。",
+"question": "（代）\n①二人称。\n②三人称。「あの人」の尊敬語。あの方。\n③遠称の指示代名詞。",
 "answers": [
-"あなた",
 "かなた",
+"あなた",
 "彼方"
 ],
-"comment": "Lv.N5 [ichi1]: かなた/あなた • beyond; across; the other side; the distance\n「海の－の国」"
+"comment": "Lv.N5 [ichi1]: かなた/あなた • beyond; across; the other side; the distance\n「－はどうなさいますか」"
 },
 {
 "question": "（形）\n一：心が痛んで泣きたくなるような気持ちだ。つらく切ない。\n二：（古くは「愛し」と書かれた）\n①身にしみていとしい。切ないほどにかわいい。\n②心にしみるような趣だ。深い感興を感ずる。\n③見事だ。感心するほど立派だ。\n④残念だ。くやしい。\n⑤貧苦がつらい。",
 "answers": [
-"悲しい",
-"哀しい"
+"悲しい"
 ],
 "comment": "Lv.N4 [ichi1]: かなしい • sad; sorrowful"
 },
@@ -13846,8 +13908,8 @@
 {
 "question": "（動ラ五［四］）\n①頭の上にのせる。上にかけて覆う。\n②（水・粉などを）上から浴びる。\n③身に受ける。\n④写真で，フィルムや印画に，画像とは関係なく薄黒いところができる。\n⑤あることが重複する。\n⑥一日の芝居などが終わる。終演になる。はねる。\n⑦（寄席芸人仲間などの用語）寄席などが，大入り満員になる。\n⑧失敗する。しくじる。",
 "answers": [
-"かむる",
 "かぶる",
+"かむる",
 "被る",
 "冠る"
 ],
@@ -13873,6 +13935,13 @@
 "非常"
 ],
 "comment": "Lv.N4 [ichi1/news1]: ひじょう • emergency; extraordinary; unusual\n「－事態」"
+},
+{
+"question": "",
+"answers": [
+"非常に"
+],
+"comment": "Lv.N4 [ichi1]: ひじょうに • very; extremely; exceedingly"
 },
 {
 "question": "（動サ五［四］）\n①空中を進んで行くようにする。\n②自動車などを速く走らせる。\n③途中を抜かして先へ進む。\n④大声で言葉を発する。また，言い放つ。\n⑤離れた所や格の下がる部局などに移す。\n⑥動詞の連用形に付いて，激しく…する，乱暴に…するの意を表す。\n⑦魂などを空に飛び去らせる。死なせる。",
@@ -13962,7 +14031,7 @@
 "answers": [
 "膝"
 ],
-"comment": "Lv.N3 [ichi1]: ひざ/ヒザ • knee; lap; knee and thigh (while sitting)\n「子供を－の上にのせる」"
+"comment": "Lv.N3 [ichi1]: ひざ • knee; lap; knee and thigh (while sitting)\n「子供を－の上にのせる」"
 },
 {
 "question": "（副）\n①一つの例外もなく，ある物事が起こるさま。ある条件のもとで例外なく起こるさまにも用いる。例外なく。常に。\n②まちがいなく。きっと。\n③（下に禁止や打ち消しの語を伴って）決して。必ずしも。",
@@ -14101,7 +14170,7 @@
 "壜",
 "罎"
 ],
-"comment": "Lv.N3 [ichi1/news1]: びん/ビン • bottle; jar; decanter; flagon; phial; vial"
+"comment": "Lv.N3 [ichi1/news1]: びん • bottle; jar; decanter; flagon; phial; vial"
 },
 {
 "question": "（名・形動）\n①気がかりなこと。心配なこと。これから起こる事態に対する恐れから，気持ちが落ち着かないこと。また，そのさま。\n②〘哲〙人間存在の根底にある虚無からくる危機的気分。原因や対象がわからない点で恐れと異なる。実存主義など現代哲学の主要概念。\n③〘心〙漠とした恐れの感情。動悸（どうき）・発汗などの身体的徴候を伴うことが多い。",
@@ -14176,12 +14245,10 @@
 {
 "question": "（形）\n①飲食物の味が悪い。おいしくない。↔うまい\n②できばえや技術が悪い。へただ。↔うまい\n③自分にとって具合が悪い。↔うまい\n④顔かたちが悪い。みにくい。",
 "answers": [
-"マズい",
-"マズイ",
 "まずい",
 "不味い"
 ],
-"comment": "Lv.N5 [ichi1]: まずい/マズイ/マズい • unappetising; unappetizing; unsavoury; unsavory; unpleasant; unskillful; unskilful; bungling; clumsy; poor; ugly; unattractive; homely; plain; awkward; problematic; troublesome; unfavorable; unfavourable; unwise\n「－・い顔だち」"
+"comment": "Lv.N5 [ichi1]: まずい • unappetising; unappetizing; unsavoury; unsavory; unpleasant; unskillful; unskilful; bungling; clumsy; poor; ugly; unattractive; homely; plain; awkward; problematic; troublesome; unfavorable; unfavourable; unwise\n「－・い顔だち」"
 },
 {
 "question": "（名・形動）\n利益のないこと。条件などが相手より劣っていること。また，そのさま。↔有利",
@@ -14200,14 +14267,14 @@
 "comment": "Lv.N3 [ichi1/news1]: つきあい • association; socializing; socialising; fellowship\n「－が広い」"
 },
 {
-"question": "一：（動カ五［四］）\n❶物と物とが接触・接合・付着する。\n①二つの物が触れたまま離れなくなる。くっつく。接合する。\n②ある物と他のある物とが接近してすき間がない状態になる。\n③ある物に異質な物が付着・浸透する。くっつく。\n④主たる物に付随的なものが添えられる。\n⑤あとが残る。\n⑥植物などがしっかり根をおろす。根づく。\n⑦肉・力・能力・良さなどが身に備わる。\n⑧連歌・俳諧で，前の句と後の句がうまくつながる。\n❷そばに寄る。近付く。\n①（意図的動作）人が他の人のそばにいる。\n②（結果的動作）あるものが現れる・来る。\n❸あるものが加えられ，新しい状態になる。\n①新たに設けられる。設置・設備される。\n②ある現象・活動などが現れる。\n③名称・評点などが加えられる。\n❹きちんとした説明が加えられる。\n❺実現・決着が望まれていたことが実現・決着する。\n❻区分がはっきりする。また，自然と差が出る。\n❼判断・予想が行われる。\n①②助詞「と」「に」で受けたものに打ち消しを伴って用いる。\n❽感覚や意識が働く。\n①ある感覚器官に強く感じられる。\n②㋐あるものごとを認識する。気づく。\n㋑失っていた意識がよみがえる。正気にかえる。\n③ある気持ちがおこる。\n❾人に好ましく思われる。気に入る。\n二：（動カ下二）",
+"question": "一：（動カ五［四］）\n❶物と物とが接触・接合・付着する。\n①二つの物が触れたまま離れなくなる。くっつく。接合する。\n②ある物と他のある物とが接近してすき間がない状態になる。\n③ある物に異質な物が付着・浸透する。くっつく。\n④主たる物に付随的なものが添えられる。\n⑤あとが残る。\n⑥植物などがしっかり根をおろす。根づく。\n⑦肉・力・能力・良さなどが身に備わる。\n⑧連歌・俳諧で，前の句と後の句がうまくつながる。\n❷そばに寄る。近付く。\n①（意図的動作）人が他の人のそばにいる。\n②（結果的動作）あるものが現れる・来る。\n❸あるものが加えられ，新しい状態になる。\n①新たに設けられる。設置・設備される。\n②ある現象・活動などが現れる。\n③名称・評点などが加えられる。\n❹きちんとした説明が加えられる。\n❺実現・決着が望まれていたことが実現・決着する。\n❻区分がはっきりする。また，自然と差が出る。\n❼判断・予想が行われる。\n①「…がつく」の形で用いる。\n②助詞「と」「に」で受けたものに打ち消しを伴って用いる。\n❽感覚や意識が働く。\n①ある感覚器官に強く感じられる。\n②㋐あるものごとを認識する。気づく。\n㋑失っていた意識がよみがえる。正気にかえる。\n③ある気持ちがおこる。\n❾人に好ましく思われる。気に入る。\n二：（動カ下二）",
 "answers": [
 "付く"
 ],
 "comment": "Lv.N4 [spec1]: つく • to be attached; to be connected with; to adhere; to stick; to cling; to remain imprinted; to scar; to stain; to dye; to bear (fruit, interest, etc.); to be acquired (of a habit, ability, etc.); to increase (of strength, etc.); to take root; to accompany; to attend; to follow; to study with; to side with; to belong to; to possess; to haunt; to be lit; to be lighted; to be settled; to be resolved; to be decided; to be given (of a name, price, etc.); to be sensed; to be perceived; to be lucky; to become (a state, condition, etc.)\n「折れた腕の骨がうまく－・いた」"
 },
 {
-"question": "（動カ下一）\n❶接触・接合・付着させる。\n①二つの物が触れたまま離れないようにする。接合する。くっつける。\n②ある物と他の物を接近させていって，表面がぴたりと触れるようにする。\n③ある物に異質な物を付着・浸透させる。\n④ある物に，付随的な物を添える。\n⑤あとを残す。\n⑥栄養・体力・知識などを備えさせる。\n⑦連歌・俳諧で，前の句に後の句を，うまくつながるように続ける。\n❷そばに寄せる。\n①人をそばに置く。\n②ある物を近くに寄せる。\n❸他の人のあとをこっそり追う。\n❹あるものを加え，新しい状態にする。\n①新たに設ける。設置する。\n②ある現象・活動などがあらわれるようにする。\n③ある物に名称・評点などを与える。\n❺説明を加える。\n❻実現・決着の望まれていたことを実現・決着させる。\n❼区分をはっきりさせる。差が出るようにする。\n❽判断・予想を行う。\n❾感覚・意識を働かせる。\n①注意力・警戒心をそこに注ぐ。\n②関心を寄せる。特別な注意を向ける。\n❿①それぞれの状況において，の意を表す。\n②それに伴って，関連して，の意を表す。\n⓫\n関係をもたせる。\n①ことづける。託す。\n②それをきっかけとする。かこつける。\n⓬\n動詞の連用形に付ける。\n①その動作の激しいことを表す。\n②その動作に慣れていることを表す。",
+"question": "（動カ下一）\n❶接触・接合・付着させる。\n①二つの物が触れたまま離れないようにする。接合する。くっつける。\n②ある物と他の物を接近させていって，表面がぴたりと触れるようにする。\n③ある物に異質な物を付着・浸透させる。\n④ある物に，付随的な物を添える。\n⑤あとを残す。\n⑥栄養・体力・知識などを備えさせる。\n⑦連歌・俳諧で，前の句に後の句を，うまくつながるように続ける。\n❷そばに寄せる。\n①人をそばに置く。\n②ある物を近くに寄せる。\n❸他の人のあとをこっそり追う。\n❹あるものを加え，新しい状態にする。\n①新たに設ける。設置する。\n②ある現象・活動などがあらわれるようにする。\n③ある物に名称・評点などを与える。\n❺説明を加える。\n❻実現・決着の望まれていたことを実現・決着させる。\n❼区分をはっきりさせる。差が出るようにする。\n❽判断・予想を行う。\n❾感覚・意識を働かせる。\n①注意力・警戒心をそこに注ぐ。\n②関心を寄せる。特別な注意を向ける。\n❿「…につけ（て）」の形で用いる。\n①それぞれの状況において，の意を表す。\n②それに伴って，関連して，の意を表す。\n⓫\n関係をもたせる。\n①ことづける。託す。\n②それをきっかけとする。かこつける。\n⓬\n動詞の連用形に付ける。\n①その動作の激しいことを表す。\n②その動作に慣れていることを表す。",
 "answers": [
 "付ける",
 "着ける",
@@ -14248,10 +14315,16 @@
 "question": "①袋に縫った布の中に綿・鳥の羽毛・わらなどを入れたもの。寝具や防寒・保温用にする。",
 "answers": [
 "布団",
-"蒲団",
-"薄団"
+"蒲団"
 ],
 "comment": "Lv.N4 [ichi1/news1]: ふとん • futon (quilted Japanese-style mattress laid out on the floor); round cushion used for Zen meditation (traditionally made of woven bulrush leaves)"
+},
+{
+"question": "",
+"answers": [
+"普段"
+],
+"comment": "Lv.N3 [ichi1/news1]: ふだん • usual; habitual; ordinary; everyday; usually; generally; always"
 },
 {
 "question": "一（名・形動）\n①いつでもどこにでもあって，めずらしくない・こと（さま）。\n②ほかとくらべて特に変わらない・こと（さま）。\n③特別ではなく，一般的である・こと（さま）。\n▽↔特殊\n二（副）\n①その事柄が多くの事例にあてはまるさま。一般に。\n②いつもではないが，ほとんどそうであるさま。たいてい。",
@@ -14293,8 +14366,7 @@
 "question": "（動カ下一）\n①力や能力を争って，相手に屈する。敗れる。↔勝つ\n②あらがいきれなくなる。↔勝つ\n③人と比べて，力や気持ちの上で劣る。圧倒される。\n④薬品や刃物などで皮膚が荒れる。かぶれる。\n⑤値段を安くしたり，品物を余分に渡したりする。\n⑥我慢して相手に有利になるようにする。\n⑦相手の意見に従う。",
 "answers": [
 "負ける",
-"敗ける",
-"敗北る"
+"敗ける"
 ],
 "comment": "Lv.N4 [ichi1]: まける • to lose; to be defeated; to succumb; to give in; to surrender; to yield; to be inferior to; to break out in a rash due to (e.g. lacquer, shaving, etc.); to reduce the price; to give a discount; to throw in (something extra) for free\n「君を思う気持ちではだれにも－・けません」"
 },
@@ -14311,15 +14383,6 @@
 "舞台"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ぶたい • stage (theatre, theater); scene or setting (e.g. of novel, play, etc.)\n「－に上がる」"
-},
-{
-"question": "①ブドウ科のつる性落葉木本。西アジア原産。果樹として古く中国を経て渡来。葉は掌状。巻きひげは葉と対生。雌雄異株または同株。5，6月，開花。8～10月，球形の液果が房状になる。果皮は黒紫色・黄緑色・紅紫色など。果実は多汁で甘く生食のほか，ジュース・ジャムなどに加工，また葡萄酒を作る。エビカズラ。",
-"answers": [
-"ブドウ",
-"ぶどう",
-"葡萄"
-],
-"comment": "Lv.N4 [ichi1]: ぶどう/ブドウ • grape; grapevine"
 },
 {
 "question": "①家の内部を壁や建具で仕切った一画。人が起居し，物などを置くための空間。座敷。室。\n②「相撲部屋」の略。\n③殿中の女中の居間。局（つぼね）。\n④江戸時代，諸大名の江戸屋敷で，小者・人足などの詰め所。",
@@ -14439,8 +14502,8 @@
 {
 "question": "一：（名）\n一：①物体。物品。\n②特に，経済的な価値をもった物品。また，その品質。\n③対象を具体的に表現せず，漠然という語。何らかの対象。\n④対象を特定化せず，一般的・包括的にいう語。すべての対象。\n⑤物事の筋道。道理。\n⑥鬼や悪霊など，正体のとらえにくい対象を畏怖していう語。\n⑦取り上げる価値のある対象。ひとかどの存在。\n⑧思考の対象として取り上げる事物をさす語。物事。\n⑨一度名前を言ったあとで再びそれをさす時に，名前の代わりに用いる語。それ。\n⑩所有物。持ち物。\n二：①〘哲〙\n②〘法〙権利の客体とされる，排他的支配が可能な外界の一部をいい，有体物と無体物とに分けられる。民法上「物」は有体物に限られる。\n三：種々の語の下に付いて複合語をつくる。\n①その分野・種類に入る品物や作品であることを表す。\n②そういう事態を引き起こすような事柄であることを表す。\n③動詞の連用形に付いて，そのような動作の結果できた物品，そのような動作の対象となる物品であることを表す。\n四：（形式名詞）\n①㋐普遍的な傾向。\n㋑なすべきこと。\n㋒過去にしばしば起こったこと。\n②感動・詠嘆を表す。…なあ。\n③否定を強調する。\n④判断を強調する。\n⑤…することとする。\n二：（接頭）\n形容詞・形容動詞・動詞に付いて，何とはなしに，また，どことなくそのような状態である，の意を表す。",
 "answers": [
-"もん",
 "もの",
+"もん",
 "物"
 ],
 "comment": "Lv.N5 [ichi1]: もの/もん • thing; object; article; stuff; substance; one's things; possessions; property; belongings; things; something; anything; everything; nothing; quality; reason; the way of things; used to emphasize emotion, judgment, etc.; used to indicate a common occurrence in the past (after a verb in past tense); used to indicate a general tendency; used to indicate something that should happen; item classified as ...; item related to ...; work of ...; cause of ...; cause for ...; somehow; somewhat; for some reason; really; truly\n「階段に－を置くのは危険だ」"
@@ -14690,11 +14753,18 @@
 "comment": "Lv.N3 [ichi1/news1]: とじる • to close (e.g. book, eyes, meeting, etc.); to shut\n「門が－・じる」"
 },
 {
+"question": "（動マ下一）\n①まわりから強くおさえる。↔ゆるめる\n②ひねったりして，ゆるみや空きがないようにする。↔ゆるめる\n③開口部をふさぐ。とじる。↔あける・ひらく\n④心や行動のたるみをなくす。\n⑤料理で，魚の肉などが固くひきしまるようにする。\n⑥その時点で一区切りとして，それまでの収支の合計を計算する。\n⑦物事の結着がついたことを祝って，当事者がそろって手を打つ。手じめをする。\n⑧取り決める。話などをまとめる。",
+"answers": [
+"閉める"
+],
+"comment": "Lv.N5 [ichi1]: しめる • to close; to shut\n「鉢巻きを－・める」"
+},
+{
 "question": "イネの種子から外皮（籾殻（もみがら））を除いたもの。そのままのものを玄米（げんまい），搗（つ）いて糠（ぬか）を取り去ったものを白米，または精米という。日本人の主食となる穀物。",
 "answers": [
 "米"
 ],
-"comment": "Lv.N4 [ichi1]: こめ/コメ • (husked grains of) rice; 88 years old"
+"comment": "Lv.N4 [ichi1]: こめ • (husked grains of) rice; 88 years old"
 },
 {
 "question": "①建物の外部を囲み、また内部を仕切るもの。\n②大きな困難や障害。\n③人と人との間のへだて。\n④登山用語で、直立した岩壁。フェース。\n⑤豆腐。おかべ。\n⑥（壁を「塗る」を「寝ぬる」にかけて）夢。\n⑦近世後期、江戸で、野暮やぼなことの意を表す通語。",
@@ -14734,8 +14804,7 @@
 {
 "question": "一：（名）\n①異常な出来事，社会的な事件が起こること。政変や動乱などが発生すること。また，そのような事件や出来事。\n②音楽で，音の高さが本来の高さより半音低いこと。↔嬰（えい）\n③事態が移り変わること。\n④病状が急変すること。\n二：（形動）\n①普通でないさま。怪しいさま。異常。奇妙。\n②思いがけないさま。",
 "answers": [
-"変",
-"變"
+"変"
 ],
 "comment": "Lv.N4 [ichi1/news1]: へん • strange; odd; peculiar; weird; curious; queer; eccentric; funny; suspicious; fishy; unexpected; change; incident; disturbance; disaster; accident; flat\n「本能寺の－」"
 },
@@ -14767,15 +14836,6 @@
 "変更"
 ],
 "comment": "Lv.N3 [ichi1/news1]: へんこう • change; modification; alteration; revision; amendment\n「出発時刻を－する」"
-},
-{
-"question": "仮名の一種。万葉仮名として用いられた漢字の一部分，あるいは画数の少ない漢字の全画より作られた音節文字。平安初期，漢文訓読に用いられたものが起源。1900年（明治33）の「小学校令施行規則」改正で種々の異字体を廃し現行字体に統一された。現在は主に外来語・擬声語・擬態語などの表記に用いられる。大和（やまと）仮名。五十音仮名。略体仮名。",
-"answers": [
-"カタカナ",
-"かたかな",
-"片仮名"
-],
-"comment": "Lv.N5 [ichi1/spec1]: かたかな/カタカナ • katakana; angular Japanese syllabary used primarily for loanwords"
 },
 {
 "question": "（動カ下一）\n①物が散乱している場所をきちんと整頓する。\n②置かれている物や散乱している物を収納したり、捨てたりする。\n③物事を処理・解決する。決着をつける。\n④じゃまな者を取りのぞく。殺す。\n⑤娘を嫁にやる。嫁入りさせる。\n⑥片方に寄せる。",
@@ -14839,10 +14899,7 @@
 {
 "question": "①容器に入れて携え，外出先で食べる食べ物。\n②外出先や会議の席などで，取り寄せて食べる食事。",
 "answers": [
-"弁当",
-"辨當",
-"弁當",
-"辨当"
+"弁当"
 ],
 "comment": "Lv.N5 [ichi1/news1]: べんとう • bento; Japanese box lunch\n「参会者に－を出す」"
 },
@@ -14859,8 +14916,7 @@
 "つかまる",
 "捕まる",
 "掴まる",
-"捉まる",
-"摑まる"
+"捉まる"
 ],
 "comment": "Lv.N3 [ichi1]: つかまる • to be caught; to be arrested; to hold on to; to grasp; to find (e.g. proof); to get (e.g. a taxi); to be detained by\n「いやなやつに－・ったよ」"
 },
@@ -14987,7 +15043,7 @@
 "comment": "Lv.N4 [ichi1/news1]: ほうそう • broadcast; broadcasting\n「テレビ－」"
 },
 {
-"question": "一：（名）\n①方向。方位。\n②人を敬っていう語。\n③ところ。場所。\n④（多く下に打ち消しの語を伴って）手段。方法。\n⑤頃。時分。\n⑥二つに分かれたものの一方。仲間。組。\n⑦味方。多く夫の－をして／狂言・水引聟天正本」\n⑧物事の分野。方面。あたり。\n二：（接尾）\n①動詞の連用形に付いて，そのことを行う方法または，そのありさまの意を表す。様（よう）。\n②人名に付いて，寄宿している場所を表す。ところ。\n③「お」を冠した数を表す語に付いて，その数の人を尊敬していうのに用いる。\n④数量や時を表す名詞に付いて，それくらい・そのころであることを表す。\n⑤動詞の連用形や名詞に付く。",
+"question": "一：（名）\n①方向。方位。\n②人を敬っていう語。\n③ところ。場所。\n④（多く下に打ち消しの語を伴って）手段。方法。\n⑤頃。時分。\n⑥二つに分かれたものの一方。仲間。組。\n⑦味方。\n⑧物事の分野。方面。あたり。\n二：（接尾）\n①動詞の連用形に付いて，そのことを行う方法または，そのありさまの意を表す。様（よう）。\n②人名に付いて，寄宿している場所を表す。ところ。\n③「お」を冠した数を表す語に付いて，その数の人を尊敬していうのに用いる。\n④数量や時を表す名詞に付いて，それくらい・そのころであることを表す。\n⑤動詞の連用形や名詞に付く。",
 "answers": [
 "方"
 ],
@@ -15201,10 +15257,9 @@
 {
 "question": "（名・形動）\n①まちがっていたり，うそであったりしない・こと（さま）。真実。事実。本物。ほんと。↔うそ\n②本来そうあるべきであること。当然なすべきこと。",
 "answers": [
-"本当",
-"本當"
+"本当"
 ],
-"comment": "Lv.N5 [ichi1/news1]: ほんとう/ホントー/ホントウ • truth; reality; actuality; fact; proper; right; correct; official; genuine; authentic; natural; veritable\n「体が－ではない」"
+"comment": "Lv.N5 [ichi1/news1]: ほんとう • truth; reality; actuality; fact; proper; right; correct; official; genuine; authentic; natural; veritable\n「体が－ではない」"
 },
 {
 "question": "①本当の物。偽りでない物。↔贋物（にせもの）\n②もとの物。実物。\n③本格的であること。",
@@ -15320,8 +15375,7 @@
 {
 "question": "（名・形動）スル \n①望みが達せられて不平のないこと。十分満ち足りていること。また，そのさま。\n②ある条件や基準を十分に満たしていること。完全であること。また，そのさま。\n③〘数〙ある条件に合うこと。",
 "answers": [
-"満足",
-"滿足"
+"満足"
 ],
 "comment": "Lv.N3 [ichi1/news1]: まんぞく • satisfaction; contentment; complacency; sufficient; enough; adequate; proper\n「自己－」"
 },
@@ -15330,7 +15384,7 @@
 "answers": [
 "漫画"
 ],
-"comment": "Lv.N4 [ichi1/news1/spec1]: まんが/マンガ • cartoon; comic; comic strip\n「四コマ－」"
+"comment": "Lv.N4 [ichi1/news1/spec1]: まんが • cartoon; comic; comic strip\n「四コマ－」"
 },
 {
 "question": "一：（名）\n①飲食物を舌にのせた時に起こる感じ。飲食物が舌の味蕾（みらい）を刺激して生じる感覚。\n②体験して得た感じ。感触。\n③物事を深く知ることによって初めてわかるおもしろみ。深い所に潜んでいるすばらしさ。味わい。\n④囲碁で，のちに働きを生ずる箇所。また，そのようなさし手。\n二：（形動）\n①気がきいているさま。おつ。\n②生意気である。こざかしい。訳ありげだ。",
@@ -15351,8 +15405,8 @@
 {
 "question": "（副）\n①ある状態・段階・程度に至っていないさま。\n②ある状態・行為が継続しているさま。依然として。\n③時間がわずかしか経過していないさま。たった。\n④十分とはいえないが，ともかく他のものよりは勝っているさま。どちらかといえば。むしろ。\n⑤同じような事柄がそのほかにもあるさま。さらに。",
 "answers": [
-"いまだ",
 "まだ",
+"いまだ",
 "未だ"
 ],
 "comment": "Lv.N5 [ichi1]: まだ/いまだ • as yet; hitherto; only; still; not yet (with negative verb); more; besides; unfinished; incomplete; not yet finished with\n「－若かった頃」"
@@ -15409,7 +15463,7 @@
 "comment": "Lv.N3 [ichi1]: むちゅう • daze; (in a) trance; ecstasy; delirium; engrossment; within a (deep) dream\n「－に音を聞く」"
 },
 {
-"question": "（形）\n①（人間や物が）存在しない。完全な非存在の場合も，ある場面に不在の場合もある。\n②（事柄が）起こらない。行われない。\n③（人間や事物について）所有していない。\n④数量・時間などを表す語を受けて，その数量や時間に達していない意を表す。\n⑤（人間が）生存していない。死んでいる。\n⑥他に類がない。またとない。\n⑦（「…こと」を受けて）\n㋐否定を表す。\n㋑未経験であることを表す。\n㋒不必要であることを表す。\n㋓可能性がないことを表す。\n⑧（補助形容詞）\n㋐形容詞・形容動詞の連用形，および一部の助動詞「だ」「たい」「らしい」などの連用形の下に付いて，その状態の打ち消しを表す。\n㋑動詞の連用形に助詞「て」の付いたものに付いて，「…ている」「…てある」という状態の打ち消しを表す。\n⑨名詞の下に付いて，否定の意を表す形容詞をつくる。",
+"question": "（形）\n①（人間や物が）存在しない。完全な非存在の場合も，ある場面に不在の場合もある。\n②（事柄が）起こらない。行われない。\n③（人間や事物について）所有していない。\n④数量・時間などを表す語を受けて，その数量や時間に達していない意を表す。\n⑤（人間が）生存していない。死んでいる。\n⑥他に類がない。またとない。\n⑦（「…こと」を受けて）\n㋐否定を表す。\n㋑未経験であることを表す。\n㋒不必要であることを表す。\n㋓可能性がないことを表す。\n⑧（補助形容詞）\n㋐形容詞・形容動詞の連用形，および一部の助動詞「だ」「らしい」などの連用形の下に付いて，その状態の打ち消しを表す。\n㋑動詞の連用形に助詞「て」の付いたものに付いて，「…ている」「…てある」という状態の打ち消しを表す。\n⑨名詞の下に付いて，否定の意を表す形容詞をつくる。",
 "answers": [
 "ない",
 "無い"
@@ -15421,8 +15475,7 @@
 "answers": [
 "なくす",
 "無くす",
-"亡くす",
-"失くす"
+"亡くす"
 ],
 "comment": "Lv.N5 [ichi1]: なくす • to lose something; to get rid of; to lose someone (wife, child, etc.)\n「幼時に両親を－・す」"
 },
@@ -15523,8 +15576,7 @@
 {
 "question": "（形動）\n①光があかるくて，物の様子がはっきりしているさま。あかるい。\n②事柄が，だれにもわかるようにはっきりしているさま。疑いをはさむ余地のないさま。明白なさま。\n③晴れやかで，快活なさま。明朗。\n④道理にあかるいさま。物事をよく理解しているさま。賢明。\n⑤目がよく見えるさま。",
 "answers": [
-"明らか",
-"顕らか"
+"明らか"
 ],
 "comment": "Lv.N3 [ichi1/news1]: あきらか • obvious; evident; clear; plain\n「事件の全貌が－になる」"
 },
@@ -15589,13 +15641,12 @@
 {
 "question": "①アオイ科ワタ属の植物の総称。一年草または木本性植物で，約40種がある。繊維作物として熱帯から温帯にかけて広く栽培される。葉は掌状に三～五裂。花は大形の五弁花で，黄・白・紅など。果実は卵形で，熟すと裂開して，長い綿毛のある種子を出す。綿毛は，紡績原料や脱脂綿・詰め綿の原料にされる。種子からは綿実油。",
 "answers": [
-"ワタ",
 "わた",
 "綿",
 "棉",
 "草綿"
 ],
-"comment": "Lv.N3 [ichi1/news1]: わた/ワタ • cotton plant (Gossypium spp.); batting; wadding; padding"
+"comment": "Lv.N3 [ichi1/news1]: わた • cotton plant (Gossypium spp.); batting; wadding; padding"
 },
 {
 "question": "（名・形動）\n①手数がかかってわずらわしい・こと（さま）。\n②世話。厄介。\n③見苦しいこと。見るに値しないこと。また，そのさま。",
@@ -15641,10 +15692,10 @@
 "comment": "Lv.N5 [ichi1/news1]: き • tree; shrub; bush; wood; timber\n「－の枝」"
 },
 {
-"question": "①綿（わた）の種子からとった繊維。衣料用として広く用いられる。綿花。\n②木綿糸。また，それで織った布。",
+"question": "①パンヤノキの異名。\n②（「まわた」に対して）もめんの綿。綿花。",
 "answers": [
-"きわた",
 "もめん",
+"きわた",
 "木綿",
 "木棉"
 ],
@@ -16168,8 +16219,7 @@
 "question": "（名）スル \n万一に備えて警戒・注意すること。気をつけること。",
 "answers": [
 "用心",
-"要心",
-"要慎"
+"要心"
 ],
 "comment": "Lv.N3 [ichi1]: ようじん • care; precaution; guarding; caution\n「火事を起こさぬよう－する」"
 },
@@ -16183,14 +16233,13 @@
 {
 "question": "①「郵便葉書」の略。\n②紙片などに書いた覚え書きや書類。",
 "answers": [
-"ハガキ",
 "はがき",
 "葉書",
 "葉書き",
 "端書",
 "端書き"
 ],
-"comment": "Lv.N5 [ichi1]: はがき/ハガキ • postcard; memo; note; card"
+"comment": "Lv.N5 [ichi1]: はがき • postcard; memo; note; card"
 },
 {
 "question": "（副）\n前に述べた事柄を、趣旨をかえずに別の言葉で短くまとめようという気持ちを表す。要約して言えば。かいつまんで言えば。つまり。",
@@ -16281,8 +16330,7 @@
 {
 "question": "（動カ変）\n①話し手のいる方へ近づく。\n②動作者が，話し手とともに移動する。目的地に自分を置いた気持ちでいう場合には「行く」で表現することも可能。\n③物が運ばれて，話し手のもとに到達する。\n④風・光などが話し手の方に到達・接近する。また，地震・雨などの自然現象が話し手のいる場所に起こる。\n⑤時間が経過して，その季節・時期・順番になる。\n⑥ある事態が出現する。\n⑦…がその由来・原因となっている。…のために生ずる。\n⑧ある特定の位置を占める。\n⑨病気・故障・劣化などの異常が肉体や物のある部分にあらわれる。\n⑩電気・電話・鉄道・水道などが話し手の方へ通じる。\n⑪ある知覚・感覚が生じる。\n⑫承知した。\n⑬あるものを話題にとりあげて示す。\n⑭立腹することを俗にいう。\n⑮ある人を慕う気持ちがおこる。\n⑯空腹になる。\n⑰（補助動詞）動詞の連用形またはこれに「て（で）」の付いた形に付いて，動作が進行し，また，事態が推移する意を表す。\n⑱行く。目的地を基準にしていう。",
 "answers": [
-"来る",
-"來る"
+"来る"
 ],
 "comment": "Lv.N5 [ichi1/news1]: くる • to come (spatially or temporally); to approach; to arrive; to come back; to do ... and come back; to come to be; to become; to get; to grow; to continue; to come from; to be caused by; to derive from; to come to (i.e. \"when it comes to spinach ...\")\n「こっちへこい」"
 },
@@ -16308,7 +16356,7 @@
 "comment": "Lv.N5 [ichi1/news1]: らいねん • next year"
 },
 {
-"question": "一：（動マ五［四］）\n①相手に、…してくれ、または…しないでくれと願って、それを相手に伝える。依頼する。\n②どう活動・処理すべきなのか知っている人に処理などを依頼する。\n③依存しうるだけの能力がそれにあると信じる。あてにする。\n④信じる。信用する。\n⑤主人・夫・主君としてよりかかる。\n⑥よその家を訪れて案内を請う。多く",
+"question": "一：（動マ五［四］）\n①相手に、…してくれ、または…しないでくれと願って、それを相手に伝える。依頼する。\n②どう活動・処理すべきなのか知っている人に処理などを依頼する。\n③依存しうるだけの能力がそれにあると信じる。あてにする。\n④信じる。信用する。\n⑤主人・夫・主君としてよりかかる。\n⑥よその家を訪れて案内を請う。",
 "answers": [
 "頼む",
 "恃む",
@@ -16581,7 +16629,7 @@
 "comment": "Lv.N5 [ichi1/news1]: みどり • green; greenery (esp. fresh verdure)\n「木々の－」"
 },
 {
-"question": "①樹木がたくさん群がって生えている所。樹木の群落。\n②物事が多く集まっている状態を林に見たてていう語。",
+"question": "①樹木がたくさん群がって生えている所。樹木の群落。「森」にくらべて，木々の密集の度合が小さく，小規模の群落をさすことが多い。\n②物事が多く集まっている状態を林に見たてていう語。",
 "answers": [
 "林"
 ],
@@ -16599,8 +16647,7 @@
 "question": "①家・場所などが並び続いて，相接すること。境を接していること。また，そういうもの。\n②隣の家。隣の家庭。",
 "answers": [
 "隣",
-"隣り",
-"鄰"
+"隣り"
 ],
 "comment": "Lv.N5 [ichi1/news1]: となり • neighbor (neighbour); next to (esp. living next door to)\n「－の人」"
 },
@@ -16656,7 +16703,7 @@
 "comment": "Lv.N4 [ichi1/news1]: れいぼう • cooling; air-conditioning\n「館内を－する」"
 },
 {
-"question": "①社会生活をする上で、円滑な人間関係や秩序を維持するために必要な倫理的規範の総称で、人として従うべき行動様式全般を包括する。祭祀さいし儀礼、葬喪儀礼、出処進退の作法、制度、文物などで、儒教では経書けいしよの「周礼しゆらい」「儀礼ぎらい」「礼記らいき」に規定があり、倫理的規範として最も重視した。\n②頭を下げて敬意を表す動作。お辞儀。\n③感謝の気持ちを表す言葉や金銭・贈り物。",
+"question": "①社会生活をする上で、円滑な人間関係や秩序を維持するために必要な倫理的規範の総称で、人として従うべき行動様式全般を包括する。祭祀さいし儀礼、葬喪儀礼、出処進退の作法、制度、文物などで、儒教では経書けいしよの「周礼しゆらい」「礼記らいき」に規定があり、倫理的規範として最も重視した。\n②頭を下げて敬意を表す動作。お辞儀。\n③感謝の気持ちを表す言葉や金銭・贈り物。",
 "answers": [
 "礼"
 ],
@@ -16672,12 +16719,11 @@
 {
 "question": "〘数〙\n①記数法で空位を表す。\n②被減数と減数が等しいときの差。ゼロ。",
 "answers": [
-"ゼロ",
-"ぜろ",
 "れい",
+"ぜろ",
 "零"
 ],
-"comment": "Lv.N5 [ichi1]: れい/ぜろ/ゼロ • zero; nought"
+"comment": "Lv.N5 [ichi1]: れい/ぜろ • zero; nought"
 },
 {
 "question": "①年齢。とし。\n②年のころ。年配。",
@@ -16709,7 +16755,7 @@
 "comment": "Lv.N3 [ichi1/news1]: れっしゃ • train (ordinary)\n「夜行－」"
 },
 {
-"question": "（動ラ五［四］）\n①ほかと比べて，価値・能力・程度などが及ばない。↔まさる\n②の意を表す。\n③身分・地位などが低い。\n④年月が後である。年が下である。",
+"question": "（動ラ五［四］）\n①ほかと比べて，価値・能力・程度などが及ばない。↔まさる\n②「…におとらず」の形で…と同様に，の意を表す。\n③身分・地位などが低い。\n④年月が後である。年が下である。",
 "answers": [
 "劣る"
 ],
@@ -16718,9 +16764,7 @@
 {
 "question": "①特定の異性に強く惹（ひ）かれ，会いたい，ひとりじめにしたい，一緒になりたいと思う気持ち。\n②古くは，異性に限らず，植物・土地・古都・季節・過去の時など，目の前にない対象を慕う心にいう。",
 "answers": [
-"恋",
-"戀",
-"孤悲"
+"恋"
 ],
 "comment": "Lv.N3 [ichi1/news1]: こい • (romantic) love\n「－に落ちる」"
 },
@@ -16869,15 +16913,13 @@
 {
 "question": "（感）\n①強く感動したり，驚いたりしたときに発する語。\n②肯定・承諾の意を表す語。ええ。\n③人に呼びかける語。\n④あいづちを打ったり，生返事をしたりするときに発する語。",
 "answers": [
-"アア",
-"アー",
-"あー",
 "ああ",
+"あー",
 "嗚呼",
 "噫",
 "嗟"
 ],
-"comment": "Lv.N5 [spec1]: ああ/あー/アー/アア • Ah!; Oh!; Alas!; Yes; Indeed; That is correct; Hey!; Yo!; Uh huh; Yeah yeah; Right; Gotcha\n「－，いい気分だ」"
+"comment": "Lv.N5 [spec1]: ああ/あー • Ah!; Oh!; Alas!; Yes; Indeed; That is correct; Hey!; Yo!; Uh huh; Yeah yeah; Right; Gotcha\n「－，いい気分だ」"
 },
 {
 "question": "一：（代）\n不定称の指示代名詞。二つあるいはそれ以上ある物，場所，時などの中から一つを選ぶときに使う語。どれ。どちら。どっち。\n二：（副）\n①どんな成り行きになるとしても。どっちみち。どうせ。\n②そう遠くない将来において。そのうちに。",
@@ -16891,12 +16933,11 @@
 {
 "question": "人込みなどで，他人が身につけている金品を巧みに盗み取ること。また，その人。巾着（きんちやく）切り。ちぼ。",
 "answers": [
-"スリ",
 "すり",
 "掏摸",
 "掏児"
 ],
-"comment": "Lv.N4 [ichi1]: すり/スリ • pickpocket"
+"comment": "Lv.N4 [ichi1]: すり • pickpocket"
 },
 {
 "question": "（名・形動）スル \n①必要以上の金や物を使う・こと（さま）。\n②金・労力などを多くかけている・こと（さま）。\n③その人物の立場に比べておごっている・こと（さま）。",
@@ -16908,8 +16949,7 @@
 {
 "question": "（名）スル \n人を悪く言うこと。また，その言葉。わるくち。",
 "answers": [
-"悪口",
-"惡口"
+"悪口"
 ],
 "comment": "Lv.N3 [ichi1/news1]: あっこう/わるくち/わるぐち • abuse; insult; slander; evil speaking; bad mouth\n「－を浴びせる」"
 },
@@ -16921,15 +16961,15 @@
 "comment": "Lv.N3 [ichi1/news1]: いっか/いっけ • a family; a household; a home; one's family; whole family; (one's own) style; school; gang; (yazuka) family\n「－の主（あるじ）」"
 },
 {
-"question": "①一つの言葉。一語。\n②ちょっとした短い言葉。",
+"question": "（名）スル \n簡単な言葉。ひとこと。また，それをいうこと。いちごん。",
 "answers": [
 "一言",
 "ひと言"
 ],
-"comment": "Lv.N3 [ichi1/news1]: ひとこと/いちげん/いちごん • single word; a few words; brief comment\n「－も聞きもらさない」"
+"comment": "Lv.N3 [ichi1/news1]: ひとこと/いちげん/いちごん • single word; a few words; brief comment\n「－あってしかるべきだ」"
 },
 {
-"question": "きのうの前の日。いっさくじつ。おとつい。",
+"question": "昨日の前日。おととい。",
 "answers": [
 "一昨日"
 ],
@@ -16951,14 +16991,14 @@
 "comment": "Lv.N3 [ichi1/news1]: いちじ • one o'clock; once; at one time; formerly; before; for a time; for a while; for the time being; for the present; for the moment; temporarily; a time; one time; once\n「出発を－見合わせる」"
 },
 {
-"question": "一（名）\n①一個の人。いちにん。\n②その人しかいないこと。相手や仲間がいないこと。\n③独身であること。ひとりみ。\n④他人の手を借りずにいること。他人の助けがないこと。\n二（副）\n①（下に打ち消しの語を伴って）そのことだけに限られるさま。ただ単に。\n②ひとりだけで。\n③ひとりでに。自然に。",
+"question": "①ひとりの人。ひとり。\n②右大臣の異名。",
 "answers": [
 "一人",
 "独り",
 "１人",
 "1人"
 ],
-"comment": "Lv.N5 [ichi1/news1]: ひとり/いちにん • one person; alone; unmarried; solitary\n「－の男が進み出る」"
+"comment": "Lv.N5 [ichi1/news1]: ひとり/いちにん • one person; alone; unmarried; solitary"
 },
 {
 "question": "①生まれてから死ぬまで。生涯（しようがい）。副詞的にも用いる。\n②やっと命が助かること。\n③同じ親から生まれること。",
@@ -16980,25 +17020,20 @@
 "comment": "Lv.N4 [news1]: いちど/ひとたび • once; one time; on one occasion; temporarily; for a moment; one degree; one tone; one musical interval\n「前に－見たことがある」"
 },
 {
-"question": "①午前零時から午後12時までの称。\n②ある時刻から次の日の同一時刻までの24時間。一昼夜。\n③朝から晩まで。終日。\n④ある日。\n⑤月の最初の日。ついたち。\n⑥短い期間。",
+"question": "①いちにち。ひとひ。\n②月のはじめの日。ついたち。\n③ある日。ある一日。",
 "answers": [
 "一日",
 "１日",
 "1日"
 ],
-"comment": "Lv.N5 [ichi1/spec1]: いちにち/いちじつ • one day; first day of the month\n「－早く到着する」"
+"comment": "Lv.N5 [ichi1/spec1]: いちにち/いちじつ • one day; first day of the month\n「四月－」"
 },
 {
 "question": "（名・形動）\nいつまでも限りなく続くこと。時間の果てがないこと。また，そのさま。とこしえ。永遠。",
 "answers": [
-"永久",
-"常",
-"長しえ",
-"常しえ",
-"永え",
-"永"
+"永久"
 ],
-"comment": "Lv.N3 [ichi1/news1]: えいきゅう/とこしえ/とわ • eternity; permanence; perpetuity; Eikyū era (1113.7.13-1118.4.3)\n「－不変」"
+"comment": "Lv.N3 [ichi1/news1]: えいきゅう • eternity; permanence; perpetuity; Eikyū era (1113.7.13-1118.4.3)\n「－不変」"
 },
 {
 "question": "①しょっぱい味のする白い結晶。塩化ナトリウムを主成分とする。人体の生理上不可欠のもので，工業的にも重要物質。食塩。\n②塩の味。しおけ。\n③（比喩的に）世の中の苦労。",
@@ -17008,11 +17043,11 @@
 "comment": "Lv.N5 [ichi1/news1]: しお/えん • salt (i.e. sodium chloride); common salt; table salt; salt (e.g. sodium chloride, calcium sulfate, etc.); hardship; toil; trouble; saltiness\n「－がきつい」"
 },
 {
-"question": "（名・形動）\n①黄（き）の色。黄。また，そのさま。\n②大判・小判の色。山吹色。",
+"question": "きいろ。こうしょく。",
 "answers": [
 "黄色"
 ],
-"comment": "Lv.N5 [ichi1/news1]: きいろ/こうしょく/おうしょく • yellow; amber\n「－な蝶（ちよう）」"
+"comment": "Lv.N5 [ichi1/news1]: きいろ/こうしょく/おうしょく • yellow; amber"
 },
 {
 "question": "①空気・水などの振動によって聴覚に引き起こされた感覚の内容。また，その原因となる空気などの振動。音波。人間は振動数20～20000ヘルツくらいの音波を音として感じる。音の性質は強さ・高低・音色の三要素で表すことができる。\n②うわさ。評判。\n③たより。おとずれ。\n④返事。応答。",
@@ -17039,8 +17074,8 @@
 {
 "question": "（副）\n理由や原因などを尋ねたり自問したりするのに用いる語。どうして。どういうわけで。なにゆえ。",
 "answers": [
-"なにゆえ",
 "なぜ",
+"なにゆえ",
 "何故",
 "何ゆえ"
 ],
@@ -17049,40 +17084,37 @@
 {
 "question": "（代）\n不定称の指示代名詞。\n①不明の場所やきまっていない場所などを指し示すのに用いる。どの場所。\n②所属しているところなどが不明，不定の時に用いる。\n③どのような所。いずれの場所。",
 "answers": [
-"いずこ",
 "どこ",
+"いずこ",
 "何処",
-"何所",
-"何處"
+"何所"
 ],
 "comment": "Lv.N5 [ichi1]: どこ/いずこ • where; what place; how much (long, far); what extent\n「会議は－でするのか」"
 },
 {
 "question": "（形）\n①深い愛情をもって大切に扱ってやりたい気持ちである。\n②愛らしい魅力をもっている。主に，若い女性や子供・小動物などに対して使う。\n③幼さが感じられてほほえましい。小さく愛らしい。\n④殊勝なところがあって，愛すべきである。\n⑤かわいそうだ。いたわしい。ふびんだ。",
 "answers": [
-"カワイい",
-"カワイイ",
 "かわいい",
 "可愛い",
 "可愛ゆい"
 ],
-"comment": "Lv.N5 [ichi1]: かわいい/カワイイ/カワイい • cute; adorable; charming; lovely; pretty; dear; precious; darling; pet; cute little; tiny\n「わたしの－・い息子へ」"
+"comment": "Lv.N5 [ichi1]: かわいい • cute; adorable; charming; lovely; pretty; dear; precious; darling; pet; cute little; tiny\n「わたしの－・い息子へ」"
 },
 {
-"question": "一：（名）\n①仕事や義務に拘束されない時間。自由な時間。\n②休み。休暇。\n③主従などの関係を絶つこと。いとま。\n④何かをするのに必要な時間。\n⑤動作や状態の絶え間。時間的な切れ目。\n二：（形動）\n仕事や義務に拘束されず，自由にできる時間があるさま。するべきことがないさま。",
+"question": "①仕事のない時。時間の余裕。ひま。\n②休むこと。休暇。\n③職務をやめること。また，やめさせること。ひま。\n④別れて去ること。辞去。\n⑤離縁。\n⑥すき間。ひま。\n⑦喪に服してひきこもること。",
 "answers": [
 "暇",
 "閑",
 "遑"
 ],
-"comment": "Lv.N5 [ichi1/news1]: ひま/いとま/ヒマ • spare time; free time; leisure; time (e.g. time it takes to do something); time off; day off; vacation; holiday; leave; quitting (one's job); firing someone; divorcing (one's spouse); (of one's time) free; (of one's business) slow; leaving; departing\n「－をもてあます」"
+"comment": "Lv.N5 [ichi1/news1]: ひま/いとま • spare time; free time; leisure; time (e.g. time it takes to do something); time off; day off; vacation; holiday; leave; quitting (one's job); firing someone; divorcing (one's spouse); (of one's time) free; (of one's business) slow; leaving; departing\n「応接に－がない」"
 },
 {
-"question": "①不完全な視力を調整したり，強い光線を防ぐために，目につけるレンズや色ガラスなどを用いた器具。がんきょう。\n②物を見て，善悪などを見分けること。また，その力。\n③望遠鏡。とおめがね。\n④江戸時代の女の髪形の一。髻（もとどり）を二分して二つの輪をつくったもの。",
+"question": "めがね。",
 "answers": [
 "眼鏡"
 ],
-"comment": "Lv.N5 [ichi1/news1]: めがね/がんきょう/メガネ • spectacles; glasses; judgement; discrimination; discernment; insight"
+"comment": "Lv.N5 [ichi1/news1]: めがね/がんきょう • spectacles; glasses; judgement; discrimination; discernment; insight"
 },
 {
 "question": "（動ア上一）\n一：①人・動物がその場所に存在する。おる。\n②友人や敵などその人にかかわる人が存在する。\n③座る。腰をおろす。\n④人がある地位につく。\n⑤鳥・虫などがある物の上などにとまる。\n⑥雲・塵ちりなど、上方に広がりうるものが下方にとどまる。\n⑦怒りがおさまる。\n⑧怒りをしずめる。\n二：（補助動詞）\n①形容動詞の連用形「…で」を受け、…であるの意を表す。\n②打ち消しの「…ずに」「…ないで」を受けて、…しない状態の持続を表す。\n③動詞の連用形に助詞「て（で）」の付いた形を受ける。",
@@ -17093,7 +17125,7 @@
 "comment": "Lv.N5 [ichi1]: いる • to be (of animate objects); to exist; to stay; verb indicating continuing action or state (i.e. to be ..ing, to have been ..ing)\n「人のいない部屋」"
 },
 {
-"question": "（動ラ五）\n一：①人・動物が存在する。そこにある。また，そこにとどまっている。\n②座る。腰をおろす。\n③そのままの状態でいる。ずっとそこにいる。\n二：（補助動詞）\n①動詞の連用形，またそれに助詞荒れ放題に荒れている」「私はここで待って－・ります」「地下は駐車場になって－・ります」「先生はすでに知って－・られるようだ」「そんなことは聞かなくともわかって－・る」\n②動詞の連用形に付いて，自分の動作を卑下したり，他人の動作をさげすんだりする時に用いる。",
+"question": "（動ラ五）\n一：①人・動物が存在する。そこにある。また，そこにとどまっている。\n②座る。腰をおろす。\n③そのままの状態でいる。ずっとそこにいる。\n二：（補助動詞）\n①「テレビは今ではたいていの家で持って－・ります」\n②動詞の連用形に付いて，自分の動作を卑下したり，他人の動作をさげすんだりする時に用いる。",
 "answers": [
 "おる",
 "居る"
@@ -17143,19 +17175,17 @@
 {
 "question": "（動カ五［四］）\n「ゆく（行・往）（逝）」に同じ。",
 "answers": [
-"ゆく",
 "いく",
-"行く",
-"往く",
-"逝く"
+"ゆく",
+"行く"
 ],
 "comment": "Lv.N5 [ichi1]: いく/ゆく • to go; to move (in a direction or towards a specific location); to head (towards); to be transported (towards); to reach; to proceed; to take place; to pass through; to come and go; to walk; to die; to pass away; to do (in a specific way); to stream; to flow; to continue; to have an orgasm; to come; to cum; to trip; to get high; to have a drug-induced hallucination"
 },
 {
-"question": "①時間・時期を限定する語に付いて，だいたいその時であることを示す。その時あたり。時分。\n②時節。時期。文語的な言い方。\n③適当な時期。潮時。頃合い。\n④大きさ。規模。\n⑤程度。加減。\n⑥接尾語的に用いる。",
+"question": "①時間・時期を限定する語に付いて，だいたいその時であることを示す。その時あたり。時分。\n②時節。時期。文語的な言い方。\n③適当な時期。潮時。頃合い。\n④大きさ。規模。\n⑤程度。加減。\n⑥「ごろ」の形で他の語の下に付いて，接尾語的に用いる。",
 "answers": [
-"ごろ",
 "ころ",
+"ごろ",
 "頃",
 "比"
 ],
@@ -17231,7 +17261,7 @@
 "comment": "Lv.N5 [news1]: しちじゅう/ななじゅう • seventy"
 },
 {
-"question": "①日の数七つ。また，連続したその期間。\n②暦の月の七番目の日。",
+"question": "①「なのか①」に同じ。\n②「なのか②」に同じ。また特に，正月七日，七月七日。\n③子どもが生まれて七日目の日。お七夜。\n④人の死後，七日ごとに営む仏教の法事。また，その日。特に，最初の「初七日（しよなぬか）」と最後の「七七日（なななぬか）」。",
 "answers": [
 "七日",
 "７日",
@@ -17271,7 +17301,7 @@
 "瑕",
 "創"
 ],
-"comment": "Lv.N3 [ichi1/news1]: きず/キズ • wound; injury; cut; gash; bruise; scratch; scrape; scar; chip; crack; scratch; nick; flaw; defect; weakness; weak point; stain (on one's reputation); disgrace; dishonor; dishonour; (emotional) hurt; hurt feelings\n「－がうずく」"
+"comment": "Lv.N3 [ichi1/news1]: きず • wound; injury; cut; gash; bruise; scratch; scrape; scar; chip; crack; scratch; nick; flaw; defect; weakness; weak point; stain (on one's reputation); disgrace; dishonor; dishonour; (emotional) hurt; hurt feelings\n「－がうずく」"
 },
 {
 "question": "①商業を営む人。あきんど。\n②〘法〙商法上，自己の名をもって商行為を行うことを業とする者をいう。また，店舗などの設備により物品販売を業とする者，鉱業を営む者も商人とみなされる。",
@@ -17325,7 +17355,7 @@
 "comment": "Lv.N5 [ichi1]: まっすぐ • straight (ahead); direct; upright; erect; straightforward; honest; frank\n「－な線」"
 },
 {
-"question": "一：（名）\n①物の多少や順序を表す言葉。一、二、三の類。また、それを表す文字。\n②物の数量。\n③数量の多いこと。古語では多く\n④数えあげるほどに価値のあるもの。下に打ち消しの語を伴っていう場合が多い。\n⑤あるものを構成する、同類の仲間。\n⑥数を数える時に、しるしとして使う物。特に、勝負の点数を数える時の串など。\n二：（接頭）\n名詞に付いて、ありふれた、安っぽい、粗末な、などの意を表す。",
+"question": "一：（名）\n①物の多少や順序を表す言葉。一、二、三の類。また、それを表す文字。\n②物の数量。\n③数量の多いこと。\n④数えあげるほどに価値のあるもの。下に打ち消しの語を伴っていう場合が多い。\n⑤あるものを構成する、同類の仲間。\n⑥数を数える時に、しるしとして使う物。特に、勝負の点数を数える時の串など。\n二：（接頭）\n名詞に付いて、ありふれた、安っぽい、粗末な、などの意を表す。",
 "answers": [
 "数"
 ],
@@ -17346,11 +17376,11 @@
 "comment": "Lv.N3 [ichi1/news1]: ぜんこく • countrywide; nationwide; whole country; national"
 },
 {
-"question": "①「かわ（側）①」に同じ。\n②曲面をなすものの周囲，または周囲を包んでいるもの。\n③まわりの人。はた。\n④（名詞に付いて）\n㋐「かわ（側）④」に同じ。\n㋑対立するものの一方の立場であることを表す。\n㋒曲面をなすものの周囲，または周囲を包む意を表す。",
+"question": "一（名）\n①相対するものの一方の面。\n②対立するものの一方の立場。\n③列をなすもののそれぞれの列。\n④名詞の下に付いて，相対するものの一方の面であることを表す。\n二（接尾）\n助数詞。列を数えるのに用いる。列。",
 "answers": [
 "側"
 ],
-"comment": "Lv.N5 [ichi1]: がわ/かわ • side (of something, or taking someone's side); part; (watch) case\n「－がプラチナの時計」"
+"comment": "Lv.N5 [ichi1]: がわ/かわ • side (of something, or taking someone's side); part; (watch) case\n「南の－の斜面」"
 },
 {
 "question": "①自分以外の人。ほかの人。他者。\n②家族・親族以外の人。血のつながりのない人。\n③見ず知らずの人。親しくない人。\n④その事と関係ない人。当事者でない人。",
@@ -17380,13 +17410,12 @@
 "answers": [
 "値",
 "価",
-"直",
-"價"
+"直"
 ],
 "comment": "Lv.N3 [ichi1/news1]: あたい/ね • price; cost; value; worth; merit; value; count; number; variable (computer programming, programing)\n「－が高い」"
 },
 {
-"question": "朝から夕方までの明るい間。昼。",
+"question": "太陽の出ているあいだ。ひるま。日中。↔夜間",
 "answers": [
 "昼間"
 ],
@@ -17404,11 +17433,11 @@
 "comment": "Lv.N3 [ichi1/news1]: そそぐ • to pour (into); to sprinkle on (from above); to water (e.g. plants); to pour onto; to spray; to shed (tears); to concentrate one's energy (strength, attention, etc.) on; to devote to; to fix (one's eyes) on; to flow into (e.g. of a river); to run into; to drain into; to fall (of rain, snow); to pour down\n「東京湾に－・ぐ川」"
 },
 {
-"question": "①同じ親から生まれた年下の男。↔兄\n②妹の夫。あるいは妻や夫の弟①。義弟。\n③男女にかかわらず、年下のきょうだい。",
+"question": "一：（名）\n①兄から見たおとうと。また、姉から見たいもうと。↔兄え\n②末子。一番下の子。\n③「乙御前おとごぜ③」に同じ。\n二：（接頭）\n名詞に付く。\n①兄弟姉妹のうちで、年が若い、幼い、末の、などの意を表す。\n②若く美しい、かわいい、などの意を表す。",
 "answers": [
 "弟"
 ],
-"comment": "Lv.N5 [ichi1/news1]: おとうと/おと/てい • younger brother; little brother; kid brother; pupil; apprentice"
+"comment": "Lv.N5 [ichi1/news1]: おとうと/おと/てい • younger brother; little brother; kid brother; pupil; apprentice\n「－おじ」"
 },
 {
 "question": "一：（名）\n①あるものにとって，共存しえない存在。滅ぼさなければ自分の存在が危うくなるもの。かたき。\n②対等に張り合う相手。試合などの相手。\n③遊里で，客が遊女を，また遊女が客をさす語。相方（あいかた）。\n二：（代）\n三人称。あいつ。",
@@ -17456,10 +17485,10 @@
 "燈火",
 "ともし火"
 ],
-"comment": "Lv.N3 [ichi1/news1/spec2]: ひ/とうか/ともしび • light; lamp; torch\n「町の－が見える」"
+"comment": "Lv.N3 [ichi1/news1]: ひ/とうか/ともしび • light; lamp; torch\n「町の－が見える」"
 },
 {
-"question": "（副助）\n体言または体言に準ずるもの，文節や文などに接続する。多くの中から一つのものを例示するのが本来の用法である。\n①多くの事柄の中から，主なものを取りあげて\n②ある事物を特に取りあげて例示する。\n③引用文を受けて，大体このようなことを，の意を表す。現代語では此の世の事にはおぼえ侍らぬ－宣ひて／源氏若紫」",
+"question": "（副助）\n体言または体言に準ずるもの，文節や文などに接続する。多くの中から一つのものを例示するのが本来の用法である。\n①「雨や風－の被害がでています」\n②ある事物を特に取りあげて例示する。\n③引用文を受けて，大体このようなことを，の意を表す。",
 "answers": [
 "など",
 "等",
@@ -17475,13 +17504,13 @@
 "comment": "Lv.N5 [ichi1]: あたま/かしら • head; hair (on one's head); mind; brains; intellect; leader; chief; boss; captain; top; tip; beginning; start; head; person; top structural component of a kanji; pair\n「－をふる」"
 },
 {
-"question": "人の数が二であること。また、その数の人。両人。ににん。",
+"question": "ふたり。",
 "answers": [
 "二人",
 "２人",
 "2人"
 ],
-"comment": "Lv.N5 [ichi1/news1]: ふたり/ににん • two persons; two people; pair; couple\n「客が－来る」"
+"comment": "Lv.N5 [ichi1/news1]: ふたり/ににん • two persons; two people; pair; couple"
 },
 {
 "question": "我が国の国号。アジア大陸の東方，日本海を隔てて太平洋上にある。北海道・本州・四国・九州の四大島と，南西諸島・小笠原諸島などからなり，弧状を描きほぼ南北に連なる。国土の大部分は山地で，人口は河川下流の平野に集中する。面積37万8千平方キロメートル。正称，日本国。",
@@ -17533,7 +17562,7 @@
 "comment": "Lv.N5 [ichi1/news1]: はち/や • eight"
 },
 {
-"question": "「やつ（八）」に同じ。",
+"question": "①数の名。はち。八個。また，数の多いこと。やっつ。\n②八歳。やっつ。\n③昔の時刻の名。現在の午前と午後の二時頃。八つ時。やっつ。",
 "answers": [
 "八つ",
 "８つ",
@@ -17562,8 +17591,7 @@
 "answers": [
 "しな",
 "品",
-"科",
-"階"
+"科"
 ],
 "comment": "Lv.N3 [ichi1]: しな • article; item; thing; goods; stock; quality; flirtatiousness; coquetry\n「記念の－を贈る」"
 },
@@ -17591,8 +17619,7 @@
 {
 "question": "（動マ五［四］）\n①大きな布・紙などで全体を覆って中にいれる。くるむ。\n②周囲をとりかこむ。\n③ある雰囲気などが充満したりただよったりする。\n④隠して人に知られないようにする。ひめる。\n⑤慶弔や謝礼などのお金をふくろや紙に入れて人にわたす。\n⑥堤を築いて水を防ぐ。",
 "answers": [
-"包む",
-"裹む"
+"包む"
 ],
 "comment": "Lv.N4 [ichi1/news1]: つつむ • to wrap up; to tuck in; to pack; to do up; to cover with; to dress in; to conceal; to hide; to be engulfed in; to be enveloped by\n「箱を風呂敷に－・む」"
 },
@@ -17629,11 +17656,11 @@
 "comment": "Lv.N3 [ichi1]: ほお/ほほ • cheek (of face)"
 },
 {
-"question": "どの月も。まいげつ。",
+"question": "月ごと。まいつき。月々。",
 "answers": [
 "毎月"
 ],
-"comment": "Lv.N5 [ichi1/news1]: まいつき/まいげつ • every month; each month; monthly\n「－一回集まる」"
+"comment": "Lv.N5 [ichi1/news1]: まいつき/まいげつ • every month; each month; monthly"
 },
 {
 "question": "どの年も。年ごと。まいねん。",
@@ -17645,8 +17672,7 @@
 {
 "question": "数の単位。千の10倍。また，数の多いこと。よろず。",
 "answers": [
-"万",
-"萬"
+"万"
 ],
 "comment": "Lv.N5 [ichi1]: まん/よろず • 10,000; ten thousand; myriad; everything; all; various"
 },
@@ -17672,14 +17698,13 @@
 "comment": "Lv.N3 [ichi1]: おもて/おも • face; surface; mask (esp. a noh or kyogen mask)\n「－を伏せる」"
 },
 {
-"question": "①顔。おもて。\n②物の表面。\n③名詞の下に付いて複合語として用いられ，そういう顔をしている，そういう様子である意を表す。相手をののしる気持ちを込めていう語。\n④ほとり。あたり。かたわら。\n⑤ほお。",
+"question": "①顔。おもて。「顔」よりもぞんざいな言い方。\n②物の表面。\n③名詞の下に付いて複合語として用いられ，そういう顔をしている，そういう様子である意を表す。相手をののしる気持ちを込めていう語。\n④ほとり。あたり。かたわら。\n⑤ほお。",
 "answers": [
-"ツラ",
 "つら",
 "面",
 "頬"
 ],
-"comment": "Lv.N3 [ichi1/news1]: つら/ツラ • face; mug; surface; cheek meat; cheek; cheeks; surrounding area\n「そんなことをいうやつの－が見たい」"
+"comment": "Lv.N3 [ichi1/news1]: つら • face; mug; surface; cheek meat; cheek; cheeks; surrounding area\n「そんなことをいうやつの－が見たい」"
 },
 {
 "question": "一：（名）\n①顔。つら。また、顔立ち。\n②顔につけるもの。\n③顔を合わせること。向き合うこと。\n④外から見える、物の外側の（平らな）部分。\n⑤数学で、立体とその周囲の空間との境。平面と曲面との総称。\n⑥事柄のそれぞれの領域。\n⑦ある方面。ある部面。\n⑧材の角かどを削り取ったときにできる部分。柱や建具の桟さんなどに用いる。切り面・唐戸面・几帳面きちようめん二など。\n二：（接尾）\n助数詞。平たい物を数えるのに用いる。",
@@ -17705,19 +17730,18 @@
 {
 "question": "一：（名）\n①②ある事の程度がはなはだしいために別の事態を引き起こすこと。\n二：（形動）\n①程度がはなはだしいさま。並はずれているさま。\n②程度がはなはだしくひどいさま。あんまり。\n三：（副）\n①程度がはなはだしいさま。常識や予想を超えているさま。あんまり。\n②（下に打ち消しの語を伴って）程度が予想ほどではないさま。さほど。大して。あんまり。\n四：（接尾）\n①数量を表す語に付いて，それより幾分多いことを表す。\n②数詞と数詞の間に入れて用いて，あとにくる数だけ余分に加わることを表す。",
 "answers": [
-"あんまり",
 "あまり",
-"余り",
-"餘り"
+"あんまり",
+"余り"
 ],
 "comment": "Lv.N5 [ichi1/news1]: あまり/あんまり • remainder; rest; balance; remains; scraps; residue; remnant; not very (with negative sentence); not much; surplus; excess; fullness; too much; more than; over\n「三人で分けると－が出る」"
 },
 {
-"question": "①雲と雲との間，あるいは雲と大地との間の放電によって，発光と音響を発生する自然現象。かんなり。かむなり。いかずち。",
+"question": "①かみなり。なるかみ。",
 "answers": [
 "雷"
 ],
-"comment": "Lv.N3 [ichi1/news1]: かみなり/いかずち/らい • lightning; thunder; thunderbolt; god of thunder; god of lightning; anger; fit of anger\n「先生の－が落ちた」"
+"comment": "Lv.N3 [ichi1/news1]: かみなり/いかずち/らい • lightning; thunder; thunderbolt; god of thunder; god of lightning; anger; fit of anger"
 },
 {
 "question": "（名）スル \n①ある現象が，一時的に世間に広まること。特に，ある型の服装・言葉あるいは思想・行動様式などがもてはやされて，一時的に広く世間で用い行われること。はやり。\n②ある病気が，短期間のうちに世間に広がること。\n③俳諧で，時代とともに絶えず変わり，新しくなるもの。",
@@ -17744,13 +17768,23 @@
 "comment": "Lv.N5 [ichi1/news1]: ろく/む/むう • six"
 },
 {
-"question": "「むつ」の促音添加。六個または六歳。",
+"question": "①ろく。むっつ。物の数を数えるときに使う。\n②六歳。むっつ。\n③昔の時刻の名。夜と昼の境目，すなわち卯（う）の刻（現在の午前六時頃）および酉（とり）の刻（現在の午後六時頃）。六つ時。",
 "answers": [
 "六つ",
 "６つ",
 "6つ"
 ],
-"comment": "Lv.N5 [ichi1]: むっつ/むつ • six"
+"comment": "Lv.N5 [ichi1]: むっつ/むつ • six\n「明け－」"
+},
+{
+"question": "①成り行きに従うこと。他のものに任せ従うこと。\n②思いどおりであること。\n③元のとおりで，変えてないこと。そっくりであること。\n④状態が続いていること。一つの動作・作用が終わり，それに続くはずの動作・作用が始まらないこと。\n⑤成り行きにまかせて，結果に頓着しないこと。どうなってもよいこと。ままよ。\n⑥ある理由によってそのような事態になったこと。\n⑦書物の校訂などで，原本どおりであること。",
+"answers": [
+"まま",
+"まんま",
+"儘",
+"侭"
+],
+"comment": "Lv.N4 [ichi1]: まま/まんま • as it is; as one likes; because; as; condition; state; sic; sic erat scriptum; indicates that the quoted matter has been transcribed exactly as found in the source text\n「誘われる－，ついて来た」"
 },
 {
 "question": "一（名）\n①物を入れておく器。多くは直方体で蓋（ふた）が付く。\n②列車の車両。\n③三味線を入れる物。また，三味線。また，三味線を持って芸者に従って行く男や芸者をもいう。\n④得意にしている物事。箱入り。\n⑤厠（かわや）に置いて大便を受けるもの。しのはこ。また，大便。\n⑥挟み箱。\n⑦「箱入り娘」の略。\n二（接尾）\n助数詞。一①の形をしたもの，あるいは，それに入れたものを数えるのに用いる。",
@@ -17762,7 +17796,7 @@
 "筐",
 "凾"
 ],
-"comment": "Lv.N5 [ichi1/news1]: はこ/ハコ • box; case; chest; package; pack; crate; car (of a train, etc.); shamisen case; shamisen; public building; community building; man who carries a geisha's shamisen; receptacle for human waste; feces (faeces); counter for boxes (or boxed objects)\n「どの－も満員だ」"
+"comment": "Lv.N5 [ichi1/news1]: はこ • box; case; chest; package; pack; crate; car (of a train, etc.); shamisen case; shamisen; public building; community building; man who carries a geisha's shamisen; receptacle for human waste; feces (faeces); counter for boxes (or boxed objects)\n「どの－も満員だ」"
 },
 {
 "question": "①明るい光。光線。\n②ともしび。灯火。\n③疑いを晴らす証拠。あかし。\n④ある期間が終わること。特に，諒闇（りようあん）などがあけること。あけ。",
@@ -17771,8 +17805,7 @@
 "明り",
 "灯り",
 "灯",
-"灯かり",
-"灯火"
+"灯かり"
 ],
 "comment": "Lv.N3 [ichi1/news1/spec1]: あかり • light; illumination; glow; gleam; lamp; light\n「月の－」"
 },
@@ -17841,13 +17874,12 @@
 {
 "question": "（名）スル \n書いたものを見ないでそらで言えるように覚えこむこと。",
 "answers": [
-"暗記",
-"諳記"
+"暗記"
 ],
 "comment": "Lv.N3 [ichi1]: あんき • memorization; memorisation; learning by heart\n「公式を－する」"
 },
 {
-"question": "（動ワ五［ハ四］）\n❶声を出して単語や文を発する。\n①何らかの音・単語を発する。\n②事実や考えを表出する。告げる。\n③人が，何かの言葉を口から発する。\n④動物や物が声や音を発する。\n❷音声または文字に書いた文章によって考えや事柄を表出する。\n①自分の考え・判断や事実の指摘を述べる。\n②命令したり指令したりする。\n③ある人に対して…を表明する。\n④人や物を…という名で呼ぶ。\n⑤（評価を表す形容詞・形容動詞の連用形に付いて）あるものを…であると評価し，それを表明する。\n⑥…のようなことを言い表す。\n❸「言う❶❷」の，実際に話したり書いたりするという具体的な動作性の弱まった用法。\n①世間の多くの人が…ということを述べるの意を表す。\n②ある人・物の資格・性格などを…であると認定し，そう表現するという意を表す。\n③名は…であるということを表す。\n④…を話題として取り上げる。…に言及する。\n⑤上下に同じ名詞を置いて，\n❹これから転じた「…っていう」「…って」の形も並び行われる。仮名で書くのが普通。\n①話の内容が伝聞に基づくことを表す。…と聞く。…するそうだ。…だそうだ。\n②下にくる語の内容を具体的に説明・限定する意を表す。\n③提示する語を強調して示す。\n④（副詞「こう」「そう」「ああ」「どう」に「いう」「いった」が付いて）…のような，の意の連体修飾句をつくる。\n⑤指示代名詞を「という」「といった」「といって」などで受ける。\n⑥「確かに…ではあるがしかし…」「…したが，しかし…」などの意を表す。接続詞的にも用いられる。\n⑦（接続助詞大学を出たからと－・ってすぐに就職できたわけではない」\n⑧大いに…だ，大いに…した，などの意を表す。\n⑨接続詞的に用いて，ある事態を前にして，それを受け入れたくないが，受け入れないのも具合が悪いという気持ちを表す。\n❺（手紙・歌などで）愛情を告げる。求愛する。",
+"question": "（動ワ五［ハ四］）\n❶声を出して単語や文を発する。\n①何らかの音・単語を発する。\n②事実や考えを表出する。告げる。\n③人が，何かの言葉を口から発する。\n④動物や物が声や音を発する。\n❷音声または文字に書いた文章によって考えや事柄を表出する。\n①自分の考え・判断や事実の指摘を述べる。\n②命令したり指令したりする。\n③ある人に対して…を表明する。\n④人や物を…という名で呼ぶ。\n⑤（評価を表す形容詞・形容動詞の連用形に付いて）あるものを…であると評価し，それを表明する。\n⑥…のようなことを言い表す。\n❸「言う❶❷」の，実際に話したり書いたりするという具体的な動作性の弱まった用法。\n①世間の多くの人が…ということを述べるの意を表す。\n②ある人・物の資格・性格などを…であると認定し，そう表現するという意を表す。\n③名は…であるということを表す。\n④…を話題として取り上げる。…に言及する。\n⑤上下に同じ名詞を置いて，\n❹「言う❸」よりもさらに動作性のなくなった用法。仮名で書くのが普通。\n①話の内容が伝聞に基づくことを表す。…と聞く。…するそうだ。…だそうだ。\n②下にくる語の内容を具体的に説明・限定する意を表す。\n③提示する語を強調して示す。\n④（副詞「こう」「どう」に「いう」「いった」が付いて）…のような，の意の連体修飾句をつくる。\n⑤指示代名詞を「という」「といって」などで受ける。\n⑥「確かに…ではあるがしかし…」「…したが，しかし…」などの意を表す。接続詞的にも用いられる。\n⑦「当時は，大学を出たからと－・ってすぐに就職できたわけではない」\n⑧大いに…だ，大いに…した，などの意を表す。\n⑨接続詞的に用いて，ある事態を前にして，それを受け入れたくないが，受け入れないのも具合が悪いという気持ちを表す。\n❺（手紙・歌などで）愛情を告げる。求愛する。",
 "answers": [
 "言う",
 "云う",
@@ -17856,7 +17888,7 @@
 "comment": "Lv.N5 [ichi1/news1]: いう/ゆう • to say; to utter; to declare; to name; to call; to go (e.g. \"the alarm went ping\"); to make a noise\n「『キャーッ』と－・って倒れた」"
 },
 {
-"question": "（動カ五［四］）\n①頭の上にのせてもつ。現代では比喩的な使い方が多い。\n②「もらう」の謙譲語。目上の人から金品をもらうことや恩恵となるような動作を受けることを，受け手を低めていう言い方。頂戴する。\n③「食べる」「飲む」の謙譲語・丁寧語。\n④（補助動詞）\n㋐他人から恩恵となるような動作を受ける意を表す。ⓐその動作が動作者の意志に基づく場合。\n㋑他人にその動作をしてもらう意を表す。ⓐその動作が動作者の意志に基づく場合。\n㋒相手に自分がしようとする動作についての許しを願う謙譲表現。",
+"question": "（動カ五［四］）\n①頭の上にのせてもつ。現代では比喩的な使い方が多い。\n②「もらう」の謙譲語。目上の人から金品をもらうことや恩恵となるような動作を受けることを，受け手を低めていう言い方。頂戴する。\n③「食べる」「飲む」の謙譲語・丁寧語。\n④（補助動詞）\n㋐他人から恩恵となるような動作を受ける意を表す。ⓐその動作が動作者の意志に基づく場合。ⓑその動作が受け手の意志に基づく場合。\n㋑他人にその動作をしてもらう意を表す。ⓐその動作が動作者の意志に基づく場合。ⓑその動作が受け手の意志に基づく場合。\n㋒相手に自分がしようとする動作についての許しを願う謙譲表現。",
 "answers": [
 "いただく",
 "頂く",
@@ -17887,7 +17919,7 @@
 "厭",
 "厭や"
 ],
-"comment": "Lv.N5 [ichi1/news1/spec1]: いや/や/イヤ • disagreeable; detestable; unpleasant; reluctant\n「－になる」"
+"comment": "Lv.N5 [ichi1/news1/spec1]: いや/や • disagreeable; detestable; unpleasant; reluctant\n「－になる」"
 },
 {
 "question": "一：（形動）\n種類の多いさま。さまざま。\n二：（副）\nさまざまに。あれこれと。\n三：（名）\n①さまざまの色。多くの色。\n②襲を重ねる。",
@@ -17937,9 +17969,7 @@
 {
 "question": "（動バ五［四］）\n①いくつかのもののうちで，条件にかなうものを決める。また，決めて抜き出す。よる。選択する。\n②編集して書物にまとめる。あむ。\n③（多く打ち消しを伴って）区別する。",
 "answers": [
-"選ぶ",
-"撰ぶ",
-"択ぶ"
+"選ぶ"
 ],
 "comment": "Lv.N4 [ichi1/news1]: えらぶ • to choose; to select\n「勝つためには手段を－・ばない」"
 },
@@ -18027,8 +18057,7 @@
 "恐れる",
 "怖れる",
 "畏れる",
-"懼れる",
-"惧れる"
+"懼れる"
 ],
 "comment": "Lv.N3 [ichi1/news1]: おそれる • to fear; to be afraid of"
 },
@@ -18151,7 +18180,7 @@
 "格好",
 "恰好"
 ],
-"comment": "Lv.N4 [ichi1/news1]: かっこう/かっこ/カッコ • shape; form; figure; posture; pose; appearance; state; situation; suitable; fit; reasonable; about\n「変な－の帽子」"
+"comment": "Lv.N4 [ichi1/news1]: かっこう/かっこ • shape; form; figure; posture; pose; appearance; state; situation; suitable; fit; reasonable; about\n「変な－の帽子」"
 },
 {
 "question": "①いくつかに分けた区分。個々の項目。\n②学校で習う個々の学課。",
@@ -18192,9 +18221,7 @@
 "question": "（動ア下一）\n①音や声が耳で感じられる。\n②広く知れわたる。評判になる。\n③話が，ある人にまで伝わる。\n④ある意味に解釈される。理解される。\n⑤お手紙を差し上げる。\n⑥名前あるいは地位などを…とお呼びする。…と申し上げる。",
 "answers": [
 "聞こえる",
-"聞える",
-"聴こえる",
-"聴える"
+"聞える"
 ],
 "comment": "Lv.N4 [ichi1]: きこえる • to be heard; to be audible; to be said to be; to be reputed\n「雷鳴が－・える」"
 },
@@ -18207,7 +18234,7 @@
 "comment": "Lv.N3 [ichi1/news1]: きふ • contribution; donation\n「母校に－する」"
 },
 {
-"question": "（動ラ五［四］）\n①結果・結論が出て，変わらない状態になる。さだまる。決定する。\n②いつも変わらないでいる。一定している。\n③きっと…する，必ず…になるという，話し手の確信・判断を表す。\n④歌舞伎などで，演技を一瞬とめて形が整う。\n⑤動作・服装などが改まって，形が整った状態になる。かっこうがつく。\n⑥しかけた技がうまくかかる。思いどおりの結果を得て，勝負がつく。\n⑦男女の仲がうまく成立する。",
+"question": "（動ラ五［四］）\n①結果・結論が出て，変わらない状態になる。さだまる。決定する。\n②いつも変わらないでいる。一定している。\n③「にきまっている」の形で，きっと…する，必ず…になるという，話し手の確信・判断を表す。\n④歌舞伎などで，演技を一瞬とめて形が整う。\n⑤動作・服装などが改まって，形が整った状態になる。かっこうがつく。\n⑥しかけた技がうまくかかる。思いどおりの結果を得て，勝負がつく。\n⑦男女の仲がうまく成立する。",
 "answers": [
 "決まる",
 "決る",
@@ -18234,28 +18261,24 @@
 {
 "question": "（名）スル \nある目的に向かって力を合わせること。",
 "answers": [
-"協力",
-"共力"
+"協力"
 ],
 "comment": "Lv.N3 [ichi1/news1]: きょうりょく • cooperation; collaboration\n「事業に－する」"
 },
 {
 "question": "（形動）\n①目に見て美しく心地よいさま。美麗。\n②耳に聞いて美しく心地よいさま。\n③よごれがなくさっぱりしているさま。清潔。\n④やましい点のないさま。けがれのないさま。潔白。\n⑤男女間の肉体的交渉がないさま。清純。純潔。\n⑥きちんと整っているさま。整然。\n⑦残りなく事が行われるさま。すっかり。",
 "answers": [
-"キレイ",
 "きれい",
 "綺麗",
-"奇麗",
-"暉麗"
+"奇麗"
 ],
-"comment": "Lv.N5 [spec1/ichi1]: きれい/キレイ • pretty; lovely; beautiful; fair; clean; clear; pure; tidy; neat; completely; entirely\n「－な景色」"
+"comment": "Lv.N5 [spec1/ichi1]: きれい • pretty; lovely; beautiful; fair; clean; clear; pure; tidy; neat; completely; entirely\n「－な景色」"
 },
 {
 "question": "（動ワ五［ハ四］）\n①食べ物をかんでのみ込む。食べる。\n②生活をする。暮らす。生きていく。\n③かみつく。また，虫などがさす。\n④激しい態度で相手にせまる。\n⑤相手の勢力・領分をおかす。くいこむ。\n⑥上位の者を負かしたり，立場をおびやかしたりする。\n⑦時間・費用などを消費する。\n⑧ありがたくない事を身に受ける。こうむる。\n⑨人をばかにする。\n⑩口にくわえる。",
 "answers": [
 "食う",
-"喰う",
-"啖う"
+"喰う"
 ],
 "comment": "Lv.N3 [ichi1]: くう • to eat; to live; to make a living; to survive; to bite; to sting (as insects do); to tease; to torment; to taunt; to make light of; to make fun of; to encroach on; to eat into; to consume; to defeat a superior; to threaten a position; to consume time and-or resources; to receive something (usu. an unfavourable event); to have sexual relations with a woman, esp. for the first time\n「飯（めし）を－・う」"
 },
@@ -18263,21 +18286,19 @@
 "question": "①一つの政府に治められている地域。国家。国土。\n②地域。地方。\n③（地方自治体に対して）中央政府。\n④古代から近世に至る日本の行政単位の一。大化の改新の国郡制によって定められ，明治維新後郡県制に変更された。\n⑤自分の生まれ育った所。故郷。郷里。\n⑥任国。領国。知行所。\n⑦任国を治めること。国務。\n⑧（天に対して）地。大地。\n⑨国の統治者。天皇の位。また，その政務。\n⑩国④ごとにおかれた地方行政府。\n⑪国府。",
 "answers": [
 "国",
-"邦",
-"國"
+"邦"
 ],
 "comment": "Lv.N5 [ichi1/news1]: くに • country; state; region; national government; central government; home (i.e. hometown, home country); province (of Japan); land; earth\n「－を治める」"
 },
 {
 "question": "一：①頭と胴とをつなぐ，やや細くなっている部分。頸部。\n②①を含めて，そこから上の部分。頭部と頸部全体。\n③物の①とよく似た細くくびれた部分。\n④琴（きん）の転軫（てんじん）の下のくびれた部分。\n⑤琵琶の胴と糸巻の間の細い部分。三味線の棹（さお）にあたる。鹿頸（しかくび）。\n⑥職を失うこと。解雇。馘首（かくしゆ）。\n二：①衣服の首をおおう部分。えり。\n②顔。容貌。特に美しい容貌。また，そのような人。美人。\n③遊女や茶屋女をさしていう語。",
 "answers": [
-"クビ",
 "くび",
 "首",
 "頸",
 "頚"
 ],
-"comment": "Lv.N4 [ichi1/news1]: くび/クビ • neck; head; dismissal; discharge; firing (from a job)\n「－実検」"
+"comment": "Lv.N4 [ichi1/news1]: くび • neck; head; dismissal; discharge; firing (from a job)\n「－実検」"
 },
 {
 "question": "①雲が空をおおっていること。気象庁では，雲量九以上で，雨の降らない天気を曇りとしている。\n②ガラスなど透明なものや反射するものの表面に水滴やよごれがついて，はっきり見えないこと。ぼんやりしていること。\n③光・形・色・声などが，はっきりしないこと。かげり。\n④気持ちがはればれしないこと。わだかまりがあること。\n⑤（法律上や道義的に）疑われるようなことがあること。また，そのような疑い。",
@@ -18341,9 +18362,7 @@
 "question": "一：（動マ五［四］）\n①人・物などがその場所いっぱいに集まる。混雑する。↔すく\n②物事が複雑に入り組む。\n③動詞の連用形に付いて複合動詞を作る。\n④費用や時間を要する。\n二：（動マ下二）",
 "answers": [
 "込む",
-"混む",
-"籠む",
-"篭む"
+"混む"
 ],
 "comment": "Lv.N4 [ichi1]: こむ • to be crowded; to be packed; to be complex; to go into; to put into; to remain (seated); to be plunged into (silence); to do thoroughly; to do intently; to continue in the same state\n「手の－・んだ仕事」"
 },
@@ -18376,10 +18395,9 @@
 {
 "question": "①バラ科サクラ属の落葉高木または低木。北半球の温帯と暖帯に分布し20～30種がある。日本に最も種類が多く，奈良時代から栽植され，園芸品種も多い。春，葉に先立ちまたは同時に開花。花は淡紅色ないし白色の五弁花で，八重咲きのものもある。西洋実桜（みざくら）の実はサクランボといい，食用。材は器具・版木・薪炭用。重弁の花を塩漬けにして桜湯として飲み，葉は桜餅に使用。染井吉野が代表的であるが，山桜・江戸彼岸・大島桜・八重桜も各地に植えられている。日本の国花。",
 "answers": [
-"桜",
-"櫻"
+"桜"
 ],
-"comment": "Lv.N3 [ichi1/news1]: さくら/サクラ • cherry tree; cherry blossom; decoy; fake buyer; shill; hired applauder; horse meat"
+"comment": "Lv.N3 [ichi1/news1]: さくら • cherry tree; cherry blossom; decoy; fake buyer; shill; hired applauder; horse meat"
 },
 {
 "question": "熱帯・温帯の大陸で，年降雨量200ミリメートル以下の乾燥地帯にできる荒原。土壌が発達せず耐乾性の強いキク科植物や，サボテンなどが疎生する。乾荒原。サハラ砂漠・ゴビ砂漠・カラハリ砂漠など。",
@@ -18402,7 +18420,6 @@
 "answers": [
 "幸せ",
 "仕合わせ",
-"倖せ",
 "仕合せ"
 ],
 "comment": "Lv.N3 [ichi1/news1]: しあわせ • happiness; good fortune; luck; blessing\n「友人の－を祈る」"
@@ -18419,8 +18436,7 @@
 "question": "（名）スル \n①外部から働きかけて，感覚や心に反応を起こさせること。また，その働きをする物事。\n②生体に作用して何らかの反応を引き起こさせること。また，その働きの要因となる物事。",
 "answers": [
 "刺激",
-"刺戟",
-"剌激"
+"刺戟"
 ],
 "comment": "Lv.N3 [ichi1/news1]: しげき • stimulus; impetus; incentive; encouragement; motivation; provocation; excitement; thrill\n「－が強い」"
 },
@@ -18447,8 +18463,7 @@
 "question": "①11族（銅族）に属する遷移元素の一。元素記号Ag原子番号47。原子量107.9。比重10.5。輝銀鉱などの硫化鉱物として産する。銀色の固体金属。電気と熱の伝導率は金属中で最大。展性・延性は金に次いで大きい。空気中では酸化しないが硫黄・硫化水素にふれると黒色の硫化銀となる。古来，金に次ぐ貴金属とされ，装飾品・貨幣として用いられる。ほかに，写真感光材料，電池などにも使われる。しろがね。\n②江戸時代に用いられた銀貨の総称。丁銀（ちようぎん）・豆板銀など。\n③金銭。かね。\n④将棋の駒の一。「銀将」の略。",
 "answers": [
 "銀",
-"白銀",
-"白金"
+"白銀"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ぎん/しろがね • silver (Ag); silver coin; money; silver medal; silver colour; silver color; bank; silver general"
 },
@@ -18471,7 +18486,6 @@
 "question": "いろいろな言葉を集めて一定の順序に配列し、その表記法・発音・語源・意味・用法などを記した書物。辞書。じびき。",
 "answers": [
 "辞典",
-"辭典",
 "言葉典",
 "ことば典"
 ],
@@ -18489,8 +18503,7 @@
 {
 "question": "（名・形動）スル \n一：①何もすることがなく暇をもてあます・こと（さま）。\n②飽きること。つまらないこと。いやになること。また，そのさま。\n二：①疲れていやになること。\n②困難におそれしりぞくこと。\n③〘仏〙修行の苦しさや困難さに，精進努力の心を失うこと。",
 "answers": [
-"退屈",
-"怠屈"
+"退屈"
 ],
 "comment": "Lv.N3 [ichi1]: たいくつ • tedium; boredom; dullness; to feel bored; to get bored with; to get tired of\n「－をまぎらす」"
 },
@@ -18644,7 +18657,6 @@
 "answers": [
 "なかなか",
 "中々",
-"仲々",
 "中中"
 ],
 "comment": "Lv.N4 [spec1/ichi1]: なかなか • very; considerably; easily; readily; fairly; quite; highly; rather; by no means (with negative verb); not readily; middle; half-way point; excellent; wonderful; very good\n「－立派だ」"
@@ -18701,13 +18713,12 @@
 {
 "question": "①口の奥の食道・気管に通ずるところ。咽喉。\n②首の前面。のどくび。\n③歌う声。\n④本の部分の名。製本で，中身の紙を糸などで綴じてある側の部分。",
 "answers": [
-"ノド",
 "のど",
 "喉",
 "咽",
 "吭"
 ],
-"comment": "Lv.N4 [ichi1]: のど/ノド • throat; singing voice\n「－を締める」"
+"comment": "Lv.N4 [ichi1]: のど • throat; singing voice\n「－を締める」"
 },
 {
 "question": "（動サ五［四］）\n①物をまっすぐにしたり，長くしたり，広げたりする。\n②毛・爪や植物の枝などが生長して長くなる。また，そのような状態のまま放置する。\n③つかんだり，さわったりするために体の一部や道具を対象に近づける。\n④道路・路線をある場所まで延長し，全体として長くする。\n⑤時間の量をふやし，全体を長くする。\n⑥期日・期限を先にする。延期する。\n⑦業績や能力を高めたり，大きくなるようにする。\n⑧相手を打ちのめして動けなくする。\n⑨遠くへ逃がす。",
@@ -18731,7 +18742,9 @@
 "answers": [
 "乗り換える",
 "乗り替える",
-"乗りかえる"
+"乗りかえる",
+"乗換える",
+"乗替える"
 ],
 "comment": "Lv.N4 [ichi1/news1]: のりかえる • to transfer (trains); to change (bus, train); to change one's mind; to move on to (e.g. a new love interest); to change methods; to change one's way of thinking\n「バスから電車に－・える」"
 },
@@ -18793,13 +18806,23 @@
 "comment": "Lv.N5 [ichi1/news1]: はなし • talk; speech; chat; story; conversation; discussions; negotiation; argument\n「－がとぎれる」"
 },
 {
+"question": "一：（名・形動）\n①知能の働きがにぶい・こと（さま）。そのような人をもいう。↔利口\n②道理・常識からはずれていること。常軌を逸していること。また，そのさま。\n③程度が並はずれているさま。度はずれているさま。\n④役に立たないさま。機能を果たさないさま。\n⑤特定の物事に熱中するあまり，社会常識などに欠けること。\n⑥名詞・形容動詞・形容詞の上に付いて，接頭語的に用い，度はずれているさまの意を表す。\n二：（感）\n相手をののしったり，制止したりするとき発する言葉。",
+"answers": [
+"ばか",
+"馬鹿",
+"莫迦",
+"破家",
+"馬稼"
+],
+"comment": "Lv.N3 [ichi1/spec1]: ばか • fool; idiot; trivial matter; folly; absurdity; foolish; stupid; dull; absurd; ridiculous; Mactra chinensis (species of trough shell)\n「そんな－な話はない」"
+},
+{
 "question": "①たんす・机などの、物をしまっておくための抜き差しできるようになっている箱。\n②銀行・郵便局などから、預貯金を引き出すこと。",
 "answers": [
 "引き出し",
 "引出し",
 "抽き出し",
 "抽出し",
-"抽斗",
 "抽匣"
 ],
 "comment": "Lv.N4 [ichi1/news1]: ひきだし • drawer; withdrawal; drawing out; variety of knowledge and experience useful for handling things impromptu"
@@ -18807,13 +18830,12 @@
 {
 "question": "①人間，特に男子の口の周りやあご・ほおなどに生える毛。\n②動物の口の周りの長い毛や毛状の突起。また，昆虫の触角。\n③ヒゲクジラ類の上顎（うわあご）から下がる櫛（くし）状の器官。クジラヒゲ。\n④他の物に付属している細くて反っているものや渦巻状のもの。",
 "answers": [
-"ヒゲ",
 "ひげ",
 "髭",
 "鬚",
 "髯"
 ],
-"comment": "Lv.N4 [ichi1]: ひげ/ヒゲ • moustache; beard; whiskers; extremely short pulse appearing on an electrical signal\n「－をはやす」"
+"comment": "Lv.N4 [ichi1]: ひげ • moustache; beard; whiskers; extremely short pulse appearing on an electrical signal\n「－をはやす」"
 },
 {
 "question": "一：（形動）\n失敗すると取り返しがつかないという気持ちで全力を尽くすさま。死に物狂い。一生懸命。\n二：（名）\n①必ず死ぬこと。\n②将棋で，どう守っても必ず詰んでしまう状態。また，その攻め手。",
@@ -18839,6 +18861,15 @@
 "非道い"
 ],
 "comment": "Lv.N4 [ichi1]: ひどい • cruel; heartless; hard; harsh; severe; violent; intense; strong; heavy; extreme; very bad; terrible; awful; excessive; exorbitant; unreasonable; outrageous; unfair; unjust\n「－・いしうち」"
+},
+{
+"question": "①一日二食の頃，朝食と夕食との間にとった軽い食事。後には昼食をさす。\n②茶会で出す食事。\n③〘仏〙日中に食する食事。",
+"answers": [
+"昼食",
+"中食",
+"昼餉"
+],
+"comment": "Lv.N3 [ichi1/news1]: ちゅうしょく/ちゅうじき/ひるげ • lunch; midday meal; food served at a tea party (tea ceremony)"
 },
 {
 "question": "（動ラ五［四］）\n①幅や面積が広くなる。開いて大きくなる。\n②広い範囲・面積に行き渡る。広まる。普及する。\n③規模などが大きくなる。\n④目の前に広く展開する。",
@@ -18891,7 +18922,7 @@
 "comment": "Lv.N3 [ichi1]: ほめる • to praise; to admire; to speak well of someone\n「よく頑張ったと－・められる」"
 },
 {
-"question": "①人が多く集まり住んでいる所。\n②商店の多く並んだ区域。にぎやかな街区。\n③地方公共団体の一。\n④市や区を構成する小区画。\n⑤市街地で，道路で囲まれた一区画。\n⑥宮殿・邸宅内の一区画。\n⑦等級。階級。\n⑧市場。また，店舗。\n⑨区画した田地。田の区画。",
+"question": "①人が多く集まり住んでいる所。\n②商店の多く並んだ区域。にぎやかな街区。\n③地方公共団体の一。「ちょう（町）」に同じ。\n④市や区を構成する小区画。\n⑤市街地で，道路で囲まれた一区画。\n⑥宮殿・邸宅内の一区画。\n⑦等級。階級。\n⑧市場。また，店舗。\n⑨区画した田地。田の区画。",
 "answers": [
 "町",
 "街"
@@ -18905,6 +18936,13 @@
 "円い"
 ],
 "comment": "Lv.N5 [ichi1/news1]: まるい • round; circular; spherical; harmonious; calm\n「－・いテーブル」"
+},
+{
+"question": "一（名）\n①まわること。また，まわり方。回転。\n②ある範囲に行き渡ること。広がること。\n③順に移って行くこと。\n④周囲。へり。ぐるり。\n⑤付近。近辺。あたり。\n⑥ある地点を通って行くこと。また，直接行かないで，別の地点を通ること。\n⑦それに関連のある事柄。\n⑧飯の菜（さい）。\n二（接尾）\n助数詞。\n①まわる回数を数えるのに用いる。\n②十二支が一巡する12年を単位とした差がある意を表す。\n③物事の大きさや程度に段階的な差がある意を表す。",
+"answers": [
+"周り"
+],
+"comment": "Lv.N4 [ichi1/news1]: まわり • circumference; girth; surroundings; neighbourhood; neighborhood; vicinity\n「池の－」"
 },
 {
 "question": "（動ラ五［四］）\n①物体が，ある点や軸を中心にして，円形の軌跡を描くように動く。回転する。\n②物の周囲に沿って円を描くように動く。縁を伝う。\n③何か所かを順に移動して，出発点に戻る。また，順に従って移る。\n④遠回りの道をとって行く。\n⑤直接行かないで別の所に寄る。\n⑥別の位置・立場に移る。\n⑦番・時期などが順に移る。\n⑧ある範囲に行き渡る。広がる。\n⑨十分にはたらく。\n⑩（時計の針が通り過ぎることから）その時刻を過ぎる。\n⑪資金が利息を生む。\n⑫やり繰りができる。\n⑬遊里で，遊女などが客の気に入るように努める。\n⑭動詞の連用形の下に付いて，そのあたりを…しながら移動する，…をして歩くなどの意を表す。",
@@ -18927,8 +18965,7 @@
 "question": "（動タ上一）\n①主に形のないものや，抽象的なものによって，ある空間がいっぱいになる。\n②満月になる。\n③満潮になる。\n④一定の期間が終わる。期限に達する。",
 "answers": [
 "満ちる",
-"充ちる",
-"盈ちる"
+"充ちる"
 ],
 "comment": "Lv.N3 [ichi1]: みちる • to be full; to wax (e.g. moon); to rise (e.g. tide); to mature; to expire\n「悪意に－・ちた書評」"
 },
@@ -19009,8 +19046,7 @@
 "痩せる",
 "痩る",
 "瘠せる",
-"瘠る",
-"瘦せる"
+"瘠る"
 ],
 "comment": "Lv.N4 [ichi1]: やせる • to become thin; to lose weight; to reduce (one's) weight; to slim; to be barren; to be infertile; to be sterile"
 },
@@ -19042,8 +19078,7 @@
 {
 "question": "（名・形動）\n①利益のあること。より多くの利益の望めること。また，そのさま。\n②（状況や条件などが）都合のよいこと。うまく事の進む見込みのあること。また，そのさま。↔不利",
 "answers": [
-"有利",
-"優利"
+"有利"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ゆうり • advantageous; better; profitable; lucrative\n「－な投資」"
 },
@@ -19055,8 +19090,7 @@
 "善い",
 "好い",
 "佳い",
-"吉い",
-"宜い"
+"吉い"
 ],
 "comment": "Lv.N5 [ichi1/news1]: よい • good; excellent; fine; nice; pleasant; agreeable; sufficient (can be used to turn down an offer); ready; prepared; profitable (e.g. deal, business offer, etc.); beneficial; OK\n「－・い酒」"
 },
@@ -19084,8 +19118,6 @@
 "question": "①よろこぶこと。\n②よろこぶべきこと。慶賀すべきこと。\n③祝いの言葉。祝辞。\n④謝礼。お礼。",
 "answers": [
 "喜び",
-"慶び",
-"悦び",
 "歓び"
 ],
 "comment": "Lv.N3 [ichi1/news1]: よろこび • joy; delight; rapture; pleasure; gratification; rejoicing; congratulations; felicitations\n「初優勝の－」"
@@ -19093,8 +19125,7 @@
 {
 "question": "（名）スル \n①からだを使って働くこと。特に賃金や報酬を得るために働くこと。また，一般に働くこと。\n②〘経〙人間が道具や機械などの手段を利用して労働の対象となる天然資源や原材料に働きかけ，生活に必要な財貨を生みだす活動。",
 "answers": [
-"労働",
-"労動"
+"労働"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ろうどう • manual labor; manual labour; toil; work; Labour Party\n「八時間－する」"
 },
@@ -19158,8 +19189,8 @@
 {
 "question": "（動ア下一）\n①物に妨げられて，先へ進めない状態になる。\n②途中がつまって流れがとまる。\n③言葉がスムーズに発せられないで途中で何度かとまる。\n④処理されるべきものが残っていて，先へ進めない。\n⑤胸・のどなどがふさがった感じになる。\n⑥礼をするために両手をつく。\n⑦肩などがこる。",
 "answers": [
-"つっかえる",
 "つかえる",
+"つっかえる",
 "閊える",
 "支える"
 ],
@@ -19411,12 +19442,11 @@
 "comment": "Lv.N4 [spec1]: とも • certainly; of course; to be sure; surely; even if; no matter (who, what, when, where, why, how); though; although; without even; without so much as; at the (least, earliest, etc.); also (called); emphatic particle\n「何を言おう－，むだだ」"
 },
 {
-"question": "（動マ五［四］）\n鼻汁を鼻から吹き出して取り除く。",
+"question": "（終助）\n文末にあって、感動・詠嘆の意を表す。終助詞「かも」に同じ。",
 "answers": [
-"かむ",
-"擤む"
+"かむ"
 ],
-"comment": "Lv.N4 [spec1]: かむ • to blow (one's nose)\n「はなを－・む」"
+"comment": "Lv.N4 [spec1]: かむ • to blow (one's nose)"
 },
 {
 "question": "一：（名）\n①地面・床面などで，平面の高さが連続していないこと。また，高さの違う平面が順に並んでいる所。また，その一つ一つ。\n②上下に，層をなして重なっているものの一つ一つ。\n③技量・品質などによる格付け。また，その格。\n④全体を何らかの基準で小分けにした一つ一つ。\n⑤変化・進行している物事の過程の一つ一つ。場面。局面。\n⑥多く手紙・文書などで，上の語をうけて，その表す内容を統合し，体言化する。こと。\n⑦「たん（反・段）」に同じ。\n二：（接尾）\n①助数詞。階段状または層をなして重なっているものを数えるのに用いる。\n②囲碁・将棋・柔道・剣道などで，技量を表す程度・段階を表すのに用いる。数が多いほど上位になる。\n③文章や話の区切りの数を数えるのに用いる。",
@@ -19507,7 +19537,7 @@
 "阿弗利加",
 "亜弗利加"
 ],
-"comment": "Lv.N4 [spec1]: アフリカ • Africa"
+"comment": "Lv.N4 [spec1]: あふりか • Africa"
 },
 {
 "question": "①それ以外の物事。別のこと。ほか。\n②自分以外の人。ほかの人。他人。\n③ほかの所。別の所。よそ。",
@@ -19524,7 +19554,7 @@
 "comment": "Lv.N3 [news1]: がく • learning; scholarship; study; erudition; knowledge; education; study of ...; -ology; -ics\n「－に志す」"
 },
 {
-"question": "漢字に，それが表す意味に相当する日本語を当てた読み方。，「飲」を「のむ」と読む類。字訓。↔音（おん）",
+"question": "漢字に，それが表す意味に相当する日本語を当てた読み方。「山」を「やま」，「飲」を「のむ」と読む類。字訓。↔音（おん）",
 "answers": [
 "訓"
 ],
@@ -19541,16 +19571,16 @@
 {
 "question": "（副助）\n数量・割合・程度を表す名詞や副詞，またはそれらにさらに副助詞の付いたものに接続する。\n①同じ分量・割合・程度であることを表す。\n②（多く「…に…ずつ」の形をとって）同じ分量・割合・程度で分配することを表す。",
 "answers": [
-"づつ",
-"ずつ"
+"ずつ",
+"づつ"
 ],
 "comment": "Lv.N5 [spec1]: ずつ/づつ • apiece; each; at a time; piecemeal\n「患者を一人－みる」"
 },
 {
 "question": "（連語）\n補助動詞的に用いられ，動作が完了し実現する意を表す。…てしまう。",
 "answers": [
-"じゃう",
-"ちゃう"
+"ちゃう",
+"じゃう"
 ],
 "comment": "Lv.N4 [spec1]: ちゃう/じゃう • to do something completely\n「もう書い－・った」"
 },
@@ -19559,8 +19589,7 @@
 "answers": [
 "赤",
 "紅",
-"朱",
-"緋"
+"朱"
 ],
 "comment": "Lv.N5 [spec1]: あか • red; crimson; scarlet; red-containing colour (e.g. brown, pink, orange); Red (i.e. communist); red light; red ink (i.e. in finance or proof-reading); (in) the red; complete; total; perfect; obvious; copper\n「－の素人（しろうと）」"
 },
@@ -19579,12 +19608,28 @@
 "comment": "Lv.N5 [spec1]: ばん • number (in a series); (one's) turn; watch; guard; lookout; bout; match\n「今度は君の－だ」"
 },
 {
+"question": "「て」の濁音の仮名。歯茎破裂音の有声子音と前舌の半狭母音とから成る音節。",
+"answers": [
+"で",
+"にて"
+],
+"comment": "Lv.N5 [spec1]: で/にて • indicates location of action; at; in; indicates time of action; indicates means of action; cause of effect; by; and then; so; indicates continuing action; indicates certainty, emphasis, etc."
+},
+{
 "question": "現代語の完了の助動詞「た」の古語形。動詞および動詞型活用の助動詞の連用形（ならびに音便の形）に接続する。\n①動作・作用がすでに終わって，その結果が存続していることを表す。…た。…ている。\n②動作・作用が引き続いて行われている意を表す。…ている。…てある。\n③動作・作用が完了したことを表す。…た。…てしまう。",
 "answers": [
-"だり",
-"たり"
+"たり",
+"だり"
 ],
 "comment": "Lv.N5 [spec1]: たり/だり • -ing and -ing (e.g. \"coming and going\"); doing such things as...; expresses a command; to be; indicates completion or continuation of an action"
+},
+{
+"question": "①五十音図ナ行第四段の仮名。歯茎鼻音の有声子音と前舌の半狭母音とから成る音節。\n②平仮名「ね」は「祢（禰）」の草体。片仮名「ネ」は「祢（禰）」の偏。",
+"answers": [
+"ね",
+"ねえ"
+],
+"comment": "Lv.N5 [spec1]: ね/ねえ • indicates emphasis, agreement, request for confirmation, etc.; is it so; hey; come on; listen; not"
 },
 {
 "question": "（接尾）\n①人を表す名詞・代名詞，また指示代名詞に付いて，複数であることを表す。目上の人を表す語には付かない。\n②名詞に付いて，語調を整えまた，事物をおおよそにさし示す。\n③指示代名詞またはその語根に付いて，方向・場所などをおおよそに示す語を作る。\n④人を表す名詞や代名詞に付いて，謙遜または蔑視の意を表す。自分に対する謙遜の気持ちは時代が下るとともに強くなり，相手や他人に対する蔑視の気持ちは古くは愛称としての用法ともなる。\n⑤形容詞の語幹（シク活用は終止形）や擬態語に付いて，状態性の意の名詞または形容動詞の語幹を作る。",
@@ -19616,14 +19661,6 @@
 "comment": "Lv.N5 [spec1]: ああ • like that (used for something or someone distant from both speaker and listener); so\n「－はなりたくない」"
 },
 {
-"question": "一（格助）\n①動作・作用の内容を表す。と。\n②次に来る語の説明的な内容を表す。という。\n二（係助）\n①語や文を話題として提示する。というのは。\n②相手の質問・命令・希望などを受けて，それを話題として提示する。といっても。\n三（終助）\n文末に付く。\n①ほかからの話を紹介する。ということだ。\n②相手の言葉をとらえて，反問する。この場合，上昇調のイントネーションを伴う。というの（か）。\n③けいべつ，なげやりの気持ちをこめ，引用する。",
-"answers": [
-"て",
-"って"
-],
-"comment": "Lv.N5 [spec1]: って/て • casual quoting particle; indicates supposition; if ... then; indicates a rhetorical question; indicates certainty, insistence, emphasis, etc.; the said ...; says that ...; I hear that ...; as for the term ...; as for ...\n「きれいだ－いわれて喜んでいる」"
-},
-{
 "question": "①うち。なか。内側。\n②〘仏〙仏教の側から，仏教の立場をとる教え，書物などをさす言葉。↔外（げ）",
 "answers": [
 "内"
@@ -19631,7 +19668,7 @@
 "comment": "Lv.N4 [spec1]: ない • inside; within"
 },
 {
-"question": "一：（名）\n「うじ（氏）」に同じ。\n二：（代）\n三人称。男子に対して，敬意をこめて用いる。彼。\n三：（接尾）\n①人の姓名に付けて尊敬の意を表す。主として男子に用いる。\n②氏族の名に付けて，その氏族の出身であることを表す。\n③助数詞。尊敬の意をこめて人数を表すのに用いる。",
+"question": "一：（名）\n「うじ（氏）」に同じ。\n二：（代）\n三人称。男子に対して，敬意をこめて用いる。彼。\n三：（接尾）\n①人の姓名に付けて尊敬の意を表す。主として男子に用いる。\n②氏族の名に付けて，その氏族の出身であることを表す。\n③助数詞。尊敬の意をこめて人数を表すのに用いる。「人（にん）」の尊敬語。",
 "answers": [
 "氏"
 ],
@@ -19640,8 +19677,8 @@
 {
 "question": "（連語）\n①あらかじめその動作をすませておくという意を表す。\n②そのままの状態にしておくという意を表す。",
 "answers": [
-"どく",
-"とく"
+"とく",
+"どく"
 ],
 "comment": "Lv.N4 [spec1]: とく/どく • to do something in readiness for; to get something (needful) done\n「年賀状は早めに書い－・くと楽だ」"
 },
@@ -19668,12 +19705,12 @@
 "comment": "Lv.N3 [ichi1]: つぐ • to pour (into a vessel); to fill (a cup, bowl, etc.) with; to dish out (food or drink)\n「お茶を－・ぐ」"
 },
 {
-"question": "①動物の胴体の，背骨のある側で，胸や腹と反対の面。せなか。\n②うしろ。背面。\n③身長。せたけ。せい。\n④山の尾根（おね）。\n⑤本の部分の名。製本で，本の中身を糸などで綴じた部分。また，その部分をくるんだ表紙の部分。",
+"question": "①女性から見て，同腹の男の兄弟をいう語。年上にも年下にもいう。\n②女性が，自分の恋人や夫をいう語。\n③一般に，男性を親しんで呼ぶ称。\n▽↔妹（いも）",
 "answers": [
 "背",
 "脊"
 ],
-"comment": "Lv.N5 [spec1]: せ • back; spine; reverse; rear side; height; stature; ridge (of a mountain)\n「壁に－をもたせかける」"
+"comment": "Lv.N5 [spec1]: せ • back; spine; reverse; rear side; height; stature; ridge (of a mountain)"
 },
 {
 "question": "一：（名）\nひと。じん。人柄。\n二：（接尾）\n助数詞。人数を数えるのに用いる。",
@@ -19683,7 +19720,7 @@
 "comment": "Lv.N5 [ichi1]: にん/たり/り • counter for people; person\n「親子三－」"
 },
 {
-"question": "①月の第一日。\n②月の初め。上旬。\n③一月一日。元日。また，正月。",
+"question": "ついたち。",
 "answers": [
 "一日",
 "１日",
@@ -19691,7 +19728,7 @@
 "朔日",
 "朔"
 ],
-"comment": "Lv.N5 [ichi1/spec1]: ついたち/さくじつ/いっぴ • first day of the month; first ten days of the lunar month"
+"comment": "Lv.N5 [ichi1/spec1]: ついたち/さくじつ/いっぴ • first day of the month; first ten days of the lunar month\n「五月－」"
 },
 {
 "question": "接尾語的に用いて，…の範囲のそと，…のほか，の意を表す。",
@@ -19710,12 +19747,12 @@
 {
 "question": "（感）\n①感動したり驚いたりした時などに発する語。\n②応答の語。呼ばれた時や肯定的な返事をする時などに用いる。はい。",
 "answers": [
-"ア",
-"あ",
+"あっ",
 "アッ",
-"あっ"
+"あ",
+"ア"
 ],
-"comment": "Lv.N4 [spec1]: あっ/アッ/あ/ア • Ah!; Oh!; expression of surprise, recollection, etc.; Hey!; used to get someone's attention\n「－、花火だ」"
+"comment": "Lv.N4 [spec1]: あっ/あ • Ah!; Oh!; expression of surprise, recollection, etc.; Hey!; used to get someone's attention\n「－、花火だ」"
 },
 {
 "question": "（動カ五［四］）\n①口にふくんだ物・のみこんだ物・息などを，口から外に出す。↔吸う\n②中にある物を，狭い所を通して外に出す。\n③言葉として言う。\n④白状する。",
@@ -19743,16 +19780,6 @@
 "comment": "Lv.N5 [ichi1]: とどまる • to remain; to abide; to stay (in the one place); to be limited to; to be confined to\n「戦争中も東京に－・っていた」"
 },
 {
-"question": "（接尾）\n動詞の連用形に付いて，…するのがむずかしい，なかなか…できないなどの意を表す。",
-"answers": [
-"がたい",
-"にくい",
-"難い",
-"悪い"
-],
-"comment": "Lv.N4 [ichi1]: にくい/がたい • difficult to ...; hard to ...\n「読み－・い」"
-},
-{
 "question": "（副）\n①以前と同じ状況であるさま。事態が変わらずに続いているさま。依然として。\n②前もってした予想や判断と同様であるさま。また，他の例から類推される状況と現実が同じであるさま。\n③さまざまないきさつがあって，結局，初めに予測した結論に落ち着くさま。一般的な常識・うわさなどに違わないさま。\n④動かないでじっとしているさま。",
 "answers": [
 "やはり",
@@ -19762,10 +19789,10 @@
 "comment": "Lv.N4 [ichi1]: やはり • too; also; likewise; either; still; as before; even so; either way; nonetheless; in any event; all the same; as expected\n「今でも－あのまま残っている」"
 },
 {
-"question": "一：（終助）\n活用語の終止形に付く。\n①不満・うらみ・あまえ・訴えなどの気持ちを込めて，理由を述べる。\n②理由を表す。\n二：（接助）\n活用語の終止形に付く。\n①理由・原因を述べる。から。ので。\n②逆接条件を表す。のに。",
+"question": "一：（終助）\n活用語の終止形に付く。\n①不満・うらみ・あまえ・訴えなどの気持ちを込めて，理由を述べる。「だもの・ですもの」の形をとることが多い。\n②理由を表す。「な」などによって，軽い詠嘆の意が加わる。\n二：（接助）\n活用語の終止形に付く。\n①理由・原因を述べる。から。ので。\n②逆接条件を表す。のに。",
 "answers": [
-"もん",
-"もの"
+"もの",
+"もん"
 ],
 "comment": "Lv.N5 [spec1]: もの/もん • indicates reason or excuse; indicates dissatisfaction; indicates desire to be pampered or indulged\n「だって，仕方がないんです－」"
 },
@@ -19774,7 +19801,7 @@
 "answers": [
 "マッチ"
 ],
-"comment": "Lv.N5 [spec1]: マッチ • match (contest); to match with; to go well with"
+"comment": "Lv.N5 [spec1]: まっち • match (contest); to match with; to go well with"
 },
 {
 "question": "一（名）\n①まわること。また，まわり方。回転。\n②ある範囲に行き渡ること。広がること。\n③順に移って行くこと。\n④周囲。へり。ぐるり。\n⑤付近。近辺。あたり。\n⑥ある地点を通って行くこと。また，直接行かないで，別の地点を通ること。\n⑦それに関連のある事柄。\n⑧飯の菜（さい）。\n二（接尾）\n助数詞。\n①まわる回数を数えるのに用いる。\n②十二支が一巡する12年を単位とした差がある意を表す。\n③物事の大きさや程度に段階的な差がある意を表す。",
@@ -19787,17 +19814,16 @@
 {
 "question": "（副）\n程度のはなはだしいさまを，感嘆や強調の気持ちを込めて言う語。本当に。まことに。",
 "answers": [
-"実に",
-"實に"
+"実に"
 ],
 "comment": "Lv.N3 [ichi1/news1]: じつに/げに/まことに • indeed; really; absolutely; truly; actually; very; quite\n「彼は－字がうまい」"
 },
 {
-"question": "①数の，ひとつ。いち。\n②他の名詞や動詞の連用形の上に付いて接頭語的に用いる。",
+"question": "いち。ひとつ。物を数えるときに用いる。",
 "answers": [
 "一"
 ],
-"comment": "Lv.N5 [spec1]: ひと/ひ/ひい • one; one\n「－房（ふさ）」"
+"comment": "Lv.N5 [spec1]: ひと/ひ/ひい • one; one\n「－，ふ，み」"
 },
 {
 "question": "人の体。肉体。体軀たいく。",
