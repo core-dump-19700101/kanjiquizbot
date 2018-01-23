@@ -508,8 +508,9 @@ outer:
 		current, quiz.Deck = quiz.Deck[len(quiz.Deck)-1], quiz.Deck[:len(quiz.Deck)-1]
 
 		// Replace readings with hiragana-only version
+		answers := make([]string, len(current.Answers))
 		for i, ans := range current.Answers {
-			current.Answers[i] = k2h(ans)
+			answers[i] = k2h(ans)
 		}
 
 		// Add word to quiz history
@@ -592,7 +593,7 @@ outer:
 				break inner
 			case msg := <-c:
 				user := msg.Author
-				if hasString(current.Answers, k2h(msg.Content)) {
+				if hasString(answers, k2h(msg.Content)) {
 					if len(scoreKeeper) == 0 {
 						timeoutChan.Reset(waitTime)
 					}
@@ -825,9 +826,11 @@ outer:
 		current, quiz.Deck = quiz.Deck[len(quiz.Deck)-1], quiz.Deck[:len(quiz.Deck)-1]
 
 		// Replace readings with hiragana-only version
+		answers := make([]string, len(current.Answers))
 		for i, ans := range current.Answers {
-			current.Answers[i] = k2h(ans)
+			answers[i] = k2h(ans)
 		}
+
 
 		// Send out quiz question
 		if quiz.Type == "text" {
@@ -848,7 +851,7 @@ outer:
 			total++
 
 			// Increase score if correct answer
-			if hasString(current.Answers, k2h(msg.Content)) {
+			if hasString(answers, k2h(msg.Content)) {
 				correct++
 			} else {
 				// Add wrong answer to quiz history
