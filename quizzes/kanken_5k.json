@@ -345,7 +345,7 @@
 	{ "question": "訳す", "answers": [ "やくす" ], "comment": "to translate; to interpret" },
 	{ "question": "認める", "answers": [ "みとめる" ], "comment": "to write up\nto recognize; to recognise; to observe; to notice\nto deem; to judge; to assess\nto approve; to deem acceptable; to allow\nto admit; to accept; to confess (to a charge)\nto watch steadily; to observe carefully\nto renown; to give renown to; to appreciate; to acknowledge" },
 	{ "question": "誕生", "answers": [ "たんじょう" ], "comment": "birth; creation; formation" },
-	{ "question": "誕生日", "answers": [ "タンジョウビ" ], "comment": "birthday" },
+	{ "question": "誕生日", "answers": [ "たんじょうび" ], "comment": "birthday" },
 	{ "question": "誠実", "answers": [ "せいじつ" ], "comment": "sincere; honest; faithful" },
 	{ "question": "誠意", "answers": [ "せいい" ], "comment": "sincerity; good faith" },
 	{ "question": "誤る", "answers": [ "あやまる" ], "comment": "to make a mistake; to err\nto mislead; to misguide" },

@@ -53,7 +53,7 @@
 	{ "question": "二十日", "answers": [ "はつか" ], "comment": "twentieth day of the month\ntwenty days" },
 	{ "question": "二十歳", "answers": [ "はたち" ], "comment": "20 years old\ntwenty years" },
 	{ "question": "二日", "answers": [ "ふつか" ], "comment": "second day of the month\ntwo days" },
-	{ "question": "五", "answers": [ "ご" ], "comment": "five\nfive" },
+	{ "question": "五", "answers": [ "ご" ], "comment": "five" },
 	{ "question": "五つ", "answers": [ "いつつ" ], "comment": "five" },
 	{ "question": "五日", "answers": [ "いつか" ], "comment": "the fifth day of the month\nfive days" },
 	{ "question": "交差点", "answers": [ "こうさてん" ], "comment": "crossing; intersection" },

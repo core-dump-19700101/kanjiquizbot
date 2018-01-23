@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\nVer.180121-1520 –Abridged Edition– [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\nVer.180122-1317 –Abridged Edition– [Brought to you by h​onya#1726]",
 "type": "text",
 "deck": [
 {
@@ -3696,7 +3696,7 @@
 "Mr",
 "Mister"
 ],
-"comment": "Lv.01/12: [名] ...様、...さん\n‘Mr Robert Smith’"
+"comment": "Lv.01/12: [名] 〜様、〜さん《男性の敬称》\n‘Mr Robert Smith’"
 },
 {
 "question": "The title used before a surname or full name to address or refer to a married woman without a higher or honorific or professional title.",
@@ -3704,7 +3704,7 @@
 "Mrs.",
 "Mrs"
 ],
-"comment": "Lv.01/12: [名] 〜夫人（既婚の女性）\n‘Mrs Sally Jones’"
+"comment": "Lv.01/12: [名] 〜夫人《既婚女性の敬称》\n‘Mrs Sally Jones’"
 },
 {
 "question": "A title used before the surname or full name of any woman regardless of her marital status (a neutral alternative to Mrs or Miss).",
@@ -3712,7 +3712,7 @@
 "Ms.",
 "Ms"
 ],
-"comment": "Lv.01/12: [名] 〜さん、〜先生\n‘Ms Sarah Brown’"
+"comment": "Lv.01/12: [名] 〜さん《女性一般の敬称》\n‘Ms Sarah Brown’"
 },
 {
 "question": "1. [often with negative or in questions] A large amount.\n 1.1. [as pronoun, with negative] Used to refer disparagingly to someone or something as being a poor specimen.",
@@ -4499,7 +4499,7 @@
 "answers": [
 "pound"
 ],
-"comment": "Lv.01/12: [名] ポンド（重量の単位）\n‘A short ton is the standard U.S. ton of 2,000 pounds and measures weight.’"
+"comment": "Lv.01/12: [名] ポンド《重量の単位》\n‘A short ton is the standard U.S. ton of 2,000 pounds and measures weight.’"
 },
 {
 "question": "1. The ability or capacity to do something or act in a particular way.\n2. The capacity or ability to direct or influence the behaviour of others or the course of events.\n3. Physical strength and force exerted by something or someone.\n4. Energy that is produced by mechanical, electrical, or other means and used to operate a device.\n5. ‹Physics› The rate of doing work, measured in watts or less frequently horse power.\n6. ‹Mathematics› The product obtained when a number is multiplied by itself a certain number of times.\n7. (a – of) «dialect» A large number or amount of something.",
@@ -13140,7 +13140,7 @@
 "answers": [
 "sundae"
 ],
-"comment": "Lv.02/12: [名] サンデー（氷菓子）\n‘My final summer there I worked at the slot car track doing everything from repairing model cars to making ice cream sundaes.’"
+"comment": "Lv.02/12: [名] サンデー《氷菓子》\n‘My final summer there I worked at the slot car track doing everything from repairing model cars to making ice cream sundaes.’"
 },
 {
 "question": "Light from the sun.",
@@ -32258,7 +32258,7 @@
 "answers": [
 "pad"
 ],
-"comment": "Lv.05/12: [名] 詰め物（パッド）\n‘a pad of cotton wool’"
+"comment": "Lv.05/12: [名] 詰め物、パッド\n‘a pad of cotton wool’"
 },
 {
 "question": "1. In a painful manner or to a painful degree.\n 1.1. [as submodifier] (with reference to something undesirable) exceedingly.",
@@ -32882,7 +32882,7 @@
 "answers": [
 "punch"
 ],
-"comment": "Lv.05/12: [動] 殴る（パンチする）\n‘he punched her in the face and ran off’"
+"comment": "Lv.05/12: [動] 殴る、パンチする\n‘he punched her in the face and ran off’"
 },
 {
 "question": "1. Happening or doing something at the agreed or proper time.\n2. ‹Grammar› Denoting or relating to an action that takes place at a particular point in time.",
@@ -39576,7 +39576,7 @@
 "answers": [
 "puppet"
 ],
-"comment": "Lv.06/12: [名] 傀儡（かいらい）\n‘a puppet show’"
+"comment": "Lv.06/12: [名] 操り人形、傀儡\n‘a puppet show’"
 },
 {
 "question": "1. Freedom from adulteration or contamination.\n2. Freedom from immorality, especially of a sexual nature.",
