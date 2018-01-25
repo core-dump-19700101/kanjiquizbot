@@ -128,7 +128,7 @@
 	{ "question": "女性", "answers": [ "じょせい" ], "comment": "woman; female\nfeminine gender" },
 	{ "question": "妻", "answers": [ "つま" ], "comment": "wife\nmy dear; dear; honey\ngarnish (esp. one served with sashimi)\nembellishment\nfemale; woman\nwife\none's wife\nedge; tip; end\ngable wall\ngable" },
 	{ "question": "始める", "answers": [ "はじめる" ], "comment": "to start; to begin; to commence; to initiate; to originate\nto open (e.g. a store); to start up; to establish (business. etc.)\nto start ...; to begin to ..." },
-	{ "question": "娘", "answers": [ "むすめ", "こ" ], "comment": "(my) daughter\ngirl (i.e. a young, unmarried woman)" },
+	{ "question": "娘", "answers": [ "むすめ" ], "comment": "(my) daughter\ngirl (i.e. a young, unmarried woman)" },
 	{ "question": "子", "answers": [ "こ", "ね" ], "comment": "child\nyoung (animal)\nyoung woman; young geisha\noffshoot\ninterest\nnew shares\nplayer who is not a dealer (in cards, mahjong, etc.)\nbird egg\n-er (often of young women)\nfirst sign of Chinese zodiac (The Rat, 11pm-1am, north, November)" },
 	{ "question": "字", "answers": [ "じ", "あざ" ], "comment": "section of village\ncharacter (i.e. kanji)\nhand-writing; penmanship\nthe ... word (i.e. \"the L word\" = \"love\")\nChinese courtesy name (name formerly given to adult Chinese men, used in place of their given name in formal situations)\nnickname\nsection of a village" },
 	{ "question": "安全", "answers": [ "あんぜん" ], "comment": "safety\nsecurity" },
