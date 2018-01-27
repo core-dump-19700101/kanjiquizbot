@@ -575,7 +575,7 @@ outer:
 					embed.Fields = []*discordgo.MessageEmbedField{
 						&discordgo.MessageEmbedField{
 							Name:   "Comment",
-							Value:  current.Comment,
+							Value:  truncate(current.Comment, 1024),
 							Inline: false,
 						}}
 				}
@@ -644,7 +644,7 @@ outer:
 			if len(current.Comment) > 0 {
 				embed.Fields = append(embed.Fields, &discordgo.MessageEmbedField{
 					Name:   "Comment",
-					Value:  current.Comment,
+					Value:  truncate(current.Comment, 1024),
 					Inline: false,
 				})
 			}
@@ -830,7 +830,6 @@ outer:
 		for i, ans := range current.Answers {
 			answers[i] = k2h(ans)
 		}
-
 
 		// Send out quiz question
 		if quiz.Type == "text" {
@@ -1292,7 +1291,7 @@ outer:
 					embed.Fields = []*discordgo.MessageEmbedField{
 						&discordgo.MessageEmbedField{
 							Name:   "Comment",
-							Value:  current.Comment,
+							Value:  truncate(current.Comment, 1024),
 							Inline: false,
 						}}
 				}
@@ -1361,7 +1360,7 @@ outer:
 			if len(current.Comment) > 0 {
 				embed.Fields = append(embed.Fields, &discordgo.MessageEmbedField{
 					Name:   "Comment",
-					Value:  current.Comment,
+					Value:  truncate(current.Comment, 1024),
 					Inline: false,
 				})
 			}
