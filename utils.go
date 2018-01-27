@@ -77,6 +77,24 @@ func loadFiles() {
 	loadQuizList()
 }
 
+// Player type for ranking list
+type Player struct {
+	Name  string
+	Score int
+}
+
+// Sort the player ranking list
+func ranking(players map[string]int) (result []Player) {
+
+	for k, v := range players {
+		result = append(result, Player{k, v})
+	}
+
+	sort.Slice(result, func(i, j int) bool { return result[i].Score > result[j].Score })
+
+	return
+}
+
 // Helper function to pick min value out of two ints
 func minint(a, b int) int {
 	if a < b {
