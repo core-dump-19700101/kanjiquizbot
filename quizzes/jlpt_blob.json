@@ -2492,7 +2492,7 @@
 	{"question":"念","answers":["ねん"],"comment":"(n) sense/idea/thought/feeling/desire/concern/attention/care"},
 	{"question":"念願","answers":["ねんがん"],"comment":"(n) one's heart's desire/earnest petition"},
 	{"question":"怒り","answers":["いかり"],"comment":"(n) anger/hatred"},
-	{"question":"怒る","answers":["おこる"],"comment":"(v5r) (1) to get angry/to get mad/(2) to be angry"},
+	{"question":"怒る","answers":["おこる", "いかる"],"comment":"(v5r) (1) to get angry/to get mad/(2) to be angry"},
 	{"question":"怖い","answers":["こわい"],"comment":"(adj) scary/frightening/eerie/dreadful"},
 	{"question":"思い付き","answers":["おもいつき"],"comment":"(n) plan/idea/suggestion"},
 	{"question":"思い付く","answers":["おもいつく"],"comment":"(v5k) to think of/to hit upon/to come into one's mind/to be struck with an idea"},

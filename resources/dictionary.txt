@@ -10551,6 +10551,7 @@ startle
 startling
 starvation
 starve
+stasis
 state
 stately
 statement

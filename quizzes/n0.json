@@ -973,6 +973,7 @@
 	{ "question": "恰幅", "answers": [ "かっぷく" ], "comment": "physique; bodily build" },
 	{ "question": "捕吏", "answers": [ "ほり" ], "comment": "constable; policeman" },
 	{ "question": "下吏", "answers": [ "かり" ], "comment": "lower official" },
+	{ "question": "過る", "answers": [ "よぎる" ], "comment": "to go by; to cross; to pass by; to float across" },
 	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" }
 ]
 }
