@@ -11,7 +11,7 @@ import (
 )
 
 // Run kanji quiz loop in given channel
-func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
+func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int, pauseTimeGiven int) {
 
 	// Mark the quiz as started
 	if err := startQuiz(s, quizChannel); err != nil {
@@ -19,9 +19,10 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		return
 	}
 
-	winLimit := 15    // winner score
-	timeout := 20     // seconds to wait per round
-	timeoutLimit := 5 // count before aborting
+	winLimit := 15                                                // winner score
+	timeout := 20                                                 // seconds to wait per round
+	timeoutLimit := 5                                             // count before aborting
+	pauseTime := time.Duration(pauseTimeGiven) * time.Millisecond // delay before next question
 
 	// Set delay before closing round
 	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
@@ -74,7 +75,7 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		c <- m
 	})
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
 
 	var quizHistory []string
 	var failed []Card
@@ -84,7 +85,7 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 
 outer:
 	for len(quiz.Deck) > 0 {
-		time.Sleep(5 * time.Second)
+		time.Sleep(pauseTime)
 
 		// Grab new word from the quiz
 		var current Card
@@ -303,7 +304,7 @@ outer:
 }
 
 // Run multi quiz loop in given channel
-func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int) {
+func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimitGiven string, waitTimeGiven int, pauseTimeGiven int) {
 
 	// Mark the quiz as started
 	if err := startQuiz(s, quizChannel); err != nil {
@@ -311,10 +312,11 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 		return
 	}
 
-	winLimit := 15    // winner score
-	timeout := 13     // seconds to wait per round
-	timeoutLimit := 5 // count before aborting
-	pointLimit := 3   // possible points per question
+	winLimit := 15                                                // winner score
+	timeout := 13                                                 // seconds to wait per round
+	timeoutLimit := 5                                             // count before aborting
+	pauseTime := time.Duration(pauseTimeGiven) * time.Millisecond // delay before next question
+	pointLimit := 3                                               // possible points per question
 
 	// Set delay before closing round
 	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
@@ -361,7 +363,7 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 		c <- m
 	})
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), quiz.Description, winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
 
 	var quizHistory []string
 	var questionTitle string
@@ -370,7 +372,7 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 
 outer:
 	for len(quiz.Deck) > 0 {
-		time.Sleep(5 * time.Second)
+		time.Sleep(pauseTime)
 
 		// Grab new word from the quiz
 		var current Card
@@ -743,14 +745,15 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 	}
 
 	quizname := "Scramble"
-	winLimit := 10    // winner score
-	timeout := 30     // seconds to wait per round
-	timeoutLimit := 5 // count before aborting
-	minLength := 3    // default word length minimum
-	maxLength := 7    // default word length maximum
+	winLimit := 10                                                           // winner score
+	timeout := 30                                                            // seconds to wait per round
+	timeoutLimit := 5                                                        // count before aborting
+	minLength := 3                                                           // default word length minimum
+	maxLength := 7                                                           // default word length maximum
+	pauseTime := time.Duration(Settings.Speed["quiz"][1]) * time.Millisecond // delay before next question
 
 	// Set delay before closing round
-	waitTime := time.Duration(Settings.Speed["quiz"]) * time.Millisecond
+	waitTime := time.Duration(Settings.Speed["quiz"][0]) * time.Millisecond
 
 	// Parse provided winLimit with sane defaults
 	if level, okay := Settings.Difficulty[difficulty]; okay {
@@ -788,7 +791,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 	}
 	shuffle(order)
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), "Unscramble the English word", winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), float64(pauseTime/time.Second), "Unscramble the English word", winLimit))
 
 	var quizHistory []string
 	players := make(map[string]int)
@@ -832,7 +835,7 @@ outer:
 		scoreKeeper := make(map[string]int)
 
 		// Give players time to breathe between rounds
-		time.Sleep(5 * time.Second)
+		time.Sleep(pauseTime)
 
 		// Drain premature "answers" from channel buffer
 		for len(c) > 0 {

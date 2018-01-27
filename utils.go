@@ -29,6 +29,7 @@ type Kanji struct {
 	Kanken    string   `json:"kanken,omitempty"`
 	Grade     string   `json:"grade,omitempty"`
 	Type      []string `json:"type,omitempty"`
+	JLPT      string   `json:"jlpt,omitempty"`
 }
 
 // All kanji info map
@@ -414,6 +415,14 @@ func sendKanjiInfo(s *discordgo.Session, cid string, query string) error {
 		fields = append(fields, &discordgo.MessageEmbedField{
 			Name:   "Grade",
 			Value:  kanji.Grade,
+			Inline: true,
+		})
+	}
+
+	if len(kanji.JLPT) > 0 {
+		fields = append(fields, &discordgo.MessageEmbedField{
+			Name:   "JLPT",
+			Value:  kanji.JLPT,
 			Inline: true,
 		})
 	}

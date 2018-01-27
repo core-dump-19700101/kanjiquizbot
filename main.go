@@ -49,7 +49,7 @@ var Review struct {
 var Settings struct {
 	Owner       *discordgo.User   // Bot owner account
 	TimeStarted time.Time         // Bot startup time
-	Speed       map[string]int    // Quiz game speed in ms
+	Speed       map[string][2]int // Quiz game speed in ms, window/pause
 	Difficulty  map[string][2]int // Scramble game difficulty low/high
 }
 
@@ -66,13 +66,14 @@ func init() {
 
 	// Initialize settings
 	Settings.TimeStarted = time.Now()
-	Settings.Speed = map[string]int{
-		"mad":   0,
-		"fast":  1000,
-		"quiz":  2000,
-		"mild":  3000,
-		"slow":  5000,
-		"multi": 1500,
+	Settings.Speed = map[string][2]int{
+		"flash": [2]int{0, 500},
+		"mad":   [2]int{0, 5000},
+		"fast":  [2]int{1000, 5000},
+		"quiz":  [2]int{2000, 5000},
+		"mild":  [2]int{3000, 5000},
+		"slow":  [2]int{5000, 5000},
+		"multi": [2]int{1500, 5000},
 	}
 	Settings.Difficulty = map[string][2]int{
 		"easy":   [2]int{3, 5},
@@ -230,16 +231,16 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			msgSend(s, m.ChannelID, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
 			msgSend(s, m.ChannelID, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
-		case "mad", "fast", "mild", "slow":
+		case "flash", "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":
 			if !isBotChannel(s, m.ChannelID) {
 				break
 			}
 			if len(input) == 2 {
-				go runQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command])
+				go runQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command][0], Settings.Speed[command][1])
 			} else if len(input) == 3 {
-				go runQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command])
+				go runQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command][0], Settings.Speed[command][1])
 			} else {
 				// Show if no quiz specified
 				showList(s, m)
@@ -249,9 +250,9 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 				break
 			}
 			if len(input) == 2 {
-				go runMultiQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command])
+				go runMultiQuiz(s, m.ChannelID, input[1], "", Settings.Speed[command][0], Settings.Speed[command][1])
 			} else if len(input) == 3 {
-				go runMultiQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command])
+				go runMultiQuiz(s, m.ChannelID, input[1], input[2], Settings.Speed[command][0], Settings.Speed[command][1])
 			} else {
 				// Show if no quiz specified
 				showList(s, m)
