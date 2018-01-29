@@ -67,7 +67,7 @@ func init() {
 	// Initialize settings
 	Settings.TimeStarted = time.Now()
 	Settings.Speed = map[string][2]int{
-		"flash": [2]int{0, 500},
+		"flash": [2]int{250, 500},
 		"mad":   [2]int{0, 5000},
 		"fast":  [2]int{1000, 5000},
 		"quiz":  [2]int{2000, 5000},
@@ -304,7 +304,7 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, common, jouyou, kklc",
+		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, common, jouyou, kklc, eee, jjj",
 		Inline: false,
 	})
 
@@ -316,13 +316,13 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Difficult decks",
-		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, tough, jp_syn",
+		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, tough, jp_syn, ee, jj",
 		Inline: false,
 	})
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, ee, esyn, numbers, honyaku, r18",
+		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, esyn, numbers, honyaku, r18",
 		Inline: false,
 	})
 
