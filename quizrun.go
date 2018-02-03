@@ -488,7 +488,7 @@ outer:
 
 			var participants string
 			for _, p := range ranking(scoreKeeper) {
-				participants += fmt.Sprintf("<@%s> +%dp (%dp)\n", p.Name, minint(p.Score, pointLimit), players[p.Name])
+				participants += fmt.Sprintf("<@%s> +%d (%dp)\n", p.Name, minint(p.Score, pointLimit), players[p.Name])
 			}
 
 			embed := &discordgo.MessageEmbed{
