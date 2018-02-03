@@ -36,9 +36,6 @@
 	"abh":          "abh.json",
 	"kklc":         "kklc.json",
 	"honyaku":      "honyaku.json",
-	"jp_syn":		"jp_syn.json",
-	"jp_syn_easy":	"jp_syn_easy.json",
-	"jp_syn_full":	"jp_syn_full.json",
 	"seiyuu":		"seiyuu.json",
 	"tough":		"tough.json",
 	"common":		"common.json",
@@ -49,6 +46,12 @@
 	"esyne":		"esyne.json",
 	"jj":			"jj.json",
 	"jjj":			"jjj.json",
+	"jsyn":			"jsyn.json",
+	"jsynj":		"jsynj.json",
+	"jp_syn":		"jp_syn.json",
+	"jp_syn_easy":	"jp_syn_easy.json",
+	"jp_syn_full":	"jp_syn_full.json",
 	"jukugo":		"jukugo.json",
+	"images":		"images.json",
 	"test":			"test.json"
 }

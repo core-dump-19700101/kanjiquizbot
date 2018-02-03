@@ -256,7 +256,7 @@
 	{ "question": "崇める", "answers": [ "あがめる" ], "comment": "to revere; to respect; to worship" },
 	{ "question": "嵩む", "answers": [ "かさむ" ], "comment": "to mount up; to pile up; to accumulate; to increase" },
 	{ "question": "嵩張る", "answers": [ "かさばる" ], "comment": "to be bulky; to be unwieldy; to grow voluminous" },
-	{ "question": "工夫する", "answers": [ "くふうする" ] },
+	{ "question": "工夫する", "answers": [ "くふうする" ], "comment": "figure out / contrive / devise a good way (to handle a situation)" },
 	{ "question": "差し支えない", "answers": [ "さしつかえない" ], "comment": "(having) no objection; allowable" },
 	{ "question": "帰趨", "answers": [ "きすう", "きしゅ" ], "comment": "outcome (of a course of events); consequence\ntendency; trend; drift" },
 	{ "question": "帰途", "answers": [ "きと" ], "comment": "on the way back; returning" },
@@ -406,7 +406,7 @@
 	{ "question": "木綿", "answers": [ "もめん" ], "comment": "cotton (material)\nred silk-cotton tree (Bombax ceiba)\nstring made of cut steamed, soaked mulberry bark fibers" },
 	{ "question": "未曾有", "answers": [ "みぞう" ], "comment": "unprecedented; unheard of" },
 	{ "question": "杖", "answers": [ "つえ" ], "comment": "cane; walking stick; staff; wand\nsevere caning (60-100 times)" },
-	{ "question": "杭", "answers": [ "くい", "くいぜ" ], "comment": "stake; post; pile; picket\nstump\nstump" },
+	{ "question": "杭", "answers": [ "くい", "くいぜ" ], "comment": "stake; post; pile; picket" },
 	{ "question": "松葉杖", "answers": [ "まつばづえ" ], "comment": "crutch; crutches" },
 	{ "question": "枢機卿", "answers": [ "すうききょう" ], "comment": "cardinal (Catholic church)" },
 	{ "question": "某", "answers": [ "それがし", "くれ", "なにがし", "ぼう" ], "comment": "someone; unknown person\nI; personal pronoun (used by samurai)\ncertain; one\ncertain amount; some\ncertain person; Mr So-and-so; a certain ...\nI; me" },
@@ -973,6 +973,8 @@
 	{ "question": "恰幅", "answers": [ "かっぷく" ], "comment": "physique; bodily build" },
 	{ "question": "捕吏", "answers": [ "ほり" ], "comment": "constable; policeman" },
 	{ "question": "下吏", "answers": [ "かり" ], "comment": "lower official" },
+	{ "question": "微か", "answers": [ "かすか" ], "comment": "faint; dim; weak; slight; vague; indistinct; hazy\npoor; wretched; meagre; meager; scanty" },
+	{ "question": "奔る", "answers": [ "はしる" ], "comment": " to run\nto travel (movement of vehicles); to drive\nto hurry to\nto retreat (from battle); to take flight\nto run away from home\nto elope\nto flash; to streak; to shoot through (e.g. pain)" },
 	{ "question": "過る", "answers": [ "よぎる" ], "comment": "to go by; to cross; to pass by; to float across" },
 	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" }
 ]

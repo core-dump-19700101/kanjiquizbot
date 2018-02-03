@@ -318,7 +318,7 @@
 	{ "question": "謙遜", "answers": [ "けんそん" ], "comment": "modesty; humility; being humble" },
 	{ "question": "謬見", "answers": [ "びゅうけん" ], "comment": "fallacy" },
 	{ "question": "豊頬", "answers": [ "ほうきょう" ], "comment": "plump cheeks (used to describe a beautiful woman); attractive cheeks" },
-	{ "question": "豪宕", "answers": [ "ごうとう" ] },
+	{ "question": "豪宕", "answers": [ "ごうとう" ], "comment": "breadth of soul; largeness of mind; magnanimity" },
 	{ "question": "賭博", "answers": [ "とばく" ], "comment": "gambling" },
 	{ "question": "贋作", "answers": [ "がんさく" ], "comment": "fake; sham; counterfeit" },
 	{ "question": "赫怒", "answers": [ "かくど" ], "comment": "greatly enraged; furious" },

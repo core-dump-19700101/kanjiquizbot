@@ -1,7 +1,7 @@
 {
 	"description": "Kanji for 日本漢字能力検定 3級",
 	"deck": [
-	{ "question": "ご満悦", "answers": [ "ごまんえつ" ] },
+	{ "question": "満悦", "answers": [ "まんえつ" ], "comment": "great delight; rapture" },
 	{ "question": "一掃", "answers": [ "いっそう" ], "comment": "clean sweep; purging; doing away with; eradication" },
 	{ "question": "一斤", "answers": [ "いっきん" ], "comment": "1 kin (~0.6kg)\n1 loaf of bread" },
 	{ "question": "一貫", "answers": [ "いっかん" ], "comment": "consistency; coherence; integration\none kan (approx. 3.75 kg, 8.3 lb)\none piece of sushi" },
@@ -220,7 +220,7 @@
 	{ "question": "工房", "answers": [ "こうぼう" ], "comment": "workshop; studio; atelier" },
 	{ "question": "巧み", "answers": [ "たくみ" ], "comment": "skillful; adroit; dexterous; masterful; clever; ingenious; cunning" },
 	{ "question": "帆柱", "answers": [ "ほばしら" ], "comment": "mast" },
-	{ "question": "帆船", "answers": [ "はんせん" ], "comment": "sailing ship; sailing boat; sailing vessel" },
+	{ "question": "帆船", "answers": [ "はんせん", "ほぶね" ], "comment": "sailing ship; sailing boat; sailing vessel" },
 	{ "question": "希少", "answers": [ "きしょう" ], "comment": "scarce; rare" },
 	{ "question": "帝国", "answers": [ "ていこく" ], "comment": "empire\nimperial" },
 	{ "question": "師匠", "answers": [ "ししょう" ], "comment": "master; teacher\ncoach who owns his stable" },
