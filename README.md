@@ -26,12 +26,14 @@ Uses the [DiscordGo](https://github.com/bwmarrin/discordgo) project for API bind
 `kq!stop` - ends a running quiz immediately.  
 `kq!list` - shows a full list of loaded quizzes.  
 `kq!mad/fast/quiz/mild/slow <deck>` - for 0/1/2/3/5 second answer windows instead.  
+`kq!flash <deck>` - for no pause between questions.  
 `kq!gauntlet <deck>` - runs a kanji time trial in Direct Message.  
 `kq!scramble [easy/normal/hard/insane]` - runs an English Word Scramble quiz with varying word length limits.
 
 *Utilities*  
 `kq!k <kanji>` - displays kanji information.  
 `kq!f <word>` - shows usage frequency statistics for given Japanese word.  
+`kq!p <word>` - shows pitch accent information for given word.  
 `kq!c <X currency in Y currency>` - converts between given currencies.  
 `kq!time` - shows current time in UTC.  
 `kq!ping` - measures the bot's latency to the server.  
