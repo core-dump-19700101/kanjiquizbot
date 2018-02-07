@@ -822,7 +822,7 @@
 	{ "question": "気温", "answers": [ "きおん" ], "comment": "atmospheric temperature" },
 	{ "question": "水準", "answers": [ "すいじゅん" ], "comment": "level; standard\nwater level" },
 	{ "question": "氷", "answers": [ "こおり" ], "comment": "ice\nshaved ice (usually served with flavored simple syrup)\nice\nhail" },
-	{ "question": "永久", "answers": [ "えいきゅう" ], "comment": "eternity; perpetuity; immortality\nEikyuu era (1113.7.13-1118.4.3)" },
+	{ "question": "永久", "answers": [ "えいきゅう", "とわ" ], "comment": "eternity; perpetuity; immortality\nEikyuu era (1113.7.13-1118.4.3)" },
 	{ "question": "永遠", "answers": [ "えいえん" ], "comment": "eternity; perpetuity; immortality; permanence" },
 	{ "question": "求める", "answers": [ "もとめる" ], "comment": "to want; to wish for\nto request; to demand\nto seek; to search for; to pursue (pleasure); to hunt (a job)\nto purchase; to buy" },
 	{ "question": "汗", "answers": [ "あせ" ], "comment": "sweat; perspiration\nmoisture; condensation\nkhan (medieval ruler of a Tatary tribe)" },

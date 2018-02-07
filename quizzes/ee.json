@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180202-2326 [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180206-2228 [Brought to you by h​onya#1726]",
 "type": "text",
 "deck": [
 {
@@ -8071,7 +8071,7 @@
 "comment": "Lv.02/12: [名] ほお\n‘tears rolled down her cheeks’"
 },
 {
-"question": "1. [no object] Shout for joy or in praise or encouragement.\n 1. [with object] Praise or encourage with shouts.\n2. [with object] Give comfort or support to.\n 1. [with object] (– someone up\" or \"– up) Make or become less miserable.",
+"question": "1. [no object] Shout for joy or in praise or encouragement.\n 1. [with object] Praise or encourage with shouts.\n2. [with object] Give comfort or support to.\n 1. [with object] (– someone up or – up) Make or become less miserable.",
 "answers": [
 "cheer"
 ],
@@ -17320,11 +17320,11 @@
 "comment": "Lv.03/12: [名] 子猫\n‘Eleven out of 13 rescued kittens featured in the Advertiser have found new homes.’"
 },
 {
-"question": "1. A fund of money for communal use, made up of contributions from a group of people.\n 1. A pool of money in some gambling card games.\n2. (in bowls) the jack.",
+"question": "A pet name or a child's name for a kitten or cat.",
 "answers": [
 "kitty"
 ],
-"comment": "Lv.03/12: [名] 子猫ちゃん\n‘The group has decided that each member will contribute €2 per meeting towards a kitty to cover costs such as postage, phone calls, venue hire, tea and biscuits.’"
+"comment": "Lv.03/12: [名] 子猫ちゃん\n‘Make sure you have an emergency vet number handy - our kitties have gotten fevers from the infection.’"
 },
 {
 "question": "1. A flightless New Zealand bird with hair-like feathers, having a long downcurved bill with sensitive nostrils at the tip.\n2. «informal» A New Zealander.",
@@ -70559,7 +70559,7 @@
 "answers": [
 "charred"
 ],
-"comment": "Lv.11/12: [形] 黑焦げの\n‘charred remains’"
+"comment": "Lv.11/12: [形] 黒焦げの\n‘charred remains’"
 },
 {
 "question": "1. A deep fissure in the earth's surface.\n 1. A profound difference between people, viewpoints, feelings, etc.",
@@ -80515,11 +80515,11 @@
 "comment": "Lv.12/12: [名] 修道士\n‘Besides the ascesis through spiritual fatherhood, the monastics fulfill their daily spiritual exercise through the more common practices of prayer, fasting, and vigil.’"
 },
 {
-"question": "Raise (a question or topic) for discussion; suggest (an idea or possibility).",
+"question": "1. Subject to debate, dispute, or uncertainty.\n2. Having little or no practical relevance, typically because the subject is too uncertain to allow a decision.",
 "answers": [
 "moot"
 ],
-"comment": "Lv.12/12: [動] 議題にのせる\n‘the scheme was first mooted last October’"
+"comment": "Lv.12/12: [形] 議論の余地がある、未解決の\n‘whether the temperature rise was mainly due to the greenhouse effect was a moot point’"
 },
 {
 "question": "Sullen and ill-tempered.",
