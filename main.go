@@ -187,6 +187,15 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m.ChannelID, "No query word specified!")
 			}
+		case "pitch", "p":
+			if len(input) >= 2 {
+				err := sendPitchInfo(s, m.ChannelID, strings.TrimSpace(m.Content[len(input[0])+1:]))
+				if err != nil {
+					msgSend(s, m.ChannelID, "Error: "+err.Error())
+				}
+			} else {
+				msgSend(s, m.ChannelID, "https://imgur.com/ThGj3XP") // Send pitch info graphic
+			}
 		case "currency", "c":
 			if len(input) >= 2 {
 				msgSend(s, m.ChannelID, Currency(m.Content[len(input[0])+1:]))

@@ -49,6 +49,9 @@ type WordFrequency struct {
 // All word frequency info map
 var WordFrequencyMap map[string][]WordFrequency
 
+// All pitch info map
+var PitchMap map[string]string
+
 // Storage container for saving things on disk
 var Storage struct {
 	sync.RWMutex
@@ -67,6 +70,9 @@ func loadFiles() {
 
 	// Initialize Word Frequency map
 	loadWordFrequency()
+
+	// Initialize Pitch info map
+	loadPitchInfo()
 
 	// Load font file
 	loadFont()
@@ -569,6 +575,45 @@ func sendWordFrequencyInfo(s *discordgo.Session, cid string, query string) error
 		Title:  ":u5272: Word Frequency Information",
 		Color:  0xFADE40,
 		Fields: fields,
+	}
+
+	embedSend(s, cid, embed)
+
+	// Got this far without errors
+	return nil
+}
+
+// Load Pitch Info into memory
+func loadPitchInfo() {
+
+	// Open pitch info data file
+	file, err := os.Open(RESOURCES_FOLDER + "pitch.json")
+	if err != nil {
+		log.Fatalln("ERROR, Reading pitch json file: ", err)
+	}
+	defer file.Close()
+
+	err = json.NewDecoder(file).Decode(&PitchMap)
+	if err != nil {
+		log.Fatalln("ERROR, Unmarshalling pitch json: ", err)
+	}
+}
+
+// Return Pitch Info loaded from local cache
+func sendPitchInfo(s *discordgo.Session, cid string, query string) error {
+
+	var pitches string
+	var exists bool
+	if pitches, exists = PitchMap[strings.ToLower(k2h(query))]; !exists {
+		return fmt.Errorf("Word '%s' not found", query)
+	}
+
+	// Build a Discord message with the result
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       ":musical_note: Pitch Information",
+		Color:       0xFADE40,
+		Description: truncate(pitches, 2000),
 	}
 
 	embedSend(s, cid, embed)

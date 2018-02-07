@@ -397,6 +397,7 @@ outer:
 
 		// Round's score keeper
 		scoreKeeper := make(map[string]int)
+		scoreKeeperAnswers := make(map[string][]string)
 
 		// Drain premature "answers" from channel buffer
 		for len(c) > 0 {
@@ -469,6 +470,7 @@ outer:
 					}
 
 					scoreKeeper[user.ID]++
+					scoreKeeperAnswers[user.ID] = append(scoreKeeperAnswers[user.ID], msg.Content)
 
 					// Reset timeouts since we're active
 					timeoutCount = 0
@@ -488,7 +490,13 @@ outer:
 
 			var participants string
 			for _, p := range ranking(scoreKeeper) {
-				participants += fmt.Sprintf("<@%s> +%d (%dp)\n", p.Name, minint(p.Score, pointLimit), players[p.Name])
+				participants += fmt.Sprintf(
+					"<@%s> +%d (%dp): %s\n",
+					p.Name,
+					minint(p.Score, pointLimit),
+					players[p.Name],
+					strings.Join(scoreKeeperAnswers[p.Name], ", "),
+				)
 			}
 
 			embed := &discordgo.MessageEmbed{
