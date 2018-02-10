@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -752,4 +753,47 @@ func Currency(query string) string {
 	}
 
 	return fmt.Sprintf("Currency: %s %s is **%s** %s", parts[0], from, humanize(multiplier*number), to)
+}
+
+// Return frequency from corpus of novels
+func corpusSearch(query string) string {
+
+	target := []byte(query)
+	eob := []byte("@@@[NOVEL_END]@@@")
+	var countBook, countTotal, booksTotal, booksMatched int
+	bookList := make([]int, 0, 1300)
+
+	corpusFile, err := os.Open(RESOURCES_FOLDER + "corpus.txt")
+	if err != nil {
+		return "ERROR, Could not open Corpus file: " + err.Error()
+	}
+	defer corpusFile.Close()
+
+	scanner := bufio.NewScanner(corpusFile)
+	scanner.Buffer(make([]byte, 1*1024*1024), 16*1024*1024)
+	for scanner.Scan() {
+		if bytes.Equal(scanner.Bytes(), eob) {
+			booksTotal++
+			if countBook > 0 {
+				booksMatched += 1
+				countTotal += countBook
+				bookList = append(bookList, countBook)
+				countBook = 0
+			}
+			continue
+		}
+
+		countBook += bytes.Count(scanner.Bytes(), target)
+	}
+	if err := scanner.Err(); err != nil {
+		return "ERROR, Could not scan Corpus file: " + err.Error()
+	}
+
+	median := 0
+	if len(bookList) > 0 {
+		sort.Ints(bookList)
+		median = bookList[len(bookList)/2]
+	}
+
+	return fmt.Sprintf("Found %d instances of '%s' in %d (%.1f%%) books, median %d per book.\n", countTotal, target, booksMatched, 100*float64(booksMatched)/float64(booksTotal), median)
 }

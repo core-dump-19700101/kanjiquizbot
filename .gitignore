@@ -18,3 +18,6 @@ kanjiquizbot
 
 # Private storage file
 storage.json
+
+# Corpus file (copyrights)
+corpus.txt

@@ -187,6 +187,12 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			} else {
 				msgSend(s, m.ChannelID, "No query word specified!")
 			}
+		case "s":
+			if len(input) >= 2 {
+				msgSend(s, m.ChannelID, corpusSearch(m.Content[len(input[0])+1:]))
+			} else {
+				msgSend(s, m.ChannelID, "No query word specified!")
+			}
 		case "pitch", "p":
 			if len(input) >= 2 {
 				err := sendPitchInfo(s, m.ChannelID, strings.TrimSpace(m.Content[len(input[0])+1:]))
