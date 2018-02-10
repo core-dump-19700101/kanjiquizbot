@@ -1274,7 +1274,7 @@
 	{ "question": "越す", "answers": [ "こす" ], "comment": "to cross over (e.g. mountain); to go across\nto go over (e.g. with audience)\nto pass time (e.g. a winter)\nto surpass; to be better than; to exceed\nto move house\nto go; to come" },
 	{ "question": "跡", "answers": [ "あと" ], "comment": "trace; tracks; mark; sign\nsite; remains; ruins\nscar\ntrace" },
 	{ "question": "身", "answers": [ "み" ], "comment": "body\noneself\none's place; one's position\nmain part; meat (as opposed to bone, skin, etc.); wood (as opposed to bark); blade (as opposed to its handle); container (as opposed to its lid)\n(dead) body; corpse" },
-	{ "question": "身体", "answers": [ "しんたい" ], "comment": "body\ntorso; trunk\nbuild; physique; constitution\nhealth\ncorpse; dead body\nbody; physical system; person" },
+	{ "question": "身体", "answers": [ "しんたい", "からだ" ], "comment": "body\ntorso; trunk\nbuild; physique; constitution\nhealth\ncorpse; dead body\nbody; physical system; person" },
 	{ "question": "身長", "answers": [ "しんちょう" ], "comment": "height (of body); stature" },
 	{ "question": "軍", "answers": [ "ぐん" ], "comment": "army; force; troops\nwar; battle; campaign; fight\ntroops; forces" },
 	{ "question": "軍隊", "answers": [ "ぐんたい" ], "comment": "armed forces; military; troops" },

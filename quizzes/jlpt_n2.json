@@ -677,7 +677,7 @@
 	{ "question": "文献", "answers": [ "ぶんけん" ], "comment": "literature; books (reference); document" },
 	{ "question": "文脈", "answers": [ "ぶんみゃく" ], "comment": "context" },
 	{ "question": "文芸", "answers": [ "ぶんげい" ], "comment": "literature; art and literature; belles-lettres" },
-	{ "question": "斜", "answers": [ "はす" ], "comment": "slanting; tilted; sloping; diagonal; oblique\nunusual; slanted (view of the world); bad (mood)\ndiagonal" },
+	{ "question": "斜", "answers": [ "しゃ", "はす" ], "comment": "slanting; tilted; sloping; diagonal; oblique\nunusual; slanted (view of the world); bad (mood)\ndiagonal" },
 	{ "question": "斜め", "answers": [ "ななめ" ], "comment": "slanting; tilted; sloping; diagonal; oblique\nunusual; slanted (view of the world); bad (mood)" },
 	{ "question": "斬る", "answers": [ "きる" ], "comment": "to kill (a human) using a blade (sword, machete, knife, etc.); to slice (off); to lop (off); to cut (off)" },
 	{ "question": "断定", "answers": [ "だんてい" ], "comment": "conclusion; decision" },

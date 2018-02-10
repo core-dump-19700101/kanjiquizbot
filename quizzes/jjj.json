@@ -1,5 +1,5 @@
 {
-"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\n\nVer.180208-0154 –N3 Edition– [Brought to you by h​onya#1726]",
+"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\n\nVer.180210-0033 –N3 Edition– [Brought to you by h​onya#1726]",
 "type": "text",
 "deck": [
 {
@@ -308,13 +308,6 @@
 "comment": "Lv.N4 [ichi1]: ちゃん • suffix for familiar person\n1007660「太郎－」"
 },
 {
-"question": "（接続）\n①前に述べた事柄を理由・根拠として次に述べる事柄が導かれることを示す。そういう訳なら。じゃあ。\n②区切りをつけて，挨拶（あいさつ）などを切り出す語。じゃあ。",
-"answers": [
-"では"
-],
-"comment": "Lv.N5 [ichi1]: では • then; well; so; well then\n1008450「『道がわかりませんが』『－お迎えに参ります』」"
-},
-{
 "question": "（副）\n①（下に打ち消しや否定的表現を伴って）否定的な意味を強調する気持ちを表す。どのようにしても。何としても。\n②非常に。たいへん。\n③どうせ。同じく。",
 "answers": [
 "とても",
@@ -609,13 +602,6 @@
 "珈琲"
 ],
 "comment": "Lv.N5 [ichi1]: こーひー • coffee\n1049180"
-},
-{
-"question": "日本プロレタリア文化連盟の略称。1931年（昭和6），蔵原惟人（これひと）の提唱によりナップを発展的に解消し，革命的な芸術運動の全領域を結集する目的で結成された文化団体。34年弾圧により解体。",
-"answers": [
-"コップ"
-],
-"comment": "Lv.N5 [ichi1]: こっぷ • glass (drinking vessel); tumbler; cop (police officer)\n1050390"
 },
 {
 "question": "（名）スル \n①複写すること。複製すること。また，そのもの。\n②本物に似せたもの。\n③広告のキャッチ-フレーズや説明文案。",
@@ -1516,7 +1502,6 @@
 "answers": [
 "一",
 "１",
-"1",
 "壱",
 "弌"
 ],
@@ -1527,28 +1512,9 @@
 "answers": [
 "一つ",
 "１つ",
-"1つ",
 "一"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ひとつ • one; for one thing; only; (not) even; just (e.g. \"just try it\")\n1160820「－，ふたつ」"
-},
-{
-"question": "一年の中の第一番目の月。正月。むつき。太郎月。",
-"answers": [
-"一月",
-"１月",
-"1月"
-],
-"comment": "Lv.N5 [news1/spec1]: いちがつ • January\n1162120"
-},
-{
-"question": "①しばらくの間。いっとき。\n②以前のある時。ひところ。いっとき。副詞的にも用いる。\n③昔の時間の区分。今の約二時間。いっとき。",
-"answers": [
-"ひととき",
-"一時",
-"ひと時"
-],
-"comment": "Lv.N3 [ichi1]: ひととき • moment; a (short) time; a while; former times; two-hour period\n1162920「楽しい－を過ごす」"
 },
 {
 "question": "①一つの種類。\n②（その中に入れてもいいような）ある種類。ほぼ同類。\n③（副詞的に用いる）はっきりいえないが，何かそういう感じがすること。",
@@ -1616,8 +1582,7 @@
 "answers": [
 "いっぱい",
 "一杯",
-"１杯",
-"1杯"
+"１杯"
 ],
 "comment": "Lv.N4 [ichi1/news1]: いっぱい • amount necessary to fill a container (e.g. cupful, spoonful, etc.); drink (usu. alcoholic); full; one squid, octopus, crab, etc.; one boat; fully; to capacity; a lot; much; all of ...; the entire ...\n1165670「－の酒」"
 },
@@ -1632,8 +1597,7 @@
 "question": "一（名）\n①順番・番号などの最初。また，最初のもの。\n②多くの中で最もよいもの。最上。\n③能・狂言，碁・将棋・相撲など「番」で数えるもの一つ。一回。一曲。→番\n二（副）\n①最も。この上なく。\n②試しに。\n③決意をもってするさま。いっちょう。\n④まず最初に。",
 "answers": [
 "一番",
-"１番",
-"1番"
+"１番"
 ],
 "comment": "Lv.N5 [ichi1/news1]: いちばん • number one; first; first place; best; most; game; round; bout; as a test; as an experiment; by way of experiment; by way of trial; tentatively; song (e.g. in noh); piece\n1165970「寝るのが－だ」"
 },
@@ -1962,13 +1926,6 @@
 "comment": "Lv.N3 [ichi1/news1]: さる • monkey (esp. the Japanese macaque, Macaca fuscata); ape; non-human primate; sly person; idiot; hick; sliding wooden bolt (for holding a door or window shut); clasp used to control the height of a pot-hook; bathhouse prostitute\n1177390「－まね」"
 },
 {
-"question": "物の端の、他との境界になる部分。へり。はし。また、そこを取り囲む枠など。",
-"answers": [
-"縁"
-],
-"comment": "Lv.N3 [ichi1/news1]: ふち • rim; brim; edge; brink\n1177500「花びらの－」"
-},
-{
 "question": "（形）\n①空間的に，隔たりが大きい。\n②時間的に隔たりが大きい。\n③なかなかそうならない。その段階に達するにはまだまだである。\n　㋐関係があまりない。\n　㋑血縁関係が薄い。\n　㋒親しくない。疎遠だ。\n⑤性質や内容が似ていない。似つかわしくない。\n　㋐意識がはっきりしない。また，程度が激しすぎて，意識を失うほどである。\n　㋑遠視である。\n　㋒聴覚が弱い。また，よく聞こえない。\n↔近い→遠く",
 "answers": [
 "遠い"
@@ -2193,14 +2150,6 @@
 "comment": "Lv.N5 [ichi1/news1]: くださる • to give; to confer; to bestow; to kindly do for one; to oblige; to favour; to favor\n1184280「先生の－・った御本」"
 },
 {
-"question": "（動サ五［四］）\n①高い地位や，権威ある地位にある者が命令・判決などを申し渡す。\n②はっきりとした判断をする。\n③戦いやスポーツの試合で，相手を負かす。攻め落とす。\n④下痢をする。また，薬などで体内のものを肛門から外へ出す。\n⑤他人に指図してやらせるのではなく，自分で行う。\n⑥下の方に向けて，ある行為をする。\n⑦（動詞の連用形に付いて）物事をとどこおることなく一気に進める。\n⑧身分の上の者が下の者に金品を与える。\n⑨都から地方へつかわす。\n⑩高い所から低い所へ行かせる。\n⑪身分などを下げる。格下げする。\n⑫川の上流から下流へ流れにのせて流す。\n⑬雨や雪を降らせる。",
-"answers": [
-"下す",
-"降す"
-],
-"comment": "Lv.N3 [ichi1]: くだす • to make a decision; to draw a conclusion; to give a judgement; to hand down a verdict; to pass a sentence; to give an order; to let go down; to lower; to do oneself; to do by oneself; to beat; to defeat; to have loose bowels; to have diarrhea; to pass (in stool); to discharge from the body; to do in one go; to do to the end without stopping\n1184320「強敵を－・す」"
-},
-{
 "question": "①高い所から低い方へ移動すること。上から下におりること。また，その道。↔のぼり\n②乗り物や道路など交通機関で，線区または路線区の起点から終点への方向。また，その方向に走行する列車やバス。↔のぼり\n③上流から下流の方向へ行くこと。↔のぼり\n④都から地方へ向かうこと。\n⑤近世，上方から江戸へ向かうこと。また，上方から江戸にもたらされた物産。\n⑥京都で，南へ向かって行くこと。↔のぼり\n⑦上方から江戸へ来ている人。\n⑧昔の時間の単位である時（とき）の呼び方で，ある刻限の終わり近く。\n⑨下痢。くだりばら。\n⑩（地名の下に付いて）その土地のはずれの方，また，遠く隔った土地の意を表す。くんだり。",
 "answers": [
 "下り"
@@ -2214,13 +2163,6 @@
 "降る"
 ],
 "comment": "Lv.N4 [ichi1/news1]: くだる • to descend; to go down; to come down; to be handed down (of an order, judgment, etc.); to pass (of time); to surrender; to capitulate; to be less than; to be inferior to; to have the runs; to have diarrhea; to pass (in stool); to be discharged from the body; to depreciate oneself; to be humble\n1184450「やや時代が－・っての事」"
-},
-{
-"question": "①下の方。下の方の場所。また，川下や風下。しもて。\n②相撲で相手の差し手の下に差した組み手。また，その腕。↔上手（うわて）\n③囲碁・将棋などで，棋力の劣る方の指し手。↔上手（うわて）",
-"answers": [
-"下手"
-],
-"comment": "Lv.N5 [ichi1]: したて • humble position; inferior; underarm grip on opponent's belt\n1185190「丘の－に陣を取る」"
 },
 {
 "question": "（名・形動）\n①技術などのうまくない・こと（さま）。そのような人をもいう。↔上手じようず\n②（悪い結果を招くような）手ぎわの悪いこと。思慮の足りないこと。また、そのさま。\n③中途半端なこと。なまなかなこと。また、そのさま。",
@@ -2384,13 +2326,6 @@
 "家"
 ],
 "comment": "Lv.N5 [ichi1]: うち • house; home (one's own); (one's) family; (one's) household\n1191740「空き地に－が建った」"
-},
-{
-"question": "（接尾）\n氏・姓・官職・称号などに付いて、それに所属するものの意を表す。また尊敬の意を添える。",
-"answers": [
-"家"
-],
-"comment": "Lv.N5 [ichi1]: け • house (e.g. of Tokugawa); family\n1191750「平－」"
 },
 {
 "question": "家の中に据えて用いる道具。机・いす・テーブル・たんすなど。",
@@ -2667,27 +2602,11 @@
 "comment": "Lv.N3 [ichi1]: とく • to untie; to unfasten; to unwrap; to undo; to unbind; to unpack; to unsew; to unstitch; to solve; to work out; to answer; to dispel (misunderstanding, etc.); to clear up; to remove (suspicion); to appease; to dissolve (a contract); to cancel; to remove (a prohibition); to lift (a ban); to raise (a siege); to release (from duty); to relieve; to dismiss; to comb (out); to card; to untangle (hair)\n1198890「帯を－・く」"
 },
 {
-"question": "一（動カ五［四］）\n①縫い目や結び目，またもつれているものなどをときはなす。\n②願ほどきをする。\n③迷いや疑いを晴らす。",
-"answers": [
-"ほどく",
-"解く"
-],
-"comment": "Lv.N3 [ichi1]: ほどく • to undo; to untie; to unfasten; to unlace; to unravel; to loosen\n1198900「縄を－・く」"
-},
-{
 "question": "（動カ下一）\n①ある物質の分子が液体中に均一に拡散する。溶解する。\n②固形物が，熱によって液状になる。",
 "answers": [
 "解ける"
 ],
 "comment": "Lv.N3 [ichi1]: とける • to be solved; to loosen; to come untied; to be removed (e.g. restrictions); to be cleared (e.g. misunderstandings); to be broken (e.g. spells, curses); to melt\n1198910「塩は水に－・ける」"
-},
-{
-"question": "（動カ下一）\n①とけはなれる。とける。\n②気持ちが和らぐ。うちとける。",
-"answers": [
-"ほどける",
-"解ける"
-],
-"comment": "Lv.N3 [ichi1]: ほどける • to come lose; to come untied; to come undone; to unravel; to loosen up (e.g. tension)\n1198920「結び目が－・ける」"
 },
 {
 "question": "（名）スル \nもつれていた物事にけりをつけたり，問題に結論を出したりすること。また，その物事や問題が片付くこと。",
@@ -2839,13 +2758,6 @@
 "comment": "Lv.N5 [ichi1]: あける • to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock; to open (for business, etc.); to empty; to remove; to make space; to make room; to move out; to clear out; to be away from (e.g. one's house); to leave (temporarily); to dawn; to grow light; to end (of a period, season); to begin (of the New Year); to leave (one's schedule) open; to make time (for); to make (a hole); to open up (a hole)\n1202450「玄関のかぎを－・ける」"
 },
 {
-"question": "（動カ下一）\n①前方にさえぎる物がなく，広く遠くまで見わたせる。\n②（比喩的に）前進するのにじゃまなものがなくなる。\n③よい状態に向かう。運が向く。\n④多くの人が住みついてにぎやかになる。\n⑤文化・文明がそこで進展する。また，人の考えが進歩する。開化する。\n⑥人情に通じ，物分かりが良い。\n⑦道路・鉄道などが通じる。\n⑧花が咲く。\n⑨心にわだかまりがなく晴れ晴れとする。",
-"answers": [
-"開ける"
-],
-"comment": "Lv.N5 [ichi1]: ひらける • to become opened up; to improve; to get better; to develop; to progress; to become civilized (civilised); to be up-to-date; to be enlightened; to be sensible\n1202460「視界が－・ける」"
-},
-{
 "question": "（名）スル \n物事を始めること。また，始まること。↔終了",
 "answers": [
 "開始"
@@ -2865,15 +2777,6 @@
 "外"
 ],
 "comment": "Lv.N5 [ichi1/news1]: そと • outside; exterior; open air; other place\n1203250「部屋の－からも話が聞こえる」"
-},
-{
-"question": "①ここではない別の所。よそ。\n②それ以外のこと・もの。…を除いて。\n③ある範囲を超えたところ。\n↔うち",
-"answers": [
-"ほか",
-"他",
-"外"
-],
-"comment": "Lv.N3 [spec1/ichi1]: ほか • other (place, thing, person); the rest; outside; beyond; nothing except; nothing but; nothing apart from; nothing aside from; no choice (but to); besides...; in addition to...\n1203260「－で探してください」"
 },
 {
 "question": "（動サ五［四］）\n①はまり込んでいたり，ついていた物を，そこから離す。\n②ねらった目標などをそらす。また，目標をそらしてねらう。\n③メンバーから除く。\n④一時的にある場所を離れる。\n⑤相手の働きかけを横にそらす。\n⑥とらえ損なう。逸する。また，わざとさける。\n⑦一定の枠を乗り越える。",
@@ -2978,25 +2881,11 @@
 "comment": "Lv.N3 [ichi1/news1]: かくご • resolution; resignation; readiness; preparedness\n1206080「決死の－」"
 },
 {
-"question": "㈠（名・形動）\n　①四角。方形。また，四角なさま。\n　②〘数〙一点から出る二本の半直線で作られる図形。また，その開き方の度合。角度。\n　③将棋の駒の一。角行（かくぎよう）。\n　④つので作った笛。中国から伝わり，古く軍陣で用いた。つのぶえ。\n　⑤中国・日本の音楽理論でいう五音（ごいん）のうち，低い方から数えて三番目の音。→五音\n　⑥二十八宿の一。東方の星宿。角宿。すぼし。\n　⑦紋の輪郭として使われる正方形。平角・隅入角など。\n　⑧「鉸具（かこ）」に同じ。\n㈡（接尾）\n　助数詞。\n　①一分金，または一分銀を数えるのに用いる。\n　②中国の貨幣単位の一。一元は一〇角。一角は一〇分。",
-"answers": [
-"角"
-],
-"comment": "Lv.N5 [ichi1]: かく • angle; square (or cube); bishop; third degree (of the Japanese & Chinese pentatonic scale); Chinese \"horn\" constellation (one of the 28 mansions); jiao (monetary unit of China; one-tenth of a yuan)\n1206100「－に切る」"
-},
-{
 "question": "①二つの線や面が出合って生じるとがった部分。\n②円満でなくとげとげしい性質。圭角（けいかく）。\n③刀剣の，峰の厚くなっている部分。しのぎ。または，切っ先。\n④目に立つ所。見るべき点。",
 "answers": [
 "角"
 ],
 "comment": "Lv.N5 [ichi1/news1]: かど • corner (e.g. desk, pavement); edge\n1206110「柱の－」"
-},
-{
-"question": "①動物の頭部に長く突き出ている骨質または角質の硬い突起。\n②物の表面または頭上の突起物。\n③婦人の嫉妬（しつと）や怒りのたとえ。→角を生やす\n④家紋の一。角の形を図案化したもの。枝角と袋角がある。",
-"answers": [
-"角"
-],
-"comment": "Lv.N5 [ichi1]: つの • horn\n1206120「水牛の－」"
 },
 {
 "question": "㈠（動バ五［四］）\n　①教えを受けて知識や技芸を身につける。\n　②勉強する。学問をする。\n　③経験を通して知識や知恵を得る。わかる。\n　④まねる。→習う（補説欄）",
@@ -3085,13 +2974,6 @@
 "楽む"
 ],
 "comment": "Lv.N4 [ichi1/news1]: たのしむ • to enjoy (oneself)\n1207270「青春を－・む」"
-},
-{
-"question": "①板・紙・絹布などに書画をかいて、門や室内に掲げておくもの。\n②額縁。\n③量。数。特に、金銭の高。\n④「額裏②」の略。\n⑤「額銀がくぎん」「額判がくばん」の略。",
-"answers": [
-"額"
-],
-"comment": "Lv.N3 [ichi1/news1]: がく • picture (framed); amount or sum (of money)\n1207500「膨大な－に達する」"
 },
 {
 "question": "①顔の上部。髪の生え際から眉（まゆ）のあたりまでの間。おでこ。ぬか。\n②冠の頂部に当たるところ。厚額・薄額・透き額などがある。甲。→冠\n③童舞（わらわまい）の冠。天冠。\n④「平額（ひらびたい）」に同じ。\n⑤「額髪」の略。\n⑥ものの突き出た部分。",
@@ -3362,13 +3244,6 @@
 "間"
 ],
 "comment": "Lv.N5 [ichi1/news1]: あいだ • space (between); gap; interval; distance; time (between); pause; break; span (temporal or spatial); stretch; period (while); relationship (between, among); members (within, among); due to; because of\n1215230「駅から家までの－に停留所が二つある」"
-},
-{
-"question": "一（名）\n㈠空間的な間隔。\n　①物と物とのあいだの空間。すきま。\n　②家屋内の一区切り。部屋。古代では，几帳（きちよう）・障子などで区切られた区画も「ま」と呼んだ。\n　③ある物の位置する空間を漠然とさす語。あたり。\n　④建物の柱と柱のあいだ。\n㈡時間的な間隔。\n　①事と事とのあいだの時間。ひま。\n　②事が継続しているあいだの時間。ある状態が続いているあいだ。\n　③日本の伝統芸能（音楽・舞踊・演劇など）で，拍と拍（動作と動作）のあいだの時間的間隔。転じて，リズムやテンポの意にも用いられる。\n　④適当な時機。機会。しおどき。\n㈢その場の具合。雰囲気。\n　二（接尾）\n　助数詞。\n　①部屋の数を数えるのにいう。\n　②柱と柱のあいだを単位として数えるときに用いる。実際の長さは一定せず，平安時代には一〇尺ほどであったが，一五世紀末頃に六尺五寸が多く用いられ，土木における長さの基準となった。これに対し徳川幕府が1649年に一間（ひとま）を六尺と定めてから主に関東・東北地方で用いられるようになり，しだいに「けん（間）」が長さの単位として定着してきた。→けん（間）・京間（きようま）・田舎間（いなかま）\n　③建物や部屋の広さをいうのに用いる。二②の長さをいう「ま（間）」をもととし，縦一間（ひとま）・横一間の広さを一間（ひとま）とする。\n　④障子の桟（さん）で囲まれた一区切りなど，一定の区切られた空間を数えるのに用いる。",
-"answers": [
-"間"
-],
-"comment": "Lv.N5 [ichi1]: ま • time; pause; space; room\n1215240「木（こ）の－」"
 },
 {
 "question": "（動ワ五［ハ四］）\n①決められた時刻・期限に遅れない。\n②その場の必要を満たす。十分である。",
@@ -4049,13 +3924,6 @@
 "comment": "Lv.N4 [ichi1]: なく • to cry; to weep; to sob; to howl\n1229840「人前で大声で－・く」"
 },
 {
-"question": "㈠（名）\n　①丸いもの。たま。\n　②〘数〙ある点から一定の距離にある点の全体がつくる空間図形。→球面\n㈡（接尾）\n　助数詞。野球などで、投手がボールを投げた回数を数えるのに用いる。",
-"answers": [
-"球"
-],
-"comment": "Lv.N3 [ichi1/news1]: きゅう • sphere; counter for balls\n1229880"
-},
-{
 "question": "①使用人の労働に対して，雇い主が支払う報酬。俸給。サラリー。→賃金\n②「学問（がくもん）料」に同じ。",
 "answers": [
 "給料"
@@ -4323,13 +4191,6 @@
 "comment": "Lv.N4 [ichi1/news1]: きょうみ • interest (in something); curiosity (about something); zest (for)\n1238410「－を覚える」"
 },
 {
-"question": "①光の反射を利用して形・姿を映して見る道具。古くは銅合金など金属を用いたが，現在は，ガラス板の裏面に銀鍍金（めつき）をして作る。古来霊的なものとみなされ，神社の神体とし，荘厳具や魔除けの具とされる。また，婦女の魂として尊重する風があった。\n②「鏡餅（かがみもち）」の略。\n③酒樽の蓋。\n④提出あるいは送付する書類の一枚目に，あて先・標題・日付・作成者などを記して添える文書。\n⑤「鏡物（かがみもの）」の略。→かがみ（鑑）",
-"answers": [
-"鏡"
-],
-"comment": "Lv.N4 [ichi1/news1]: かがみ • mirror; looking-glass; barrel head\n1238550「－に映った姿」"
-},
-{
 "question": "（動カ五［四］）\n①思いがけないことにあって，落ち着きを失う。びっくりする。\n②思い知らされて，感心したりあきれたりする。\n③はっと気づく。\n④目がさめる。",
 "answers": [
 "驚く",
@@ -4464,13 +4325,6 @@
 "comment": "Lv.N3 [ichi1/news1]: きんだい • present day; modern times\n1242420「－絵画」"
 },
 {
-"question": "①金属。金・銀・銅・鉄など。\n②金銭。おかね。",
-"answers": [
-"金"
-],
-"comment": "Lv.N3 [ichi1]: かね • money; metal\n1242590「－の箸」"
-},
-{
 "question": "①11族（銅族）に属する遷移元素の一。元素記号Au原子番号79。原子量197.0。比重19.3。自然金（単体の金）として主に石英鉱脈中に産する。光沢ある黄色の金属。金属中最も延性・展性が大きく，厚さ0.1マイクロメートルの箔（はく）とすることができる。化学的にきわめて安定で，空気中で酸化せず，酸におかされないが，王水には溶ける。古来，随一の貴金属とされ，貨幣・装飾品として用いられる。こがね。\n　㋐金銭。貨幣。\n　㋑江戸時代に用いられた大判・小判など金貨の総称。普通一両をさす。\n③金額を書くときに上に冠する語。\n④金の純度を示す単位。二四金を純金とする。\n⑤金の色。金色（きんいろ）。こがね色。\n⑥将棋の駒の一。「金将」の略。\n⑦五行（ごぎよう）の第四。季節では秋，方位では西，色では白，十干では庚（かのえ）・辛（かのと），五星では金星に当てる。\n⑧七曜の一。「金曜」の略。\n⑨睾丸（こうがん）。きんたま。",
 "answers": [
 "金"
@@ -4533,8 +4387,7 @@
 "question": "①九。九個。物の数を数える時に使う。\n②九歳。\n③昔の時刻の名。今の午前と午後の12時頃。ここのつどき。",
 "answers": [
 "九つ",
-"９つ",
-"9つ"
+"９つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ここのつ • nine\n1243600"
 },
@@ -4542,8 +4395,7 @@
 "question": "①日の数九つ。また，連続したその期間。\n②暦の月の九番目の日。",
 "answers": [
 "九日",
-"９日",
-"9日"
+"９日"
 ],
 "comment": "Lv.N5 [ichi1]: ここのか • the ninth day of the month; nine days\n1243850"
 },
@@ -4626,13 +4478,6 @@
 "comment": "Lv.N3 [news1]: ぐたい • concrete; tangible; material\n1245020"
 },
 {
-"question": "一（名）\n中に物が入っていないこと。うつろ。からっぽ。\n二（接頭）\n名詞に付く。\n①何も持っていない，何も伴っていない意を表す。\n②形だけで実質が伴わない，見せかけだけで真実ではない意を表す。\n③その動作が本来の目的を果たしていない意を表す。",
-"answers": [
-"空"
-],
-"comment": "Lv.N5 [ichi1/news1]: から • emptiness; vacuum; blank\n1245280「－の財布」"
-},
-{
 "question": "一（名）\n①地上をとりまく，広がりある空間。\n②天候。空模様。\n③根拠地・立脚点を離れた不安定な状態をいう。\n④記憶していて，書いたものを見ないこと。\n⑤うそ。いつわり。→空を使う\n⑥物の上部。てっぺん。\n二（形動ナリ）\n①心がぼんやりして，しっかりした意識がもてないさま。魂が抜けたようなさま。\n②明確な理由・根拠のないこと。多く，助詞「に」を伴って副詞的に用いる。\n三（接頭）\n名詞・動詞・形容詞などに付いて，根拠がない，実体のないことであるなどの意を表す。\n①外見上だけの。見せかけだけの。\n②実体がない。事実でない。\n③当てにならない。信頼できない。\n④はっきりした理由がない。わけがわからない。",
 "answers": [
 "空"
@@ -4696,14 +4541,6 @@
 "繰返す"
 ],
 "comment": "Lv.N3 [ichi1/news1]: くりかえす • to repeat; to do something over again\n1247030「おじぎを－・す」"
-},
-{
-"question": "㈠（名）\n　㋐国を治めている人。天皇。\n　㋑自分の仕えている主人。主君。\n　↔臣\n　②人に対する敬意を表す。\n　③遊女。遊君。\n　④古代の姓（かばね）の一。もと，地方豪族の首長の尊称。\n㈡（代）\n　二人称。相手を親しんで呼ぶ語。現代語で，男性が同輩およびそれ以下の相手に対して用いる。",
-"answers": [
-"君",
-"公"
-],
-"comment": "Lv.N4 [ichi1]: きみ • you; buddy; pal; monarch; ruler; sovereign; (one's) master\n1247250「万乗の－」"
 },
 {
 "question": "（接尾）\n友達や目下の人の姓や名，または姓名などに付けて，親しみや軽い敬意を表す。主に男性の用いる語。",
@@ -5263,16 +5100,6 @@
 "comment": "Lv.N3 [ichi1]: かしこい • wise; clever; smart\n1260260"
 },
 {
-"question": "①屋根の下端で，建物の外壁から張り出した部分。風雨や日光をよける。\n②「庇（ひさし）」に同じ。",
-"answers": [
-"軒",
-"簷",
-"檐",
-"宇"
-],
-"comment": "Lv.N4 [ichi1/news1]: のき • eaves; narrow aisle surrounding the core of a temple building\n1260330"
-},
-{
 "question": "①錠（じよう）の穴に差し込んで，戸や箱の蓋（ふた）などを開閉するための器具。キー。\n②錠（じよう）。\n③事件や問題を解決するための，重要な手がかり。キー-ポイント。",
 "answers": [
 "鍵",
@@ -5522,7 +5349,6 @@
 "answers": [
 "五",
 "５",
-"5",
 "伍"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ご • five\n1268060"
@@ -5531,8 +5357,7 @@
 "question": "①ご。五個。物の数を数える時に使う。\n②五歳。\n③昔の時刻の名。今の午前と午後の八時頃。五つ時。",
 "answers": [
 "五つ",
-"５つ",
-"5つ"
+"５つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: いつつ • five\n1268070"
 },
@@ -5540,8 +5365,7 @@
 "question": "①日の数五つ。また，連続したその期間。\n②暦の月の五番目の日。また特に，五月五日の端午の節句。",
 "answers": [
 "五日",
-"５日",
-"5日"
+"５日"
 ],
 "comment": "Lv.N5 [ichi1]: いつか • the fifth day of the month; five days\n1268570"
 },
@@ -5573,21 +5397,6 @@
 "呉れる"
 ],
 "comment": "Lv.N4 [ichi1]: くれる • to give; to let one have; to do for one; to be given\n1269130「君が－・れた万年筆」"
-},
-{
-"question": "㈠（名）\n　①物事の実現の順序が、あるものよりも遅いこと。↔前・先\n　②ある時点から時間が経過した時点。のち。↔先\n　③ある事の結果、残ったもの。\n　④子孫。\n　⑤後任の者。次に来る人。\n　⑥以前。↔先→後ろ（補説欄）\n㈡（副）\n　①数量を表す名詞に付いて、条件を満たしたり、目標を達成したりするまでに必要な数量を追加するときに用いる語。現段階からさらに。\n　②別の話題を追加するときに、文頭などに用いる語。",
-"answers": [
-"後"
-],
-"comment": "Lv.N5 [ichi1/news1]: あと • behind; rear; after; later; after one's death; remainder; the rest; descendant; successor; heir; more (e.g. five more minutes); left; also; in addition; past; previous\n1269320「－はこの私におまかせ下さい」"
-},
-{
-"question": "①物事の実現の順序が，あるものよりも遅いこと。あと。↔先・前\n②かなりの時間が経過した時点。\n③子孫。→後ろ（補説欄）",
-"answers": [
-"のち",
-"後"
-],
-"comment": "Lv.N5 [ichi1]: のち • later; afterwards; since; future; after one's death; descendant\n1269330「清作は－に医者になった」"
 },
 {
 "question": "①人・物の前面・正面と反対の側の方向・位置。背後。↔前\n②見えているのとは違う側。物の陰。\n③ある人・組織と関連がありながら表面化していない部分。背後。\n④長い物の末の方。後部。↔前\n⑤芝居の舞台で，俳優の後ろに控え，台詞（せりふ）をつけたり後見をしたりする黒子（くろご）。\n⑥舞台の陰で，役者の所作につれて効果を高めるためにはやす音曲。\n⑦物事の起こったあと。将来。行く末。\n⑧下襲（したがさね）のしり。裾（きよ）。",
@@ -5635,14 +5444,6 @@
 "語"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ご • language; word\n1270910「－を次ぐ」"
-},
-{
-"question": "①語ること。また，その話。\n②能や狂言で，叙事的な内容を物語ること。また，その文句。能楽では節をつけず，多くワキが演じる。\n③歌舞伎で，看板や外題の上に書く，粗筋を述べた七五調の文章。\n④劇や放送などで，筋や話の進行を物語ること。ナレーション。\n⑤話題。また，話の種。",
-"answers": [
-"語り",
-"語"
-],
-"comment": "Lv.N5 [news1]: かたり • talk; recital; narration; topic\n1270930"
 },
 {
 "question": "（動ラ五［四］）\n①順序だてて話してきかせる。言葉で表し言う。\n②特定の物語などを話す。また，節（ふし）をつけて話す。\n③ある事柄をよく説明する。おのずから示す。\n④親しく付き合う。懇意にする。",
@@ -6551,13 +6352,6 @@
 "comment": "Lv.N5 [ichi1]: さつ • counter for books; volume\n1298520「三－の本」"
 },
 {
-"question": "㈠（名）\n　紙幣。おさつ。\n㈡（接尾）\n　助数詞。手紙・証文・手形などを数えるのに用いる。",
-"answers": [
-"札"
-],
-"comment": "Lv.N3 [ichi1]: さつ • note; paper money\n1298960「－を数える」"
-},
-{
 "question": "①文字・絵・記号などを記して，人に知らせたり目印としたりする木・紙・金属などの小片。\n②「御札おふだ」に同じ。\n③必要事項を書き記して，何らかの事実の証明とするもの。入場券・鑑札・質札・合い札・利札など。\n④多くの人に告げ知らせる事項を書いて掲げるもの。高札・立て札など。\n⑤カルタ・トランプ・花札などの一枚一枚。\n⑥「日給につきゆうの簡ふだ」に同じ。",
 "answers": [
 "札",
@@ -6591,8 +6385,7 @@
 "question": "「みつ」の促音添加。三個，また三歳。現代語では，この語形の方が用いられる。",
 "answers": [
 "三つ",
-"３つ",
-"3つ"
+"３つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: みっつ • three\n1299740"
 },
@@ -6607,8 +6400,7 @@
 "question": "①日の数三つ。また，連続したその期間。\n②暦の月の三番目の日。また特に，正月三日。",
 "answers": [
 "三日",
-"３日",
-"3日"
+"３日"
 ],
 "comment": "Lv.N5 [ichi1]: みっか • the third day of the month; three days\n1301330「－坊主」"
 },
@@ -6749,8 +6541,7 @@
 "question": "「よつ（四）」に同じ。現代語ではふつうこの語形の方が用いられる。",
 "answers": [
 "四つ",
-"４つ",
-"4つ"
+"４つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: よっつ • four; four years of age; ten o'clock (old time system); cross grips\n1307040"
 },
@@ -6758,8 +6549,7 @@
 "question": "①日の数四つ。また，連続したその期間。\n②暦の月の四番目の日。",
 "answers": [
 "四日",
-"４日",
-"4日"
+"４日"
 ],
 "comment": "Lv.N5 [ichi1]: よっか • fourth day of the month; four days\n1307320"
 },
@@ -6810,13 +6600,6 @@
 "comment": "Lv.N5 [ichi1/news1/spec1]: こども • child; children\n1307850「－は三人おります」"
 },
 {
-"question": "①多くの人が集まって物を売買する場所。律令制時代には，官設の市が平城京・平安京それぞれの東西にひらかれ，地方の国府にも設けられた。中世以後，交通の要地に設けられ，また次第に定期市として発達し，貨幣の流通によって交換の場から商業市場へと発展。\n②多くの人が集まるところ。→市をなす\n③まち。市街。",
-"answers": [
-"市"
-],
-"comment": "Lv.N4 [ichi1]: いち • market; fair\n1308080「縁日には－が立つ」"
-},
-{
 "question": "地方公共団体の一。人口五万以上を有し，中心市街地にある戸数が全体の六割以上を占め，その他都市に必要な諸施設・諸要件を備えていることなどの条件を満たしているもの。",
 "answers": [
 "市"
@@ -6829,13 +6612,6 @@
 "市場"
 ],
 "comment": "Lv.N3 [ichi1/news1]: いちば • (town) market; (the) marketplace\n1308300「魚－」"
-},
-{
-"question": "①商品の売買が現実に行われる特定の場所。魚市場・中央卸売市場・証券取引所など。いちば。マーケット。\n②商品としての財貨やサービスが交換され，売買される場についての抽象的な概念。国内市場・国際市場など。\n③商品売買の範囲。",
-"answers": [
-"市場"
-],
-"comment": "Lv.N3 [ichi1]: しじょう • (the) market (as a concept)\n1308305「－を開拓する」"
 },
 {
 "question": "①その市に住んでいる人。また，都市の住人。\n②国政に参与する権利をもつ人。公民。中世ヨーロッパ都市の自治に参与する特権をもつ住民に由来する。\n③ブルジョア。市民階級。",
@@ -6946,19 +6722,6 @@
 "支払う"
 ],
 "comment": "Lv.N3 [ichi1/news1]: しはらう • to pay\n1310300「現金で－・う」"
-},
-{
-"question": "（形）\n①飲食物の味がよい。美味である。おいしい。↔まずい\n②技術・技量などがすぐれている。腕前がいい。上手だ。巧みだ。↔まずい\n③自分にとって都合がよい。こちらの望ましい状態だ。↔まずい\n④おろかだ。あさはかだ。ばかだ。",
-"answers": [
-"うまい",
-"上手い",
-"美味い",
-"旨い",
-"巧い",
-"甘い",
-"美い"
-],
-"comment": "Lv.N5 [spec1]: うまい • skillful; skilful; clever; expert; wise; successful; delicious; appetizing; appetising; tasty; fortunate; splendid; promising\n1310460"
 },
 {
 "question": "㈠（名）\n　①植物の主幹から分かれた茎。側芽や不定芽の発達したもの。\n　②ものの本体・本筋から分かれ出たもの。\n　③からだの手や足。四肢。\n　④一族。子孫。\n㈡（接尾）\n　助数詞。\n　①木の枝を数えるのに用いる。\n　②細長い物を数えるのに用いる。\n　③贈り物を数えるのに用いる。",
@@ -7177,13 +6940,6 @@
 "comment": "Lv.N3 [ichi1]: にあう • to suit; to match; to become; to be like\n1314680「帽子がよく－・う」"
 },
 {
-"question": "町や村の中の一区画の名。大字と小字とがある。普通は小字を単に字という。",
-"answers": [
-"字"
-],
-"comment": "Lv.N4 [news1]: あざ • section of village\n1315120"
-},
-{
 "question": "①言葉を書き表すのに用いる記号。文字。\n②（言葉や人名の最初の一字に「の字」を加えて）その言葉や人名を遠回しに言う場合に用いる。\n③二分五厘の称。また，一文銭のこと。もん。\n④楊弓や双六などに賭ける銭。紅白の紙に包む。\n⑤漢字。特に，字音で読まれるものとしての漢字をいう。",
 "answers": [
 "字"
@@ -7384,7 +7140,6 @@
 "answers": [
 "七",
 "７",
-"7",
 "漆"
 ],
 "comment": "Lv.N5 [ichi1/news1/spec1]: しち • seven; hepta-\n1319210"
@@ -7393,8 +7148,7 @@
 "question": "①しち。七個。物の数を数えるとき使う。\n②七歳。\n③昔の時刻の名。今の午前と午後の四時頃。七つ時。",
 "answers": [
 "七つ",
-"７つ",
-"7つ"
+"７つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ななつ • seven\n1319220"
 },
@@ -7462,13 +7216,6 @@
 "質問"
 ],
 "comment": "Lv.N5 [ichi1/news1]: しつもん • question; inquiry; enquiry\n1320760「先生に－する」"
-},
-{
-"question": "一（名）\n①ほんとう。真実。↔虚\n②まごころ。誠実。\n③中身。内容。実質。\n④成果。実績。\n二（形動ナリ）\n実意のあるさま。誠実なさま。\n三（副）\nほんとうに。まことに。→実に",
-"answers": [
-"実"
-],
-"comment": "Lv.N3 [news1]: じつ • truth; reality; sincerity; honesty; fidelity; content; substance; (good) result\n1320800「－を尽くす」"
 },
 {
 "question": "①植物の果実。\n②植物の種子。\n③汁の中に入れる野菜や肉など。\n④中身。内容。",
@@ -7576,13 +7323,6 @@
 "謝る"
 ],
 "comment": "Lv.N4 [ichi1]: あやまる • to apologize; to apologise\n1323010「手をついて－・る」"
-},
-{
-"question": "①軸のまわりを回転するようにした輪の形のもの。車輪。\n②車輪をとりつけてそれによって進むようになっている乗り物や運搬具。牛車（ぎつしや）・荷車・自動車など。現在は多く自動車にいう。\n③家紋の一。車輪をかたどったもの。",
-"answers": [
-"車"
-],
-"comment": "Lv.N5 [ichi1/news1]: くるま • car; automobile; vehicle; wheel\n1323080「－で行く」"
 },
 {
 "question": "（名・形動）スル \n①さまたげること。さまたげになるさま。また，その物。\n②他家を訪問すること。→御（お）邪魔\n③〘仏〙仏道修行のさまたげをする悪魔。",
@@ -8560,13 +8300,6 @@
 "comment": "Lv.N3 [ichi1/news1]: しょうねん • boy; juvenile; young boy; youth; lad\n1349170"
 },
 {
-"question": "①寝るために設けるところ。ねどこ。\n②病気のからだを横たえるところ。病床。\n③「床の間」の略。\n④畳の下地。畳のしん。\n⑤ゆか。\n⑥苗を植えつけ育てるところ。苗床。\n⑦河川の底。\n⑧鉄床（かなとこ）のこと。\n⑨桟敷。涼みどこ。ゆか。\n⑩男女の共寝。また，閨房のあしらい。\n⑪和船の最後部にある床船梁（とこふなばり）の略。中央に舵を設けるため舵床ともいう。\n⑫「髪結い床」の略。とこや。\n⑬牛車（ぎつしや）の，人の乗る上部の部分。屋形。くるまばこ。",
-"answers": [
-"床"
-],
-"comment": "Lv.N3 [ichi1/news1]: とこ • bed; bedding; sickbed; alcove; riverbed; seedbed; straw \"core\" of a tatami mat; floor\n1349370「－を敷く」"
-},
-{
 "question": "①建物で，根太（ねだ）で地面より高く持ち上げ，板などを敷いて人が立ったり座ったり，物を置いたりする平面。また広く，建物の空間を水平に仕切る底面で，その上を人が動き，また，物などを置く所。\n②古く，一段高く構えて寝所としたところ。浜床など。\n③劇場で，浄瑠璃を語る太夫や三味線ひきが座る場所。高座。ちょぼ床。\n④川の流れの上に，料亭などが張り出して設けた納涼のための桟敷（さじき）。京都の鴨川・貴船川のものが著名。床涼み。川床（かわゆか）。",
 "answers": [
 "床",
@@ -8623,13 +8356,6 @@
 "消える"
 ],
 "comment": "Lv.N5 [ichi1]: きえる • to go out; to vanish; to disappear\n1350040「山の雪が－・える」"
-},
-{
-"question": "鉛筆などで書いたあとをこすって消すもの。ゴム・プラスチックなどで作る。ゴム消し。",
-"answers": [
-"消しゴム"
-],
-"comment": "Lv.N4 [ichi1/news1]: けしごむ • eraser; India rubber\n1350080"
 },
 {
 "question": "（動サ五［四］）\n①目に見えているものをなくする。\n②心や耳・舌・鼻などに感じていたものをなくする。また，感じないようにする。\n③いなくなる。その場所から見えなくなる。\n④人を殺す。\n⑤害毒を除き去る。\n⑥時間を過ごす。\n⑦心の平静を失う。\n⑧否定する。打ち消す。\n⑨けなす。",
@@ -8738,13 +8464,6 @@
 "comment": "Lv.N3 [ichi1/news1]: くわしい • detailed; full; accurate; knowing very well; well-acquainted; well-informed\n1351730「－・く事情を説明する」"
 },
 {
-"question": "かたち。すがた。",
-"answers": [
-"象"
-],
-"comment": "Lv.N3 [news1]: しょう • phenomenon\n1351820"
-},
-{
 "question": "長鼻目ゾウ科の哺乳類の総称。中新世頃から栄え，化石で発見される種は多いが，現生種は大形のアフリカゾウ・アジアゾウの二種のみ。長い鼻は，鼻と上唇が伸びたもので，内部には骨格がない。上顎（じようがく）門歯は長く伸びて牙（きば）となる。現生の陸生動物中では最大。仏教では白象を神聖視する。古名，きさ。",
 "answers": [
 "象"
@@ -8767,20 +8486,6 @@
 "上"
 ],
 "comment": "Lv.N5 [ichi1]: うえ • above; up; over; elder (e.g. daughter); top; summit; surface; on; before; previous; superiority; one's superior (i.e. one's elder); on top of that; besides; what's more; upon (further inspection, etc.); based on (and occurring after); matters concerning...; as concerns ...; since (i.e. \"for that reason\"); suffix indicating higher social standing; place of one's superior (i.e. the throne); emperor; sovereign; shogun; daimyo; noblewoman (esp. the wife of a nobleman)\n1352130「－を向く」"
-},
-{
-"question": "空間的・時間的に連続したものの上の方。初めの方。高いところ。↔下（しも）\n❶連続したものの初めの部分。\n　①川の上流。また，その流域。\n　②昔。今からみてずっと前。\n　③初めの部分。いくつかに分けたものの最初のもの。\n❷位置の高い所。\n　①上の方。\n　②身体の腰から上の部分。\n❸中心地としての京都についていう。\n　①皇居のある所。京都。みやこ。また，関西地方。\n　②京都により近い所。\n　③京都で御所に近い方。北の方。\n　④上座。上席。\n　⑤舞台の上手（かみて）。\n❹地位・身分の高いこと。また，その人。\n　①高位の人。\n　②天皇・君主・将軍・大名などをさす。→おかみ\n　③政府・朝廷をさす。\n　④主人。主君。\n　⑤他人の妻に対する敬称。\n　⑥料理屋の女主人などの称。",
-"answers": [
-"上"
-],
-"comment": "Lv.N5 [ichi1]: かみ • upper reaches (of a river); upper stream; top; upper part; upper half (of the body); long ago; beginning; first; person of high rank (e.g. the emperor); government; imperial court; imperial capital (i.e. Kyoto); capital region (i.e. Kansai); region (or direction of) the imperial palace; head (of a table); wife; mistress (of a restaurant)\n1352150「川の－の方」"
-},
-{
-"question": "㈠（名）\n　①程度・等級・身分・地位などがまさっていること。すぐれていること。↔下（げ）\n　②順序が先であること。\n　③進物などの包み紙に書く語。「たてまつる」の意で，相手への敬意を表す。\n　④「上声（じようしよう）」に同じ。\n㈡（接尾）\n　名詞に付いて，…に関して，…の面で，…の上でなどの意を表す。",
-"answers": [
-"上"
-],
-"comment": "Lv.N5 [ichi1]: じょう • from the standpoint of; as a matter of (e.g. fact); in the field of; being of the type of; aboard (a ship or vehicle); on top of; on; above; first volume (e.g. book); superior quality; best; top; high class; going up; governmental; imperial; presenting; showing; ana- (medical, biol.)\n1352170「－の巻」"
 },
 {
 "question": "（動ラ五［四］）\n①人や動物が高い所へ移動する。↔おりる\n②水中や水上から陸地に移る。\n③庭や土間（どま）から部屋へ入る。\n④屋敷に奉公人として住み込む。↔さがる\n⑤学校に入学する。また，進級する。\n⑥物が低いところから高い所に移された状態になる。\n⑦水の中にあった物が水上や陸や船上に移された状態になる。\n⑧天ぷら・フライなどが，ほどよく熱が通ってできあがる。\n⑨神仏の前に供物（くもつ）が供えられる。\n⑩定形のないものや潜んでいたものが，出現する。出る。\n⑪低い段階・程度の物事がより高い段階・程度に変化する。高まる。↔さがる・おちる\n⑫仕事・作業・学習が完了する。仕上がる。\n⑬費用・日数などがその範囲内ですむ。まかなえる。\n⑭雨や雪などが降りやむ。\n⑮それまで継続的に動いていたものが機能しなくなる。\n⑯双六（すごろく）・トランプ・麻雀などのゲームで，完了する，また勝負がつく。\n⑰（京都市で）市内の北の方へ行く。↔さがる→入（い）る\n⑱妓楼（ぎろう）や寄席（よせ）へ，客として入る。\n⑲他人の目を意識して，平静でいられなくなる。\n⑳「食べる」「飲む」の尊敬語。動作者を敬っていう。めしあがる。\n他人の家を訪問することをいう謙譲語。参上する。\n時代を古くさかのぼる。→上がりたる世\n他の動詞の連用形に付けて用いる。",
@@ -9390,13 +9095,6 @@
 "comment": "Lv.N3 [ichi1/news1]: しんちょう • height (of body); stature\n1365770"
 },
 {
-"question": "（形）\n①舌が刺激を受けるような味だ。胡椒（こしよう）・山葵（わさび）・芥子（からし）などの舌がひりひりするような感じの形容。\n②塩のきいた味だ。塩からい。しょっぱい。↔甘い\n③（処置や評価が）情け容赦がない。苦痛を感じるほど厳しい。↔甘い\n④心や体が痛むような状態だ。苦しい。堪え難い。残酷だ。\n⑤差し迫った状態にある。危ない。→からくも\n⑥いやだ。気に染まない。",
-"answers": [
-"辛い"
-],
-"comment": "Lv.N5 [ichi1/news1]: からい • spicy; hot; salty; harsh (criticism); severe (punishment); strict; painful; bitter; difficult; tough\n1365850"
-},
-{
 "question": "（形）\n①その状態に苦痛を感じ，がまんできない。\n②人に対する仕打ちに思いやりがない。つめたくむごい。無情・冷酷だ。\n③どうしてよいかわからず苦しむ。困る。\n④人の心を汲（く）もうとしない。つれない。→づらい・苦しい（補説欄）",
 "answers": [
 "つらい",
@@ -9448,13 +9146,6 @@
 "顫える"
 ],
 "comment": "Lv.N3 [ichi1]: ふるえる • to shiver; to shake; to quake; to tremble; to quaver; to quiver\n1366310「爆音で窓ガラスがビリビリと－・える」"
-},
-{
-"question": "天・地・人と三段階に分けたときの三番目のもの。ひと。",
-"answers": [
-"人"
-],
-"comment": "Lv.N5 [ichi1]: じん • -ian (e.g. Italian); -ite (e.g. Tokyoite); indicates nationality, race, origin, etc.; -er (e.g. performer, etc.); person working with ...; indicates expertise (in a certain field); (usu. in compound words) man; person; people\n1366410"
 },
 {
 "question": "①（機械・動植物・木石などにはない，一定の感情・理性・人格を有する）ひと。人類。\n②（ある個人の）品位・人柄。人物。\n③人の住む世界。世間。世の中。じんかん。",
@@ -9971,14 +9662,6 @@
 "comment": "Lv.N3 [ichi1/news1]: せいぶつ • living thing; creature; life; biology\n1379430"
 },
 {
-"question": "煮たり焼いたり干したりしていないもの。魚介類などについていう。",
-"answers": [
-"生物",
-"生もの"
-],
-"comment": "Lv.N3 [ichi1]: なまもの • raw food; perishables\n1379440「－は腐りやすい」"
-},
-{
 "question": "①生物を、無生物ではなく生物として存在させる本源。生命を物質の一形態として発生的にとらえる機械論的考え方と、これを実体として見る生気論的考え方とが伝統的に対立する。いのち。\n②ある分野で活動していく上での原動力。活動の根源となるもの。また、その活動期間。\n③物事の存在を支える一番大切なもの。いのち。",
 "answers": [
 "生命"
@@ -10107,14 +9790,6 @@
 "石"
 ],
 "comment": "Lv.N4 [ichi1]: いし • stone; gem; jewel\n1382440「－につまずく」"
-},
-{
-"question": "①体積の単位。米穀などを量るのに用いる。一石は一〇斗。約180リットル。かつて，大名・武士の知行高を表すのにも用いた。\n②和船の積載量，または材木の実体積の単位。一石は一〇立方尺，約0.278立方メートル。\n③サケ・マスの数量の単位。サケは四〇尾，マスは六〇尾を一石とする。",
-"answers": [
-"石",
-"斛"
-],
-"comment": "Lv.N4 [news1]: こく • measure of volume (approx. 180.39 liters, 6.37 cub. ft.); measure of a Japanese-style boat's loading capacity (approx. 278.26 liters)\n1382450「千－船」"
 },
 {
 "question": "地質時代に水中に堆積した植物の遺体が，その後の地圧や地熱によって炭化してできた可燃性の岩石。日本標準規格では，発熱量・燃料比（固定炭素との揮発分の比で，炭化度の尺度となる）などを基準に褐炭・亜瀝青炭（あれきせいたん）・瀝青炭・無煙炭などに分類。燃料・石炭化学の原料として用いるほか，製鉄用コークスの原料として重要。",
@@ -10263,13 +9938,6 @@
 "設備"
 ],
 "comment": "Lv.N3 [ichi1/news1]: せつび • equipment; device; facilities; installation\n1386070「最新の医療器具を－する」"
-},
-{
-"question": "①ある事柄の行われるとき。時期。おり。ころ。\n②自分の信念を守り続けること。みさお。節操。操守。\n③ほど。ほどあい。節度。\n④まとまったものをいくつかに分けた，そのひとまとまり。区切り。助数詞的にも用いられることがある。\n⑤季節・時節。\n⑥二十四節気のこと。また，そのうち旧暦で各月の前半にくる節気をさす。→中気②\n⑦君命を受けた使者や将軍が授かるしるし。\n⑧生物分類群の階級の一。属と種の中間で，種をまとめる時に用いる。\n⑨植物の茎で，葉・枝の着生する部分。ふし。\n⑩クローズ（clause）に同じ。\n⑪船の速度の単位。ノット（knot）に同じ。",
-"answers": [
-"節"
-],
-"comment": "Lv.N3 [ichi1/news1]: せつ • occasion; time; section (of a literary work); paragraph; verse; stanza; passage; principle; integrity; node (of a plant stem); clause; (taxonomical) section\n1386140「その－はお世話になりました」"
 },
 {
 "question": "①竹・葦（あし）などの幹にあって，ほぼ一定間隔でややふくらんでいる部分。\n②樹木の枝の生え出るところ。また，枝を切り落とした跡。特に板や柱に製材した際に残る跡。せつ。\n③骨と骨のつながっている部分。関節。\n④糸・ひもなどの，途中の太くなっているところ。\n⑤物事の区切りとなるような大切な箇所。ふしめ。\n⑥箇所。注目すべき点。\n⑦きっかけ。また，折（おり）。機会。\n⑧歌の旋律。また，旋律の一まとまり。曲節。\n⑨浄瑠璃・謡曲で，旋律のある部分。詞（ことば）に対していう。\n⑩〘物〙定常波で，振幅が0になっているところ。↔腹\n⑪魚の身を縦に四つに割ったもの。また，それを加工した食品。また，特にかつおぶしのこと。\n⑫言いがかり。なんくせ。→ぶし（節）",
@@ -10458,13 +10126,6 @@
 "選択"
 ],
 "comment": "Lv.N3 [ichi1/news1]: せんたく • selection; choice; option\n1392290「取捨－する」"
-},
-{
-"question": "㈠（名）\n　①ある時より先。まえ。以前。\n　　㋐官職・地位を表す名詞の上に付いて、「すぐまえの」「ひとつまえの」の意を表す。\n　　㋑時代を表す名詞の上に付いて、それより先立つことを表す。\n　　㋒名詞の下に付いて、それ以前である意を表す。\n㈡（接尾）\n　助数詞。\n　①机・脇息きようそく・懸盤かけばんなどを数えるのに用いる。\n　②神や社殿を数えるのに用いる。",
-"answers": [
-"前"
-],
-"comment": "Lv.N5 [ichi1]: ぜん • the last (i.e. immediately preceding) (e.g. \"the last mayor\"); previous; one-time; former; pre- (e.g. \"premodern\"); before; earlier\n1392570「－の会社では」"
 },
 {
 "question": "㈠（名）\n　①顔や視線の向いている方向，または場所。↔うしろ・しりえ\n　　㋐（事物に方向があると考えて）正面の方向，または場所。\n　↔うしろ・しりえ\n　　㋑事物の前方の部分。\n　　㋒身体の正面の部分。着物などを着たとき，身体の正面にくる部分。\n　　㋓人間の陰部。\n　③順序の先の方。初めの方。さき。\n　④（時間的に）\n　　㋐現在またはある時点より以前。\n　　㋑ある行為・事態が成立する以前。\n　　㋒さきの。直前の。\n　↔あと・のち\n　⑤前歴。特に，過去の罪。前科。\n　⑥（人を指す語句を受けて）その人に対する気がね・遠慮・体面などを示す。\n　⑦形式名詞として用い，かねて思っていたとおりであること，ある判断に基づいていることを表す。\n　　㋐貴人の面前。また，貴人に伺候すること。\n　　㋑（上に「おお」「お」「み」を付けて）貴人その人をさす。\n　　㋒女性の名に添えて敬意を表す。\n　⑨僧侶に対するもてなしの食膳。\n㈡（接尾）\n　①名詞や動詞の連用形などに付いて，それに相当する分量や部分などを表す。ぶん（分）。\n　②人に関する名詞に付いて，その属性・機能などを強調する意を表す。",
@@ -10947,32 +10608,12 @@
 "comment": "Lv.N4 [ichi1/news1]: うつ • to hit; to strike; to knock; to beat; to punch; to slap; to tap; to bang; to clap; to pound; to strike (noon, etc.); to sound (cymbals, etc.); to beat (a drum, etc.); to beat (rhythmically, e.g. pulse, waves, etc.); to move; to impress; to touch; to drive in; to hammer in; to put in; to inject; to type; to send; to transmit; to insert; to write in; to mark; to make (noodles, etc.); to prepare; to till (soil); to sprinkle; to throw; to cast; to do; to carry out; to play; to perform; to engage in (gambling, etc.); to pay (a deposit, etc.); to visit (on a pilgrimage); to line (a coat); to bind (a criminal)\n1408810「ボールを－・つ」"
 },
 {
-"question": "「ぶつ切り」の略。",
-"answers": [
-"ぶつ",
-"打つ",
-"撃つ",
-"撲つ"
-],
-"comment": "Lv.N4 [ichi1]: ぶつ • to hit (a person); to strike; to beat; to deliver (a speech); to give (an address)\n1408815「マグロの－」"
-},
-{
 "question": "㈠（名）\n　①囲碁で，双方の境にあってどちらの地にもならない所。→駄目を押す\n　②演劇で，演技などの悪い点について演出者が出す注意。→駄目を出す\n㈡（名・形動）\n　①しても甲斐のないこと。無益なこと。また，そのさま。むだ。\n　②してはいけないこと。親しい相手に禁止の意を伝える語としても用いられる。\n　③不可能なこと。できないこと。また，そのさま。\n　④役にたたないこと。悪い状態であること。また，そのさま。",
 "answers": [
 "だめ",
 "駄目"
 ],
 "comment": "Lv.N3 [ichi1/news1]: だめ • no good; not serving its purpose; useless; broken; hopeless; wasted; in vain; purposeless; cannot; must not; not allowed; neutral point (in go); intersection owned by neither player at the end of a game\n1409110「－を詰める」"
-},
-{
-"question": "①人や動物の，頭・胴・手足など肉体全部。しんたい。五体。また，特に胴を主とした部分。\n②健康。体力。\n③行動の主体としての肉体。\n④性的行為から見た肉体。\n⑤死体。むくろ。しかばね。",
-"answers": [
-"体",
-"身体",
-"躰",
-"躯"
-],
-"comment": "Lv.N5 [ichi1/news1]: からだ • body; torso; trunk; build; physique; constitution; health; corpse; dead body\n1409140「大きな－」"
 },
 {
 "question": "スポーツ・体操などの身体活動により，健康の保持・増進と体力の向上をはかるための教育。知育・徳育と並び教育の重要な一側面をなす。また，それに基づく学校教育の教科。",
@@ -10994,13 +10635,6 @@
 "対"
 ],
 "comment": "Lv.N3 [ichi1]: たい • opposite; opposition; versus; vs.; v.; to (e.g. \"winning a game five to three\"); equal footing; equal terms; against ...; anti-; toward ...; to ...\n1409800「東軍－西軍」"
-},
-{
-"question": "㈠（名）\n　①二つそろって一組となるもの。そろい。ペア。\n　②「対句ついく」に同じ。\n㈡（接尾）\n　助数詞。\n　①二つそろって一組になっているものを数えるのに用いる。\n　②衣服・調度などの一そろいを数えるのに用いる。",
-"answers": [
-"対"
-],
-"comment": "Lv.N3 [ichi1]: つい • pair; couple; set; antithesis; counter for items that come in pairs; counter for sets (of clothes, small furniture, utensils, etc.)\n1409810「－になる」"
 },
 {
 "question": "①着物の上から腰のあたりに巻いて結びつける細長い布。着物を体にまといつけ，装飾も兼ねる。\n②細長い形をしているもの，またものに巻きつけて使うもの。\n③「帯紙」の略。→製本\n④岩田帯のこと。",
@@ -11142,13 +10776,6 @@
 "comment": "Lv.N3 [ichi1]: おおや • landlord; landlady\n1413140"
 },
 {
-"question": "①学問・芸術・技芸などの面で特にすぐれ，名声の高い人。巨匠。\n②大きな家。\n③金持ちの家。家柄のよい家。たいけ。",
-"answers": [
-"大家"
-],
-"comment": "Lv.N3 [ichi1/news1]: たいか • master; expert; authority; leading figure; mansion; large house; rich family; distinguished family\n1413150「書道の－」"
-},
-{
 "question": "①たくさんの人の集まる会。盛大な会。\n②組織や団体が催す，行事としての大規模な会。",
 "answers": [
 "大会"
@@ -11232,13 +10859,6 @@
 "大ぜい"
 ],
 "comment": "Lv.N5 [ichi1/news1]: おおぜい • crowd of people; great number of people; in great numbers\n1414220"
-},
-{
-"question": "①物事のなりゆき。また，世の中のなりゆき。\n②大きな権勢。",
-"answers": [
-"大勢"
-],
-"comment": "Lv.N5 [ichi1]: たいせい • general trend; current thought\n1414230「－が決する」"
 },
 {
 "question": "（形動）\n①重要であるさま。肝要。大事。\n②価値が高いさま。貴重。大事。\n③丁寧に扱うさま。大事。\n④切迫するさま。緊急を要するさま。",
@@ -11793,13 +11413,6 @@
 "comment": "Lv.N3 [ichi1/news1]: なかま • company; fellow; colleague; associate; comrade; mate; group; circle of friends; partner; member of the same category\n1425790「－に入る」"
 },
 {
-"question": "（名）スル \n①全体の中から，ある物を抜き出すこと。\n②固体または液体の混合物に溶媒を加え，混合物中の特定の成分を溶媒中へ分離する操作。この操作後に得られる溶媒部分を抽出液という。溶媒抽出。",
-"answers": [
-"抽出"
-],
-"comment": "Lv.N4 [news1]: ちゅうしゅつ • extraction; abstraction; selection (from a group); sampling\n1426180「リストから条件を満たす物を－する」"
-},
-{
 "question": "①日の出から日の入りまで。明るい間。昼間。↔夜\n②正午。\n③昼食。ひるめし。\n④物事の最盛期。",
 "answers": [
 "昼",
@@ -11903,13 +11516,6 @@
 "comment": "Lv.N3 [ichi1/news1]: はる • to stick; to paste; to affix; to stretch; to spread; to strain; to tighten; to put up (tent); to form (e.g. ice on a pond); to fill; to swell; to stick out; to put; to slap; to be expensive; to keep a watch on; to be on the lookout; to become one tile away from completion; to span; to generate\n1427900「池に氷が－・る」"
 },
 {
-"question": "夜が明けてからしばらくの間。または，正午までの間。",
-"answers": [
-"朝"
-],
-"comment": "Lv.N5 [ichi1/news1]: あさ • morning\n1428280「－が来る」"
-},
-{
 "question": "（動マ下一）\n①遠くまたは広く見渡す。\n②じっと見つめる。\n③傍観する。\n④物思いに沈んでぼんやり見る。また，ぼんやり見ながら物思いにふける。",
 "answers": [
 "眺める"
@@ -11999,13 +11605,6 @@
 "comment": "Lv.N3 [ichi1]: じかに • directly; in person; firsthand\n1430690「地面に－置く」"
 },
 {
-"question": "（副）\n時間をあまり置かないさま。すぐに。間もなく。じき。",
-"answers": [
-"直に"
-],
-"comment": "Lv.N3 [ichi1]: じきに • immediately; directly; soon; shortly; before long; easily; readily\n1430700「－飽きるだろう」"
-},
-{
 "question": "㈠（名）スル \n　間に何も介在しないで，じかに接すること。↔間接\n㈡（副）\n　（「に」を伴っても用いる）\n　①間に何も挟まず，対象にじかに接するさま。じかに。そのまま。\n　②回り道や寄り道をしないで，目的地に行くさま。まっすぐ。",
 "answers": [
 "直接"
@@ -12058,13 +11657,6 @@
 "通り"
 ],
 "comment": "Lv.N4 [ichi1]: とおり • avenue; street; way; road; coming and going; street traffic; flow (of water, air, etc.); transmission (of sound); reach (e.g. of voice); fame; reputation; popularity; the same status or way; as (e.g. as expected, as I said); understanding; comprehension; counter for sets of things; counter for methods, ways, types\n1432920「－に出て遊ぶ」"
-},
-{
-"question": "㈠（名）\n　名詞の下に付いて，複合語をつくる。\n　①街路の名を表す。\n　②乗り物の走る道筋を表す。\n　③そのままであること，それと同じであることの意を表す。\n㈡（接尾）\n　数量を表す語に付いて，おおよその程度という意を表す。",
-"answers": [
-"通り"
-],
-"comment": "Lv.N4 [ichi1/news1]: どおり • in accordance with; following; roughly; about; Street; Avenue\n1432930「蔵前－」"
 },
 {
 "question": "（動ガ上一）\nある地点を通って先へ行く。また，とまるべき地点を過ぎて行く。通りこす。",
@@ -12472,14 +12064,6 @@
 "comment": "Lv.N3 [ichi1/news1]: とざん • mountain climbing\n1444780「－口」"
 },
 {
-"question": "①皇居のある所。\n②首府。首都。\n③政治・経済・文化の中心としてにぎやかな所。都会。あることが盛んであったり特徴であったりする都会。",
-"answers": [
-"都",
-"京"
-],
-"comment": "Lv.N4 [ichi1/news1]: みやこ • capital; metropolis; seat of government; capital (of music, fashion, etc.); city (e.g. of light); location of the Imperial Palace\n1444950「奈良の－」"
-},
-{
 "question": "①人々が多く集まり住んで，商工業や文化活動のさかんな地域。みやこ。都市。\n②「都議会」の略。",
 "answers": [
 "都会"
@@ -12506,13 +12090,6 @@
 "努力"
 ],
 "comment": "Lv.N3 [ichi1/news1]: どりょく • effort; exertion; endeavour; endeavor; hard work; striving\n1445130「目標に向かって－する」"
-},
-{
-"question": "一（名）\n①何度か繰り返された中の一回，一回。ある状態にあった，その時。折。\n②その時はいつも。たびごとに。\n③回数。度数。\n二（接尾）\n助数詞。数を表す語に付いて，回数を表すのに用いる。",
-"answers": [
-"度"
-],
-"comment": "Lv.N5 [ichi1]: たび • time (three times, each time, etc.); times\n1445150「この－はお世話になりました」"
 },
 {
 "question": "㈠（名）\n　①物事の適当な程合い。程度。限界。\n　②回数。たび。\n　③目盛り。\n　④数量・程度などを表す単位。\n㈡（接尾）\n　助数詞。回数を数えるのに用いる。",
@@ -12868,13 +12445,6 @@
 "comment": "Lv.N3 [ichi1]: どうか • copper coin\n1454350"
 },
 {
-"question": "（動ア下二）\n動詞「える（得る）」の文語的な言い方。古語の下二段活用動詞「う」の連体形が，現代語でも終止形・連体形として用いられる。\n①「える①」に同じ。「今日の会は大いにうるものがあった」\n②動詞の連用形の下に付いて，可能の意を表す。…することができる。「…ということも十分ありうる」「集めうる限りの材料をみな集める」「できうることならば，もう少し日時がほしい」→える（得る）",
-"answers": [
-"得る"
-],
-"comment": "Lv.N3 [ichi1]: うる • to be able to ...; can ...; to get; to acquire; to obtain; to procure; to earn; to win; to gain; to secure; to attain\n1454500「今日の会は大いにうるものがあった」"
-},
-{
 "question": "（名・形動）\n①望みがかない満足していること。↔失意\n②誇らしげな・こと（さま）。\n③上手で，そのことに自信もある・こと（さま）。えて。おてのもの。\n④商店などで，よく品物を買ってくれる客。\n⑤親しい友。",
 "answers": [
 "得意"
@@ -13059,7 +12629,6 @@
 "answers": [
 "二",
 "２",
-"2",
 "弐"
 ],
 "comment": "Lv.N5 [ichi1/news1]: に • two\n1461140「－の矢をつがえる」"
@@ -13068,8 +12637,7 @@
 "question": "①数の名。ひとつより一多い数。\n②物の数。二個。\n③二歳。\n④二番目。第二。",
 "answers": [
 "二つ",
-"２つ",
-"2つ"
+"２つ"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ふたつ • two\n1461160「りんごが－」"
 },
@@ -13077,8 +12645,7 @@
 "question": "①日の数二つ。また，連続したその期間。\n②暦の月の二番目の日。また，特に正月二日。\n③ある事があった日から数えて二番目の日。",
 "answers": [
 "二日",
-"２日",
-"2日"
+"２日"
 ],
 "comment": "Lv.N5 [ichi1]: ふつか • second day of the month; two days\n1462900"
 },
@@ -13155,13 +12722,6 @@
 "日曜日"
 ],
 "comment": "Lv.N5 [ichi1]: にちようび • Sunday\n1464900"
-},
-{
-"question": "㈠（動ラ五［四］）\n　❶人などが意図的に内側に移動する。\n　　①人などが、ある建物・区画の中に移動する。はいる。\n　　②京都の町で場所を示す場合に、南北の通りから西または東へ少し行く。\n　　③人が、ある分野に進む。…の一員となる。\n　　④人が、ある精神的状態になる。\n　❷物などが内側に移動する。また、物の内部に何かが生ずる。\n　　①物が何かの中にはいる。抽象的なものについてもいう。\n　　②太陽・月が没する。\n　　③割れ目が生ずる。\n　❸事態が進行して、ある状態になる。\n　❹ある時刻・季節になる。\n　❺他の動詞の下に付いて複合動詞をつくる。\n　　①自然にその状態になりきる意を表す。\n　　②意図的にその動作に徹する意を表す。\n㈡（動ラ下二）\n　⇒いれる",
-"answers": [
-"入る"
-],
-"comment": "Lv.N5 [ichi1]: いる • to get in; to go in; to come in; to flow into; to set; to set in\n1465580「無用の者－・る可べからず」"
 },
 {
 "question": "（動ラ五［四］）\n①人・動物などがある建物・区画の中へ移動する。↔出る\n②ある目的のためにその場に移動する。\n③組織の一員となる。仲間に加わる。\n④ある環境・分野に進む。\n⑤ある物が他の物の内部・内側に移り，そこに収まる。\n⑥機械や設備が設置される。\n⑦表から奥の方へ進む。\n⑧品物や金銭が自分の物となる。自分の手元に収まる。\n⑨情報・技術・文化などが伝わる。\n⑩あるものに他のものが割り込んだり加わったりする。\n⑪あるグループ・範囲の中にある。\n⑫計算や思慮の対象となっている。\n⑬機械などが運転状態になる。↔切れる\n⑭ある事柄やプロセスを始める。\n⑮ある時期になる。時間が経過して，ある状態になる。\n⑯割れ目などが生ずる。\n⑰酒を飲んで酔っていることを婉曲に言う。\n⑱飲み物ができる。\n⑲選挙で，票を獲得する。\n⑳認識・理解する。\n㉑熱心にする，集中して…するの意を表す。\n㉒植物が結実する。",
@@ -13250,14 +12810,6 @@
 "熱帯"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ねったい • tropics\n1467930"
-},
-{
-"question": "①時間を測る単位。太陽暦では地球が太陽の周りを一周する時間。平均365.2422日で，平年を365日とし，4年ごとに1日加えて閏（うるう）年として補正する。太陰暦では月が地球の周りを一二周する時間。大の月と小の月を組み合わせたり，閏月を加えたりするので，1年の日数は一定ではない。暦年。→ねん（年）\n②ある年次の1月1日から12月31日まで。一年間。\n③年齢。よわい。\n④相当の年齢。年輩。\n⑤老齢。老年。高齢。\n⑥穀物，特に稲のこと。また，穀物の実ること。\n⑦季節。時候。時節。",
-"answers": [
-"年",
-"歳"
-],
-"comment": "Lv.N5 [ichi1/news1]: とし • year; age; years; past one's prime; old age\n1468060「－の始め」"
 },
 {
 "question": "①一年の間（あいだ）。\n②ある年代の間。多く年代を表す語と複合して用いられる。",
@@ -13387,28 +12939,6 @@
 "拝見"
 ],
 "comment": "Lv.N4 [ichi1]: はいけん • seeing; look at\n1472270「お手紙－いたしました」"
-},
-{
-"question": "①酒を注いで飲む小さな器。ちょこ。ちょく。\n②「杯事（さかずきごと）」に同じ。\n③酒席で「さかずき①」を差したり受けたりすること。",
-"answers": [
-"杯",
-"盃",
-"坏",
-"巵",
-"卮",
-"盞",
-"觚",
-"觴"
-],
-"comment": "Lv.N5 [ichi1/news1]: さかずき • sake cup; cup for alcoholic beverages\n1472630「－を干す」"
-},
-{
-"question": "身のたけ。身長。せ。",
-"answers": [
-"背",
-"脊"
-],
-"comment": "Lv.N5 [ichi1/news1]: せい • height; stature\n1472650「－くらべ」"
 },
 {
 "question": "①背の中央。背骨のあたり。また，背。\n②物の後ろにあたる部分。",
@@ -13554,8 +13084,7 @@
 "question": "①日の数八つ。また，連続したその期間。\n②暦の月の八番目の日。",
 "answers": [
 "八日",
-"８日",
-"8日"
+"８日"
 ],
 "comment": "Lv.N5 [ichi1]: ようか • the eighth day of the month; eight days\n1476920"
 },
@@ -14075,13 +13604,6 @@
 "comment": "Lv.N3 [ichi1/news1]: こおり • ice; shaved ice (usually served with flavored simple syrup)\n1488840「池に－が張る」"
 },
 {
-"question": "①二つの面のうち，前や上になる方。また，外側。表面。↔裏\n②目立つ方の側。前面・正面になる方。↔裏\n③家のそと。屋外。戸外。↔うち\n④見せかけの部分。うわべ。外見。↔裏\n⑤おおっぴらなこと。おおやけ。\n⑥正式なもの。本来のもの。↔裏\n⑦野球で，先攻チームの攻撃するイニング。↔裏\n⑧（畳や下駄などの）表面をおおうもの。\n⑨書類などに書いてある事柄。\n⑩江戸時代，将軍・大名の私的な生活に対して，公的な政務。また，政務を執る所。\n⑪連歌・俳諧で，一枚目の懐紙の表。初表（しよおもて）。\n⑫「表千家」の略。\n⑬「表仕」の略。\n⑭名詞の下に付いて，複合語をつくる。",
-"answers": [
-"表"
-],
-"comment": "Lv.N4 [ichi1/news1]: おもて • surface; face (i.e. the visible side of an object); front (of a building, etc.); obverse side (i.e. \"head\") of a coin; outside; exterior; appearance; public; first half (of an inning); top (of an inning); cover (for tatami mats, etc.); foreground\n1489340「－沙汰（ざた）」"
-},
-{
 "question": "①文章ではわかりにくい事柄などを、分類整理して、見やすくまとめたもの。リスト。\n②臣下から天子にたてまつる文書。上表文。",
 "answers": [
 "表"
@@ -14408,13 +13930,6 @@
 "comment": "Lv.N5 [ichi1]: かぜ • wind; breeze; draught; draft; manner; behaviour; behavior; cold; influenza\n1499720「－が吹く」"
 },
 {
-"question": "㈠（名）\n　①ある範囲の土地や社会にみられる生活様式。ならわし。\n　②性格的・精神的な傾向。\n　③方式。やり方。\n　④様子。状態。ふり。\n　⑤世間の評判。\n　⑥名詞の下に付いて，それに類する，その趣（おもむき）がある，などの意を添える。\n　⑦よくない気にあたって起こるとされる病気。風病。\n　⑧「詩経」の六義（りくぎ）の一。各地方の民謡をいう。\n㈡（形動ナリ）\n　趣のあるさま。しゃれているさま。",
-"answers": [
-"風"
-],
-"comment": "Lv.N5 [ichi1]: ふう • method; manner; way; style; appearance; air; tendency; folk song (genre of the Shi Jing); wind (one of the five elements)\n1499730「婚家の－になじめない」"
-},
-{
 "question": "①目の前にひろがるながめ。景色。\n②その場のようす。情景。",
 "answers": [
 "風景"
@@ -14547,13 +14062,6 @@
 "comment": "Lv.N5 [spec1]: ふん • minute (unit of time); fun (one tenth of a monme, 5.787 grains)\n1502840"
 },
 {
-"question": "一（名）\n①分け与えられたもの。わけまえ。わりあて。\n②人が置かれた立場や身分。また，人が備えている能力の程度。分際。\n③本分。つとめ。\n④物事の様子・状態。また，程度。くらい。\n⑤当然そうであること。\n⑥名詞の下に付いて用いる。\n二（名・形動）\n一般と異なっていること。一般とちがってすぐれていること。また，そのさま。格別。特別。",
-"answers": [
-"分"
-],
-"comment": "Lv.N5 [ichi1]: ぶん • part; segment; share; ration; rate; degree; one's lot; one's status; relation; duty; kind; lot; in proportion to; just as much as\n1502860「この菓子は弟の－に残しておく」"
-},
-{
 "question": "（動カ下一）\n①全体を，いくつかのより小さなまとまりにする。分割する。\n②区別して，別々のまとまりにする。分類する。\n③境界を設けて区切る。\n④障害物などを押し開いて進む。\n⑤いくつかの部分にして，人に与える。くばる。\n⑥争いの仲裁をする。また，引き分けにする。\n⑦理非を区別する。判断する。\n⑧売ることを遠まわしにいう。",
 "answers": [
 "分ける",
@@ -14590,14 +14098,6 @@
 "ふん囲気"
 ],
 "comment": "Lv.N3 [ichi1/news1]: ふんいき • mood; ambience; ambiance; aura; feel; a certain air; presence; special aura; something (about someone); air; atmosphere\n1505070「なごやかな－」"
-},
-{
-"question": "①文字を書いたもの。\n②学問。特に，漢学。\n③漢詩。",
-"answers": [
-"文",
-"書"
-],
-"comment": "Lv.N3 [news1]: ふみ • letter; writings\n1505080「－を通わす」"
 },
 {
 "question": "①言語単位の一。思考や感情を言葉で表現する際の，完結した内容を表す最小の単位。多くは複数の文節によって構成されるが，「待て」「さようなら」のような一語文もある。文字で表す場合には，通常，文の切れ目に句点「。」を打つ。センテンス。文章。\n②複数の文①から構成され，あるまとまった思想を表したもの。文章。\n③（武に対して）学問・文芸など。",
@@ -14703,13 +14203,6 @@
 "comment": "Lv.N3 [ichi1/news1]: へいわ • peace; harmony\n1508070「－な時代」"
 },
 {
-"question": "①手で持ちやすいように，器物につけた細長い部分。取っ手。\n②きのこのかさを支える部分や葉・花・果実を茎や枝につけている部分。",
-"answers": [
-"柄"
-],
-"comment": "Lv.N3 [ichi1]: え • handle; grip; stalk (of a mushroom, leaf, etc.)\n1508290「傘の－」"
-},
-{
 "question": "㈠（名）\n　①体格。体つき。\n　②その人や物の基底にあると思われる性質。\n　③模様。\n㈡（接尾）\n　名詞に付いて，そのことに本来備わっている性質・状態を示す。また，そのことから予想されるとおりの状態であることを示す。",
 "answers": [
 "柄"
@@ -14746,13 +14239,6 @@
 "閉める"
 ],
 "comment": "Lv.N5 [ichi1]: しめる • to close; to shut\n1508590「鉢巻きを－・める」"
-},
-{
-"question": "イネの種子から外皮（籾殻（もみがら））を除いたもの。そのままのものを玄米（げんまい），搗（つ）いて糠（ぬか）を取り去ったものを白米，または精米という。日本人の主食となる穀物。",
-"answers": [
-"米"
-],
-"comment": "Lv.N4 [ichi1]: こめ • (husked grains of) rice; 88 years old\n1508750"
 },
 {
 "question": "①建物の外部を囲み、また内部を仕切るもの。\n②大きな困難や障害。\n③人と人との間のへだて。\n④登山用語で、直立した岩壁。フェース。\n⑤豆腐。おかべ。\n⑥（壁を「塗る」を「寝（ぬ）る」にかけて）夢。\n⑦近世後期、江戸で、野暮やぼなことの意を表す通語。",
@@ -15029,13 +14515,6 @@
 "放送"
 ],
 "comment": "Lv.N4 [ichi1/news1]: ほうそう • broadcast; broadcasting\n1516750「テレビ－」"
-},
-{
-"question": "㈠（名）\n　①方向。方位。\n　②人を敬っていう語。\n　③ところ。場所。\n　④（多く下に打ち消しの語を伴って）手段。方法。\n　⑤頃。時分。\n　⑥二つに分かれたものの一方。仲間。組。\n　⑦味方。\n　⑧物事の分野。方面。あたり。\n㈡（接尾）\n　①動詞の連用形に付いて，そのことを行う方法または，そのありさまの意を表す。様（よう）。\n　②人名に付いて，寄宿している場所を表す。ところ。\n　③「お」を冠した数を表す語に付いて，その数の人を尊敬していうのに用いる。\n　④数量や時を表す名詞に付いて，それくらい・そのころであることを表す。\n　⑤動詞の連用形や名詞に付く。",
-"answers": [
-"方"
-],
-"comment": "Lv.N5 [ichi1]: かた • direction; way; person; lady; gentleman; method of; manner of; way of; care of ..; person in charge of ..; side (e.g. \"on my mother's side\")\n1516925「東の－，三〇里」"
 },
 {
 "question": "（名・形動ナリ）\n①方角。方向。方位。\n②方面。部門。分野。\n　㋐対立的に存在するものの一方。がわ。\n　㋑二者を取り上げて比較した時の一方。\n　㋒どちらかと言うと，そういう性質のあるもの。たぐい。\n④方法。手段。\n　㋐正方形の各辺。\n　㋑四角形。方形。その形であるさま。\n⑥薬の調合法。処方。",
@@ -15340,13 +14819,6 @@
 "comment": "Lv.N3 [ichi1/news1]: すえ • tip; top; end; close (e.g. close of the month); youngest child; descendants; offspring; posterity; future; finally; trivialities\n1525250「－の子」"
 },
 {
-"question": "㈠主に時を表す名詞の下に付いて，「すえ」「終わり」の意を表す。\n　こな。粉末。",
-"answers": [
-"末"
-],
-"comment": "Lv.N3 [ichi1]: まつ • the end of; powder\n1525260「年－」"
-},
-{
 "question": "（副助）\n体言またはそれに準ずるもの，活用語の連体形，助詞などに接続する。\n①場所や時間などに関して，動作・作用が至り及ぶ限度・到達点を示す。\n②動作・作用の至り及ぶ程度を表す。ほど。\n③事態の及ぶ範囲がある限界にまで達することを表す。さえ。\n④それ以上には及ばず，それに限られる意を表す。…にすぎない。だけ。\n⑤文末にあって，終助詞的に用いられ，意味を強め確認する気持ちを表す。中世後期以降の用法。→までに・までも",
 "answers": [
 "まで",
@@ -15619,13 +15091,6 @@
 "免許"
 ],
 "comment": "Lv.N3 [ichi1/news1]: めんきょ • license; permit; licence; certificate\n1533130"
-},
-{
-"question": "木綿。もめんわた。",
-"answers": [
-"綿"
-],
-"comment": "Lv.N3 [ichi1]: めん • cotton\n1533330"
 },
 {
 "question": "①アオイ科ワタ属の植物の総称。一年草または木本性植物で，約40種がある。繊維作物として熱帯から温帯にかけて広く栽培される。葉は掌状に三～五裂。花は大形の五弁花で，黄・白・紅など。果実は卵形で，熟すと裂開して，長い綿毛のある種子を出す。綿毛は，紡績原料や脱脂綿・詰め綿の原料にされる。種子からは綿実油（めんじつゆ）をとる。リクチメン・アジアメン・カイトウメン・ナンキンメンなどが代表種。木綿（きわた）。草綿（わた）。",
@@ -15983,15 +15448,6 @@
 "comment": "Lv.N5 [ichi1/news1]: ゆうめい • famous; fame\n1541620"
 },
 {
-"question": "①物事の理由や事情。いわく。\n②聞いた話や知っていることの内容。\n③手段。方法。てだて。\n④口実。言い訳。\n⑤それらしく振る舞うこと。そぶり。ふり。\n⑥風情。情緒。",
-"answers": [
-"由",
-"因",
-"縁"
-],
-"comment": "Lv.N3 [ichi1/news1]: よし • reason; significance; cause; piece of information that one has heard; I hear that ...; it is said that ...\n1541760「ことの－を聞く」"
-},
-{
 "question": "（動ワ五［ハ四］）\n①いっしょに行動するように相手にすすめる。\n②ある気持ちを起こすようにし向ける。\n③人をさらって行く。",
 "answers": [
 "誘う"
@@ -16153,15 +15609,6 @@
 "comment": "Lv.N3 [ichi1/news1]: ようび • day of the week\n1545770"
 },
 {
-"question": "一（名）\n　①物事の様子や状態。ありさま。\n　②すがた。かたち。\n　③やり方。方法。また，形式。\n　④品格。人柄。\n　二（代）\n　近世，多く遊里で用いられた。\n　①二人称。親愛の気持ちをもっていう。\n　②三人称。あのかた。\n　三（接尾）\n㈠㋐人を表す名詞または身分・居所などに付いて，尊敬の意を表す。\n　　㋑接頭語「お」「ご（御）」を冠した名詞または形容動詞に付いて，丁寧にいう場合に用いる。\n　②現代では普通「ざま」の形をとる。動詞連用形に付く。\n㈡①体言に付いて，方向・方面を表す。\n　②動詞に付いて，その時，その折の意を表す。\n　③体言またはこれに「お」「ご（御）」を冠した語に付いて，「こと」の意の丁寧語として用いる。",
-"answers": [
-"様",
-"方",
-"状"
-],
-"comment": "Lv.N3 [ichi1]: さま • Mr.; Mrs.; Miss; Ms.; makes words more polite (usu. in fixed expressions); state; situation; appearance\n1545790「彼女の寂しげな－」"
-},
-{
 "question": "①その場のありさま。状態。情勢。\n②わけ。事情。子細。\n③身なり。姿。風采（ふうさい）。\n④そぶり。身のこなし。\n⑤物事の成り行き。\n⑥物事のけはい。きざし。形跡。兆候。",
 "answers": [
 "様子",
@@ -16315,13 +15762,6 @@
 "来"
 ],
 "comment": "Lv.N3 [ichi1/news1]: らい • next (year, etc.); since (last month, etc.)\n1547710「－学期」"
-},
-{
-"question": "（動カ変）\n①話し手のいる方へ近づく。\n②動作者が，話し手とともに移動する。目的地に自分を置いた気持ちでいう場合には「行く」で表現することも可能。「映画を見にいく所なんだけど一緒にこないか」「あしたのハイキング，あの人もくるの」\n③物が運ばれて，話し手のもとに到達する。「ミロのビーナスが今度また日本にくるそうだ」「やっと返事がきた」「先月発注した品物がまだこない」\n④風・光などが話し手の方に到達・接近する。また，地震・雨などの自然現象が話し手のいる場所に起こる。「いい風がくる」「電波のくる方向にアンテナを向ける」「このへんで一雨きてくれるといいのだが」\n⑤時間が経過して，その季節・時期・順番になる。「春がきた」「もうすぐ返済の期限がくる」「やっと私の番がきた」\n⑥ある事態が出現する。\n⑦…がその由来・原因となっている。…のために生ずる。「英語からきた外来語」「心のゆるみからくる事故」「風俗習慣の違いからくる誤解」\n⑧ある特定の位置を占める。「句読点が行の頭にこないようにする」「本の目次は普通最初にくる」\n⑨病気・故障・劣化などの異常が肉体や物のある部分にあらわれる。「しびれがくる」「今年の風邪は胃腸にくる」「体のあちこちにガタがくる」「飽きのこない色と柄」「かびがきた餅」\n⑩電気・電話・鉄道・水道などが話し手の方へ通じる。「村に電気がくる」\n⑪ある知覚・感覚が生じる。「鼻にツンとくるにおい」「ドアのノブに触ったとたん手にびりっときた」「この写真を見てぴんときた」「胸にじいんとくる」「かちんとくる物の言い方」「どうもしっくりこない」\n⑫承知した。「よしきた，まかせておけ」\n⑬あるものを話題にとりあげて示す。「うちの亭主ときたら」「うまい上に安いときているから，いつも満席だ」「鯛の刺身に灘の生一本ときた日には，こたえられないね」\n⑭立腹することを俗にいう。「また遅れてきたので頭にきた」\n⑮ある人を慕う気持ちがおこる。「是れ程我等にくる事，何とも合点がゆかぬ／浮世草子・一代女1」\n⑯空腹になる。「少し腹がきたわえ／洒落本・通言総籬」\n⑰（補助動詞）動詞の連用形またはこれに「て（で）」の付いた形に付いて，動作が進行し，また，事態が推移する意を表す。\n⑱行く。目的地を基準にしていう。「富士の山びに我がきなばいづち向きてか妹が嘆かむ／万葉集3357」",
-"answers": [
-"来る"
-],
-"comment": "Lv.N5 [ichi1/news1]: くる • to come (spatially or temporally); to approach; to arrive; to come back; to do ... and come back; to come to be; to become; to get; to grow; to continue; to come from; to be caused by; to derive from; to come to (i.e. \"when it comes to spinach ...\")\n1547720「こっちへこい」"
 },
 {
 "question": "今月の次の月。",
@@ -16618,13 +16058,6 @@
 "comment": "Lv.N5 [ichi1/news1]: みどり • green; greenery (esp. fresh verdure)\n1555300「木々の－」"
 },
 {
-"question": "①樹木がたくさん群がって生えている所。樹木の群落。「森」にくらべて，木々の密集の度合が小さく，小規模の群落をさすことが多い。\n②物事が多く集まっている状態を林に見たてていう語。",
-"answers": [
-"林"
-],
-"comment": "Lv.N4 [ichi1/news1]: はやし • woods; forest; copse; thicket; bunch; line (of something); collection\n1555440「白樺の－」"
-},
-{
 "question": "①円の輪郭。円形。また，それに近い形。\n②細くて長い糸・テープなどの両端を結んだもの。必ずしも円に近くなくてもいう。\n③桶（おけ）などのたが。\n④車輪。",
 "answers": [
 "輪",
@@ -16712,14 +16145,6 @@
 "零"
 ],
 "comment": "Lv.N5 [ichi1]: れい • zero; nought\n1557630"
-},
-{
-"question": "①年齢。とし。\n②年のころ。年配。→よわいする",
-"answers": [
-"齢",
-"歯"
-],
-"comment": "Lv.N5 [news1]: よわい • (one's) age\n1557940「－一八の春」"
 },
 {
 "question": "①人間社会が時間の経過とともに移り変わってきた過程と，その中での出来事。また，それをある秩序・観点のもとにまとめた記録・文書。\n②ある事物が今日まで経過してきた変化の跡。経歴。来歴。\n③「歴史学」の略。",
@@ -16825,8 +16250,7 @@
 "question": "①日の数六つ。また，連続したその期間。\n②暦の月の六番目の日。",
 "answers": [
 "六日",
-"６日",
-"6日"
+"６日"
 ],
 "comment": "Lv.N5 [ichi1]: むいか • sixth day of the month; six days\n1561470"
 },
@@ -16972,8 +16396,7 @@
 "answers": [
 "一人",
 "独り",
-"１人",
-"1人"
+"１人"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ひとり • one person; alone; unmarried; solitary\n1576150「－の男が進み出る」"
 },
@@ -16989,21 +16412,11 @@
 "answers": [
 "一度",
 "１度",
-"1度",
 "一たび",
 "ひと度",
 "一とたび"
 ],
 "comment": "Lv.N4 [news1]: いちど • once; one time; on one occasion; temporarily; for a moment; one degree; one tone; one musical interval\n1576250「前に－見たことがある」"
-},
-{
-"question": "①午前零時から午後12時までの称。→ひ（日）\n②ある時刻から次の日の同一時刻までの24時間。一昼夜。\n③朝から晩まで。終日。\n④ある日。\n⑤月の最初の日。ついたち。\n⑥短い期間。",
-"answers": [
-"一日",
-"１日",
-"1日"
-],
-"comment": "Lv.N5 [ichi1/spec1]: いちにち • one day; first day of the month\n1576260「－早く到着する」"
 },
 {
 "question": "（名・形動）\nいつまでも限りなく続くこと。時間の果てがないこと。また，そのさま。とこしえ。永遠。",
@@ -17100,14 +16513,6 @@
 "comment": "Lv.N5 [ichi1]: いる • to be (of animate objects); to exist; to stay; verb indicating continuing action or state (i.e. to be ..ing, to have been ..ing)\n1577980「人のいない部屋」"
 },
 {
-"question": "（動ラ五）\n①人・動物が存在する。そこにある。また，そこにとどまっている。\n②座る。腰をおろす。\n③そのままの状態でいる。ずっとそこにいる。\n㈡（補助動詞）\n①動詞の連用形，またそれに助詞「て（で）」の付いたものに付いて，動作・状態が続いていることを表す。\n②動詞の連用形に付いて，自分の動作を卑下したり，他人の動作をさげすんだりする時に用いる。→いる（居）",
-"answers": [
-"おる",
-"居る"
-],
-"comment": "Lv.N5 [ichi1/news1]: おる • to be (animate); to be; to exist; verb indicating continuing action or state (i.e. to be ..ing); indicates contempt or disdain for another's actions\n1577985「明日はまだ東京に－・る」"
-},
-{
 "question": "①酒を飲むときに添えて食べる物。\n②うお。魚類の総称。\n③酒を飲むときに興を添える歌や踊り，面白い話題など。座興。",
 "answers": [
 "魚"
@@ -17127,7 +16532,6 @@
 "answers": [
 "九",
 "９",
-"9",
 "玖"
 ],
 "comment": "Lv.N5 [ichi1/news1]: きゅう • nine\n1578150"
@@ -17206,7 +16610,6 @@
 "answers": [
 "三",
 "３",
-"3",
 "参"
 ],
 "comment": "Lv.N5 [ichi1/news1]: さん • three; tri-\n1579350「－の酉とり」"
@@ -17216,7 +16619,6 @@
 "answers": [
 "四",
 "４",
-"4",
 "肆"
 ],
 "comment": "Lv.N5 [ichi1/news1]: し • four\n1579470"
@@ -17239,8 +16641,7 @@
 "question": "①日の数七つ。また，連続したその期間。\n②暦の月の七番目の日。",
 "answers": [
 "七日",
-"７日",
-"7日"
+"７日"
 ],
 "comment": "Lv.N5 [ichi1]: なのか • the seventh day of the month; seven days\n1579630"
 },
@@ -17337,13 +16738,6 @@
 "comment": "Lv.N3 [ichi1/news1]: かず • number; amount\n1580820「人の－を数える」"
 },
 {
-"question": "①物のかず。\n②物をかぞえる場合の基礎になる概念。狭義には自然数をさすが，これを拡張した整数・有理数・実数・複素数などをさす場合がある。\n③インド-ヨーロッパ語などに見られる文法範疇（はんちゆう）の一。単数・複数のほかに，二つそろって一単位となる双数（両数），三つそろわなければならない三数，四つの四数などがある。特にインド-ヨーロッパ語においては名詞，代名詞などに備わっており，一致などに重要なかかわりをもつ。\n④数をかぞえること。計数の観念。\n⑤物事の成り行き。動向。\n⑥運命。めぐりあわせ。",
-"answers": [
-"数"
-],
-"comment": "Lv.N3 [ichi1]: すう • several; a number of; quantity; amount; counting; figures; numbers; number; numeral; figure; grammatical number; destiny; fate; course of events; trend\n1580825「利用者の－をかぞえる」"
-},
-{
 "question": "国全体。国じゅう。",
 "answers": [
 "全国"
@@ -17430,13 +16824,6 @@
 "comment": "Lv.N5 [ichi1]: みせ • store; shop; establishment; restaurant\n1582120「繁華街に－を出す」"
 },
 {
-"question": "接尾語的に用いて，…の店（みせ），の意を表す。",
-"answers": [
-"店"
-],
-"comment": "Lv.N5 [ichi1]: てん • -store; -shop\n1582125「洋品－」"
-},
-{
 "question": "（動バ五［四］）\n①人がすべったりつまずいたりして倒れる。\n②事態の進展する方向が変わる。\n③回転しながら動いていく。ころがる。\n④キリシタンが弾圧に屈して改宗する。\n⑤芸者などがひそかに体を売る。",
 "answers": [
 "転ぶ"
@@ -17482,8 +16869,7 @@
 "question": "人の数が二であること。また、その数の人。両人。ににん。",
 "answers": [
 "二人",
-"２人",
-"2人"
+"２人"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ふたり • two persons; two people; pair; couple\n1582670「客が－来る」"
 },
@@ -17531,7 +16917,6 @@
 "answers": [
 "八",
 "８",
-"8",
 "捌"
 ],
 "comment": "Lv.N5 [ichi1/news1]: はち • eight\n1583090"
@@ -17540,8 +16925,7 @@
 "question": "「やつ（八）」に同じ。",
 "answers": [
 "八つ",
-"８つ",
-"8つ"
+"８つ"
 ],
 "comment": "Lv.N5 [ichi1]: やっつ • eight\n1583095"
 },
@@ -17614,14 +16998,6 @@
 "comment": "Lv.N3 [ichi1]: いだく • to embrace; to hold in the arms (e.g. a baby); to hug; to harbour (e.g. grudge); to harbor; to bear; to have (e.g. ambition); to entertain (e.g. hope, suspicion); to have sex with; to make love to; to sleep with; to sit on eggs\n1584090「二つの半島に－・かれた静かな湾」"
 },
 {
-"question": "㈠（名）\n　①複数の人々を敬っていう語。あのかたこのかた。\n　②あちこちの場所や方角。ほうぼう。\n㈡（代）\n　二人称。複数の相手を丁寧に呼ぶ語。本来は複数をさすが，単数をさす時にも用いられることがある。あなたがた。おのおのがた。\n㈢（副）\n　あれやこれやと。さまざまに。いろいろ。",
-"answers": [
-"方々",
-"方方"
-],
-"comment": "Lv.N3 [ichi1/news1]: かたがた • they (of people); gentlemen (of the ...); you (usu. plural); various\n1584100"
-},
-{
 "question": "㈠（名）\n　いろいろな方角・場所。あちこち。副詞的にも用いる。\n㈡（名）スル \n　あちこちに奉公すること。また，あちこちをうろつくこと。",
 "answers": [
 "方々",
@@ -17671,22 +17047,6 @@
 "明日"
 ],
 "comment": "Lv.N5 [ichi1/news1]: あした • tomorrow; near future\n1584660"
-},
-{
-"question": "①かお。顔面。\n②ものの表面。\n③能などの面。仮面。\n④面目。体面。",
-"answers": [
-"面"
-],
-"comment": "Lv.N3 [ichi1]: おもて • face; surface; mask (esp. a noh or kyogen mask)\n1584680「－を伏せる」"
-},
-{
-"question": "①顔。おもて。「顔」よりもぞんざいな言い方。\n②物の表面。\n③名詞の下に付いて複合語として用いられ，そういう顔をしている，そういう様子である意を表す。相手をののしる気持ちを込めていう語。\n④ほとり。あたり。かたわら。\n⑤ほお。",
-"answers": [
-"つら",
-"面",
-"頬"
-],
-"comment": "Lv.N3 [ichi1/news1]: つら • face; mug; surface; cheek meat; cheek; cheeks; surrounding area\n1584690「そんなことをいうやつの－が見たい」"
 },
 {
 "question": "㈠（名）\n　①顔。つら。また、顔立ち。\n　②顔につけるもの。\n　③顔を合わせること。向き合うこと。→面と向かって\n　④外から見える、物の外側の（平らな）部分。\n　⑤数学で、立体とその周囲の空間との境。平面と曲面との総称。\n　⑥事柄のそれぞれの領域。\n　⑦ある方面。ある部面。\n　⑧材の角かどを削り取ったときにできる部分。柱や建具の桟さんなどに用いる。切り面・唐戸面・几帳面きちようめん二など。\n㈡（接尾）\n　助数詞。平たい物を数えるのに用いる。",
@@ -17744,7 +17104,6 @@
 "answers": [
 "六",
 "６",
-"6",
 "陸"
 ],
 "comment": "Lv.N5 [ichi1/news1]: ろく • six\n1585310"
@@ -17753,8 +17112,7 @@
 "question": "「むつ」の促音添加。六個または六歳。",
 "answers": [
 "六つ",
-"６つ",
-"6つ"
+"６つ"
 ],
 "comment": "Lv.N5 [ichi1]: むっつ • six\n1585315"
 },
@@ -17800,22 +17158,6 @@
 "倦る"
 ],
 "comment": "Lv.N3 [ichi1]: あきる • to get tired of; to lose interest in; to have enough\n1586250「パン食に－・きる」"
-},
-{
-"question": "（動カ五［四］）\n①多数の人の集まる場所に，人の数が少なくなる。↔こむ\n②空腹になる。\n③（心理的に）つかえていたものがなくなる。心がはれる。\n④する仕事がなくなる。ひまになる。",
-"answers": [
-"空く"
-],
-"comment": "Lv.N4 [ichi1]: すく • to become less crowded; to thin out; to get empty; to be hungry\n1586265「腹が－・く」"
-},
-{
-"question": "㈠（動カ五［四］）\n㈠（自動詞）\n　①出入り口や容器の口などを閉ざしていた物が動いて，人や物の通り道ができる。ひらく。↔しまる・とじる\n　②戸にかけられていた錠がはずれる。\n　③商店の営業や興業が始まる。ひらく。↔しまる・とじる\n　④中身が消費されて容器がからになる。↔みたす\n　⑤部屋・建物・土地・座席などを占めていた人や物がなくなり，空間や余地ができる。\n　⑥穴・空間・間隔などが生ずる。\n　⑦欠員が生ずる。\n　⑧使用中だった物が，用が済んで使われなくなる。\n　⑨仕事が終わってひまになる。手がすく。\n　⑩ある状態の期間が終わって，別の状態に移る。\n　↔⑤～⑨ふさがる\n㈡（他動詞）\n　（自分の目や口を）あける。ひらく。\n㈡（動カ下二）\n　⇒あける",
-"answers": [
-"開く",
-"空く",
-"明く"
-],
-"comment": "Lv.N5 [spec1/ichi1]: あく • to open (e.g. doors); to open (e.g. business, etc.); to be empty; to be vacant; to be available; to be free; to be open (e.g. neckline, etc.); to have been opened (of one's eyes, mouth, etc.); to come to an end; to open (one's eyes, mouth, etc.); to have a hole; to form a gap; to have an interval (between events)\n1586270「いくらやってもかぎが－・かない」"
 },
 {
 "question": "朝の食事。朝飯あさはん・朝めしの丁寧な言い方。",
@@ -18441,13 +17783,6 @@
 "comment": "Lv.N3 [ichi1/news1]: ぎん • silver (Ag); silver coin; money; silver medal; silver colour; silver color; bank; silver general\n1595090"
 },
 {
-"question": "①こころ。精神。\n②心のそこ。本心。\n③物の中央。中心。多く「芯」の字が用いられる。\n④〘仏〙\n　㋐対象を捉え，思惟するはたらきをもつもの。主観。精神。\n↔色（しき）\n　㋑「心王（しんのう）」に同じ。\n⑤心の臓。心臓。\n⑥二十八宿の一。東方の星宿。蠍（さそり）座のアンタレスほか二星をいう。心宿。なかごぼし。\n⑦信仰心。信。\n⑧仲間。",
-"answers": [
-"心"
-],
-"comment": "Lv.N4 [ichi1]: しん • heart; mind; spirit; vitality; inner strength; Chinese \"Heart\" constellation (one of the 28 mansions); friend\n1595125「－・技・体」"
-},
-{
 "question": "事のありさま。成り行き。多く、深刻で好ましくない状態をいう。",
 "answers": [
 "事態",
@@ -18601,15 +17936,6 @@
 "comment": "Lv.N5 [ichi1/news1]: ときどき • sometimes; at times\n1598680「－の話題」"
 },
 {
-"question": "（動マ下一）\n①動いているもの，動こうとするものをとめる。抑止する。\n②滞在させておく。残しておく。\n③あとに残しておく。この世に残す。\n④その状態のまま残す。\n⑤ある範囲内に限定する。\n⑥気持ちを集中する。注意する。気をつける。\n⑦続けていたことをやめる。中止する。\n⑧とどめを刺す。",
-"answers": [
-"留める",
-"止める",
-"停める"
-],
-"comment": "Lv.N3 [ichi1]: とどめる • to stop; to stay (e.g. the night); to cease; to put an end to; to contain; to keep (in position, in place); to limit; to record (e.g. a fact); to retain\n1598820「足を－・めて眺める」"
-},
-{
 "question": "（名）スル \n他人の物を盗むこと。また，その人。ぬすびと。ぬすっと。",
 "answers": [
 "泥棒",
@@ -18752,7 +18078,6 @@
 "answers": [
 "二十歳",
 "２０歳",
-"20歳",
 "二十",
 "廿"
 ],
@@ -18763,7 +18088,6 @@
 "answers": [
 "二十日",
 "２０日",
-"20日",
 "廿日"
 ],
 "comment": "Lv.N5 [ichi1]: はつか • twentieth day of the month; twenty days\n1600850"
@@ -19159,16 +18483,6 @@
 "comment": "Lv.N5 [ichi1/news1]: おじ • uncle\n1607070"
 },
 {
-"question": "（動ア下一）\n①物に妨げられて，先へ進めない状態になる。\n②途中がつまって流れがとまる。\n③言葉がスムーズに発せられないで途中で何度かとまる。\n④処理されるべきものが残っていて，先へ進めない。\n⑤胸・のどなどがふさがった感じになる。\n⑥礼をするために両手をつく。\n⑦肩などがこる。",
-"answers": [
-"つかえる",
-"つっかえる",
-"閊える",
-"支える"
-],
-"comment": "Lv.N3 [ichi1]: つかえる • to stick; to get stuck; to get caught; to get jammed; to clog; to be unavailable; to be busy; to be occupied; to be full; to be piled up (e.g. of work); to halt (in one's speech); to stumble (over one's words); to stutter; to stammer; to feel blocked (of one's chest or throat, due to grief, anxiety, illness, etc.); to feel pressure; to feel pain\n1607170「天井に頭が－・える」"
-},
-{
 "question": "一（動カ五［四］）\n①（ズボン・はかまなどの衣服を）足をとおして下半身につける。\n②（足袋（たび）・靴下・靴などを）足につける。\n③刀剣などを腰につける。帯びる。さす。\n④弓に弦を張る。",
 "answers": [
 "履く",
@@ -19333,7 +18647,6 @@
 "answers": [
 "一人一人",
 "１人１人",
-"1人1人",
 "一人ひとり"
 ],
 "comment": "Lv.N3 [ichi1]: ひとりひとり • one by one; each; one at a time\n1612530「－の心掛けが大切だ」"
@@ -19352,13 +18665,6 @@
 "游ぎ"
 ],
 "comment": "Lv.N3 [news1]: およぎ • swimming\n1613570「－に行く」"
-},
-{
-"question": "①程度・度合が普通であること。なみ。中ぐらい。\n②どちらにも片寄らないこと。過不足のないこと。中庸。\n③「中学校」の略。\n④「中国」の略。\n⑤名詞の下に用いる。\n⑥その中で最もそれらしいことを表す。\n⑦物のまんなか。中央。\n⑧物事を行なっている最中（さいちゆう）。また，途中。\n⑨仲立ちすること。また，その人。\n⑩仲立ちの手数料。\n⑪そら。空中。",
-"answers": [
-"中"
-],
-"comment": "Lv.N5 [spec1]: ちゅう • medium; average; middle; moderation; middle school; China; volume two (of three); during (a certain time when one did or is doing something); under (construction, etc.); while; in; out of (e.g. three out of ten people)\n1620400「成績は－の少し上」"
 },
 {
 "question": "」に限っては，動詞および動詞型活用の助動詞の終止形にも付く。また，形容動詞および形容動詞型活用の助動詞には，その語幹に接続する。\n㈠「だ」「である」の丁寧語。\n　①判断したり強く断定したりする。「あの方が先生です」「ここから新宿までは三〇〇円です」\n　②事柄を提示する。「だいぶ昔のことですが，…」「それはおととしの夏休みのことです。…」\n　③原因・理由・根拠などの説明をする。「不況が続くのは，アメリカの金利政策の結果なのです」「これはもうずいぶん考え抜いたことなのです」\n　④（終止形を用いて）強い感情をこめた決意や断定を表す。「もう中止です，中止です」「さあ，休憩です，早く片付けましょう」\n　⑤軽い尊敬の意を表す。「この本は，もうお読みですか」\n　⑥終止形は間投助詞的にも用いられる。助詞「ね」「な」などを伴って用いることが多い。「これがですね，いろいろ複雑でですね，わからなくなることがよくあります」\n　①やや尊大な語感をもって，丁寧な断定の意を表す。狂言で，大名その他の名乗りなどに用いられる。「是はこのあたりにかくれもない大名です／狂言・鼻取相撲」「信濃の国の住人あさふのなにがしです／狂言・麻生」\n　②文末の終止に用いて，丁寧な断定の意を表す。江戸中期以降，遊女・男伊達（おとこだて）・医者などによって用いられたもの。「是すなはち物をくらつてすぐに吐くものです／滑稽本・浮世風呂前」",
@@ -19387,15 +18693,6 @@
 "王"
 ],
 "comment": "Lv.N3 [news1]: おう • king; ruler; sovereign; monarch; tycoon; magnate; champion; master; king (of the senior player)\n1629200「ホームラン－」"
-},
-{
-"question": "①物と物との間の狭くなったところ。あいだ。\n②谷あい。谷間。\n③城壁にあけた，弓・鉄砲などを射つための穴。銃眼。\n④事と事の間。間の時間。",
-"answers": [
-"狭間",
-"迫間",
-"間"
-],
-"comment": "Lv.N5 [spec1]: はざま • interval; space; interstice; threshold; valley; gorge; ravine; loophole (in a wall); crenel; eyelet\n1630250「雲の－」"
 },
 {
 "question": "（接尾）\n①形容詞，形容動詞および助動詞「たい」の語幹に付いて，そのように思う，そのように感じるの意を表す。\n②形容詞，形容動詞の語幹および一部の名詞に付いて，そのように振る舞う，そのようなふりをするの意を表す。ぶる。",
@@ -19507,14 +18804,6 @@
 "comment": "Lv.N3 [news1]: くん • native Japanese reading (rendering) of a Chinese character\n1956150"
 },
 {
-"question": "①物のした。物のしたのあたり。また，物のしたの部分。\n②ある人のいる所。また，その人の影響の及ぶ所。\n③…という状態において。また，…ということを条件または根拠として。",
-"answers": [
-"下",
-"許"
-],
-"comment": "Lv.N5 [news1]: もと • under (esp. influence or guidance)\n2004390「博士の指導の－に新製品を開発する」"
-},
-{
 "question": "（副助）\n数量・割合・程度を表す名詞や副詞，またはそれらにさらに副助詞の付いたものに接続する。\n①同じ分量・割合・程度であることを表す。\n②（多く「…に…ずつ」の形をとって）同じ分量・割合・程度で分配することを表す。",
 "answers": [
 "ずつ",
@@ -19540,13 +18829,6 @@
 "comment": "Lv.N5 [spec1]: あか • red; crimson; scarlet; red-containing colour (e.g. brown, pink, orange); Red (i.e. communist); red light; red ink (i.e. in finance or proof-reading); (in) the red; complete; total; perfect; obvious; copper\n2013900「－の素人（しろうと）」"
 },
 {
-"question": "㈠（名）\n　①時間の単位。秒の3600倍。分の60倍。記号h。時間。→秒\n　②とき。ある特定の時刻。\n　③特に仏道の勤行の時刻をいう。\n㈡（接尾）\n　①名詞に付いて，「とき」「おり」などの意を表す。\n　②助数詞。時刻を表すのに用いる。",
-"answers": [
-"時"
-],
-"comment": "Lv.N5 [spec1]: じ • hour; o'clock; (specified) time; when ...; during ...\n2020680「空腹－」"
-},
-{
 "question": "（連語）\nその状態にあるという意を表す。「腰を痛めていてだいぶ苦しんど・るようだ」",
 "answers": [
 "とる",
@@ -19570,13 +18852,6 @@
 "comment": "Lv.N5 [spec1]: たり • -ing and -ing (e.g. \"coming and going\"); doing such things as...; expresses a command; to be; indicates completion or continuation of an action\n2029060"
 },
 {
-"question": "㈠（名）\n　七曜の一。「日曜」の略。\n㈡（接尾）\n　助数詞。\n　①月のうちの何番目の日であるかを示すのに用いる。\n　②日数を数えるのに用いる。",
-"answers": [
-"日"
-],
-"comment": "Lv.N5 [spec1]: にち • Sunday; day (of the month); counter for days; Japan\n2083100「三月一七－」"
-},
-{
 "question": "㈠（名）\n　①とし。地球が太陽の周りを一周する時間。→とし（年）\n　②年季。\n㈡（接尾）\n　助数詞。\n　①年数を数えるのに用いる。\n　②何番目の年であるかを示す。年号・学年などに用いる。",
 "answers": [
 "年"
@@ -19589,13 +18864,6 @@
 "ああ"
 ],
 "comment": "Lv.N5 [spec1]: ああ • like that (used for something or someone distant from both speaker and listener); so\n2085080「－はなりたくない」"
-},
-{
-"question": "①うち。なか。内側。\n②〘仏〙仏教の側から，仏教の立場をとる教え，書物などをさす言葉。↔外（げ）",
-"answers": [
-"内"
-],
-"comment": "Lv.N4 [spec1]: ない • inside; within\n2098290"
 },
 {
 "question": "㈠（名）\n　「うじ（氏）」に同じ。\n㈡（代）\n　三人称。男子に対して，敬意をこめて用いる。彼。\n㈢（接尾）\n　①人の姓名に付けて尊敬の意を表す。主として男子に用いる。\n　②氏族の名に付けて，その氏族の出身であることを表す。\n　③助数詞。尊敬の意をこめて人数を表すのに用いる。「人（にん）」の尊敬語。",
@@ -19627,27 +18895,12 @@
 "comment": "Lv.N5 [spec1]: ちいさな • small; little; tiny\n2136180"
 },
 {
-"question": "（動ガ五［四］）\n器に物を入れる。特に液状の物をそそぎ入れる。",
-"answers": [
-"つぐ",
-"注ぐ"
-],
-"comment": "Lv.N3 [ichi1]: つぐ • to pour (into a vessel); to fill (a cup, bowl, etc.) with; to dish out (food or drink)\n2145240「お茶を－・ぐ」"
-},
-{
 "question": "①女性から見て，同腹の男の兄弟をいう語。年上にも年下にもいう。\n②女性が，自分の恋人や夫をいう語。\n③一般に，男性を親しんで呼ぶ称。\n↔妹（いも）",
 "answers": [
 "背",
 "脊"
 ],
 "comment": "Lv.N5 [spec1]: せ • back; spine; reverse; rear side; height; stature; ridge (of a mountain)\n2147990"
-},
-{
-"question": "㈠（名）\n　ひと。じん。人柄。\n㈡（接尾）\n　助数詞。人数を数えるのに用いる。",
-"answers": [
-"人"
-],
-"comment": "Lv.N5 [ichi1]: にん • counter for people; person\n2149890「親子三－」"
 },
 {
 "question": "①月の第一日。\n②月の初め。上旬。\n③一月一日。元日。また，正月。",
@@ -19661,13 +18914,6 @@
 "comment": "Lv.N5 [ichi1/spec1]: ついたち • first day of the month; first ten days of the lunar month\n2225040"
 },
 {
-"question": "接尾語的に用いて，…の範囲のそと，…のほか，の意を表す。",
-"answers": [
-"外"
-],
-"comment": "Lv.N5 [spec1]: がい • outside of; not covered by\n2227930「区域－」"
-},
-{
 "question": "ラ行特別活用の動詞「なる」の連用形の音便の形および命令形。→なる（動ラ特活）",
 "answers": [
 "ない"
@@ -19675,36 +18921,11 @@
 "comment": "Lv.N5 [spec1]: ない • not; emphatic suffix\n2257550"
 },
 {
-"question": "（感）\n①感動したり驚いたりした時などに発する語。\n②応答の語。呼ばれた時や肯定的な返事をする時などに用いる。はい。",
-"answers": [
-"あっ"
-],
-"comment": "Lv.N4 [spec1]: あっ • Ah!; Oh!; expression of surprise, recollection, etc.; Hey!; used to get someone's attention\n2394370「－、花火だ」"
-},
-{
 "question": "（動カ五［四］）\n①口にふくんだ物・のみこんだ物・息などを，口から外に出す。↔吸う\n②中にある物を，狭い所を通して外に出す。\n③言葉として言う。\n④白状する。",
 "answers": [
 "吐く"
 ],
 "comment": "Lv.N3 [ichi1]: はく • to vomit; to throw up; to spit up; to emit; to send forth; to breathe out; to give (an opinion); to make (a comment); to express; to tell; to confess\n2646460「黒い煙を－・いて走る蒸気機関車」"
-},
-{
-"question": "㈠（名）\n　人や物にそなわる性質のうち，自然と外にあらわれる，好ましい，洗練された様子。品格。風格。\n㈡（接尾）\n　助数詞。料理などの品数を数えるのに用いる。上にくる語によって「ぴん」となる。",
-"answers": [
-"品"
-],
-"comment": "Lv.N3 [ichi1]: ひん • elegance; grace; refinement; class; dignity; article; item; counter for items (of food, etc.); counter for dishes or courses (at a restaurant)\n2648780「－がよい」"
-},
-{
-"question": "（動ラ五［四］）\n①人が，移動せずにその場所にいる。\n②物事が先に進まない。とまる。\n③ある範囲を出ない。\n④その状態・地位のままでいる。\n⑤やめになる。中止になる。\n⑥終わる。とだえる。\n⑦究極のものとする。",
-"answers": [
-"とどまる",
-"止まる",
-"留まる",
-"停まる",
-"駐まる"
-],
-"comment": "Lv.N5 [ichi1]: とどまる • to remain; to abide; to stay (in the one place); to be limited to; to be confined to\n2657130「戦争中も東京に－・っていた」"
 },
 {
 "question": "（副）\n①以前と同じ状況であるさま。事態が変わらずに続いているさま。依然として。\n②前もってした予想や判断と同様であるさま。また，他の例から類推される状況と現実が同じであるさま。\n③さまざまないきさつがあって，結局，初めに予測した結論に落ち着くさま。一般的な常識・うわさなどに違わないさま。\n④動かないでじっとしているさま。",
@@ -19739,26 +18960,11 @@
 "comment": "Lv.N3 [ichi1/news1]: じつに • indeed; really; absolutely; truly; actually; very; quite\n2820720「彼は－字がうまい」"
 },
 {
-"question": "①数の，ひとつ。いち。\n②他の名詞や動詞の連用形の上に付いて接頭語的に用いる。",
-"answers": [
-"一"
-],
-"comment": "Lv.N5 [spec1]: ひと • one; one\n2821500「－房（ふさ）」"
-},
-{
 "question": "人の体。肉体。体軀たいく。→肉体（補説欄）",
 "answers": [
 "身体"
 ],
 "comment": "Lv.N3 [ichi1]: しんたい • body; physical system; person\n2830705"
-},
-{
-"question": "㈠（動マ五［四］）\n　布・紙などでおおって，中に入れる。",
-"answers": [
-"くるむ",
-"包む"
-],
-"comment": "Lv.N4 [ichi1]: くるむ • to wrap up; to tuck in; to pack; to do up; to cover with; to dress in\n2831360「体をタオルで－・む」"
 }
 ]
 }

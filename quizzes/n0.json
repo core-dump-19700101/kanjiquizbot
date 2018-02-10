@@ -976,6 +976,7 @@
 	{ "question": "微か", "answers": [ "かすか" ], "comment": "faint; dim; weak; slight; vague; indistinct; hazy\npoor; wretched; meagre; meager; scanty" },
 	{ "question": "奔る", "answers": [ "はしる" ], "comment": " to run\nto travel (movement of vehicles); to drive\nto hurry to\nto retreat (from battle); to take flight\nto run away from home\nto elope\nto flash; to streak; to shoot through (e.g. pain)" },
 	{ "question": "過る", "answers": [ "よぎる" ], "comment": "to go by; to cross; to pass by; to float across" },
-	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" }
+	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" },
+	{ "question": "斜交い", "answers": [ "はすかい" ], "comment": "aslant; oblique; diagonal; askew; cater-cornered; catty-cornered" }
 ]
 }
