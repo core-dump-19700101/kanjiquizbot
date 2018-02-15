@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Thesaurus of English (en.oxforddictionaries.com/thesaurus)\n\nVer.180210-0022 –Abridged Edition– [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Thesaurus of English (en.oxforddictionaries.com/thesaurus)\n\nVer.180210-1632 –Abridged Edition– [Brought to you by h​onya#1726]",
 "deck": [
 {
 "question": "able",
@@ -35413,9 +35413,11 @@
 "old lady",
 "old woman",
 "mum",
+"mom",
 "mummy",
 "mumsy",
 "mom",
+"mum",
 "mommy",
 "mater",
 "mama",
@@ -43785,6 +43787,7 @@
 "sub rosa",
 "hush-hush",
 "mum",
+"mom",
 "slow",
 "slow-moving",
 "stagnant",
@@ -47579,6 +47582,7 @@
 "sub rosa",
 "hush-hush",
 "mum",
+"mom",
 "hidden",
 "concealed",
 "camouflaged",
@@ -49850,6 +49854,7 @@
 "at a loss for words",
 "struck dumb",
 "mum",
+"mom",
 "unspoken",
 "unsaid",
 "unstated",
@@ -93883,6 +93888,49 @@
 "carl"
 ],
 "comment": "Lv.02/12: [名] 男性"
+},
+{
+"question": "mum",
+"answers": [
+"mother",
+"female parent",
+"materfamilias",
+"matriarch",
+"biological mother",
+"birth mother",
+"foster mother",
+"adoptive mother",
+"stepmother",
+"surrogate mother",
+"ma",
+"mam",
+"mammy",
+"old dear",
+"old lady",
+"old woman",
+"mummy",
+"mumsy",
+"mommy",
+"mater",
+"mama",
+"mamma",
+"Mata",
+"amma",
+"progenitress",
+"progenitrix",
+"silent",
+"quiet",
+"mute",
+"dumb",
+"tight-lipped",
+"close-mouthed",
+"uncommunicative",
+"unforthcoming",
+"reticent",
+"secretive",
+"mumchance"
+],
+"comment": "Lv.02/12: [名] ママ"
 },
 {
 "question": "manage",
@@ -178341,6 +178389,7 @@
 "close-mouthed",
 "saying nothing",
 "mum",
+"mom",
 "mute",
 "unable to speak",
 "without the power of speech",
@@ -210843,7 +210892,7 @@
 "put in the picture",
 "put wise"
 ],
-"comment": "Lv.05/12: [名] 警戒警報"
+"comment": "Lv.05/12: [名] 警戒、警報"
 },
 {
 "question": "alliance",

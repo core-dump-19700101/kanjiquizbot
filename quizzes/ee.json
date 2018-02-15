@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180210-0022 [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180215-0828 [Brought to you by h​onya#1726]",
 "type": "text",
 "deck": [
 {
@@ -10514,11 +10514,11 @@
 "comment": "Lv.02/12: [形] より少ない\n‘the less time spent there, the better’"
 },
 {
-"question": "1. The way, direction, or position in which something lies.\n 1. ‹Golf› The position in which a golf ball comes to rest, especially as regards the ease of the next shot.\n 2. The lair or place of cover of an animal.",
+"question": "1. An intentionally false statement.\n 1. Used with reference to a situation involving deception or founded on a mistaken impression.",
 "answers": [
 "lie"
 ],
-"comment": "Lv.02/12: [名] 嘘\n‘he was familiarizing himself with the lie of the streets’"
+"comment": "Lv.02/12: [名] 嘘\n‘they hint rather than tell outright lies’"
 },
 {
 "question": "1. [with object] Raise to a higher position or level.\n2. [with object and adverbial of direction] Pick up and move to a different position.\n3. [with object] Raise (a person's spirits or confidence).\n4. [with object] Formally remove or end (a legal restriction, decision, or ban).\n5. [with object] Carry off or win (a prize or event).",
@@ -10640,12 +10640,12 @@
 "comment": "Lv.02/12: [名] 男性\n‘the audience consisted of adult males’"
 },
 {
-"question": "1. «dated» One's mother (especially as a child's term).\n2. «informal» A mature woman.",
+"question": "One's mother.",
 "answers": [
-"mama",
-"mamma"
+"mum",
+"mom"
 ],
-"comment": "Lv.02/12: [名] ママ\n‘she had hated being parted from her mama and papa’"
+"comment": "Lv.02/12: [名] ママ\n‘she often goes round to see her mum, who lives nearby’"
 },
 {
 "question": "1. [with object] Be in charge of (a business, organization, or undertaking); run.\n 1. Have the position of supervising (staff) at work.\n 2. Be the manager of (a sports team or a performer)\n 3. Use (money, time, or other resources) sensibly.\n2. [no object] Succeed in surviving or in achieving something despite difficult circumstances; cope.\n 1. [with object] Succeed in achieving or producing (something difficult)\n 2. [with object] Succeed in dealing with or withstanding (something)\n 3. [with object] Be free to attend at (a certain time)",
@@ -28127,7 +28127,7 @@
 "answers": [
 "alert"
 ],
-"comment": "Lv.05/12: [名] 警戒警報\n‘security forces are on the alert for an upsurge in violence’"
+"comment": "Lv.05/12: [名] 警戒、警報\n‘security forces are on the alert for an upsurge in violence’"
 },
 {
 "question": "1. A union or association formed for mutual benefit, especially between countries or organizations.\n 1. A relationship based on similarity of interests, nature, or qualities.\n 2. [mass noun] The state of being joined or associated.\n 3. ‹Ecology› A group of closely related plant associations.",

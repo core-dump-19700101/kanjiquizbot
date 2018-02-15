@@ -1,6 +1,7 @@
 {
-"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\n\nVer.180210-0033 –N3 Edition– [Brought to you by h​onya#1726]",
+"description": "Common Japanese words looked up in 大辞林 第三版 (Daijirin 3rd Edition: www.weblio.jp/cat/dictionary/ssdjj)\n\nVer.180215-0828 –N3 Edition– [Brought to you by h​onya#1726]",
 "type": "text",
+"timeout": 30,
 "deck": [
 {
 "question": "一（連体）\n①話し手からも聞き手からも離れた所にある物をさす。\n②話し手も聞き手もすでに知っている事柄をさす。例の。\n二（感）\n①話のはじめや間で，次の言葉へのつなぎに用いる語。あのう。\n②人に呼びかけたり，注意を引こうとするときに用いる語。あのう。",
@@ -143,13 +144,6 @@
 "御母さん"
 ],
 "comment": "Lv.N5 [ichi1/news1]: おかあさん • mother\n1002650「－，ただ今」"
-},
-{
-"question": "一（副）\n（下に，否定的な意を表す語を伴って）まるで。全く。からきし。\n二（接頭）\n名詞・形容動詞に付く。\n①否定的な意を表す語に付いて，まるっきり，全然などの意を表す。\n②その状態がはなはだしいこと，すっかりその状態になっていることの意を表す。",
-"answers": [
-"から"
-],
-"comment": "Lv.N5 [spec1]: から • from (e.g. time, place, numerical quantity); since; from (originator); by; because; since; out of (constituent, part); through (e.g. window, vestibule); after; since\n1002980「－ばか」"
 },
 {
 "question": "（副）\n①確実にそうなるだろうと予測しているさま。\n②自身の事柄に関しては決意を，相手に対しては強い要望を表す。必ず。\n③あることが確実に行われるさま。必ず。\n④厳しいさま。状態にゆるみがないさま。\n⑤腹を立てているさま。\n⑥動作・状態が瞬間的であるさま。",
@@ -3109,14 +3103,6 @@
 "完了"
 ],
 "comment": "Lv.N3 [ichi1/news1]: かんりょう • completion; conclusion; perfect (tense, form, aspect)\n1211630「準備－」"
-},
-{
-"question": "（動ワ五［ハ四］）\n①心の中で悩む。苦しむ。心配する。\n②病気になる。\n③障害にあって苦しむ。難渋する。\n④動詞の連用形の下に付いて，…するのに困る，の意を表す。…しかねる。",
-"answers": [
-"患う",
-"煩う"
-],
-"comment": "Lv.N5 [ichi1]: わずらう • to be ill; to suffer from; to worry about; to be concerned about; to have trouble doing ...; to be unable to ...; to fail to ...\n1212200「言い－・う」"
 },
 {
 "question": "病人やけが人。主に医者の側からいう言葉。",
@@ -10988,11 +10974,11 @@
 "comment": "Lv.N5 [ichi1]: ぬぐ • to take off (clothes, shoes, etc.); to undress\n1416400「上着を－・ぐ」"
 },
 {
-"question": "①棚に商品を並べて販売する場所。見せ棚。みせ。\n②商家。特に奉公人や出入りの職人などが，その商家をさしていう。おたな。\n③借家。",
+"question": "①物をのせるために，水平に張り渡したり，吊ったりした板。\n②内部に物をのせるための，何枚かの水平な板をはった箱状のもの。\n③つる性の植物をはわせるために，竹などを粗く組んで，支柱などに取りつけて高く張り渡したもの。\n④「棚物」の略。\n⑤船棚。\n⑥傾斜をなす地形で，階段状になっている部分。\n⑦大陸棚。\n⑧登山用語。岩壁で，一人立てるくらいの平らな部分。テラス。\n⑨魚の遊泳層。\n⑩薪炭・パルプなどを積み上げた体積の単位。高さ六尺・幅六尺・奥行三尺，すなわち一〇八立方尺，または高さ五尺・幅一〇尺・奥行二尺，すなわち一〇〇立方尺を一棚という。",
 "answers": [
 "棚"
 ],
-"comment": "Lv.N4 [ichi1/news1]: たな • shelf; shelves; ledge; rack; trellis\n1416700「－子」"
+"comment": "Lv.N4 [ichi1/news1]: たな • shelf; shelves; ledge; rack; trellis\n1416700「－を吊る」"
 },
 {
 "question": "（代）\n不定称の人代名詞。名を知らない人や不定の人をさしていう語。",
@@ -13329,7 +13315,6 @@
 "question": "（代）\n遠称の指示代名詞。\n①あるものを越して，話し手から遠く離れた先の方，またはその場所をさす。むこう。あなた。\n②現在から遠く隔たった過去および未来をさす。",
 "answers": [
 "かなた",
-"あなた",
 "彼方"
 ],
 "comment": "Lv.N5 [ichi1]: かなた • beyond; across; the other side; the distance\n1483180「海の－の国」"
@@ -18804,7 +18789,7 @@
 "comment": "Lv.N3 [news1]: くん • native Japanese reading (rendering) of a Chinese character\n1956150"
 },
 {
-"question": "（副助）\n数量・割合・程度を表す名詞や副詞，またはそれらにさらに副助詞の付いたものに接続する。\n①同じ分量・割合・程度であることを表す。\n②（多く「…に…ずつ」の形をとって）同じ分量・割合・程度で分配することを表す。",
+"question": "（副助）\n数量・割合・程度を表す名詞や副詞，またはそれらにさらに副助詞の付いたものに接続する。\n①同じ分量・割合・程度であることを表す。\n②同じ分量・割合・程度で分配することを表す。",
 "answers": [
 "ずつ",
 "づつ"

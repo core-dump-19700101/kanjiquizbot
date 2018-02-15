@@ -12628,7 +12628,7 @@
 	{ "question": "緑地", "answers": [ "りょくち" ], "comment": "green tract of land" },
 	{ "question": "緑色", "answers": [ "すいしょく", "みどりいろ", "りょくしょく" ], "comment": "green; emerald green; green color of new foliage; verdure" },
 	{ "question": "緑茶", "answers": [ "りょくちゃ" ], "comment": "green tea; Japanese tea" },
-	{ "question": "緑青", "answers": [ "りょくしょう", "ろくしょう" ], "comment": "verdigris; green rust; copper rust" },
+	{ "question": "緑青", "answers": [ "ろくしょう" ], "comment": "verdigris; green rust; copper rust" },
 	{ "question": "緒", "answers": [ "お" ], "comment": "cord; strap; thong\nstring (of a musical instrument, bow, etc.)" },
 	{ "question": "緒戦", "answers": [ "しょせん", "ちょせん" ], "comment": "beginning of hostilities; beginning of competition" },
 	{ "question": "線", "answers": [ "せん" ], "comment": "line; stripe; stria\nline (e.g. telephone line); wire\nray (e.g. X-ray); beam\nline (e.g. of a railroad); track; route; lane\noutline; contours; form\nlevel\ndivision\nline (of action); position; approach; policy; principle\nimpression one leaves; air one gives off" },

@@ -13,8 +13,6 @@
 	{ "question": "不振", "answers": [ "ふしん" ], "comment": "dullness; depression; slump; stagnation" },
 	{ "question": "与える", "answers": [ "あたえる" ], "comment": "to give (esp. to someone of lower status); to bestow; to grant; to confer; to present; to award\nto provide; to afford; to offer; to supply\nto assign\nto cause\nto pass (a variable to a function)" },
 	{ "question": "丘", "answers": [ "おか" ], "comment": "hill; height; knoll; rising ground\nbonus points awarded to the winner at the end of a game\nmound; hill" },
-	{ "question": "並", "answers": [ "なら" ], "comment": "average; medium; common; ordinary\nline; row of (e.g. houses)\nmid-grade\nsame level; equal; each (e.g. month); set of (e.g. teeth)" },
-	{ "question": "並ぶ", "answers": [ "ならぶ" ], "comment": "to line up; to stand in a line\nto rival; to match; to equal" },
 	{ "question": "中継", "answers": [ "ちゅうけい" ], "comment": "relay; hook-up\nrelay broadcasting\njoining; joint; intermediation; relaying; intermediary; relay; agency; brokerage\nmid-relief pitcher; middle reliever" },
 	{ "question": "丹念", "answers": [ "たんねん" ], "comment": "painstaking; careful; meticulous; scrupulous; detailed; elaborate" },
 	{ "question": "丹精", "answers": [ "たんせい" ], "comment": "working earnestly; sincerity; diligence; effort; pains" },

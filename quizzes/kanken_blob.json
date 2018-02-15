@@ -115,7 +115,7 @@
 	{ "question": "丘", "answers": [ "おか" ], "comment": "hill; height; knoll; rising ground\nbonus points awarded to the winner at the end of a game\nmound; hill" },
 	{ "question": "丘陵", "answers": [ "きゅうりょう" ], "comment": "hill" },
 	{ "question": "両脇", "answers": [ "りょうわき" ], "comment": "both sides" },
-	{ "question": "並", "answers": [ "なら" ], "comment": "average; medium; common; ordinary\nline; row of (e.g. houses)\nmid-grade\nsame level; equal; each (e.g. month); set of (e.g. teeth)" },
+	{ "question": "並", "answers": [ "なみ" ], "comment": "average; medium; common; ordinary\nline; row of (e.g. houses)\nmid-grade\nsame level; equal; each (e.g. month); set of (e.g. teeth)" },
 	{ "question": "並ぶ", "answers": [ "ならぶ" ], "comment": "to line up; to stand in a line\nto rival; to match; to equal" },
 	{ "question": "並べる", "answers": [ "ならべる" ], "comment": "to line up; to set up; to arrange in a line\nto enumerate; to itemize\nto be equal (to); to compare well (with); to be as good (as)" },
 	{ "question": "並列", "answers": [ "へいれつ" ], "comment": "running in parallel; lined up alongside\nparallel (electronics, computing, etc.)" },
