@@ -755,13 +755,29 @@ func Currency(query string) string {
 	return fmt.Sprintf("Currency: %s %s is **%s** %s", parts[0], from, humanize(multiplier*number), to)
 }
 
-// Return frequency from corpus of novels
+// Return frequency stats from corpus of novels
 func corpusSearch(query string) string {
 
 	target := []byte(query)
 	eob := []byte("@@@[NOVEL_END]@@@")
 	var countBook, countTotal, booksTotal, booksMatched int
 	bookList := make([]int, 0, 1300)
+
+	// Prepare somewhere to save example sentences
+	examples := make([][]byte, 3)
+	for i := 0; i < len(examples); i++ {
+		examples[i] = make([]byte, 0, 1000)
+	}
+	exampleCount := 0
+
+	// Prepare a regexp to cut up individual sentences
+	expr, err := regexp.Compile(`([^「」。！？!?]*?` + regexp.QuoteMeta(query) + `[^「」。！？!?]*[。！？!?]*)`)
+	if err != nil {
+		return "ERROR, Could not compile regexp: " + err.Error()
+	}
+
+	// Generate a lockless random seed
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	corpusFile, err := os.Open(RESOURCES_FOLDER + "corpus.txt")
 	if err != nil {
@@ -770,8 +786,10 @@ func corpusSearch(query string) string {
 	defer corpusFile.Close()
 
 	scanner := bufio.NewScanner(corpusFile)
-	scanner.Buffer(make([]byte, 1*1024*1024), 16*1024*1024)
+	scanner.Buffer(make([]byte, 1*1024*1024), 1*1024*1024)
 	for scanner.Scan() {
+
+		// If we hit the end of the book, compile the stats so far
 		if bytes.Equal(scanner.Bytes(), eob) {
 			booksTotal++
 			if countBook > 0 {
@@ -783,17 +801,75 @@ func corpusSearch(query string) string {
 			continue
 		}
 
-		countBook += bytes.Count(scanner.Bytes(), target)
+		// Count the number of instances in this line
+		count := bytes.Count(scanner.Bytes(), target)
+		countBook += count
+
+		if count > 0 {
+			// Only save an example when we don't have any, or if shrinking probability tells us to replace
+			if exampleCount < len(examples) || r.Intn(countTotal+countBook) < len(examples) {
+				matches := expr.FindAll(scanner.Bytes(), -1)
+
+				// Exclude sentences that are too long for Discord
+				for i := 0; i < len(matches); i++ {
+					if len(matches[i]) > cap(examples[0]) {
+						matches[i] = matches[len(matches)-1]
+						matches = matches[:len(matches)-1]
+						i--
+					}
+				}
+
+				// Store or replace the extracted sample sentence
+				if len(matches) > 0 {
+					match := matches[r.Intn(len(matches))]
+					examples[exampleCount%len(examples)] = examples[exampleCount%len(examples)][:len(match)]
+					copy(examples[exampleCount%len(examples)], match)
+					exampleCount++
+				}
+			}
+
+		}
+
 	}
 	if err := scanner.Err(); err != nil {
 		return "ERROR, Could not scan Corpus file: " + err.Error()
 	}
 
-	median := 0
-	if len(bookList) > 0 {
+	// Calculate the minimum, median, and maximum occurrence
+	spread := "."
+	if len(bookList) > 1 {
 		sort.Ints(bookList)
-		median = bookList[len(bookList)/2]
+		median := 0
+
+		if len(bookList)%2 == 0 {
+			median = (bookList[len(bookList)/2-1] + bookList[len(bookList)/2]) / 2
+		} else {
+			median = bookList[len(bookList)/2]
+		}
+
+		spread = fmt.Sprintf(": [%d, %d, %d].", bookList[0], median, bookList[len(bookList)-1])
 	}
 
-	return fmt.Sprintf("Found %d instances of '%s' in %d (%.1f%%) books, median %d per book.\n", countTotal, target, booksMatched, 100*float64(booksMatched)/float64(booksTotal), median)
+	// Format the list of usage examples
+	var exampleList string
+	for _, example := range examples {
+		if len(example) == 0 {
+			continue
+		}
+
+		exampleList += "\n《 " + strings.TrimSpace(strings.Replace(string(example), string(query), "**"+string(query)+"**", -1)) + " 》"
+	}
+
+	// Get rid of weird double markup
+	exampleList = strings.Replace(exampleList, "****", "", -1)
+
+	return fmt.Sprintf(
+		"Found %d instances of '%s' in %d (%.1f%%) books%s\n%s",
+		countTotal,
+		query,
+		booksMatched,
+		100*float64(booksMatched)/float64(booksTotal),
+		spread,
+		exampleList,
+	)
 }

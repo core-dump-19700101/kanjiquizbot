@@ -51,6 +51,11 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		return
 	}
 
+	// Replace default timeout with custom if specified
+	if quiz.Timeout > 0 {
+		timeout = quiz.Timeout
+	}
+
 	c := make(chan *discordgo.MessageCreate, 100)
 	quitChan := make(chan struct{}, 100)
 

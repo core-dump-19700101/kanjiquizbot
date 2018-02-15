@@ -191,7 +191,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			if len(input) >= 2 {
 				msgSend(s, m.ChannelID, corpusSearch(m.Content[len(input[0])+1:]))
 			} else {
-				msgSend(s, m.ChannelID, "No query word specified!")
+				msgSend(s, m.ChannelID, "No query term specified!")
 			}
 		case "pitch", "p":
 			if len(input) >= 2 {

@@ -20,6 +20,7 @@ var Quizzes struct {
 type Quiz struct {
 	Description string `json:"description"`
 	Type        string `json:"type,omitempty"`
+	Timeout     int    `json:"timeout,omitempty"`
 	Deck        []Card `json:"deck"`
 }
 
