@@ -53,6 +53,8 @@
 	"jp_syn_full":	"jp_syn_full.json",
 	"jukugo":		"jukugo.json",
 	"images":		"images.json",
-	"n4conj":		"n4conj.json",
+	"imagesx":		"imagesx.json",
+	"skmn4":		"skmn4.json",
+	"core2k":		"core2k.json",
 	"test":			"test.json"
 }

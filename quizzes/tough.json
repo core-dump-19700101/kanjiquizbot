@@ -4728,7 +4728,7 @@
 	{ "question": "舵手", "answers": [ "だしゅ" ], "comment": "【準１級】\nhelmsman; coxswain" },
 	{ "question": "舵角", "answers": [ "だかく" ], "comment": "【準１級】" },
 	{ "question": "舵輪", "answers": [ "だりん" ], "comment": "【準１級】" },
-	{ "question": "舷", "answers": [ "げん" ], "comment": "【２級】\nside of a boat; gunwale\nside of a boat; gunwale\nside of a boat; gunwale" },
+	{ "question": "舷", "answers": [ "げん", "ふなばた" ], "comment": "【２級】\nside of a boat; gunwale" },
 	{ "question": "舷側", "answers": [ "げんそく" ], "comment": "【２級】\nship's side; broadside" },
 	{ "question": "舷梯", "answers": [ "げんてい" ], "comment": "【準１級】\ngangway (ladder)" },
 	{ "question": "舷窓", "answers": [ "げんそう" ], "comment": "【２級】\nporthole" },

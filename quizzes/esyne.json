@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Thesaurus of English (en.oxforddictionaries.com/thesaurus)\n\nVer.180210-1632 –Abridged Edition– [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Thesaurus of English (en.oxforddictionaries.com/thesaurus)\n\nVer.180216-1139 –Abridged Edition– [Brought to you by h​onya#1726]",
 "deck": [
 {
 "question": "able",
@@ -237,7 +237,7 @@
 "question": "across",
 "answers": [
 "to the other side of",
-"from one side of … to the other",
+"from one side of to the other",
 "over",
 "throughout the expanse of",
 "throughout the width of",
@@ -1049,7 +1049,7 @@
 "answers": [
 "down",
 "throughout the length of",
-"from one end of … to the other",
+"from one end of to the other",
 "through",
 "across",
 "beside",
@@ -1245,7 +1245,7 @@
 "plus",
 "what's more"
 ],
-"comment": "Lv.01/12: [接] ...と..."
+"comment": "Lv.01/12: [接] 〜と〜"
 },
 {
 "question": "angry",
@@ -3001,7 +3001,7 @@
 "sponging",
 "toilet",
 "ablution",
-"give ... a bath",
+"give a bath",
 "clean",
 "soap",
 "bathe",
@@ -3093,7 +3093,7 @@
 "represent",
 "tot up to"
 ],
-"comment": "Lv.01/12: [動] ...である"
+"comment": "Lv.01/12: [動] 〜である"
 },
 {
 "question": "beautiful",
@@ -3956,7 +3956,7 @@
 "question": "between",
 "answers": [
 "in the middle of",
-"with one … on either side",
+"with one on either side",
 "betwixt",
 "connecting",
 "linking",
@@ -6010,12 +6010,12 @@
 "beyond",
 "according to",
 "with",
-"as far as … is concerned",
+"as far as is concerned",
 "concerning",
 "on",
 "along"
 ],
-"comment": "Lv.01/12: [前] ...そばに"
+"comment": "Lv.01/12: [前] 〜そばに"
 },
 {
 "question": "cafe",
@@ -9799,8 +9799,8 @@
 "hail from",
 "originate in",
 "have one's roots in",
-"be …",
-"be … by birth",
+"be",
+"be by birth",
 "live in",
 "have one's home in",
 "inhabit",
@@ -13062,7 +13062,7 @@
 "be employed as",
 "earn a living as",
 "earn a living at",
-"what is …'s job?",
+"what is's job?",
 "get on",
 "get along",
 "progress",
@@ -13311,7 +13311,7 @@
 "along",
 "throughout the length of",
 "to the other end of",
-"from one end of … to the other",
+"from one end of to the other",
 "through",
 "across",
 "by way of",
@@ -14623,7 +14623,7 @@
 "for the time of",
 "in the time of"
 ],
-"comment": "Lv.01/12: [前] ...間に"
+"comment": "Lv.01/12: [前] 〜間に"
 },
 {
 "question": "each",
@@ -15241,7 +15241,7 @@
 "adequate",
 "ample",
 "abundant",
-"as much … as necessary",
+"as much as necessary",
 "the necessary",
 "plenty of",
 "plenty",
@@ -15249,7 +15249,6 @@
 "a sufficient amount of",
 "an adequate amount",
 "an adequate amount of",
-"as much as necessary",
 "a sufficiency",
 "an adequacy",
 "an ample supply",
@@ -27668,7 +27667,7 @@
 "in less than",
 "in under",
 "in no more than",
-"before a … is up",
+"before a is up",
 "to",
 "per",
 "every",
@@ -33625,7 +33624,7 @@
 "millions of",
 "billions of",
 "zillions of",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "shedload",
 "a slew of",
 "gazillions of",
@@ -35416,8 +35415,6 @@
 "mom",
 "mummy",
 "mumsy",
-"mom",
-"mum",
 "mommy",
 "mater",
 "mama",
@@ -35808,7 +35805,7 @@
 "piles of",
 "oodles of",
 "tons of",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "lashings of",
 "a shedload of",
 "gobs of",
@@ -41116,8 +41113,6 @@
 "flying machine",
 "aeroplane",
 "airplane",
-"airplane",
-"aeroplane",
 "ship",
 "bird",
 "kite"
@@ -41883,8 +41878,8 @@
 "low on",
 "missing",
 "with an insufficiency of",
-"with too few …",
-"with too little …",
+"with too few",
+"with too little",
 "unfortunate",
 "unlucky",
 "luckless",
@@ -44423,7 +44418,7 @@
 "mucho",
 "damn",
 "damned",
-"too … for words",
+"too for words",
 "devilish",
 "hellish",
 "frightfully",
@@ -44502,7 +44497,7 @@
 "right",
 "devilishly",
 "ultra",
-"too … for words",
+"too for words",
 "mucho",
 "mega",
 "seriously",
@@ -48764,7 +48759,7 @@
 "prompt",
 "punctually",
 "dead on",
-"on the stroke of …",
+"on the stroke of",
 "on the button",
 "on the nose",
 "on the knocker",
@@ -50694,7 +50689,7 @@
 "stubby",
 "dwarf",
 "bantam",
-"a slip of a …",
+"a slip of a",
 "pint-sized",
 "homuncular",
 "Lilliputian",
@@ -56812,7 +56807,7 @@
 "into and out of",
 "to the far side of",
 "to the other side of",
-"from one side of … to the other",
+"from one side of to the other",
 "from end to end of",
 "between",
 "past",
@@ -56846,8 +56841,8 @@
 "until the end of",
 "during",
 "up to and including",
-"to … inclusive",
-"from … to … inclusive",
+"to inclusive",
+"from to inclusive",
 "from one side to the other",
 "from one end to another",
 "from end to end",
@@ -57330,8 +57325,6 @@
 "synchronize",
 "synchronise",
 "put a stopwatch on",
-"meter",
-"metre",
 "count",
 "clock"
 ],
@@ -59365,7 +59358,7 @@
 "ante-",
 "pre-"
 ],
-"comment": "Lv.01/12: [前] ...するまで"
+"comment": "Lv.01/12: [前] 〜するまで"
 },
 {
 "question": "use",
@@ -59688,7 +59681,7 @@
 "mucho",
 "damn",
 "damned",
-"too … for words",
+"too for words",
 "devilish",
 "hellish",
 "frightfully",
@@ -62402,7 +62395,7 @@
 "in the company of",
 "escorted by"
 ],
-"comment": "Lv.01/12: [前] ...と一緒に"
+"comment": "Lv.01/12: [前] 〜と一緒に"
 },
 {
 "question": "without",
@@ -82321,8 +82314,6 @@
 "utilise",
 "avail oneself of",
 "put to use",
-"practise",
-"practice",
 "apply",
 "bring to bear",
 "bring into play",
@@ -89453,7 +89444,7 @@
 "mucho",
 "damn",
 "damned",
-"too … for words",
+"too for words",
 "devilish",
 "hellish",
 "frightfully",
@@ -90669,7 +90660,7 @@
 "brainy",
 "genius",
 "have a good head on one's shoulders",
-"there are no flies on …",
+"there are no flies on",
 "know how many beans make five",
 "whip-smart",
 "rational",
@@ -93167,7 +93158,7 @@
 "tonnes",
 "zillions",
 "gazillions",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "a shedload",
 "lashings",
 "gobs",
@@ -94947,8 +94938,6 @@
 "litmus test",
 "criterion",
 "benchmark",
-"metre",
-"meter",
 "cadence",
 "rhythm",
 "foot",
@@ -99389,8 +99378,6 @@
 "give the green light to",
 "say the word",
 "authorization",
-"licence",
-"license",
 "pass",
 "voucher",
 "ticket",
@@ -100061,7 +100048,7 @@
 "oceans of",
 "a raft of",
 "a hatful of",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "lashings of",
 "scads of",
 "a slew of",
@@ -107774,7 +107761,7 @@
 "millions",
 "billions",
 "zillions",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "shedloads",
 "a shedload",
 "a slew",
@@ -114064,7 +114051,7 @@
 "I believe that",
 "assuredly",
 "without question",
-"don't tell me that … not …",
+"don't tell me that not",
 "certainly",
 "for certain",
 "for sure",
@@ -122850,7 +122837,7 @@
 "moisten",
 "immerse",
 "disinfect",
-"give ... a bath",
+"give a bath",
 "soap",
 "swim",
 "go swimming",
@@ -124493,7 +124480,7 @@
 "innermost being",
 "core"
 ],
-"comment": "Lv.03/12: [名] 胸、胸部"
+"comment": "Lv.03/12: [名] 乳房、胸部"
 },
 {
 "question": "breed",
@@ -124806,7 +124793,7 @@
 "tonnes",
 "zillions",
 "gazillions",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "a shedload",
 "lashings",
 "gobs",
@@ -159911,7 +159898,7 @@
 "fantastically",
 "madly",
 "ultra",
-"too … for words",
+"too for words",
 "mucho",
 "mega",
 "majorly",
@@ -161831,7 +161818,7 @@
 "customary",
 "habitual",
 "proverbial",
-"… all over"
+"all over"
 ],
 "comment": "Lv.03/12: [形] 典型的な、独特な"
 },
@@ -165719,7 +165706,7 @@
 "enthusiast",
 "devotee",
 "fan",
-"… lover",
+"lover",
 "buff",
 "ham",
 "bungler",
@@ -166794,7 +166781,7 @@
 "genius",
 "whip-smart"
 ],
-"comment": "Lv.04/12: [形] ...しがちな"
+"comment": "Lv.04/12: [形] 〜しがちな"
 },
 {
 "question": "artificial",
@@ -167668,7 +167655,7 @@
 "desperately",
 "devilishly",
 "ultra",
-"too … for words",
+"too for words",
 "mucho",
 "mega",
 "seriously",
@@ -172188,7 +172175,7 @@
 "apropos of",
 "anent"
 ],
-"comment": "Lv.04/12: [前] ...に関して"
+"comment": "Lv.04/12: [前] 〜に関して"
 },
 {
 "question": "conclude",
@@ -176992,7 +176979,7 @@
 "even with",
 "undeterred by"
 ],
-"comment": "Lv.04/12: [前] ...にもかかわらず"
+"comment": "Lv.04/12: [前] 〜にもかかわらず"
 },
 {
 "question": "dessert",
@@ -180509,7 +180496,7 @@
 "too much",
 "more than enough",
 "enough and to spare",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "nimiety",
 "remainder",
 "rest",
@@ -182970,7 +182957,7 @@
 "hundreds of",
 "thousands of",
 "millions of",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "habitual",
 "customary",
 "regular",
@@ -190793,7 +190780,7 @@
 "bible",
 "enchiridion"
 ],
-"comment": "Lv.04/12: [形] 手の、手動の."
+"comment": "Lv.04/12: [形] 手の、手動の"
 },
 {
 "question": "manufacture",
@@ -197143,7 +197130,7 @@
 "stacks",
 "scads",
 "bags",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "lashings",
 "a shedload",
 "shedloads",
@@ -198397,7 +198384,7 @@
 "outlying",
 "off the beaten track",
 "secluded",
-"in the depths of …",
+"in the depths of",
 "hard to find",
 "lonely",
 "in the back of beyond",
@@ -198526,7 +198513,7 @@
 "a great many",
 "very many",
 "countless",
-"more … than one can shake a stick at"
+"more than one can shake a stick at"
 ],
 "comment": "Lv.04/12: [形] 反復された"
 },
@@ -212273,8 +212260,8 @@
 "promptly",
 "prompt",
 "dead on",
-"on the stroke of …",
-"on the dot of …",
+"on the stroke of",
+"on the dot of",
 "sharp",
 "on the dot",
 "spot on",
@@ -215109,7 +215096,7 @@
 "keep within the limits of",
 "not allow to go beyond"
 ],
-"comment": "Lv.05/12: [動] 制限する."
+"comment": "Lv.05/12: [動] 制限する"
 },
 {
 "question": "confront",
@@ -223471,7 +223458,7 @@
 "persuasive",
 "glib",
 "voluble",
-"able to speak or write … easily and accurately",
+"able to speak or write easily and accurately",
 "have a command of",
 "have a good command of",
 "free-flowing",
@@ -225770,7 +225757,7 @@
 "zillions",
 "gazillions",
 "bazillions",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "a shedload",
 "lashings",
 "gobs",
@@ -228200,7 +228187,7 @@
 "outlying",
 "off the beaten track",
 "secluded",
-"in the depths of …",
+"in the depths of",
 "hard to find",
 "lonely",
 "in the back of beyond",
@@ -230415,7 +230402,7 @@
 "millions of",
 "billions of",
 "zillions of",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "a shedload of",
 "a slew of",
 "a bunch of",
@@ -232778,8 +232765,8 @@
 "prompt",
 "dead",
 "dead on",
-"on the stroke of …",
-"on the dot of …",
+"on the stroke of",
+"on the dot of",
 "right",
 "directly",
 "squarely",
@@ -244950,7 +244937,7 @@
 "trademark",
 "status symbol"
 ],
-"comment": "Lv.06/12: [動] 〈結果を〉〔...に〕帰する"
+"comment": "Lv.06/12: [動] 〈結果を〉〔〜に〕帰する"
 },
 {
 "question": "authorize",
@@ -245285,7 +245272,7 @@
 "question": "barbecue",
 "answers": [
 "meal cooked outdoors",
-"… roast",
+"roast",
 "cookout",
 "braaivleis",
 "hangi",
@@ -248595,7 +248582,7 @@
 "constant",
 "persistent",
 "non-stop",
-"more … than one can shake a stick at",
+"more than one can shake a stick at",
 "continuous",
 "endless",
 "unending",
@@ -253754,7 +253741,7 @@
 "mucho",
 "damn",
 "damned",
-"too … for words",
+"too for words",
 "devilish",
 "hellish",
 "frightfully",
@@ -257668,8 +257655,8 @@
 "have been born in",
 "originate in",
 "have one's roots in",
-"be …",
-"be … by birth",
+"be",
+"be by birth",
 "live in",
 "have one's home in",
 "inhabit",
@@ -261269,7 +261256,7 @@
 "mucho",
 "damn",
 "damned",
-"too … for words",
+"too for words",
 "devilish",
 "hellish",
 "frightfully",
@@ -261738,7 +261725,7 @@
 "in order to avoid",
 "to avoid the risk of"
 ],
-"comment": "Lv.06/12: [接] ...しないように"
+"comment": "Lv.06/12: [接] 〜しないように"
 },
 {
 "question": "lever",
@@ -266969,7 +266956,7 @@
 "in the event that",
 "allowing that"
 ],
-"comment": "Lv.06/12: [接] ...との条件で"
+"comment": "Lv.06/12: [接] 〜との条件で"
 },
 {
 "question": "providing",
@@ -266996,7 +266983,7 @@
 "in the event that",
 "allowing that"
 ],
-"comment": "Lv.06/12: [接] ...との条件で"
+"comment": "Lv.06/12: [接] 〜との条件で"
 },
 {
 "question": "provoke",
@@ -270685,7 +270672,7 @@
 "monument",
 "cenotaph",
 "cairn",
-"place dedicated to …",
+"place dedicated to",
 "tomb",
 "burial chamber",
 "sepulchre",
@@ -271313,7 +271300,7 @@
 "out of the way",
 "outlying",
 "off the beaten track",
-"in the depths of …",
+"in the depths of",
 "hard to find",
 "in the back of beyond",
 "in the hinterlands",
@@ -277262,8 +277249,6 @@
 "legitimise",
 "support",
 "consent to",
-"license",
-"licence",
 "approve of",
 "merit",
 "qualify for",
