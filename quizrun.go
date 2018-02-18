@@ -27,17 +27,6 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 	// Set delay before closing round
 	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
 
-	// Parse provided winLimit with sane defaults
-	if i, err := strconv.Atoi(winLimitGiven); err == nil {
-		if i > 100 {
-			winLimit = 100
-		} else if i < 1 {
-			winLimit = 1
-		} else {
-			winLimit = i
-		}
-	}
-
 	var quiz Quiz
 	if quizname == "review" {
 		quiz = getReview(quizChannel)
@@ -49,6 +38,21 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		msgSend(s, quizChannel, "Failed to find valid quiz: "+quizname)
 		stopQuiz(s, quizChannel)
 		return
+	}
+
+	// Parse provided winLimit with sane defaults
+	if i, err := strconv.Atoi(winLimitGiven); err == nil {
+		if i > len(quiz.Deck) {
+			i = len(quiz.Deck)
+		}
+
+		if i > 100 {
+			winLimit = 100
+		} else if i < 1 {
+			winLimit = 1
+		} else {
+			winLimit = i
+		}
 	}
 
 	// Replace default timeout with custom if specified
@@ -103,7 +107,7 @@ outer:
 		}
 
 		// Add word to quiz history
-		if quiz.Type == "text" && len(current.Answers) > 0 {
+		if (quiz.Type == "text" || quiz.Type == "url") && len(current.Answers) > 0 {
 			quizHistory = append(quizHistory, current.Answers[0])
 			questionTitle = ""
 		} else {
@@ -326,8 +330,19 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 	// Set delay before closing round
 	waitTime := time.Duration(waitTimeGiven) * time.Millisecond
 
+	quiz := LoadQuiz(quizname)
+	if len(quiz.Deck) == 0 {
+		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
+		stopQuiz(s, quizChannel)
+		return
+	}
+
 	// Parse provided winLimit with sane defaults
 	if i, err := strconv.Atoi(winLimitGiven); err == nil {
+		if i > len(quiz.Deck) {
+			i = len(quiz.Deck)
+		}
+
 		if i > 100 {
 			winLimit = 100
 		} else if i < 1 {
@@ -335,13 +350,6 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 		} else {
 			winLimit = i
 		}
-	}
-
-	quiz := LoadQuiz(quizname)
-	if len(quiz.Deck) == 0 {
-		msgSend(s, quizChannel, "Failed to find quiz: "+quizname)
-		stopQuiz(s, quizChannel)
-		return
 	}
 
 	c := make(chan *discordgo.MessageCreate, 100)
@@ -392,7 +400,7 @@ outer:
 		answersLeft := len(answerMap)
 
 		// Add word to quiz history
-		if quiz.Type == "text" && len(current.Answers) > 0 {
+		if (quiz.Type == "text" || quiz.Type == "url") && len(current.Answers) > 0 {
 			quizHistory = append(quizHistory, current.Answers[0])
 			questionTitle = ""
 		} else {

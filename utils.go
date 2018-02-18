@@ -756,24 +756,27 @@ func Currency(query string) string {
 }
 
 // Return frequency stats from corpus of novels
-func corpusSearch(query string) string {
+func corpusSearch(s *discordgo.Session, cid string, query string) error {
 
 	target := []byte(query)
+	sob := []byte("@@@[NOVEL_START=")
 	eob := []byte("@@@[NOVEL_END]@@@")
 	var countBook, countTotal, booksTotal, booksMatched int
-	bookList := make([]int, 0, 1300)
+	var titleBook string
+	bookList := make([]int, 0, 1500)
 
 	// Prepare somewhere to save example sentences
-	examples := make([][]byte, 3)
+	examples := make([][]byte, 2)
+	sources := make([]string, len(examples))
 	for i := 0; i < len(examples); i++ {
-		examples[i] = make([]byte, 0, 1000)
+		examples[i] = make([]byte, 0, 900)
 	}
 	exampleCount := 0
 
 	// Prepare a regexp to cut up individual sentences
 	expr, err := regexp.Compile(`([^「」。！？!?]*?` + regexp.QuoteMeta(query) + `[^「」。！？!?]*[。！？!?]*)`)
 	if err != nil {
-		return "ERROR, Could not compile regexp: " + err.Error()
+		return fmt.Errorf("Could not compile regexp: " + err.Error())
 	}
 
 	// Generate a lockless random seed
@@ -781,13 +784,24 @@ func corpusSearch(query string) string {
 
 	corpusFile, err := os.Open(RESOURCES_FOLDER + "corpus.txt")
 	if err != nil {
-		return "ERROR, Could not open Corpus file: " + err.Error()
+		return fmt.Errorf("Could not open Corpus file: " + err.Error())
 	}
 	defer corpusFile.Close()
 
 	scanner := bufio.NewScanner(corpusFile)
 	scanner.Buffer(make([]byte, 1*1024*1024), 1*1024*1024)
 	for scanner.Scan() {
+
+		// If we are at the start of the book, save title for example source
+		if bytes.HasPrefix(scanner.Bytes(), sob) {
+			start := len(sob)
+			end := bytes.LastIndex(scanner.Bytes(), []byte("]@@@"))
+			if end >= 0 {
+				titleBook = string(scanner.Bytes()[start:end])
+			} else {
+				return fmt.Errorf("Could not parse Corpus book title")
+			}
+		}
 
 		// If we hit the end of the book, compile the stats so far
 		if bytes.Equal(scanner.Bytes(), eob) {
@@ -822,8 +836,10 @@ func corpusSearch(query string) string {
 				// Store or replace the extracted sample sentence
 				if len(matches) > 0 {
 					match := matches[r.Intn(len(matches))]
-					examples[exampleCount%len(examples)] = examples[exampleCount%len(examples)][:len(match)]
-					copy(examples[exampleCount%len(examples)], match)
+					index := exampleCount % len(examples)
+					examples[index] = examples[index][:len(match)]
+					copy(examples[index], match)
+					sources[index] = titleBook
 					exampleCount++
 				}
 			}
@@ -832,11 +848,11 @@ func corpusSearch(query string) string {
 
 	}
 	if err := scanner.Err(); err != nil {
-		return "ERROR, Could not scan Corpus file: " + err.Error()
+		return fmt.Errorf("Could not scan Corpus file: " + err.Error())
 	}
 
 	// Calculate the minimum, median, and maximum occurrence
-	spread := "."
+	spread := ""
 	if len(bookList) > 1 {
 		sort.Ints(bookList)
 		median := 0
@@ -847,29 +863,53 @@ func corpusSearch(query string) string {
 			median = bookList[len(bookList)/2]
 		}
 
-		spread = fmt.Sprintf(": [%d, %d, %d].", bookList[0], median, bookList[len(bookList)-1])
+		spread = fmt.Sprintf(" [%d, %d, %d]", bookList[0], median, bookList[len(bookList)-1])
 	}
 
 	// Format the list of usage examples
+	amazonURL := "https://www.amazon.co.jp/s/?url=search-alias%3Dstripbooks&field-keywords="
+	escaper := strings.NewReplacer(
+		"]", "",
+		"[", "",
+		"(", "",
+		")", "",
+		"<", "%3C",
+		">", "%3E",
+		"　", "+",
+		" ", "+",
+	)
+
 	var exampleList string
-	for _, example := range examples {
+	for i, example := range examples {
 		if len(example) == 0 {
 			continue
 		}
 
-		exampleList += "\n《 " + strings.TrimSpace(strings.Replace(string(example), string(query), "**"+string(query)+"**", -1)) + " 》"
+		exampleList += strings.TrimSpace(strings.Replace(string(example), string(query), "__"+string(query)+"__", -1)) + "\n"
+		exampleList += "　[" + sources[i] + "](" + amazonURL + escaper.Replace(sources[i]) + ")\n"
 	}
 
 	// Get rid of weird double markup
-	exampleList = strings.Replace(exampleList, "****", "", -1)
+	exampleList = strings.Replace(exampleList, "____", "", -1)
 
-	return fmt.Sprintf(
-		"Found %d instances of '%s' in %d (%.1f%%) books%s\n%s",
+	stats := fmt.Sprintf(
+		"%d cases in %d (%.1f%%) books%s for '%s'",
 		countTotal,
-		query,
 		booksMatched,
 		100*float64(booksMatched)/float64(booksTotal),
 		spread,
-		exampleList,
+		query,
 	)
+
+	// Build a Discord message with the result
+	embed := &discordgo.MessageEmbed{
+		Type:        "rich",
+		Title:       stats,
+		Color:       0xFADE40,
+		Description: truncate(exampleList, 2048),
+	}
+
+	embedSend(s, cid, embed)
+
+	return nil
 }

@@ -189,7 +189,10 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			}
 		case "s":
 			if len(input) >= 2 {
-				msgSend(s, m.ChannelID, corpusSearch(m.Content[len(input[0])+1:]))
+				err := corpusSearch(s, m.ChannelID, m.Content[len(input[0])+1:])
+				if err != nil {
+					msgSend(s, m.ChannelID, "Error: "+err.Error())
+				}
 			} else {
 				msgSend(s, m.ChannelID, "No query term specified!")
 			}
@@ -319,7 +322,13 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	fields = append(fields, &discordgo.MessageEmbedField{
 		Name:   "Educational decks",
-		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, common, jouyou, kklc, eee, jjj",
+		Value:  "n0, n1, n2, n3, n4, n5, n5_adv, jlpt_blob, kanken_1k, kanken_j1k, kanken_2k, kanken_j2k, kanken_3k, kanken_4k, kanken_5k, kanken_6-10k, kanken_blob, common, jouyou, kklc, eee, jjj, esyne, jsynj",
+		Inline: false,
+	})
+
+	fields = append(fields, &discordgo.MessageEmbedField{
+		Name:   "Difficult decks",
+		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, tough, ee, jj",
 		Inline: false,
 	})
 
@@ -330,20 +339,21 @@ func showHelp(s *discordgo.Session, m *discordgo.MessageCreate) {
 	})
 
 	fields = append(fields, &discordgo.MessageEmbedField{
-		Name:   "Difficult decks",
-		Value:  "n0, kanken_1k, kanken_j1k, kanken_2k, quirky, kklc, tough, jp_syn, ee, jj",
+		Name:   "Various other decks",
+		Value:  "esyn, jsyn, numbers, honyaku, yojijukugo, images, obscure, jukujikun, places, tokyo, niconico, kirakira, radicals, r18",
 		Inline: false,
 	})
 
 	fields = append(fields, &discordgo.MessageEmbedField{
-		Name:   "Goofy decks",
-		Value:  "obscure, yojijukugo, jukujikun, places, tokyo, niconico, kirakira, radicals, esyn, numbers, honyaku, r18",
-		Inline: false,
-	})
-
-	fields = append(fields, &discordgo.MessageEmbedField{
-		Name:   "Alternative game modes",
-		Value:  fmt.Sprintf("`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%smulti <deck>` for scoring on multiple answers to the same question.\n`%sgauntlet <deck>` in PM for a kanji time trial.\n`%sscramble [easy/normal/hard/insane]` for an English Word Scramble quiz.", CMD_PREFIX, CMD_PREFIX, CMD_PREFIX, CMD_PREFIX),
+		Name: "Alternative game modes",
+		Value: fmt.Sprintf(
+			"`%smad/fast/quiz/mild/slow <deck>` for 0/1/2/3/5 second answer windows.\n`%smulti <deck>` for scoring on multiple answers to the same question.\n`%sflash <deck>` for no pause between questions.\n`%sgauntlet <deck>` in PM for a kanji time trial.\n`%sscramble [easy/normal/hard/insane]` for an English Word Scramble quiz.",
+			CMD_PREFIX,
+			CMD_PREFIX,
+			CMD_PREFIX,
+			CMD_PREFIX,
+			CMD_PREFIX,
+		),
 		Inline: false,
 	})
 
