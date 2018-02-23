@@ -84,7 +84,7 @@ func runQuiz(s *discordgo.Session, quizChannel string, quizname string, winLimit
 		c <- m
 	})
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d questions) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
 
 	var quizHistory []string
 	var failed []Card
@@ -185,15 +185,20 @@ outer:
 				}
 				break inner
 			case msg := <-c:
-				user := msg.Author
-				if hasString(answers, k2h(msg.Content)) {
+				// Handle passing on question
+				if msg.Content == ".." || msg.Content == "。。" {
+
+					// Abort the question
+					timeoutChan.Reset(0)
+
+				} else if hasString(answers, k2h(msg.Content)) {
 					if len(scoreKeeper) == 0 {
 						timeoutChan.Reset(waitTime)
 					}
 
 					// Make sure we don't add the same user again
-					if _, exists := scoreKeeper[user.ID]; !exists {
-						scoreKeeper[user.ID] = len(scoreKeeper) + 1
+					if _, exists := scoreKeeper[msg.Author.ID]; !exists {
+						scoreKeeper[msg.Author.ID] = len(scoreKeeper) + 1
 					}
 
 					// Reset timeouts since we're active
@@ -376,7 +381,7 @@ func runMultiQuiz(s *discordgo.Session, quizChannel string, quizname string, win
 		c <- m
 	})
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s MULTI quiz (%d questions) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(quiz.Deck), float64(pauseTime/time.Second), quiz.Description, winLimit))
 
 	var quizHistory []string
 	var questionTitle string
@@ -466,8 +471,13 @@ outer:
 				}
 				break inner
 			case msg := <-c:
-				user := msg.Author
-				if ts, okay := answerMap[k2h(strings.ToLower(msg.Content))]; okay {
+				// Handle passing on question
+				if msg.Content == ".." || msg.Content == "。。" {
+
+					// Abort the question
+					timeoutChan.Reset(0)
+
+				} else if ts, okay := answerMap[k2h(strings.ToLower(msg.Content))]; okay {
 
 					// Only count answers that are given within the window
 					if ts.IsZero() {
@@ -482,8 +492,8 @@ outer:
 						break
 					}
 
-					scoreKeeper[user.ID]++
-					scoreKeeperAnswers[user.ID] = append(scoreKeeperAnswers[user.ID], msg.Content)
+					scoreKeeper[msg.Author.ID]++
+					scoreKeeperAnswers[msg.Author.ID] = append(scoreKeeperAnswers[msg.Author.ID], msg.Content)
 
 					// Reset timeouts since we're active
 					timeoutCount = 0
@@ -662,7 +672,7 @@ func runGauntlet(s *discordgo.Session, m *discordgo.MessageCreate, quizname stri
 		c <- m
 	})
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d questions) in 5 seconds:\n\"%s\"\nAnswer as many as you can within %d seconds.```", quizname, len(quiz.Deck), quiz.Description, timeout))
 
 	var correct, total int
 	var quizHistory []string
@@ -812,7 +822,7 @@ func runScramble(s *discordgo.Session, quizChannel string, difficulty string) {
 	}
 	shuffle(order)
 
-	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d words) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), float64(pauseTime/time.Second), "Unscramble the English word", winLimit))
+	msgSend(s, quizChannel, fmt.Sprintf("```Starting new %s quiz (%d questions) in %.f seconds:\n\"%s\"\nFirst to %d points wins.```", quizname, len(Dictionary), float64(pauseTime/time.Second), "Unscramble the English word", winLimit))
 
 	var quizHistory []string
 	players := make(map[string]int)
@@ -896,8 +906,6 @@ outer:
 				}
 				break inner
 			case msg := <-c:
-				user := msg.Author
-
 				if len(msg.Content) != len(word) {
 					break
 				}
@@ -914,8 +922,8 @@ outer:
 				}
 
 				// Make sure we don't add the same user again
-				if _, exists := scoreKeeper[user.ID]; !exists {
-					scoreKeeper[user.ID] = len(scoreKeeper) + 1
+				if _, exists := scoreKeeper[msg.Author.ID]; !exists {
+					scoreKeeper[msg.Author.ID] = len(scoreKeeper) + 1
 				}
 
 				// Reset timeouts since we're active

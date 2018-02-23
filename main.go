@@ -30,6 +30,10 @@ const RESOURCES_FOLDER = "./resources/"
 // Notification when attempting unauthorized commands
 const OWNER_ONLY_MSG = "オーナーさんに　ちょうせん　なんて　10000こうねん　はやいんだよ！　"
 
+// Discord API string limits
+const DISCORD_DESC_MAX = 2048
+const DISCORD_FIELD_MAX = 1024
+
 // Discord Bot token
 var Token string
 
@@ -248,7 +252,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		case "ping":
 			msgSend(s, m.ChannelID, fmt.Sprintf("Latency: %d", time.Now().UnixNano()))
 		case "time":
-			msgSend(s, m.ChannelID, fmt.Sprintf("Time is: **%s**", time.Now().In(time.UTC)))
+			place := "UTC"
+			if len(input) >= 2 {
+				place = m.Content[len(input[0])+1:]
+			}
+			msgSend(s, m.ChannelID, fmt.Sprintf("Time is: **%s**", getTime(place)))
 		case "flash", "mad", "fast", "mild", "slow":
 			fallthrough
 		case "quiz":

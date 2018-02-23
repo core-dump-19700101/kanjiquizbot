@@ -765,8 +765,14 @@ func corpusSearch(s *discordgo.Session, cid string, query string) error {
 	var titleBook string
 	bookList := make([]int, 0, 1500)
 
+	// Allow more examples in bot-spam channels and DM
+	examplesLimit := 2
+	if isBotChannel(s, cid) {
+		examplesLimit = 6
+	}
+
 	// Prepare somewhere to save example sentences
-	examples := make([][]byte, 2)
+	examples := make([][]byte, examplesLimit)
 	sources := make([]string, len(examples))
 	for i := 0; i < len(examples); i++ {
 		examples[i] = make([]byte, 0, 900)
@@ -801,6 +807,7 @@ func corpusSearch(s *discordgo.Session, cid string, query string) error {
 			} else {
 				return fmt.Errorf("Could not parse Corpus book title")
 			}
+			continue
 		}
 
 		// If we hit the end of the book, compile the stats so far
@@ -885,15 +892,20 @@ func corpusSearch(s *discordgo.Session, cid string, query string) error {
 			continue
 		}
 
-		exampleList += strings.TrimSpace(strings.Replace(string(example), string(query), "__"+string(query)+"__", -1)) + "\n"
-		exampleList += "　[" + sources[i] + "](" + amazonURL + escaper.Replace(sources[i]) + ")\n"
+		current := strings.TrimSpace(strings.Replace(string(example), string(query), "__"+string(query)+"__", -1)) + "\n"
+		current += "　[" + sources[i] + "](" + amazonURL + escaper.Replace(sources[i]) + ")\n"
+
+		// Get rid of weird double markup for repetitions
+		current = strings.Replace(current, "____", "", -1)
+
+		// Only include if Discord message can fit it
+		if len(exampleList)+len(current) <= DISCORD_DESC_MAX {
+			exampleList += current
+		}
 	}
 
-	// Get rid of weird double markup
-	exampleList = strings.Replace(exampleList, "____", "", -1)
-
 	stats := fmt.Sprintf(
-		"%d cases in %d (%.1f%%) books%s for '%s'",
+		"%d hits in %d (%.1f%%) books%s for '%s'",
 		countTotal,
 		booksMatched,
 		100*float64(booksMatched)/float64(booksTotal),
@@ -906,10 +918,47 @@ func corpusSearch(s *discordgo.Session, cid string, query string) error {
 		Type:        "rich",
 		Title:       stats,
 		Color:       0xFADE40,
-		Description: truncate(exampleList, 2048),
+		Description: truncate(exampleList, DISCORD_DESC_MAX),
 	}
 
 	embedSend(s, cid, embed)
 
 	return nil
+}
+
+// Figure out current time in given location
+func getTime(place string) string {
+
+	aliases := map[string]string{
+		"stockholm":   "Europe/Stockholm",
+		"helsinki":    "Europe/Helsinki",
+		"oslo":        "Europe/Oslo",
+		"berlin":      "Europe/Berlin",
+		"london":      "Europe/London",
+		"paris":       "Europe/Paris",
+		"madrid":      "Europe/Madrid",
+		"riga":        "Europe/Riga",
+		"rome":        "Europe/Rome",
+		"zurich":      "Europe/Zurich",
+		"tokyo":       "Asia/Tokyo",
+		"singapore":   "Asia/Singapore",
+		"seoul":       "Asia/Seoul",
+		"reykjavik":   "Atlantic/Reykjavik",
+		"new york":    "America/New_York",
+		"vancouver":   "America/Vancouver",
+		"los angeles": "America/Los_Angeles",
+	}
+
+	place = strings.TrimSpace(place)
+
+	if alias, okay := aliases[strings.ToLower(place)]; okay {
+		place = alias
+	}
+
+	loc, err := time.LoadLocation(place)
+	if err != nil {
+		return "Error - Location not found!"
+	}
+
+	return time.Now().In(loc).Format(time.UnixDate)
 }
