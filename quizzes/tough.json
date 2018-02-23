@@ -3615,7 +3615,7 @@
 	{ "question": "畿", "answers": [ "き" ], "comment": "【２級】" },
 	{ "question": "畿外", "answers": [ "きがい" ], "comment": "【２級】" },
 	{ "question": "疋", "answers": [ "むら" ], "comment": "【準１級】\ncounter for small animals\ncounter for rolls of cloth (two han in size)\ncounter for horses\nroll of cloth" },
-	{ "question": "疏", "answers": [ "しょ" ], "comment": "【準１級】" },
+	{ "question": "疏", "answers": [ "そ", "しょ" ], "comment": "【準１級】" },
 	{ "question": "疚しい", "answers": [ "やましい" ], "comment": "【１級】\n(feeling) guilty; (having a) guilty conscience" },
 	{ "question": "疝気", "answers": [ "せんき" ], "comment": "【１級】\ncolic" },
 	{ "question": "疝痛", "answers": [ "せんつう" ], "comment": "【１級】\ncolic; celialgia; enteralgia; gripes" },

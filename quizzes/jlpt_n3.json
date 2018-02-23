@@ -667,7 +667,7 @@
 	{ "question": "支出", "answers": [ "ししゅつ" ], "comment": "expenditure; expenses" },
 	{ "question": "支店", "answers": [ "してん" ], "comment": "branch office; branch store" },
 	{ "question": "支度", "answers": [ "したく" ], "comment": "preparation; arrangements" },
-	{ "question": "支払", "answers": [ "しはらい" ], "comment": "payment" },
+	{ "question": "支払い", "answers": [ "しはらい" ], "comment": "payment" },
 	{ "question": "支払う", "answers": [ "しはらう" ], "comment": "to pay" },
 	{ "question": "支給", "answers": [ "しきゅう" ], "comment": "provision; supply; payment; allowance; grant" },
 	{ "question": "支配", "answers": [ "しはい" ], "comment": "domination; rule; control; direction; guidance" },

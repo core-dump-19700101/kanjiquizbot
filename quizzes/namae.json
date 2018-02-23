@@ -2370,7 +2370,6 @@
 	{ "question": "風太郎", "answers": [ "ふうたろう" ], "comment": "Frequency: 100%" },
 	{ "question": "洋行", "answers": [ "ひろゆき" ], "comment": "Frequency: 100%" },
 	{ "question": "信光", "answers": [ "のぶみつ", "しんこう" ], "comment": "Frequency: 98%, 2%" },
-	{ "question": "沢民", "answers": [ "たくみん" ], "comment": "Frequency: 100%" },
 	{ "question": "尚志", "answers": [ "たかし", "なおゆき", "なおし", "ひさし", "たかゆき" ], "comment": "Frequency: 35%, 35%, 22%, 4%, 4%" },
 	{ "question": "高国", "answers": [ "たかくに" ], "comment": "Frequency: 100%" },
 	{ "question": "静江", "answers": [ "しずえ", "せいこう" ], "comment": "Frequency: 91%, 9%" },
