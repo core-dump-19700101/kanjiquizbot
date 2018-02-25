@@ -499,6 +499,11 @@
 	{ "question": "鳴き", "answers": [ "ナキ" ] },
 	{ "question": "鳴門後ろ取り", "answers": [ "なるとうしろどり" ] },
 	{ "question": "黄金", "answers": [ "オウゴン" ], "comment": "gold" },
+	{ "question": "経膣", "answers": [ "けいちつ" ], "comment": "transvaginal" },
+	{ "question": "膣内", "answers": [ "ちつない" ], "comment": "【１級】\nintravaginal" },
+	{ "question": "膣口", "answers": [ "ちつこう" ], "comment": "【１級】\nvaginal opening" },
+	{ "question": "膣壁", "answers": [ "ちつへき" ], "comment": "【１級】\nvaginal wall" },
+	{ "question": "膣錠", "answers": [ "ちつじょう" ], "comment": "【１級】" },
 	{ "question": "鼻フェラ", "answers": [ "はなふぇら" ] }
 ]
 }

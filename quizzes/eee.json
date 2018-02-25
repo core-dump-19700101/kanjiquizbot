@@ -1,5 +1,5 @@
 {
-"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180222-1623 –Abridged Edition– [Brought to you by h​onya#1726]",
+"description": "SVL12000 (ALC PRESS INC.) looked up in the Oxford Dictionary of English (en.oxforddictionaries.com)\n\nVer.180225-1537 –Abridged Edition– [Brought to you by h​onya#1726]",
 "type": "text",
 "timeout": 30,
 "deck": [
@@ -1147,7 +1147,7 @@
 "answers": [
 "clear"
 ],
-"comment": "Lv.01/12: [動] 取り除く、片付ける\n‘the drive had been cleared of snow’"
+"comment": "Lv.01/12: [動] 取り除く、片づける\n‘the drive had been cleared of snow’"
 },
 {
 "question": "1. Quick to understand, learn, and devise or apply ideas; intelligent.\n 1. Skilled at doing or achieving something; talented.\n 2. Showing skill and originality; ingenious.\n 3. [usually with negative] «informal» Sensible; well advised.\n2. [predicative, with negative] «informal» Healthy or well.",
@@ -7435,7 +7435,7 @@
 "answers": [
 "aware"
 ],
-"comment": "Lv.02/12: [形] 気が付いている\n‘most people are aware of the dangers of sunbathing’"
+"comment": "Lv.02/12: [形] 気がついている\n‘most people are aware of the dangers of sunbathing’"
 },
 {
 "question": "1. Very bad or unpleasant.\n2. [adjective] [attributive] Used to emphasize the extent of something, especially something unpleasant or negative.\n3. «archaic» Inspiring reverential wonder or fear.",
@@ -8076,7 +8076,7 @@
 "answers": [
 "cheer"
 ],
-"comment": "Lv.02/12: [動] 励ます、元気付ける\n‘she cheered from the sidelines’"
+"comment": "Lv.02/12: [動] 励ます、元気づける\n‘she cheered from the sidelines’"
 },
 {
 "question": "1. A small, soft round stone fruit that is typically bright or dark red.\n2. The tree that bears the –––.\n3. [mass noun] A bright deep red colour.\n4. (one's –––) «informal» One's virginity.",
@@ -22004,7 +22004,7 @@
 "comment": "Lv.04/12: [名] 洞窟、洞穴\n‘the narrow gorge contains a series of prehistoric caves’"
 },
 {
-"question": "A cultivated plant of the parsley family, with closely packed succulent leaf stalks which are used as a salad or cooked vegetable.",
+"question": "0. a vegetable with long crisp light green stems that are often eaten raw: (BrE) a stick of ––– • (NAmE) a stalk of –––.\n1. A cultivated plant of the parsley family, with closely packed succulent leaf stalks which are used as a salad or cooked vegetable.\n\n[Note: The definition #0 is from the OALD.]",
 "answers": [
 "celery"
 ],
@@ -22179,11 +22179,11 @@
 "comment": "Lv.04/12: [名] 収納室、戸棚\n‘he has a closet full of designer suits’"
 },
 {
-"question": "1. A comfortably equipped single-decker bus used for longer journeys.\n2. A railway carriage.\n3. A closed horse-drawn carriage.",
+"question": "[no object, with adverbial of direction] Travel by coach.",
 "answers": [
 "coach"
 ],
-"comment": "Lv.04/12: [名] 指導員、コーチ\n‘a coach trip’"
+"comment": "Lv.04/12: [名] 指導員、コーチ\n‘fly or coach to the shores of the Mediterranean’"
 },
 {
 "question": "1. A male bird, especially of a domestic fowl.\n2. «vulgar slang» A man's penis.\n3. [mass noun] «informal» Nonsense.\n4. A firing lever in a gun which can be raised to be released by the trigger.\n5. A stopcock.",
@@ -28396,7 +28396,7 @@
 "answers": [
 "bang"
 ],
-"comment": "Lv.05/12: [名] 強打、ごう音\n‘the door slammed with a bang’"
+"comment": "Lv.05/12: [名] 強打、轟音\n‘the door slammed with a bang’"
 },
 {
 "question": "1. A large farm building used for storing grain, hay, or straw or for housing livestock.\n 1. A large shed used for storing road or railway vehicles.\n 2. A large and uninviting building.",
@@ -28410,7 +28410,7 @@
 "answers": [
 "barrier"
 ],
-"comment": "Lv.05/12: [名] 妨げるもの\n‘the mountain barrier between Norway and Sweden’"
+"comment": "Lv.05/12: [名] 障壁、障害物\n‘the mountain barrier between Norway and Sweden’"
 },
 {
 "question": "1. Having been defeated.\n2. Having been beaten or struck.\n3. (of food) stirred vigorously to a uniform consistency.\n4. (of a path) well trodden; much used.",
@@ -28739,7 +28739,7 @@
 "answers": [
 "Catholic"
 ],
-"comment": "Lv.05/12: [形] キリスト教徒の\n‘the Church of England must not compromise its Catholic principles’"
+"comment": "Lv.05/12: [形] カトリックの\n‘the Church of England must not compromise its Catholic principles’"
 },
 {
 "question": "1. (of a person) careful to avoid potential problems or dangers.\n 1. (of an action) characterized by the desire to avoid potential problems or dangers.",
@@ -29206,11 +29206,11 @@
 "comment": "Lv.05/12: [名] 消費\n‘industrialized countries should reduce their energy consumption’"
 },
 {
-"question": "1. A person or thing living or existing at the same time as another.\n 1. A person of roughly the same age as another.",
+"question": "1. Living or occurring at the same time.\n 1. Dating from the same time.\n2. Belonging to or occurring in the present.\n 1. Following modern ideas in style or design.",
 "answers": [
 "contemporary"
 ],
-"comment": "Lv.05/12: [名] 同時代のもの\n‘he was a contemporary of Darwin’"
+"comment": "Lv.05/12: [形] 現代の、同時代の\n‘the event was recorded by a contemporary historian’"
 },
 {
 "question": "1. The feeling that a person or a thing is worthless or beneath consideration.\n 1. Disregard for something that should be considered.\n 2. [count noun] The offence of being disobedient to or disrespectful of a court of law and its officers.",
@@ -29546,7 +29546,7 @@
 "answers": [
 "deprive"
 ],
-"comment": "Lv.05/12: [動] 奪う\n‘the city was deprived of its water supplies’"
+"comment": "Lv.05/12: [動] （物・権利を）奪う、与えない\n‘the city was deprived of its water supplies’"
 },
 {
 "question": "1. Obtain something from (a specified source).\n 1. (––– something from) Base a concept on an extension or modification of (another concept)\n 2. [no object] (––– from) (of a word) have (a specified word, usually of another language) as a root or origin.\n 3. [no object] (––– from) Arise from or originate in (a specified source)",
@@ -31309,7 +31309,7 @@
 "instal",
 "install"
 ],
-"comment": "Lv.05/12: [動] 取り付ける\n‘we're planning to install a new shower’"
+"comment": "Lv.05/12: [動] 設置する\n‘we're planning to install a new shower’"
 },
 {
 "question": "1. At once; immediately.\n2. «archaic» Urgently or persistently.",
@@ -35427,7 +35427,7 @@
 "answers": [
 "bounce"
 ],
-"comment": "Lv.06/12: [動] ボールがはずむ\n‘the ball bounced away and he chased it’"
+"comment": "Lv.06/12: [動] （球が）跳ね返る、反射する\n‘the ball bounced away and he chased it’"
 },
 {
 "question": "A punitive ban on relations with other bodies, cooperation with a policy, or the handling of goods.",
@@ -35444,11 +35444,11 @@
 "comment": "Lv.06/12: [名] 勇敢さ\n‘perhaps I'll get a medal for bravery’"
 },
 {
-"question": "A sum of money or other inducement offered or given to bribe someone.",
+"question": "Dishonestly persuade (someone) to act in one's favour by a gift of money or other inducement.",
 "answers": [
 "bribe"
 ],
-"comment": "Lv.06/12: [名] 賄賂\n‘lawmakers were caught accepting bribes to bring in legalized gambling’"
+"comment": "Lv.06/12: [動] 賄賂を贈る\n‘they attempted to bribe opponents into losing’"
 },
 {
 "question": "1. Make or become more light.\n 1. [with object] Make (something) more attractively colourful.\n 2. [no object] Make or become happier and more cheerful.",
@@ -39038,11 +39038,11 @@
 "comment": "Lv.06/12: [名] 部外者\n‘to the outsider, glitzy fashion shows may seem an outrageous extravagance’"
 },
 {
-"question": "1. A body, object, or design with an oval shape or outline.\n 1. An oval sports field or racing track.\n 2. A ground for Australian Rules football.",
+"question": "Having a rounded and slightly elongated outline or shape like that of an egg.",
 "answers": [
 "oval"
 ],
-"comment": "Lv.06/12: [名] 卵形、卵形のもの\n‘cut out two small ovals from the felt’"
+"comment": "Lv.06/12: [形] 卵形の\n‘her smooth oval face’"
 },
 {
 "question": "1. Remove forcibly from power.\n 1. Put an end to (something) by the use of force.\n 2. «archaic» Knock or throw to the ground.\n2. Throw (a ball) further than the intended distance.\n 1. Throw a ball beyond (a receiving player)",
@@ -39176,7 +39176,7 @@
 "answers": [
 "peacock"
 ],
-"comment": "Lv.06/12: [名] クジャク\n‘these young men have always considered themselves the peacocks of Europe’"
+"comment": "Lv.06/12: [名] クジャク《鳥》\n‘these young men have always considered themselves the peacocks of Europe’"
 },
 {
 "question": "1. [no object] (of a bird) strike or bite something with its beak.\n 1. [with object] Make (a hole) by striking with the beak.\n 2. [with object] Kiss (someone) lightly or perfunctorily.\n 3. [no object] (––– at) «informal» (of a person) eat (food) listlessly or daintily.",
@@ -39317,7 +39317,7 @@
 "pint",
 "pt"
 ],
-"comment": "Lv.06/12: [名] パイント\n‘we'll probably go for a pint on the way home’"
+"comment": "Lv.06/12: [名] パイント《液量・体積の単位》\n‘we'll probably go for a pint on the way home’"
 },
 {
 "question": "1. (usually the –––) A contagious bacterial disease characterized by fever and delirium, typically with the formation of buboes (bubonic plague) and sometimes infection of the lungs (pneumonic plague).\n2. An unusually large number of insects or animals infesting a place and causing damage.\n3. [in singular] A thing causing trouble or irritation.",
@@ -39401,7 +39401,7 @@
 "answers": [
 "prediction"
 ],
-"comment": "Lv.06/12: [名] 予想\n‘a prediction that economic growth would resume’"
+"comment": "Lv.06/12: [名] 予測、予言\n‘a prediction that economic growth would resume’"
 },
 {
 "question": "The condition or period of being pregnant.",
@@ -40523,7 +40523,7 @@
 "answers": [
 "sporty"
 ],
-"comment": "Lv.06/12: [形] スポーツマンらしい\n‘tracksuits don't necessarily mean you're sporty’"
+"comment": "Lv.06/12: [形] 軽快な、スポーツに適した\n‘tracksuits don't necessarily mean you're sporty’"
 },
 {
 "question": "The season of spring.",

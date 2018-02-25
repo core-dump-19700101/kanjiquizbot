@@ -979,6 +979,7 @@
 	{ "question": "齧歯類", "answers": [ "げっしるい" ], "comment": "rodent" },
 	{ "question": "以て", "answers": [ "もって" ], "comment": "with; by\nby means of; because; in view of" },
 	{ "question": "可笑しい", "answers": [ "おかしい" ], "comment": "funny; amusing; comical; laughable; ridiculous\nstrange; odd; funny; peculiar; weird; unusual; eccentric\nimproper; unsuitable; unbecoming\nsuspicious" },
+	{ "question": "足袋", "answers": [ "たび" ], "comment": "tabi; Japanese socks (with split toe)" },
 	{ "question": "斜交い", "answers": [ "はすかい" ], "comment": "aslant; oblique; diagonal; askew; cater-cornered; catty-cornered" }
 ]
 }
