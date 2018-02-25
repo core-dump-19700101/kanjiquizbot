@@ -3,38 +3,45 @@ package main
 import (
 	"bufio"
 	"encoding/json"
-	"fmt"
 	"log"
 	"os"
+	"sort"
 	"strings"
 )
 
-// StringSet is a simple implementation of a set of strings
-// I kind of wish golang has sets implemented, but then I guess they'd also need generics...
+// SortedStringSet is originally a simple implementation of a set of strings
+// Since the order of answers should be preserved, this set-modoki can now take in an index as value for
+// its underlying map. When the values (map's keyset) are returned, they will be sorted based on the assigned
+// value
 //
 // *TODO* evaluate merits of breaking this out to its own file when validations list grows too long
-type StringSet struct {
-	content map[string]bool
+type SortedStringSet struct {
+	content map[string]int
 }
 
 // NewStringSet initializes set
-func NewStringSet() *StringSet {
-	return &StringSet{make(map[string]bool)}
+func NewStringSet() *SortedStringSet {
+	return &SortedStringSet{make(map[string]int)}
 }
 
 // Add inserts string into set and returns boolean for change
-func (set *StringSet) Add(s string) bool {
-	exists := set.content[s]
-	set.content[s] = true
+func (set *SortedStringSet) Add(s string) bool {
+	return set.AddOrdered(s, len(set.content))
+}
+
+// AddOrdered takes in a string and an integer to identify its position
+func (set *SortedStringSet) AddOrdered(s string, i int) bool {
+	_, exists := set.content[s]
+	set.content[s] = i
 	return !exists
 }
 
 // AddAll inserts multiple string elements into set
 // Returns any strings that already exist in set (unconventional, but I want to print them)
-func (set *StringSet) AddAll(strs ...string) []string {
+func (set *SortedStringSet) AddAll(strs ...string) []string {
 	var dups []string
-	for _, s := range strs {
-		changed := set.Add(s)
+	for i, s := range strs {
+		changed := set.AddOrdered(s, i)
 		if !changed {
 			dups = append(dups, s)
 		}
@@ -43,23 +50,26 @@ func (set *StringSet) AddAll(strs ...string) []string {
 }
 
 // Remove removes given string from set
-func (set *StringSet) Remove(s string) {
+func (set *SortedStringSet) Remove(s string) {
 	delete(set.content, s)
 }
 
 // IsEmpty checks the set's emptiness by evaluating content's zero value
-func (set StringSet) IsEmpty() bool {
+func (set SortedStringSet) IsEmpty() bool {
 	return set.content == nil || len(set.content) == 0
 }
 
 // Values returns a slice of set members
-func (set StringSet) Values() []string {
+func (set SortedStringSet) Values() []string {
 	keys := make([]string, len(set.content))
 	i := 0
 	for key := range set.content {
 		keys[i] = key
 		i++
 	}
+	sort.Slice(keys, func(i, j int) bool {
+		return set.content[keys[i]] < set.content[keys[j]]
+	})
 	return keys
 }
 
@@ -71,15 +81,15 @@ func (set StringSet) Values() []string {
 func ValidateQuizzes(quizNames []string, generateFix bool) {
 	for _, quizName := range quizNames {
 		quiz := LoadQuiz(quizName)
-		fmt.Printf("[%s] running checks...\n", quizName)
+		log.Printf("[%s] Running checks...\n", quizName)
 
 		// Run checks
 		//
 		// *TODO* look into making a validator interface and move specific validation logic into structs when the list
 		//        of validations grows too long, or if some have particularly complex logic
-		fixed := checkDuplicates(quiz)
+		fixed, hasError := checkDuplicates(quiz)
 
-		if generateFix {
+		if hasError && generateFix {
 
 			// Create a copy of quiz file
 			// Delete if exists
@@ -95,16 +105,16 @@ func ValidateQuizzes(quizNames []string, generateFix bool) {
 				log.Fatal(err)
 			}
 			w := bufio.NewWriter(f)
-			defer f.Close()
 
 			// Write quiz JSON file
-			b, err := json.MarshalIndent(fixed, "", "    ")
+			b, err := json.MarshalIndent(fixed, "", "\t")
 			if err != nil {
 				log.Fatal(err)
 			}
 			w.Write(b)
 			w.Flush()
-			fmt.Printf("[%s] generated fixed file %s\n", quizName, fileName)
+			f.Close()
+			log.Printf("[%s] Generated fixed file %s\n", quizName, fileName)
 		}
 	}
 }
@@ -112,26 +122,29 @@ func ValidateQuizzes(quizNames []string, generateFix bool) {
 // Checks duplicate questions and answers in a given quiz
 // Currently the strategy is to merge the answers and comments for cards with the same question
 // Returns fixed quiz
-func checkDuplicates(quiz Quiz) Quiz {
-	fmt.Println("checking duplicates...")
+func checkDuplicates(quiz Quiz) (Quiz, bool) {
+	log.Println("Checking duplicates...")
+	var hasError bool
 
 	// Use a map to hold merged card data temporarily
-	cardMap := make(map[string][]*StringSet)
+	cardMap := make(map[string][]*SortedStringSet)
 	for _, card := range quiz.Deck {
 		question := card.Question
 
-		var cardDataSets []*StringSet
+		var cardDataSets []*SortedStringSet
 		if cardMap[question] != nil {
 			cardDataSets = cardMap[question]
-			fmt.Printf("\tFound duplicate question: %s", question)
+			log.Printf("\tFound duplicate question: %s", question)
+			hasError = true
 		} else {
-			cardDataSets = []*StringSet{NewStringSet(), NewStringSet()}
+			cardDataSets = []*SortedStringSet{NewStringSet(), NewStringSet()}
 		}
 		cardDataSets[1].Add(card.Comment)
 
 		dups := cardDataSets[0].AddAll(card.Answers...)
 		if dups != nil {
-			fmt.Printf("\tFound duplicate answers: %s\n", strings.Join(dups, ", "))
+			hasError = true
+			log.Printf("\tFound duplicate answers: %s\n", strings.Join(dups, ", "))
 		}
 		cardMap[question] = cardDataSets
 	}
@@ -140,9 +153,25 @@ func checkDuplicates(quiz Quiz) Quiz {
 	fixedDeck := make([]Card, len(cardMap))
 	i := 0
 	for question, cardDataSets := range cardMap {
-		fixedDeck[i] = Card{question, cardDataSets[0].Values(), strings.Join(cardDataSets[1].Values(), "\n")}
+		fixedDeck[i] = Card{
+			Question: question,
+			Answers:  cardDataSets[0].Values(),
+			Comment:  strings.Join(cardDataSets[1].Values(), "\n")}
 		i++
 	}
+	sort.Slice(fixedDeck, func(i, j int) bool {
 
-	return Quiz{quiz.Description, quiz.Type, quiz.Timeout, fixedDeck}
+		// Since we're deduping, the questions should never be equal
+		if fixedDeck[i].Question < fixedDeck[j].Question {
+			return true
+		}
+		return false
+	})
+
+	return Quiz{
+		Description: quiz.Description,
+		Type:        quiz.Type,
+		Timeout:     quiz.Timeout,
+		Deck:        fixedDeck,
+	}, hasError
 }
