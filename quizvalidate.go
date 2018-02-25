@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"log"
 	"os"
+	"runtime"
 	"sort"
 	"strings"
 )
@@ -79,7 +80,31 @@ func (set SortedStringSet) Values() []string {
 // Parameter quizNames defines the quizzes to be checked
 // Parameter generateFix is a boolean that controls the creation of fixed quiz copies
 func ValidateQuizzes(quizNames []string, generateFix bool) {
+
+	quizzes := make(chan string, 100)
+	done := make(chan string, 100)
+
+	for w := 0; w < runtime.NumCPU(); w++ {
+		go quizValidationWorker(quizzes, done, generateFix)
+	}
+
+	quizCount := 0
 	for _, quizName := range quizNames {
+		quizCount++
+		quizzes <- quizName
+	}
+	close(quizzes)
+
+	for w := 0; w < quizCount; w++ {
+		q := <-done
+		var mem runtime.MemStats
+		runtime.ReadMemStats(&mem)
+		log.Printf("[%s] Validation complete\n", q)
+	}
+}
+
+func quizValidationWorker(quizzes <-chan string, done chan<- string, generateFix bool) {
+	for quizName := range quizzes {
 		quiz := LoadQuiz(quizName)
 		log.Printf("[%s] Running checks...\n", quizName)
 
@@ -107,15 +132,34 @@ func ValidateQuizzes(quizNames []string, generateFix bool) {
 			w := bufio.NewWriter(f)
 
 			// Write quiz JSON file
-			b, err := json.MarshalIndent(fixed, "", "\t")
+			b, err := json.Marshal(fixed)
 			if err != nil {
 				log.Fatal(err)
 			}
-			w.Write(b)
+
+			// Indent the JSON manually
+			j := strings.NewReplacer(
+				`"description":`, "\n\t"+`"description": `,
+				`"type":`, "\n\t"+`"type": `,
+				`"timeout":`, "\n\t"+`"timeout": `,
+				`"deck":[`, "\n\t"+`"deck": [`,
+				`{"question":`, "\n\t\t"+`{ "question": `,
+				`,"answers":[`, `, "answers": [ `,
+				`],"comment":`, ` ], "comment": `,
+				`}]}`, `}`+"\n\t]\n"+`}`,
+			).Replace(string(b))
+			j = strings.NewReplacer(
+				`]}`, `] }`,
+				`"}`, `" }`,
+				`"]`, `" ]`,
+			).Replace(j)
+			w.WriteString(j)
 			w.Flush()
 			f.Close()
 			log.Printf("[%s] Generated fixed file %s\n", quizName, fileName)
 		}
+
+		done <- quizName
 	}
 }
 

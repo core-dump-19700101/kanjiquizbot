@@ -57,9 +57,8 @@ func TestValidations(t *testing.T) {
 
 	// Weird to initialize a global in a test like this
 	// Would be better to eventually have another less specific test covering the bot's initialization
-	Quizzes.Map = map[string]string{
-		TestQuiz: "_" + TestQuiz + ".json",
-	}
+	loadQuizList()
+	Quizzes.Map[TestQuiz] = "_" + TestQuiz + ".json"
 	fixedQuizPath := QUIZ_FOLDER + Quizzes.Map[TestQuiz] + ".fix"
 
 	// Raw strings and indentation don't go together
@@ -75,7 +74,7 @@ func TestValidations(t *testing.T) {
 
 	// Actual validation logic is tested below
 	// This test covers the genereation of fixed quiz copies
-	ValidateQuizzes([]string{TestQuiz}, true)
+	ValidateQuizzes(GetQuizlist(), true)
 	var fixedQuiz Quiz
 	f, err := os.Open(fixedQuizPath)
 	if err != nil {
@@ -88,7 +87,6 @@ func TestValidations(t *testing.T) {
 	if !quizEqual(correctQuiz, fixedQuiz, cmpopts.IgnoreFields(Card{}, "Comment")) {
 		t.Errorf("Check duplicates failed! %+v != %+v", correctQuiz, fixedQuiz)
 	}
-
 	// Clean up
 	os.Remove(fixedQuizPath)
 }
