@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"bytes"
 	"encoding/json"
 	"log"
 	"os"
@@ -81,21 +82,19 @@ func (set SortedStringSet) Values() []string {
 // Parameter generateFix is a boolean that controls the creation of fixed quiz copies
 func ValidateQuizzes(quizNames []string, generateFix bool) {
 
-	quizzes := make(chan string, 100)
-	done := make(chan string, 100)
+	quizzes := make(chan string, len(quizNames))
+	done := make(chan string, len(quizNames))
 
 	for w := 0; w < runtime.NumCPU(); w++ {
 		go quizValidationWorker(quizzes, done, generateFix)
 	}
 
-	quizCount := 0
 	for _, quizName := range quizNames {
-		quizCount++
 		quizzes <- quizName
 	}
 	close(quizzes)
 
-	for w := 0; w < quizCount; w++ {
+	for w := 0; w < len(quizNames); w++ {
 		q := <-done
 		var mem runtime.MemStats
 		runtime.ReadMemStats(&mem)
@@ -132,8 +131,10 @@ func quizValidationWorker(quizzes <-chan string, done chan<- string, generateFix
 			w := bufio.NewWriter(f)
 
 			// Write quiz JSON file
-			b, err := json.Marshal(fixed)
-			if err != nil {
+			buf := new(bytes.Buffer)
+			enc := json.NewEncoder(buf)
+			enc.SetEscapeHTML(false)
+			if err := enc.Encode(&fixed); err != nil {
 				log.Fatal(err)
 			}
 
@@ -146,14 +147,13 @@ func quizValidationWorker(quizzes <-chan string, done chan<- string, generateFix
 				`{"question":`, "\n\t\t"+`{ "question": `,
 				`,"answers":[`, `, "answers": [ `,
 				`],"comment":`, ` ], "comment": `,
-				`}]}`, `}`+"\n\t]\n"+`}`,
-			).Replace(string(b))
-			j = strings.NewReplacer(
+				`}]}`, `}`+"\n\t]\n"+`}`+"\n",
+			).Replace(buf.String())
+			strings.NewReplacer(
 				`]}`, `] }`,
 				`"}`, `" }`,
 				`"]`, `" ]`,
-			).Replace(j)
-			w.WriteString(j)
+			).WriteString(w, j)
 			w.Flush()
 			f.Close()
 			log.Printf("[%s] Generated fixed file %s\n", quizName, fileName)
