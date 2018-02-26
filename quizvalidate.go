@@ -96,8 +96,6 @@ func ValidateQuizzes(quizNames []string, generateFix bool) {
 
 	for w := 0; w < len(quizNames); w++ {
 		q := <-done
-		var mem runtime.MemStats
-		runtime.ReadMemStats(&mem)
 		log.Printf("[%s] Validation complete\n", q)
 	}
 }
